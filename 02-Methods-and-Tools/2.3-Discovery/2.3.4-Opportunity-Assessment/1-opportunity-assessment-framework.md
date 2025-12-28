@@ -9,9 +9,10 @@ An opportunity assessment helps you structure early thinking about a potential p
 ## Core Principles
 
 ### 1. Document Assumptions Explicitly
-- Mark all assumptions with confidence levels (High/Med/Low)
+- Mark all assumptions with confidence levels (High/Med/Low) - this helps you know what to validate
 - Distinguish between facts and hypotheses
 - Identify what would change your mind
+- **Note:** Confidence here refers to your confidence in the assumption being true, which helps prioritize validation
 
 ### 2. Focus on Outcomes, Not Solutions
 - Start with the problem/opportunity, not the solution
@@ -126,7 +127,7 @@ An opportunity assessment helps you structure early thinking about a potential p
 
 **Vague assumptions**
 - Problem: "We assume customers want this" without confidence level
-- Solution: Mark all assumptions with High/Med/Low confidence
+- Solution: Mark all assumptions with High/Med/Low confidence (your confidence the assumption is true - helps prioritize validation)
 
 **No decision criteria**
 - Problem: Never clear when to kill, pivot, or commit

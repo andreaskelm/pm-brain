@@ -6,7 +6,7 @@
 
 A living knowledge base that bridges the gap between Product Management frameworks and actual operational execution. Git-versioned, shareable, ready to use.
 
-**Product teams drown in blog posts and frameworks** but don't know *how* to run sprint planning on Tuesday morning or write a strategy document by end-of-day. This gives you battle-tested guides, templates, and playbooks. Single source of truth = latest commit. Built for everyone from junior PMs to senior leads.
+**Product teams drown in blog posts and frameworks** but don't know *how* to run sprint planning on Tuesday morning or write a strategy document by end-of-day. This gives you battle-tested guides, templates, and playbooks. Built for everyone from junior PMs to senior leads.
 
 🚀 **Get started:** clone the repo → add your context → start shipping
 
@@ -24,7 +24,7 @@ A living knowledge base that bridges the gap between Product Management framewor
 └── 🤖 Prompt libraries: structured thinking prompts for AI tools (ChatGPT, Claude, Gemini, GitHub Copilot, Cursor, etc.)
 ```
 
-**Single Source of Truth:** Latest commit = current reality. No stale documents in Notion, SharePoint or Confluence that nobody updates.  
+**Always up-to-date:** Latest commit = current reality. No stale documents or long forgotten context in Notion, SharePoint or Confluence that nobody updates.  
 
 ---
 

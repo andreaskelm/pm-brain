@@ -3,12 +3,44 @@
 ## Goal
 Combine insights from multiple customer interviews to identify patterns, validate or challenge assumptions, and create actionable recommendations that inform product decisions and opportunity prioritization.
 
+> **Important:** Include **ALL** relevant insights and stories from interviews. Don't limit to 2-3 examples - capture all evidence that supports or challenges patterns. More evidence = stronger synthesis.
+
+## Before You Start: Braindump & Product Sense
+
+**STOP. Don't just copy-paste this into AI. Think first.**
+
+Before synthesizing interviews, take 10-15 minutes to braindump your thoughts:
+
+**Braindumping prompts:**
+- What patterns do you think you're seeing across interviews? Dump everything - don't structure yet.
+- What stories feel connected? What feels disconnected?
+- What surprised you? What confirmed your assumptions?
+- What does your product sense tell you? What feels like a real pattern vs. noise?
+- What biases might affect your synthesis? (Pattern matching bias? Availability bias? Confirmation bias?)
+
+**Product sense exercise:**
+- If you had to explain the key findings in 2 minutes, what would you say?
+- What would make you say "this is obviously a real pattern"?
+- What would make you say "this is obviously not a pattern"?
+- What does your gut tell you about the most important insights?
+
+**Then proceed** to synthesize using the framework below.
+
 ## Output
 - **Format:** Markdown (`.md`)
 - **Location:** `03-Research-Artifacts/3.1-User-Interviews/synthesis/`
 - **Filename:** `synthesis-[research-theme]-[YYYY-MM-DD].md`
 
 ## Process
+
+**IMPORTANT:** If you're using this with an AI assistant, your role is to help the user think, not to think for them.
+
+**Step 0: Help User Braindump First**
+- Ask the user to braindump their thoughts about patterns they're seeing (see "Before You Start" section above)
+- Quiz them: "What patterns do you think you're seeing? What feels connected?"
+- Help them use their product sense: "What does your gut tell you? What feels like a real pattern?"
+- Only after they've thought through it, proceed to synthesize
+
 1. **Collect Interview Snapshots:** Gather all relevant interview snapshots from research period
 2. **Pattern Identification:** Look for recurring themes, behaviors, and needs across interviews
 3. **Segment Analysis:** Identify differences between customer segments or use cases
@@ -58,7 +90,7 @@ Combine insights from multiple customer interviews to identify patterns, validat
 ### Methodology Notes
 - **Interview approach:** [How interviews were conducted]
 - **Limitations:** [What this research doesn't cover]
-- **Confidence level:** [How confident we are in findings]
+- **Evidence strength:** [How strong the evidence is - use this instead of "confidence" which can be subjective]
 
 ## Key Findings
 
@@ -70,11 +102,17 @@ Combine insights from multiple customer interviews to identify patterns, validat
 > "[Direct customer quote illustrating this finding]" - Customer A
 > 
 > "[Another supporting quote]" - Customer B
+> 
+> "[Additional quote]" - Customer C
+> 
+> *[Include ALL relevant quotes - don't limit to 2-3]*
 
 **Customer Stories:**
 - **Customer A:** [Brief story showing this pattern]
 - **Customer B:** [Different customer, same underlying pattern]
-- **Customer C:** [Additional example if available]
+- **Customer C:** [Additional example]
+- **Customer D:** [Another example]
+- *[Include ALL stories that support this finding - more evidence = stronger pattern]*
 
 **Implications:**
 - **For customers:** [What this means for customer experience]
@@ -114,13 +152,13 @@ Combine insights from multiple customer interviews to identify patterns, validat
 
 ### Validated Assumptions ✅
 **Assumption:** [What we thought was true]
-**Evidence:** [How interviews confirmed this]
-**Confidence:** [How sure we are now]
+**Evidence:** [How interviews confirmed this - include ALL supporting stories]
+**Evidence Strength:** [Strong/Moderate/Weak based on number of sources and consistency]
 **Implication:** [What this means for product decisions]
 
 ### Refuted Assumptions ❌
 **Assumption:** [What we thought was true but wasn't]
-**Counter-evidence:** [What interviews actually showed]
+**Counter-evidence:** [What interviews actually showed - include ALL contradicting stories]
 **New understanding:** [Our updated perspective]
 **Implication:** [How this changes our approach]
 
@@ -202,13 +240,16 @@ Combine insights from multiple customer interviews to identify patterns, validat
 - **[Research approach 1]:** [How to fill knowledge gaps]
 - **[Research approach 2]:** [Alternative research methods]
 
-## Confidence & Limitations
+## Evidence Strength & Limitations
 
-### High Confidence Findings
-- [Findings we're very sure about and why]
+### Strong Evidence Findings
+- [Findings with strong evidence (multiple sources, consistent patterns) and why]
 
-### Lower Confidence Areas
-- [Findings that need more validation and why]
+### Moderate Evidence Areas
+- [Findings with moderate evidence (some sources, some consistency) and why]
+
+### Weak Evidence Areas
+- [Findings that need more validation (limited sources, mixed signals) and why]
 
 ### Research Limitations
 - **Sample size:** [How many customers interviewed]
@@ -242,11 +283,11 @@ Combine insights from multiple customer interviews to identify patterns, validat
 
 ## Synthesis Quality Checklist
 Before saving, verify:
-- [ ] Every major finding backed by multiple customer examples
-- [ ] Both confirming and disconfirming evidence presented
+- [ ] Every major finding backed by **ALL** relevant customer examples (not just 2-3)
+- [ ] Both confirming and disconfirming evidence presented with full context
 - [ ] Clear distinction between what customers said vs. did
 - [ ] Assumptions explicitly tested and results documented
 - [ ] Actionable recommendations with specific next steps
 - [ ] Customer language preserved in quotes and insights
-- [ ] Confidence levels and limitations clearly stated
+- [ ] Evidence strength (not "confidence") and limitations clearly stated
 ```

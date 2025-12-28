@@ -3,12 +3,42 @@
 ## Goal
 Generate multiple, diverse solution concepts for validated customer opportunities, ensuring solutions address underlying needs rather than symptoms, and can be tested with minimal investment.
 
+## Before You Start: Braindump & Product Sense
+
+**STOP. Don't just copy-paste this into AI. Think first.**
+
+Before generating solutions, take 10-15 minutes to braindump your thoughts:
+
+**Braindumping prompts:**
+- What solutions come to mind? Dump everything - don't judge yet.
+- What does your product sense tell you? What feels like the right approach?
+- What biases might affect your thinking? (Solution bias? Feature bias? Status quo bias?)
+- What would make you say "this solution is obviously wrong"?
+- What would make you say "this solution is obviously right"?
+
+**Product sense exercise:**
+- If you had to solve this in 1 week with no budget, what would you do?
+- What's the smallest thing that could work?
+- What would great product sense notice about this opportunity?
+- What does your gut tell you about the best solution approach?
+
+**Then proceed** to generate solutions using the framework below.
+
 ## Output
 - **Format:** Markdown (`.md`)
 - **Location:** `03-Research-Artifacts/3.1-User-Interviews/solutions/`
 - **Filename:** `solutions-[opportunity-name]-[YYYY-MM-DD].md`
 
 ## Process
+
+**IMPORTANT:** If you're using this with an AI assistant, your role is to help the user think, not to think for them.
+
+**Step 0: Help User Braindump First**
+- Ask the user to braindump their thoughts about solutions (see "Before You Start" section above)
+- Quiz them: "What solutions come to mind? What feels like the right approach?"
+- Help them use their product sense: "What does your gut tell you? What's the smallest thing that could work?"
+- Only after they've thought through it, proceed to generate solutions
+
 1. **Review Opportunity:** Deeply understand the customer need and context
 2. **Divergent Brainstorming:** Generate many solution ideas without judgment
 3. **Solution Categorization:** Group similar concepts and identify themes

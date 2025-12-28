@@ -3,6 +3,8 @@
 ## Goal
 Systematically validate product ideas and features to ensure they solve real problems, are feasible to deliver, and create measurable value — before investing heavily.
 
+> **Before using this framework:** Braindump first! What do you think is true about this idea? What does your product sense tell you? What feels risky? Then use this framework to structure your validation approach.
+
 ## Output
 - **Format:** Markdown (`.md`)
 - **Location:** `/validation/ideas/`

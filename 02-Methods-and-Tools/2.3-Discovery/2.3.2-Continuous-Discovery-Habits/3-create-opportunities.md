@@ -3,12 +3,44 @@
 ## Goal
 Transform customer insights from interview snapshots into clear, evidence-based opportunities that represent unmet customer needs and can guide product development decisions.
 
+> **Important:** Include **ALL** supporting customer stories and evidence for each opportunity. Don't limit to 2-3 examples - more evidence makes opportunities stronger.
+
+## Before You Start: Braindump & Product Sense
+
+**STOP. Don't just copy-paste this into AI. Think first.**
+
+Before creating opportunities, take 10-15 minutes to braindump your thoughts:
+
+**Braindumping prompts:**
+- What opportunities do you think exist? Dump everything - don't structure yet.
+- What customer needs feel real? What feels like noise?
+- What does your product sense tell you? What feels like a real opportunity?
+- What biases might affect your view? (Solution bias? Feature bias? Confirmation bias?)
+- What would make you say "this is obviously not an opportunity"?
+
+**Product sense exercise:**
+- If you had to pick ONE opportunity to pursue, what would it be? Why?
+- What would make you say "this opportunity is obviously worth pursuing"?
+- What would make you say "this opportunity is obviously not worth it"?
+- What does your gut tell you about the most promising opportunities?
+
+**Then proceed** to create opportunities using the framework below.
+
 ## Output
 - **Format:** Markdown (`.md`)
 - **Location:** `03-Research-Artifacts/3.1-User-Interviews/opportunities/`
 - **Filename:** `opportunity-[brief-description]-[YYYY-MM-DD].md`
 
 ## Process
+
+**IMPORTANT:** If you're using this with an AI assistant, your role is to help the user think, not to think for them.
+
+**Step 0: Help User Braindump First**
+- Ask the user to braindump their thoughts about opportunities (see "Before You Start" section above)
+- Quiz them: "What opportunities do you think exist? What feels like a real opportunity?"
+- Help them use their product sense: "What does your gut tell you? What feels worth pursuing?"
+- Only after they've thought through it, proceed to create opportunities
+
 1. **Review Interview Evidence:** Analyze multiple interview snapshots for patterns
 2. **Identify Customer Need Patterns:** Look for recurring themes across different customers
 3. **Frame as Opportunities:** Express patterns as "How might we..." statements
@@ -54,11 +86,16 @@ Before documenting, ask:
 **Customer A:** [Brief story showing this need]
 **Customer B:** [Different customer, same underlying need]
 **Customer C:** [Third example with additional context]
+**Customer D:** [Additional example]
+*[Include ALL stories that support this opportunity - don't limit to 2-3]*
 
 ### Customer Quotes
 > "[Direct quote illustrating the need]" - Customer A
 > 
 > "[Another quote showing impact]" - Customer B
+> 
+> "[Additional quote]" - Customer C
+*[Include ALL relevant quotes - more evidence strengthens the opportunity]*
 
 ## Current State Analysis
 
@@ -142,9 +179,10 @@ If we address this opportunity, we would expect to see:
 
 ## Quality Checklist
 Before saving, verify:
-- [ ] Backed by evidence from multiple customers (3+ stories)
+- [ ] Backed by evidence from multiple customers - include **ALL** supporting stories (not just 3+)
 - [ ] Framed as customer need, not solution
 - [ ] Clear connection to business outcomes
 - [ ] Specific enough to guide solution generation
 - [ ] Current customer workarounds documented
 - [ ] Success metrics identified
+- [ ] All relevant customer evidence included - completeness is key

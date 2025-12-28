@@ -1,8 +1,9 @@
-
 # Jobs-to-be-Done (JTBD) for Product Discovery
 
 ## Goal
 Understand the progress customers seek in specific situations (jobs), along with the forces and desired outcomes, so solutions remain customer-centric, technology-agnostic, and testable.
+
+> **Before using this framework:** Braindump first! What do you think customers are trying to accomplish? What does your product sense tell you? What feels like the real job? Then use this framework to structure your thinking.
 
 ## Output
 - **Format:** Markdown (`.md`)

@@ -1,7 +1,32 @@
 # Creating Interview Snapshots (Continuous Discovery Habits)
 
 ## Goal
-Guide an AI assistant in extracting meaningful insights from qualitative interviews or user research sessions, creating structured snapshots that capture specific customer stories, behaviors, and needs following the Continuous Discovery Habits methodology.
+Create structured snapshots that capture **ALL** specific customer stories, behaviors, and needs from qualitative interviews or user research sessions, following the Continuous Discovery Habits methodology.
+
+**If using with AI:** The AI's role is to help you think and structure your thoughts, not to think for you. Always braindump first (see section below).
+
+> **Important:** Capture **ALL** stories and insights from the interview, not just 2-3. Every story matters. The "2-3" in quality checklists refers to a minimum, not a limit.
+
+## Before You Start: Braindump & Product Sense
+
+**STOP. Don't just copy-paste this into AI. Think first.**
+
+Before creating the interview snapshot, take 5-10 minutes to braindump your thoughts:
+
+**Braindumping prompts:**
+- What do you remember from this interview? Dump everything - don't structure yet.
+- What stories stood out? What felt important?
+- What surprised you? What confirmed your assumptions?
+- What does your product sense tell you? What feels significant?
+- What biases might affect how you interpret this? (Confirmation bias? Recency bias?)
+
+**Product sense exercise:**
+- If you had to explain this interview in 2 minutes, what would you say?
+- What would make you say "this interview revealed something important"?
+- What would make you say "this interview didn't reveal much"?
+- What does your gut tell you about the key insights?
+
+**Then proceed** to create the structured snapshot using the framework below.
 
 ## Output
 - **Format:** Markdown (`.md`)
@@ -9,7 +34,17 @@ Guide an AI assistant in extracting meaningful insights from qualitative intervi
 - **Filename:** `snapshot-[participant-identifier]-[YYYY-MM-DD].md`
 
 ## Process
+
+**IMPORTANT:** If you're using this with an AI assistant, your role is to help the user think, not to think for them.
+
+**Step 0: Help User Braindump First**
+- Ask the user to braindump their thoughts about the interview (see "Before You Start" section above)
+- Quiz them: "What do you remember? What stood out? What surprised you?"
+- Help them use their product sense: "What does your gut tell you? What feels important?"
+- Only after they've thought through it, proceed to process the interview data
+
 0. **Follow the rules:** Start by telling me your plan for approaching this task in a way that is optimized to uphold these guidelines above all, and eliminates any chance of violating them. Make sure it includes a final phase of verifying every single quote, and fixing any violations, repeating this until there are no violations. 
+
 1. **Parse Interview Data:** Process transcript, notes, or session recordings
 2. **Identify Session Type:** Categorize as discovery interview, usability test, feedback session, etc.
 3. **Extract Customer Stories:** Focus on specific behavioral instances, not generalizations
@@ -96,10 +131,11 @@ Guide an AI assistant in extracting meaningful insights from qualitative intervi
 
 ## Quality Checklist
 Before saving, verify:
-- [ ] At least 2-3 specific stories captured with full context
+- [ ] **ALL** specific stories captured with full context (not just 2-3 - capture everything)
 - [ ] Clear distinction between what they said vs. what they did
 - [ ] Underlying needs identified, not just surface complaints
 - [ ] Direct quotes captured to support insights
 - [ ] Behavioral patterns noted, not just preferences
 - [ ] Tagged appropriately for future synthesis
+- [ ] No stories or insights left out - completeness is key
 ```

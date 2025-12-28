@@ -4,12 +4,31 @@
 
 This guide provides principles and best practices for conducting effective customer discovery interviews, heavily inspired by Teresa Torres' Continuous Discovery Habits methodology. Use this as a reference before, during, and after interviews to ensure high-quality research outcomes.
 
+> **Before using this guide:** Braindump first! What do you think you know about customers? What are your assumptions? What does your product sense tell you? Then use this guide to structure your interview approach.
+
 ## How This Fits in the System
 
 - **01-Company-Context/** – Strategic foundation and company context.  
 - **02-Methods-and-Tools/** – Frameworks and methods (this interview guide lives under `2.3-Discovery/2.3.1-Research-Interviews/`).  
 - **03-Research-Artifacts/** – Archive for interview notes, synthesis docs, and research findings.  
 - **04-Initiatives/** – Active initiatives and opportunity assessments that link to your research.
+
+## Before Conducting Interviews: Braindump & Product Sense
+
+**Before preparing your interview questions, take 10-15 minutes to braindump:**
+
+- What do you think you know about customers? Dump all assumptions.
+- What does your product sense tell you? What feels off or interesting?
+- What biases might affect your interviews? (Confirmation bias? Solution bias?)
+- What would great product sense notice? What would an experienced PM see?
+- What questions does your gut tell you to ask?
+
+**Product sense exercise:**
+- If you had to interview ONE customer and learn everything important, what would you ask?
+- What would make you say "this interview is obviously going wrong"?
+- What would make you say "this interview is obviously going well"?
+
+**Then use this guide** to structure your approach and avoid common pitfalls.
 
 ## Core Principles
 
