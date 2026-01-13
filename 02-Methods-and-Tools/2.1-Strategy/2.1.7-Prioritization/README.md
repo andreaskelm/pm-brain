@@ -28,7 +28,7 @@ This framework helps product teams make systematic decisions about what to build
 Read `1-prioritization-framework.md` to understand prioritization methods and when to use each
 
 ### Step 2: Choose Your Method
-Select RICE, ICE, Effort-Impact, or Value-Complexity based on your context
+Select RICE, ICE, Effort-Impact, or Value-Complexity based on your context. For categorical prioritization (Must/Should/Could/Won't), see MoSCoW Prioritization: `../2.1.8-MoSCoW-Prioritization/README.md`
 
 ### Step 3: Use Template
 Start with templates from `2-prioritization-template.md` to score and rank initiatives
@@ -69,6 +69,7 @@ After prioritizing, reflect:
 - OKR Framework: `../2.1.2-OKR/README.md`
 - Roadmap: `../2.1.3-Roadmap/README.md`
 - North Star: `../2.1.6-North-Star/README.md`
+- MoSCoW Prioritization: `../2.1.8-MoSCoW-Prioritization/README.md`
 - Opportunity Assessment: `../../2.3-Discovery/2.3.4-Opportunity-Assessment/README.md`
 - Self-Reflection: `../../2.9-Other/2.9.2-Self-Reflection/README.md`
 

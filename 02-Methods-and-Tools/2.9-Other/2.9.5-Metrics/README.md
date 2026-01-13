@@ -60,6 +60,7 @@ Regularly review metrics and refine based on learnings
 
 ## Links
 - North Star: `../../2.1-Strategy/2.1.6-North-Star/README.md`
+- AARRR Pirate Metrics: `../2.9.7-AARRR-Pirate-Metrics/README.md`
 - OKR Framework: `../../2.1-Strategy/2.1.2-OKR/README.md`
 - Roadmap: `../../2.1-Strategy/2.1.3-Roadmap/README.md`
 - Self-Reflection: `../2.9.2-Self-Reflection/README.md`

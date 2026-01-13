@@ -54,6 +54,23 @@ This repository builds on frameworks and methods from product management thought
 - **Note:** Combines principles from cognitive science and instructional design
 - **Related:** Works by David Sousa, Eric Jensen on brain-based learning
 
+### MoSCoW Prioritization
+- **Source:** DSDM (Dynamic Systems Development Method)
+- **Resource:** [DSDM Consortium](https://www.agilebusiness.org/)
+- **Note:** MoSCoW (Must have, Should have, Could have, Won't have) is a prioritization technique from the DSDM agile framework
+
+### Kano Model
+- **Source:** Noriaki Kano (1980s)
+- **Resource:** [Kano Model - Wikipedia](https://en.wikipedia.org/wiki/Kano_model)
+- **Paper:** "Attractive Quality and Must-Be Quality" (1984)
+- **Note:** Revolutionary framework showing customer satisfaction is emotional, not linear
+
+### AARRR Pirate Metrics
+- **Source:** Dave McClure, 500 Startups
+- **Resource:** [Startup Metrics for Pirates](https://500hats.typepad.com/500blogs/2007/06/startup-metrics.html)
+- **Support:** [500 Startups](https://500.co/)
+- **Note:** Growth framework measuring Acquisition, Activation, Retention, Revenue, Referral
+
 ---
 
 ## Support the Creators

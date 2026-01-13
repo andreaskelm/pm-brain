@@ -17,6 +17,12 @@ This domain collects supporting methods that cut across strategy, discovery, del
 - **2.9.5-Metrics**  
   Framework for distinguishing between meaningful and misleading metrics. Use this to ensure you measure what actually drives product and business forward.
 
+- **2.9.6-Kano-Model**  
+  Framework for classifying features by customer satisfaction impact (Basic Needs, Performance Needs, Delight Needs). Use this for feature prioritization and understanding user expectations.
+
+- **2.9.7-AARRR-Pirate-Metrics**  
+  Growth funnel framework (Acquisition, Activation, Retention, Revenue, Referral). Use this to measure product growth and identify funnel
+
 As you develop additional cross-cutting methods that don't fit neatly into Strategy, Communication, or Discovery, you can add new `2.9.x-*` folders here.
 
 

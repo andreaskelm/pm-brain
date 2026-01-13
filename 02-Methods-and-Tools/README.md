@@ -22,8 +22,10 @@ Content here is organized primarily by **domain** (Strategy, Communication, Disc
 │   ├── 2.1.3-Roadmap/
 │   ├── 2.1.4-PRD/
 │   ├── 2.1.5-Personas/
-│   ├── 2.1.6-North-Star/        # (placeholder)
-│   └── 2.1.7-Prioritization/    # (placeholder)
+│   ├── 2.1.6-North-Star/
+│   ├── 2.1.7-Prioritization/
+│   ├── 2.1.8-MoSCoW-Prioritization/
+│   └── 2.1.9-Kano-Model/
 ├── 2.2-Communication/       # Stakeholder comms, courses, formats
 │   ├── 2.2.1-Newsletter/
 │   ├── 2.2.2-Meeting-Agendas/
@@ -39,13 +41,15 @@ Content here is organized primarily by **domain** (Strategy, Communication, Disc
 │   ├── 2.3.3-Jobs-To-Be-Done/
 │   ├── 2.3.4-Opportunity-Assessment/
 │   ├── 2.3.5-Idea-Validation/
-│   └── 2.3.6-Problem-Solution-Space/
+│   ├── 2.3.6-Problem-Solution-Space/
+│   └── 2.3.7-Product-Market-Fit/
 └── 2.9-Other/               # Supporting methods & mental models
     ├── 2.9.1-Mental-Models/
     ├── 2.9.2-Self-Reflection/
     ├── 2.9.3-Daily-Execution-And-Rituals/
     ├── 2.9.4-Bias/
-    └── 2.9.5-Metrics/
+    ├── 2.9.5-Metrics/
+    └── 2.9.7-AARRR-Pirate-Metrics/
 ```
 
 Inside each numbered framework folder (e.g. `2.3.2-Continuous-Discovery-Habits/`), files are usually numbered:
@@ -63,9 +67,9 @@ Inside each numbered framework folder (e.g. `2.3.2-Continuous-Discovery-Habits/`
 - **2.2-Communication/** – When you need to **communicate or train**:  
   - Stakeholder newsletters, courses, (future) crisis comms, one-pagers, formats.
 - **2.3-Discovery/** – When you need to **learn from customers or validate ideas**:  
-  - Research interviews, continuous discovery habits, JTBD, idea validation.
+  - Research interviews, continuous discovery habits, JTBD, idea validation, product-market fit assessment.
 - **2.9-Other/** – When you need **supporting tools and mental models**:  
-  - Decision-making models and other cross-cutting methods.
+  - Metrics frameworks (AARRR, general metrics), mental models, bias awareness, self-reflection.
 
 ---
 
@@ -100,10 +104,10 @@ Act as a product management coach. We'll work iteratively and challenge assumpti
 - Ask me to braindump: "What are you trying to do right now? Dump all your thoughts, concerns, and ideas - don't worry about structure yet."
 - Based on my braindump, ask clarifying questions to understand my context and challenge my assumptions.
 - Propose 1–3 starting points under `02-Methods-and-Tools/` using this structure:
-  - 2.1-Strategy (2.1.1-Product-Strategy, 2.1.2-OKR, 2.1.3-Roadmap, 2.1.4-PRD, 2.1.5-Personas, 2.1.6-North-Star, 2.1.7-Prioritization)
+  - 2.1-Strategy (2.1.1-Product-Strategy, 2.1.2-OKR, 2.1.3-Roadmap, 2.1.4-PRD, 2.1.5-Personas, 2.1.6-North-Star, 2.1.7-Prioritization, 2.1.8-MoSCoW-Prioritization, 2.1.9-Kano-Model)
   - 2.2-Communication (2.2.1-Newsletter, 2.2.2-Meeting-Agendas, 2.2.3-One-Pagers, 2.2.4-Crisis-Management, 2.2.5-Escalation, 2.2.6-Saying-No, 2.2.7-Stakeholder-Management, 2.2.9-Courses)
-  - 2.3-Discovery (2.3.1-Research-Interviews, 2.3.2-Continuous-Discovery-Habits, 2.3.3-Jobs-To-Be-Done, 2.3.4-Opportunity-Assessment, 2.3.5-Idea-Validation, 2.3.6-Problem-Solution-Space)
-  - 2.9-Other (2.9.1-Mental-Models, 2.9.2-Self-Reflection, 2.9.3-Daily-Execution-And-Rituals, 2.9.4-Bias, 2.9.5-Metrics)
+  - 2.3-Discovery (2.3.1-Research-Interviews, 2.3.2-Continuous-Discovery-Habits, 2.3.3-Jobs-To-Be-Done, 2.3.4-Opportunity-Assessment, 2.3.5-Idea-Validation, 2.3.6-Problem-Solution-Space, 2.3.7-Product-Market-Fit)
+  - 2.9-Other (2.9.1-Mental-Models, 2.9.2-Self-Reflection, 2.9.3-Daily-Execution-And-Rituals, 2.9.4-Bias, 2.9.5-Metrics, 2.9.7-AARRR-Pirate-Metrics)
 
 2) For the chosen starting framework:
 - DON'T just ask me to paste notes. Instead, quiz me: "Before looking at your notes, tell me what you know about [topic]. What's your gut feeling? What assumptions are you making?"

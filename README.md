@@ -10,7 +10,7 @@ A living knowledge base that bridges the gap between Product Management framewor
 
 🚀 **Get started:** clone the repo → add your context → start shipping
 
-**Quick links:** [Quick Start](#-how-to-get-started) · [What's Inside](#-whats-inside) · [Structure](#-system-structure-philosophy) · [Daily Workflow](#-daily-workflow)
+**Quick links:** [Setup Guide](./SETUP.md) · [Quick Start](#-how-to-get-started) · [What's Inside](#-whats-inside) · [Structure](#-system-structure-philosophy) · [Daily Workflow](#-daily-workflow)
 
 ## 📦 What's Inside
 
@@ -29,6 +29,8 @@ A living knowledge base that bridges the gap between Product Management framewor
 ---
 
 ## 🚀 How to Get Started
+
+> **New to this repository?** Start with [`SETUP.md`](./SETUP.md) for detailed setup instructions, including how to customize Company Context, configure AI tools, and get started with your first framework.
 
 ### Option 1: Manual (Copy-Paste into AI Tools)
 
@@ -125,74 +127,14 @@ The frameworks follow a natural product development flow:
 **2. Define** (`2.3.3-Jobs-To-Be-Done/`) → Frame problems as jobs and opportunities
 
 **3. Assess** (`2.3.4-Opportunity-Assessment/`) → Document and assess opportunities
+
 **4. Decide** (`2.3.5-Idea-Validation/`) → Generate solutions and validate assumptions
 
 **5. Deliver** (`2.1.4-PRD/`) → Write requirements and build
 
 **6. Launch & Learn** (`2.1.2-OKR/` and `2.1.3-Roadmap/`) → Measure outcomes and iterate
 
----
-
-## 📂 What's Inside `02-Methods-and-Tools/`
-
-Content is organized by **domain** and **numbered frameworks**:
-
-```text
-02-Methods-and-Tools/
-├── 2.1-Strategy/            # Strategy, OKRs, roadmaps, PRDs, personas
-│   ├── 2.1.1-Product-Strategy/
-│   ├── 2.1.2-OKR/
-│   ├── 2.1.3-Roadmap/
-│   ├── 2.1.4-PRD/
-│   ├── 2.1.5-Personas/
-│   ├── 2.1.6-North-Star/        (placeholder)
-│   └── 2.1.7-Prioritization/    (placeholder)
-├── 2.2-Communication/       # Newsletters, stakeholder comms, courses
-│   ├── 2.2.1-Newsletter/
-│   ├── 2.2.2-Meeting-Agendas/   (placeholder)
-│   ├── 2.2.3-One-Pagers/        (placeholder)
-│   ├── 2.2.4-Crisis-Management/ (placeholder)
-│   └── 2.2.9-Courses/
-├── 2.3-Discovery/           # Continuous discovery, JTBD, validation
-│   ├── 2.3.1-Research-Interviews/
-│   ├── 2.3.2-Continuous-Discovery-Habits/
-│   ├── 2.3.3-Jobs-To-Be-Done/
-│   ├── 2.3.4-Opportunity-Assessment/
-│   └── 2.3.5-Idea-Validation/
-└── 2.9-Other/               # Mental models and supporting methods
-    └── 2.9.1-Mental-Models/
-```
-
-**Key examples:**
-- Product strategy: `2.1-Strategy/2.1.1-Product-Strategy/`
-- OKRs: `2.1-Strategy/2.1.2-OKR/`
-- PRDs: `2.1-Strategy/2.1.4-PRD/`
-- Research interviews: `2.3-Discovery/2.3.1-Research-Interviews/`
-- Continuous discovery: `2.3-Discovery/2.3.2-Continuous-Discovery-Habits/`
-- Jobs-to-be-Done: `2.3-Discovery/2.3.3-Jobs-To-Be-Done/`
-- Opportunity assessment: `2.3-Discovery/2.3.4-Opportunity-Assessment/`
-- Idea validation: `2.3-Discovery/2.3.5-Idea-Validation/`
-
 See `02-Methods-and-Tools/README.md` for complete navigation guide.
-
----
-
-## 🎓 Who This Is For
-
-**Junior PMs (APMs, Associate PMs)**
-- Actionable steps: actual interview guides, templates, checklists
-- Process reminders: step-by-step guides for planning, discovery, delivery
-- Clear escalation paths: when to involve senior PMs or leadership
-
-**Mid-Level PMs**
-- Framework reference: prioritization models, strategy frameworks, discovery patterns
-- Template library: PRDs, one-pagers, communication templates
-- Stakeholder patterns: managing expectations, saying no, aligning teams
-
-**Senior PMs & Leads**
-- Onboarding accelerator: point new hires at this system instead of repeating yourself
-- Team alignment: shared language, artifacts, and guides
-- Knowledge preservation: your team's operating system doesn't leave when someone does
 
 ---
 
@@ -214,21 +156,6 @@ See `02-Methods-and-Tools/README.md` for complete navigation guide.
 1. Go to relevant framework in `02-Methods-and-Tools/` (e.g., `2.2.4-Crisis-Management/`)
 2. Use connected guides and templates to respond quickly
 3. Log learnings in framework guides to improve the system
-
----
-
-## 🔧 Maintenance
-
-**Living document principle:**
-- Update when you use it: spot gaps → fix them
-- Let git be the changelog: clear commit messages
-- Prefer improvements over TODOs: make the change or log it in backlog
-
-**Review cadence:**
-- **Weekly**: Update initiatives and progress
-- **Monthly**: Review frameworks and templates you touched
-- **Quarterly**: Revisit company context (strategy, roadmap, OKRs)
-- **Annually**: Cleanup folder structure and archive stale experiments
 
 ---
 
@@ -256,7 +183,7 @@ When contributing:
 
 ## 📚 Credits & Attributions
 
-This repository builds on frameworks from product management thought leaders. See [`CREDITS.md`](./CREDITS.md) for full attributions and ways to support the original creators.
+This repository builds on frameworks from product management thought leaders. See [CREDITS](./CREDITS.md) for full attributions and ways to support the original creators.
 
 ---
 
@@ -266,4 +193,4 @@ This work is licensed under CC BY-NC-SA 4.0.
 
 Copyright © 2025 Andreas Kelm. You may view, use, modify, and share this repo with attribution for non-commercial purposes. Commercial sale is not permitted, but you may use it internally for work and business.
 
-Full license: https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode
+See [`LICENSE`](./LICENSE) for full terms, or view the [Creative Commons legal code](https://creativecommons.org/licenses/by-nc-sa/4.0/legalcode)
