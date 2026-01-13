@@ -115,15 +115,15 @@ If you're using **Cursor** (or similar AI-powered IDE), the repository includes 
 #### Location: `.cursor/rules/`
 
 **Files:**
-- `AGENTS.md` (root) - Main agent instructions (source of truth, already configured)
-- `.cursor/rules/AGENTS.md` - Cursor-specific agent rules (should match root `AGENTS.md`)
+- `AGENTS.md` (root) - PM Brain Assistant instructions (source of truth, already configured)
+- `.cursor/rules/AGENTS.template.md` - Template/guide for creating custom agents (separate from root `AGENTS.md`)
 - `thinking.mdc` - High-level thinking support rules
 - `thinking.personal.mdc` - Personal context (you can customize this)
 
 **What to do:**
-1. **Review** `AGENTS.md` (root) - Understand how the AI assistant is configured
-2. **If using Cursor:** Ensure `.cursor/rules/AGENTS.md` has the same content (or copy from root)
-3. **Customize** `.cursor/rules/thinking.personal.mdc` - Add your personal context, preferences, working style
+1. **Review** `AGENTS.md` (root) - Understand how the PM Brain Assistant is configured
+2. **Customize** `.cursor/rules/thinking.personal.mdc` - Add your personal context, preferences, working style
+3. **Optional:** Use `AGENTS.template.md` to create additional custom agents if needed
 4. **Optional:** Add company-specific rules if needed
 
 **Example personal context to add:**
@@ -218,7 +218,7 @@ Create your first initiative folder to see how the system works:
 If you're using **Cursor**:
 
 1. **Open the repository** in Cursor
-2. **The AI already knows** about the repository structure (via `.cursor/rules/AGENTS.md` or root `AGENTS.md`)
+2. **The AI already knows** about the repository structure (via root `AGENTS.md` which defines the PM Brain Assistant)
 3. **Ask questions like:**
    - "How do I write a PRD?"
    - "Help me create an opportunity assessment"
@@ -323,7 +323,7 @@ Once you're set up:
 ## 📚 Additional Resources
 
 - **Main README:** `README.md` - Overview and philosophy
-- **Agent Configuration:** `AGENTS.md` (root) - Main agent instructions. If using Cursor, ensure `.cursor/rules/AGENTS.md` matches
+- **Agent Configuration:** `AGENTS.md` (root) - PM Brain Assistant instructions. Use `.cursor/rules/AGENTS.template.md` to create additional custom agents if needed
 - **Framework Navigation:** `02-Methods-and-Tools/README.md` - Find the right framework
 - **Credits:** `CREDITS.md` - Attribution for frameworks and methods
 
@@ -350,7 +350,7 @@ Once you're set up:
 ### "The AI assistant doesn't understand my question"
 
 - Make sure you're in the repository directory
-- Check that `AGENTS.md` (root) or `.cursor/rules/AGENTS.md` exists
+- Check that `AGENTS.md` (root) exists (this defines the PM Brain Assistant)
 - Try rephrasing your question more specifically
 
 ### "I'm overwhelmed by all the files"
