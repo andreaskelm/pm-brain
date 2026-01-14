@@ -4,6 +4,24 @@
 
 This framework helps PMs decline requests gracefully without burning bridges. Saying no is a critical skill in large organizations where requests often exceed capacity.
 
+Most PMs quietly believe that saying yes to everything = faster promotion.  
+In reality, saying yes to everything = drowning in email, endless meetings, and zero roadmap progress.
+
+The best days as a PM are when you actually move the product forward.  
+The worst days are when you just… respond to things.
+
+Saying "no" feels risky. You worry about:
+- Damaging relationships with executives and stakeholders
+- Looking uncooperative or “not a team player”
+- Missing a career-defining opportunity
+
+So you say yes to everything. And your roadmap slowly dies.
+
+The mindset shift:
+- "No" isn't rejection — it's prioritization.
+- Prioritization is literally your job.
+- The PMs who get promoted aren't the ones who say yes to everything, but the ones who **protect the roadmap** and make trade-offs explicit.
+
 -----
 
 ## Saying No Gracefully Guide

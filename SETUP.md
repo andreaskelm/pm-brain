@@ -7,6 +7,7 @@
 - [ ] Clone or fork the repository
 - [ ] Read this SETUP guide
 - [ ] Review the main README.md
+- [ ] Read [GUIDELINES.md](./GUIDELINES.md) for best practices
 - [ ] Customize Company Context (Priority 1)
 - [ ] Review AI/Agent configuration (if using Cursor or similar)
 - [ ] Try your first framework
@@ -323,6 +324,7 @@ Once you're set up:
 ## 📚 Additional Resources
 
 - **Main README:** `README.md` - Overview and philosophy
+- **Guidelines:** `GUIDELINES.md` - Best practices for using and maintaining your PM brain (linking to external sources, collaboration, etc.)
 - **Agent Configuration:** `AGENTS.md` (root) - PM Brain Assistant instructions. Use `.cursor/rules/AGENTS.template.md` to create additional custom agents if needed
 - **Framework Navigation:** `02-Methods-and-Tools/README.md` - Find the right framework
 - **Credits:** `CREDITS.md` - Attribution for frameworks and methods

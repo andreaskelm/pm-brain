@@ -10,7 +10,7 @@ A living knowledge base that bridges the gap between Product Management framewor
 
 🚀 **Get started:** clone the repo → add your context → start shipping
 
-**Quick links:** [Setup Guide](./SETUP.md) · [Quick Start](#-how-to-get-started) · [What's Inside](#-whats-inside) · [Structure](#-system-structure-philosophy) · [Daily Workflow](#-daily-workflow)
+**Quick links:** [Setup Guide](./SETUP.md) · [Guidelines](./GUIDELINES.md) · [Quick Start](#-how-to-get-started) · [What's Inside](#-whats-inside) · [Structure](#-system-structure-philosophy) · [Daily Workflow](#-daily-workflow)
 
 ## 📦 What's Inside
 
@@ -91,6 +91,8 @@ A living knowledge base that bridges the gap between Product Management framewor
 ## 🏗️ System Structure Philosophy
 
 This is a **PM brain-as-code**, not a random notes folder. The directories represent different **types of work** and **layers of your product system**, not a rigid sequential process.
+
+> **📖 Want to know more about how to use this system?** See [`GUIDELINES.md`](./GUIDELINES.md) for best practices on linking to external sources, collaboration, and maintaining your PM brain.
 
 ### Four Core Layers
 
@@ -184,6 +186,10 @@ When contributing:
 ## 📚 Credits & Attributions
 
 This repository builds on frameworks from product management thought leaders. See [CREDITS](./CREDITS.md) for full attributions and ways to support the original creators.
+
+**Related documentation:**
+- [Setup Guide](./SETUP.md) - Detailed setup instructions
+- [Guidelines](./GUIDELINES.md) - Best practices for using and maintaining your PM brain
 
 ---
 
