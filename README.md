@@ -124,17 +124,17 @@ The frameworks follow a natural product development flow:
 
 **0. Early Thinking** (`04-Initiatives/`) → Capture ideas and hypotheses
 
-**1. Discover** (`2.3-Discovery/`) → Interview users, observe behavior, collect stories
+**1. Discover** (`2.2-Discovery/`) → Interview users, observe behavior, collect stories
 
-**2. Define** (`2.3.3-Jobs-To-Be-Done/`) → Frame problems as jobs and opportunities
+**2. Define** (`2.2.3-Jobs-To-Be-Done/`) → Frame problems as jobs and opportunities
 
-**3. Assess** (`2.3.4-Opportunity-Assessment/`) → Document and assess opportunities
+**3. Assess** (`2.2.4-Opportunity-Assessment/`) → Document and assess opportunities
 
-**4. Decide** (`2.3.5-Idea-Validation/`) → Generate solutions and validate assumptions
+**4. Decide** (`2.2.5-Idea-Validation/`) → Generate solutions and validate assumptions
 
-**5. Deliver** (`2.1.4-PRD/`) → Write requirements and build
+**5. Deliver** (`2.3-Execution/2.3.4-PRD/`) → Write requirements and build
 
-**6. Launch & Learn** (`2.1.2-OKR/` and `2.1.3-Roadmap/`) → Measure outcomes and iterate
+**6. Launch & Learn** (`2.1-Strategy/2.1.2-Strategic-Execution/1-OKR/` and `2.1-Strategy/2.1.2-Strategic-Execution/2-Roadmap/`) → Measure outcomes and iterate
 
 See `02-Methods-and-Tools/README.md` for complete navigation guide.
 
@@ -155,7 +155,7 @@ See `02-Methods-and-Tools/README.md` for complete navigation guide.
 4. Keep `01-Company-Context/` updated for newcomers
 
 **Crisis or Time Pressure:**
-1. Go to relevant framework in `02-Methods-and-Tools/` (e.g., `2.2.4-Crisis-Management/`)
+1. Go to relevant framework in `02-Methods-and-Tools/` (e.g., `2.4-Communication/2.4.4-Crisis-Management/`)
 2. Use connected guides and templates to respond quickly
 3. Log learnings in framework guides to improve the system
 
