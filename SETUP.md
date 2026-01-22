@@ -157,9 +157,9 @@ If you're using **Cursor** (or similar AI-powered IDE), the repository includes 
 
 The templates in `02-Methods-and-Tools/` work as-is, but you can customize them for your workflows:
 
-- **PRD Template** (`2.1.4-PRD/2-prd-template.md`) - Add company-specific sections
-- **Meeting Agendas** (`2.2.2-Meeting-Agendas/`) - Add your team's standard agenda items
-- **One-Pagers** (`2.2.3-One-Pagers/`) - Customize for your communication style
+- **PRD Template** (`2.3-Execution/2.3.4-PRD/2-prd-template.md`) - Add company-specific sections
+- **Meeting Agendas** (`2.4-Communication/2.4.2-Meeting-Agendas/`) - Add your team's standard agenda items
+- **One-Pagers** (`2.4-Communication/2.4.3-One-Pagers/`) - Customize for your communication style
 
 **When to customize:**
 - Your team has specific requirements
@@ -178,15 +178,15 @@ The templates in `02-Methods-and-Tools/` work as-is, but you can customize them 
 
 ### Recommended First Framework: PRD
 
-1. **Navigate to:** `02-Methods-and-Tools/2.1-Strategy/2.1.4-PRD/`
+1. **Navigate to:** `02-Methods-and-Tools/2.3-Execution/2.3.4-PRD/`
 2. **Read:** `README.md` (overview)
 3. **Read:** `1-prd-framework.md` (how to think about PRDs)
 4. **Use:** `2-prd-template.md` (copy and fill out)
 
 **Or try:**
-- **OKRs:** `2.1.2-OKR/` - Great for goal-setting
-- **Opportunity Assessment:** `2.3.4-Opportunity-Assessment/` - For evaluating new ideas
-- **Meeting Agendas:** `2.2.2-Meeting-Agendas/` - For better meetings
+- **OKRs:** `2.1-Strategy/2.1.2-Strategic-Execution/1-OKR/` - Great for goal-setting
+- **Opportunity Assessment:** `2.2-Discovery/2.2.4-Opportunity-Assessment/` - For evaluating new ideas
+- **Meeting Agendas:** `2.4-Communication/2.4.2-Meeting-Agendas/` - For better meetings
 
 **Pro tip:** Use the "braindump first" approach mentioned in each framework. Don't jump straight to templates—think first, structure second.
 
@@ -220,7 +220,18 @@ If you're using **Cursor**:
 
 1. **Open the repository** in Cursor
 2. **The AI already knows** about the repository structure (via root `AGENTS.md` which defines the PM Brain Assistant)
-3. **Ask questions like:**
+3. **Use slash commands** for common workflows:
+   - `/start` - Launch a new initiative end-to-end
+   - `/review` - Review documentation for issues
+   - `/day` - Plan your day with PM rituals
+   - `/week` - Plan your week with strategic focus
+   - `/focus` - Get help when you're stuck or need focus
+   - `/unstuck` - Get unstuck from blockers
+   - `/navigate` - Find the right framework for your situation
+   - `/bias` - Check for cognitive biases in your thinking
+   
+   See `.cursor/commands/` for full command documentation.
+4. **Ask questions like:**
    - "How do I write a PRD?"
    - "Help me create an opportunity assessment"
    - "What framework should I use for [situation]?"
