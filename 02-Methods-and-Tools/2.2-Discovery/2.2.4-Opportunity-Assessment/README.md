@@ -1,5 +1,31 @@
 # Opportunity Assessment Framework
 
+## Before Using This Framework
+
+⚠️ **Don't jump straight to the template.**
+
+### 1. Read the Golden Rule
+
+**See:** [`/PRODUCT-SENSE-RULES.md`](../../../../PRODUCT-SENSE-RULES.md)
+
+### 2. Braindump First (15-20 min)
+
+**Use the prompts:** [`02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md`](../../../../02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md)
+
+Specifically, the "Before Writing a PRD" and "Before User Research" sections:
+- Who is this really for?
+- What job are they hiring this to do?
+- What assumptions am I making?
+- What evidence would change my mind?
+
+**Opportunity assessments organize hypotheses—they don't create insights.**
+
+### 3. Then Use This Framework
+
+After your braindump, use the templates to structure your assessment.
+
+---
+
 ## Introduction
 
 Use this framework to document early initiative thinking, capture hypotheses, and identify what needs validation before moving to execution. An opportunity assessment helps you structure your thinking, identify assumptions, and plan research before committing to build.

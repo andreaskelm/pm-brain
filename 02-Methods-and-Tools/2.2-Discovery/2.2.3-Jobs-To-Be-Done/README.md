@@ -18,15 +18,32 @@ Use this framework to understand the underlying jobs customers hire your product
 ## Files
 - `1-jobs-to-be-done.md` — Complete JTBD framework including interview techniques and job mapping
 
+## Before Using This Framework
+
+⚠️ **Don't jump straight to job statements.**
+
+### 1. Read the Golden Rule
+
+**See:** [`/PRODUCT-SENSE-RULES.md`](../../../../PRODUCT-SENSE-RULES.md)
+
+### 2. Braindump First (15 min)
+
+**Use the prompts:** [`02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md`](../../../../02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md)
+
+Specifically, the "Before Writing a PRD" section (User Understanding):
+- Who is this really for?
+- What are they currently doing instead? Why does that suck?
+- What's the job they're hiring this feature to do?
+
+**JTBD frameworks organize job understanding—they don't create empathy.**
+
+### 3. Then Use This Framework
+
+After your braindump, use JTBD to structure your understanding.
+
+---
+
 ## How to Use This Framework
-
-### Step 0: Braindump & Product Sense (Do this first!)
-
-**Before identifying jobs, braindump:**
-- What do you think customers are trying to accomplish? Dump all your thoughts.
-- What does your product sense tell you? What feels like the real job?
-- What biases might affect your view? (Feature bias? Solution bias?)
-- What would great product sense notice? What would an experienced PM see?
 
 **Product sense exercise:**
 - If you had to explain the customer's job in one sentence, what would it be?

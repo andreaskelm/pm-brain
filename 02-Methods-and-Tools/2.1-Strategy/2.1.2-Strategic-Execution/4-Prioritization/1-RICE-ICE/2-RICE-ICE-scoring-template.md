@@ -30,6 +30,24 @@ This prioritization reflects our current strategy and understanding. Priorities 
 |Dark mode |80,000 |1.0 |80% |2 |**32,000**|3 |Backlog |
 |AI recommendations |150,000|2.0 |50% |6 |**25,000**|4 |Backlog |
 
+---
+
+## 🧠 Product Sense Check (Use with Top Initiatives)
+
+For the few initiatives that actually drive your roadmap, run this **before** you treat the RICE score as truth. For each top item, consider adding a short entry to:
+
+- `00-Meta/prioritization-decision-log.md`
+
+Use these prompts:
+
+- Who specifically is this initiative for? (Name the real segment/persona.)
+- What job/pain/behavior are we really prioritizing, beyond the feature label?
+- What evidence do we have that this matters (stories + metrics)? Where is it weak?
+- What’s the opportunity cost of doing this now?
+- What could go catastrophically wrong if we are wrong on this bet? (Second-order effects.)
+
+Only then treat the score as one input into the decision, not the decision itself.
+
 -----
 
 ## 📊 Initiative Deep-Dive Template

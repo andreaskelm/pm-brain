@@ -111,6 +111,84 @@ pm-brain/
 └── 09-Personal-Context/       # 🧑 Personal notes (keep sensitive content in private fork)
 ```
 
+---
+
+## 🧠 Product Sense Development System
+
+**NEW: `00-Meta/` - Your PM growth engine**
+
+Before you can effectively use frameworks, you need to develop deep product thinking. The `00-Meta/` folder is your personal product sense training system.
+
+### The Golden Rule: Braindump Before Structure
+
+**Read first:** [`PRODUCT-SENSE-RULES.md`](./PRODUCT-SENSE-RULES.md)
+
+Before opening any template or framework:
+1. **Braindump your raw thinking** (10-15 min)
+2. **Use the prompts** in `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md`
+3. **Then** structure using frameworks from `02-Methods-and-Tools/`
+
+**Why this matters:** Frameworks organize thinking. They don't create it. Think deeply first, then structure.
+
+### 3-Layer Architecture
+
+```text
+Layer 1: How to Think (00-Meta/)
+   ↓
+Layer 2: How to Execute (02-Methods-and-Tools/)
+   ↓
+Layer 3: What You're Building (04-Initiatives/)
+```
+
+**Without Layer 1:** You're just filling out templates.  
+**With Layer 1:** You're developing deep product judgment.
+
+### What's in `00-Meta/`
+
+- **Daily Practice** (10 min): Exercises to build product intuition
+- **Monthly Assessment** (30 min): Track your growth trajectory
+- **Learning Log**: Weekly reflections and monthly syntheses
+- **Growth Portfolio**: Evidence for 1:1s and performance reviews
+
+### Quick Start with Product Sense
+
+**Choose your mode (public/private/team):**
+```bash
+# Run interactive setup
+bash 00-Meta/SETUP.sh
+# Select mode: public (default), private, or team
+
+# Or read mode guide first
+cat 00-Meta/MODE-SELECTION-GUIDE.md
+```
+
+**Modes:**
+- **🌍 Public** (default): Everything tracked (great for portfolios)
+- **🔒 Private**: Only frameworks tracked (personal learning)
+- **👥 Team**: Share frameworks, keep logs private
+
+**5-minute setup:**
+```bash
+# Read the golden rule
+cat PRODUCT-SENSE-RULES.md
+
+# Start your daily log (copy the canonical template)
+cp 02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/templates/daily-log-template.md 00-Meta/1-daily-log-2026-Q1.md
+
+# Do one 10-min exercise
+# Open: 02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/templates/1-daily-practice-exercises.md
+```
+
+**Daily workflow:**
+- Morning: Remember to braindump before using frameworks
+- During day: Log significant decisions
+- End of day: 5-min daily log update
+- Sunday evening: 30-min weekly reflection
+
+**See [`00-Meta/README.md`](./00-Meta/README.md) for complete guide.**
+
+---
+
 ## 🔄 Daily Workflow
 
 1. **Reference** `01-Company-Context/` for strategic direction and company information.
@@ -166,7 +244,13 @@ See `02-Methods-and-Tools/README.md` for complete navigation guide.
 Two ways to use this:
 
 1. **Fork privately** (recommended for real company context)
+   - Run `bash 00-Meta/SETUP.sh` after forking
+   - Choose **Private** or **Team** mode to keep your content private
+   - See [`00-Meta/MODE-SELECTION-GUIDE.md`](./00-Meta/MODE-SELECTION-GUIDE.md) for details
+   
 2. **Contribute improvements** to public template (generic frameworks, guides, patterns)
+   - Keep this repo in **Public** mode (default)
+   - Share sanitized learnings and framework improvements
 
 When contributing:
 1. Follow established folder and naming conventions

@@ -2,12 +2,32 @@
 
 This domain contains methods for understanding customers, framing opportunities, and validating ideas.
 
-**Before using any discovery framework:**
-1. **Braindump first** – What do you think you know? What are your assumptions? Dump everything.
-2. **Check your biases** – What biases might be affecting your view? Confirmation bias? Solution bias?
-3. **Use product sense** – What does your intuition tell you? What feels off or interesting?
-4. **Think critically** – Challenge your assumptions. What evidence do you actually have?
-5. **Reflect** – After discovery, reflect on what surprised you and how your thinking changed
+## Before Using Any Discovery Framework
+
+⚠️ **Don't jump straight to research plans.**
+
+### 1. Read the Golden Rule
+
+**See:** [`/PRODUCT-SENSE-RULES.md`](../../../PRODUCT-SENSE-RULES.md)
+
+### 2. Braindump First (10-15 min)
+
+**Use the prompts:** [`02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md`](../../../02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md)
+
+Specifically, the "Before User Research / Discovery" section:
+- What assumption, if wrong, would completely change our plans?
+- What am I hoping NOT to hear? (Red flag - investigate this)
+- What evidence would change my mind?
+
+**Discovery frameworks guide your learning—they don't replace thinking.**
+
+### 3. Then Use Discovery Frameworks
+
+After your braindump, use the frameworks below to structure your research.
+
+---
+
+## Discovery Frameworks
 
 - **2.2.1-Research-Interviews**  
   Interview guide and best practices. Use this before and during interviews to avoid bias, ask better questions, and capture richer stories.

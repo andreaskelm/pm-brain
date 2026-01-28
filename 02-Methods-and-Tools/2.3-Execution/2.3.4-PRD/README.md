@@ -57,29 +57,37 @@ Use this framework and template to create product requirements documents that br
 - `2-prd-template.md` — Standard PRD template with sections for context, requirements, and success metrics
 - `3-prd-jtbd-template.md` — Jobs-to-Be-Done focused PRD template for job-centered product work
 
+## Before Using This Framework
+
+⚠️ **Don't jump straight to templates.**
+
+### 1. Read the Golden Rule
+
+**See:** [`/PRODUCT-SENSE-RULES.md`](../../../../PRODUCT-SENSE-RULES.md)
+
+**The rule:** Braindump before structure. Frameworks organize thinking—they don't create it.
+
+### 2. Braindump First (15-20 min)
+
+**Use the prompts:** [`02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md`](../../../../02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md)
+
+Specifically, the "Before Writing a PRD" section:
+- Who is this really for? (actual human, not persona)
+- What job are they hiring this feature to do?
+- Why hasn't this been solved already?
+- What assumptions am I making?
+- What could go catastrophically wrong?
+- Why this, why now?
+
+**Don't organize yet. Just think deeply and honestly.**
+
+### 3. Then Use This Framework
+
+After your braindump, use the PRD template to organize your thinking.
+
+---
+
 ## How to use
-
-### Step 0: Braindump & Think First (Critical!)
-
-**Before opening any template, braindump for 20-30 minutes:**
-
-**Braindumping prompts:**
-- What problem are we solving? Dump everything you know - don't structure yet.
-- Who is this for? What do they need? What's your gut feeling?
-- What does your product sense tell you? What feels right or wrong about this?
-- What assumptions are you making? List them with confidence levels.
-- What would great product sense look like here? What would an experienced PM notice?
-
-**Critical thinking questions:**
-- What biases might be affecting your view? (Solution bias? Confirmation bias? Sunk cost?)
-- What evidence do you actually have vs. what you assume?
-- What would make this obviously wrong? What would make it obviously right?
-- If you had to explain this to a skeptical stakeholder in 2 minutes, what would you say?
-
-**Product sense exercise:**
-- If you had to ship this in 1 week with no PRD, what would you build? Why?
-- What's the smallest thing that could work? What's the riskiest assumption?
-- What would make you say "this is obviously the wrong thing to build"?
 
 ### Step 1: Review Framework
 Review the framework in `1-prd-framework.md` to understand PRD principles and when to use them

@@ -1,1 +1,48 @@
+# ============================================
+# PM-Brain: Public Mode (Default)
+# ============================================
+# This repo is configured for FULLY PUBLIC use - ideal for:
+# - Building a public learning portfolio
+# - Sharing your growth journey openly
+# - Creating content for blogs or portfolios
+# - Open source contribution
+#
+# Everything is tracked and visible:
+# - Daily learning logs
+# - Weekly/monthly reflections  
+# - Growth portfolio
+# - Self-assessments
+# - All learning artifacts
+# - Company context (sanitize sensitive data)
+# - Research and active work
+#
+# ============================================
+# SWITCHING MODES
+# ============================================
+# To switch to PRIVATE mode (personal learning only):
+#   Option 1 (Interactive): bash 00-Meta/SETUP.sh
+#   Option 2 (Manual): cat .gitignore.private >> .gitignore
+#
+# To switch to TEAM mode (share templates, keep personal logs private):
+#   Option 1 (Interactive): bash 00-Meta/SETUP.sh
+#   Option 2 (Manual): cat .gitignore.team >> .gitignore
+#
+# See 00-Meta/README.md or 00-Meta/MODE-SELECTION-GUIDE.md for details.
+#
+# ============================================
+
+# Sensitive data (always ignored in all modes)
 TODO.md
+.env
+**/secrets.md
+**/private-notes.md
+**/credentials.json
+
+# OS and editor files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+.vscode/settings.json
+.idea/

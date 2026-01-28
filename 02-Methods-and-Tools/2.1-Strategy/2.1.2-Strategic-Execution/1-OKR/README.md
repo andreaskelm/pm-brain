@@ -9,21 +9,33 @@ This framework helps you create and manage Objectives and Key Results (OKRs) tha
 - `2-okr-template.md` — Ready-to-use OKR templates and examples
 - `3-okr-evaluation.md` — OKR evaluation framework (start with product sense/gut check, then structured evaluation)
 
+## Before Using This Framework
+
+⚠️ **Don't jump straight to writing OKRs.**
+
+### 1. Read the Golden Rule
+
+**See:** [`/PRODUCT-SENSE-RULES.md`](../../../../../PRODUCT-SENSE-RULES.md)
+
+### 2. Braindump First (15 min)
+
+**Use the prompts:** [`02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md`](../../../../../02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md)
+
+Specifically, the "Before a Product Strategy Session" section:
+- What's actually working? (Be honest)
+- What's definitely not working? (Be honest)
+- If everything goes right, what does success look like?
+- What are we deluding ourselves about?
+
+**OKRs organize your strategy—they don't create it.**
+
+### 3. Then Use This Framework
+
+After your braindump, use OKR templates to structure your goals.
+
+---
+
 ## How to Use This Framework
-
-### Step 0: Braindump & Product Sense (Do this first!)
-
-**Before writing OKRs, braindump:**
-- What outcomes are you trying to achieve? Dump everything - don't structure yet.
-- What does your product sense tell you? What feels like the right outcome?
-- What assumptions are you making? List them explicitly.
-- What biases might affect your OKRs? (Vanity metrics? Activity vs. outcome?)
-- What would great product sense look like here? What would an experienced PM focus on?
-
-**Product sense exercise:**
-- If you had to pick ONE outcome that matters most, what would it be? Why?
-- What would make you say "these OKRs are obviously wrong"?
-- What would make you say "these OKRs are obviously right"?
 
 ### Step 1: Review Framework
 Read `1-okr-framework.md` to understand OKR principles and process

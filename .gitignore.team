@@ -1,0 +1,64 @@
+# PM-Brain: Team Mode
+# ================================
+# This template configures the repo for TEAM use - ideal for:
+# - Sharing frameworks and templates with team
+# - Collaborative template development
+# - Keeping personal logs private
+#
+# What's ignored (not tracked):
+# - Daily learning logs (`00-Meta/1-daily-log-*.md`)
+# - Weekly/monthly reflections (`00-Meta/0.1-Learning-Log/*/`)
+# - Growth portfolio entries (`00-Meta/0.2-Growth-Portfolio/*.md`)
+# - Self-assessments (`00-Meta/self-assessment-*.md`)
+# - Company-specific context
+#
+# What's tracked:
+# - All templates and frameworks
+# - Documentation and guides
+# - Shared learning resources
+# - Example initiatives (as references)
+#
+# To activate this mode:
+#   cat .gitignore.team >> .gitignore
+#   git add .gitignore
+#   git commit -m "setup: Switch to team mode"
+
+# ============================================
+# Personal Product Sense Content
+# ============================================
+
+# Daily logs (keep your practice private)
+00-Meta/1-daily-log-*.md
+
+# Weekly and monthly reflections (private learning)
+00-Meta/0.1-Learning-Log/*/
+
+# Growth portfolio (keep your journey private)
+00-Meta/0.2-Growth-Portfolio/*.md
+!00-Meta/0.2-Growth-Portfolio/README.md
+
+# Self-assessments (private self-evaluation)
+00-Meta/self-assessment-*.md
+
+# Metrics dashboard (your personal metrics)
+00-Meta/metrics-dashboard*.md
+
+# ============================================
+# Company-Specific Content
+# ============================================
+
+# Company context (keep company details private)
+01-Company-Context/*.md
+!01-Company-Context/README.md
+
+# ============================================
+# Shared Content (Tracked)
+# ============================================
+# Note: The following ARE tracked and shared with team:
+# - All README files
+# - All framework documentation in 02-Methods-and-Tools/
+# - Practice exercise guides
+# - Braindump prompts
+# - Decision diagnostics
+# - Research artifacts (optional, can be shared as examples)
+# - Initiative templates (as references for team)

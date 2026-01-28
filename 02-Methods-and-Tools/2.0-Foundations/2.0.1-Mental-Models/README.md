@@ -54,6 +54,9 @@ Mental models are organized by category:
 - [Empowered Teams](5-Team-Dynamics/3-empowered-teams.md) - *TODO: fill content*
 - [Strong Opinions, Loosely Held](5-Team-Dynamics/4-strong-opinions-loosely-held.md) - *TODO: fill content*
 
+### Product-Sense-Development
+- [Product Sense Development](6-Product-Sense-Development/README.md) - Systematic framework for developing product intuition through deliberate practice that acts as a cross-cutting lens on top of Strategy, Discovery, and Execution frameworks
+
 ## How to Use Mental Models
 
 1. **Strategic Planning**: Use 60-30-10 framework for roadmap allocation
@@ -61,6 +64,7 @@ Mental models are organized by category:
 3. **Team Alignment**: Use Alignment Check and Assumptions Framework when teams disagree
 4. **Decision Speed**: Use One-Way vs Two-Way Doors to match process to risk
 5. **Stage Recognition**: Use 0-1 vs 1-100 to adapt team structure and metrics
+6. **Product Sense Development**: Use Product Sense Development framework for systematic practice and growth tracking
 
 ## Format
 

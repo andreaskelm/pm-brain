@@ -2,11 +2,33 @@
 
 This domain contains the core strategy methods you use to set direction, translate it into plans, and specify work.
 
-**Before using any strategy framework:**
-1. **Braindump first** – Dump your thoughts, concerns, and ideas about the strategic challenge
-2. **Use your product sense** – What does your gut tell you? What feels right or wrong?
-3. **Think critically** – Challenge your assumptions. What biases might be affecting your view?
-4. **Reflect** – After using frameworks, reflect on what you learned and how your thinking evolved
+## Before Using Any Strategy Framework
+
+⚠️ **Don't jump straight to strategy templates.**
+
+### 1. Read the Golden Rule
+
+**See:** [`/PRODUCT-SENSE-RULES.md`](../../../PRODUCT-SENSE-RULES.md)
+
+### 2. Braindump First (20-30 min)
+
+**Use the prompts:** [`02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md`](../../../02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md)
+
+Specifically, the "Before a Product Strategy Session" section:
+- What's actually working? (Be honest)
+- What's definitely not working? (Be honest)
+- What are we uniquely positioned to do?
+- What are we deluding ourselves about?
+
+**Strategy frameworks organize direction—they don't create vision.**
+
+### 3. Then Use Strategy Frameworks
+
+After your braindump, use the frameworks below to structure your strategy.
+
+---
+
+## Strategic Frameworks
 
 ## How this is organized
 

@@ -42,7 +42,17 @@ Use these templates to conduct systematic customer discovery interviews and synt
 - What biases might be affecting your view? (Solution bias? Feature bias?)
 
 ### Step 1: Conduct Interviews
-Use `1-create-interview-snapshot.md` to capture insights from each interview
+Use `1-create-interview-snapshot.md` to capture insights from each interview.
+
+After each interview (or small batch of interviews), consider adding a short entry in:
+
+- `00-Meta/research-insight-log.md`
+
+to record:
+- 1–3 key learnings,
+- the underlying problem/job,
+- how this affects your current prioritization assumptions,
+- and what genuinely surprised you.
 
 ### Step 2: Synthesize Patterns
 Use `2-synthesize-interview-snapshots.md` to find patterns across 3+ interviews

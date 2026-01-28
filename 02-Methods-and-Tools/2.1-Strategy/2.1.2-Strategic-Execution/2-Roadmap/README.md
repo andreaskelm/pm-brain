@@ -21,21 +21,33 @@ A comprehensive framework for creating stakeholder-friendly product roadmaps tha
 - **2-roadmap-template.md** - Ready-to-use template with examples
 - **3-roadmap-evaluation.md** - Evaluation framework (start with product sense/gut check, then structured evaluation)
 
+## Before Using This Framework
+
+⚠️ **Don't jump straight to roadmap templates.**
+
+### 1. Read the Golden Rule
+
+**See:** [`/PRODUCT-SENSE-RULES.md`](../../../../../PRODUCT-SENSE-RULES.md)
+
+### 2. Braindump First (15 min)
+
+**Use the prompts:** [`02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md`](../../../../../02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md)
+
+Specifically, the "Before a Product Strategy Session" and "Before Making a Prioritization Decision" sections:
+- What's changed in the last 3-6 months that we're not talking about?
+- What are we NOT doing if we do this?
+- What's the opportunity cost?
+- What do I wish we knew that we don't?
+
+**Roadmaps organize your direction—they don't create it.**
+
+### 3. Then Use This Framework
+
+After your braindump, use roadmap templates to communicate your plans.
+
+---
+
 ## How to Use This Framework
-
-### Step 0: Braindump & Product Sense (Do this first!)
-
-**Before creating roadmap, braindump:**
-- What initiatives are you considering? Dump everything - don't prioritize yet.
-- What does your product sense tell you? What feels urgent vs. important?
-- What assumptions are you making about timing? List them.
-- What biases might affect your roadmap? (Recency bias? Squeaky wheel? Status quo?)
-- What would great product sense look like here? What would an experienced PM prioritize?
-
-**Product sense exercise:**
-- If you had to ship ONE thing in the next quarter, what would it be? Why?
-- What would make you say "this roadmap is obviously wrong"?
-- What would make you say "this roadmap is obviously right"?
 
 ### Step 1: Copy Template
 Start with `1-roadmap-framework.md` to understand principles, then use `2-roadmap-template.md`

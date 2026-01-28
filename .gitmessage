@@ -1,0 +1,23 @@
+[type]: Brief description
+
+# Optional context if change needs explanation
+
+# ─────────────────────────────────────
+# Types:
+#   feat       - New feature/capability
+#   fix        - Bug fix
+#   docs       - Documentation
+#   refactor   - Code/framework restructuring
+#   framework  - PM framework changes
+#   practice   - Learning log updates
+#   reflection - Weekly/monthly synthesis
+# ─────────────────────────────────────
+#
+# Examples:
+#   feat: Add user authentication
+#   framework: Update PRD template with braindump section
+#   docs: Add setup instructions to README
+#   practice: Daily log week 4
+#   reflection: January monthly synthesis
+#
+# Keep it simple. No forced reflection on every commit.

@@ -1,0 +1,77 @@
+# PM-Brain: Private Mode
+# ================================
+# This template configures the repo for PRIVATE use - ideal for:
+# - Personal learning only
+# - Company-specific work
+# - Confidential information
+#
+# What's ignored (not tracked):
+# - Daily learning logs (`00-Meta/1-daily-log-*.md`)
+# - Weekly/monthly reflections (`00-Meta/0.1-Learning-Log/*/`)
+# - Growth portfolio entries (`00-Meta/0.2-Growth-Portfolio/*.md`)
+# - Self-assessments (`00-Meta/self-assessment-*.md`)
+# - Company context and stakeholder info
+# - Active initiatives and research
+#
+# What's tracked:
+# - Templates and frameworks
+# - Documentation and guides
+# - Shared learning resources
+#
+# To activate this mode:
+#   cat .gitignore.private >> .gitignore
+#   git add .gitignore
+#   git commit -m "setup: Switch to private mode"
+
+# ============================================
+# Personal Product Sense Content
+# ============================================
+
+# Daily logs (your private practice)
+00-Meta/1-daily-log-*.md
+
+# Weekly and monthly reflections (your private learning)
+00-Meta/0.1-Learning-Log/*/
+
+# Growth portfolio (keep your journey private)
+00-Meta/0.2-Growth-Portfolio/*.md
+!00-Meta/0.2-Growth-Portfolio/README.md
+
+# Self-assessments (honest self-evaluation)
+00-Meta/self-assessment-*.md
+
+# Metrics dashboard (your personal metrics)
+00-Meta/metrics-dashboard*.md
+
+# ============================================
+# Company-Specific Content
+# ============================================
+
+# Company context (vision, strategy, stakeholders)
+01-Company-Context/*.md
+!01-Company-Context/README.md
+
+# ============================================
+# Active Work & Research
+# ============================================
+
+# Active initiatives (your current projects)
+04-Initiatives/*
+!04-Initiatives/README.md
+!04-Initiatives/4.1-Initiative-Codename/
+
+# Research artifacts (interviews, analysis)
+03-Research-Artifacts/*
+!03-Research-Artifacts/README.md
+!03-Research-Artifacts/3.1-User-Interviews/README.md
+!03-Research-Artifacts/3.2-Qualitative-Research/
+
+# ============================================
+# Keep Templates & Frameworks (Shared)
+# ============================================
+# Note: The following are NOT ignored and will be tracked:
+# - All README files
+# - All framework documentation in 02-Methods-and-Tools/
+# - Practice exercise guides
+# - Braindump prompts
+# - Decision diagnostics

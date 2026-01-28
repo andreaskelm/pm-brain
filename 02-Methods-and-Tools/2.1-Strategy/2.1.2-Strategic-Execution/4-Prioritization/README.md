@@ -2,7 +2,42 @@
 
 Systematic methods to decide what to do first. Use these to make defensible, transparent calls that align to strategy.
 
--## Files
+## Before Using This Framework
+
+⚠️ **Don't jump straight to scoring frameworks.**
+
+### 1. Read the Golden Rule
+
+**See:** [`/PRODUCT-SENSE-RULES.md`](../../../../../PRODUCT-SENSE-RULES.md)
+
+### 2. Braindump First (15 min)
+
+**Use the prompts:** [`02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md`](../../../../../02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md)
+
+Specifically, the "Before Making a Prioritization Decision" section:
+- What evidence do I have this matters? (Real data, not vibes)
+- What's the opportunity cost?
+- Am I falling in love with my solution vs. the problem?
+- What would make me 10x more confident?
+
+**Prioritization frameworks can't create judgment—they organize it.**
+
+### 3. Log the Decision (Optional but Recommended)
+
+Before or after you score, capture the decision in your **prioritization decision log**:
+
+- **Log file:** `00-Meta/prioritization-decision-log.md`
+- **What to capture:** who this is for, the real job/pain, evidence, opportunity cost, and “what could catastrophically go wrong if we’re wrong?”
+
+This gives you a reusable trail of **why** you prioritized what you did, and lets you revisit the quality of your calls later.
+
+### 4. Then Use This Framework
+
+After your braindump (and optional log entry), use prioritization methods to structure your decision.
+
+---
+
+## Files
 -`1-RICE-ICE/`
   - `1-RICE-ICE-scoring-framework.md`
   - `2-RICE-ICE-scoring-template.md`

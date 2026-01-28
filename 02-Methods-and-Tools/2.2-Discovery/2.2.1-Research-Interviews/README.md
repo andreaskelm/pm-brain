@@ -7,15 +7,41 @@ This guide helps product teams conduct effective user research interviews that u
 ## Files
 - `1-interview-guide.md` — Complete interview guide with question frameworks and best practices
 
+## Before Using This Guide
+
+⚠️ **Don't jump straight to interview scripts.**
+
+### 1. Read the Golden Rule
+
+**See:** [`/PRODUCT-SENSE-RULES.md`](../../../../PRODUCT-SENSE-RULES.md)
+
+### 2. Braindump First (15 min)
+
+**Use the prompts:** [`02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md`](../../../../02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md)
+
+Specifically, the "Before User Research / Discovery" section:
+- What question keeps me up at night about our users?
+- What assumption, if wrong, would completely change our plans?
+- What am I hoping NOT to hear? (Red flag - investigate this)
+
+**Interview guides organize questions—they don't create curiosity.**
+
+### 3. Log the Insights (Optional but Recommended)
+
+Right after interviews, capture the most important learnings in your **research & insight log**:
+
+- **Log file:** `00-Meta/research-insight-log.md`
+- **What to capture:** 1–3 key learnings, the underlying problem/job, how this supports or challenges your current assumptions, and what surprised you.
+
+This creates a lightweight evidence trail you can reuse later for prioritization, PRDs, and strategy debates.
+
+### 4. Then Use This Guide
+
+After your braindump (and optional log entry), use the guide to structure your research.
+
+---
+
 ## How to Use This Guide
-
-### Step 0: Braindump & Prepare (Critical!)
-
-**Before conducting interviews, braindump:**
-- What are you trying to learn? Dump all your questions - don't structure yet.
-- What does your product sense tell you? What assumptions are you making?
-- What biases might affect your interviews? (Confirmation bias? Leading questions?)
-- What would great product sense look like here? What would an experienced researcher ask?
 
 ### Step 1: Review Guide
 Read `1-interview-guide.md` to understand interview principles and question frameworks

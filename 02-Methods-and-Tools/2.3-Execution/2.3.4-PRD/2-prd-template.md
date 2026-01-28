@@ -369,6 +369,27 @@
 1. [Action 1] - [Owner] - [Due Date]
 2. [Action 2] - [Owner] - [Due Date]
 
+---
+
+## 17. Product Sense Hooks (Strongly Recommended)
+
+Before you treat this PRD as “done”, run a quick product-sense pass and, if it’s a meaningful initiative, capture it in your personal logs.
+
+**Where to reflect/log:**
+- Quick check-in: `00-Meta/daily-log-*.md`
+- Bigger bets / roadmap-shaping work:
+  - Decision context in `00-Meta/prioritization-decision-log.md`
+  - Key research learnings in `00-Meta/research-insight-log.md`
+
+**Prompts to sanity-check this PRD:**
+- Who specifically is this for, and what job are they really hiring this for?
+- What are the second- and third-order effects if this works? If it fails?
+- What’s the most important assumption this PRD is betting on?
+- What qualitative and quantitative evidence are we actually using?
+- What would make us change our mind 4–8 weeks after launch?
+
+You don’t need pages of extra writing—2–5 thoughtful lines in the relevant `00-Meta` log is enough to keep your day-to-day execution anchored in product sense.
+
 -----
 
 ## References

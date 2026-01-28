@@ -17,27 +17,35 @@
 
 ## 🎯 Step 1: Get the Repository
 
-### Option A: Clone (Recommended for Personal Use)
+### Option A: Personal Use (Clone or Private Fork)
 
-If you want to use this as your personal PM brain:
+- If you’re experimenting or building a **personal public portfolio**, you can clone directly:
 
-```bash
-git clone https://github.com/andreaskelm/pm-brain.git
-cd pm-brain
-```
+  ```bash
+  git clone https://github.com/andreaskelm/pm-brain.git
+  cd pm-brain
+  ```
 
-### Option B: Fork (Recommended for Team/Company Use)
+- If you’re working with **real company context**, prefer a **private fork**:
 
-If you want to customize this for your team or company:
+  1. Click “Fork” on GitHub and set visibility to **Private**.  
+  2. Then:
 
-1. Click "Fork" on GitHub
-2. Clone your fork:
-   ```bash
-   git clone https://github.com/YOUR-USERNAME/pm-brain.git
-   cd pm-brain
-   ```
+     ```bash
+     git clone https://github.com/YOUR-USERNAME/pm-brain.git
+     cd pm-brain
+     ```
 
-**Why fork?** You can keep company-specific context private while still pulling updates from the main repository.
+  This lets you keep company‑specific context private while still pulling updates from the main repository.
+
+### Option B: Team/Company Framework Repo
+
+If you want a shared repo for your team’s frameworks/templates:
+
+1. Fork the repo into your org (public or private as appropriate).  
+2. Treat this fork as the **team library**:
+   - Track `02-Methods-and-Tools/` and any sanitized examples.  
+   - Keep everyone’s personal `00-Meta/` logs private via **Team mode** (see below).
 
 ---
 
@@ -61,7 +69,54 @@ pm-brain/
 
 ---
 
-## ⚙️ Step 3: Required Customizations (Priority Order)
+## ⚙️ Step 3: Choose Public / Private / Team Mode
+
+This repo supports three usage modes. The choice is manual and done with `.gitignore` patterns in **your fork/clone**.
+
+### Modes at a Glance
+
+- **🌍 Public** (default)
+  - **Best for**: open learning, public examples, blog/portfolio content.  
+  - **Tracked**: everything (frameworks, Meta logs, company context, initiatives).  
+
+- **🔒 Private**
+  - **Best for**: real company work or personal growth where content must not leak.  
+  - **Tracked**: frameworks and docs.  
+  - **Ignored** (via `.gitignore.private`): Meta logs, growth portfolio, company context, active initiatives (per patterns).  
+
+- **👥 Team**
+  - **Best for**: a shared frameworks repo, with each person keeping their own practice private.  
+  - **Tracked**: `02-Methods-and-Tools/` and any shared docs.  
+  - **Ignored** (via `.gitignore.team`): each contributor’s `00-Meta` logs and personal growth artefacts.
+
+### How to Apply a Mode (Manual)
+
+Run **one** of these in your fork’s root:
+
+- **Public (do nothing)**  
+  - Leave `.gitignore` as‑is. Everything can be tracked.
+
+- **Private mode**:
+
+  ```bash
+  cat .gitignore.private >> .gitignore
+  git add .gitignore
+  git commit -m "setup: configure private mode"
+  ```
+
+- **Team mode**:
+
+  ```bash
+  cat .gitignore.team >> .gitignore
+  git add .gitignore
+  git commit -m "setup: configure team mode"
+  ```
+
+For details and decision help, see `00-Meta/MODE-SELECTION-GUIDE.md`.
+
+---
+
+## 📚 Step 4: Required Customizations (Priority Order)
 
 ### Priority 1: Company Context (`01-Company-Context/`)
 
@@ -172,7 +227,7 @@ The templates in `02-Methods-and-Tools/` work as-is, but you can customize them 
 
 ---
 
-## 🧪 Step 4: Try Your First Framework
+## 🧪 Step 5: Try Your First Framework
 
 **Don't wait until you need it!** Try a framework now to get familiar with the system.
 
@@ -192,7 +247,7 @@ The templates in `02-Methods-and-Tools/` work as-is, but you can customize them 
 
 ---
 
-## 📝 Step 5: Set Up Your First Initiative
+## 📝 Step 6: Set Up Your First Initiative
 
 Create your first initiative folder to see how the system works:
 
@@ -212,7 +267,7 @@ Create your first initiative folder to see how the system works:
 
 ---
 
-## 🤖 Step 6: Using with AI Tools
+## 🤖 Step 7: Using with AI Tools
 
 ### Option A: Cursor (Recommended for Technical Users)
 
@@ -258,7 +313,7 @@ Many AI tools support "Projects" where you can upload files:
 
 ---
 
-## ✅ Step 7: Verify Your Setup
+## ✅ Step 8: Verify Your Setup
 
 Run through this checklist to ensure everything is configured:
 
