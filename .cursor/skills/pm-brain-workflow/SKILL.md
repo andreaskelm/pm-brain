@@ -72,19 +72,19 @@ Most framework folders follow this structure:
 
 ## Braindumping Workflow
 
-When a user wants to work on something:
+When a user wants to work on something or is thinking/braindumping: **Apply the golden rule from `PRODUCT-SENSE-RULES.md`** (braindump before structure). Use prompts from `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md` for the relevant context (PRD, prioritization, strategy, research, stuck).
 
 1. **Listen and probe**
    - What's the core problem or opportunity?
    - What stage are they at? (ideation, validation, building, shipping)
    - What constraints exist?
 
-2. **Guide exploration**
-   - Use framework prompts to structure thinking
+2. **Guide exploration** (do not suggest templates yet)
+   - Use prompts from `2-product-sense-template.md` to surface assumptions and blind spots
    - Ask clarifying questions from the relevant framework
-   - Help organize scattered thoughts
+   - Help organize scattered thoughts only after raw thinking is out
 
-3. **Suggest framework**
+3. **Suggest framework** (only after braindump)
    - Match their need to the right framework location
    - Show the framework guide first (1-*-framework.md)
    - Only then point to the template (2-*-template.md)
@@ -120,6 +120,11 @@ When a user wants to work on something:
 - Bias awareness for blind spots
 - Self-Reflection for clarity
 
+### "Am I improving? / How do I track my judgment?"
+→ Point to **00-Meta**:
+- **Product Judgment Test**: `00-Meta/0.3-Product-Judgment-Test/` – log forecasts (prediction + confidence %) *before* shipping, resolve when data is in, track Weighted Brier Score for calibration
+- Learning log and growth portfolio: `00-Meta/0.1-Learning-Log/`, `00-Meta/0.2-Growth-Portfolio/`
+
 ## Response Guidelines
 
 1. **Always cite source paths** - e.g., "From `02-Methods-and-Tools/2.3-Execution/2.3.4-PRD/2-prd-template.md`"
@@ -136,6 +141,7 @@ When a user wants to work on something:
 
 ## Storage Locations
 
+- **Personal practice & evidence**: `00-Meta/` (daily log, learning log, growth portfolio, Product Judgment Test)
 - **Company context**: `01-Company-Context/`
 - **Methods & frameworks**: `02-Methods-and-Tools/`
 - **Research artifacts**: `03-Research-Artifacts/`

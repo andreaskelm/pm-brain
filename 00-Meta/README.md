@@ -47,6 +47,9 @@ Typical use:
 - `0.2-Growth-Portfolio/2-decision-showcase.md` – selected decisions + outcomes.
 - `0.2-Growth-Portfolio/3-metrics-dashboard.md` – any quantified view you want.
 
+**Product Judgment Test**
+- `0.3-Product-Judgment-Test/` – forecast log, Brier score, dashboard. Log predictions *before* you ship; resolve when data is in; track calibration over time.
+
 All Product Sense structure, prompts, and exercises live in the Foundations folder above; `00-Meta/` only references them.
 
 ---
@@ -95,6 +98,10 @@ You can run this system in a very lightweight way:
 - **Monthly (60 minutes)**
   - Add or update a `monthly-[month].md` file in `0.1-Learning-Log/[Year]-Q[#]/`.
   - Move 1–2 highlights into `0.2-Growth-Portfolio/` as long-term evidence.
+  - Resolve any closed bets in `0.3-Product-Judgment-Test/forecast-log.md`, update the dashboard, and note your Product Judgment Test trend in your monthly synthesis.
+
+- **Before shipping a product/feature**
+  - Log a forecast in `0.3-Product-Judgment-Test/forecast-log.md` (prediction, confidence %, bet type, novelty). Resolve the row when the deadline passes.
 
 All prompts, exercises, and templates you need come from the Product Sense folder in `02-Methods-and-Tools/`. Here you only ever copy **small slices** into your logs and portfolio.
 
@@ -121,6 +128,8 @@ Pattern: keep raw daily/weekly thinking private, commit higher-level syntheses a
   `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/`
 - **Daily log template**  
   `6-Product-Sense-Development/templates/daily-log-template.md`
+- **Product Judgment Test**  
+  `0.3-Product-Judgment-Test/` – forecast log, Brier score, dashboard (calibration tracker)
 - **Golden Rule**  
   `PRODUCT-SENSE-RULES.md`
 - **This practice space**  

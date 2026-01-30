@@ -30,6 +30,8 @@ Your portfolio is valuable regardless of whether it's tracked in git.
 ### 1-product-sense-journey.md
 Your product sense trajectory over time.
 
+**Product Judgment Test:** Your [Overall Brier trend](../0.3-Product-Judgment-Test/dashboard.md) is evidence of calibration—reference it in your journey and in [3-metrics-dashboard.md](3-metrics-dashboard.md).
+
 **Sections:**
 - Timeline of key milestones
 - Skills developed

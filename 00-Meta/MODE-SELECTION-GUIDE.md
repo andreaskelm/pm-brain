@@ -53,6 +53,7 @@ This guide helps you select the right mode for your needs and shows you how to s
 - ✗ Weekly/monthly reflections (private learning)
 - ✗ Growth portfolio (private journey)
 - ✗ Self-assessments (private evaluation)
+- ✗ Product Judgment Test forecast log and dashboard (your predictions and scores)
 - ✗ Company context (confidential)
 - ✗ Research artifacts (proprietary)
 - ✗ Active initiatives (company work)
@@ -85,6 +86,7 @@ This guide helps you select the right mode for your needs and shows you how to s
 - ✗ Weekly/monthly reflections (your private learning)
 - ✗ Growth portfolio (your private journey)
 - ✗ Self-assessments (your private evaluation)
+- ✗ Product Judgment Test forecast log and dashboard (your predictions and scores)
 - ✗ Company context (team-specific)
 
 **Best for:**

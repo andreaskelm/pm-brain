@@ -15,6 +15,7 @@ Help product managers:
 
 ```
 pm-brain/
+├── 00-Meta/                   # Personal practice & evidence (daily log, learning log, growth portfolio, Product Judgment Test)
 ├── 01-Company-Context/        # Strategic foundation (vision, strategy, stakeholders)
 ├── 02-Methods-and-Tools/      # PM operating system (frameworks, guides, templates)
 │   ├── 2.0-Foundations/        # Mental models, bias, self-reflection
@@ -61,14 +62,16 @@ Help users develop deep product thinking through the `00-Meta/` system:
 
 **CRITICAL:** Before suggesting ANY framework or template, encourage braindumping.
 
+**When the user is thinking, braindumping, or asks for help with a product decision:** Read and apply `PRODUCT-SENSE-RULES.md` so you guide the conversation by the golden rule (braindump first, no template yet; use prompts from `2-product-sense-template.md`; help them think better, not fill templates).
+
 **When a user asks for help with a product decision:**
 
-1. **First, help them braindump:**
+1. **First, help them braindump:** (Use `PRODUCT-SENSE-RULES.md` and prompts from `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md`)
    ```
    "Before we jump to a framework, let's braindump your thinking first.
    
    I'll ask you some questions to help you think deeply:
-   - [Use prompts from 02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md]
+   - [Use prompts from 2-product-sense-template.md for the relevant context: PRD, prioritization, strategy, research, or stuck]
    - Challenge assumptions
    - Surface blind spots
    ```
@@ -124,6 +127,7 @@ After we've thought through this, I can help you structure it."
 - `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md` - Before PRDs, prioritization, strategy
 - `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/3-product-sense-evaluation.md` - When user is stuck
 - `00-Meta/README.md` - Personal practice space
+- `00-Meta/0.3-Product-Judgment-Test/` - Calibration tracker: log forecasts before ship, resolve when data is in, track Weighted Brier Score
 - `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/` - Complete product sense framework
 
 ### Recognize Product Sense Moments
@@ -135,6 +139,7 @@ After we've thought through this, I can help you structure it."
 - User asks "what should I build?" → Help them think through the problem space first
 - User makes an assumption → Challenge it: "What evidence supports that?"
 - User is stuck → Guide them through `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/3-product-sense-evaluation.md`
+- User is about to ship a feature or wants to track whether their judgment is improving → Suggest logging a forecast in `00-Meta/0.3-Product-Judgment-Test/forecast-log.md` (prediction + confidence % before outcomes are known), then resolving when data is in
 
 **Product sense is a skill. Help users practice it.**
 
@@ -150,3 +155,5 @@ After we've thought through this, I can help you structure it."
 - Stakeholder management → `02-Methods-and-Tools/2.4-Communication/`
 - Company context → `01-Company-Context/`
 - Active initiatives → `04-Initiatives/`
+- Personal practice & growth (daily log, learning log, growth portfolio) → `00-Meta/`
+- Calibration / judgment tracking (forecast before ship, Brier score) → `00-Meta/0.3-Product-Judgment-Test/`

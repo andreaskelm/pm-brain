@@ -37,6 +37,7 @@ A living knowledge base that bridges the gap between Product Management framewor
 **Best for:** ChatGPT, Claude, Gemini, Microsoft Copilot, or other chat-based AI tools.
 
 1. **Browse** to the folder you need:
+   - `00-Meta/` – for personal practice (daily log, learning log, growth portfolio, Product Judgment Test)
    - `01-Company-Context/` – for company strategy, vision, stakeholders
    - `02-Methods-and-Tools/` – for frameworks, guides, templates, playbooks
    - `03-Research-Artifacts/` – for research storage structure
@@ -80,6 +81,7 @@ A living knowledge base that bridges the gap between Product Management framewor
    - **Braindump before structuring**: Use the braindumping prompts in each framework to capture your raw thoughts first
    - **Develop product sense**: Use the product sense exercises and reflection prompts to build judgment
    - **Think critically**: Let frameworks guide your thinking, not replace it. Answer the quiz questions honestly.
+   - Use `00-Meta/` for daily log, learning log, growth portfolio, and the Product Judgment Test (log forecasts before ship, track calibration)
    - Use frameworks and guides in `02-Methods-and-Tools/` for daily work
    - Store research in `03-Research-Artifacts/`
    - Document initiatives in `04-Initiatives/`
@@ -98,6 +100,7 @@ This is a **PM brain-as-code**, not a random notes folder. The directories repre
 
 ```text
 pm-brain/
+├── 00-Meta/                    # 🧠 Personal practice (daily log, learning log, growth portfolio, Product Judgment Test)
 ├── 01-Company-Context/        # 🏢 Strategic foundation (vision, strategy, metrics, stakeholders)
 ├── 02-Methods-and-Tools/      # 🧭 PM operating system (frameworks, guides, templates, prompts)
 ├── 03-Research-Artifacts/     # 🔍 Evidence layer (interview notes, synthesis, findings)
@@ -146,9 +149,10 @@ Layer 3: What You're Building (04-Initiatives/)
 ### What's in `00-Meta/`
 
 - **Daily Practice** (10 min): Exercises to build product intuition
-- **Monthly Assessment** (30 min): Track your growth trajectory
 - **Learning Log**: Weekly reflections and monthly syntheses
 - **Growth Portfolio**: Evidence for 1:1s and performance reviews
+- **Product Judgment Test** (`0.3-Product-Judgment-Test/`): Log predictions and confidence % *before* you ship; resolve when data is in; track your Weighted Brier Score for calibration ("am I actually improving?")
+- **Monthly Assessment** (30 min): Self-assessment and growth trajectory (see Product Sense Development templates)
 
 ### Quick Start with Product Sense
 
@@ -177,9 +181,11 @@ cp 02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Deve
 
 **Daily workflow:**
 - Morning: Remember to braindump before using frameworks
+- Before shipping a feature: Log a forecast in `00-Meta/0.3-Product-Judgment-Test/forecast-log.md` (prediction, confidence %, bet type); resolve the row when data is in
 - During day: Log significant decisions
 - End of day: 5-min daily log update
 - Sunday evening: 30-min weekly reflection
+- Monthly: Resolve closed Product Judgment Test bets, update dashboard, review in monthly synthesis
 
 **See [`00-Meta/README.md`](./00-Meta/README.md) for complete guide.**
 
@@ -187,10 +193,11 @@ cp 02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Deve
 
 ## 🔄 Daily Workflow
 
-1. **Reference** `01-Company-Context/` for strategic direction and company information.
-2. **Use** `02-Methods-and-Tools/` when you need a process, framework, template, or playbook.
-3. **Store** research outputs in `03-Research-Artifacts/` after completing discovery work.
-4. **Do** your active product work in `04-Initiatives/` (planning, documenting, iterating).
+1. **Practice & track** `00-Meta/` for daily log, learning log, growth portfolio, and Product Judgment Test (log forecasts before ship, resolve when data is in).
+2. **Reference** `01-Company-Context/` for strategic direction and company information.
+3. **Use** `02-Methods-and-Tools/` when you need a process, framework, template, or playbook.
+4. **Store** research outputs in `03-Research-Artifacts/` after completing discovery work.
+5. **Do** your active product work in `04-Initiatives/` (planning, documenting, iterating).
 
 ### How Frameworks Work Together
 
@@ -225,8 +232,9 @@ See `02-Methods-and-Tools/README.md` for complete navigation guide.
 **Experienced PM:**
 1. Go to `02-Methods-and-Tools/` for the topic you need (PRDs, discovery, OKRs)
 2. Grab the relevant framework + guide + template
-3. Update frameworks when reality diverges — commit improvements
-4. Keep `01-Company-Context/` updated for newcomers
+3. Use `00-Meta/` for daily log, learning log, growth portfolio, and Product Judgment Test if you track calibration
+4. Update frameworks when reality diverges — commit improvements
+5. Keep `01-Company-Context/` updated for newcomers
 
 **Crisis or Time Pressure:**
 1. Go to relevant framework in `02-Methods-and-Tools/` (e.g., `2.4-Communication/2.4.4-Crisis-Management/`)

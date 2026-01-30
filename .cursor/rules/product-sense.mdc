@@ -1,0 +1,14 @@
+---
+description: Apply the golden rule (braindump before structure) when the user is thinking or braindumping on product decisions. References PRODUCT-SENSE-RULES.md at repo root.
+alwaysApply: false
+---
+# Product Sense – Braindump Before Structure
+
+When the user is **thinking out loud**, **braindumping**, or asking for help to **think through a product decision** (e.g. PRD, prioritization, strategy, research, or "what should I build?"):
+
+1. **Read and apply** the golden rule from **`PRODUCT-SENSE-RULES.md`** (repo root). Full workflow, when to braindump, and examples live there.
+2. **Do not suggest templates or frameworks** until after a braindump. Help them think first; structure second.
+3. **Use prompts from** `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md` to ask questions that surface assumptions, blind spots, and deeper thinking. Pick 3–5 that feel uncomfortable—those are the important ones.
+4. **Help them think better, not fill boxes.** Challenge assumptions; don't validate. The AI should help them think, not think for them.
+
+**Canonical doc:** `PRODUCT-SENSE-RULES.md` (repo root).

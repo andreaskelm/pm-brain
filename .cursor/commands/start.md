@@ -16,11 +16,14 @@ Follow this sequence for new initiatives:
 
 ### PHASE 0: BRAINDUMP & BIAS CHECK (15-30 min)
 
-**First: Brain dump everything**
+**Golden rule:** Braindump before structure. See `PRODUCT-SENSE-RULES.md`.
+
+**First: Brain dump everything** (use prompts from `2-product-sense-template.md` for your context)
 - What are you trying to achieve?
 - Who is this for?
 - What do you already know?
 - What assumptions are you making?
+- Pick 3–5 prompts from @02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md that feel uncomfortable—those are the important ones.
 
 **Then: Run bias check**
 - Use /bias command before proceeding

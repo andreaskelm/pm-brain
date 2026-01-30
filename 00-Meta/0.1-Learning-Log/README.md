@@ -144,10 +144,12 @@ Quarterly Review (90 min)
    - Patterns across weeks (themes emerging?)
    - Growth trajectory (compare to previous months)
    - Next month focus (what to work on?)
+   - **Product Judgment Test:** Review your [Product Judgment Test](../0.3-Product-Judgment-Test/dashboard.md) dashboard and note trend vs last month (Overall Brier, calibration).
 
 4. **Update related files:**
    - Self-assessment (`../self-assessment-2026-Q1.md`, if you create one)
    - Growth portfolio (`../0.2-Growth-Portfolio/`)
+   - Product Judgment Test dashboard (`../0.3-Product-Judgment-Test/dashboard.md`) – resolve closed bets, update Overall Brier
 
 5. **Commit:**
    ```bash

@@ -6,6 +6,7 @@ This directory contains **rule files** that tell the AI how to behave in this wo
 
 - `thinking.mdc` – General "how to think with me" instructions for the AI (e.g. coaching style, language handling, focus areas).  
 - `thinking.personal.mdc` – **Template** for your personal context: name (or alias), working style, preferences. You should fill this with your own information (or keep it blank) and avoid committing sensitive details to public repos.  
+- `product-sense.mdc` – **Golden rule:** When the user is braindumping or thinking through a product decision, apply the rule from `PRODUCT-SENSE-RULES.md` (repo root). Braindump before structure; use prompts from the product-sense template; don't suggest frameworks until after thinking.  
 - `AGENTS.template.md` – Template/guide for defining custom AI "agents" (roles) for this workspace. **Note:** This is separate from the root `AGENTS.md` file, which defines the PM Brain Assistant for navigating the repository.
 
 ### Flexible Rule Structure
