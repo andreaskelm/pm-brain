@@ -360,7 +360,7 @@ I'll start by telling you what I just worked on.
 
 ## References
 
-- Reflection Template: `2-reflection-template.md`
+- Reflection Template: `2-self-reflection-template.md`
 - Mental Models: `../2.0.1-Mental-Models/README.md`
 - Bias Framework: `../2.9.4-Bias/README.md`
 - Library Index: `../library.md`

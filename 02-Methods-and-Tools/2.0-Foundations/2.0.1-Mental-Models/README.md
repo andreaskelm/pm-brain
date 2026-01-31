@@ -89,7 +89,7 @@ Each mental model follows this structure:
 
 ## Links
 
-- Library Index: `../index.md`
+- Library Index: `../0-index.md`
 - Self-Reflection: `../2.0.3-Self-Reflection/README.md`
 - Bias Framework: `../2.0.2-Bias/README.md`
 - Product Strategy: `../../2.1-Strategy/2.1.1-Strategic-Foundations/`

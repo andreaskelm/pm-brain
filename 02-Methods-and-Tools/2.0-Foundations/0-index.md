@@ -1,6 +1,8 @@
 # Foundations Library
 
-This library provides quick access to all mental models and foundational frameworks in the PM Brain system. Mental models are quick-reference thinking tools, while frameworks provide structured processes and templates.
+**What this file is:** Index of **everything in 2.0 Foundations only** — mental models (Decision-Making, Product-Thinking, Work-Levels, etc.) plus Bias and Self-Reflection. For frameworks **across** Strategy, Discovery, Execution, and Communication (by topic), see [1-frameworks-by-topic.md](../1-frameworks-by-topic.md) at the root of `02-Methods-and-Tools/`.
+
+This library gives quick access to all mental models and foundational frameworks in the PM Brain system. Mental models are quick-reference thinking tools; frameworks here provide structured processes and templates.
 
 ## Mental Models
 
@@ -81,6 +83,6 @@ Recognize and mitigate cognitive biases that distort decision-making. Includes t
 ## Related Content
 
 - [Mental Models README](2.0.1-Mental-Models/README.md) - Complete mental models directory
-- [Template Structure Guide](../../0-Template-Structure/1-template-structure-guide.md) - How frameworks are structured
-- [Strategy Frameworks](../../2.1-Strategy/) - OKRs, Roadmaps, PRDs, Prioritization
-- [Discovery Frameworks](../../2.2-Discovery/) - Research, Validation, Opportunity Assessment
+- [Template Structure Guide](../0-Template-Structure/1-template-structure-guide.md) - How frameworks are structured
+- [Strategy Frameworks](../2.1-Strategy/) - OKRs, Roadmaps, PRDs, Prioritization
+- [Discovery Frameworks](../2.2-Discovery/) - Research, Validation, Opportunity Assessment

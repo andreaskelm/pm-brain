@@ -62,6 +62,6 @@ After decisions, reflect:
 - Prioritization: `../../2.1-Strategy/2.1.2-Strategic-Execution/4-Prioritization/README.md`
 - Opportunity Assessment: `../../2.2-Discovery/2.2.4-Opportunity-Assessment/README.md`
 - Mental Models: `../2.0.1-Mental-Models/README.md`
-- Library Index: `../index.md`
+- Library Index: `../0-index.md`
 - Self-Reflection: `../2.0.3-Self-Reflection/README.md`
 

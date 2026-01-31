@@ -45,6 +45,11 @@ Most framework folders contain:
 - `2-*-template.md` - Fill-in template
 - `3-*-evaluation.md` - Assessment criteria
 
+## Navigation Aids
+
+- **Architecture (visual):** [ARCHITECTURE.md](ARCHITECTURE.md) — repo layers and methods flow (Mermaid).
+- **Template finder path:** When the user explicitly asks to write/draft/fill a specific doc (PRD, one-pager, OKR, opportunity assessment, etc.), use [02-Methods-and-Tools/0-template-finder.md](02-Methods-and-Tools/0-template-finder.md) and point to the right README + template; add a one-line nudge to 0-start-here if they haven't thought it through. Rule: `.cursor/rules/template-finder.mdc`.
+
 ## Core Principles
 
 1. **Think first, template later** - Help users braindump and structure thoughts before jumping to formal templates

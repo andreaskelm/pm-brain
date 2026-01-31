@@ -17,7 +17,7 @@ Use this framework to develop self-awareness, learn from experience, and improve
 
 ## Files
 - `1-self-reflection-framework.md` — Complete reflection framework with prompts and exercises
-- `2-reflection-template.md` — Template for structured reflection sessions
+- `2-self-reflection-template.md` — Template for structured reflection sessions
 
 ## How to Use This Framework
 
@@ -28,6 +28,6 @@ Use this framework to develop self-awareness, learn from experience, and improve
 
 ## Links
 - Mental Models: `../2.0.1-Mental-Models/`
-- Library Index: `../index.md`
+- Library Index: `../0-index.md`
 - All frameworks in `../../` can benefit from reflection
 

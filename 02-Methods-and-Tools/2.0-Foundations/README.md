@@ -16,7 +16,7 @@ Foundational thinking tools and self-awareness frameworks that support every PM 
 - `2.0.1-Mental-Models/` — Quick lenses for decisions, product thinking, execution hygiene, team dynamics, and work levels. **Use when:** You need fast framing before deeper work.
 - `2.0.2-Bias/` — Cognitive bias framework and checklist. **Use when:** Preparing major decisions or calibrating estimates.
 - `2.0.3-Self-Reflection/` — Reflection framework and template. **Use when:** After launches/decisions or during regular retros.
-- `index.md` — Library-style index for quick navigation.
+- `0-index.md` — Library-style index for quick navigation.
 
 ## Typical flows
 ```
@@ -29,7 +29,7 @@ Mental model (framing) → Bias checklist → Core framework (e.g., OKR/PRD/Disc
 | Product / stakeholder / org thinking (braindump first) | `2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md` | Single entry: prompts → braindump → then framework |
 | Need a fast lens before deciding | `2.0.1-Mental-Models/` | Quick framing and vocabulary |
 | Worried about decision quality/bias | `2.0.2-Bias/1-bias-framework.md` | Checklist + debiasing strategies |
-| Post-launch or weekly retro | `2.0.3-Self-Reflection/2-reflection-template.md` | Structured prompts to capture learning |
+| Post-launch or weekly retro | `2.0.3-Self-Reflection/2-self-reflection-template.md` | Structured prompts to capture learning |
 | Navigating work scope/stage | `2.0.1-Mental-Models/3-Work-Levels/` | Align effort to altitude and stage |
 
 ## Related domains / cross-links
