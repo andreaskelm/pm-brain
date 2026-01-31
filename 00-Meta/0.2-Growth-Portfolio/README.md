@@ -214,7 +214,7 @@ PRDs looked complete but decisions were shallow.
 - Stakeholders comment on "better why explanations"
 
 **Artifacts Created:**
-- Braindump prompts template: 02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md
+- Braindump prompts template: 02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md
 - Updated all major frameworks with "Before using this framework" section
 - Presented at PM team meeting, created Slack channel
 

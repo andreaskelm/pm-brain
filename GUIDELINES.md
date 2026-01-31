@@ -36,13 +36,19 @@ These guidelines describe **how to use and evolve** this repo so it stays useful
 
 ## 2. Where Things Go
 
+- **00-Meta/**  
+  - Personal practice: daily log, weekly/monthly reflection, growth portfolio, Product Judgment Test (forecast log, calibration).  
+  - Canonical prompts and templates live in `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/`; `00-Meta/` stores what you *do* and *learn*.  
+  - See [00-Meta/README.md](00-Meta/README.md) and [MODE-SELECTION-GUIDE.md](00-Meta/MODE-SELECTION-GUIDE.md) for modes (Public/Private/Team).
+
 - **01-Company-Context/**  
   - Vision, strategy, principles, roadmap, stakeholders.  
   - Keep this aligned with **current reality**; update when strategy shifts.
 
 - **02-Methods-and-Tools/**  
   - Frameworks, guides, templates, playbooks.  
-  - Prefer **generic, reusable** content here (not initiative-specific).
+  - **2.0-Foundations** (product sense, mental models, bias) → **2.1-Strategy** → **2.2-Discovery** → **2.3-Execution** → **2.4-Communication**.  
+  - **Entry point for product thinking:** [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md). Prefer **generic, reusable** content here (not initiative-specific).
 
 - **03-Research-Artifacts/**  
   - Research plans, notes, synthesis, key findings.  
@@ -53,6 +59,7 @@ These guidelines describe **how to use and evolve** this repo so it stays useful
   - One folder per initiative; this is where **day-to-day product work** lives.
 
 When in doubt:  
+- **Personal practice / calibration → `00-Meta/`**  
 - **Strategy / long-lived context → `01-Company-Context/`**  
 - **Reusable method / template → `02-Methods-and-Tools/`**  
 - **Evidence / research → `03-Research-Artifacts/`**  
@@ -103,17 +110,20 @@ When in doubt:
 
 ## 5. Using AI with This Repo
 
-- **Think first, template second**
-  - Use frameworks’ **braindump prompts** before filling in templates.
+- **Think first, template second (golden rule)**  
+  - See [PRODUCT-SENSE-RULES.md](PRODUCT-SENSE-RULES.md). Start product/stakeholder/org thinking from the **entry point** [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md): copy the simple prompt into a new chat; the agent will braindump with you, then point to Strategy, Discovery, Execution, or Communication.  
+  - Use frameworks’ **braindump prompts** ([2-product-sense-prompts.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md)) before filling in templates.  
   - Ask AI to challenge assumptions, not just “fill the blanks”.
 
 - **Good patterns**
+  - “I want to think through something about my product / stakeholder / org…” (then use the prompts the agent suggests).
   - “Help me braindump everything I know about [initiative] before we touch the template.”
   - “Based on my current `opportunity-assessment.md`, what’s unclear or risky?”
   - “Summarize changes between these two versions of the PRD.”
 
 - **Bad patterns**
   - “Write my strategy from scratch” with no context.
+  - Jumping straight to a PRD or OKR template without braindumping first.
   - Copy-pasting templates without thinking, then never revisiting.
 
 ---
@@ -156,6 +166,10 @@ When in doubt:
 ---
 
 ## 8. Quick Checklist
+
+- **Before starting a product/strategy/discovery/execution task**
+  - [ ] Did I braindump first (or use the product-thinking entry point)?  
+  - [ ] Am I using the right domain (Strategy / Discovery / Execution / Communication) after the braindump?  
 
 - **Before adding something new**
   - [ ] Does it already fit an existing folder pattern?  

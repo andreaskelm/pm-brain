@@ -95,11 +95,21 @@ A "perfect" score isn't someone who is right 100% of the time—that person is l
 
 ---
 
+## Confidence Calibration (Before / After Decisions)
+
+**Before a decision:** Rate your confidence (0–100%). Ask: What would make me more confident? What would make me change my mind? Am I overconfident (Dunning–Kruger) or underconfident (discounting my expertise)?
+
+**Confidence-based rules:** See [PRODUCT-SENSE-RULES.md](../../PRODUCT-SENSE-RULES.md) (Confidence-Based Decision Rules) for when to decide now vs. gather more info vs. double-check with others. Use reversibility + confidence level to choose.
+
+**After a decision (e.g. 3 months later):** Was I overconfident (outcome worse than expected), underconfident (outcome better), or well-calibrated? Review 20+ decisions quarterly to spot systematic over/underconfidence by context.
+
+---
+
 ## What Lives in This Folder
 
 | File | Purpose |
 |------|----------|
-| **README.md** (this file) | Overview, workflow, how to win, caveats. |
+| **README.md** (this file) | Overview, workflow, how to win, caveats, confidence calibration. |
 | **forecast-log.md** | Your running log: forecast + resolution. Append rows before ship; resolve when deadline hits. |
 | **BRIER-CALCULATION.md** | Formula, weight table, outcome mapping, interpretation bands. |
 | **dashboard.md** | Where to record Overall Brier and trend (update monthly). |

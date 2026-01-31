@@ -56,22 +56,37 @@ Most framework folders contain:
 
 ## Product Sense Development
 
+**Persona & background:** When guiding product thinking, adopt the persona and background in the entry point: [0-start-here-product-thinking.md#persona-and-background-for-agent](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md#persona-and-background-for-agent) so answers are sharp, coach-like, and focused on the user's thinking—not on filling templates.
+
+**Entry point for product thinking:** [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md). Use it to navigate: situation → prompts; stuck → evaluation; AI → 5-ai-product-sense; biases → 2.0.2-Bias; mental models → bridge; meta-thinking → 6-meta-thinking. Do not duplicate content that lives elsewhere; reference it.
+
+### First move for product-related chats
+
+When the user starts a chat about **product, stakeholder, organization, strategy, roadmap, prioritization, discovery, execution, or “help me think through something”**—treat it as product thinking. Do not suggest frameworks or templates yet.
+
+1. **Direct immediately to product sense:** Read the entry point above. Name the situation (or ask 1–2 clarifying questions to name it: strategy / design / prioritization / discovery / stuck / crisis / stakeholders / AI product).
+2. **Ask hard clarifying questions:** Use prompts from [2-product-sense-prompts.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md) for that situation. Pick 3–5 that challenge assumptions and surface blind spots. Help them think better; don’t validate or fill boxes.
+3. **After each user response, continue autonomously:** Ask 2–3 more prompts from the same situation (or probe deeper); reference red flags from the prompts file; if stuck, use [3-product-sense-evaluation.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/3-product-sense-evaluation.md). Do **not** suggest a framework until the user has done real braindump work (multiple back-and-forths, assumptions surfaced).
+4. **Only after a sufficient braindump** suggest a framework and point to the right doc in `02-Methods-and-Tools/` (see entry point "Frameworks by situation"). Optionally suggest logging in `00-Meta/` (daily log, prioritization log, pattern recognition log, or forecast log).
+
+The visual workflow (how you move through the repo) is in the entry point: [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md#how-the-agent-moves-workflow).
+
 Help users develop deep product thinking through the `00-Meta/` system:
 
 ### The Golden Rule: Braindump Before Frameworks
 
 **CRITICAL:** Before suggesting ANY framework or template, encourage braindumping.
 
-**When the user is thinking, braindumping, or asks for help with a product decision:** Read and apply `PRODUCT-SENSE-RULES.md` so you guide the conversation by the golden rule (braindump first, no template yet; use prompts from `2-product-sense-template.md`; help them think better, not fill templates).
+**When the user is thinking, braindumping, or asks for help with a product decision:** Start from the entry point above; read and apply `PRODUCT-SENSE-RULES.md` so you guide the conversation by the golden rule (braindump first, no template yet; use prompts from `2-product-sense-prompts.md` for the relevant situation; help them think better, not fill templates).
 
 **When a user asks for help with a product decision:**
 
-1. **First, help them braindump:** (Use `PRODUCT-SENSE-RULES.md` and prompts from `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md`)
+1. **First, help them braindump:** (Use `PRODUCT-SENSE-RULES.md` and prompts from `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md`)
    ```
    "Before we jump to a framework, let's braindump your thinking first.
    
    I'll ask you some questions to help you think deeply:
-   - [Use prompts from 2-product-sense-template.md for the relevant context: PRD, prioritization, strategy, research, or stuck]
+   - [Use prompts from 2-product-sense-prompts.md for the relevant context: PRD, prioritization, strategy, research, or stuck]
    - Challenge assumptions
    - Surface blind spots
    ```
@@ -124,7 +139,7 @@ After we've thought through this, I can help you structure it."
 **When appropriate, reference:**
 
 - `PRODUCT-SENSE-RULES.md` - The golden rule
-- `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md` - Before PRDs, prioritization, strategy
+- `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md` - Before PRDs, prioritization, strategy
 - `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/3-product-sense-evaluation.md` - When user is stuck
 - `00-Meta/README.md` - Personal practice space
 - `00-Meta/0.3-Product-Judgment-Test/` - Calibration tracker: log forecasts before ship, resolve when data is in, track Weighted Brier Score

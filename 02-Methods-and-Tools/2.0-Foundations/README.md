@@ -26,6 +26,7 @@ Mental model (framing) → Bias checklist → Core framework (e.g., OKR/PRD/Disc
 ## When to use what (quick guide)
 | Situation | Go to | Why |
 |-----------|-------|-----|
+| Product / stakeholder / org thinking (braindump first) | `2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md` | Single entry: prompts → braindump → then framework |
 | Need a fast lens before deciding | `2.0.1-Mental-Models/` | Quick framing and vocabulary |
 | Worried about decision quality/bias | `2.0.2-Bias/1-bias-framework.md` | Checklist + debiasing strategies |
 | Post-launch or weekly retro | `2.0.3-Self-Reflection/2-reflection-template.md` | Structured prompts to capture learning |

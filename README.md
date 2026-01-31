@@ -45,6 +45,7 @@ A living knowledge base that bridges the gap between Product Management framewor
 
 2. **Before using templates: Braindump first**
    - Don't jump straight to filling templates. Start by dumping your thoughts, ideas, and concerns.
+   - **To start a product-thinking chat (e.g. with Cursor):** Open [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md) and copy the **Simple prompt to start** at the top into a new chat.
    - Use the braindumping prompts in each framework to capture your raw thinking first.
    - Let your product sense and intuition guide initial thoughts before structuring them.
 
@@ -128,78 +129,13 @@ pm-brain/
 
 ---
 
-## 🧠 Product Sense Development System
+## 🧠 Product Sense: The Thread Through Everything
 
-**NEW: `00-Meta/` - Your PM growth engine**
+Strategy, discovery, execution, and communication only work if you *think* before you structure. Product sense is what ties that thinking together—braindump first, then pick the right framework. No template can replace it.
 
-Before you can effectively use frameworks, you need to develop deep product thinking. The `00-Meta/` folder is your personal product sense training system.
+**Golden rule:** [PRODUCT-SENSE-RULES.md](PRODUCT-SENSE-RULES.md) — braindump before structure.
 
-### The Golden Rule: Braindump Before Structure
-
-**Read first:** [`PRODUCT-SENSE-RULES.md`](./PRODUCT-SENSE-RULES.md)
-
-Before opening any template or framework:
-1. **Braindump your raw thinking** (10-15 min)
-2. **Use the prompts** in `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md`
-3. **Then** structure using frameworks from `02-Methods-and-Tools/`
-
-**Why this matters:** Frameworks organize thinking. They don't create it. Think deeply first, then structure.
-
-### 3-Layer Architecture
-
-```text
-Layer 1: How to Think (00-Meta/)
-   ↓
-Layer 2: How to Execute (02-Methods-and-Tools/)
-   ↓
-Layer 3: What You're Building (04-Initiatives/)
-```
-
-**Without Layer 1:** You're just filling out templates.  
-**With Layer 1:** You're developing deep product judgment.
-
-### What's in `00-Meta/`
-
-- **Daily Practice** (10 min): Exercises to build product intuition
-- **Learning Log**: Weekly reflections and monthly syntheses
-- **Growth Portfolio**: Evidence for 1:1s and performance reviews
-- **Product Judgment Test** (`0.3-Product-Judgment-Test/`): Log predictions and confidence % *before* you ship; resolve when data is in; track your Weighted Brier Score for calibration ("am I actually improving?")
-- **Monthly Assessment** (30 min): Self-assessment and growth trajectory (see Product Sense Development templates)
-
-### Quick Start with Product Sense
-
-**Choose your mode (public/private/team):** Read [`00-Meta/MODE-SELECTION-GUIDE.md`](./00-Meta/MODE-SELECTION-GUIDE.md), then apply mode manually:
-
-- **Public** (default): do nothing; everything can be tracked.
-- **Private:** `cat .gitignore.private >> .gitignore` then commit.
-- **Team:** `cat .gitignore.team >> .gitignore` then commit.
-
-**Modes:**
-- **🌍 Public** (default): Everything tracked (great for portfolios)
-- **🔒 Private**: Only frameworks tracked (personal learning)
-- **👥 Team**: Share frameworks, keep logs private
-
-**5-minute setup:**
-```bash
-# Read the golden rule
-cat PRODUCT-SENSE-RULES.md
-
-# Start your daily log (copy the canonical template)
-cp 02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/templates/daily-log-template.md 00-Meta/1-daily-log-2026-Q1.md
-
-# Do one 10-min exercise
-# Open: 02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/templates/1-daily-practice-exercises.md
-```
-
-**Daily workflow:**
-- Morning: Remember to braindump before using frameworks
-- Before shipping a feature: Log a forecast in `00-Meta/0.3-Product-Judgment-Test/forecast-log.md` (prediction, confidence %, bet type); resolve the row when data is in
-- During day: Log significant decisions
-- End of day: 5-min daily log update
-- Sunday evening: 30-min weekly reflection
-- Monthly: Resolve closed Product Judgment Test bets, update dashboard, review in monthly synthesis
-
-**See [`00-Meta/README.md`](./00-Meta/README.md) for complete guide.**
+**Start here:** [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md). Copy the simple prompt at the top into a new chat; the agent will ask hard questions and braindump with you, then point you to Strategy, Discovery, Execution, or Communication. After that, practice and track in `00-Meta/` (daily log, learning log, growth portfolio, [Product Judgment Test](00-Meta/0.3-Product-Judgment-Test/) for calibration). Full guide: [00-Meta/README.md](00-Meta/README.md).
 
 ---
 

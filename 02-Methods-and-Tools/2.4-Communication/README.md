@@ -2,15 +2,30 @@
 
 This domain contains methods and templates for keeping stakeholders informed, aligned, and trained. Use these frameworks when you need to communicate effectively, manage relationships, handle crises, or create training materials.
 
+## Before Using Any Communication Framework
+
+⚠️ **Don't jump straight to one-pagers or meeting templates.**
+
+### 1. Read the Golden Rule
+
+**See:** [PRODUCT-SENSE-RULES.md](../../PRODUCT-SENSE-RULES.md) (repo root)
+
+### 2. Braindump First (10–15 min)
+
+**Use the prompts:** [2-product-sense-prompts.md](../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md) — "Always-Ask Core Prompts" and situation-specific sections (e.g. stakeholders, crisis).  
+**Or start from the entry point:** [0-start-here-product-thinking.md](../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md) (simple prompt for a product-thinking chat).
+
+**Communication frameworks structure the message—they don't replace clarity of thinking.**
+
+### 3. Then Use Communication Frameworks
+
+After your braindump, use the frameworks below to structure your communication.
+
+---
+
 **Who this is for / when you're here**
 - **Junior PMs:** Learn structured approaches to stakeholder communication, saying no gracefully, and running effective meetings. Start with Meeting Agendas and Stakeholder Management.
 - **Senior PMs:** Quick reference for crisis management, escalation frameworks, and course design. Navigate directly to specific frameworks as needed.
-
-## Before using anything here (recommended)
-- Braindump: What are you trying to communicate? Who needs to know? Dump everything first.
-- Product sense: What feels right/wrong about this communication need? What's the core message?
-- Bias check: What biases might be affecting you? (Confirmation bias, solution bias, people-pleasing bias)
-- Reflection: What would make this communication obviously effective or ineffective?
 
 ## How this is organized
 
@@ -54,11 +69,13 @@ Courses (for training and enablement)
 | Creating training materials | `2.4.9-Courses/` | Brain-based learning design framework |
 
 ## Related domains / cross-links
-- Strategy (`../2.1-Strategy/`) - Newsletter references OKRs and roadmaps
-- Discovery (`../2.2-Discovery/`) - Stakeholder interviews and research
-- Execution (`../2.3-Execution/`) - Daily execution uses communication frameworks
-- Foundations (`../2.0-Foundations/`) - Mental models, bias awareness, and self-reflection support communication
-- Template Structure: `../0-Template-Structure/` (for creating new frameworks)
+
+- **Product sense (braindump first):** [0-start-here-product-thinking.md](../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md) — entry point for product thinking; use before one-pagers/meeting templates
+- **Strategy (../2.1-Strategy/):** Newsletter references OKRs and roadmaps
+- **Discovery (../2.2-Discovery/):** Stakeholder interviews and research
+- **Execution (../2.3-Execution/):** Daily execution uses communication frameworks
+- **Foundations (../2.0-Foundations/):** Mental models, bias awareness, and self-reflection support communication
+- **Template Structure:** `../0-Template-Structure/` (for creating new frameworks)
 
 ## AI collaboration prompt
 

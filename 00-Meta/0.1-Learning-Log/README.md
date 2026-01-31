@@ -12,9 +12,6 @@ Your thinking over time. Not just what you did, but what you learned.
 
 ```
 0.1-Learning-Log/
-├── templates/
-│   ├── 1-weekly-reflection-template.md
-│   └── 2-monthly-synthesis-template.md
 └── [Year]-Q[#]/
     ├── week-01.md
     ├── week-02.md
@@ -23,32 +20,9 @@ Your thinking over time. Not just what you did, but what you learned.
     └── monthly-[month].md
 ```
 
-### Templates (templates/)
-
-#### 1-weekly-reflection-template.md
-Structured template for Sunday evening reflections.
-
-**Sections:**
-- Practice summary (what exercises you did)
-- Decisions made (from daily log)
-- Key insights (patterns noticed)
-- What worked / didn't work
-- Next week focus
-
-**Time:** 30 minutes
-
-#### 2-monthly-synthesis-template.md
-Structured template for end-of-month synthesis.
-
-**Sections:**
-- Month overview
-- Practice consistency
-- Decision quality (retrospectives)
-- Patterns across weeks
-- Growth trajectory
-- Next month focus
-
-**Time:** 60 minutes
+**Canonical templates** (copy from Product Sense Development):  
+Weekly: [`6-Product-Sense-Development/templates/3-weekly-reflection-template.md`](../../02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/templates/3-weekly-reflection-template.md)  
+Monthly: [`6-Product-Sense-Development/templates/4-monthly-synthesis-template.md`](../../02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/templates/4-monthly-synthesis-template.md)
 
 ### Your Logs ([Year]-Q[#]/)
 
@@ -88,10 +62,11 @@ Quarterly Review (90 min)
    tail -50 ../1-daily-log-2026-Q1.md
    ```
 
-2. **Copy the weekly template**
+2. **Copy the weekly template** (from Product Sense Development)
    ```bash
-   cp templates/1-weekly-reflection-template.md 2026-Q1/week-04.md
+   cp ../../02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/templates/3-weekly-reflection-template.md 2026-Q1/week-04.md
    ```
+   Or from repo root: `cp 02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/templates/3-weekly-reflection-template.md 00-Meta/0.1-Learning-Log/2026-Q1/week-04.md`
 
 3. **Fill it out:**
    - What practice did you do? (Tally from daily log)
@@ -132,10 +107,11 @@ Quarterly Review (90 min)
    cat 2026-Q1/week-{01,02,03,04}.md
    ```
 
-2. **Copy the monthly template**
+2. **Copy the monthly template** (from Product Sense Development)
    ```bash
-   cp templates/2-monthly-synthesis-template.md 2026-Q1/monthly-jan.md
+   cp ../../02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/templates/4-monthly-synthesis-template.md 2026-Q1/monthly-jan.md
    ```
+   Or from repo root: `cp 02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/templates/4-monthly-synthesis-template.md 00-Meta/0.1-Learning-Log/2026-Q1/monthly-jan.md`
 
 3. **Fill it out:**
    - Month overview (what happened?)
@@ -345,10 +321,11 @@ With reflection, you compound improvements.
 
 ## Quick Links
 
-- **Weekly template:** `templates/1-weekly-reflection-template.md`
-- **Monthly template:** `templates/2-monthly-synthesis-template.md`
+- **Weekly template:** [`6-Product-Sense-Development/templates/3-weekly-reflection-template.md`](../../02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/templates/3-weekly-reflection-template.md)
+- **Monthly template:** [`6-Product-Sense-Development/templates/4-monthly-synthesis-template.md`](../../02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/templates/4-monthly-synthesis-template.md)
 - **Your daily log:** `../1-daily-log-YYYY-QX.md`
 - **Self-assessment:** `../self-assessment-YYYY-QX.md` (if you choose to keep one here)
 - **Growth portfolio:** `../0.2-Growth-Portfolio/`
+- **Product Sense entry point:** [`0-start-here-product-thinking.md`](../../02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md) – braindump before structure
 
 **Block Sunday evening. Do your weekly reflection. Watch your product sense compound.**

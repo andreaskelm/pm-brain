@@ -55,7 +55,11 @@ Mental models are organized by category:
 - [Strong Opinions, Loosely Held](5-Team-Dynamics/4-strong-opinions-loosely-held.md) - *TODO: fill content*
 
 ### Product-Sense-Development
+- [Start here: Product thinking](6-Product-Sense-Development/0-start-here-product-thinking.md) - Single entry point for product thinking: simple prompt to start, persona & background (for agent), situation → prompts → braindump → then framework; stuck → evaluation; AI, mental models, biases
 - [Product Sense Development](6-Product-Sense-Development/README.md) - Systematic framework for developing product intuition through deliberate practice that acts as a cross-cutting lens on top of Strategy, Discovery, and Execution frameworks
+- [Mental Models ↔ Product Sense Bridge](6-Product-Sense-Development/4-mental-models-product-sense-bridge.md) - When and how to use Decision-Making and Product-Thinking mental models during braindumps and product decisions
+- [AI Product Sense](6-Product-Sense-Development/5-ai-product-sense.md) - Product sense for AI products (model capability, safety, trust)
+- [Meta-Thinking for Product Sense](6-Product-Sense-Development/6-meta-thinking-for-product-sense.md) - Thinking modes, assumptions, and biases that affect product judgment
 
 ## How to Use Mental Models
 

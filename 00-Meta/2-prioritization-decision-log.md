@@ -9,7 +9,7 @@
 ### How to Use This Log
 
 - **When to log:** Any time you make a non-trivial call about what to do now vs. later.
-- **Depth:** 5–10 minutes per entry. If the decision is big, link out to a deeper diagnostic using `product-sense-template.md`.
+- **Depth:** 5–10 minutes per entry. If the decision is big, link out to a deeper diagnostic using `2-product-sense-prompts.md (in 6-Product-Sense-Development)`.
 - **Where frameworks fit:** Braindump and capture the log entry first, then use `02-Methods-and-Tools/2.1-Strategy/2.1.2-Strategic-Execution/4-Prioritization/` frameworks to structure and communicate.
 
 You don’t need to log every tiny backlog grooming decision. Focus on:

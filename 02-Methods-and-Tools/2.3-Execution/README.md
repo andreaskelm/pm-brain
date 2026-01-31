@@ -2,15 +2,30 @@
 
 This domain contains the frameworks you use to execute product work: daily operations, requirements definition, user understanding, prioritization, and measurement. These are the "how to build it" methods that bridge strategy and discovery into actual delivery.
 
+## Before Using Any Execution Framework
+
+⚠️ **Don't jump straight to PRDs or templates.**
+
+### 1. Read the Golden Rule
+
+**See:** [PRODUCT-SENSE-RULES.md](../../PRODUCT-SENSE-RULES.md) (repo root)
+
+### 2. Braindump First (10–15 min)
+
+**Use the prompts:** [2-product-sense-prompts.md](../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md) — "Before Writing a PRD / Feature" (and situation-specific red flags).  
+**Or start from the entry point:** [0-start-here-product-thinking.md](../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md) (simple prompt for a product-thinking chat).
+
+**Execution frameworks structure delivery—they don't replace thinking.**
+
+### 3. Then Use Execution Frameworks
+
+After your braindump, use the frameworks below to structure your work.
+
+---
+
 **Who this is for / when you're here**
 - **Junior PMs:** Learn structured approaches to writing requirements, prioritizing work, and measuring outcomes. Start with Daily Execution & Rituals and User Stories.
 - **Senior PMs:** Use these frameworks to scale execution, delegate effectively, and maintain quality standards. Focus on Backlog Prioritization and Metrics.
-
-## Before using anything here (recommended)
-- Braindump: What are you trying to execute? Dump everything first.
-- Product sense: What feels right/wrong about this execution challenge?
-- Bias check: What biases might be affecting you? (Feature factory bias? Activity bias? Vanity metrics?)
-- Reflection: What would make this obviously right/wrong?
 
 ## How this is organized
 
@@ -64,6 +79,7 @@ Research Interviews → Personas → PRD → User Stories → (Delivery)
 
 ## Related domains / cross-links
 
+- **Product sense (braindump first):** [0-start-here-product-thinking.md](../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md) — entry point for product thinking; use before PRDs/templates
 - **Strategy (2.1-Strategy/):** OKRs define outcomes to optimize for, Roadmap shows public view of priorities, Strategic Foundations inform execution decisions
 - **Discovery (2.2-Discovery/):** Opportunity Assessment and Idea Validation feed into PRDs, Jobs-to-Be-Done informs User Stories and Personas
 - **Communication (2.4-Communication/):** Stakeholder Management, Meeting Agendas, and Newsletter support daily execution

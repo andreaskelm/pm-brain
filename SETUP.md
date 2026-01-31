@@ -55,15 +55,17 @@ Before customizing, understand what each folder does:
 
 ```
 pm-brain/
+├── 00-Meta/                   # 🧠 Personal practice (daily log, learning log, growth portfolio, Product Judgment Test)
 ├── 01-Company-Context/        # 🏢 YOUR company vision, strategy, stakeholders
-├── 02-Methods-and-Tools/      # 🧭 Frameworks & templates (mostly ready to use)
+├── 02-Methods-and-Tools/      # 🧭 Frameworks & templates (Strategy, Discovery, Execution, Communication)
 ├── 03-Research-Artifacts/     # 🔍 Your research notes and findings
 └── 04-Initiatives/            # 🚧 Your active product work
 ```
 
 **Key insight:** 
+- `00-Meta/` = **YOUR PRACTICE** (daily log, weekly/monthly reflection, growth portfolio, forecast calibration). Canonical prompts and templates live in `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/`.
 - `01-Company-Context/` = **YOU MUST CUSTOMIZE THIS** (your company info)
-- `02-Methods-and-Tools/` = **READY TO USE** (frameworks work as-is, customize if needed)
+- `02-Methods-and-Tools/` = **READY TO USE** — **2.0-Foundations** (think first, product sense), **2.1-Strategy**, **2.2-Discovery**, **2.3-Execution**, **2.4-Communication**. Start product thinking from [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md).
 - `03-Research-Artifacts/` = **YOUR RESEARCH** (add your interview notes, findings)
 - `04-Initiatives/` = **YOUR WORK** (document your active initiatives)
 
@@ -206,7 +208,19 @@ If you're using **Cursor** (or similar AI-powered IDE), the repository includes 
 
 ---
 
-### Priority 3: Optional Customizations
+### Priority 3: 00-Meta (Personal Practice) — Optional
+
+If you want to build product sense deliberately (daily log, weekly reflection, growth portfolio, forecast calibration):
+
+1. **Read** [00-Meta/README.md](00-Meta/README.md) for what lives there and the minimal workflow.
+2. **Copy** the daily log template from `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/templates/daily-log-template.md` to `00-Meta/1-daily-log-YYYY-QX.md` (e.g. `1-daily-log-2026-Q1.md`).
+3. **Optional:** Before shipping a feature, log a forecast in `00-Meta/0.3-Product-Judgment-Test/forecast-log.md`; resolve when data is in (calibration).
+
+Mode (Public/Private/Team) affects what in `00-Meta/` is tracked in git; see Step 3 and `00-Meta/MODE-SELECTION-GUIDE.md`.
+
+---
+
+### Priority 4: Optional Customizations
 
 #### Customize Templates (If Needed)
 
@@ -231,19 +245,20 @@ The templates in `02-Methods-and-Tools/` work as-is, but you can customize them 
 
 **Don't wait until you need it!** Try a framework now to get familiar with the system.
 
-### Recommended First Framework: PRD
+### Start with product thinking (braindump first)
 
-1. **Navigate to:** `02-Methods-and-Tools/2.3-Execution/2.3.4-PRD/`
-2. **Read:** `README.md` (overview)
-3. **Read:** `1-prd-framework.md` (how to think about PRDs)
-4. **Use:** `2-prd-template.md` (copy and fill out)
+1. **Open the entry point:** [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md)
+2. **Copy the "Simple prompt to start"** at the top into a new chat (e.g. with Cursor or any AI). The agent will ask hard questions and braindump with you before suggesting any framework.
+3. **Only after a braindump** use the **Frameworks by situation** table in that file (or the domain READMEs) to open the right framework: Strategy, Discovery, Execution, or Communication.
 
-**Or try:**
-- **OKRs:** `2.1-Strategy/2.1.2-Strategic-Execution/1-OKR/` - Great for goal-setting
-- **Opportunity Assessment:** `2.2-Discovery/2.2.4-Opportunity-Assessment/` - For evaluating new ideas
-- **Meeting Agendas:** `2.4-Communication/2.4.2-Meeting-Agendas/` - For better meetings
+**Golden rule:** Braindump before structure. See [PRODUCT-SENSE-RULES.md](PRODUCT-SENSE-RULES.md).
 
-**Pro tip:** Use the "braindump first" approach mentioned in each framework. Don't jump straight to templates—think first, structure second.
+### Then try a framework
+
+- **PRD:** `02-Methods-and-Tools/2.3-Execution/2.3.4-PRD/` — after braindump, read README + framework, then template
+- **OKRs:** `02-Methods-and-Tools/2.1-Strategy/2.1.2-Strategic-Execution/1-OKR/` — goal-setting
+- **Opportunity Assessment:** `02-Methods-and-Tools/2.2-Discovery/2.2.4-Opportunity-Assessment/` — evaluating new ideas
+- **Meeting Agendas / One-Pagers:** `02-Methods-and-Tools/2.4-Communication/` — stakeholder communication
 
 ---
 
@@ -274,8 +289,8 @@ Create your first initiative folder to see how the system works:
 If you're using **Cursor**:
 
 1. **Open the repository** in Cursor
-2. **The AI already knows** about the repository structure (via root `AGENTS.md` which defines the PM Brain Assistant)
-3. **Use slash commands** for common workflows:
+2. **The AI already knows** the repo (via root `AGENTS.md`). For **product/stakeholder/org thinking**, it will start from the entry point [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md): braindump first, then suggest a framework (Strategy, Discovery, Execution, Communication).
+3. **Use slash commands** for common workflows (see `.cursor/commands/`):
    - `/start` - Launch a new initiative end-to-end
    - `/review` - Review documentation for issues
    - `/day` - Plan your day with PM rituals
@@ -284,14 +299,7 @@ If you're using **Cursor**:
    - `/unstuck` - Get unstuck from blockers
    - `/navigate` - Find the right framework for your situation
    - `/bias` - Check for cognitive biases in your thinking
-   
-   See `.cursor/commands/` for full command documentation.
-4. **Ask questions like:**
-   - "How do I write a PRD?"
-   - "Help me create an opportunity assessment"
-   - "What framework should I use for [situation]?"
-
-The AI will reference the correct files and guide you through the process.
+4. **To start a product-thinking chat:** Paste the simple prompt from the top of `0-start-here-product-thinking.md` (e.g. "I want to think through something about my product / stakeholder / org…"). The AI will ask hard questions and braindump with you before suggesting frameworks.
 
 ### Option B: ChatGPT, Claude, Gemini (Copy-Paste Method)
 
@@ -319,10 +327,12 @@ Run through this checklist to ensure everything is configured:
 
 - [ ] Company Context files updated with your information
 - [ ] Agent rules reviewed (if using Cursor)
-- [ ] Tried at least one framework successfully
+- [ ] Know the product-thinking entry point (`0-start-here-product-thinking.md`) and braindump-first rule
+- [ ] Tried at least one framework successfully (after a braindump)
 - [ ] Created your first initiative folder
 - [ ] Understand where to store research (`03-Research-Artifacts/`)
 - [ ] Know where to document active work (`04-Initiatives/`)
+- [ ] (Optional) Set up `00-Meta/` daily log or forecast log if you want to practice product sense
 
 ---
 
@@ -389,11 +399,14 @@ Once you're set up:
 
 ## 📚 Additional Resources
 
-- **Main README:** `README.md` - Overview and philosophy
-- **Guidelines:** `GUIDELINES.md` - Best practices for using and maintaining your PM brain (linking to external sources, collaboration, etc.)
-- **Agent Configuration:** `AGENTS.md` (root) - PM Brain Assistant instructions. Use `.cursor/rules/AGENTS.template.md` to create additional custom agents if needed
-- **Framework Navigation:** `02-Methods-and-Tools/README.md` - Find the right framework
-- **Credits:** `CREDITS.md` - Attribution for frameworks and methods
+- **Main README:** [README.md](README.md) — Overview and philosophy
+- **Product thinking entry point:** [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md) — Simple prompt to start; braindump first, then frameworks by situation
+- **Golden rule:** [PRODUCT-SENSE-RULES.md](PRODUCT-SENSE-RULES.md) — Braindump before structure
+- **Guidelines:** [GUIDELINES.md](GUIDELINES.md) — Best practices for using and maintaining your PM brain
+- **Agent Configuration:** [AGENTS.md](AGENTS.md) — PM Brain Assistant instructions; `.cursor/rules/AGENTS.template.md` for custom agents
+- **Framework Navigation:** [02-Methods-and-Tools/README.md](02-Methods-and-Tools/README.md) — Strategy, Discovery, Execution, Communication
+- **00-Meta (practice):** [00-Meta/README.md](00-Meta/README.md) — Daily log, learning log, growth portfolio, Product Judgment Test
+- **Credits:** [CREDITS.md](CREDITS.md) — Attribution for frameworks and methods
 
 ---
 
@@ -440,4 +453,4 @@ You've completed the setup. Now go build great products! 🚀
 **Questions?** Check the main `README.md` or explore the framework folders. The system is designed to be self-explanatory as you use it.
 
 **Created by:** [Andreas Kelm](https://github.com/andreaskelm)  
-**Last updated:** 13-01-2026
+**Last updated:** 2026-01-31

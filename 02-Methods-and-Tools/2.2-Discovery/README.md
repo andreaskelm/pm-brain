@@ -8,11 +8,12 @@ This domain contains methods for understanding customers, framing opportunities,
 
 ### 1. Read the Golden Rule
 
-**See:** [`/PRODUCT-SENSE-RULES.md`](../../../PRODUCT-SENSE-RULES.md)
+**See:** [PRODUCT-SENSE-RULES.md](../../PRODUCT-SENSE-RULES.md) (repo root)
 
 ### 2. Braindump First (10-15 min)
 
-**Use the prompts:** [`02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md`](../../../02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md)
+**Use the prompts:** [2-product-sense-prompts.md](../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md) — "Before User Research / Discovery" section.  
+**Or start from the entry point:** [0-start-here-product-thinking.md](../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md) (simple prompt for a product-thinking chat).
 
 Specifically, the "Before User Research / Discovery" section:
 - What assumption, if wrong, would completely change our plans?

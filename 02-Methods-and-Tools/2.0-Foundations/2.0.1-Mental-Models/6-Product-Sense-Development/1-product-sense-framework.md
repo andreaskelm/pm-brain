@@ -216,7 +216,7 @@ Everything else in the templates is optional depth layered on top of these few q
 
 **Never jump straight to templates.**
 
-1. **First:** Braindump using `2-product-sense-template.md` (10-15 min)
+1. **First:** Braindump using `2-product-sense-prompts.md` (10-15 min)
    - Think deeply, ask uncomfortable questions
    - Don't worry about structure or completeness
    - Go where your thinking takes you
@@ -390,7 +390,7 @@ You will often be deciding in fog. Practicing with these prompts trains you to n
 
 ## Quick Links
 
-- **Braindump prompts:** [`2-product-sense-template.md`](2-product-sense-template.md)
+- **Braindump prompts:** [`2-product-sense-prompts.md`](2-product-sense-prompts.md)
 - **Decision diagnostic:** [`3-product-sense-evaluation.md`](3-product-sense-evaluation.md)
 - **Daily exercises:** [`templates/1-daily-practice-exercises.md`](templates/1-daily-practice-exercises.md)
 - **Self-assessment:** [`templates/2-self-assessment-template.md`](templates/2-self-assessment-template.md)

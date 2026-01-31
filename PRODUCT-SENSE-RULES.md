@@ -1,8 +1,14 @@
 # Product Sense Rules - The Golden Rule
 
+**What this doc is:** The canonical definition of the **golden rule** (one sentence below) and the **braindump workflow** (why it matters + 3 steps). Read it when you want the rationale and the step-by-step. For *where to go* and *how the agent moves*, see [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md). For the **actual questions** (prompts by situation), see [2-product-sense-prompts.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md).
+
+---
+
 **The Golden Rule: Braindump before structure.**
 
 Before you open any framework, template, or structured thinking tool: **brain dump first**.
+
+**Single entry point:** [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md) — navigation, simple prompt to start, [when is what invoked](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md#when-is-what-invoked-what-controls-what), [how the agent moves](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md#how-the-agent-moves-workflow).
 
 Your raw, unstructured thinking is more valuable than perfectly formatted templates filled with shallow answers.
 
@@ -22,11 +28,13 @@ Your raw, unstructured thinking is more valuable than perfectly formatted templa
 
 ### Step 1: Braindump (No Structure)
 
+**Before you start:** Am I in product mode (why, goals, second-order, trade-offs) or project mode (when, who, completion)? If you're about to fill boxes, switch to product mode first.
+
 When you have a product decision, problem, or opportunity:
 
 1. **Don't open a template yet**
 1. **Open a blank doc** (or voice memo, or whiteboard)
-1. **Ask yourself the messy questions** (see `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md`)
+1. **Ask yourself the messy questions** (see `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md`)
 1. **Write/speak your raw thinking** - don't edit, don't organize, don't worry about completeness
 1. **Go where your thinking takes you** - even if it feels off-topic
 1. **Write until you feel stuck or satisfied**
@@ -64,6 +72,24 @@ Review your braindump:
 **Time box:** Variable (depending on framework)
 
 **Output:** Structured artifact informed by deep thinking
+
+### Before Any Major Decision: 30-Second Pre-Flight
+
+Right before you decide or open a framework, run the **full checklist** (quick checks, red flags STOP, green lights PROCEED) in [2-product-sense-prompts.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md) at the top of the file.
+
+**Minimum:** Can I articulate WHY? Have I asked "and then what?" at least twice? Do I know who loses from this?
+
+### Confidence-Based Decision Rules
+
+Use your confidence level + reversibility to choose how to proceed. For full calibration (forecast log, Brier score, review), see [00-Meta/0.3-Product-Judgment-Test](00-Meta/0.3-Product-Judgment-Test/).
+
+| Confidence | Reversibility | Action |
+|------------|----------------|--------|
+| **>80%** | Reversible | Decide now. Set review date. |
+| **>80%** | Irreversible | Double-check with 2–3 others first, then decide. |
+| **50–80%** | Can learn quickly (&lt;1 day) | Gather specific info that would increase confidence, then decide. |
+| **50–80%** | Slow to learn | Decide with current info + set clear review point to adjust. |
+| **&lt;50%** | — | Don't decide yet. Either learn more or reframe the decision. |
 
 -----
 
@@ -197,7 +223,7 @@ First, braindump:
 
 ## The Prompts to Use
 
-See `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md` for detailed prompts for:
+See `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md` for detailed prompts for:
 
 - Before writing a PRD
 - Before prioritization decisions
@@ -396,7 +422,7 @@ Think first. Structure later.
 
 ## Links to Key Resources
 
-- **Braindump prompts:** `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md`
+- **Braindump prompts:** `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md`
 - **Decision diagnostic:** `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/3-product-sense-evaluation.md`
 - **Daily practice exercises:** `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/templates/1-daily-practice-exercises.md`
 - **Framework library:** `02-Methods-and-Tools/`

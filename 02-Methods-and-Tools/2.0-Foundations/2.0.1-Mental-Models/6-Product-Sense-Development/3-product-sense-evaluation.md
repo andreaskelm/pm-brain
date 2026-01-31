@@ -2,7 +2,7 @@
 
 **Purpose:** Identify what's blocking you and what type of thinking you need to move forward.
 
-Use this **after** you’ve done a quick braindump with the relevant section of `2-product-sense-template.md` (Product Sense prompts). First let your intuition and raw thinking surface what feels off; then use this diagnostic to name the block type and choose an unsticking technique.
+Use this **after** you’ve done a quick braindump with the relevant section of `2-product-sense-prompts.md` (Product Sense prompts). First let your intuition and raw thinking surface what feels off; then use this diagnostic to name the block type and choose an unsticking technique.
 
 **When to use:**
 

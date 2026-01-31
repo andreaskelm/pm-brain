@@ -4,6 +4,7 @@
 All canonical frameworks and templates live in Foundations; `00-Meta/` only stores what you actually *do* and *learn*.
 
 Canonical Product Sense system:
+- **Entry point for product thinking:** [`6-Product-Sense-Development/0-start-here-product-thinking.md`](../02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md) (single file: simple prompt, persona, navigation, workflow).
 - Framework, prompts, evaluation, and practice templates:  
   `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/`
 - Golden Rule (braindump before structure): `PRODUCT-SENSE-RULES.md`
@@ -71,7 +72,7 @@ Layer 3 – What You're Building
 
 Typical flow for any substantial piece of work:
 1. **Think first (Foundations + Meta)**  
-   - Braindump with Product Sense prompts (`2-product-sense-template.md`).  
+   - Braindump with Product Sense prompts (`2-product-sense-prompts.md`).  
    - Capture key thoughts/decisions in `1-daily-log-YYYY-QX.md` and the thin logs.
 2. **Structure second (Methods & Tools)**  
    - Use PRD/OKR/Opportunity frameworks in `02-Methods-and-Tools/` to organize thinking.
@@ -124,6 +125,8 @@ Pattern: keep raw daily/weekly thinking private, commit higher-level syntheses a
 
 ## Quick Links
 
+- **Start a product-thinking chat (entry point)**  
+  [`6-Product-Sense-Development/0-start-here-product-thinking.md`](../02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md) – copy the simple prompt at the top into a new chat; agent will braindump with you before any framework.
 - **Product Sense framework & templates**  
   `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/`
 - **Daily log template**  

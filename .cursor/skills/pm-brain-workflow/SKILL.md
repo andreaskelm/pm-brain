@@ -72,7 +72,7 @@ Most framework folders follow this structure:
 
 ## Braindumping Workflow
 
-When a user wants to work on something or is thinking/braindumping: **Apply the golden rule from `PRODUCT-SENSE-RULES.md`** (braindump before structure). Use prompts from `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-template.md` for the relevant context (PRD, prioritization, strategy, research, stuck).
+When a user wants to work on something or is thinking/braindumping: **Apply the golden rule from `PRODUCT-SENSE-RULES.md`** (braindump before structure). Use prompts from `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md` for the relevant context (PRD, prioritization, strategy, research, stuck).
 
 1. **Listen and probe**
    - What's the core problem or opportunity?
@@ -80,7 +80,7 @@ When a user wants to work on something or is thinking/braindumping: **Apply the 
    - What constraints exist?
 
 2. **Guide exploration** (do not suggest templates yet)
-   - Use prompts from `2-product-sense-template.md` to surface assumptions and blind spots
+   - Use prompts from `2-product-sense-prompts.md` to surface assumptions and blind spots
    - Ask clarifying questions from the relevant framework
    - Help organize scattered thoughts only after raw thinking is out
 
