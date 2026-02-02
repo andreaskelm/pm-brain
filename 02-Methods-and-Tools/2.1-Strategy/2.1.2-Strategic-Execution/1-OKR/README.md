@@ -49,11 +49,12 @@ Create 1-2 objectives per team with 2-4 key results each
 ### Step 4: Track Progress
 Use weekly check-ins to update confidence and progress
 
-### Step 5: Evaluate Your OKRs
-Use `3-okr-evaluation.md` to evaluate your OKRs:
-- **Start with product sense/gut check** (5-10 min): What feels right? What feels off?
-- **Then run structured evaluation** to validate and deepen your insights
-- Compare your gut feeling to the structured evaluation results
+### Step 5: Quality Checks During Creation
+**Quality checks happen automatically during creation** - The agent will scan for common red flags (activity-focused objectives, missing baselines, too many OKRs, etc.) and point them out as you create your OKRs. See "Quick Quality Checks" section in `1-okr-framework.md` for the full list.
+
+**After completing your OKRs**, you can optionally:
+- Run a quick quality check: Agent scans for red flags (fast, < 2 min)
+- Run full evaluation: Use `3-okr-evaluation.md` for comprehensive peer review, quality gates, or learning
 
 ### Step 6: Review Quarterly
 Grade results at end of cycle and set next cycle
@@ -63,7 +64,7 @@ After setting OKRs, reflect:
 - How did your thinking evolve from your braindump?
 - What biases did you catch? (Vanity metrics? Activity bias?)
 - What does your product sense tell you about these OKRs?
-- How did your product sense compare to the structured evaluation?
+- What red flags did the agent catch? What did you catch yourself?
 - What would you do differently next time?
 
 ## How to Maintain

@@ -75,6 +75,34 @@ Inside each numbered framework folder, files follow this pattern:
 
 ---
 
+## Evaluation Frameworks
+
+**Frameworks with evaluation support** (high-stakes, peer-reviewed, quality-gated) have comprehensive evaluation frameworks available:
+
+- **OKRs:** `2.1-Strategy/2.1.2-Strategic-Execution/1-OKR/3-okr-evaluation.md`
+- **Roadmaps:** `2.1-Strategy/2.1.2-Strategic-Execution/2-Roadmap/3-roadmap-evaluation.md`
+- **PRDs:** `2.3-Execution/2.3.4-PRD/3-prd-evaluation.md`
+- **Opportunity Assessments:** `2.2-Discovery/2.2.4-Opportunity-Assessment/3-opportunity-assessment-evaluation.md`
+- **North Star:** `2.1-Strategy/2.1.2-Strategic-Execution/3-North-Star/3-north-star-evaluation.md`
+- **One-Pagers:** `2.4-Communication/2.4.3-One-Pagers/3-one-pager-evaluation.md`
+
+**How evaluations work:**
+
+1. **During Creation (Automatic):** The agent automatically scans for red flags as you create frameworks with evaluation support. See "Quick Quality Checks" sections in each `1-*-framework.md` file.
+
+2. **After Creation (Optional):** You can request a quick quality check (< 2 min) or full evaluation (comprehensive peer review, quality gates, learning).
+
+3. **For Peer Review:** Use the full evaluation framework (`3-*-evaluation.md`) for comprehensive feedback with scoring and improvements.
+
+**Evaluation Process:** Each evaluation follows a consistent structure:
+- **STEP 0:** Product Sense & Gut Check (do this first!)
+- **STEP 1:** Quality Check (red/green flags)
+- **STEP 2:** Evaluator Prompt (weighted scoring)
+- **STEP 3:** Antipattern Detector (common mistakes)
+- **STEP 4:** Improvement Generator (actionable fixes)
+
+---
+
 ## How PM Work Flows (2.0 → 2.1 → 2.2 → 2.3 → 2.4)
 
 ### 2.0-Foundations/ — HOW TO THINK

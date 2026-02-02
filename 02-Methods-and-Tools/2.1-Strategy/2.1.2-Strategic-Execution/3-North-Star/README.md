@@ -7,6 +7,7 @@ This framework helps product teams align around a single metric that captures cu
 ## Files
 - `1-north-star-framework.md` — Complete North Star methodology and best practices
 - `2-north-star-template.md` — Ready-to-use North Star template with examples
+- `3-north-star-evaluation.md` — Evaluation framework (start with product sense/gut check, then structured evaluation)
 
 ## How to Use This Framework
 
@@ -41,14 +42,22 @@ Define 3-5 input metrics that teams can directly influence
 ### Step 5: Map Work Connections
 Connect current initiatives to input metrics
 
-### Step 6: Review Regularly
+### Step 6: Quality Checks During Creation
+**Quality checks happen automatically during creation** - The agent will scan for common red flags (vanity metrics, unclear input/output relationships, not actionable, etc.) and point them out as you create your North Star framework. See "Quick Quality Checks" section in `1-north-star-framework.md` for the full list.
+
+**After completing your North Star framework**, you can optionally:
+- Run a quick quality check: Agent scans for red flags (fast, < 2 min)
+- Run full evaluation: Use `3-north-star-evaluation.md` for comprehensive peer review, quality gates, or learning
+
+### Step 7: Review Regularly
 Use weekly/monthly/quarterly review cadence to maintain alignment
 
-### Step 7: Self-Reflection
+### Step 8: Self-Reflection
 After defining your North Star, reflect:
 - How did your thinking evolve from your braindump?
 - What biases did you catch? (Vanity metrics? Activity bias?)
 - What does your product sense tell you about this metric?
+- What red flags did the agent catch? What did you catch yourself?
 - How well does this connect daily work to customer value?
 
 ## When to Use

@@ -45,15 +45,21 @@ Use this framework to document early initiative thinking, capture hypotheses, an
 ## Files
 - `1-opportunity-assessment-framework.md` — Complete framework guide with principles and process
 - `2-opportunity-assessment-template.md` — Template for documenting opportunity assessments
+- `3-opportunity-assessment-evaluation.md` — Evaluation framework (start with product sense/gut check, then structured evaluation)
 
 ## How to Use This Framework
 
 1. **Start Early**: Create opportunity assessment when you have an initial idea or hypothesis
 2. **Document What You Know**: Fill out sections with current knowledge; mark unknowns explicitly
 3. **Identify Research Needs**: Use "What we should research" section to plan validation
-4. **Move to Discovery**: When ready, use discovery methods in this domain (e.g., `../2.2.1-Research-Interviews/`, `../2.2.2-Continuous-Discovery-Habits/`) to validate assumptions
-5. **Update as You Learn**: Return to update opportunity assessment with new evidence
-6. **Transition to Execution**: When validated, create PRD using templates in `../../2.3-Execution/2.3.4-PRD/`
+4. **Quality Checks During Creation**: **Quality checks happen automatically during creation** - The agent will scan for common red flags (no clear hypothesis, assumptions not identified, missing evidence plan, etc.) and point them out as you create your opportunity assessment. See "Quick Quality Checks" section in `1-opportunity-assessment-framework.md` for the full list.
+
+   **After completing your opportunity assessment**, you can optionally:
+   - Run a quick quality check: Agent scans for red flags (fast, < 2 min)
+   - Run full evaluation: Use `3-opportunity-assessment-evaluation.md` for comprehensive peer review, quality gates, or learning
+5. **Move to Discovery**: When ready, use discovery methods in this domain (e.g., `../2.2.1-Research-Interviews/`, `../2.2.2-Continuous-Discovery-Habits/`) to validate assumptions
+6. **Update as You Learn**: Return to update opportunity assessment with new evidence
+7. **Transition to Execution**: When validated, create PRD using templates in `../../2.3-Execution/2.3.4-PRD/`
 
 ## How This Fits in the System
 

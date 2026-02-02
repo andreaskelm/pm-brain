@@ -229,6 +229,61 @@ Track these to know if your one-pagers are effective:
 - **Reusability** - Can others use this as a template?
 - **Stakeholder satisfaction** - Do readers find them valuable?
 
+## Quick Quality Checks (Use During Creation)
+
+**Purpose:** Catch common issues early while creating one-pagers. The agent will automatically scan for these red flags during creation conversations.
+
+### Top Red Flags to Watch For
+
+❌ **Unclear ask** - Decision/action needed is not clear  
+→ **Fix:** Specify decision upfront. Ask: "What decision do you need? What action should they take?"
+
+❌ **Missing context** - Reader lacks context to understand the problem  
+→ **Fix:** Add context. Ask: "What does the reader need to know to understand this?"
+
+❌ **Jargon-heavy** - Uses jargon or acronyms without defining them  
+→ **Fix:** Define jargon. Ask: "Would someone outside your team understand this? Define acronyms."
+
+❌ **No clear decision/action** - Doesn't specify what decision is needed  
+→ **Fix:** Add decision. Ask: "What specific decision do you need? When?"
+
+❌ **Buries the lead** - Key information buried in middle or end  
+→ **Fix:** Lead with punchline. Ask: "What's the most important thing? Put it first."
+
+❌ **Missing data** - Claims not supported by numbers or evidence  
+→ **Fix:** Add data. Ask: "What numbers support this claim? What's the baseline? Target?"
+
+❌ **Vague language** - Uses vague terms like "improve significantly"  
+→ **Fix:** Be specific. Ask: "What does 'significantly' mean? Use specific numbers."
+
+❌ **Wrong audience** - Written for wrong audience or assumes too much prior knowledge  
+→ **Fix:** Align with audience. Ask: "Who is this for? What do they already know?"
+
+### Quick Product Sense Questions (Ask Yourself)
+
+- What's your gut feeling about this one-pager? What feels right? What feels off?
+- If you had to explain this one-pager to a skeptical executive in 2 minutes, what would you say?
+- What would make you say "this one-pager is obviously wrong"?
+- What would make you say "this one-pager is obviously right"?
+- What does your product sense tell you about the ask? Is it clear what decision is needed?
+- Does this one-pager feel like it will drive action? What action might it drive instead?
+- What biases might be affecting your view? (Information overload? Unclear ask? Wrong audience?)
+
+### Green Flags (What Good One-Pagers Look Like)
+
+✅ Clear ask/decision specified upfront  
+✅ Problem clearly stated with context  
+✅ Specific numbers and data support claims  
+✅ TL;DR/executive summary leads with punchline  
+✅ Decision/action is crystal clear  
+✅ Written for target audience (appropriate level of detail)  
+✅ Trade-offs and risks addressed  
+✅ Scannable format (headings, bullets, whitespace)
+
+**Note:** For comprehensive evaluation (peer review, quality gates), see `3-one-pager-evaluation.md`.
+
+---
+
 ## One-Pager Quality Checklist
 
 Before sharing any one-pager, validate it passes these tests:
@@ -250,6 +305,7 @@ For ready-to-use templates, see `2-one-pager-templates.md`.
 ## References
 
 - One-Pager Templates: `2-one-pager-templates.md`
+- One-Pager Evaluation: `3-one-pager-evaluation.md`
 - Meeting Agendas: `../2.4.2-Meeting-Agendas/README.md`
 - Stakeholder Management: `../2.4.7-Stakeholder-Management/README.md`
 - Newsletter: `../2.4.1-Newsletter/README.md`

@@ -1,0 +1,80 @@
+---
+description: When user creates frameworks with evaluation support (OKRs, roadmaps, PRDs, opportunity assessments, North Star, one-pagers), automatically use lightweight quality checks during creation, then optionally offer full evaluation after completion.
+alwaysApply: false
+---
+# Evaluation Orchestration
+
+When the user is creating frameworks with evaluation support (in ExecutionMode via template-finder path), automatically integrate lightweight quality checks during creation.
+
+**Frameworks with evaluation support:**
+- OKRs
+- Roadmaps
+- PRDs (Product Requirements Documents)
+- Opportunity Assessments
+- North Star Frameworks
+- One-Pagers
+
+## During Creation (Automatic)
+
+**When user is creating any framework with evaluation support:**
+
+1. **Scan for red flags as user creates** - As the user fills in the framework, automatically check for red flags specific to that framework:
+   - **OKRs:** Activity-focused objectives, milestone KRs, missing baselines/targets, too many OKRs, no measurement plan
+   - **Roadmaps:** System names instead of problems, binary metrics, vague dependencies, jargon, missing business problems
+   - **PRDs:** Missing success metrics, vague requirements, no user context, unclear success criteria, solution-first thinking
+   - **Opportunity Assessments:** No clear hypothesis, assumptions not identified, missing evidence plan, vague opportunity, solution bias
+   - **North Star:** Vanity metrics, unclear input/output relationships, not actionable, misaligned with strategy, too many inputs
+   - **One-Pagers:** Unclear ask, missing context, jargon-heavy, no clear decision/action, buries the lead
+
+2. **Point out issues inline** - When you spot a red flag, immediately:
+   - Name the issue: "I notice this [issue]..."
+   - Ask a clarifying question: "[Framework-specific clarifying question]"
+   - Suggest a fix: "[Framework-specific fix suggestion]"
+
+3. **Use product sense prompts** - Periodically ask quick product sense questions:
+   - "What's your gut feeling about this [framework]? What feels right? What feels off?"
+   - "If you had to explain this to a skeptical [stakeholder] in 2 minutes, what would you say?"
+
+**Reference:** Use the "Quick Quality Checks" sections in:
+- `02-Methods-and-Tools/2.1-Strategy/2.1.2-Strategic-Execution/1-OKR/1-okr-framework.md`
+- `02-Methods-and-Tools/2.1-Strategy/2.1.2-Strategic-Execution/2-Roadmap/1-roadmap-framework.md`
+- `02-Methods-and-Tools/2.3-Execution/2.3.4-PRD/1-prd-framework.md`
+- `02-Methods-and-Tools/2.2-Discovery/2.2.4-Opportunity-Assessment/1-opportunity-assessment-framework.md`
+- `02-Methods-and-Tools/2.1-Strategy/2.1.2-Strategic-Execution/3-North-Star/1-north-star-framework.md`
+- `02-Methods-and-Tools/2.4-Communication/2.4.3-One-Pagers/1-one-pager-framework.md`
+
+## After Creation (Optional)
+
+**When user completes any framework with evaluation support:**
+
+1. **Offer quick quality check** - Say: "Want me to run a quick quality check? I can scan for common issues (takes < 2 min), or we can do a full evaluation."
+
+2. **If user says yes to quick check:**
+   - Run through red flags from "Quick Quality Checks" section
+   - Point out any remaining issues
+   - Suggest quick fixes
+
+3. **If user wants full evaluation:**
+   - Use the comprehensive evaluation framework (`3-*-evaluation.md`):
+     - `02-Methods-and-Tools/2.1-Strategy/2.1.2-Strategic-Execution/1-OKR/3-okr-evaluation.md`
+     - `02-Methods-and-Tools/2.1-Strategy/2.1.2-Strategic-Execution/2-Roadmap/3-roadmap-evaluation.md`
+     - `02-Methods-and-Tools/2.3-Execution/2.3.4-PRD/3-prd-evaluation.md`
+     - `02-Methods-and-Tools/2.2-Discovery/2.2.4-Opportunity-Assessment/3-opportunity-assessment-evaluation.md`
+     - `02-Methods-and-Tools/2.1-Strategy/2.1.2-Strategic-Execution/3-North-Star/3-north-star-evaluation.md`
+     - `02-Methods-and-Tools/2.4-Communication/2.4.3-One-Pagers/3-one-pager-evaluation.md`
+   - Follow the full evaluation process: Product sense check → Quality flags → Weighted scoring → Antipatterns → Improvements
+
+## For Peer Review
+
+**When user explicitly asks to evaluate someone else's framework:**
+
+- Use the full evaluation framework (`3-*-evaluation.md`)
+- Run complete evaluation process
+- Provide comprehensive feedback with scoring and improvements
+
+## Key Principles
+
+- **Lightweight checks are automatic** - Don't wait until the end; catch issues as they arise
+- **Full evaluation is optional** - Only run when user requests or after offering
+- **Help user think, don't think for them** - Ask questions, don't just fix things
+- **Product sense first** - Always start with gut feeling before structured evaluation

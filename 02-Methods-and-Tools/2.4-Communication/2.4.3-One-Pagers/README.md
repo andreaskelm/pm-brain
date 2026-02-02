@@ -7,6 +7,7 @@ This framework helps product teams create compelling one-page documents that dri
 ## Files
 - `1-one-pager-framework.md` — Complete one-pager framework with principles, structure, and best practices
 - `2-one-pager-templates.md` — Ready-to-use templates for Product, Strategy, Launch, Decision, and Status one-pagers
+- `3-one-pager-evaluation.md` — Evaluation framework (start with product sense/gut check, then structured evaluation)
 
 ## Before Using This Framework
 
@@ -44,8 +45,12 @@ Select the appropriate template (Product, Strategy, Launch, Decision, or Status)
 ### Step 3: Use Template
 Copy the relevant template from `2-one-pager-templates.md` and fill it in
 
-### Step 4: Quality Check
-Review against the quality checklist before sharing
+### Step 4: Quality Checks During Creation
+**Quality checks happen automatically during creation** - The agent will scan for common red flags (unclear ask, missing context, jargon-heavy, etc.) and point them out as you create your one-pager. See "Quick Quality Checks" section in `1-one-pager-framework.md` for the full list.
+
+**After completing your one-pager**, you can optionally:
+- Run a quick quality check: Agent scans for red flags (fast, < 2 min)
+- Run full evaluation: Use `3-one-pager-evaluation.md` for comprehensive peer review, quality gates, or learning
 
 ### Step 5: Test with One Person
 Have someone from your target audience review it first
@@ -57,6 +62,7 @@ Distribute to stakeholders and track if decision/action is taken
 After sharing, reflect:
 - Was the decision made? Was action taken?
 - What questions came up? What was unclear?
+- What red flags did the agent catch? What did you catch yourself?
 - What would you do differently next time?
 
 ## When to Use

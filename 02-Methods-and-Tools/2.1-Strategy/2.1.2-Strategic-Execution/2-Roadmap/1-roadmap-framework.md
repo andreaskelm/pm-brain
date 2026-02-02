@@ -258,6 +258,56 @@ Always include:
 **Response pattern:**
 "External factors are included in our confidence levels. [Initiative] has [Confidence Level] which accounts for [External Factor]. We'll adjust if conditions change significantly."
 
+## Quick Quality Checks (Use During Creation)
+
+**Purpose:** Catch common issues early while creating roadmaps. The agent will automatically scan for these red flags during creation conversations.
+
+### Top Red Flags to Watch For
+
+❌ **Initiative names are system/application names** - "Implement X", "Deploy Y"  
+→ **Fix:** Reframe as business problems/outcomes. Ask: "What problem does this solve?"
+
+❌ **Outcomes focus on migration percentages** - "100% users migrated"  
+→ **Fix:** Focus on business value. Ask: "What value does migration enable?"
+
+❌ **Dependencies are just team names** - "Marketing, IT"  
+→ **Fix:** Specify what's needed, from whom, by when. Ask: "What exactly do you need? When?"
+
+❌ **Success metrics are binary** - Done/not-done only  
+→ **Fix:** Use measurable business metrics. Ask: "How will we measure success?"
+
+❌ **Heavy unexplained jargon** - Acronyms and technical terms without context  
+→ **Fix:** Use plain language. Ask: "Would your mom understand this?"
+
+❌ **No clear business problems** - Focuses on features, not problems  
+→ **Fix:** State the problem first. Ask: "What problem are we solving? Why does it matter?"
+
+❌ **Time horizons don't match confidence** - High confidence for LATER, low for NOW  
+→ **Fix:** Align confidence with time horizon. Ask: "Does this confidence level match the timeframe?"
+
+### Quick Product Sense Questions (Ask Yourself)
+
+- What's your gut feeling about this roadmap? What feels right? What feels off?
+- If you had to explain this roadmap to a skeptical executive in 2 minutes, what would you say?
+- What would make you say "this roadmap is obviously wrong"?
+- What would make you say "this roadmap is obviously right"?
+- What does your product sense tell you about the priorities? Do they feel right?
+- What initiatives feel like they might be missing? What feels like it shouldn't be there?
+- What biases might be affecting your view? (Recency bias? Squeaky wheel? Status quo?)
+
+### Green Flags (What Good Roadmaps Look Like)
+
+✅ Problems clearly stated in business terms  
+✅ Plain language throughout  
+✅ Quantified business impact metrics  
+✅ Specific, actionable dependencies  
+✅ Clear scope boundaries  
+✅ Confidence levels align with time horizons
+
+**Note:** For comprehensive evaluation (peer review, quality gates), see `3-roadmap-evaluation.md`.
+
+---
+
 ## Best Practices
 
 ### Do's

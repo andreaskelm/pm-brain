@@ -415,6 +415,59 @@ After: "Increase weekly active users from 10,000 to 15,000" (outcome - drives va
 Result: Team focuses on meaningful engagement, not just traffic
 ```
 
+## Quick Quality Checks (Use During Creation)
+
+**Purpose:** Catch common issues early while creating OKRs. The agent will automatically scan for these red flags during creation conversations.
+
+### Top Red Flags to Watch For
+
+❌ **Objectives are project/feature names** - "Build X", "Implement Y", "Deploy Z"  
+→ **Fix:** Reframe as business outcomes. Ask: "What outcome does this enable?"
+
+❌ **KRs are milestones** - "Complete Phase 1", "Launch feature", "Finish integration"  
+→ **Fix:** Convert to measurable outcomes. Ask: "How will we measure success?"
+
+❌ **No baselines or targets** - "Improve conversion", "Increase quality"  
+→ **Fix:** Add specific numbers. Ask: "What's the current state? What's the target?"
+
+❌ **Missing time bounds** - "Increase revenue", "Reduce costs"  
+→ **Fix:** Add timeframe. Ask: "By when do we want to achieve this?"
+
+❌ **No measurement plan** - No dashboards, events, or tracking mentioned  
+→ **Fix:** Define instrumentation. Ask: "How will we measure this? What events/dashboards?"
+
+❌ **Too many Objectives** - More than 2 per team  
+→ **Fix:** Force rank to top 1-2. Ask: "If you could only focus on ONE outcome, what would it be?"
+
+❌ **Too many KRs** - More than 5 per Objective  
+→ **Fix:** Limit to 2-4. Ask: "Which KRs matter most for this Objective?"
+
+❌ **Activity-focused KRs** - "Implement X", "Deploy Y"  
+→ **Fix:** Focus on outcomes. Ask: "What outcome does this activity enable?"
+
+### Quick Product Sense Questions (Ask Yourself)
+
+- What's your gut feeling about these OKRs? What feels right? What feels off?
+- If you had to explain these OKRs to a skeptical executive in 2 minutes, what would you say?
+- What would make you say "these OKRs are obviously wrong"?
+- What would make you say "these OKRs are obviously right"?
+- Do these OKRs feel like they'll drive the right behavior? What behavior might they drive instead?
+- What biases might be affecting your view? (Activity bias? Vanity metrics? Output vs. outcome?)
+
+### Green Flags (What Good OKRs Look Like)
+
+✅ Clear business outcome objectives (not features or projects)  
+✅ Specific baseline → target with thresholds  
+✅ Event definitions and dashboard links provided  
+✅ Mix of leading and lagging indicators  
+✅ Clear strategic alignment documented  
+✅ Dependencies identified with owners and timelines  
+✅ Confidence scoring approach defined
+
+**Note:** For comprehensive evaluation (peer review, quality gates), see `3-okr-evaluation.md`.
+
+---
+
 ## Best Practices
 
 ### Do's

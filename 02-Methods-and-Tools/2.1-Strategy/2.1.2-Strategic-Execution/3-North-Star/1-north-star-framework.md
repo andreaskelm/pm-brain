@@ -290,6 +290,61 @@ Always include:
 **Response pattern:**
 “Let’s examine our beliefs. Do our inputs actually drive the North Star? Are we measuring the right things? This is exactly when the framework helps us learn and adapt.”
 
+## Quick Quality Checks (Use During Creation)
+
+**Purpose:** Catch common issues early while creating North Star frameworks. The agent will automatically scan for these red flags during creation conversations.
+
+### Top Red Flags to Watch For
+
+❌ **Vanity metrics** - Metric looks good but doesn't drive value (page views, registered users)  
+→ **Fix:** Focus on customer value. Ask: "What value does this metric capture? Does it predict business outcomes?"
+
+❌ **Unclear input/output relationships** - How inputs influence North Star is not clear  
+→ **Fix:** Document relationships. Ask: "How does each input influence the North Star? What's the connection?"
+
+❌ **Not actionable** - Teams can't see how their work connects to the North Star  
+→ **Fix:** Make inputs actionable. Ask: "Can teams directly influence this input? How?"
+
+❌ **Misaligned with strategy** - North Star doesn't connect to strategic priorities  
+→ **Fix:** Align with strategy. Ask: "How does this North Star support our strategic priorities?"
+
+❌ **Too many inputs** - More than 5 input metrics (dilutes focus)  
+→ **Fix:** Limit to 3-5. Ask: "If you could only focus on 3 inputs, which would they be?"
+
+❌ **No work connections** - Initiatives don't map to input metrics  
+→ **Fix:** Map work to inputs. Ask: "Which initiatives move which inputs? How?"
+
+❌ **Unclear measurement** - No clear definition of how North Star is measured  
+→ **Fix:** Define measurement. Ask: "How will we measure this? What's the baseline? Target?"
+
+❌ **Wrong product game** - Metric doesn't match ATTENTION/TRANSACTION/PRODUCTIVITY game  
+→ **Fix:** Identify correct game. Ask: "What game are we playing? Does this metric match?"
+
+### Quick Product Sense Questions (Ask Yourself)
+
+- What's your gut feeling about this North Star? What feels right? What feels off?
+- If you had to explain this North Star to a skeptical executive in 2 minutes, what would you say?
+- What would make you say "this North Star is obviously wrong"?
+- What would make you say "this North Star is obviously right"?
+- What does your product sense tell you about the metric? Does it feel like it captures real customer value?
+- Does this North Star feel actionable? Can teams see how their work connects to it?
+- What biases might be affecting your metric choice? (Vanity metrics? Activity bias?)
+
+### Green Flags (What Good North Star Frameworks Look Like)
+
+✅ Customer value-focused metric (not vanity metrics)  
+✅ Clear input/output relationships documented  
+✅ Actionable inputs (teams can directly influence them)  
+✅ Strategic alignment documented  
+✅ 3-5 input metrics (focused, not overwhelming)  
+✅ Work connections mapped (initiatives link to inputs)  
+✅ Clear measurement definition with baseline  
+✅ Product game correctly identified (ATTENTION/TRANSACTION/PRODUCTIVITY)
+
+**Note:** For comprehensive evaluation (peer review, quality gates), see `3-north-star-evaluation.md`.
+
+---
+
 ## Best Practices
 
 ### Do’s
@@ -466,6 +521,7 @@ Result: More effective prioritization
 ## References
 
 - North Star Template: `2-north-star-template.md`
+- North Star Evaluation: `3-north-star-evaluation.md`
 - Strategic Foundations: `../2.1.1-Strategic-Foundations/README.md`
 - OKR Framework: `../1-OKR/README.md`
 - Roadmap: `../2-Roadmap/README.md`

@@ -2,9 +2,19 @@
 
 > **Before running structured evaluation:** Senior PMs are often busy, but it's critical to first tap into your product sense and gut feeling. Use your intuition to identify what feels right or wrong, then use the structured framework to validate and deepen your insights.
 
+> **Note:** For creation-time quality checks (lightweight, automatic), see the "Quick Quality Checks" section in `1-okr-framework.md`. This comprehensive evaluation framework is for peer review, quality gates, or deep learning.
+
 ## Usage Instructions
 
 This framework provides a systematic approach to evaluate OKRs against evidence-based, outcome-focused methodology.
+
+**When to use this comprehensive evaluation:**
+- Peer review of coworkers' OKRs
+- Quality gates before finalizing/sharing
+- Deep learning about what makes good OKRs
+- After creation, when you want comprehensive feedback
+
+**For creation-time checks:** Use the lightweight "Quick Quality Checks" in `1-okr-framework.md` (agent uses these automatically during creation).
 
 **Evaluation Process:**
 0. **Product Sense & Gut Check** (Do this first! 5-10 minutes)
@@ -12,6 +22,30 @@ This framework provides a systematic approach to evaluate OKRs against evidence-
 2. Apply `OKR_EVALUATOR_PROMPT` for comprehensive scoring
 3. Use `OKR_ANTIPATTERN_DETECTOR` for specific methodology issues
 4. Generate improvements with `OKR_IMPROVEMENT_GENERATOR`
+
+---
+
+## AI Agent Instructions
+
+**For LLMs/AI agents using this framework:**
+
+1. **Follow the step sequence:** Always start with STEP 0 (Product Sense), then proceed through STEP 1-4 in order.
+
+2. **Help user think, don't think for them:**
+   - Ask the product sense questions from STEP 0 before running structured evaluation
+   - Compare structured results to user's initial gut feeling
+   - Highlight where product sense aligned with structured evaluation
+   - Explore discrepancies together
+
+3. **Use structured sections:**
+   - STEP 1: Scan for red/green flags, calculate multiplier
+   - STEP 2: Score each criterion (1-10), calculate raw score, apply multiplier
+   - STEP 3: Scan for antipatterns, categorize by type
+   - STEP 4: Generate specific improvements using templates
+
+4. **Output format:** Use the "Output Format" section in STEP 2 as a template for presenting results.
+
+5. **Reference framework:** When suggesting improvements, reference specific sections from `1-okr-framework.md` for context.
 
 ---
 
@@ -40,7 +74,7 @@ Before running the structured evaluation, take 5-10 minutes to review with your 
 
 ---
 
-# STEP 1: OKR_QUALITY_CHECK
+## STEP 1: OKR_QUALITY_CHECK
 
 Scan for these flags before detailed evaluation:
 
@@ -85,7 +119,7 @@ Quality Multiplier = max(0.1, Base Multiplier + Green Bonus)
 
 ---
 
-# STEP 2: OKR_EVALUATOR_PROMPT
+## STEP 2: OKR_EVALUATOR_PROMPT
 
 You are an OKR expert conducting a peer review. **Your role is to help the user think, not to think for them.**
 
@@ -258,7 +292,7 @@ For each criterion provide:
 
 ---
 
-# STEP 3: OKR_ANTIPATTERN_DETECTOR
+## STEP 3: OKR_ANTIPATTERN_DETECTOR
 
 Scan for these common OKR mistakes and note specific instances:
 
@@ -341,7 +375,7 @@ By Category:
 
 ---
 
-# STEP 4: OKR_IMPROVEMENT_GENERATOR
+## STEP 4: OKR_IMPROVEMENT_GENERATOR
 
 Based on evaluation results, provide actionable improvements:
 
@@ -526,3 +560,16 @@ Example: "Settlement time -60%" → "Ops efficiency +40%" → "Unit cost -25%" �
 ### Long-term Capability Building
 1. [Foundational improvement for future cycles]
 2. [Foundational improvement for future cycles]
+
+---
+
+## References
+
+- OKR Framework: `1-okr-framework.md` - Complete methodology
+- OKR Template: `2-okr-template.md` - Fill-in-the-blanks template
+- Related Frameworks:
+  - Strategic Foundations: `../2.1.1-Strategic-Foundations/README.md`
+  - Roadmap: `../2-Roadmap/README.md`
+  - North Star: `../3-North-Star/README.md`
+  - Prioritization: `../4-Prioritization/README.md`
+- Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)

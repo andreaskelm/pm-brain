@@ -108,6 +108,60 @@ For platform features or high-risk initiatives:
 - [ ] OKR IDs referenced (if applicable)
 - [ ] Related documents linked (roadmap, designs, tech specs)
 
+## Quick Quality Checks (Use During Creation)
+
+**Purpose:** Catch common issues early while creating PRDs. The agent will automatically scan for these red flags during creation conversations.
+
+### Top Red Flags to Watch For
+
+❌ **Missing success metrics** - No clear definition of how success will be measured  
+→ **Fix:** Define success metrics with baselines, targets, and thresholds. Ask: "How will we measure success?"
+
+❌ **Vague requirements** - Requirements are unclear or ambiguous  
+→ **Fix:** Add acceptance criteria in Given/When/Then format. Ask: "How will we test this requirement?"
+
+❌ **No user context** - Missing JTBD, user stories, or clear understanding of who this is for  
+→ **Fix:** Add user context. Ask: "Who is this really for? What job are they hiring this to do?"
+
+❌ **Unclear success criteria** - No baselines, targets, or thresholds  
+→ **Fix:** Add specific numbers. Ask: "What's the current state? What's the target?"
+
+❌ **Solution-first thinking** - Focuses on features before problems  
+→ **Fix:** Reframe as problem statement. Ask: "What problem does this solve? Why does it matter?"
+
+❌ **Missing assumptions** - Assumptions not identified or documented  
+→ **Fix:** Document assumptions with confidence levels. Ask: "What are we assuming? How confident are we?"
+
+❌ **No traceability** - Missing links to opportunity doc, JTBD, or validation results  
+→ **Fix:** Add links to discovery work. Ask: "What opportunity/JTBD/validation informed this PRD?"
+
+❌ **Unclear scope boundaries** - What's in/out of scope not explicitly stated  
+→ **Fix:** Explicitly define in/out. Ask: "What's explicitly NOT included? Why?"
+
+### Quick Product Sense Questions (Ask Yourself)
+
+- What's your gut feeling about this PRD? What feels right? What feels off?
+- If you had to explain this PRD to a skeptical engineer in 2 minutes, what would you say?
+- What would make you say "this PRD is obviously wrong"?
+- What would make you say "this PRD is obviously right"?
+- Who is this really for? Does the PRD make that clear?
+- What biases might be affecting your view? (Solution bias? Feature bias? Confirmation bias?)
+
+### Green Flags (What Good PRDs Look Like)
+
+✅ Clear problem statement backed by evidence (user quotes, data)  
+✅ Success metrics with baselines and targets defined  
+✅ User context clearly articulated (JTBD, user stories, personas)  
+✅ Requirements have clear acceptance criteria (Given/When/Then)  
+✅ Traceability to discovery (links to opportunity, JTBD, validation)  
+✅ Dependencies identified with owners and timelines  
+✅ Risks identified with mitigation plans  
+✅ Scope boundaries clearly defined (in/out)
+
+**Note:** For comprehensive evaluation (peer review, quality gates), see `3-prd-evaluation.md`.
+
+---
+
 ## Common Anti-Patterns
 
 **Over-specification:**
@@ -231,6 +285,7 @@ Act as a product management coach. Help me think through what to build before we
 
 - PRD Template: `2-prd-template.md`
 - PRD JTBD Template: `3-prd-jtbd-template.md`
+- PRD Evaluation: `3-prd-evaluation.md`
 - Strategy: `../../2.1-Strategy/README.md` (Strategic Foundations, OKR Framework)
 - Discovery: `../../2.2-Discovery/README.md` (Opportunity Assessment, Idea Validation, Jobs to Be Done)
 - Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)

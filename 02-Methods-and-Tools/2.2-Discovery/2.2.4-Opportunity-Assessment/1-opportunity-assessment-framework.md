@@ -115,6 +115,60 @@ An opportunity assessment helps you structure early thinking about a potential p
 2. Update opportunity assessment with findings
 3. Move to PRD/roadmap when validated, or kill/pivot if not
 
+## Quick Quality Checks (Use During Creation)
+
+**Purpose:** Catch common issues early while creating opportunity assessments. The agent will automatically scan for these red flags during creation conversations.
+
+### Top Red Flags to Watch For
+
+❌ **No clear hypothesis** - Opportunity statement is vague or missing  
+→ **Fix:** Write clear hypothesis. Ask: "What problem/opportunity are we addressing? Why does it matter?"
+
+❌ **Assumptions not identified** - Assumptions not documented with confidence levels  
+→ **Fix:** Document assumptions. Ask: "What are we assuming? How confident are we (High/Med/Low)?"
+
+❌ **Missing evidence plan** - No research plan or validation approach  
+→ **Fix:** Create research plan. Ask: "How will we validate this? What methods? Who will we talk to?"
+
+❌ **Vague opportunity** - Opportunity not clearly articulated or too broad  
+→ **Fix:** Be specific. Ask: "What exactly is the opportunity? Can you quantify it?"
+
+❌ **Solution bias** - Focuses on solutions before understanding the problem  
+→ **Fix:** Reframe as problem/opportunity. Ask: "What problem are we solving? What outcome do we want?"
+
+❌ **Missing decision criteria** - No kill/pivot/commit thresholds  
+→ **Fix:** Define thresholds. Ask: "What evidence would make us kill this? Pivot? Commit?"
+
+❌ **No customer context** - Missing target customer or JTBD understanding  
+→ **Fix:** Add customer context. Ask: "Who is this for? What job are they hiring this to do?"
+
+❌ **Missing success metrics** - No clear definition of how success will be measured  
+→ **Fix:** Define metrics. Ask: "How will we measure success? What's the baseline? Target?"
+
+### Quick Product Sense Questions (Ask Yourself)
+
+- What's your gut feeling about this opportunity assessment? What feels right? What feels off?
+- If you had to explain this opportunity to a skeptical executive in 2 minutes, what would you say?
+- What would make you say "this opportunity is obviously wrong"?
+- What would make you say "this opportunity is obviously right"?
+- What assumptions feel risky? Which ones feel solid?
+- What biases might be affecting your view? (Solution bias? Confirmation bias? Opportunity bias?)
+
+### Green Flags (What Good Opportunity Assessments Look Like)
+
+✅ Clear hypothesis with opportunity statement  
+✅ Assumptions documented with confidence levels (High/Med/Low)  
+✅ Evidence plan with research methods and decision criteria  
+✅ Target customer clearly defined with JTBD context  
+✅ Success metrics with baselines and targets  
+✅ Decision criteria defined (kill/pivot/commit thresholds)  
+✅ Risks identified across desirability/viability/feasibility/usability  
+✅ Solution ideas kept high-level until validated
+
+**Note:** For comprehensive evaluation (peer review, quality gates), see `3-opportunity-assessment-evaluation.md`.
+
+---
+
 ## Common Pitfalls
 
 **Too solution-focused too early**
@@ -184,6 +238,7 @@ Act as a product management coach. Help me think through my opportunity assessme
 ## References
 
 - Opportunity Assessment Template: `2-opportunity-assessment-template.md`
+- Opportunity Assessment Evaluation: `3-opportunity-assessment-evaluation.md`
 - Research Interviews: `../2.2.1-Research-Interviews/README.md`
 - Continuous Discovery Habits: `../2.2.2-Continuous-Discovery-Habits/README.md`
 - Jobs To Be Done: `../2.2.3-Jobs-To-Be-Done/README.md`

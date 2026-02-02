@@ -96,8 +96,12 @@ Review the framework in `1-prd-framework.md` to understand PRD principles and wh
 ### Step 3: Structure Your Thinking
 Start with section 3 (Goals & Success Metrics) then work outward - but use your braindump to inform each section
 
-### Step 4: Quality Check
-Use the quality checklist to ensure completeness before stakeholder review
+### Step 4: Quality Checks During Creation
+**Quality checks happen automatically during creation** - The agent will scan for common red flags (missing success metrics, vague requirements, no user context, etc.) and point them out as you create your PRD. See "Quick Quality Checks" section in `1-prd-framework.md` for the full list.
+
+**After completing your PRD**, you can optionally:
+- Run a quick quality check: Agent scans for red flags (fast, < 2 min)
+- Run full evaluation: Use `3-prd-evaluation.md` for comprehensive peer review, quality gates, or learning
 
 ### Step 5: Maintain
 Maintain as living document; track changes in version history
@@ -107,6 +111,7 @@ After writing the PRD, reflect:
 - How did your thinking evolve from your braindump?
 - What did you learn? What surprised you?
 - What biases did you catch? What would you do differently?
+- What red flags did the agent catch? What did you catch yourself?
 - How did your product sense guide you?
 
 ## When to Use

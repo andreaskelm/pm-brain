@@ -64,18 +64,19 @@ Use communication guide for different audiences
 ### Step 5: Schedule Reviews
 Set up weekly/monthly/quarterly review cadence
 
-### Step 6: Evaluate Your Roadmap
-Use `3-roadmap-evaluation.md` to evaluate your roadmap:
-- **Start with product sense/gut check** (5-10 min): What feels right? What feels off?
-- **Then run structured evaluation** to validate and deepen your insights
-- Compare your gut feeling to the structured evaluation results
+### Step 6: Quality Checks During Creation
+**Quality checks happen automatically during creation** - The agent will scan for common red flags (system names instead of problems, binary metrics, vague dependencies, etc.) and point them out as you create your roadmap. See "Quick Quality Checks" section in `1-roadmap-framework.md` for the full list.
+
+**After completing your roadmap**, you can optionally:
+- Run a quick quality check: Agent scans for red flags (fast, < 2 min)
+- Run full evaluation: Use `3-roadmap-evaluation.md` for comprehensive peer review, quality gates, or learning
 
 ### Step 7: Self-Reflection
 After creating roadmap, reflect:
 - How did your thinking evolve from your braindump?
 - What biases did you catch? (Recency? Squeaky wheel? Status quo?)
 - What does your product sense tell you about this roadmap?
-- How did your product sense compare to the structured evaluation?
+- What red flags did the agent catch? What did you catch yourself?
 - What would you do differently next time?
 
 ## How to Maintain
