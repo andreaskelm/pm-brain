@@ -4,15 +4,15 @@ alwaysApply: false
 ---
 # Product Sense – Braindump Before Structure
 
-When the user is talking about **product, stakeholder, organization, strategy, roadmap, prioritization, discovery, execution**, or **thinking through a decision** (e.g. "help me think through something," PRD, prioritization, research, "what should I build?"):
+When the user is talking about **product, stakeholder, organization, strategy, roadmap, prioritization, discovery, execution**, or **thinking through a decision** (e.g. "help me think through something," PRD, prioritization, research, "what should I build?"), the agent enters **product_sense_mode** and follows the canonical spec:
 
-0. **Adopt the persona and background** in the entry point: `0-start-here-product-thinking.md` → section "Persona & background (for agent)" (same folder).
-1. **Start from the product thinking entry point:** `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md`. Use it to choose follow-up questions and navigate (situation → prompts; stuck → evaluation; AI → 5-ai-product-sense; biases → 2.0.2-Bias; mental models → bridge; meta-thinking → 6-meta-thinking).
-2. **Read and apply** the golden rule from **`PRODUCT-SENSE-RULES.md`** (repo root). Full workflow, when to braindump, and examples live there.
-3. **Do not suggest templates or frameworks** until after a braindump. Help them think first; structure second.
-4. **Use prompts from** `2-product-sense-prompts.md` for the relevant situation. If the context is clear, name the situation (strategy / design / prioritization / discovery / stuck / crisis) and use that section. Pick 3–5 that feel uncomfortable—those are the important ones.
-5. **After each user response, continue the loop:** Ask 2–3 more prompts from the same situation or probe deeper; reference red flags for that situation; if stuck → `3-product-sense-evaluation.md`. Do not suggest frameworks until braindump is sufficient (multiple exchanges, assumptions surfaced).
-6. **Help them think better, not fill boxes.** Challenge assumptions; don't validate. **Do not duplicate content** that lives elsewhere (e.g. bias lists live in `2.0.2-Bias/1-bias-framework.md`); reference it.
-7. **When braindump is sufficient:** Suggest the right framework from `02-Methods-and-Tools/` and, when relevant, suggest logging in `00-Meta/` (daily log, prioritization log, pattern recognition log, forecast log).
+1. **Persona:** Adopt the persona and background from `0-start-here-product-thinking.md` → section "Persona & background (for agent)" (same folder).
+2. **Entry point:** Start from `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md` to choose follow-up questions and navigate (situation → prompts; stuck → evaluation; AI → 5-ai-product-sense; biases → 2.0.2-Bias; mental models → bridge; meta-thinking → 6-meta-thinking).
+3. **Golden rule & checklist:** Read and apply the golden rule from `PRODUCT-SENSE-RULES.md` (repo root), including the \"braindump sufficient\" checklist. Do **not** suggest templates or frameworks until those criteria are met.
+4. **Prompts:** Use prompts from `2-product-sense-prompts.md` for the relevant situation. Name the situation when clear (strategy / design / prioritization / discovery / stuck / crisis) and pick 3–5 prompts that feel uncomfortable; those matter most.
+5. **Loop:** After each user response, continue the loop with 2–3 more prompts or deeper probes; reference red flags for that situation; if stuck → `3-product-sense-evaluation.md`.
+6. **Scope:** Help them think better, not fill boxes. **Do not duplicate content** that lives elsewhere (e.g. bias lists live in `2.0.2-Bias/1-bias-framework.md`); reference it.
+7. **Exit to execution_mode:** When braindump is sufficient, suggest the right framework from `02-Methods-and-Tools/` and, when relevant, suggest logging in `00-Meta/` (daily log, prioritization log, pattern recognition log, forecast log).
 
-**Canonical entry point:** `0-start-here-product-thinking.md`. **Golden rule:** `PRODUCT-SENSE-RULES.md` (repo root).
+**Canonical entry point:** `0-start-here-product-thinking.md`.  
+**Canonical golden rule & workflow:** `PRODUCT-SENSE-RULES.md` (repo root).

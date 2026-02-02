@@ -43,6 +43,17 @@ When you have a product decision, problem, or opportunity:
 
 **Output:** Messy, raw, honest thinking
 
+### Is the braindump \"sufficient\"?
+
+Before you (or the agent) leave braindump mode and move on to frameworks, check that **at least** these are true:
+
+- You have **named your key assumptions** (not just your desired outcome).
+- You have separated **what you know vs. what you are guessing**.
+- You have touched at least one **risk, edge case, or second-order effect** (\"and then what?\").
+- You have written something that feels a bit **uncomfortable or challenging** to your current plan.
+
+If these aren’t true yet, you are still in **product_sense_mode**; stay with the prompts and braindump a bit longer before moving to structure.
+
 ### Step 2: Pattern Recognition (Light Structure)
 
 Review your braindump:

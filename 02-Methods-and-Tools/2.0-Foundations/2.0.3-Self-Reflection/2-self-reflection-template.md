@@ -83,7 +83,7 @@
 - Self-Reflection Framework: `1-self-reflection-framework.md`
 - Self-Reflection README: `README.md`
 - Mental Models: `../2.0.1-Mental-Models/README.md`
-- Library Index: `../library.md`
-- Bias Framework: `../2.9.4-Bias/README.md`
+- Foundations index: `../0-index.md`
+- Bias Framework: `../2.0.2-Bias/README.md`
 - All frameworks in `02-Methods-and-Tools/` benefit from reflection after use
 

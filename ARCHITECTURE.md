@@ -57,3 +57,34 @@
 | **2.2 Discovery** | Research, JTBD, opportunity assessment, idea validation. |
 | **2.3 Execution** | PRDs, personas, metrics, execution rituals. |
 | **2.4 Communication** | Stakeholder comms, one-pagers, crisis, escalation, saying no. |
+
+---
+
+## Agent mode flow (state diagram)
+
+**In plain English:** The assistant switches between modes depending on whether you're thinking things through, asking for a specific doc, or wrapping up with reflection.
+
+```mermaid
+flowchart LR
+  DefaultMode[Default]
+  ProductSenseMode[ProductSenseMode]
+  TemplateFinderPath[TemplateFinderPath]
+  ExecutionMode[ExecutionMode]
+  MetaSuggestion[MetaSuggestion]
+
+  DefaultMode -->|"product or think-through topic"| ProductSenseMode
+  DefaultMode -->|"write draft fill specific doc"| TemplateFinderPath
+
+  ProductSenseMode -->|"braindump sufficient"| ExecutionMode
+  ProductSenseMode -->|"more prompts"| ProductSenseMode
+
+  TemplateFinderPath -->|"preflight + template"| ExecutionMode
+
+  ExecutionMode -->|"substantial decision done"| MetaSuggestion
+  MetaSuggestion -->|"suggest 00-Meta log or rule update"| DefaultMode
+```
+
+- **ProductSenseMode**: Entered when the topic is product/stakeholder/org/strategy/roadmap/prioritization/discovery/execution or \"help me think through something\". Stay here while you braindump using prompts from `2-product-sense-prompts.md` and the golden rule in `PRODUCT-SENSE-RULES.md`, until the \"braindump sufficient\" checklist is met.
+- **TemplateFinderPath**: Entered when you explicitly ask to write/draft/fill a specific doc (PRD, OKR, one-pager, etc.). Use `02-Methods-and-Tools/0-template-finder.md` to jump straight to the right README + template, optionally asking 1–2 preflight prompts for non-trivial docs.
+- **ExecutionMode**: After sufficient braindump (or via TemplateFinderPath), help structure thinking and apply the right framework/template from `02-Methods-and-Tools/`.
+- **MetaSuggestion**: After substantial decision work, suggest logging in `00-Meta/` (forecast log, learning log, pattern recognition) and optionally updating rules (see `.cursor/rules/thinking.mdc`), then return to Default for the next conversation.
