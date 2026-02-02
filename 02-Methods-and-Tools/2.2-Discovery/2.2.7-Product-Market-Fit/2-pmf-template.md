@@ -277,6 +277,4 @@ From "very disappointed" users:
 ## References
 
 - PMF Framework: `1-pmf-framework.md`
-- Product Strategy: `../../2.1-Strategy/2.1.1-Strategic-Foundations/README.md`
-- Roadmap Template: `../../2.1-Strategy/2.1.2-Strategic-Execution/2-Roadmap/2-roadmap-template.md`
-- OKR Template: `../../2.1-Strategy/2.1.2-Strategic-Execution/1-OKR/2-okr-template.md`
+- Strategy: `../../2.1-Strategy/README.md` (Strategic Foundations, Roadmap Framework, OKR Framework)

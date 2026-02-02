@@ -434,7 +434,7 @@ Monitor how features move between categories over time:
 - Prioritization Methods (RICE, ICE, Impact-Effort, MoSCoW, Kano): `../4-Prioritization/README.md`
 - MoSCoW Template: `../3-MoSCoW/2-moscow-prioritization-template.md`
 - Roadmap Template: `../2-Roadmap/2-roadmap-template.md`
-- PRD Template: `../../2.4-Execution/2.4.1-PRD/2-prd-template.md`  <!-- adjust if PRD moved -->
+- Execution: `../../2.3-Execution/README.md` (PRD Template)
 
 ---
 

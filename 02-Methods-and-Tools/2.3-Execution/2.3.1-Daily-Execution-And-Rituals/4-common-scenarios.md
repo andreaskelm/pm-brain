@@ -139,6 +139,4 @@ or
 - Daily Rituals: `1-daily-rituals.md`
 - Weekly Cadence: `2-weekly-cadence.md`
 - Context Switching: `3-context-switching.md`
-- Crisis Management: `../../2.4-Communication/2.2.4-Crisis-Management/README.md`
-- Escalation: `../../2.4-Communication/2.2.5-Escalation/README.md`
-- Saying No: `../../2.4-Communication/2.2.6-Saying-No/README.md`
+- Communication: `../../2.4-Communication/README.md` (Crisis Management, Escalation, Saying No)

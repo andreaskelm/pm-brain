@@ -460,6 +460,5 @@ Then we can make a data-informed decision."
 
 - Escalation: `../2.4.5-Escalation/README.md`
 - Stakeholder Management: `../2.4.7-Stakeholder-Management/README.md`
-- Prioritization: `../../2.1-Strategy/2.1.2-Strategic-Execution/4-Prioritization/README.md`
-- Roadmap: `../../2.1-Strategy/2.1.2-Strategic-Execution/2-Roadmap/README.md`
-- Self-Reflection: `../../2.0-Foundations/2.0.3-Self-Reflection/README.md`
+- Strategy: `../../2.1-Strategy/README.md` (Prioritization, Roadmap)
+- Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)

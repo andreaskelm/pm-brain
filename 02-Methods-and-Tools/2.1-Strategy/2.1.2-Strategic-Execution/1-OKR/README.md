@@ -79,7 +79,7 @@ After setting OKRs, reflect:
 - North Star: `../3-North-Star/README.md`
 - Prioritization: `../4-Prioritization/README.md`
 - Company Context: `../../01-Company-Context/README.md`
-- Newsletter: `../../2.4-Communication/2.4.1-Newsletter/README.md`
-- Self-Reflection: `../../2.0-Foundations/2.0.3-Self-Reflection/README.md`
+- Communication: `../../2.4-Communication/README.md` (Newsletter)
+- Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)
 
 

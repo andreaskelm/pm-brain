@@ -21,7 +21,7 @@ TODO: Provide a scenario where a PM updates course quickly after new evidence em
 
 ## Combines With
 - Assumptions Framework (`../1-Decision-Making/3-assumptions-framework.md`)
-- Idea Validation (`../../2.2-Discovery/2.2.5-Idea-Validation/`)
+- Discovery: `../../2.2-Discovery/README.md` (Idea Validation)
 
 ## Further Reading
 - TODO: Add source(s)

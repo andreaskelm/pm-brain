@@ -17,4 +17,4 @@ Quick lenses to match decision speed to risk and surface hidden assumptions.
 
 ## Related
 - Bias checklist (`../../2.0.2-Bias/1-bias-framework.md`)
-- Opportunity Assessment (`../../2.2-Discovery/2.2.4-Opportunity-Assessment/`)
+- Discovery: `../../2.2-Discovery/README.md` (Opportunity Assessment)

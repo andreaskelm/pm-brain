@@ -37,8 +37,8 @@ Before a quarter starts, ask each team member independently: "What are our top 3
 
 ## Combines With
 - Assumptions Framework (`../decision-making/assumptions-framework.md`)
-- OKR Framework (`../../2.1-Strategy/2.1.2-OKR/`)
-- Stakeholder Management (`../../2.4-Communication/2.4.7-Stakeholder-Management/`)
+- Strategy: `../../2.1-Strategy/README.md` (OKR Framework)
+- Communication: `../../2.4-Communication/README.md` (Stakeholder Management)
 
 ## Further Reading
 - Concept from various team alignment and organizational effectiveness sources

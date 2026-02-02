@@ -72,5 +72,5 @@ After your braindump (and optional log entry), use prioritization methods to str
 - OKR Framework: `../1-OKR/README.md`
 - Roadmap: `../2-Roadmap/README.md`
 - North Star: `../3-North-Star/README.md`
-- Opportunity Assessment: `../../2.3-Discovery/2.3.4-Opportunity-Assessment/README.md`
-- Self-Reflection: `../../2.9-Other/2.9.2-Self-Reflection/README.md`
+- Discovery: `../../2.2-Discovery/README.md` (Opportunity Assessment)
+- Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)

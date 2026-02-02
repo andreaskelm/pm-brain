@@ -365,7 +365,5 @@ For faster iteration, use this compact format:
 - PRD Framework: `1-prd-framework.md`
 - PRD Template: `2-prd-template.md`
 - PRD README: `README.md`
-- Jobs to Be Done: `../../2.2-Discovery/2.2.3-Jobs-To-Be-Done/README.md`
-- Opportunity Assessment: `../../2.2-Discovery/2.2.4-Opportunity-Assessment/README.md`
-- Idea Validation: `../../2.2-Discovery/2.2.5-Idea-Validation/README.md`
-- Self-Reflection: `../../2.0-Foundations/2.0.3-Self-Reflection/README.md`
+- Discovery: `../../2.2-Discovery/README.md` (Jobs to Be Done, Opportunity Assessment, Idea Validation)
+- Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)

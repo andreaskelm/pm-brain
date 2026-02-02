@@ -92,8 +92,5 @@ Each mental model follows this structure:
 - Library Index: `../0-index.md`
 - Self-Reflection: `../2.0.3-Self-Reflection/README.md`
 - Bias Framework: `../2.0.2-Bias/README.md`
-- Product Strategy: `../../2.1-Strategy/2.1.1-Strategic-Foundations/`
-- OKR Framework: `../../2.1-Strategy/2.1.2-Strategic-Execution/1-OKR/`
-- Roadmap Framework: `../../2.1-Strategy/2.1.2-Strategic-Execution/2-Roadmap/`
-- Opportunity Assessment: `../../2.2-Discovery/2.2.4-Opportunity-Assessment/`
-- Idea Validation: `../../2.2-Discovery/2.2.5-Idea-Validation/`
+- Strategy: `../../2.1-Strategy/README.md` (Strategic Foundations, OKR Framework, Roadmap Framework)
+- Discovery: `../../2.2-Discovery/README.md` (Opportunity Assessment, Idea Validation)

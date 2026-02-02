@@ -57,6 +57,6 @@ After writing stories, reflect:
 ## Links
 
 - PRD Framework: `../2.3.4-PRD/README.md`
-- Jobs-to-be-Done: `../../2.2-Discovery/2.2.3-Jobs-To-Be-Done/README.md`
-- OKR Framework: `../../2.1-Strategy/2.1.2-Strategic-Execution/1-OKR/README.md`
-- Self-Reflection: `../../2.0-Foundations/2.0.3-Self-Reflection/README.md`
+- Discovery: `../../2.2-Discovery/README.md` (Jobs-to-be-Done)
+- Strategy: `../../2.1-Strategy/README.md` (OKR Framework)
+- Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)

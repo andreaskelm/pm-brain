@@ -27,8 +27,7 @@ Always ask "Is this a one-way or two-way door?" before deciding. Two-way doors f
 Selecting a new analytics tool is a two-way door—you can switch tools later with some migration cost. Choosing your cloud provider or core architecture is a one-way door—switching later would be extremely costly. Match your decision process accordingly: quick experiments for two-way doors, thorough analysis for one-way doors.
 
 ## Combines With
-- Opportunity Assessment (`../../2.2-Discovery/2.2.4-Opportunity-Assessment/`)
-- Idea Validation (`../../2.2-Discovery/2.2.5-Idea-Validation/`)
+- Discovery: `../../2.2-Discovery/README.md` (Opportunity Assessment, Idea Validation)
 - Regret Minimization (`regret-minimization.md`)
 
 ## Further Reading

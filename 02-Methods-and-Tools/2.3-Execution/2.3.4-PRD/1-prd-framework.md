@@ -231,10 +231,7 @@ Act as a product management coach. Help me think through what to build before we
 
 - PRD Template: `2-prd-template.md`
 - PRD JTBD Template: `3-prd-jtbd-template.md`
-- Product Strategy: `../../2.1-Strategy/2.1.1-Strategic-Foundations/README.md`
-- OKR Framework: `../../2.1-Strategy/2.1.2-Strategic-Execution/1-OKR/README.md`
-- Opportunity Assessment: `../../2.2-Discovery/2.2.4-Opportunity-Assessment/README.md`
-- Idea Validation: `../../2.2-Discovery/2.2.5-Idea-Validation/README.md`
-- Jobs to Be Done: `../../2.2-Discovery/2.2.3-Jobs-To-Be-Done/README.md`
-- Self-Reflection: `../../2.0-Foundations/2.0.3-Self-Reflection/README.md`
+- Strategy: `../../2.1-Strategy/README.md` (Strategic Foundations, OKR Framework)
+- Discovery: `../../2.2-Discovery/README.md` (Opportunity Assessment, Idea Validation, Jobs to Be Done)
+- Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)
 

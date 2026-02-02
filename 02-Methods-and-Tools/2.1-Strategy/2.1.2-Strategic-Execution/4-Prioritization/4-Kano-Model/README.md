@@ -90,5 +90,5 @@ After classifying features with Kano, reflect:
 - MoSCoW Prioritization: `../3-MoSCoW/README.md`
 - Strategic Foundations: `../2.1.1-Strategic-Foundations/README.md`
 - Roadmap Framework: `../2-Roadmap/README.md`
-- Opportunity Assessment: `../../2.3-Discovery/2.3.4-Opportunity-Assessment/README.md`
-- Self-Reflection: `../../2.9-Other/2.9.2-Self-Reflection/README.md`
+- Discovery: `../../2.2-Discovery/README.md` (Opportunity Assessment)
+- Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)

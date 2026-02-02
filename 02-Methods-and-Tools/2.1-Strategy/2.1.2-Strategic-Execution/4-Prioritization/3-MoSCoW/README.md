@@ -87,4 +87,4 @@ After prioritizing with MoSCoW, reflect:
 - Roadmap Framework: `../2-Roadmap/README.md`
 - OKR Framework: `../1-OKR/README.md`
 - Kano Model: `../4-Kano-Model/README.md`
-- Self-Reflection: `../../2.9-Other/2.9.2-Self-Reflection/README.md`
+- Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)

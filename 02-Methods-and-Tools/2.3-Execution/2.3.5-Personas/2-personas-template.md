@@ -63,8 +63,6 @@ Example (brief)
 
 - Personas Framework: `1-personas-framework.md`
 - Personas README: `README.md`
-- Research Interviews: `../../2.2-Discovery/2.2.1-Research-Interviews/README.md`
-- Jobs to Be Done: `../../2.2-Discovery/2.2.3-Jobs-To-Be-Done/README.md`
-- Continuous Discovery: `../../2.2-Discovery/2.2.2-Continuous-Discovery-Habits/README.md`
+- Discovery: `../../2.2-Discovery/README.md` (Research Interviews, Jobs to Be Done, Continuous Discovery)
 - PRD Framework: `../2.3.4-PRD/README.md`
-- Self-Reflection: `../../2.0-Foundations/2.0.3-Self-Reflection/README.md`
+- Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)

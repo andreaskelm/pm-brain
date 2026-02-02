@@ -57,9 +57,7 @@ Regularly review metrics and refine based on learnings
 - **Quarterly**: Full metric portfolio audit
 
 ## Links
-- North Star: `../../2.1-Strategy/2.1.2-Strategic-Execution/3-North-Star/README.md`
+- Strategy: `../../2.1-Strategy/README.md` (North Star, OKRs, Roadmap)
 - AARRR Pirate Metrics: `../2.3.7-AARRR-Pirate-Metrics/README.md`
-- OKR Framework: `../../2.1-Strategy/2.1.2-Strategic-Execution/1-OKR/README.md`
-- Roadmap: `../../2.1-Strategy/2.1.2-Strategic-Execution/2-Roadmap/README.md`
-- Self-Reflection: `../../2.0-Foundations/2.0.3-Self-Reflection/README.md`
+- Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)
 

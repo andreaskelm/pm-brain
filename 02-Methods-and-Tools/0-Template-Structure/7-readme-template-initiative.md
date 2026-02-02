@@ -12,7 +12,7 @@ This folder captures early thinking, research links, and execution docs for this
 ## Suggested files (and when to use them)
 - `opportunity-assessment.md` — Early thinking, hypotheses, assumptions. **Use when:** framing the opportunity. (Template: `02-Methods-and-Tools/2.2-Discovery/2.2.4-Opportunity-Assessment/2-opportunity-assessment-template.md`)
 - `summary.md` — Exec one-pager once more concrete. **Use when:** aligning stakeholders quickly.
-- `prd.md` — Product requirements. **Use when:** ready to specify and build. (Templates in `02-Methods-and-Tools/2.3-Execution/2.1.4-PRD/`)
+- `prd.md` — Product requirements. **Use when:** ready to specify and build. (Templates in `02-Methods-and-Tools/2.3-Execution/2.3.4-PRD/`)
 - `roadmap.md` — Milestones/phases/timelines. **Use when:** sequencing work. (Templates in `02-Methods-and-Tools/2.1-Strategy/2.1.2-Strategic-Execution/2-Roadmap/`)
 - `decisions.md` — Decision log (what/why/who/when). **Use when:** any material decision is made.
 - `risks.md` — Key risks and mitigations. **Use when:** risk profile changes.

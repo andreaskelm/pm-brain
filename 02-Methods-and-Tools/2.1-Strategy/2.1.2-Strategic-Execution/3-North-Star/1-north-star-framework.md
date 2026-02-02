@@ -469,5 +469,5 @@ Result: More effective prioritization
 - Strategic Foundations: `../2.1.1-Strategic-Foundations/README.md`
 - OKR Framework: `../1-OKR/README.md`
 - Roadmap: `../2-Roadmap/README.md`
-- Metrics Framework: `../../2.9-Other/2.9.5-Metrics/README.md`
-- Self-Reflection: `../../2.9-Other/2.9.2-Self-Reflection/README.md`
+- Execution: `../../2.3-Execution/README.md` (Metrics Framework)
+- Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)

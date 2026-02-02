@@ -350,7 +350,7 @@ Demonstrate how [output] connects to broader strategy:
 - **Related Frameworks:**
   - [Related Framework 1]: `[path]`
   - [Related Framework 2]: `[path]`
-- **Self-Reflection:** `../../2.9-Other/2.9.2-Self-Reflection/README.md`
+- **Foundations:** `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)
 
 ---
 

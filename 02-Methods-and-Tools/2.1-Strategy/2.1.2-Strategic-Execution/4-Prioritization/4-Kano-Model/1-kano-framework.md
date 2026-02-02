@@ -611,4 +611,4 @@ Use historical data to predict future drift:
 - Roadmap Framework: `../2-Roadmap/README.md`
 - Prioritization: `../4-Prioritization/README.md`
 - MoSCoW Framework: `../3-MoSCoW/README.md`
-- Self-Reflection: `../../2.9-Other/2.9.2-Self-Reflection/README.md`
+- Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)

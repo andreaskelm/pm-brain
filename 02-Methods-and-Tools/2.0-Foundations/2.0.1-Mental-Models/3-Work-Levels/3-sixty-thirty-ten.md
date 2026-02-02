@@ -30,9 +30,7 @@ Prevents roadmaps from being filled entirely with quick wins by ensuring dedicat
 A product team allocates 60% to bug fixes and small UX improvements, 30% to launching a new product line, and 10% to refactoring technical debt. This ensures they deliver value while also pursuing transformative opportunities and maintaining system health.
 
 ## Combines With
-- Roadmap Framework (`../../2.1-Strategy/2.1.3-Roadmap/`)
-- Prioritization (`../../2.1-Strategy/2.1.7-Prioritization/`)
-- OKR Framework (`../../2.1-Strategy/2.1.2-OKR/`)
+- Strategy: `../../2.1-Strategy/README.md` (Roadmap Framework, Prioritization, OKR Framework)
 
 ## Further Reading
 - Concept from various product management sources, popularized in product strategy discussions

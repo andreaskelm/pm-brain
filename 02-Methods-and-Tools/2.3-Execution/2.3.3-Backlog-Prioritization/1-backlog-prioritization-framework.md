@@ -557,15 +557,12 @@ Use `3-prioritization-decision-log-template.md` to document prioritization decis
 - Kano Model: `../../2.1-Strategy/2.1.2-Strategic-Execution/4-Prioritization/4-Kano-Model/README.md`
 
 ### Related Frameworks
-- OKR Framework: `../../2.1-Strategy/2.1.2-Strategic-Execution/1-OKR/README.md` (defines outcomes to optimize for)
-- Roadmap: `../../2.1-Strategy/2.1.2-Strategic-Execution/2-Roadmap/README.md` (public view of top priorities)
+- Strategy: `../../2.1-Strategy/README.md` (OKR Framework defines outcomes to optimize for, Roadmap shows public view of top priorities)
 - PRD Framework: `../2.3.4-PRD/README.md` (detailed specs for top items)
-- Opportunity Assessment: `../../2.2-Discovery/2.2.4-Opportunity-Assessment/README.md`
+- Discovery: `../../2.2-Discovery/README.md` (Opportunity Assessment)
 
 ### Mental Models
-- Outcome vs. Output: `../../2.0-Foundations/2.0.1-Mental-Models/2-Product-Thinking/1-outcome-vs-output.md`
-- Feature Factory: `../../2.0-Foundations/2.0.1-Mental-Models/2-Product-Thinking/3-feature-factory.md`
-- Opportunity Cost: `../../2.0-Foundations/2.0.1-Mental-Models/1-Decision-Making/5-opportunity-cost.md`
+- Foundations: `../../2.0-Foundations/README.md` (Mental Models: Outcome vs Output, Feature Factory, Opportunity Cost)
 
 ### Company Context
 - Product Strategy: `../../../01-Company-Context/1-company-vision.md`

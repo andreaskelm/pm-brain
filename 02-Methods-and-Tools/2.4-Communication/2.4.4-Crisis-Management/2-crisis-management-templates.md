@@ -351,5 +351,5 @@ CRISIS COMMUNICATION CHANNELS:
 - Crisis Management README: `README.md`
 - Escalation: `../2.4.5-Escalation/README.md`
 - Stakeholder Management: `../2.4.7-Stakeholder-Management/README.md`
-- Self-Reflection: `../../2.0-Foundations/2.0.3-Self-Reflection/README.md`
+- Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)
 

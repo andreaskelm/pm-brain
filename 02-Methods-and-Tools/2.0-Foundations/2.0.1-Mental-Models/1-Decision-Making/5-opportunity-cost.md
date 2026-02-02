@@ -21,7 +21,7 @@ TODO: Provide a concrete PM scenario showing trade-offs and the cost of the next
 
 ## Combines With
 - One-Way vs Two-Way Doors (`one-way-two-way-doors.md`)
-- Prioritization (`../../2.1-Strategy/2.1.7-Prioritization/README.md`)
+- Strategy: `../../2.1-Strategy/README.md` (Prioritization)
 
 ## Further Reading
 - TODO: Add source(s)

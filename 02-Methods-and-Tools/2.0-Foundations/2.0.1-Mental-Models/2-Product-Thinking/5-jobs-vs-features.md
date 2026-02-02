@@ -20,8 +20,7 @@ Stakeholders ask for “export to CSV.” Reframe: “When analysts share result
 - **Solution Options:** Multiple ways to serve the job, smallest test first
 
 ## Combines With
-- Opportunity Assessment (`../../2.2-Discovery/2.2.4-Opportunity-Assessment/`)
-- Idea Validation (`../../2.2-Discovery/2.2.5-Idea-Validation/`)
+- Discovery: `../../2.2-Discovery/README.md` (Opportunity Assessment, Idea Validation)
 
 ## Further Reading
 - JTBD by Anthony Ulwick; “Competing Against Luck” by Clayton Christensen

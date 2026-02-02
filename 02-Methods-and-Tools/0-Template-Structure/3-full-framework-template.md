@@ -22,7 +22,7 @@
 - [Pick the most relevant questions from the canonical prompts file for this framework's context]
 - [See prompts file for full list organized by situation]
 
-**Bias check:** See [`2.0.2-Bias/1-bias-framework.md`](../../2.0-Foundations/2.0.2-Bias/1-bias-framework.md) for bias awareness prompts.
+**Bias check:** See Foundations: `../../2.0-Foundations/README.md` (Bias Framework) for bias awareness prompts.
 
 **Capture your initial thoughts:**
 
@@ -409,7 +409,7 @@ Track these to know if your framework is working:
   - [Related Framework 1]: `[path]`
   - [Related Framework 2]: `[path]`
 - **Company Context:** `../../01-Company-Context/README.md`
-- **Self-Reflection:** `../../2.9-Other/2.9.2-Self-Reflection/README.md`
+- **Foundations:** `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)
 
 ---
 

@@ -56,4 +56,4 @@ These frameworks are about STRATEGIC DIRECTION, not execution.
 
 **For execution, see:**
 - `2.1.2-Strategic-Execution/` - OKRs, Roadmaps, North Star, Prioritization
-- `2.4-Execution/` - PRDs, Personas, etc.
+- `2.3-Execution/` - PRDs, Personas, etc.

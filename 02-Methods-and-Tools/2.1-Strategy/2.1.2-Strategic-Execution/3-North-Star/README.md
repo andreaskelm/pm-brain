@@ -22,7 +22,7 @@ This framework helps product teams align around a single metric that captures cu
 - What outcomes are you trying to achieve? Dump everything - don't structure yet.
 - What does your product sense tell you? What metric feels like it captures real value?
 - What assumptions are you making? List them explicitly.
-- What biases might affect your metric choice? (See [`2.0.2-Bias/1-bias-framework.md`](../../../../2.0-Foundations/2.0.2-Bias/1-bias-framework.md) for bias awareness)
+- What biases might affect your metric choice? (See Foundations: `../../2.0-Foundations/README.md` (Bias Framework) for bias awareness)
 
 **See prompts file for full list.**
 
@@ -70,6 +70,6 @@ After defining your North Star, reflect:
 - OKR Framework: `../1-OKR/README.md`
 - Roadmap: `../2-Roadmap/README.md`
 - Prioritization: `../4-Prioritization/README.md`
-- Metrics Framework: `../../2.9-Other/2.9.5-Metrics/README.md`
-- Self-Reflection: `../../2.9-Other/2.9.2-Self-Reflection/README.md`
+- Execution: `../../2.3-Execution/README.md` (Metrics Framework)
+- Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)
 

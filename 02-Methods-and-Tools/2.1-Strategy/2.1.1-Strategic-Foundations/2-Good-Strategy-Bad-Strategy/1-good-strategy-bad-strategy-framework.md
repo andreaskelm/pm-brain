@@ -807,6 +807,5 @@ Result: Clear strategy that can be communicated simply
 - **Template:** `2-good-strategy-bad-strategy-template.md` - Ready-to-use templates and checklists
 - Strategy Blocks: `../1-Strategy-Blocks/README.md`
 - Playing to Win: `../3-Playing-To-Win/playing-to-win.md`
-- OKR Framework: `../../2.1.2-Strategic-Execution/1-OKR/README.md`
-- Roadmap: `../../2.1.2-Strategic-Execution/2-Roadmap/README.md`
+- Strategic Execution: `../../2.1.2-Strategic-Execution/README.md` (OKR Framework, Roadmap)
 - Company Context: `../../../01-Company-Context/README.md`

@@ -71,10 +71,10 @@ Courses (for training and enablement)
 ## Related domains / cross-links
 
 - **Product sense (braindump first):** [0-start-here-product-thinking.md](../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md) — entry point for product thinking; use before one-pagers/meeting templates
-- **Strategy (../2.1-Strategy/):** Newsletter references OKRs and roadmaps
-- **Discovery (../2.2-Discovery/):** Stakeholder interviews and research
-- **Execution (../2.3-Execution/):** Daily execution uses communication frameworks
-- **Foundations (../2.0-Foundations/):** Mental models, bias awareness, and self-reflection support communication
+- **Foundations (../2.0-Foundations/README.md):** Mental models, bias awareness, and self-reflection support communication
+- **Strategy (../2.1-Strategy/README.md):** Newsletter references OKRs and roadmaps
+- **Discovery (../2.2-Discovery/README.md):** Stakeholder interviews and research
+- **Execution (../2.3-Execution/README.md):** Daily execution uses communication frameworks
 - **Template Structure:** `../0-Template-Structure/` (for creating new frameworks)
 
 ## AI collaboration prompt

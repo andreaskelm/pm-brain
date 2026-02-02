@@ -17,5 +17,4 @@ Frames to keep teams outcome-focused and stage-appropriate.
 - [Build-Measure-Learn](7-build-measure-learn.md) — Lean loop. *TODO scope check*
 
 ## Related
-- Idea Validation (`../../2.2-Discovery/2.2.5-Idea-Validation/`)
-- Product-Market Fit (`../../2.2-Discovery/2.2.7-Product-Market-Fit/`)
+- Discovery: `../../2.2-Discovery/README.md` (Idea Validation, Product-Market Fit)

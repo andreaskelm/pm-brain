@@ -94,5 +94,5 @@ This document provides ready-to-use templates for creating and managing OKRs. Ch
 - Roadmap: `../2-Roadmap/README.md`
 - North Star: `../3-North-Star/README.md`
 - Prioritization: `../4-Prioritization/README.md`
-- Self-Reflection: `../../2.9-Other/2.9.2-Self-Reflection/README.md`
+- Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)
 

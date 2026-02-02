@@ -88,3 +88,18 @@ flowchart LR
 - **TemplateFinderPath**: Entered when you explicitly ask to write/draft/fill a specific doc (PRD, OKR, one-pager, etc.). Use `02-Methods-and-Tools/0-template-finder.md` to jump straight to the right README + template, optionally asking 1–2 preflight prompts for non-trivial docs.
 - **ExecutionMode**: After sufficient braindump (or via TemplateFinderPath), help structure thinking and apply the right framework/template from `02-Methods-and-Tools/`.
 - **MetaSuggestion**: After substantial decision work, suggest logging in `00-Meta/` (forecast log, learning log, pattern recognition) and optionally updating rules (see `.cursor/rules/thinking.mdc`), then return to Default for the next conversation.
+
+---
+
+## Linking Conventions
+
+**Cross-domain references:** Point to domain `README.md` files (e.g., `2.0-Foundations/README.md`, `2.1-Strategy/README.md`). These serve as stable entry points for each domain.
+
+**Within-domain references:** 
+- Use sibling links for closely related files (e.g., `1-framework.md`, `2-template.md`)
+- Use `../README.md` to reference the domain index
+- Use stable paths for nearby subdomains (e.g., `../2.0.2-Bias/README.md`)
+
+**Deep links:** Only use deep links (e.g., `../../2.0-Foundations/2.0.3-Self-Reflection/README.md`) when specifically referencing a particular framework in context, or in "Related frameworks" sections. Prefer domain indices for general navigation.
+
+**When adding new frameworks:** Follow these conventions to maintain consistent navigation patterns.

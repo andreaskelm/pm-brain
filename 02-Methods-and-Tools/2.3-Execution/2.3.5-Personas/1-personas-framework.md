@@ -61,8 +61,7 @@ This framework provides two approaches for creating personas: HEART (human-cente
 ## References
 
 - Personas Template: `2-personas-template.md`
-- Product Strategy: `../../2.1-Strategy/2.1.1-Strategic-Foundations/README.md`
-- Research Interviews: `../../2.2-Discovery/2.2.1-Research-Interviews/README.md`
-- Jobs to Be Done: `../../2.2-Discovery/2.2.3-Jobs-To-Be-Done/README.md`
+- Strategy: `../../2.1-Strategy/README.md` (Strategic Foundations)
+- Discovery: `../../2.2-Discovery/README.md` (Research Interviews, Jobs to Be Done)
 - PRD Framework: `../2.3.4-PRD/README.md`
-- Self-Reflection: `../../2.0-Foundations/2.0.3-Self-Reflection/README.md`
+- Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)

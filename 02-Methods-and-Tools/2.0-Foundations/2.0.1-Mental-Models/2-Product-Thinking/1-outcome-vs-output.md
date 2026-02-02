@@ -37,8 +37,7 @@ Before defining success, ask: "Are we measuring output or outcome?" Favor outcom
 
 ## Combines With
 - Feature Factory (diagnostic)
-- OKR Framework (`../../2.1-Strategy/2.1.2-OKR/`) for outcome-based goals
-- North Star Metric (`../../2.1-Strategy/2.1.6-North-Star/`) to anchor outcomes
+- Strategy: `../../2.1-Strategy/README.md` (OKR Framework for outcome-based goals, North Star Metric to anchor outcomes)
 
 ## Common Mistakes
 - Confusing shipping with success

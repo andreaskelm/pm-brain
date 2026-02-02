@@ -53,8 +53,8 @@ After decisions, reflect:
 - **Quarterly**: Full bias framework review and team training
 
 ## Links
-- Prioritization: `../../2.1-Strategy/2.1.2-Strategic-Execution/4-Prioritization/README.md`
-- Opportunity Assessment: `../../2.2-Discovery/2.2.4-Opportunity-Assessment/README.md`
+- Strategy: `../../2.1-Strategy/README.md` (Prioritization)
+- Discovery: `../../2.2-Discovery/README.md` (Opportunity Assessment)
 - Mental Models: `../2.0.1-Mental-Models/README.md`
 - Library Index: `../0-index.md`
 - Self-Reflection: `../2.0.3-Self-Reflection/README.md`

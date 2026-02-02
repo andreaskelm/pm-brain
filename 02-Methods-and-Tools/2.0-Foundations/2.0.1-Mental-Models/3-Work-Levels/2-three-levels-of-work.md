@@ -33,8 +33,8 @@ CEO asks "Why is customer service poor?" (Impact level). PM explains resource co
 
 ## Combines With
 - Alignment Check (`../team-dynamics/alignment-check.md`)
-- Stakeholder Management (`../../2.4-Communication/2.4.7-Stakeholder-Management/`)
-- Product Strategy (`../../2.1-Strategy/2.1.1-Strategic-Foundations/`)
+- Communication: `../../2.4-Communication/README.md` (Stakeholder Management)
+- Strategy: `../../2.1-Strategy/README.md` (Strategic Foundations)
 
 ## Further Reading
 - Concept from various product management and organizational psychology sources

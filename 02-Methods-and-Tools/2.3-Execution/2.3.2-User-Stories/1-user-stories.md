@@ -216,6 +216,6 @@ Before calling a story "ready":
 - Roman Pichler: "Agile Product Management with Scrum"
 
 ## References
-- OKR Framework: `../../2.1-Strategy/2.1.2-Strategic-Execution/1-OKR/README.md`
+- Strategy: `../../2.1-Strategy/README.md` (OKR Framework)
 - PRD Framework: `../2.3.4-PRD/README.md`
-- Jobs-to-be-Done: `../../2.2-Discovery/2.2.3-Jobs-To-Be-Done/README.md`
+- Discovery: `../../2.2-Discovery/README.md` (Jobs-to-be-Done)

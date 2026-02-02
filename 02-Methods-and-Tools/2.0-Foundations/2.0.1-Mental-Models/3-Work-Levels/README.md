@@ -13,5 +13,5 @@ Helps pick the right altitude (tactical/operational/strategic) and portfolio mix
 - [60-30-10 Framework](3-sixty-thirty-ten.md)
 
 ## Related
-- Prioritization (`../../../2.1-Strategy/2.1.2-Strategic-Execution/4-Prioritization/`)
+- Strategy: `../../../2.1-Strategy/README.md` (Prioritization)
 - Deep Work vs Shallow Work (`../4-Execution-Hygiene/1-deep-work-shallow-work.md`)

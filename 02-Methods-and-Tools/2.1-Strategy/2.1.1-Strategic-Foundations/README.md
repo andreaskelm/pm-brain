@@ -54,5 +54,5 @@ Use these guides to define long-term direction before you execute. The three cor
 - Company Strategy: `../../01-Company-Context/2-company-strategy.md`
 - Company Vision: `../../01-Company-Context/1-company-vision.md`
 - Strategic Execution (OKR/Roadmap/North Star/Prioritization): `../2.1.2-Strategic-Execution/README.md`
-- Newsletter: `../../2.4-Communication/2.4.1-Newsletter/README.md`
-- Self-Reflection: `../../2.0-Foundations/2.0.3-Self-Reflection/README.md`
+- Communication: `../../2.4-Communication/README.md` (Newsletter)
+- Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)

@@ -205,5 +205,4 @@ Based on priorities, adjust time blocks:
 - Daily Rituals: `1-daily-rituals.md`
 - Weekly Cadence: `2-weekly-cadence.md`
 - Common Scenarios: `4-common-scenarios.md`
-- Self-Reflection: `../../2.0-Foundations/2.0.3-Self-Reflection/README.md`
-- Mental Models: `../../2.0-Foundations/2.0.1-Mental-Models/README.md`
+- Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)

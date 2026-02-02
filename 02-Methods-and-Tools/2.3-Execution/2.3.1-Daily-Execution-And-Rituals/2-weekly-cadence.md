@@ -267,6 +267,5 @@ Questions or concerns? Let me know.
 - Daily Rituals: `1-daily-rituals.md`
 - Context Switching: `3-context-switching.md`
 - Common Scenarios: `4-common-scenarios.md`
-- Stakeholder Management: `../../2.4-Communication/2.2.7-Stakeholder-Management/README.md`
-- Newsletter: `../../2.4-Communication/2.2.1-Newsletter/README.md`
-- Self-Reflection: `../../2.0-Foundations/2.0.3-Self-Reflection/README.md`
+- Communication: `../../2.4-Communication/README.md` (Stakeholder Management, Newsletter)
+- Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)

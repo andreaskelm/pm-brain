@@ -15,4 +15,4 @@ Lenses for alignment, trust, and constructive disagreement.
 
 ## Related
 - Assumptions Framework (`../1-Decision-Making/3-assumptions-framework.md`)
-- Stakeholder Management (`../../../2.4-Communication/2.4.7-Stakeholder-Management/`)
+- Communication: `../../../2.4-Communication/README.md` (Stakeholder Management)

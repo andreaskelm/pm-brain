@@ -57,3 +57,10 @@ Strategic Foundations → OKRs → Roadmap → North Star → Prioritization →
   - `3-North-Star/`
   - `4-Prioritization/`
 
+## Related domains / cross-links
+
+- **Foundations (../2.0-Foundations/README.md):** Mental models, bias awareness, and self-reflection support strategic thinking
+- **Discovery (../2.2-Discovery/README.md):** Opportunity Assessment and Idea Validation inform strategic choices
+- **Execution (../2.3-Execution/README.md):** OKRs and Roadmaps guide PRD development and execution priorities
+- **Communication (../2.4-Communication/README.md):** Newsletter and One-Pagers communicate strategy to stakeholders
+

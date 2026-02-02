@@ -82,11 +82,5 @@ Regularly reflect on your execution effectiveness:
 
 ## Links
 
-- Stakeholder Management: `../../2.4-Communication/2.2.7-Stakeholder-Management/README.md`
-- Meeting Agendas: `../../2.4-Communication/2.2.2-Meeting-Agendas/README.md`
-- Newsletter: `../../2.4-Communication/2.2.1-Newsletter/README.md`
-- Crisis Management: `../../2.4-Communication/2.2.4-Crisis-Management/README.md`
-- Escalation: `../../2.4-Communication/2.2.5-Escalation/README.md`
-- Saying No: `../../2.4-Communication/2.2.6-Saying-No/README.md`
-- Self-Reflection: `../../2.0-Foundations/2.0.3-Self-Reflection/README.md`
-- Mental Models: `../../2.0-Foundations/2.0.1-Mental-Models/README.md`
+- Communication: `../../2.4-Communication/README.md` (Stakeholder Management, Meeting Agendas, Newsletter, Crisis Management, Escalation, Saying No)
+- Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)

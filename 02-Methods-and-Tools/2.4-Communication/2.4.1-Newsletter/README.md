@@ -35,7 +35,5 @@ Use these templates and guidelines to produce monthly, stakeholder-friendly news
 
 ## Links
 - Company Context: `../../01-Company-Context/README.md`
-- Product Strategy: `../../2.1-Strategy/2.1.1-Strategic-Foundations/README.md`
-- Roadmap: `../../2.1-Strategy/2.1.2-Strategic-Execution/2-Roadmap/README.md`
-- OKR Framework: `../../2.1-Strategy/2.1.2-Strategic-Execution/1-OKR/README.md`
-- PRD Framework: `../../2.3-Execution/2.3.4-PRD/README.md`
+- Strategy: `../../2.1-Strategy/README.md` (Strategic Foundations, Roadmap, OKR Framework)
+- Execution: `../../2.3-Execution/README.md` (PRD Framework)

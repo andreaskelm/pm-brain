@@ -80,10 +80,10 @@ Research Interviews → Personas → PRD → User Stories → (Delivery)
 ## Related domains / cross-links
 
 - **Product sense (braindump first):** [0-start-here-product-thinking.md](../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md) — entry point for product thinking; use before PRDs/templates
-- **Strategy (2.1-Strategy/):** OKRs define outcomes to optimize for, Roadmap shows public view of priorities, Strategic Foundations inform execution decisions
-- **Discovery (2.2-Discovery/):** Opportunity Assessment and Idea Validation feed into PRDs, Jobs-to-Be-Done informs User Stories and Personas
-- **Communication (2.4-Communication/):** Stakeholder Management, Meeting Agendas, and Newsletter support daily execution
-- **Foundations (2.0-Foundations/):** Mental Models (Outcome vs Output, Feature Factory), Self-Reflection, and Bias awareness support all execution work
+- **Foundations (../2.0-Foundations/README.md):** Mental Models (Outcome vs Output, Feature Factory), Self-Reflection, and Bias awareness support all execution work
+- **Strategy (../2.1-Strategy/README.md):** OKRs define outcomes to optimize for, Roadmap shows public view of priorities, Strategic Foundations inform execution decisions
+- **Discovery (../2.2-Discovery/README.md):** Opportunity Assessment and Idea Validation feed into PRDs, Jobs-to-Be-Done informs User Stories and Personas
+- **Communication (../2.4-Communication/README.md):** Stakeholder Management, Meeting Agendas, and Newsletter support daily execution
 - **Template Structure:** `../0-Template-Structure/` (for creating new frameworks)
 
 ## AI collaboration prompt

@@ -48,8 +48,7 @@ PM wants to build feature X, engineer wants feature Y. Instead of arguing featur
 
 ## Combines With
 - Alignment Check (`../5-Team-Dynamics/1-alignment-check.md`)
-- Opportunity Assessment (`../../2.2-Discovery/2.2.4-Opportunity-Assessment/`)
-- Research Interviews (`../../2.2-Discovery/2.2.1-Research-Interviews/`)
+- Discovery: `../../2.2-Discovery/README.md` (Opportunity Assessment, Research Interviews)
 
 ## Further Reading
 - Concept from "The Lean Startup" by Eric Ries

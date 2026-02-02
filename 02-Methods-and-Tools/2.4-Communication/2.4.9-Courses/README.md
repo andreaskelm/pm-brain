@@ -129,7 +129,7 @@ This folder contains frameworks and templates for designing engaging, brain-base
 - Newsletter: `../2.4.1-Newsletter/README.md`
 - Stakeholder Management: `../2.4.7-Stakeholder-Management/README.md`
 - Meeting Agendas: `../2.4.2-Meeting-Agendas/README.md`
-- Self-Reflection: `../../2.0-Foundations/2.0.3-Self-Reflection/README.md`
+- Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)
 
 ---
 

@@ -33,10 +33,12 @@ Mental model (framing) → Bias checklist → Core framework (e.g., OKR/PRD/Disc
 | Navigating work scope/stage | `2.0.1-Mental-Models/3-Work-Levels/` | Align effort to altitude and stage |
 
 ## Related domains / cross-links
-- Strategy: `../2.1-Strategy/`
-- Discovery: `../2.2-Discovery/`
-- Communication: `../2.4-Communication/`
-- Template Structure (how to build/extend): `../0-Template-Structure/1-template-structure-guide.md`
+
+- **Strategy (../2.1-Strategy/README.md):** Strategic foundations and execution frameworks
+- **Discovery (../2.2-Discovery/README.md):** Research, validation, and opportunity assessment
+- **Execution (../2.3-Execution/README.md):** PRDs, personas, metrics, and daily execution
+- **Communication (../2.4-Communication/README.md):** Stakeholder management and communication frameworks
+- **Template Structure (how to build/extend):** `../0-Template-Structure/1-template-structure-guide.md`
 
 ## AI collaboration prompt (optional)
 ```

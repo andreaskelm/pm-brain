@@ -51,5 +51,5 @@ Document the outcome and learn for future similar situations
 - Saying No: `../2.4.6-Saying-No/README.md`
 - Stakeholder Management: `../2.4.7-Stakeholder-Management/README.md`
 - Crisis Management: `../2.4.4-Crisis-Management/README.md`
-- Self-Reflection: `../../2.0-Foundations/2.0.3-Self-Reflection/README.md`
+- Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)
 

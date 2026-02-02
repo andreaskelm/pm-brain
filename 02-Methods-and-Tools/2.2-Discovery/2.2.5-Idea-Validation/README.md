@@ -65,5 +65,5 @@ After validation, reflect:
 - Jobs To Be Done: `../2.2.3-Jobs-To-Be-Done/README.md`
 - Continuous Discovery: `../2.2.2-Continuous-Discovery-Habits/README.md`
 - Opportunity Assessment: `../2.2.4-Opportunity-Assessment/README.md`
-- PRD Framework: `../../2.3-Execution/2.1.4-PRD/README.md`
-- Self-Reflection: `../../2.0-Foundations/2.0.3-Self-Reflection/README.md`
+- Execution: `../../2.3-Execution/README.md` (PRD Framework)
+- Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)

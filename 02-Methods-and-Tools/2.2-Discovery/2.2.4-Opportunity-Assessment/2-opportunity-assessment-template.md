@@ -82,5 +82,5 @@
 - Jobs to Be Done: `../2.2.3-Jobs-To-Be-Done/README.md`
 - Idea Validation: `../2.2.5-Idea-Validation/README.md`
 - Problem-Solution Space: `../2.2.6-Problem-Solution-Space/README.md`
-- PRD Framework: `../../2.3-Execution/2.1.4-PRD/README.md`
-- Self-Reflection: `../../2.0-Foundations/2.0.3-Self-Reflection/README.md`
+- Execution: `../../2.3-Execution/README.md` (PRD Framework)
+- Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)

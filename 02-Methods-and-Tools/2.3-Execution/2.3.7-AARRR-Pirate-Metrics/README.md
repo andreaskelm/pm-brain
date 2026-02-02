@@ -67,22 +67,17 @@ After assessment, reflect:
 
 ## How This Fits in the System
 
-**Discovery Frameworks (2.2-Discovery/):**
-- Use `2.2.7-Product-Market-Fit/` to assess PMF before optimizing full funnel
-- Use `2.2.5-Idea-Validation/` to test optimization hypotheses
+**Discovery Frameworks:**
+- Use Discovery: `../../2.2-Discovery/README.md` (PMF Framework to assess PMF before optimizing full funnel, Idea Validation to test optimization hypotheses)
 
-**Strategy & Delivery (2.1-Strategy/):**
-- Use `2.1.2-Strategic-Execution/1-OKR/` to set objectives targeting specific AARRR stages
-- Use `2.1.2-Strategic-Execution/2-Roadmap/` to prioritize features that improve weakest stages
-- Use `2.1.2-Strategic-Execution/3-North-Star/` to connect AARRR metrics to overall product health
+**Strategy & Delivery:**
+- Use Strategy: `../../2.1-Strategy/README.md` (OKR Framework to set objectives targeting specific AARRR stages, Roadmap Framework to prioritize features that improve weakest stages, North Star to connect AARRR metrics to overall product health)
 
-**Other Methods (2.3-Execution/):**
-- Use `2.3.6-Metrics/` to validate metric quality and avoid vanity metrics
+**Other Methods:**
+- Use Metrics Framework: `../2.3.6-Metrics/README.md` to validate metric quality and avoid vanity metrics
 
 ## Links
 - Metrics Framework: `../2.3.6-Metrics/README.md`
-- PMF Framework: `../../2.2-Discovery/2.2.7-Product-Market-Fit/README.md`
-- North Star: `../../2.1-Strategy/2.1.2-Strategic-Execution/3-North-Star/README.md`
-- OKR Framework: `../../2.1-Strategy/2.1.2-Strategic-Execution/1-OKR/README.md`
-- Roadmap Framework: `../../2.1-Strategy/2.1.2-Strategic-Execution/2-Roadmap/README.md`
-- Self-Reflection: `../../2.0-Foundations/2.0.3-Self-Reflection/README.md`
+- Discovery: `../../2.2-Discovery/README.md` (PMF Framework)
+- Strategy: `../../2.1-Strategy/README.md` (North Star, OKR Framework, Roadmap Framework)
+- Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)

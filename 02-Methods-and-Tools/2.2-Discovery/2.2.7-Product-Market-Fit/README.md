@@ -84,16 +84,14 @@ After assessment, reflect:
 - Use `2.2.4-Opportunity-Assessment/` to structure early thinking
 - Use `2.2.5-Idea-Validation/` to test solutions before PMF
 
-**Strategy & Delivery (2.1-Strategy/):**
-- Use `2.1.2-OKR/` to set objectives based on PMF status (learning metrics pre-PMF, growth metrics post-PMF)
-- Use `2.1.3-Roadmap/` to plan timeline (experimental pre-PMF, strategic post-PMF)
-- Use `2.3-Execution/2.1.4-PRD/` to specify requirements when PMF is validated
+**Strategy & Delivery:**
+- Use `../../2.1-Strategy/README.md` (OKRs, Roadmap) to set objectives and plan timeline based on PMF status (learning metrics pre-PMF, growth metrics post-PMF)
+- Use `../../2.3-Execution/README.md` (PRD templates) to specify requirements when PMF is validated
 
 ## Links
 - Idea Validation: `../2.2.5-Idea-Validation/README.md`
 - Opportunity Assessment: `../2.2.4-Opportunity-Assessment/README.md`
 - Jobs to Be Done: `../2.2.3-Jobs-To-Be-Done/README.md`
 - Continuous Discovery: `../2.2.2-Continuous-Discovery-Habits/README.md`
-- OKR Framework: `../../2.1-Strategy/2.1.2-Strategic-Execution/1-OKR/README.md`
-- Roadmap Framework: `../../2.1-Strategy/2.1.2-Strategic-Execution/2-Roadmap/README.md`
-- Self-Reflection: `../../2.0-Foundations/2.0.3-Self-Reflection/README.md`
+- Strategy: `../../2.1-Strategy/README.md` (OKR Framework, Roadmap Framework)
+- Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)

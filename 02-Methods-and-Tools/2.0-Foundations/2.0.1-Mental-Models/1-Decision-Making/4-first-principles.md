@@ -88,11 +88,8 @@ Metric drops. Analogy-based thinking: “Let’s try what worked last time.” F
 
 ## Combines With
 
-- [Jobs-to-be-Done](../../2.2-Discovery/2.2.x-Jobs-To-Be-Done/) - Understanding fundamental user needs
-- [Five Whys](../../2.3-Execution/2.x.x-Five-Whys/) - Root cause analysis technique
-- [Product Strategy](../../2.2-Discovery/2.2.x-Product-Strategy/) - Strategic thinking from fundamentals
-- [Idea Validation](../../2.2-Discovery/2.2.5-Idea-Validation/) - Testing reconstructed hypotheses
-- [Problem Framing](../../2.2-Discovery/2.2.x-Problem-Framing/) - Defining the actual problem
+- Discovery: `../../2.2-Discovery/README.md` (Jobs-to-be-Done for understanding fundamental user needs, Idea Validation for testing reconstructed hypotheses)
+- Strategy: `../../2.1-Strategy/README.md` (Strategic Foundations for thinking from fundamentals)
 
 ## Further Reading
 

@@ -27,9 +27,8 @@ A mental model recognizing two distinct product stages: 0-1 focuses on discovery
 A 0-1 product team uses qualitative feedback, rapid prototyping, and user engagement metrics. A 1-100 product team uses usage growth, system reliability, and operational efficiency metrics. Trying to use 1-100 metrics in 0-1 leads to premature optimization; using 0-1 approaches in 1-100 leads to chaos.
 
 ## Combines With
-- Product-Market Fit (`../../2.2-Discovery/2.2.7-Product-Market-Fit/`)
-- Idea Validation (`../../2.2-Discovery/2.2.5-Idea-Validation/`)
-- Metrics (`../../2.3-Execution/2.9.5-Metrics/`)
+- Discovery: `../../2.2-Discovery/README.md` (Product-Market Fit, Idea Validation)
+- Execution: `../../2.3-Execution/README.md` (Metrics Framework)
 
 ## Further Reading
 - Concept from "Zero to One" by Peter Thiel and various product scaling frameworks

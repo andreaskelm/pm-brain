@@ -14,4 +14,4 @@ Protect focus, reduce busywork, and keep time aligned to outcomes.
 
 ## Related
 - Work Levels (`../3-Work-Levels/`)
-- Prioritization (`../../../2.1-Strategy/2.1.2-Strategic-Execution/4-Prioritization/`)
+- Strategy: `../../../2.1-Strategy/README.md` (Prioritization)

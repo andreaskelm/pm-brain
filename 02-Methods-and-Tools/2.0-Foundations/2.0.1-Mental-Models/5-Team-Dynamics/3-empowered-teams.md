@@ -21,7 +21,7 @@ TODO: Provide a scenario turning a ticket team into an empowered team with clear
 
 ## Combines With
 - Outcome vs Output (`../product-thinking/outcome-vs-output.md`)
-- Strategy/OKRs (`../../2.1-Strategy/2.1.2-OKR/`)
+- Strategy: `../../2.1-Strategy/README.md` (OKRs)
 
 ## Further Reading
 - TODO: Add source(s)

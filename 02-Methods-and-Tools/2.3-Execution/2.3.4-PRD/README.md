@@ -15,17 +15,15 @@ The frameworks follow a natural product development flow:
 
 **Discovery → Define → Decide → Deliver → Launch & Learn**
 
-1. **Discover** (2.2.2-Continuous-Discovery-Habits): Interview users, observe behavior, collect stories
-2. **Define** (2.2.3-Jobs-To-Be-Done, 2.2.2-Continuous-Discovery-Habits): Frame problems as jobs and opportunities
-3. **Decide** (2.2.4-Opportunity-Assessment, 2.2.5-Idea-Validation): Assess opportunities and validate assumptions
-4. **Deliver** (2.3.4-PRD): Write requirements and build
-5. **Launch & Learn** (2.1.2-Strategic-Execution/1-OKR, 2.1.2-Strategic-Execution/2-Roadmap): Measure outcomes and iterate
+1. **Discover** (Discovery: Continuous Discovery Habits): Interview users, observe behavior, collect stories
+2. **Define** (Discovery: Jobs-To-Be-Done, Continuous Discovery Habits): Frame problems as jobs and opportunities
+3. **Decide** (Discovery: Opportunity Assessment, Idea Validation): Assess opportunities and validate assumptions
+4. **Deliver** (PRD Framework): Write requirements and build
+5. **Launch & Learn** (Strategy: OKR Framework, Roadmap Framework): Measure outcomes and iterate
 
 **Strategic Context:**
-- **2.1.1-Strategic-Foundations**: Sets strategic direction (done first, informs everything)
-- **2.1.2-Strategic-Execution/1-OKR**: Operationalizes strategy into measurable outcomes
-- **2.1.2-Strategic-Execution/2-Roadmap**: Plans execution timeline
-- **2.2.1-Newsletter**: Communicates progress
+- **Strategy (2.1-Strategy/)**: Strategic Foundations sets strategic direction (done first, informs everything); OKR Framework operationalizes strategy into measurable outcomes; Roadmap Framework plans execution timeline
+- **Communication (2.4-Communication/)**: Newsletter communicates progress
 
 ## How to Use This Directory
 
@@ -124,9 +122,6 @@ After writing the PRD, reflect:
 - **Quarterly Reviews**: Archive completed PRDs and extract learnings
 
 ## Links
-- Product Strategy: `../../2.1-Strategy/2.1.1-Strategic-Foundations/README.md`
-- Jobs To Be Done: `../../2.2-Discovery/2.2.3-Jobs-To-Be-Done/README.md`
-- Opportunity Assessment: `../../2.2-Discovery/2.2.4-Opportunity-Assessment/README.md`
-- Idea Validation: `../../2.2-Discovery/2.2.5-Idea-Validation/README.md`
-- OKR Framework: `../../2.1-Strategy/2.1.2-Strategic-Execution/1-OKR/README.md`
+- Strategy: `../../2.1-Strategy/README.md` (Strategic Foundations, OKR Framework)
+- Discovery: `../../2.2-Discovery/README.md` (Jobs To Be Done, Opportunity Assessment, Idea Validation)
 

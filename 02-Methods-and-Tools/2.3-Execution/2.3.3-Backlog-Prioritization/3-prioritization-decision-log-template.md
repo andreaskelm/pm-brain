@@ -56,5 +56,4 @@ Use this template to document prioritization decisions, trade-offs, and rational
 
 - Backlog Prioritization Framework: `1-backlog-prioritization-framework.md`
 - Backlog Item Template: `2-backlog-item-template.md`
-- OKR Framework: `../../2.1-Strategy/2.1.2-Strategic-Execution/1-OKR/README.md`
-- Roadmap Framework: `../../2.1-Strategy/2.1.2-Strategic-Execution/2-Roadmap/README.md`
+- Strategy: `../../2.1-Strategy/README.md` (OKR Framework, Roadmap Framework)

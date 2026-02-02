@@ -302,7 +302,5 @@ Moving to tomorrow:
 - Weekly Cadence: `2-weekly-cadence.md`
 - Context Switching: `3-context-switching.md`
 - Common Scenarios: `4-common-scenarios.md`
-- Stakeholder Management: `../../2.4-Communication/2.2.7-Stakeholder-Management/README.md`
-- Meeting Agendas: `../../2.4-Communication/2.2.2-Meeting-Agendas/README.md`
-- Self-Reflection: `../../2.0-Foundations/2.0.3-Self-Reflection/README.md`
-- Mental Models: `../../2.0-Foundations/2.0.1-Mental-Models/README.md`
+- Communication: `../../2.4-Communication/README.md` (Stakeholder Management, Meeting Agendas)
+- Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)

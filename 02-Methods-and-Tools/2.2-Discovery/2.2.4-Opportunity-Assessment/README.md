@@ -53,7 +53,7 @@ Use this framework to document early initiative thinking, capture hypotheses, an
 3. **Identify Research Needs**: Use "What we should research" section to plan validation
 4. **Move to Discovery**: When ready, use discovery methods in this domain (e.g., `../2.2.1-Research-Interviews/`, `../2.2.2-Continuous-Discovery-Habits/`) to validate assumptions
 5. **Update as You Learn**: Return to update opportunity assessment with new evidence
-6. **Transition to Execution**: When validated, create PRD using templates in `../../2.3-Execution/2.1.4-PRD/`
+6. **Transition to Execution**: When validated, create PRD using templates in `../../2.3-Execution/2.3.4-PRD/`
 
 ## How This Fits in the System
 
@@ -67,9 +67,9 @@ Use this framework to document early initiative thinking, capture hypotheses, an
 - Use `2.2.3-Jobs-To-Be-Done/` to frame problems
 - Use `2.2.5-Idea-Validation/` to test solutions
 
-**Strategy & Delivery (2.1-Strategy/):**
-- Use `2.3-Execution/2.1.4-PRD/` templates when ready to specify requirements
-- Use `2.1.3-Roadmap/` to plan execution timeline
+**Strategy & Delivery:**
+- Use `../../2.3-Execution/README.md` (PRD templates) when ready to specify requirements
+- Use `../../2.1-Strategy/README.md` (Roadmap) to plan execution timeline
 
 ## How to Maintain
 
@@ -83,6 +83,6 @@ Use this framework to document early initiative thinking, capture hypotheses, an
 - Continuous Discovery: `../2.2.2-Continuous-Discovery-Habits/`
 - Jobs To Be Done: `../2.2.3-Jobs-To-Be-Done/`
 - Idea Validation: `../2.2.5-Idea-Validation/`
-- PRD Templates: `../../2.3-Execution/2.1.4-PRD/`
-- Self-Reflection: `../../2.0-Foundations/2.0.3-Self-Reflection/README.md`
+- Execution: `../../2.3-Execution/README.md` (PRD Templates)
+- Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)
 

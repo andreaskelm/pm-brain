@@ -810,7 +810,6 @@ Step 4: Ensure portfolio includes all three types
 - North Star: `../3-North-Star/README.md`
 - MoSCoW Prioritization: `../3-MoSCoW/1-moscow-prioritization-framework.md`
 - Kano Model: `../4-Kano-Model/1-kano-framework.md`
-- Opportunity Assessment: `../../2.3-Discovery/2.3.4-Opportunity-Assessment/README.md`
-- Bias Framework: `../../2.9-Other/2.9.4-Bias/README.md`
-- Self-Reflection: `../../2.9-Other/2.9.2-Self-Reflection/README.md`
+- Discovery: `../../2.2-Discovery/README.md` (Opportunity Assessment)
+- Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)
 

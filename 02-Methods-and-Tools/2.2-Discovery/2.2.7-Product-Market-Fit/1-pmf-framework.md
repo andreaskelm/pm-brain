@@ -199,8 +199,5 @@ Assess product-market fit status and determine when to scale vs. iterate. Produc
 ## References
 
 - PMF Template: `2-pmf-template.md`
-- Product Strategy: `../../2.1-Strategy/2.1.1-Strategic-Foundations/README.md`
-- Roadmap Framework: `../../2.1-Strategy/2.1.2-Strategic-Execution/2-Roadmap/README.md`
-- OKR Framework: `../../2.1-Strategy/2.1.2-Strategic-Execution/1-OKR/README.md`
-- Opportunity Assessment: `../2.2.4-Opportunity-Assessment/README.md`
-- Idea Validation: `../2.2.5-Idea-Validation/README.md`
+- Strategy: `../../2.1-Strategy/README.md` (Strategic Foundations, Roadmap Framework, OKR Framework)
+- Discovery: `../README.md` (Opportunity Assessment, Idea Validation)

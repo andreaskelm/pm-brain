@@ -53,4 +53,10 @@ After your braindump, use the frameworks below to structure your research.
 
 Typical flow: **Research-Interviews → Continuous-Discovery-Habits → JTBD (optional/parallel) → Problem-Solution-Space → Opportunity-Assessment → Idea-Validation → Product-Market-Fit → Strategy/Execution**.
 
+## Related domains / cross-links
+
+- **Foundations (../2.0-Foundations/README.md):** Mental models, bias awareness, and self-reflection support discovery work
+- **Strategy (../2.1-Strategy/README.md):** Prioritization and Opportunity Assessment inform strategic decisions
+- **Execution (../2.3-Execution/README.md):** Discovery outputs feed into PRDs, Personas, and User Stories
+- **Communication (../2.4-Communication/README.md):** Stakeholder interviews and research communication
 

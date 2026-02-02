@@ -32,7 +32,7 @@ Instead of only planning for success, assume failure has occurred and ask "What 
 Before launching a new feature, gather the team and ask: "Imagine this feature launched 6 months ago and completely failed—what went wrong?" Responses might include "Users didn't understand the value prop" (Tiger), "Competitors copied us" (Paper Tiger), or "We never validated that users actually wanted this" (Elephant). Prioritize addressing Tigers first.
 
 ## Combines With
-- Opportunity Assessment (`../../2.2-Discovery/2.2.4-Opportunity-Assessment/`)
+- Discovery: `../../2.2-Discovery/README.md` (Opportunity Assessment)
 - Risk Management frameworks
 - Assumptions Framework (`assumptions-framework.md`)
 

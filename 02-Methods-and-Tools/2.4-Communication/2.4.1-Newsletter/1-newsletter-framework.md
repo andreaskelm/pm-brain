@@ -53,6 +53,5 @@ A comprehensive guide for product managers and product owners to create stakehol
 
 - Newsletter Template: `2-newsletter-template.md`
 - Company Context: `../../01-Company-Context/README.md`
-- OKR Framework: `../../2.1-Strategy/2.1.2-Strategic-Execution/1-OKR/README.md`
-- Roadmap Framework: `../../2.1-Strategy/2.1.2-Strategic-Execution/2-Roadmap/README.md`
-- Self-Reflection: `../../2.0-Foundations/2.0.3-Self-Reflection/README.md`
+- Strategy: `../../2.1-Strategy/README.md` (OKR Framework, Roadmap Framework)
+- Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)

@@ -737,7 +737,5 @@ Related Metrics:
 
 ## References
 
-- North Star: `../../2.1-Strategy/2.1.2-Strategic-Execution/3-North-Star/README.md`
-- OKR Framework: `../../2.1-Strategy/2.1.2-Strategic-Execution/1-OKR/README.md`
-- Roadmap: `../../2.1-Strategy/2.1.2-Strategic-Execution/2-Roadmap/README.md`
-- Self-Reflection: `../../2.0-Foundations/2.0.3-Self-Reflection/README.md`
+- Strategy: `../../2.1-Strategy/README.md` (North Star, OKRs, Roadmap)
+- Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)

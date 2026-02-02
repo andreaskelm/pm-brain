@@ -426,8 +426,5 @@ This document provides ready-to-use templates for tracking and optimizing AARRR 
 ## References
 
 - AARRR Framework: `1-aarrr-pirate-metrics-framework.md`
-- Product Strategy: `../../2.1-Strategy/2.1.1-Strategic-Foundations/README.md`
-- PMF Framework: `../../2.2-Discovery/2.2.7-Product-Market-Fit/README.md`
-- OKR Framework: `../../2.1-Strategy/2.1.2-Strategic-Execution/1-OKR/README.md`
-- Roadmap Framework: `../../2.1-Strategy/2.1.2-Strategic-Execution/2-Roadmap/README.md`
-- North Star: `../../2.1-Strategy/2.1.2-Strategic-Execution/3-North-Star/README.md`
+- Strategy: `../../2.1-Strategy/README.md` (Strategic Foundations, OKR Framework, Roadmap Framework, North Star)
+- Discovery: `../../2.2-Discovery/README.md` (PMF Framework)

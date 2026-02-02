@@ -253,6 +253,6 @@ For ready-to-use templates, see `2-one-pager-templates.md`.
 - Meeting Agendas: `../2.4.2-Meeting-Agendas/README.md`
 - Stakeholder Management: `../2.4.7-Stakeholder-Management/README.md`
 - Newsletter: `../2.4.1-Newsletter/README.md`
-- Product Strategy: `../../2.1-Strategy/2.1.1-Strategic-Foundations/README.md`
-- Self-Reflection: `../../2.0-Foundations/2.0.3-Self-Reflection/README.md`
+- Strategy: `../../2.1-Strategy/README.md` (Strategic Foundations)
+- Foundations: `../../2.0-Foundations/README.md` (Self-Reflection, Mental Models, Bias)
 
