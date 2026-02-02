@@ -90,6 +90,12 @@ When a user wants to work on something or is thinking/braindumping (the agent is
    - Show the framework guide first (1-*-framework.md)
    - Only then point to the template (2-*-template.md)
 
+## Modes & evals
+
+- **product_sense_mode** → braindump, prompts, no framework until sufficient. **execution_mode** → structure + framework/template (or template-finder path). **meta_mode** → after substantial conversations: suggest `00-Meta/` (log, forecast, learning), optionally Level 2 checklist ([.cursor/evals/](../../.cursor/evals/README.md)), and rule updates (`.cursor/rules/thinking.mdc`).
+- **Signal mode transitions** in natural language when switching (per [AGENTS.md](../../AGENTS.md)); e.g. \"We've got enough to structure this—here's the framework that fits…\"
+- **Evals** are a separate workflow, not a conversation mode: Level 1 (artifact quality) lives in `02-Methods-and-Tools/` and the agent uses Quick Quality Checks per `.cursor/rules/evaluation-orchestration.mdc` when creating supported frameworks; Level 2 (agent behavior) lives in `.cursor/evals/`. You may suggest the Level 2 checklist in meta_mode; the user runs evals when they choose.
+
 ## Common Scenarios
 
 ### "I have an idea"

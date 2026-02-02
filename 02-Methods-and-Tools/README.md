@@ -77,7 +77,7 @@ Inside each numbered framework folder, files follow this pattern:
 
 ## Evaluation Frameworks
 
-**Frameworks with evaluation support** (high-stakes, peer-reviewed, quality-gated) have comprehensive evaluation frameworks available:
+**Frameworks with evaluation support** (high-stakes, peer-reviewed, quality-gated) have comprehensive evaluation frameworks available. For the two-level eval system (Level 1 = methods/frameworks, Level 2 = agent behavior) and how evals learn / ask you to adapt, see [.cursor/evals/README.md](../.cursor/evals/README.md).
 
 - **OKRs:** `2.1-Strategy/2.1.2-Strategic-Execution/1-OKR/3-okr-evaluation.md`
 - **Roadmaps:** `2.1-Strategy/2.1.2-Strategic-Execution/2-Roadmap/3-roadmap-evaluation.md`

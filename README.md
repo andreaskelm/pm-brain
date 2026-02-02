@@ -10,6 +10,8 @@ A living knowledge base that bridges the gap between Product Management framewor
 
 **Quick links:** [Setup](./SETUP.md) · [Guidelines](./GUIDELINES.md) · [Architecture](./ARCHITECTURE.md) · [Template finder](02-Methods-and-Tools/0-template-finder.md)
 
+**New here?** Open this repo in Cursor and start a conversation—the agent will guide you. No special phrase; say what you're working on (e.g. "I'm stuck on prioritization" or "I need to write a PRD") and you'll be guided.
+
 ---
 
 ## 📦 What's Inside
@@ -35,9 +37,9 @@ pm-brain/
    cd pm-brain
    ```
 2. **Follow [SETUP.md](./SETUP.md)** — Company Context, AI/agent config, optional 00-Meta setup.
-3. **Use the repo** — Open a framework or ask the agent; it will guide you (think first, then templates).
+3. **Use the repo** — Open a framework or start a conversation with the agent; it will guide you (think first, then structure, then templates).
 
-**Cursor + this repo:** Point Cursor at the repo; `AGENTS.md` and the rules in `.cursor/rules/` tell the agent to braindump with you before suggesting frameworks. No copy-paste required.
+**Using the agent (Cursor):** Open this repo in Cursor and start a chat. You don't need a special phrase—say what you're working on ("I'm stuck on prioritization," "Help me think through this feature," "I need to write a PRD"). The agent will guide you and signal when it switches from exploring to structuring so you're never lost. [AGENTS.md](./AGENTS.md) and [.cursor/rules/](.cursor/rules/README.md) define this behavior; no copy-paste required.
 
 **Use PM Brain in any project (Cursor only):**
 ```bash
@@ -52,6 +54,7 @@ Installs the workflow skill from [skills.sh](https://skills.sh/); use it in any 
 - **Visual:** [ARCHITECTURE.md](./ARCHITECTURE.md) — repo layers and methods flow.
 - **I need a template:** [02-Methods-and-Tools/0-template-finder.md](02-Methods-and-Tools/0-template-finder.md).
 - **Everything about a topic:** [02-Methods-and-Tools/1-frameworks-by-topic.md](02-Methods-and-Tools/1-frameworks-by-topic.md).
+- **Evals (methods + agent behavior):** [.cursor/evals/README.md](.cursor/evals/README.md) — guidance-based; how it learns and asks you to adapt.
 - **How to use and maintain:** [GUIDELINES.md](./GUIDELINES.md).
 
 Product sense (think first, then structure) is **built into** the agent and framework flow; see [PRODUCT-SENSE-RULES.md](PRODUCT-SENSE-RULES.md) and [0-start-here-product-thinking](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md) if you want the full story.

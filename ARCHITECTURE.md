@@ -1,6 +1,6 @@
 # PM Brain – Architecture Overview
 
-**What this file is:** Short visual reference for repo structure and methods flow. For full navigation: [README.md](README.md), [AGENTS.md](AGENTS.md). For product thinking: [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md). For “I need a template”: [0-template-finder.md](02-Methods-and-Tools/0-template-finder.md). For “everything about topic X”: [1-frameworks-by-topic.md](02-Methods-and-Tools/1-frameworks-by-topic.md).
+**What this file is:** Short visual reference for repo structure and methods flow. For full navigation: [README.md](README.md), [AGENTS.md](AGENTS.md). For product thinking: [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md). For “I need a template”: [0-template-finder.md](02-Methods-and-Tools/0-template-finder.md). For “everything about topic X”: [1-frameworks-by-topic.md](02-Methods-and-Tools/1-frameworks-by-topic.md). For evals (methods + agent behavior): [.cursor/evals/README.md](.cursor/evals/README.md).
 
 ---
 
@@ -87,7 +87,80 @@ flowchart LR
 - **ProductSenseMode**: Entered when the topic is product/stakeholder/org/strategy/roadmap/prioritization/discovery/execution or \"help me think through something\". Stay here while you braindump using prompts from `2-product-sense-prompts.md` and the golden rule in `PRODUCT-SENSE-RULES.md`, until the \"braindump sufficient\" checklist is met.
 - **TemplateFinderPath**: Entered when you explicitly ask to write/draft/fill a specific doc (PRD, OKR, one-pager, etc.). Use `02-Methods-and-Tools/0-template-finder.md` to jump straight to the right README + template, optionally asking 1–2 preflight prompts for non-trivial docs.
 - **ExecutionMode**: After sufficient braindump (or via TemplateFinderPath), help structure thinking and apply the right framework/template from `02-Methods-and-Tools/`.
-- **MetaSuggestion**: After substantial decision work, suggest logging in `00-Meta/` (forecast log, learning log, pattern recognition) and optionally updating rules (see `.cursor/rules/thinking.mdc`), then return to Default for the next conversation.
+- **MetaSuggestion**: After substantial decision work, suggest logging in `00-Meta/` (forecast log, learning log, pattern recognition), optionally running the Level 2 checklist ([.cursor/evals/1-agent-behavior-guide.md](.cursor/evals/1-agent-behavior-guide.md)), and optionally updating rules (see `.cursor/rules/thinking.mdc`), then return to Default for the next conversation.
+
+**Evals** are a separate workflow (see Evaluation system below), not a conversation state. The agent may suggest the Level 2 checklist in MetaSuggestion; you run evals when you choose.
+
+---
+
+## Evaluation system (evals)
+
+**In plain English:** Evals are **guidance-based** (no scripts). Two levels: (1) **Level 1** = artifact quality (methods/frameworks) — lives in `02-Methods-and-Tools/` (Quick Quality Checks in `1-*-framework.md`, full review in `3-*-evaluation.md`); (2) **Level 2** = agent behavior — lives in `.cursor/evals/` ([1-agent-behavior-guide.md](.cursor/evals/1-agent-behavior-guide.md), [2-checklist.md](.cursor/evals/2-checklist.md), [agent-behavior-scenarios.json](.cursor/evals/agent-behavior-scenarios.json)). You run evals when it matters; when you learn something new, you update the right file (see "Where to update" in the evals guide).
+
+**How evals are used (visual):**
+
+```mermaid
+flowchart TB
+  subgraph level1 [Level 1: Artifact quality]
+    UserCreates[User creates artifact]
+    AgentScans[Agent scans for red flags]
+    QC[Quick Quality Checks in 1-*-framework.md]
+    FullEval[Optional: full 3-*-evaluation.md]
+    UserCreates --> AgentScans
+    AgentScans --> QC
+    QC --> FullEval
+  end
+  subgraph level2 [Level 2: Agent behavior]
+    UserReviews[You run Level 2 review]
+    Guide[1-agent-behavior-guide.md]
+    Scenarios[agent-behavior-scenarios.json]
+    UserReviews --> Guide
+    Guide -->|"Match chat to type"| Scenarios
+  end
+  Agent[Agent per evaluation-orchestration.mdc] --> level1
+  MetaMode[Agent suggests checklist in meta_mode] --> level2
+```
+
+- **Level 1 during creation:** The agent uses Quick Quality Checks automatically per `.cursor/rules/evaluation-orchestration.mdc` when you work on frameworks with evaluation support (PRD, Opportunity Assessment, North Star, One-Pager, OKR, Roadmap).
+- **Level 2:** You (or an AI with the pasteable prompt) run the checklist when you choose; the agent may suggest it after substantial conversations (see [AGENTS.md](AGENTS.md) → meta_mode). Scenarios in JSON are reference only—you match your conversation to a scenario type and use success_indicators / failure_modes to score; the agent does not read the JSON.
+- **Entry point:** [.cursor/evals/README.md](.cursor/evals/README.md) — intro, separation of evals, how it learns / ask user to adapt, pasteable prompts, file map.
+
+---
+
+## How the repo is used (entry points and flows)
+
+**In plain English:** The repo has a few main entry points. Depending on what you're doing, the agent (or you) routes to the right place. The diagram below shows how those entry points connect to the rest of the repo.
+
+```mermaid
+flowchart LR
+  User[You]
+  ProductThink[Product thinking]
+  TemplateFind[Template finder]
+  Evals[Evals]
+  Methods[02-Methods-and-Tools]
+  Meta[00-Meta]
+  Company[01-Company-Context]
+  Initiatives[04-Initiatives]
+
+  User -->|"Think through a decision"| ProductThink
+  User -->|"Write / draft a doc"| TemplateFind
+  User -->|"Review agent or artifacts"| Evals
+
+  ProductThink --> Methods
+  ProductThink -->|"After substantial work"| Meta
+  TemplateFind --> Methods
+  Evals -->|"Level 1 index"| Methods
+  Evals -->|"Level 2 guide"| Evals
+
+  Methods --> Company
+  Methods --> Initiatives
+```
+
+| Entry point | Trigger | Where it leads |
+|-------------|---------|----------------|
+| **Product thinking** | You're braindumping, exploring, or asking for help with a decision | [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md) → product_sense_mode → then [02-Methods-and-Tools/](02-Methods-and-Tools/README.md) (framework/template). After substantial work, agent may suggest [00-Meta/](00-Meta/README.md) (log, forecast, learning). |
+| **Template finder** | You ask to write/draft/fill a specific doc (PRD, OKR, one-pager, etc.) | [0-template-finder.md](02-Methods-and-Tools/0-template-finder.md) → right README + template in 02-Methods-and-Tools. For frameworks with evaluation support, agent uses Quick Quality Checks ([evaluation-orchestration.mdc](.cursor/rules/evaluation-orchestration.mdc)). |
+| **Evals** | You want to review artifact quality or agent behavior | [.cursor/evals/README.md](.cursor/evals/README.md) → Level 1 (Methods) or Level 2 (agent-behavior guide, checklist, scenarios as reference). Agent may suggest Level 2 checklist after substantial conversations (meta_mode). |
 
 ---
 

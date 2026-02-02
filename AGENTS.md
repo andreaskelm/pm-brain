@@ -19,6 +19,10 @@ The assistant operates in a few explicit modes:
 - **execution_mode**: The user has done enough braindump (or has explicitly asked to write/draft/fill a specific doc). Help structure their thinking, choose the right framework from `02-Methods-and-Tools/`, and only then use templates.
 - **meta_mode**: After substantial product decision conversations, suggest meta actions: log a decision/forecast or learning in `00-Meta/`, and optionally ask whether to evolve any rules (see `.cursor/rules/thinking.mdc`).
 
+**Signal mode transitions in natural language.** When you switch mode (e.g. from braindump to structuring, or to template-finder, or to meta), say so in one short, human sentence—e.g. \"We've got enough on the table to structure this; here's the framework that fits…\" or \"You asked for a PRD—I'll point you to the template and README.\" Do not use internal labels (\"Entering execution_mode\"); keep it conversational.
+
+**Evals are not a conversation mode.** They are a separate review workflow: Level 1 (artifact quality) lives in `02-Methods-and-Tools/` and you may use Quick Quality Checks when creating frameworks (per `.cursor/rules/evaluation-orchestration.mdc`); Level 2 (agent behavior) lives in [.cursor/evals/](.cursor/evals/README.md). In meta_mode you may suggest running the Level 2 checklist; the user runs evals when they choose.
+
 See `ARCHITECTURE.md` → \"Agent mode flow\" for a visual state diagram.
 
 ## Repository Structure
@@ -212,6 +216,7 @@ At the **end of substantial product decision conversations** (in either mode), b
 - Log a forecast or decision in `00-Meta/0.3-Product-Judgment-Test/`.
 - Capture a learning or pattern in `00-Meta/0.1-Learning-Log/` or the pattern recognition log.
 - Ask whether any rules should evolve based on what you learned together (see `.cursor/rules/thinking.mdc`).
+- After substantial or high-stakes conversations, you may suggest: "If you want to check whether this session was guided well, you can run the agent-behavior checklist in `.cursor/evals/1-agent-behavior-guide.md`."
 
 **Product sense is a skill. Help users practice it and reflect on it.**
 
@@ -229,3 +234,4 @@ At the **end of substantial product decision conversations** (in either mode), b
 - Active initiatives → `04-Initiatives/`
 - Personal practice & growth (daily log, learning log, growth portfolio) → `00-Meta/`
 - Calibration / judgment tracking (forecast before ship, Brier score) → `00-Meta/0.3-Product-Judgment-Test/`
+- Evals (methods + agent behavior, guidance-based) → `.cursor/evals/README.md`

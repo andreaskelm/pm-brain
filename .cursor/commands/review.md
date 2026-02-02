@@ -1,34 +1,9 @@
-```
-# Review Task
+# Review for PM Brain alignment
 
-Perform comprehensive review of []. Be thorough but concise.
+Review the current selection or open document for completeness and alignment with PM Brain frameworks. Check: structure, missing sections, alignment with templates and evaluation criteria.
 
-## Check For:
+**Reference:** @02-Methods-and-Tools/0-Template-Structure and, if the doc is a PRD, opportunity assessment, OKR, roadmap, North Star, or one-pager, the relevant 3-*-evaluation.md in that framework folder.
 
-**Typos**
-**References and links**
-**Incomplete logic**
-**Templates are used and aligned**
-**All files and readmes are available** use @02-Methods-and-Tools/0-Template-Structure 
+**Check for:** Typos, broken references/links, incomplete logic, template alignment, and that required sections exist.
 
-## Output Format
-
-### ✅ Looks Good
-- [Item 1]
-- [Item 2]
-
-### ⚠️ Issues Found
-- **[Severity]** [[File:line](File:line)] - [Issue description]
-  - Fix: [Suggested fix]
-
-### 📊 Summary
-- Files reviewed: X
-- Critical issues: X
-- Warnings: X
-
-## Severity Levels
-- **CRITICAL** - Security, data loss, crashes
-- **HIGH** - Bugs, performance issues, bad UX
-- **MEDIUM** - Code quality, maintainability
-- **LOW** - Style, minor improvements
-```
+**Output:** Looks good (items that pass), issues found (severity + file:line + suggested fix), and summary (files reviewed, critical/warning counts). Severity: CRITICAL (security, data loss), HIGH (bugs, bad UX), MEDIUM (quality, maintainability), LOW (style).

@@ -18,7 +18,11 @@ This file summarizes the AGENT assistant’s main capabilities, entrypoints, and
 
 - **product_sense_mode**: Thinking/braindumping about product, stakeholders, org, strategy, roadmap, prioritization, discovery, execution, or \"help me think through something\". Use 0-start-here + PRODUCT-SENSE-RULES + 2-product-sense-prompts; no frameworks/templates until braindump is sufficient.
 - **execution_mode**: After braindump is sufficient (or when using the template-finder path for a specific doc). Use pm-brain-workflow skill + Methods-and-Tools frameworks and templates.
-- **meta_mode**: After substantial product decision conversations. Suggest logging in `00-Meta/` and, when appropriate, evolving rules (see `.cursor/rules/thinking.mdc`).
+- **meta_mode**: After substantial product decision conversations. Suggest logging in `00-Meta/`, optionally running the Level 2 checklist (`.cursor/evals/`), and, when appropriate, evolving rules (see `.cursor/rules/thinking.mdc`).
+
+**Mode signaling:** When switching mode, say so in one short, natural sentence (e.g. \"We've got enough to structure this—here's the framework…\"). Do not use internal labels (\"Entering execution_mode\").
+
+**Evals:** Not a conversation mode. Separate workflow: Level 1 (artifact quality) in `02-Methods-and-Tools/` + Quick Quality Checks per `.cursor/rules/evaluation-orchestration.mdc`; Level 2 (agent behavior) in `.cursor/evals/` ([README](.cursor/evals/README.md)). Agent may suggest Level 2 in meta_mode; user runs evals when they choose.
 
 ### Content clusters
 

@@ -1,0 +1,298 @@
+{
+  "version": "1.0",
+  "scenarios": [
+    {
+      "scenario_id": "vague_product_idea_001",
+      "scenario_type": "vague_problem",
+      "initial_prompt": "I want to build an app for remote teams.",
+      "target_phase": "problem_definition",
+      "target_dimensions": ["questioning", "perspective_taking"],
+      "user_context": {
+        "experience_level": "first_time_pm",
+        "domain": "saas",
+        "pressure": "high_urgency"
+      },
+      "hidden_complexity": "No validated problem, no defined segment, no mention of existing tools (Slack, Zoom, etc.). User has not distinguished 'remote teams' from 'distributed workforce' or 'async collaboration'.",
+      "success_indicators": [
+        "Agent's first substantive reply contains at least one open-ended question (e.g. what specific problem, for whom, or what existing tools fall short)",
+        "Agent does not name or link to any framework, template, or doc type in the first exchange",
+        "Agent asks who the users are (segment, context) before discussing features or solutions",
+        "Agent asks what the user has observed or what evidence they have that a new app is needed",
+        "Agent avoids feature-level suggestions (e.g. chat, video) until the problem is narrowed"
+      ],
+      "failure_modes": [
+        "Agent suggests or links to a PRD, one-pager, or product template in the first or second message",
+        "Agent proposes features (e.g. chat, video, file sharing) without first clarifying the problem",
+        "Agent asks only yes/no or multiple-choice questions that do not deepen the problem",
+        "Agent gives generic encouragement ('great idea') without a concrete clarifying question",
+        "Agent does not ask about existing solutions or what has been tried"
+      ],
+      "tags": ["beginner", "product_definition", "critical"]
+    },
+    {
+      "scenario_id": "conflicting_stakeholders_002",
+      "scenario_type": "conflicting_priorities",
+      "initial_prompt": "Engineering wants to do a full rewrite but Sales is promising new features to close deals. I need to decide what to prioritize.",
+      "target_phase": "exploration",
+      "target_dimensions": ["perspective_taking", "framework_fit", "guidance_quality"],
+      "user_context": {
+        "experience_level": "mid_level_pm",
+        "org_size": "series_b_startup",
+        "timeline": "quarterly_planning"
+      },
+      "hidden_complexity": "Rewrite cost and impact are unquantified; sales 'promises' may be untracked; no shared view of opportunity cost or which deals are actually feature-blocked.",
+      "success_indicators": [
+        "Agent asks what Engineering's rewrite would fix (e.g. stability, speed, maintainability) and whether impact is quantified",
+        "Agent asks which deals or revenue are tied to the features Sales wants, and whether those deals are verified as feature-blocked",
+        "Agent surfaces at least one question that reframes the tradeoff (e.g. cost of not doing rewrite in 6 months, or cost of losing specific deals)",
+        "Agent suggests a prioritization or decision framework only after helping user articulate both sides",
+        "Agent explicitly leaves the final call to the user (e.g. 'you decide' or 'given that, what do you want to do')",
+        "Agent does not recommend a specific outcome (e.g. 'do the rewrite' or 'build the feature')"
+      ],
+      "failure_modes": [
+        "Agent recommends one side (e.g. 'prioritize engineering' or 'support Sales') without exploring both",
+        "Agent gives only generic advice (e.g. 'balance both', 'communicate') without concrete questions",
+        "Agent suggests RICE or another framework in the first message without gathering context",
+        "Agent states or implies what the user should do instead of equipping them to decide",
+        "Agent does not ask for any numbers (timeline, revenue at risk, velocity impact)"
+      ],
+      "tags": ["intermediate", "prioritization", "stakeholder_management", "critical"]
+    },
+    {
+      "scenario_id": "framework_selection_003",
+      "scenario_type": "framework_need",
+      "initial_prompt": "I need to write a strategy doc but I'm not sure how to structure it.",
+      "target_phase": "framework_selection",
+      "target_dimensions": ["framework_fit", "questioning", "guidance_quality"],
+      "user_context": {
+        "experience_level": "experienced_pm",
+        "doc_purpose": "h2_planning",
+        "audience": "exec_team"
+      },
+      "hidden_complexity": "Strategy type is unspecified: could be growth, market entry, pivot, or annual plan. Audience and decisions the doc must drive are unstated; wrong structure wastes time.",
+      "success_indicators": [
+        "Agent asks what kind of strategy (e.g. growth, market entry, pivot, annual plan) before suggesting structure",
+        "Agent asks who will read it and what decisions the doc should enable",
+        "Agent names or references at least two possible structures or frameworks and explains when each fits",
+        "Agent explains why a given structure fits the user's stated context (audience, decision type)",
+        "Agent does not paste or link to a single template in the first reply without asking these questions",
+        "Agent offers a concrete next step (e.g. 'if it's annual plan, start with X') that matches the user's answer"
+      ],
+      "failure_modes": [
+        "Agent suggests one framework or template in the first message without asking strategy type or audience",
+        "Agent points to a generic strategy template without explaining why it fits this situation",
+        "Agent does not ask what decisions the doc needs to drive",
+        "Agent does not distinguish between strategy types (e.g. Playing to Win vs OKR vs roadmap)",
+        "Agent gives a long list of sections without tying structure to audience or use case"
+      ],
+      "tags": ["advanced", "documentation", "frameworks"]
+    },
+    {
+      "scenario_id": "premature_solution_004",
+      "scenario_type": "vague_problem",
+      "initial_prompt": "Users are churning. I think we need to build an onboarding flow.",
+      "target_phase": "problem_definition",
+      "target_dimensions": ["questioning", "perspective_taking", "user_agency"],
+      "user_context": {
+        "experience_level": "mid_level_pm",
+        "has_data": "limited",
+        "solution_bias": "high"
+      },
+      "hidden_complexity": "User has conflated symptom (churn) with solution (onboarding). Churn could be activation, value realization, pricing, or segment fit; onboarding might be irrelevant.",
+      "success_indicators": [
+        "Agent questions whether onboarding is the cause (e.g. asks when users churn, which cohorts, or what happens before churn)",
+        "Agent asks what data or evidence the user has that points to onboarding (e.g. drop-off at a specific step)",
+        "Agent suggests investigating before building (e.g. cohort analysis, exit interviews, session review)",
+        "Agent does not start designing or outlining an onboarding flow in the first exchange",
+        "Agent frames investigation as a way to strengthen the user's decision rather than to second-guess them",
+        "Agent leaves the final choice (build vs investigate first) to the user after laying out options"
+      ],
+      "failure_modes": [
+        "Agent accepts that onboarding is the fix and helps design or scope an onboarding flow without probing",
+        "Agent does not ask when users churn, which cohorts, or what evidence links churn to onboarding",
+        "Agent lectures or insists the user must do research before building (tone is prescriptive, not collaborative)",
+        "Agent does the diagnosis for the user (e.g. 'your churn is probably due to X') instead of guiding them to check",
+        "Agent dismisses the user's view without asking for their reasoning or data"
+      ],
+      "tags": ["intermediate", "problem_diagnosis", "critical", "common_mistake"]
+    },
+    {
+      "scenario_id": "complex_tradeoff_005",
+      "scenario_type": "complex_decision",
+      "initial_prompt": "Should we go multi-tenant or keep single-tenant architecture? Enterprise customers are asking for it but it's a 6-month engineering project.",
+      "target_phase": "exploration",
+      "target_dimensions": ["perspective_taking", "framework_fit", "artifact_clarity"],
+      "user_context": {
+        "experience_level": "senior_pm",
+        "domain": "b2b_saas",
+        "decision_timeline": "urgent"
+      },
+      "hidden_complexity": "Decision affects pricing, sales motion, support, security, and compliance—not only engineering. Reversibility and de-risking (e.g. pilot, hybrid) are often unexamined.",
+      "success_indicators": [
+        "Agent asks or surfaces impact beyond engineering (e.g. pricing, sales process, support, compliance)",
+        "Agent asks about reversibility or ways to de-risk (e.g. pilot, phased rollout, hybrid)",
+        "Agent asks what would change the decision (e.g. if a key deal required multi-tenant, or if engineering could do it in 3 months)",
+        "Agent helps user produce or outline a shareable artifact (e.g. decision memo, criteria, tradeoff table) with clear options and implications",
+        "Agent does not recommend multi-tenant or single-tenant; instead helps user structure the tradeoff so they can decide",
+        "Agent mentions short-term vs long-term implications (e.g. time to first enterprise deal vs total cost of ownership)"
+      ],
+      "failure_modes": [
+        "Agent focuses only on technical pros/cons of multi-tenant vs single-tenant",
+        "Agent gives generic advice without helping user spell out criteria or document the tradeoff",
+        "Agent recommends one option without the user having articulated decision criteria",
+        "Agent does not help user create an artifact that stakeholders can use (e.g. decision doc, criteria)",
+        "Agent does not ask about reversibility, pilot options, or what would change the answer"
+      ],
+      "tags": ["advanced", "architecture", "decision_making", "cross_functional"]
+    },
+    {
+      "scenario_id": "first_time_roadmap_006",
+      "scenario_type": "framework_need",
+      "initial_prompt": "I just got promoted to PM and need to create my first roadmap. Where do I start?",
+      "target_phase": "framework_selection",
+      "target_dimensions": ["guidance_quality", "user_agency", "framework_fit"],
+      "user_context": {
+        "experience_level": "new_pm",
+        "previous_role": "engineer",
+        "team_size": "small_team"
+      },
+      "hidden_complexity": "User may not know what a roadmap is for (alignment vs commitment vs discovery), what inputs are needed (strategy, capacity, dependencies), or how much detail is appropriate.",
+      "success_indicators": [
+        "Agent asks or clarifies the purpose of the roadmap (e.g. who will use it, what decisions it supports) before suggesting format",
+        "Agent explains in one or two sentences what a good roadmap does (e.g. aligns team and stakeholders, shows what and when) before giving a template",
+        "Agent asks about context (team size, audience, company stage) and tailors suggestion to that",
+        "Agent suggests a simple starting point (e.g. now-next-later, or quarters with themes) rather than a heavy template first",
+        "Agent explains why a given element matters (e.g. 'themes help when you have to re-prioritize') so the user can learn",
+        "Agent does not dump a long roadmap template or multiple frameworks in the first reply without assessing readiness"
+      ],
+      "failure_modes": [
+        "Agent shares a detailed roadmap template or framework in the first message without asking purpose or context",
+        "Agent assumes the user knows what inputs a roadmap needs (strategy, capacity, etc.)",
+        "Agent gives only structure (sections, columns) without explaining the reasoning behind them",
+        "Agent suggests an advanced format (e.g. outcome-based roadmap, full OKR linkage) without checking if the user has the inputs",
+        "Agent does not offer a minimal first step (e.g. 'start with the next 2 quarters') to reduce overwhelm"
+      ],
+      "tags": ["beginner", "roadmapping", "learning", "common_scenario"]
+    },
+    {
+      "scenario_id": "metrics_confusion_007",
+      "scenario_type": "framework_need",
+      "initial_prompt": "My exec asked for KPIs but I'm not sure what metrics matter for my product.",
+      "target_phase": "framework_selection",
+      "target_dimensions": ["questioning", "framework_fit", "perspective_taking"],
+      "user_context": {
+        "experience_level": "mid_level_pm",
+        "product_type": "unclear",
+        "business_model": "unknown"
+      },
+      "hidden_complexity": "Right metrics depend on product type (B2B vs B2C), business model (usage, seats, transaction), and what decisions the exec will make. Generic KPI lists are useless.",
+      "success_indicators": [
+        "Agent asks what the product is (e.g. user base, use case) and how the business makes money before suggesting metrics",
+        "Agent asks what decisions or conversations the exec will use these KPIs for",
+        "Agent distinguishes input vs output metrics, or leading vs lagging, with a brief explanation tied to the user's context",
+        "Agent suggests a small set of metrics (e.g. 3–5) with rationale for each, not a long generic list",
+        "Agent warns against or questions vanity metrics (e.g. 'total signups' without activation) in context",
+        "Agent does not list standard KPIs (MRR, DAU, NPS, etc.) in the first message without asking product and business model"
+      ],
+      "failure_modes": [
+        "Agent lists generic KPIs (MRR, DAU, NPS, churn, etc.) without asking about product or business model",
+        "Agent does not ask what decisions these metrics will inform",
+        "Agent suggests many metrics at once without prioritizing or explaining why each matters for this product",
+        "Agent does not explain why a given metric matters (e.g. why activation vs signups)",
+        "Agent does not connect metrics to the user's product type or business model"
+      ],
+      "tags": ["intermediate", "metrics", "common_scenario"]
+    },
+    {
+      "scenario_id": "user_research_planning_008",
+      "scenario_type": "vague_problem",
+      "initial_prompt": "I need to do user research but don't know where to start.",
+      "target_phase": "problem_definition",
+      "target_dimensions": ["questioning", "framework_fit", "guidance_quality"],
+      "user_context": {
+        "experience_level": "mid_level_pm",
+        "research_goal": "unclear",
+        "constraints": "unknown"
+      },
+      "hidden_complexity": "Method depends on what they want to learn (explore, validate, prioritize) and on constraints (time, access to users, budget). A generic 'research plan' can be wrong fit.",
+      "success_indicators": [
+        "Agent asks what they want to learn or validate (e.g. problem understanding, solution fit, prioritization) before suggesting methods",
+        "Agent asks about current assumptions or hypotheses so research can be targeted",
+        "Agent asks about constraints (time, how many users they can reach, budget) before recommending methods",
+        "Agent suggests a method (e.g. interviews, survey, usability test) that matches the stated goal and constraints",
+        "Agent explains in one sentence why a given method fits (e.g. 'interviews are for exploring why; surveys for how many')",
+        "Agent keeps scope bounded (e.g. 'start with 5 interviews' or 'one round of validation') rather than a full program",
+        "Agent does not recommend a heavy research plan (e.g. mixed-method program) in the first reply without understanding goal and constraints"
+      ],
+      "failure_modes": [
+        "Agent suggests a research method or plan in the first message without asking what they want to learn",
+        "Agent recommends time- or resource-intensive methods (e.g. large survey, many interviews) without asking constraints",
+        "Agent does not help user formulate a clear research question or hypothesis",
+        "Agent lists many methods without recommending a focused next step for their situation",
+        "Agent does not explain how to use or analyze the results of the suggested method"
+      ],
+      "tags": ["intermediate", "user_research", "methodology"]
+    },
+    {
+      "scenario_id": "defensive_user_009",
+      "scenario_type": "complex_decision",
+      "initial_prompt": "I already know we need to build feature X, I just need help documenting it in a PRD.",
+      "target_phase": "problem_definition",
+      "target_dimensions": ["user_agency", "guidance_quality", "questioning"],
+      "user_context": {
+        "experience_level": "experienced_pm",
+        "confidence": "very_high",
+        "openness": "low"
+      },
+      "hidden_complexity": "User may be right and ready to document, or may have skipped validation. Agent must add value (e.g. stronger 'why now', success criteria) without challenging the decision in a way that feels dismissive.",
+      "success_indicators": [
+        "Agent accepts the user's frame (documenting a decided feature) and offers to help with the PRD",
+        "Agent asks one or two strengthening questions (e.g. 'What's the core evidence that this is the right bet?' or 'How will you know if it worked?') in a collaborative tone, not a challenge",
+        "Agent suggests PRD elements that strengthen the case (e.g. 'why now', success metrics, scope boundaries) as ways to make the doc more convincing, not as gatekeeping",
+        "Agent does not refuse to help, lecture about validation, or imply the user has not thought it through",
+        "Agent does not be overly deferential (e.g. only filling template) without offering at least one question that could improve the PRD",
+        "If the user has a clear answer, agent moves to structure; if they don't, agent surfaces the gap gently (e.g. 'That section often helps with exec buy-in')"
+      ],
+      "failure_modes": [
+        "Agent challenges the decision up front (e.g. 'Have you validated this?' or 'You should do research first') before helping with the PRD",
+        "Agent is patronizing or implies the user has not thought it through",
+        "Agent refuses to help with the PRD until the user 'revisits' the decision",
+        "Agent only provides a template or structure without any questions that could strengthen the doc",
+        "Agent is so deferential that they do not ask about 'why now', success criteria, or scope—missing clear PRD gaps",
+        "Agent does not add value beyond formatting (e.g. no suggestion to quantify impact or clarify audience)"
+      ],
+      "tags": ["advanced", "difficult_interaction", "user_psychology", "critical"]
+    },
+    {
+      "scenario_id": "overwhelm_paralysis_010",
+      "scenario_type": "complex_decision",
+      "initial_prompt": "I have so many things I could work on. I'm stuck and don't know where to start.",
+      "target_phase": "exploration",
+      "target_dimensions": ["guidance_quality", "user_agency", "framework_fit"],
+      "user_context": {
+        "experience_level": "any",
+        "emotional_state": "overwhelmed",
+        "decision_fatigue": "high"
+      },
+      "hidden_complexity": "User needs to feel heard and to get one small, concrete step—not a full prioritization framework. Adding RICE, backlog review, or multiple options can increase cognitive load.",
+      "success_indicators": [
+        "Agent acknowledges the feeling (e.g. that it's hard when everything feels important) in the first reply",
+        "Agent does not introduce a prioritization framework (RICE, MoSCoW, etc.) in the first exchange",
+        "Agent asks a single narrowing question (e.g. 'If you could ship one thing in the next 2 weeks that would feel like progress, what would it be?' or 'What's the one thing that would unblock you?')",
+        "Agent suggests a very small next step (e.g. 'Pick one thing and do the next 30 minutes on it' or 'Write down the top 3 and we can pick one') that reduces overwhelm",
+        "Agent keeps the reply short and focused; does not list many options or steps",
+        "Agent leaves the choice to the user (e.g. 'What feels doable?' or 'You choose') and does not decide for them",
+        "Agent does not add to the list of things to do; instead helps user externalize or narrow"
+      ],
+      "failure_modes": [
+        "Agent suggests a prioritization framework (RICE, value vs effort, etc.) in the first or second message",
+        "Agent does not acknowledge that the user feels stuck or overwhelmed",
+        "Agent gives a long list of steps or questions that increase cognitive load",
+        "Agent tries to 'solve' the full set of priorities at once instead of one next step",
+        "Agent is purely process-focused (e.g. only 'list everything and score it') without a human, supportive tone",
+        "Agent recommends a complex or multi-step process before the user has taken a single small step"
+      ],
+      "tags": ["any_level", "emotional_support", "user_psychology", "common_scenario"]
+    }
+  ]
+}

@@ -298,7 +298,7 @@ If you're using **Cursor**:
 2. **The AI already knows** the repo (via root `AGENTS.md`). For **product/stakeholder/org thinking**, it will start from the entry point [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md): braindump first, then suggest a framework (Strategy, Discovery, Execution, Communication).
 3. **Use slash commands** for common workflows (see `.cursor/commands/`):
    - `/start` - Launch a new initiative end-to-end
-   - `/review` - Review documentation for issues
+   - `/review` - Review current doc or selection for PM Brain alignment
    - `/day` - Plan your day with PM rituals
    - `/week` - Plan your week with strategic focus
    - `/focus` - Get help when you're stuck or need focus
