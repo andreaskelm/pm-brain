@@ -24,6 +24,30 @@ Effective one-pagers should:
 - Create lasting reference materials
 - Time-efficient and distributable
 
+## For Agents: When to Suggest This Framework
+
+**Trigger conditions:**
+- User mentions: "one-pager", "one pager", "executive summary", "decision doc", "proposal doc", "need to get buy-in"
+- User is in: `execution_mode` (after braindump) or when user asks to create a communication doc
+- Prerequisites: User has a decision to make, proposal to share, or needs stakeholder alignment
+- User has: Clear ask or decision they want to drive (may need help clarifying)
+
+**How to introduce:**
+- "You need to communicate [proposal/decision/strategy] to stakeholders. Let's create a one-pager that drives alignment and action."
+- "Based on your thinking about [topic], let's structure this as a one-pager so stakeholders can quickly understand and make a decision."
+
+**Common mistakes to avoid:**
+- Don't suggest one-pager if user hasn't clarified their ask (help them define what decision they want)
+- Don't create docs that bury the lead (lead with the ask/decision)
+- Don't suggest one-pager if user needs detailed documentation (use PRD or comprehensive docs)
+- Don't create jargon-heavy docs (must be clear and accessible)
+
+**When NOT to use this framework:**
+- User needs detailed requirements (use PRD)
+- User needs comprehensive strategy doc (use Strategy frameworks)
+- User needs meeting notes or agenda (use Meeting Agendas framework)
+- User needs ongoing communication (use Newsletter framework)
+
 ## Framework Structure
 
 ### 1. Header Section

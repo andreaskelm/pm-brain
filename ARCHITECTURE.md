@@ -176,3 +176,84 @@ flowchart LR
 **Deep links:** Only use deep links (e.g., `../../2.0-Foundations/2.0.3-Self-Reflection/README.md`) when specifically referencing a particular framework in context, or in "Related frameworks" sections. Prefer domain indices for general navigation.
 
 **When adding new frameworks:** Follow these conventions to maintain consistent navigation patterns.
+
+---
+
+## Context Management Strategy
+
+**In plain English:** The agent needs to load different files at different times to stay within context limits. This strategy defines what to load when.
+
+**Problem:** System prompt (`AGENTS.md`) is 240+ lines. Framework files are hundreds of lines. Without a loading strategy, the agent may hit context limits or miss critical instructions.
+
+**Solution:** Three-layer loading strategy:
+
+### Layer 1: Core (Always Loaded)
+
+**What:** Essential instructions that govern agent behavior.
+
+**Files:**
+- Core persona and mode definitions from `AGENTS.md` (lines 1-25, ~50 lines)
+- Golden rule from `PRODUCT-SENSE-RULES.md` (first paragraph, ~10 lines)
+- Mode transition logic from `AGENTS.md` (product_sense_mode entry, ~20 lines)
+
+**Total:** ~80 lines
+
+**When:** Always loaded at conversation start.
+
+### Layer 2: On-Demand (Loaded When Needed)
+
+**What:** Framework guides and prompts needed for current mode.
+
+**Files loaded in product_sense_mode:**
+- Entry point: `0-start-here-product-thinking.md` (persona section + workflow, ~100 lines)
+- Prompts file: `2-product-sense-prompts.md` (relevant situation section, ~50-100 lines)
+- Eval functions: `.cursor/evals/eval-functions.md` (checkpoint definitions, ~50 lines)
+
+**Files loaded in execution_mode:**
+- Framework guide: `1-*-framework.md` for the framework being used (~100-200 lines)
+- Template finder: `0-template-finder.md` (if user asked for specific doc, ~30 lines)
+
+**Total per mode:** ~200-350 lines
+
+**When:** Loaded when user enters a mode or asks for a specific framework.
+
+### Layer 3: Reference (Loaded Only When Filling/Checking)
+
+**What:** Templates, evaluation criteria, and detailed guides.
+
+**Files:**
+- Templates: `2-*-template.md` (only when user is filling template, ~50-100 lines)
+- Evaluation: `3-*-evaluation.md` (only when doing quality check, ~100-200 lines)
+- Detailed guides: Full framework files (only when user needs deep dive)
+
+**Total:** Variable, loaded on-demand
+
+**When:** Loaded only when user is actively using them (filling template, running evaluation).
+
+### Loading Order
+
+1. **Conversation start:** Load Layer 1 (Core)
+2. **User enters product_sense_mode:** Load Layer 2 (On-demand) → entry point + prompts
+3. **User enters execution_mode:** Load Layer 2 (On-demand) → framework guide
+4. **User fills template:** Load Layer 3 (Reference) → template file
+5. **User requests evaluation:** Load Layer 3 (Reference) → evaluation file
+
+### Context Limits
+
+**Estimated usage:**
+- Layer 1 (Core): ~80 lines
+- Layer 2 (On-demand): ~200-350 lines
+- Layer 3 (Reference): ~50-200 lines (when needed)
+- Conversation history: Variable
+
+**Total typical usage:** ~330-630 lines + conversation history
+
+**Strategy:** Keep Layer 1 minimal. Load Layer 2 only for current mode. Load Layer 3 only when actively using.
+
+### Implementation Notes
+
+**For agents:** Reference this strategy when deciding what files to load. Don't load all frameworks at once. Load only what's needed for the current mode and task.
+
+**For framework authors:** Keep framework guides focused. Put detailed examples in separate files. Keep "For Agents" sections concise.
+
+**For system maintainers:** Monitor context usage. If Layer 1 grows beyond ~100 lines, consider splitting into core vs. extended instructions.

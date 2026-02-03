@@ -21,6 +21,30 @@ This framework helps you create and manage Objectives and Key Results (OKRs) tha
 - Exploratory research phases before clear objectives emerge
 - One-off projects with clear, single success criteria
 
+## For Agents: When to Suggest This Framework
+
+**Trigger conditions:**
+- User mentions: "OKRs", "objectives and key results", "quarterly goals", "team goals", "operationalize strategy"
+- User is in: `execution_mode` (after braindump) or when user asks to create goals/metrics
+- Prerequisites: User has strategic direction (company/BU strategy, or product strategy)
+- User has: Clear outcomes they want to achieve (may need help articulating them)
+
+**How to introduce:**
+- "You want to operationalize [strategy/priorities] into measurable outcomes. Let's use the OKR framework to translate your strategic direction into clear objectives and key results."
+- "Based on your thinking about [strategic priorities], let's structure this as OKRs so the team knows what outcomes matter and how to measure progress."
+
+**Common mistakes to avoid:**
+- Don't suggest OKRs if user doesn't have strategic direction (help them define strategy first)
+- Don't suggest OKRs for one-off projects (use project goals instead)
+- Don't suggest OKRs if user is still exploring (use Opportunity Assessment or Discovery frameworks)
+- Don't create activity-based OKRs (focus on outcomes, not outputs)
+
+**When NOT to use this framework:**
+- User is defining strategy (use Strategic Foundations frameworks)
+- User is exploring opportunities (use Opportunity Assessment)
+- User needs to prioritize features (use Prioritization frameworks)
+- Very small team with strong alignment (OKRs may be overhead)
+
 ---
 
 ## Core Philosophy

@@ -13,6 +13,30 @@ This framework helps product teams align around a single metric that captures cu
 - What would make you say "this North Star is obviously wrong"?
 - What would make you say "this North Star is obviously right"?
 
+## For Agents: When to Suggest This Framework
+
+**Trigger conditions:**
+- User mentions: "North Star", "north star metric", "single metric", "strategic metric", "alignment metric", "what metric matters most"
+- User is in: `execution_mode` (after braindump) or when user asks to define strategic metrics
+- Prerequisites: User has product strategy or clear product direction (may need to define strategy first)
+- User has: Understanding of their product "game" (Attention, Transaction, or Productivity)
+
+**How to introduce:**
+- "You want to align the team around a single metric that captures customer value. Let's use the North Star Framework to identify the one metric that drives sustainable growth."
+- "Based on your thinking about [strategic direction], let's define a North Star metric that everyone can rally around and measure progress against."
+
+**Common mistakes to avoid:**
+- Don't suggest North Star if user doesn't have product strategy (help them define strategy first)
+- Don't create vanity metrics (focus on customer value, not just activity)
+- Don't suggest North Star if user is exploring opportunities (use Opportunity Assessment)
+- Don't create metrics that aren't actionable (must be measurable and influenceable)
+
+**When NOT to use this framework:**
+- User is defining strategy (use Strategic Foundations)
+- User is exploring opportunities (use Opportunity Assessment)
+- User needs multiple metrics (use Metrics framework)
+- Very early-stage product without clear direction (use Discovery frameworks)
+
 ## Core Philosophy
 
 ### The North Star Framework is NOT a Silver Bullet

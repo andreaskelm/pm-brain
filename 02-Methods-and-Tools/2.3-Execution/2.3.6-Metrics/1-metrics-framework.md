@@ -8,6 +8,39 @@ This framework helps product teams distinguish between meaningful metrics and mi
 
 **Use prompts from:** [2-product-sense-prompts.md](../../../../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md) → [Generic Step 0 (any framework)](../../../../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md#generic-step-0-any-framework). Quick start: What outcomes? What metrics feel meaningful? What assumptions about what to measure? What biases might affect your metric choices? **See prompts file for full list.**
 
+## For Agents: When to Suggest This Framework
+
+**Trigger conditions:**
+- User mentions: "metrics", "KPIs", "what should I measure", "success metrics", "how do I track progress", "product metrics"
+- User is in: `execution_mode` (after braindump) or when user asks to define metrics
+- Prerequisites: User has product/feature/initiative they want to measure
+- User has: Some understanding of what outcomes matter (may need help articulating)
+
+**How to introduce:**
+- "You want to define metrics that drive action and learning. Let's use the Metrics Framework to distinguish meaningful metrics from vanity metrics."
+- "Based on your thinking about [product/feature], let's structure your metrics using this framework to ensure you're measuring what actually matters."
+
+**Common mistakes to avoid:**
+- Don't suggest Metrics if user needs a single strategic metric (suggest North Star Framework instead)
+- Don't create vanity metrics (focus on actionable, outcome-focused metrics)
+- Don't suggest Metrics if user doesn't have clear outcomes (help them define outcomes first)
+- Don't skip braindump - metrics frameworks organize measurement thinking, they don't create it
+- Don't create too many metrics (focus on 3-5 key metrics)
+
+**When NOT to use Metrics Framework:**
+- User needs a single strategic alignment metric (use North Star Framework - one metric for alignment)
+- User is defining strategy (use Strategic Foundations - metrics come after strategy)
+- User is exploring opportunities (use Opportunity Assessment - metrics come after validation)
+- User needs feature-level metrics for PRD (suggest Metrics section within PRD framework)
+
+**Distinction from North Star:**
+- **Metrics Framework:** Multiple metrics for different purposes (leading/lagging, input/output, feature/product level)
+- **North Star Framework:** Single strategic metric that aligns the entire team (one metric for alignment)
+- **When to use Metrics Framework:** Need multiple metrics, feature-level tracking, comprehensive measurement strategy
+- **When to use North Star:** Need single strategic alignment metric, team alignment around one number
+
+**Cross-reference:** Metrics often feed into OKRs (metrics → key results) and PRDs (metrics → success criteria). If user has defined metrics, they may be ready for OKRs or PRD.
+
 ## Core Philosophy
 
 ### Metrics are NOT Magic

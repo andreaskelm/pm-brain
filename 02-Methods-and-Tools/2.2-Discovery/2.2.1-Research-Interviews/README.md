@@ -41,6 +41,39 @@ After your braindump (and optional log entry), use the guide to structure your r
 
 ---
 
+## For Agents: When to Suggest Research Interviews
+
+**Trigger conditions:**
+- User mentions: "user research", "customer interviews", "talk to users", "interview customers", "user feedback", "need to understand users"
+- User is in: `product_sense_mode` (during discovery braindump) or `execution_mode` (when user asks to do research)
+- Prerequisites: User has assumptions/questions about users that need validation
+- User has: Some initial thinking about what they want to learn (may need help clarifying research questions)
+
+**How to introduce:**
+- "You want to understand your users better through research interviews. Let's use the Research Interviews guide to structure your approach and ask the right questions."
+- "Based on your thinking about [assumptions/questions], let's plan research interviews to validate what you know and discover what you don't."
+
+**Common mistakes to avoid:**
+- Don't suggest Research Interviews if user already has sufficient data (help them synthesize existing research first)
+- Don't suggest Research Interviews if user is asking "how do I build X" without understanding "why" (help them understand the problem first)
+- Don't skip braindump - research guides organize questions, they don't create curiosity
+- Don't suggest Research Interviews if user needs ongoing discovery (suggest Continuous Discovery Habits instead)
+- Don't create leading questions (focus on past behavior, not future intentions)
+
+**When NOT to use Research Interviews:**
+- User already has sufficient user data (help them synthesize or use existing research)
+- User needs ongoing discovery practice (use Continuous Discovery Habits)
+- User is ready to validate solutions (use Idea Validation or Opportunity Assessment)
+- User is exploring problem space (use Problem-Solution Space frameworks first)
+
+**Distinction from Continuous Discovery Habits:**
+- **Research Interviews:** One-time or occasional research projects (focused research, specific questions)
+- **Continuous Discovery Habits:** Ongoing discovery practice (weekly interviews, continuous synthesis)
+- **When to use Research Interviews:** Specific research questions, one-time validation, focused discovery project
+- **When to use Continuous Discovery Habits:** Ongoing discovery practice, continuous opportunity identification, weekly interview cadence
+
+**Cross-reference:** Research Interviews often feed into JTBD (interviews → job stories), Opportunity Assessment (research → validated opportunities), or Continuous Discovery Habits (one-time research → ongoing practice).
+
 ## How to Use This Guide
 
 ### Step 1: Review Guide

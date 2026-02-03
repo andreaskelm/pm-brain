@@ -37,6 +37,40 @@ After your braindump (and optional log entry), use prioritization methods to str
 
 ---
 
+## For Agents: When to Suggest Prioritization Frameworks
+
+**Trigger conditions:**
+- User mentions: "prioritize", "what should I build first", "backlog", "roadmap sequencing", "MVP scope", "what's most important"
+- User is in: `execution_mode` (after braindump) or when user asks to prioritize features/initiatives
+- Prerequisites: User has multiple options/initiatives to prioritize (not just one thing)
+- User has: Some understanding of the options (may need discovery first if options are unclear)
+
+**How to introduce:**
+- "You have multiple initiatives to prioritize. Let's use a prioritization framework to make a defensible decision. First, which method fits your situation?"
+- "Based on your thinking about [initiatives/features], let's structure this prioritization decision using [method from decision-tree]."
+
+**Method selection (use `decision-tree.md`):**
+- **ICE** - Quick call, little data, early ideas
+- **RICE** - Bigger bets with data, feature/initiative scoring
+- **Impact-Effort (Value-Effort)** - Workshop/alignment, visual, stakeholder sessions
+- **MoSCoW** - Scope negotiation, timeboxed release, MVP definition
+- **Kano** - Balance hygiene vs. delight, ensure table stakes covered
+
+**Common mistakes to avoid:**
+- Don't suggest prioritization if user only has one option (help them explore more options first)
+- Don't skip braindump - prioritization frameworks organize judgment, they don't create it
+- Don't suggest RICE if user has no data (suggest ICE or Impact-Effort instead)
+- Don't suggest prioritization if user is still exploring opportunities (use Opportunity Assessment first)
+- Don't create activity-based priorities (focus on outcomes, not just outputs)
+
+**When NOT to use prioritization frameworks:**
+- User is exploring opportunities (use Opportunity Assessment)
+- User needs to define strategy first (use Strategic Foundations)
+- User has only one clear option (help them validate it or explore alternatives)
+- User is doing discovery (use Discovery frameworks first)
+
+**Cross-reference:** If user needs to prioritize between validated opportunities, they should have completed Opportunity Assessments first. Link to Discovery frameworks if user hasn't validated options yet.
+
 ## Files
 -`1-RICE-ICE/`
   - `1-RICE-ICE-scoring-framework.md`

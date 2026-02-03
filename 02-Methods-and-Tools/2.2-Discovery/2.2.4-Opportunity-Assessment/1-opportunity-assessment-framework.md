@@ -6,6 +6,29 @@ An opportunity assessment helps you structure early thinking about a potential p
 
 **Purpose:** Bridge the gap between initial idea and evidence-based discovery.
 
+## For Agents: When to Suggest This Framework
+
+**Trigger conditions:**
+- User mentions: "opportunity assessment", "should we build X", "evaluate an idea", "assess opportunity", "is this worth building"
+- User is in: `product_sense_mode` (after braindump) or `execution_mode` (when user asks to evaluate an opportunity)
+- Prerequisites: User has an idea or opportunity they want to evaluate (may be vague initially)
+- User has: Some initial thinking about the problem/opportunity (even if incomplete)
+
+**How to introduce:**
+- "You're exploring whether [opportunity] is worth pursuing. Let's structure your thinking using an Opportunity Assessment to capture what you know, what you're assuming, and what needs validation."
+- "Before jumping to solutions, let's assess this opportunity systematically. The Opportunity Assessment framework will help you identify assumptions and plan validation."
+
+**Common mistakes to avoid:**
+- Don't suggest Opportunity Assessment if user already has validated opportunity (suggest PRD instead)
+- Don't suggest this if user is asking "how do I build X" without evaluating "should I build X" (help them evaluate first)
+- Don't skip braindump - user must think through the opportunity before structuring
+- Don't suggest this for well-understood, validated opportunities (use PRD or execution frameworks)
+
+**When NOT to use this framework:**
+- User has already validated the opportunity (use PRD or execution frameworks)
+- User is asking for prioritization between multiple validated opportunities (use Prioritization frameworks)
+- User needs to do user research first (suggest Research/Discovery frameworks)
+
 ## Core Principles
 
 ### 1. Document Assumptions Explicitly

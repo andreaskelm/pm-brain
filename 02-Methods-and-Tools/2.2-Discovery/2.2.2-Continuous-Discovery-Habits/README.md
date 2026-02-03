@@ -15,6 +15,39 @@ Use these templates to conduct systematic customer discovery interviews and synt
 - Technical infrastructure work with no customer impact
 - Very early exploration before clear problem space exists
 
+## For Agents: When to Suggest This Framework
+
+**Trigger conditions:**
+- User mentions: "continuous discovery", "ongoing user research", "weekly interviews", "Teresa Torres", "discovery habits", "regular customer conversations"
+- User is in: `product_sense_mode` (during discovery braindump) or `execution_mode` (when user asks about ongoing discovery)
+- Prerequisites: User wants to establish ongoing discovery practice (not just one-time research)
+- User has: Some understanding that discovery should be continuous (may need help establishing the habit)
+
+**How to introduce:**
+- "You want to establish ongoing discovery practice with regular customer interviews. Let's use Continuous Discovery Habits to set up a systematic approach to weekly interviews and synthesis."
+- "Based on your thinking about [discovery needs], let's structure ongoing discovery using this framework to continuously identify opportunities."
+
+**Common mistakes to avoid:**
+- Don't suggest Continuous Discovery Habits if user needs one-time research (suggest Research Interviews instead)
+- Don't suggest this if user doesn't have capacity for weekly interviews (help them start with one-time research first)
+- Don't skip braindump - discovery frameworks organize practice, they don't create curiosity
+- Don't suggest this if user is exploring a specific problem (use Problem-Solution Space or Research Interviews first)
+- Don't create interview snapshots without synthesis (must synthesize 3+ interviews to find patterns)
+
+**When NOT to use Continuous Discovery Habits:**
+- User needs one-time research for specific questions (use Research Interviews)
+- User is exploring a specific ambiguous problem (use Problem-Solution Space frameworks)
+- User doesn't have capacity for weekly interviews (start with one-time research)
+- User is ready to validate solutions (use Idea Validation or Opportunity Assessment)
+
+**Distinction from Research Interviews:**
+- **Continuous Discovery Habits:** Ongoing practice, weekly interviews, continuous synthesis, opportunity identification
+- **Research Interviews:** One-time or occasional research, focused questions, specific validation
+- **When to use Continuous Discovery Habits:** Want ongoing discovery practice, continuous opportunity identification, weekly interview cadence
+- **When to use Research Interviews:** Specific research questions, one-time validation, focused discovery project
+
+**Cross-reference:** Continuous Discovery Habits feeds into Opportunity Assessment (discovery → opportunities) and Problem-Solution Space (ongoing discovery → problem exploration). If user completes discovery, suggest Opportunity Assessment next.
+
 ## Files
 - `1-create-interview-snapshot.md` — Template for capturing individual interview insights
 - `2-synthesize-interview-snapshots.md` — Process for combining multiple interviews into patterns

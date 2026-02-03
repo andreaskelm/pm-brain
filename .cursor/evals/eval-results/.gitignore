@@ -1,0 +1,6 @@
+# Eval log files
+# Uncomment the line below if you don't want to track eval logs in git
+# *.md
+
+# Keep README.md tracked
+!README.md

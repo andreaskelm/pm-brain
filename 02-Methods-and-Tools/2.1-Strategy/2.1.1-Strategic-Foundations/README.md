@@ -16,6 +16,30 @@ Use these guides to define long-term direction before you execute. The three cor
 - One-off projects with fixed scope
 - Technical infrastructure work with no strategic choices
 
+## For Agents: When to Suggest Strategic Foundations
+
+**Trigger conditions:**
+- User mentions: "strategy", "strategic direction", "product strategy", "where are we going", "strategic planning", "annual plan"
+- User is in: `product_sense_mode` (after braindump) or `execution_mode` (when user asks to create strategy)
+- Prerequisites: User needs to define or refresh product direction (may have vision but unclear strategy)
+- User has: Some thinking about market, competition, or direction (may be incomplete)
+
+**How to introduce:**
+- "You need to define or refresh your product strategy. Let's use Strategic Foundations frameworks to create a clear, defensible set of strategic choices."
+- "Based on your thinking about [market/direction/challenges], let's structure this as a product strategy that guides decision-making."
+
+**Common mistakes to avoid:**
+- Don't suggest Strategy if user already has clear strategy (suggest OKRs/Roadmap to operationalize)
+- Don't suggest Strategy if user is exploring individual opportunities (use Opportunity Assessment)
+- Don't create strategy that sounds generic (must be specific to user's context)
+- Don't skip braindump - strategy requires deep thinking about market, competition, and direction
+
+**When NOT to use Strategic Foundations:**
+- User has clear strategy and needs to execute (use OKRs/Roadmap)
+- User is evaluating a specific opportunity (use Opportunity Assessment)
+- User needs to prioritize features (use Prioritization frameworks)
+- User is doing tactical execution (use PRD or execution frameworks)
+
 ## Files
 - `1-Strategy-Blocks/` — Full guide + quickstart + templates
 - `2-Good-Strategy-Bad-Strategy/` — Kernel/evaluation guide

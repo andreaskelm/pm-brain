@@ -8,6 +8,30 @@ This framework helps product managers create roadmaps that effectively communica
 
 **Use prompts from:** [2-product-sense-prompts.md](../../../../../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md) → [Before a Product Strategy Session](../../../../../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md#before-a-product-strategy-session) and [Before Making a Prioritization Decision](../../../../../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md#before-making-a-prioritization-decision). Quick start: What initiatives are you considering? What's the opportunity cost? What do you wish you knew? **See prompts file for full list.**
 
+## For Agents: When to Suggest This Framework
+
+**Trigger conditions:**
+- User mentions: "roadmap", "product roadmap", "planning", "what's next", "timeline", "product plan"
+- User is in: `execution_mode` (after braindump) or when user asks to create a roadmap
+- Prerequisites: User has prioritized initiatives or strategic direction (may have OKRs or strategy)
+- User has: Multiple initiatives/features to sequence and communicate
+
+**How to introduce:**
+- "You want to communicate product direction and sequence initiatives. Let's create a roadmap that shows what's coming and when, with appropriate confidence levels."
+- "Based on your thinking about [priorities/initiatives], let's structure this as a roadmap so stakeholders understand the product direction and timeline."
+
+**Common mistakes to avoid:**
+- Don't suggest Roadmap if user doesn't have prioritized initiatives (help them prioritize first)
+- Don't create commitment-based roadmaps (use confidence-based planning)
+- Don't suggest Roadmap if user is still exploring opportunities (use Opportunity Assessment)
+- Don't create roadmaps with system names instead of problems/outcomes
+
+**When NOT to use this framework:**
+- User is defining strategy (use Strategic Foundations)
+- User needs to prioritize features (use Prioritization frameworks)
+- User is exploring opportunities (use Opportunity Assessment)
+- User needs a project plan (use project management tools)
+
 ## Core Philosophy
 
 ### Roadmaps are NOT Commitments

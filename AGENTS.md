@@ -87,21 +87,26 @@ When the user starts a chat about **product, stakeholder, organization, strategy
 
 - **If** the user explicitly asks to **write / draft / fill** a specific document (PRD, one-pager, OKR, opportunity assessment, roadmap, meeting agenda, newsletter, crisis comms) → enter **execution_mode via the template-finder path**:
   - Use [02-Methods-and-Tools/0-template-finder.md](02-Methods-and-Tools/0-template-finder.md) and open the README + template for the doc they asked for.
-  - For non-trivial docs (strategy, PRD, big opportunity), you may ask 1–2 short preflight prompts from `2-product-sense-prompts.md` (e.g. \"Why this, why now?\" / \"What do you already know vs. guess?\") before you help them draft.
+  - **Eval checkpoint - Template finder:** For non-trivial docs (PRD, Strategy, Opportunity Assessment, Roadmap), you **must ask** 2–3 preflight prompts from `2-product-sense-prompts.md` (e.g. \"Why this, why now?\" / \"What do you already know vs. guess?\" / \"Who is this for?\") before you help them draft. Use [eval-functions.md](.cursor/evals/eval-functions.md) → checkpoint 4 to verify preflight is asked. For trivial docs (meeting agenda, newsletter), preflight is optional.
+  - **Eval checkpoint - Entry:** Use [eval-functions.md](.cursor/evals/eval-functions.md) → `match_scenario_type()` to identify scenario pattern if applicable.
   - Add a one-line nudge to [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md) if they haven't thought it through.
 
 - **Else** (they are thinking aloud, exploring, or asking for help with a decision) → enter **product_sense_mode**:
-  1. **Direct immediately to product sense:** Read the entry point above. Name the situation (or ask 1–2 clarifying questions to name it: strategy / design / prioritization / discovery / stuck / crisis / stakeholders / AI product).
-  2. **Context check:** Ask whether the user has added (or wants the agent to use) relevant context from company, strategy, research, or initiatives; remind that adding it speeds up thinking.
-  3. **Ask hard clarifying questions:** Use prompts from [2-product-sense-prompts.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md) for that situation. Pick 3–5 that challenge assumptions and surface blind spots. Help them think better; don’t validate or fill boxes.
-  4. **After each user response, continue autonomously:** Ask 2–3 more prompts from the same situation (or probe deeper); reference red flags from the prompts file; if stuck, use [3-product-sense-evaluation.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/3-product-sense-evaluation.md). Do **not** suggest a framework until the \"braindump sufficient\" checklist in `PRODUCT-SENSE-RULES.md` is met (assumptions named, know vs guess separated, at least one risk/second-order effect, at least one uncomfortable thought).
-  5. **Only after a sufficient braindump** move into **execution_mode**: suggest a framework and point to the right doc in `02-Methods-and-Tools/` (see the workflow skill and entry point). Optionally suggest logging in `00-Meta/` (daily log, prioritization log, pattern recognition log, or forecast log).
+  1. **Eval checkpoint - Entry:** Use [eval-functions.md](.cursor/evals/eval-functions.md) → `match_scenario_type()` to identify scenario pattern. Adopt persona from entry point. Verify you do NOT suggest framework in first message.
+  2. **Direct immediately to product sense:** Read the entry point above. Name the situation (or ask 1–2 clarifying questions to name it: strategy / design / prioritization / discovery / stuck / crisis / stakeholders / AI product).
+  3. **Context check:** Ask whether the user has added (or wants the agent to use) relevant context from company, strategy, research, or initiatives; remind that adding it speeds up thinking.
+  4. **Ask hard clarifying questions:** Use prompts from [2-product-sense-prompts.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md) for that situation. Pick 3–5 that challenge assumptions and surface blind spots. Help them think better; don’t validate or fill boxes.
+  5. **Eval checkpoint - During braindump:** After each user response, use [eval-functions.md](.cursor/evals/eval-functions.md) → `check_questions_before_framework()` to verify you're asking probing questions. Continue autonomously: Ask 2–3 more prompts from the same situation (or probe deeper); reference red flags from the prompts file; if stuck, use [3-product-sense-evaluation.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/3-product-sense-evaluation.md).
+  6. **Eval checkpoint - Before transition:** Before suggesting any framework, you **must explicitly verify** the \"braindump sufficient\" checklist using [eval-functions.md](.cursor/evals/eval-functions.md) → `check_braindump_sufficient()`. Ask explicit verification questions: "What assumptions are you making about [X]?", "What's one thing that could go wrong?", "What makes you uncomfortable about this?" Only transition to execution_mode when all checklist items have explicit answers (assumptions named, know vs guess separated, at least one risk/second-order effect, at least one uncomfortable thought).
+  7. **Only after verified sufficient braindump** move into **execution_mode**: suggest a framework and point to the right doc in `02-Methods-and-Tools/` (see the workflow skill and entry point). Optionally suggest logging in `00-Meta/` (daily log, prioritization log, pattern recognition log, or forecast log).
 
 ### Context check: bring relevant context into the conversation
 
 Early in **product_sense_mode** (and when starting **execution_mode** for non-trivial docs), explicitly ask the user: *Have you added relevant context that applies to this conversation?* Examples: company/vision/strategy/roadmap ([01-Company-Context/](01-Company-Context/README.md)), business unit context, research artifacts ([03-Research-Artifacts/](03-Research-Artifacts/README.md)), or active work ([04-Initiatives/](04-Initiatives/README.md)). 
 
-**Personalization context:** Reference [`01-Company-Context/CONTEXT.md`](01-Company-Context/CONTEXT.md) for user's name, company name, and team/BU names to personalize responses. Also check `.cursor/rules/thinking.personal.mdc` for personal working style preferences.
+**Personalization context:** At the start of `product_sense_mode`, read [`01-Company-Context/CONTEXT.md`](01-Company-Context/CONTEXT.md) for user's name, company name, and team/BU names to personalize responses. Also check `.cursor/rules/thinking.personal.mdc` for personal working style preferences. Use this context to adjust question depth, reference company strategies, and adapt coaching approach.
+
+**Initiative context:** If user mentions working on an initiative, read relevant files from `04-Initiatives/[initiative-name]/` (e.g., `opportunity-assessment.md`, `prd.md`, `decisions.md`) to understand context and provide continuity.
 
 If not, adding or @-mentioning key docs now helps the agent use that context. The agent (Cursor) can read files from the repo if they are not in the conversation, but having the most relevant docs in context speeds up thinking and keeps answers aligned to the user's actual strategy and initiatives.
 
@@ -221,6 +226,10 @@ At the **end of substantial product decision conversations** (in either mode), b
 - After substantial or high-stakes conversations, you may suggest: "If you want to check whether this session was guided well, you can run the agent-behavior checklist in `.cursor/evals/1-agent-behavior-guide.md`."
 
 **Product sense is a skill. Help users practice it and reflect on it.**
+
+## Context Management
+
+**Loading strategy:** See [ARCHITECTURE.md](ARCHITECTURE.md) → "Context Management Strategy" for what to load when. Core instructions (persona, modes, golden rule) are always loaded (~80 lines). Framework guides and prompts are loaded on-demand when user enters a mode. Templates and evaluation files are loaded only when actively using them.
 
 ## Quick Navigation
 
