@@ -6,7 +6,7 @@
 
 ## Repo layers
 
-**In plain English:** The repo has five main folders at the top level. Each holds a different kind of content. The box view below works in any preview; the list and table follow.
+The repo has five main folders at the top level. Each holds a different kind of content. The box view below works in any preview; the list and table follow.
 
 **Visual (boxes):**
 
@@ -37,7 +37,7 @@
 
 ## Methods flow (02-Methods-and-Tools)
 
-**In plain English:** Inside `02-Methods-and-Tools/` you work in this order: **think** (Foundations) → **set direction** (Strategy) → **discover** (Discovery) → **build and ship** (Execution), while **communicating** all along (Communication). The box flow below works in any preview; the table follows.
+Inside `02-Methods-and-Tools/` you work in this order: **think** (Foundations) → **set direction** (Strategy) → **discover** (Discovery) → **build and ship** (Execution), while **communicating** all along (Communication). The box flow below works in any preview; the table follows.
 
 **Visual (flow, left to right):**
 
@@ -62,7 +62,7 @@
 
 ## Agent mode flow (state diagram)
 
-**In plain English:** The assistant switches between modes depending on whether you're thinking things through, asking for a specific doc, or wrapping up with reflection.
+The assistant switches between modes depending on whether you're thinking things through, asking for a specific doc, or wrapping up with reflection.
 
 ```mermaid
 flowchart LR
@@ -85,7 +85,7 @@ flowchart LR
 ```
 
 - **ProductSenseMode**: Entered when the topic is product/stakeholder/org/strategy/roadmap/prioritization/discovery/execution or \"help me think through something\". Stay here while you braindump using prompts from `2-product-sense-prompts.md` and the golden rule in `PRODUCT-SENSE-RULES.md`, until the \"braindump sufficient\" checklist is met.
-- **TemplateFinderPath**: Entered when you explicitly ask to write/draft/fill a specific doc (PRD, OKR, one-pager, etc.). Use `02-Methods-and-Tools/0-template-finder.md` to jump straight to the right README + template, optionally asking 1–2 preflight prompts for non-trivial docs.
+- **TemplateFinderPath**: Entered when you ask to write/draft/fill a specific doc (PRD, OKR, one-pager, etc.). Use `02-Methods-and-Tools/0-template-finder.md` to jump straight to the right README + template, optionally asking 1–2 preflight prompts for non-trivial docs.
 - **ExecutionMode**: After sufficient braindump (or via TemplateFinderPath), help structure thinking and apply the right framework/template from `02-Methods-and-Tools/`.
 - **MetaSuggestion**: After substantial decision work, suggest logging in `00-Meta/` (forecast log, learning log, pattern recognition), optionally running the Level 2 checklist ([.cursor/evals/1-agent-behavior-guide.md](.cursor/evals/1-agent-behavior-guide.md)), and optionally updating rules (see `.cursor/rules/thinking.mdc`), then return to Default for the next conversation.
 
@@ -95,7 +95,7 @@ flowchart LR
 
 ## Evaluation system (evals)
 
-**In plain English:** Evals are **guidance-based** (no scripts). Two levels: (1) **Level 1** = artifact quality (methods/frameworks) — lives in `02-Methods-and-Tools/` (Quick Quality Checks in `1-*-framework.md`, full review in `3-*-evaluation.md`); (2) **Level 2** = agent behavior — lives in `.cursor/evals/` ([1-agent-behavior-guide.md](.cursor/evals/1-agent-behavior-guide.md), [2-checklist.md](.cursor/evals/2-checklist.md), [agent-behavior-scenarios.json](.cursor/evals/agent-behavior-scenarios.json)). You run evals when it matters; when you learn something new, you update the right file (see "Where to update" in the evals guide).
+Evals are **guidance-based** (no scripts). Two levels: (1) **Level 1** = artifact quality (methods/frameworks) — lives in `02-Methods-and-Tools/` (Quick Quality Checks in `1-*-framework.md`, full review in `3-*-evaluation.md`); (2) **Level 2** = agent behavior — lives in `.cursor/evals/` ([1-agent-behavior-guide.md](.cursor/evals/1-agent-behavior-guide.md), [2-checklist.md](.cursor/evals/2-checklist.md), [agent-behavior-scenarios.json](.cursor/evals/agent-behavior-scenarios.json)). You run evals when it matters; when you learn something new, you update the right file (see "Where to update" in the evals guide).
 
 **How evals are used (visual):**
 
@@ -130,7 +130,7 @@ flowchart TB
 
 ## How the repo is used (entry points and flows)
 
-**In plain English:** The repo has a few main entry points. Depending on what you're doing, the agent (or you) routes to the right place. The diagram below shows how those entry points connect to the rest of the repo.
+The repo has a few main entry points. Depending on what you're doing, the agent (or you) routes to the right place. The diagram below shows how those entry points connect to the rest of the repo.
 
 **Where to start (quick reference):**
 
@@ -199,7 +199,7 @@ This keeps agent-facing instructions co-located with the detailed framework meth
 
 ## Context Management Strategy
 
-**In plain English:** The agent needs to load different files at different times to stay within context limits. This strategy defines what to load when.
+The agent needs to load different files at different times to stay within context limits. This strategy defines what to load when.
 
 **Problem:** System prompt (`AGENTS.md`) is 240+ lines. Framework files are hundreds of lines. Without a loading strategy, the agent may hit context limits or miss critical instructions.
 
