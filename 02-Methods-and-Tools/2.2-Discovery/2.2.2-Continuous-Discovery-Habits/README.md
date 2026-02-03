@@ -19,7 +19,7 @@ Use these templates to conduct systematic customer discovery interviews and synt
 
 **Trigger conditions:**
 - User mentions: "continuous discovery", "ongoing user research", "weekly interviews", "Teresa Torres", "discovery habits", "regular customer conversations"
-- User is in: `product_sense_mode` (during discovery braindump) or `execution_mode` (when user asks about ongoing discovery)
+- User is in: product_sense (during discovery braindump) or execution_mode (when user asks about ongoing discovery)
 - Prerequisites: User wants to establish ongoing discovery practice (not just one-time research)
 - User has: Some understanding that discovery should be continuous (may need help establishing the habit)
 

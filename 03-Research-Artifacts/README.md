@@ -4,7 +4,7 @@
 
 This directory stores research outputs and artifacts from discovery activities. This is **storage for research results**, not a process framework. Use the discovery methods in [02-Methods-and-Tools/2.2-Discovery/](../02-Methods-and-Tools/2.2-Discovery/README.md) to conduct research, then store your outputs here.
 
-**For agents:** This folder is one of the context sources the PM Brain agent asks about early in product_sense_mode (and when starting execution_mode for non-trivial docs). If the user has not added relevant research context, suggest adding or @-mentioning key artifacts from here; having them in context speeds up thinking and grounds answers in evidence. 
+**For agents:** This folder is one of the context sources the PM Brain agent asks about early in product_sense (and when starting execution_mode for non-trivial docs). If the user has not added relevant research context, suggest adding or @-mentioning key artifacts from here; having them in context speeds up thinking and grounds answers in evidence. 
 
 **Critical agent guidance:** When users share research/discovery insights (from interviews, qualitative research, analysis, etc.), **always guide them to save a document** capturing the insight. Ask: "Should this be saved in `03-Research-Artifacts/` (for general research) or in the initiative folder under `04-Initiatives/[initiative-name]/research/` (if it's specific to an active initiative)?" Help them create or update the appropriate analysis document. For raw data (transcripts, recordings, large files), guide users to store externally (Google Drive, SharePoint, Teams) and link to that source from the analysis doc. Paths below are from repo root.
 

@@ -47,7 +47,7 @@ After your braindump, use JTBD to structure your understanding.
 
 **Trigger conditions:**
 - User mentions: "jobs to be done", "JTBD", "what job is the user hiring this for", "customer jobs", "user needs", "why do customers choose this"
-- User is in: `product_sense_mode` (during discovery braindump) or `execution_mode` (when user asks to understand users)
+- User is in: product_sense (during discovery braindump) or execution_mode (when user asks to understand users)
 - Prerequisites: User is exploring user needs or trying to understand why customers choose their product
 - User has: Some initial thinking about users/customers (may be incomplete or feature-focused)
 

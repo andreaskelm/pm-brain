@@ -2,7 +2,7 @@
 
 **What this folder is:** The evaluation system for PM Brain. It has **two levels** and is **guidance-based**—no scripts to run. You use prompts and checklists to reflect on artifact quality and agent behavior, and to know **where to update** when you learn something new.
 
-**Orchestration:** Evals are wired into the repo in three places: (1) **Level 1** lives in `02-Methods-and-Tools/` (Quick Quality Checks + `3-*-evaluation.md` per framework); (2) **Level 2** lives here ([1-agent-behavior-guide.md](1-agent-behavior-guide.md), [2-checklist.md](2-checklist.md)); (3) the **agent** uses Level 1 during creation (`.cursor/rules/evaluation-orchestration.mdc`) and can suggest the Level 2 checklist after substantial conversations ([AGENTS.md](../AGENTS.md)). For the big picture and a visual, see [ARCHITECTURE.md](../ARCHITECTURE.md) → "Evaluation system (evals)" and "How the repo is used".
+**Orchestration:** Evals are wired into the repo in three places: (1) **Level 1** lives in `02-Methods-and-Tools/` (Quick Quality Checks + `3-*-evaluation.md` per framework); (2) **Level 2** lives here ([1-agent-behavior-guide.md](1-agent-behavior-guide.md), [2-checklist.md](2-checklist.md)); (3) the **agent** uses Level 1 during creation (`.cursor/rules/evaluation-orchestration.mdc`) and can suggest the Level 2 checklist after substantial conversations. Routing and when to run evals: [ORCHESTRATION.md](../ORCHESTRATION.md) → Eval Checkpoints; persona: [AGENTS.md](../AGENTS.md). For the big picture and a visual, see [ARCHITECTURE.md](../ARCHITECTURE.md) → "Evaluation system (evals)" and "How the repo is used".
 
 **When and how scenarios are used:** The agent does **not** read or run `agent-behavior-scenarios.json`. Scenarios are **reference only**: when you (or an AI using the pasteable prompt) run a Level 2 review, you match your conversation to a scenario type (e.g. "user said something like 'I want to build an app for remote teams'"), then use the JSON's success_indicators and failure_modes to score. They are generic, static patterns so reviewers have a consistent checklist per conversation type. You can add or edit scenarios when you discover new failure modes (see [2-checklist.md](2-checklist.md)).
 
@@ -13,7 +13,7 @@
 | Level | What it evaluates | Where it lives | When it runs |
 |-------|-------------------|----------------|---------------|
 | **Level 1** | Methods and frameworks (artifact quality) | `02-Methods-and-Tools/` — Quick Quality Checks in `1-*-framework.md`, full review in `3-*-evaluation.md` | During creation (agent); or on demand for peer review / quality gate |
-| **Level 2** | Agent behavior (does AGENTS.md + rules guide correctly?) | This folder — [1-agent-behavior-guide.md](1-agent-behavior-guide.md), [2-checklist.md](2-checklist.md) | After important conversations or when tuning the agent |
+| **Level 2** | Agent behavior (does AGENTS.md + ORCHESTRATION + rules guide correctly?) | This folder — [1-agent-behavior-guide.md](1-agent-behavior-guide.md), [2-checklist.md](2-checklist.md) | After important conversations or when tuning the agent; see [ORCHESTRATION.md](../ORCHESTRATION.md) → Eval Checkpoints |
 
 ---
 
@@ -34,7 +34,7 @@
 
 ## Level 2: Agent behavior
 
-**What it is:** Whether [AGENTS.md](../AGENTS.md) and `.cursor/rules` are guiding the user and answering correctly.
+**What it is:** Whether [AGENTS.md](../AGENTS.md), [ORCHESTRATION.md](../ORCHESTRATION.md), and `.cursor/rules` are guiding the user and answering correctly.
 
 **Where it lives:** [1-agent-behavior-guide.md](1-agent-behavior-guide.md) — dimensions, reflection prompts, checklist, "where to update" map, scenario-based prompts.
 
@@ -48,7 +48,7 @@ Evals are **guidance-based**: they don’t produce scores in a dashboard. They h
 
 1. **You run evals when it matters** — Use [2-checklist.md](2-checklist.md): e.g. run one Level 1 evaluation on an artifact; run the Level 2 checklist on 2–3 conversations. When you spot a pattern (e.g. "agent keeps jumping to template"), use the "Where to update" map in [1-agent-behavior-guide.md](1-agent-behavior-guide.md) and edit the right file.
 
-2. **You update the repo when you learn something new** — If a method check is wrong or the method has evolved → edit `1-*-framework.md` or `3-*-evaluation.md`. If agent behavior should change → use the "Where to update" map in [1-agent-behavior-guide.md](1-agent-behavior-guide.md) and edit AGENTS.md or the relevant `.cursor/rules` file.
+2. **You update the repo when you learn something new** — If a method check is wrong or the method has evolved → edit `1-*-framework.md` or `3-*-evaluation.md`. If agent behavior should change → use the "Where to update" map in [1-agent-behavior-guide.md](1-agent-behavior-guide.md) and edit AGENTS.md, ORCHESTRATION.md, or the relevant `.cursor/rules` file.
 
 The agent can **ask you to adapt** after substantial conversations: it may suggest running the agent-behavior checklist or logging in `00-Meta/`. That keeps evals and practice in the loop without requiring scripts.
 

@@ -4,7 +4,7 @@ alwaysApply: false
 ---
 # Evaluation Orchestration
 
-When the user is creating frameworks with evaluation support (in ExecutionMode via template-finder path), automatically integrate lightweight quality checks during creation.
+When the user is creating frameworks with evaluation support (in execution_mode via template-finder path), automatically integrate lightweight quality checks during creation.
 
 **Frameworks with evaluation support:**
 - OKRs

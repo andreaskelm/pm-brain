@@ -14,7 +14,7 @@ Create one log file per conversation or eval session. Use this format:
 # Eval Log - [Date] - [Conversation ID or Brief Description]
 
 **Date:** YYYY-MM-DD  
-**Conversation Type:** [product_sense_mode / execution_mode / template_finder]  
+**Conversation Type:** [product_sense / execution_mode / template_finder]  
 **User Request:** [Brief description of what user asked]
 
 ## Scenario Matched
@@ -23,7 +23,7 @@ Create one log file per conversation or eval session. Use this format:
 
 ## Checkpoints
 
-### Entry (product_sense_mode)
+### Entry (product_sense)
 - ✅/❌ Persona adopted
 - ✅/❌ Context check asked
 - ✅/❌ No framework in first message
@@ -83,7 +83,7 @@ When reviewing logs, look for patterns:
 
 **For manual logging:** After important conversations, create a log file using the format above.
 
-**For pattern detection:** Review multiple log files to identify systemic issues, then update instructions in `AGENTS.md` or `.cursor/rules/` based on findings.
+**For pattern detection:** Review multiple log files to identify systemic issues, then update instructions in `AGENTS.md`, `ORCHESTRATION.md`, or `.cursor/rules/` based on findings.
 
 ---
 

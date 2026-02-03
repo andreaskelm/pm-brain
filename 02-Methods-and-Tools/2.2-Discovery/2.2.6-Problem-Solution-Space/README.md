@@ -73,7 +73,7 @@ After exploration, reflect:
 
 **Trigger conditions:**
 - User mentions: "problem-solution space", "double diamond", "opportunity solution tree", "explore the problem", "ambiguous problem", "not sure what to build", "multiple solutions"
-- User is in: `product_sense_mode` (during discovery braindump) or `execution_mode` (when user asks to explore problems)
+- User is in: product_sense (during discovery braindump) or execution_mode (when user asks to explore problems)
 - Prerequisites: User has an ambiguous problem or is conflating problem and solution
 - User has: Some initial thinking about the problem (may be solution-focused and needs reframing)
 

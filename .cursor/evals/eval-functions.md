@@ -2,7 +2,7 @@
 
 **What this file is:** Structured checks that the agent can use to evaluate its own behavior against scenario success_indicators and failure_modes. These functions help detect when the agent violates the golden rule or drifts into bad behavior patterns.
 
-**How to use:** The agent should call these checks at key transition points (before suggesting frameworks, after user responses, at mode transitions). Results are logged for pattern detection, not blocking.
+**How to use:** The agent should call these checks at key transition points (before suggesting frameworks, after user responses, at state transitions). Results are logged for pattern detection, not blocking.
 
 ---
 
@@ -10,7 +10,7 @@
 
 ### check_braindump_sufficient()
 
-**When to call:** Before transitioning from `product_sense_mode` to `execution_mode` (before suggesting any framework or template).
+**When to call:** Before transitioning from `product_sense` to `execution_mode` (before suggesting any framework or template).
 
 **What to check:** Verify that the "braindump sufficient" checklist from `PRODUCT-SENSE-RULES.md` is met:
 
@@ -35,7 +35,7 @@
 
 ### check_questions_before_framework()
 
-**When to call:** Before suggesting any framework or template (in both `product_sense_mode` and `execution_mode`).
+**When to call:** Before suggesting any framework or template (in both `product_sense` and `execution_mode`).
 
 **What to check:** Count how many clarifying questions were asked before suggesting a framework.
 
@@ -62,7 +62,7 @@
 
 ### match_scenario_type()
 
-**When to call:** At the start of `product_sense_mode` or when user's request matches a known pattern.
+**When to call:** At the start of product_sense or when user's request matches a known pattern.
 
 **What to check:** Identify which scenario from `agent-behavior-scenarios.json` matches the current conversation.
 
@@ -107,7 +107,7 @@
 
 ## Eval Checkpoints
 
-### Checkpoint 1: Entry to product_sense_mode
+### Checkpoint 1: Entry to product_sense
 
 **When:** User starts a product-related conversation.
 
@@ -123,7 +123,7 @@
 
 ### Checkpoint 2: During braindump loop
 
-**When:** After each user response in `product_sense_mode`.
+**When:** After each user response in product_sense.
 
 **Checks:**
 1. Call `check_questions_before_framework()` - ensure questions are being asked
@@ -135,7 +135,7 @@
 
 ---
 
-### Checkpoint 3: Before mode transition (product_sense → execution)
+### Checkpoint 3: Before state transition (product_sense → execution_mode)
 
 **When:** Agent is considering suggesting a framework.
 
@@ -176,7 +176,7 @@
 
 ## Checkpoints
 
-### Entry (product_sense_mode)
+### Entry (product_sense)
 - ✅ Persona adopted
 - ✅ Context check asked
 - ✅ No framework in first message

@@ -166,7 +166,7 @@ Build my intuition. Help me recognize this faster next time.
 
 **Different from the prompts above:** The prompts above are **one-off** prompts for specific situations (braindumping, edge cases, etc.). 
 
-**If you want persistent product coaching** across multiple conversations in ChatGPT or Claude, use the [Product Coach setup template](6-product-coach-setup.md). This sets up a persistent persona that provides the same workflow as Cursor's `product_sense_mode` (braindump → pattern recognition → framework selection → execution).
+**If you want persistent product coaching** across multiple conversations in ChatGPT or Claude, use the [Product Coach setup template](6-product-coach-setup.md). This sets up a persistent persona that provides the same workflow as Cursor's product_sense state (braindump → pattern recognition → framework selection → execution).
 
 **When to use:**
 - **One-off prompts (above):** Quick help for a specific situation right now
@@ -174,7 +174,7 @@ Build my intuition. Help me recognize this faster next time.
 
 **Setup:** Copy the template from `6-product-coach-setup.md` into a ChatGPT or Claude Project.
 
-**In Cursor, you don't need this** — the default `product_sense_mode` already provides the same coaching automatically.
+**In Cursor, you don't need this** — the default product_sense state already provides the same coaching automatically.
 
 ---
 

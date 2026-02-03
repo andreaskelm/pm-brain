@@ -172,8 +172,8 @@ When in doubt:
 **📖 New to versioning?** See [VERSION-WORKFLOW-SIMPLE.md](VERSION-WORKFLOW-SIMPLE.md) for a plain-language explanation.
 
 **When to update:**
-- **MAJOR** (1.0.0 → 2.0.0): Breaking changes to AGENTS.md, ARCHITECTURE.md, or framework structure
-- **MINOR** (1.0.0 → 1.1.0): New frameworks, rules, skills, or significant documentation additions
+- **MAJOR** (e.g. 1.0.0 → 2.0.0): Breaking changes to AGENTS.md, ORCHESTRATION.md, ARCHITECTURE.md, MEMORY.md, or framework structure
+- **MINOR** (e.g. 1.0.0 → 1.1.0): New frameworks, rules, skills, or significant documentation additions
 - **PATCH**: Typically not tracked (bug fixes don't require version bumps)
 
 **How to update:**
@@ -184,7 +184,7 @@ When in doubt:
 
 **Important:** You DON'T update version.json on every push—only when you make significant structural changes (new frameworks, breaking changes, etc.). Most pushes don't need a version bump.
 
-See `ARCHITECTURE.md` → "Version Management" and `RELEASE-PROCESS.md` for detailed guidelines.
+See [ARCHITECTURE.md](ARCHITECTURE.md) → "Version Management", [ORCHESTRATION.md](ORCHESTRATION.md) → Version Management, and `RELEASE-PROCESS.md` for detailed guidelines.
 
 ---
 

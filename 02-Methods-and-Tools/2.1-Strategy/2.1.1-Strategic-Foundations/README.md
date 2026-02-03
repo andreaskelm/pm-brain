@@ -20,7 +20,7 @@ Use these guides to define long-term direction before you execute. The three cor
 
 **Trigger conditions:**
 - User mentions: "strategy", "strategic direction", "product strategy", "where are we going", "strategic planning", "annual plan"
-- User is in: `product_sense_mode` (after braindump) or `execution_mode` (when user asks to create strategy)
+- User is in: product_sense (after braindump) or execution_mode (when user asks to create strategy)
 - Prerequisites: User needs to define or refresh product direction (may have vision but unclear strategy)
 - User has: Some thinking about market, competition, or direction (may be incomplete)
 

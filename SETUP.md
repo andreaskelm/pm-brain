@@ -172,16 +172,18 @@ For details and decision help, see `00-Meta/MODE-SELECTION-GUIDE.md`.
 
 If you're using **Cursor** (or similar AI-powered IDE), the repository includes agent configuration files.
 
-#### Location: `.cursor/rules/`
+#### Location: Root and `.cursor/rules/`
 
-**Files:**
-- `AGENTS.md` (root) - PM Brain Assistant instructions (source of truth, already configured)
-- `.cursor/rules/AGENTS.template.md` - Template/guide for creating custom agents (separate from root `AGENTS.md`)
-- `thinking.mdc` - High-level thinking support rules
-- `thinking.personal.mdc` - Personal context (you can customize this)
+**Key files:**
+- `AGENTS.md` (root) — PM Brain Assistant persona and core instructions; points to orchestration and memory.
+- `ORCHESTRATION.md` (root) — Routing, states (product_sense, execution_mode, meta_reflection, conversation), context loading; single source of truth for agent behavior.
+- `MEMORY.md` (root) — Sleeping memory manifest: when to load company context, initiatives, research, rules, skills.
+- `.cursor/rules/AGENTS.template.md` — Template for creating custom agents (separate from root `AGENTS.md`).
+- `thinking.mdc` — High-level thinking support rules.
+- `thinking.personal.mdc` — Personal context (you can customize this).
 
 **What to do:**
-1. **Review** `AGENTS.md` (root) - Understand how the PM Brain Assistant is configured
+1. **Review** `AGENTS.md` and `ORCHESTRATION.md` — Understand how the PM Brain Assistant is configured and how it routes and loads context
 2. **Fill out** `01-Company-Context/CONTEXT.md` - Add your name, company name, and team/BU names (organizational context)
    - **Note:** In private/team modes, this file is ignored by default. In team mode, you can optionally track it for team consistency (see `.gitignore.team` comments).
 3. **Customize** `.cursor/rules/thinking.personal.mdc` - Add your personal working style, preferences, and communication style (how you like to work)
@@ -331,7 +333,7 @@ Many AI tools support "Projects" where you can upload files:
 - **Claude:** Use Claude Projects feature
 - **GitHub Copilot:** Point it at this repository
 
-**For persistent product coaching in ChatGPT/Claude:** If you want consistent product coaching across multiple sessions (same persona and workflow as Cursor's `product_sense_mode`), use the [Product Coach setup template](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/templates/6-product-coach-setup.md). Copy it into a ChatGPT or Claude Project to get the same braindump-first coaching approach.
+**For persistent product coaching in ChatGPT/Claude:** If you want consistent product coaching across multiple sessions (same persona and workflow as Cursor's product_sense state), use the [Product Coach setup template](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/templates/6-product-coach-setup.md). Copy it into a ChatGPT or Claude Project to get the same braindump-first coaching approach.
 
 ---
 
@@ -417,7 +419,7 @@ Once you're set up:
 - **Product thinking entry point:** [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md) — Simple prompt to start; braindump first, then frameworks by situation
 - **Golden rule:** [PRODUCT-SENSE-RULES.md](PRODUCT-SENSE-RULES.md) — Braindump before structure
 - **Guidelines:** [GUIDELINES.md](GUIDELINES.md) — Best practices for using and maintaining your PM brain
-- **Agent Configuration:** [AGENTS.md](AGENTS.md) — PM Brain Assistant instructions; `.cursor/rules/AGENTS.template.md` for custom agents
+- **Agent configuration:** [AGENTS.md](AGENTS.md) (persona), [ORCHESTRATION.md](ORCHESTRATION.md) (routing & states), [MEMORY.md](MEMORY.md) (what to wake); `.cursor/rules/AGENTS.template.md` for custom agents
 - **Framework Navigation:** [02-Methods-and-Tools/README.md](02-Methods-and-Tools/README.md) — Strategy, Discovery, Execution, Communication
 - **00-Meta (practice):** [00-Meta/README.md](00-Meta/README.md) — Daily log, learning log, growth portfolio, Product Judgment Test
 - **Credits:** [CREDITS.md](CREDITS.md) — Attribution for frameworks and methods

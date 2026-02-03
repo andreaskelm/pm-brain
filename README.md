@@ -53,7 +53,7 @@ pm-brain/
 2. **Follow [SETUP.md](./SETUP.md)** — Company Context, AI/agent config, optional 00-Meta setup.
 3. **Use the repo** — Open a framework or start a conversation with the agent; it will guide you (think first, then structure, then templates).
 
-**Using the agent (Cursor):** Open this repo in Cursor and start a chat. You don't need a special phrase—say what you're working on ("I'm stuck on prioritization," "Help me think through this feature," "I need to write a PRD"). The agent will guide you and signal when it switches from exploring to structuring so you're never lost. [AGENTS.md](./AGENTS.md) and [.cursor/rules/](.cursor/rules/README.md) define this behavior; no copy-paste required.
+**Using the agent (Cursor):** Open this repo in Cursor and start a chat. You don't need a special phrase—say what you're working on ("I'm stuck on prioritization," "Help me think through this feature," "I need to write a PRD"). The agent will guide you and signal when it switches from exploring to structuring. Behavior is defined in [AGENTS.md](./AGENTS.md) (persona), [ORCHESTRATION.md](./ORCHESTRATION.md) (routing & states), and [MEMORY.md](./MEMORY.md) (what context to load); see [.cursor/rules/](.cursor/rules/README.md). No copy-paste required.
 
 **Use PM Brain in any project (Cursor only):**
 ```bash
@@ -66,12 +66,13 @@ Installs the workflow skill from [skills.sh](https://skills.sh/); use it in any 
 ## 🏗️ Structure & Navigation
 
 - **Visual:** [ARCHITECTURE.md](./ARCHITECTURE.md) — repo layers and methods flow.
+- **Agent behavior:** [ORCHESTRATION.md](./ORCHESTRATION.md) — routing, states, context loading; [MEMORY.md](./MEMORY.md) — when to load company/initiatives/research.
 - **I need a template:** [02-Methods-and-Tools/0-template-finder.md](02-Methods-and-Tools/0-template-finder.md).
 - **Everything about a topic:** [02-Methods-and-Tools/1-frameworks-by-topic.md](02-Methods-and-Tools/1-frameworks-by-topic.md).
-- **Evals (methods + agent behavior):** [.cursor/evals/README.md](.cursor/evals/README.md) — guidance-based; how it learns and asks you to adapt.
+- **Evals (methods + agent behavior):** [.cursor/evals/README.md](.cursor/evals/README.md) — guidance-based; when to run and where to update: [ORCHESTRATION.md](./ORCHESTRATION.md) → Eval Checkpoints.
 - **How to use and maintain:** [GUIDELINES.md](./GUIDELINES.md).
 
-Product sense (think first, then structure) is **built into** the agent and framework flow; see [PRODUCT-SENSE-RULES.md](PRODUCT-SENSE-RULES.md) and [0-start-here-product-thinking](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md) if you want the full story.
+Product sense (think first, then structure) is built into the agent; see [PRODUCT-SENSE-RULES.md](PRODUCT-SENSE-RULES.md) and [0-start-here-product-thinking](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md).
 
 ---
 

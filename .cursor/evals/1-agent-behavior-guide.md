@@ -98,7 +98,7 @@ Reflect on each dimension when reviewing a conversation or the written guidance.
 
 Run this after a conversation or when reviewing a transcript. Each item maps to a dimension and to "Where to update" below.
 
-- [ ] **Mode:** Did the agent distinguish product_sense_mode vs execution_mode appropriately? (User thinking/braindumping → product_sense; user asked to write/draft a doc → execution via template-finder.)
+- [ ] **Mode:** Did the agent distinguish product_sense vs execution_mode appropriately? (User thinking/braindumping → product_sense; user asked to write/draft a doc → execution via template-finder.)
 - [ ] **Golden rule:** Did it encourage braindump before suggesting any framework or template?
 - [ ] **Questions:** Did it ask 3–5 hard, situation-appropriate questions (from product-sense prompts) before suggesting a framework?
 - [ ] **Context:** Did it ask whether the user had added relevant context (company, strategy, research, initiatives) when relevant?
@@ -118,7 +118,7 @@ When you see a pattern, edit the file(s) listed. Use this map to know where to c
 | **Wrong or no framework suggested** | [0-template-finder.md](../02-Methods-and-Tools/0-template-finder.md); [.cursor/rules/template-finder.mdc](../.cursor/rules/template-finder.mdc); [.cursor/skills/pm-brain-workflow/SKILL.md](../.cursor/skills/pm-brain-workflow/SKILL.md) |
 | **Overbearing / does thinking for user** | [AGENTS.md](../AGENTS.md) — "Challenge Assumptions", "User Agency"; product-sense prompts (user agency) |
 | **Misses product_sense vs execution** | [AGENTS.md](../AGENTS.md) — "First move for product-related chats"; [ARCHITECTURE.md](../ARCHITECTURE.md) — mode flow |
-| **No meta / no 00-Meta suggestions** | [AGENTS.md](../AGENTS.md) — "meta_mode", "Recognize Product Sense Moments"; [.cursor/rules/thinking.mdc](../.cursor/rules/thinking.mdc) |
+| **No meta / no 00-Meta suggestions** | [AGENTS.md](../AGENTS.md), [ORCHESTRATION.md](../ORCHESTRATION.md) — meta_reflection, "Recognize Product Sense Moments"; [.cursor/rules/thinking.mdc](../.cursor/rules/thinking.mdc) |
 | **Evaluation / quality checks not offered** | [.cursor/rules/evaluation-orchestration.mdc](../.cursor/rules/evaluation-orchestration.mdc); framework folder READMEs (PRD, Opportunity Assessment, North Star, One-Pagers) |
 
 ---

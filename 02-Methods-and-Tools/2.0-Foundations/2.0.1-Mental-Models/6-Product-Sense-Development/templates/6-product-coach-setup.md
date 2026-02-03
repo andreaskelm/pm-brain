@@ -1,6 +1,6 @@
 # Product Coach Setup for External AI Tools
 
-**Use this template** to set up a ChatGPT or Claude conversation that acts as your product coach. This implements the same persona and workflow used in Cursor's `product_sense_mode`.
+**Use this template** to set up a ChatGPT or Claude conversation that acts as your product coach. This implements the same persona and workflow used in Cursor's product_sense state.
 
 **Canonical source:** This template is based on the Product Sense Persona defined in [`0-start-here-product-thinking.md`](../0-start-here-product-thinking.md#persona-and-background-for-agent) and the workflow in [`PRODUCT-SENSE-RULES.md`](../../../../../PRODUCT-SENSE-RULES.md). The persona and workflow are maintained there; this file is a packaged version for external AI tools.
 
@@ -167,6 +167,6 @@ Please add a 'Risks & Mitigation' section addressing the edge cases you identifi
 - You want a persistent conversation setup that follows PM Brain principles
 - You're working outside of Cursor
 
-**In Cursor, you don't need this** — the default `product_sense_mode` already provides the same coaching. Just start talking about a product decision and the agent will guide you through braindump → pattern recognition → framework selection → execution.
+**In Cursor, you don't need this** — the default product_sense state already provides the same coaching. Just start talking about a product decision and the agent will guide you through braindump → pattern recognition → framework selection → execution.
 
 Both approaches follow the same golden rule: braindump before structure.

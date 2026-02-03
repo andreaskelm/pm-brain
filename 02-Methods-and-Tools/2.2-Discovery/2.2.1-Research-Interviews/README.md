@@ -45,7 +45,7 @@ After your braindump (and optional log entry), use the guide to structure your r
 
 **Trigger conditions:**
 - User mentions: "user research", "customer interviews", "talk to users", "interview customers", "user feedback", "need to understand users"
-- User is in: `product_sense_mode` (during discovery braindump) or `execution_mode` (when user asks to do research)
+- User is in: product_sense (during discovery braindump) or execution_mode (when user asks to do research)
 - Prerequisites: User has assumptions/questions about users that need validation
 - User has: Some initial thinking about what they want to learn (may need help clarifying research questions)
 

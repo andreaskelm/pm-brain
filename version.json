@@ -1,13 +1,19 @@
 {
-  "version": "1.1.0",
+  "version": "2.0.0",
   "lastUpdated": "2026-02-03T00:00:00Z",
   "schemaVersion": "1.0",
   "changelog": [
     {
+      "version": "2.0.0",
+      "date": "2026-02-03",
+      "type": "major",
+      "summary": "Simplified orchestration: all agent decision logic now in ORCHESTRATION.md. Explicit state machine with clear transitions. AGENTS.md slimmed to persona and pointer to ORCHESTRATION. Sleeping memory manifest (MEMORY.md) added for context loading (company, initiatives, research, rules, skills)."
+    },
+    {
       "version": "1.1.0",
       "date": "2026-02-03",
       "type": "minor",
-      "summary": "Product sense is now an integrated, first-class part of the repo: the agent orchestrates three modes (product_sense_mode, execution_mode, meta_mode), enforces braindump-before-structure, and uses a two-level evaluation system plus \"For Agents\" sections in 14 frameworks to guide user thinking and artifact quality end-to-end."
+      "summary": "Product sense is now an integrated, first-class part of the repo: the agent orchestrates three modes (product_sense, execution_mode, meta_reflection), enforces braindump-before-structure, and uses a two-level evaluation system plus \"For Agents\" sections in 14 frameworks to guide user thinking and artifact quality end-to-end."
     },
     {
       "version": "1.0.0",
@@ -16,14 +22,21 @@
       "summary": "Initial version with complete framework library (14 frameworks), agent instructions (AGENTS.md), eval system (Level 1 & Level 2), 6 rules, 1 skill, and architecture documentation"
     }
   ],
-  "breakingChanges": [],
+  "breakingChanges": [
+    "Orchestration logic moved from AGENTS.md to ORCHESTRATION.md",
+    "State transitions and context loading now defined in ORCHESTRATION.md; agent infers state from conversation (no persistent state store)",
+    "Braindump exit criteria remain in PRODUCT-SENSE-RULES.md and eval-functions.md; ORCHESTRATION references them only",
+    "Sleeping memory manifest (MEMORY.md) added; use it to decide what to load for company context, initiatives, research, rules, skills"
+  ],
   "structure": {
     "frameworks": 14,
     "rules": 6,
     "skills": 1,
     "evalSystem": true,
+    "orchestrationFile": true,
+    "memoryManifest": true,
     "agentInstructions": {
-      "modes": ["product_sense_mode", "execution_mode", "meta_mode"],
+      "states": ["product_sense", "execution_mode", "meta_reflection", "conversation"],
       "evalCheckpoints": 4,
       "forAgentsSections": 14
     },

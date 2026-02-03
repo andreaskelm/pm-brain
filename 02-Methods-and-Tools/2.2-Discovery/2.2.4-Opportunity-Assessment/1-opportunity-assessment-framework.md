@@ -10,7 +10,7 @@ An opportunity assessment helps you structure early thinking about a potential p
 
 **Trigger conditions:**
 - User mentions: "opportunity assessment", "should we build X", "evaluate an idea", "assess opportunity", "is this worth building"
-- User is in: `product_sense_mode` (after braindump) or `execution_mode` (when user asks to evaluate an opportunity)
+- User is in: product_sense (after braindump) or execution_mode (when user asks to evaluate an opportunity)
 - Prerequisites: User has an idea or opportunity they want to evaluate (may be vague initially)
 - User has: Some initial thinking about the problem/opportunity (even if incomplete)
 

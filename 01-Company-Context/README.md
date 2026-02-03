@@ -2,7 +2,7 @@
 
 This directory contains the foundational company context documents that provide strategic direction, organizational structure, and product principles. These documents serve as the source of truth for company-wide product and technology strategy.
 
-**For agents:** This folder is one of the context sources the PM Brain agent asks about early in product_sense_mode (and when starting execution_mode for non-trivial docs). If the user has not added relevant company context to the conversation, suggest adding or @-mentioning key docs from here (e.g. vision, strategy, roadmap, stakeholders); having them in context speeds up thinking and keeps answers aligned to the user's actual strategy. Paths below are from repo root.
+**For agents:** This folder is one of the context sources the PM Brain agent asks about early in product_sense (and when starting execution_mode for non-trivial docs). If the user has not added relevant company context to the conversation, suggest adding or @-mentioning key docs from here (e.g. vision, strategy, roadmap, stakeholders); having them in context speeds up thinking and keeps answers aligned to the user's actual strategy. Paths below are from repo root.
 
 ## First Time Setup
 
