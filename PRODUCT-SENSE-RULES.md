@@ -2,6 +2,8 @@
 
 **What this doc is:** The canonical definition of the **golden rule** (one sentence below) and the **braindump workflow** (why it matters + 3 steps). Read it when you want the rationale and the step-by-step. For *where to go* and *how the agent moves*, see [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md). For the **actual questions** (prompts by situation), see [2-product-sense-prompts.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md).
 
+**For agents (read-only spec):** This file is the *canonical specification* of the golden rule and workflow. For *behavioral enforcement* (when to apply it, eval checkpoints, mode transitions), see [AGENTS.md](../AGENTS.md). This doc defines the *what* and *why*; `AGENTS.md` defines the *when* and *how* the agent enforces it.
+
 ---
 
 **The Golden Rule: Braindump before structure.**

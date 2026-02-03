@@ -124,12 +124,24 @@ flowchart TB
 - **Level 1 during creation:** The agent uses Quick Quality Checks automatically per `.cursor/rules/evaluation-orchestration.mdc` when you work on frameworks with evaluation support (PRD, Opportunity Assessment, North Star, One-Pager, OKR, Roadmap).
 - **Level 2:** You (or an AI with the pasteable prompt) run the checklist when you choose; the agent may suggest it after substantial conversations (see [AGENTS.md](AGENTS.md) → meta_mode). Scenarios in JSON are reference only—you match your conversation to a scenario type and use success_indicators / failure_modes to score; the agent does not read the JSON.
 - **Entry point:** [.cursor/evals/README.md](.cursor/evals/README.md) — intro, separation of evals, how it learns / ask user to adapt, pasteable prompts, file map.
+- **Behavior logging and pattern detection:** For optional instrumentation hooks and log format, see [eval-functions.md](.cursor/evals/eval-functions.md) and [eval-results/README.md](.cursor/evals/eval-results/README.md). These enable tracking agent behavior over time for pattern detection (non-blocking).
 
 ---
 
 ## How the repo is used (entry points and flows)
 
 **In plain English:** The repo has a few main entry points. Depending on what you're doing, the agent (or you) routes to the right place. The diagram below shows how those entry points connect to the rest of the repo.
+
+**Where to start (quick reference):**
+
+| I want to... | Go to |
+|--------------|-------|
+| **Think through a product decision** | [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md) — braindump first, then frameworks |
+| **I know the doc I need** (PRD, OKR, roadmap, etc.) | [0-template-finder.md](02-Methods-and-Tools/0-template-finder.md) — jump straight to template |
+| **Understand the system architecture** | [ARCHITECTURE.md](ARCHITECTURE.md) — visual overview, flows, context management |
+| **Configure the agent** | [AGENTS.md](AGENTS.md) — agent behavior, modes, eval checkpoints |
+| **Run evals** (artifact quality or agent behavior) | [.cursor/evals/README.md](.cursor/evals/README.md) — Level 1 (methods) or Level 2 (agent behavior) |
+| **Set up for the first time** | [SETUP.md](SETUP.md) — company context, agent config, optional 00-Meta setup |
 
 ```mermaid
 flowchart LR
@@ -174,6 +186,12 @@ flowchart LR
 - Use stable paths for nearby subdomains (e.g., `../2.0.2-Bias/README.md`)
 
 **Deep links:** Only use deep links (e.g., `../../2.0-Foundations/2.0.3-Self-Reflection/README.md`) when specifically referencing a particular framework in context, or in "Related frameworks" sections. Prefer domain indices for general navigation.
+
+**Agent guidance placement:** "For Agents" sections (agent-facing instructions on when/how to suggest frameworks) follow this convention:
+- **If a framework folder has `1-*-framework.md`:** Place "For Agents" section in `1-*-framework.md` (after the overview). The folder `README.md` serves as human-facing index/navigation only.
+- **If a framework folder does NOT have `1-*-framework.md`:** Place "For Agents" section in the folder `README.md` (which serves as both human guide and agent guidance).
+
+This keeps agent-facing instructions co-located with the detailed framework methodology, while keeping README files focused on navigation and overview.
 
 **When adding new frameworks:** Follow these conventions to maintain consistent navigation patterns.
 
@@ -257,3 +275,25 @@ flowchart LR
 **For framework authors:** Keep framework guides focused. Put detailed examples in separate files. Keep "For Agents" sections concise.
 
 **For system maintainers:** Monitor context usage. If Layer 1 grows beyond ~100 lines, consider splitting into core vs. extended instructions.
+
+---
+
+## Version Management
+
+**Version tracking:** The repository uses semantic versioning tracked in `version.json` (repo root). This enables agents to detect major structural changes and helps coordinate with GitHub releases.
+
+**When to update version.json:**
+
+- **MAJOR version** (e.g., 1.0.0 → 2.0.0): Breaking changes to `AGENTS.md` (mode definitions, eval checkpoints, core behavior), `ARCHITECTURE.md` (structure changes, new layers), framework structure changes, or "For Agents" convention changes.
+- **MINOR version** (e.g., 1.0.0 → 1.1.0): New frameworks added, new rules or skills added, significant new documentation (new entry points, major sections), or eval system enhancements.
+- **PATCH version** (e.g., 1.0.0 → 1.0.1): Typically not tracked for this knowledge base (bug fixes and clarifications don't require version bumps).
+
+**Update process:**
+1. Make the structural change
+2. Update `version.json`: bump version, add changelog entry, update `lastUpdated` timestamp, update `structure` snapshot if counts changed
+3. Commit `version.json` with the changes that triggered it
+4. **Optional:** Create GitHub release with tag matching version (e.g., `v1.0.0`) and copy changelog entry to release notes
+
+**GitHub releases:** If using GitHub releases, tag them with the same version as `version.json` (e.g., `v1.0.0`). The release notes can reference the changelog entry from `version.json`. This keeps releases and `version.json` in sync.
+
+**For agents:** See `AGENTS.md` → "Version Checking" for how agents use `version.json` to detect changes.

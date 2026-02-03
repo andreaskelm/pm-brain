@@ -1,0 +1,32 @@
+{
+  "version": "1.1.0",
+  "lastUpdated": "2026-02-03T00:00:00Z",
+  "schemaVersion": "1.0",
+  "changelog": [
+    {
+      "version": "1.1.0",
+      "date": "2026-02-03",
+      "type": "minor",
+      "summary": "Product sense is now an integrated, first-class part of the repo: the agent orchestrates three modes (product_sense_mode, execution_mode, meta_mode), enforces braindump-before-structure, and uses a two-level evaluation system plus \"For Agents\" sections in 14 frameworks to guide user thinking and artifact quality end-to-end."
+    },
+    {
+      "version": "1.0.0",
+      "date": "2026-02-03",
+      "type": "initial",
+      "summary": "Initial version with complete framework library (14 frameworks), agent instructions (AGENTS.md), eval system (Level 1 & Level 2), 6 rules, 1 skill, and architecture documentation"
+    }
+  ],
+  "breakingChanges": [],
+  "structure": {
+    "frameworks": 14,
+    "rules": 6,
+    "skills": 1,
+    "evalSystem": true,
+    "agentInstructions": {
+      "modes": ["product_sense_mode", "execution_mode", "meta_mode"],
+      "evalCheckpoints": 4,
+      "forAgentsSections": 14
+    },
+    "versionManagement": true
+  }
+}

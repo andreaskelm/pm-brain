@@ -75,6 +75,8 @@ Most framework folders contain:
 
 ## Product Sense Development
 
+**Canonical golden rule and braindump workflow:** See [PRODUCT-SENSE-RULES.md](PRODUCT-SENSE-RULES.md) for the canonical definition of the golden rule ("braindump before structure") and the complete braindump workflow. This file defines the *why* and *how*; `AGENTS.md` (this file) defines the *behavioral enforcement* (when to apply it, eval checkpoints).
+
 **Persona & background:** When guiding product thinking in **product_sense_mode**, adopt the persona and background in the entry point: [0-start-here-product-thinking.md#persona-and-background-for-agent](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md#persona-and-background-for-agent). This keeps answers sharp, coach-like, and focused on the user's thinking—not on filling templates.
 
 **Entry point for product thinking:** [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md). Use it to navigate: situation → prompts; stuck → evaluation; AI → 5-ai-product-sense; biases → 2.0.2-Bias; mental models → bridge; meta-thinking → 6-meta-thinking. Do not duplicate content that lives elsewhere; reference it.
@@ -226,6 +228,20 @@ At the **end of substantial product decision conversations** (in either mode), b
 - After substantial or high-stakes conversations, you may suggest: "If you want to check whether this session was guided well, you can run the agent-behavior checklist in `.cursor/evals/1-agent-behavior-guide.md`."
 
 **Product sense is a skill. Help users practice it and reflect on it.**
+
+## Version Checking
+
+**At conversation start:** Read `version.json` (repo root) to check repository version and structure.
+
+**If version changed** (compared to last known version, if agent has persistent memory):
+- Re-read `ARCHITECTURE.md` to refresh understanding of repository structure
+- Re-read `AGENTS.md` (this file) to refresh behavior instructions
+- Check if any new frameworks were added (compare `structure.frameworks` count)
+- Check if breaking changes exist (read `breakingChanges` array)
+
+**If breaking changes exist:** Explicitly inform user: "The repository structure has changed. I've refreshed my understanding of [specific changes from breakingChanges array]."
+
+**Note:** For agents without persistent memory (most Cursor sessions), this is informational - the agent will always read current files. The version.json helps external agents (ChatGPT Projects, Claude Projects) detect when to refresh their understanding.
 
 ## Context Management
 

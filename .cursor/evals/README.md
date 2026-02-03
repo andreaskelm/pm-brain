@@ -64,6 +64,8 @@ Numbered files follow the same pattern as `02-Methods-and-Tools/` (1 = main guid
 | **1-agent-behavior-guide.md** | Level 2 guide: dimensions, reflection checklist, "where to update" map, scenario-based review prompts. |
 | **2-checklist.md** | When to run Level 1/2, when to update, ongoing rhythm. |
 | **agent-behavior-scenarios.json** | Level 2 scenario definitions (success_indicators, failure_modes). Reference only—you use them when you run the guide and match a chat to a scenario type; the agent does not read this file. |
+| **eval-functions.md** | Optional instrumentation hooks: structured eval functions (`check_braindump_sufficient()`, `check_questions_before_framework()`, etc.) that agents can call at checkpoints. Non-blocking; used for pattern detection. |
+| **eval-results/README.md** | Log format and usage guide for eval results. When eval checkpoints are hit, results can be logged here for pattern detection over time. |
 
 ---
 

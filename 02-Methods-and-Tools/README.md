@@ -68,10 +68,12 @@ Content is organized by **the flow of product work**: from foundational thinking
 ```
 
 Inside each numbered framework folder, files follow this pattern:
-- `README.md` - Overview and navigation
-- `1-*-framework.md` - Main framework guide
+- `README.md` - Overview and navigation (human-facing index: what the framework is, when to use it, which files exist). For frameworks without `1-*-framework.md`, this may also serve as the main guide.
+- `1-*-framework.md` - Main framework guide (detailed methodology, principles, process). Includes "For Agents" section with agent-facing instructions (trigger conditions, how to introduce, common mistakes, when NOT to use).
 - `2-*-template.md` - Fill-in-the-blanks template
 - `3-*-evaluation.md` - Evaluation framework (if applicable)
+
+**Agent guidance placement:** "For Agents" sections live in `1-*-framework.md` when that file exists, or in `README.md` for lightweight frameworks without a separate framework file. See [ARCHITECTURE.md](../ARCHITECTURE.md) → "Linking Conventions" for details.
 
 ---
 

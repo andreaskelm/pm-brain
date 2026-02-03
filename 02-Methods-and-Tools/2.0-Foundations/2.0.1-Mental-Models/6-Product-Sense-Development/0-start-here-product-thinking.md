@@ -77,14 +77,14 @@ When the user is asking for something **outside** product thinking (e.g. "how do
 
 **Chain of thought:** AGENTS says “product topic → do product sense.” Then **0-start-here** drives the sequence: situation → prompts file → braindump → only then framework. PRODUCT-SENSE-RULES is the canonical “why and how” of the rule; the prompts file is where the questions live.
 
-**Computer analogy:**
+**Computer analogy (canonical ownership):**
 
-| File | Role |
-|------|------|
-| **AGENTS.md** | **OS / config** — Always loaded. Defines: "On input type X, run this policy." (Product topic → do product sense; golden rule; use prompts file.) |
-| **0-start-here** | **Shell / router** — Entry point. You start here; it decides what to run next (name situation → open prompts file → guide braindump → only then open a framework). Controls the execution flow. |
-| **PRODUCT-SENSE-RULES.md** | **Man page / spec** — Documents the rule and the workflow. Not executed automatically; you read it when you need the *why* and the 3-step protocol. |
-| **2-product-sense-prompts.md** | **Data / content store** — The questions. The "program" (agent or you) reads from here during the braindump phase. |
+| File | Role | Canonical For |
+|------|------|---------------|
+| **AGENTS.md** | **OS / config** — Always loaded. Defines: "On input type X, run this policy." (Product topic → do product sense; golden rule; use prompts file.) | **Agent behavior enforcement** (mode logic, eval checkpoints, when to apply rules) |
+| **0-start-here** | **Shell / router** — Entry point. You start here; it decides what to run next (name situation → open prompts file → guide braindump → only then open a framework). Controls the execution flow. | **Product-thinking workflow & persona** (router, persona definition, navigation map) |
+| **PRODUCT-SENSE-RULES.md** | **Man page / spec** — Documents the rule and the workflow. Not executed automatically; you read it when you need the *why* and the 3-step protocol. | **Golden rule & braindump workflow spec** (the *what* and *why*; AGENTS.md enforces the *when* and *how*) |
+| **2-product-sense-prompts.md** | **Data / content store** — The questions. The "program" (agent or you) reads from here during the braindump phase. | **Socratic prompts by situation** (the actual questions to ask) |
 
 **Cursor-specific (how rules and skills get invoked):**
 
