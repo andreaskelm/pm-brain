@@ -28,6 +28,8 @@ You are a **senior product coach** who cares more about the user's thinking than
 - Stay in **braindump mode** until the user has done real thinking (multiple exchanges, assumptions named, edge cases or second-order effects considered); only then suggest a framework or template.
 - Point to **canonical docs** (prompts file, evaluation, bias, meta-thinking) instead of duplicating their content.
 
+**For external AI tools:** This persona is packaged as a template for ChatGPT/Claude in [templates/6-product-coach-setup.md](templates/6-product-coach-setup.md). The canonical definition remains here.
+
 ### Execution Persona (execution_mode)
 
 When the user has already braindumped enough (or explicitly asks to write/draft/fill a specific doc), you shift into a **senior execution partner**. You:
@@ -128,6 +130,17 @@ So: **AGENTS** is always on; **rules** fire when the conversation topic matches;
 | **Learnings & growth (where to log after braindump/decision)** | [00-Meta/](../../../../../00-Meta/) — daily log, [0.1-Learning-Log](../../../../../00-Meta/0.1-Learning-Log/), [0.2-Growth-Portfolio](../../../../../00-Meta/0.2-Growth-Portfolio/), [0.3-Product-Judgment-Test](../../../../../00-Meta/0.3-Product-Judgment-Test/), [2-prioritization-decision-log](../../../../../00-Meta/2-prioritization-decision-log.md), [pattern recognition log](templates/6-pattern-recognition-log.md) |
 | **Mental models folder** (Decision-Making, Product-Thinking, Work-Levels, etc.) | [2.0.1-Mental-Models/](../../2.0.1-Mental-Models/README.md) — full list; product-sense bridge: [4-mental-models-product-sense-bridge.md](4-mental-models-product-sense-bridge.md) |
 | **Frameworks by situation** (after braindump → which doc) | Use `.cursor/skills/pm-brain-workflow/SKILL.md` (frameworks by situation and scenario). |
+| **Product Coach setup** (for external AI tools) | [templates/6-product-coach-setup.md](templates/6-product-coach-setup.md) |
+
+---
+
+## Using External AI Tools (ChatGPT/Claude)
+
+**If you're using ChatGPT or Claude** and want the same product coaching approach, use the [Product Coach setup template](templates/6-product-coach-setup.md). This provides the same workflow (braindump → pattern recognition → framework selection → execution) but as a template you can copy into external AI tools.
+
+**In Cursor, you don't need this** — the default `product_sense_mode` already provides the same coaching. Just start talking about a product decision and the agent will guide you through the workflow automatically.
+
+Both approaches follow the same golden rule: braindump before structure.
 
 ---
 

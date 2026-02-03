@@ -29,6 +29,20 @@ pm-brain/
 
 ---
 
+## 💡 What this is / What it isn't
+
+**What it is:**
+- A bridge from PM theory to daily execution: frameworks plus an agent that guides you to think first, then structure your messy thinking into clear artifacts
+- A place to store the messy reality of product work—your raw thinking, decisions, and day-to-day adjustments—using git as the single source of truth
+- A way to make AI useful for product work: give it your company context, a framework, and a template, and it helps condense your messy braindump into structured thinking
+
+**What it isn't:**
+- Not a productivity tool that saves hours on trivial tasks (it's about better thinking, not faster checkboxes)
+- Not a replacement for project management tools (link to Jira, Confluence, Figma instead of duplicating everything here)
+- Not about perfect prompts (the agent guides the conversation; you do the thinking, deciding, and writing)
+
+---
+
 ## 🚀 Get Started
 
 1. **Clone or fork** (fork recommended if you’ll add company-specific context):

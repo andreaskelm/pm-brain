@@ -162,9 +162,26 @@ Build my intuition. Help me recognize this faster next time.
 
 ---
 
+## Product Coach Setup (For Persistent Coaching)
+
+**Different from the prompts above:** The prompts above are **one-off** prompts for specific situations (braindumping, edge cases, etc.). 
+
+**If you want persistent product coaching** across multiple conversations in ChatGPT or Claude, use the [Product Coach setup template](6-product-coach-setup.md). This sets up a persistent persona that provides the same workflow as Cursor's `product_sense_mode` (braindump → pattern recognition → framework selection → execution).
+
+**When to use:**
+- **One-off prompts (above):** Quick help for a specific situation right now
+- **Product Coach setup:** Consistent coaching persona across all your product conversations
+
+**Setup:** Copy the template from `6-product-coach-setup.md` into a ChatGPT or Claude Project.
+
+**In Cursor, you don't need this** — the default `product_sense_mode` already provides the same coaching automatically.
+
+---
+
 ## Links
 
 - **Braindump prompts by situation:** [2-product-sense-prompts.md](../2-product-sense-prompts.md)
 - **Meta-thinking (modes, bias, assumption):** [6-meta-thinking-for-product-sense.md](../6-meta-thinking-for-product-sense.md)
 - **Confidence calibration / forecast log:** [00-Meta/0.3-Product-Judgment-Test](../../../../../00-Meta/0.3-Product-Judgment-Test/)
 - **Golden rule:** [PRODUCT-SENSE-RULES.md](../../../../../PRODUCT-SENSE-RULES.md)
+- **Product Coach setup** (persistent persona for external AI): [6-product-coach-setup.md](6-product-coach-setup.md)

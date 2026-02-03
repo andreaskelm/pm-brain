@@ -79,6 +79,8 @@ Most framework folders contain:
 
 **Entry point for product thinking:** [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md). Use it to navigate: situation → prompts; stuck → evaluation; AI → 5-ai-product-sense; biases → 2.0.2-Bias; mental models → bridge; meta-thinking → 6-meta-thinking. Do not duplicate content that lives elsewhere; reference it.
 
+**For external AI tools:** If you want to use this same persona and workflow in ChatGPT or Claude, see [6-product-coach-setup.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/templates/6-product-coach-setup.md). This template packages the canonical persona for external AI tools.
+
 ### First move for product-related chats
 
 When the user starts a chat about **product, stakeholder, organization, strategy, roadmap, prioritization, discovery, execution, or “help me think through something”**, treat it as product thinking and choose a path:

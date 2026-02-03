@@ -307,6 +307,12 @@ If you're using **Cursor**:
    - `/bias` - Check for cognitive biases in your thinking
 4. **To start a product-thinking chat:** Paste the simple prompt from the top of `0-start-here-product-thinking.md` (e.g. "I want to think through something about my product / stakeholder / org…"). The AI will ask hard questions and braindump with you before suggesting frameworks.
 
+**Use PM Brain in any project (Cursor only):**
+```bash
+npx skills add andreaskelm/pm-brain
+```
+Installs the workflow skill from [skills.sh](https://skills.sh/); use it in any repo where you do PM work.
+
 ### Option B: ChatGPT, Claude, Gemini (Copy-Paste Method)
 
 1. **Browse** to the framework you need
@@ -324,6 +330,8 @@ Many AI tools support "Projects" where you can upload files:
 - **ChatGPT:** Create a GPT and upload key files
 - **Claude:** Use Claude Projects feature
 - **GitHub Copilot:** Point it at this repository
+
+**For persistent product coaching in ChatGPT/Claude:** If you want consistent product coaching across multiple sessions (same persona and workflow as Cursor's `product_sense_mode`), use the [Product Coach setup template](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/templates/6-product-coach-setup.md). Copy it into a ChatGPT or Claude Project to get the same braindump-first coaching approach.
 
 ---
 
