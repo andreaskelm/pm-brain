@@ -38,10 +38,10 @@
 **Behavior:**
 1. Name the situation (or ask 1–2 clarifying questions): strategy / design / prioritization / discovery / stuck / crisis / stakeholders / AI product.
 2. Context check: Ask whether the user has added (or wants to use) relevant context from company, strategy, research, or initiatives. See [MEMORY.md](MEMORY.md) for what to wake (company context, initiatives, research).
-3. Pull 3–5 prompts from [2-product-sense-prompts.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md) for that situation. Ask hard questions; challenge assumptions; don't validate or fill boxes.
-4. After each response, continue with more prompts or probe deeper; if stuck, use [3-product-sense-evaluation.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/3-product-sense-evaluation.md).
-5. Before suggesting any framework, **verify braindump sufficient** (see below). Ask explicit verification questions if needed.
-6. When sufficient → Offer transition to execution_mode (suggest framework + point to doc).
+3. Pull **3–5 prompts max per batch** from [2-product-sense-prompts.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md) for that situation. Ask hard questions; challenge assumptions; don't validate or fill boxes.
+4. After each response (or short batch of responses), **summarize what you heard and check whether the user wants to go deeper** before adding another small batch of prompts; if stuck, use [3-product-sense-evaluation.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/3-product-sense-evaluation.md).
+5. Before suggesting any framework, **verify braindump sufficient** (see below). Ask explicit verification questions if needed and **briefly state that the braindump criteria have been met** (e.g. note assumptions vs guesses, at least one risk/second-order effect, and one uncomfortable thought) so the user sees the phase change.
+6. When sufficient → Offer transition to execution_mode (suggest framework + point to doc), making it clear that you are now moving from free-form braindump into structured options or artifacts.
 
 **Braindump exit criteria:** Do not duplicate. Use the canonical checklist in [PRODUCT-SENSE-RULES.md](PRODUCT-SENSE-RULES.md) (Is the braindump "sufficient"?) and the verification logic in [.cursor/evals/eval-functions.md](.cursor/evals/eval-functions.md) → `check_braindump_sufficient()`. Only transition when all four items have explicit answers (assumptions named, know vs guess separated, at least one risk/second-order effect, at least one uncomfortable thought).
 
@@ -58,6 +58,7 @@
 **Entry (template-finder path):**
 - Load [0-template-finder.md](02-Methods-and-Tools/0-template-finder.md). Open the README + template for the requested doc.
 - For non-trivial docs (PRD, Strategy, Opportunity Assessment, Roadmap): ask 2–3 preflight prompts from [2-product-sense-prompts.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md) ("Why this, why now?", "What do you already know vs. what are you guessing?", "Who is this for?") before drafting. For trivial docs (meeting agenda, newsletter), preflight is optional.
+- For non-trivial docs, also run a **short context/memory check**: ask whether to anchor the doc in existing company/initiative/research context (e.g. "Do you want to anchor this in any existing strategy/initiative/research, or keep this self-contained for now?") and use [MEMORY.md](MEMORY.md) to decide what to wake if they say yes.
 - Add a one-line nudge to [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md) if they haven't thought it through.
 
 **Entry (from product_sense):**
@@ -109,6 +110,15 @@
 - **Process:** User runs [.cursor/evals/1-agent-behavior-guide.md](.cursor/evals/1-agent-behavior-guide.md) and [2-checklist.md](.cursor/evals/2-checklist.md); match conversation to scenarios in agent-behavior-scenarios.json; score using success_indicators / failure_modes.
 - **If patterns found:** Update this file (ORCHESTRATION.md) or AGENTS.md as needed; bump version.json if behavior changed.
 - **Logging:** [.cursor/evals/eval-results/](.cursor/evals/eval-results/README.md).
+
+### Using eval results and tests
+
+- **Test cases:** Concrete test conversations for Level 2 live in `.cursor/evals/eval-results/` (see `test-*-*.md` files) and are guided by `.cursor/evals/test-generator.md`.
+- **How to use:** Replay these tests with the agent, compare behavior against the **Expected Behavior (Checkpoints)** sections in each file, and record `PASS / FAIL / MIXED` plus notes.
+- **When patterns emerge:** If a scenario (e.g. `vague_product_idea_001`) consistently fails on the same checkpoints (golden rule, questions before framework, etc.):
+  - Use `.cursor/evals/1-agent-behavior-guide.md` → “where to update” map.
+  - Update `AGENTS.md`, `ORCHESTRATION.md`, or `.cursor/rules/*.mdc` where the behavior should change.
+  - For material behavior changes, bump `version.json` and add a brief note under `breakingChanges`.
 
 ---
 

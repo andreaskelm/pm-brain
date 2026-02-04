@@ -99,24 +99,29 @@ When a user wants to work on something or is thinking/braindumping (the agent is
 ## Common Scenarios
 
 ### "I have an idea"
-→ Start with **Discovery** frameworks:
+→ Start with **Discovery** (use `discovery-research` skill):
 - Problem-Solution Space to separate problem from solution
 - Jobs-to-be-Done to understand user needs
 - Opportunity Assessment to evaluate viability
 
 ### "I need to prioritize features"
-→ Go to **Strategy**:
+→ Go to **Strategy** (use `strategy-planning` skill):
 - Prioritization frameworks (RICE, Value/Effort, MoSCoW)
 - Strategic Foundations for alignment with goals
 
 ### "I need to write a PRD"
 → Check in **Execution**:
+- Before touching templates, ask **2–3 lightweight preflight questions** (why this/why now, know vs guess, who it’s for) and a **context/memory check**, for example:
+  - "Why this, why now?"
+  - "What do you already know vs what are you guessing?"
+  - "Who is this primarily for to read and approve?"
+  - "Do you want to anchor this in any existing strategy/initiative/research, or keep this PRD self-contained for now?"
 - PRD templates and guides
 - User Stories for requirements
 - Metrics for success criteria
 
 ### "How do I convince stakeholders?"
-→ Look in **Communication**:
+→ Look in **Communication** (use `stakeholder-management` skill):
 - One-Pagers for executive summaries
 - Stakeholder Management strategies
 - Saying No frameworks for managing requests
@@ -126,6 +131,13 @@ When a user wants to work on something or is thinking/braindumping (the agent is
 - Mental Models for frameworks
 - Bias awareness for blind spots
 - Self-Reflection for clarity
+
+### "I'm overwhelmed with requests"
+→ Treat this as an **overwhelm / paralysis** case:
+- First, acknowledge the feeling and keep cognitive load low.
+- Ask **at most 1–2 gentle questions** to narrow, for example: "What’s one thing that, if you made a bit of progress on it this week, would make you feel less stuck?"
+- Help the user choose a **tiny, concrete next step** (e.g. "open the first onboarding email and jot 3 bullets on what feels off") instead of introducing mini‑frameworks.
+- Make explicit that **they choose**: "You choose the smallest step that feels doable; I’ll help you shape it."
 
 ### "Am I improving? / How do I track my judgment?"
 → Point to **00-Meta**:

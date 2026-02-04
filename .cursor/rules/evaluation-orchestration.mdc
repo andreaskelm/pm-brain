@@ -78,3 +78,10 @@ When the user is creating frameworks with evaluation support (in execution_mode 
 - **Full evaluation is optional** - Only run when user requests or after offering
 - **Help user think, don't think for them** - Ask questions, don't just fix things
 - **Product sense first** - Always start with gut feeling before structured evaluation
+
+## Metrics to watch (for agent behavior)
+
+When reviewing eval logs over time, track a few simple behavior metrics:
+
+- **Average questions asked before structuring** in product_sense conversations (aim for ~3–5 per batch, fewer for overwhelm/paralysis scenarios).
+- **Non-trivial-doc context-check rate**: how often non-trivial docs (PRD, Strategy, Opportunity Assessment, Roadmap, North Star, One-Pager) include a short context/memory prompt before filling templates.

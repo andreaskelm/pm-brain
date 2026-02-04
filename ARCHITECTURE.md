@@ -197,7 +197,7 @@ flowchart LR
 
 ## Evaluation system (evals)
 
-Evals are **guidance-based** (no scripts). Two levels: (1) **Level 1** = artifact quality (methods/frameworks) — lives in `02-Methods-and-Tools/` (Quick Quality Checks in `1-*-framework.md`, full review in `3-*-evaluation.md`); (2) **Level 2** = agent behavior — lives in `.cursor/evals/` ([1-agent-behavior-guide.md](.cursor/evals/1-agent-behavior-guide.md), [2-checklist.md](.cursor/evals/2-checklist.md), [agent-behavior-scenarios.json](.cursor/evals/agent-behavior-scenarios.json)). You run evals when it matters; when you learn something new, you update the right file (see "Where to update" in the evals guide).
+Evals are **guidance-based** (no scripts). Two levels: (1) **Level 1** = artifact quality (methods/frameworks) — lives in `02-Methods-and-Tools/` (Quick Quality Checks in `1-*-framework.md`, full review in `3-*-evaluation.md`); (2) **Level 2** = agent behavior — lives in `.cursor/evals/` ([1-agent-behavior-guide.md](.cursor/evals/1-agent-behavior-guide.md), [2-checklist.md](.cursor/evals/2-checklist.md), [agent-behavior-scenarios.json](.cursor/evals/agent-behavior-scenarios.json), [`test-generator.md`](.cursor/evals/test-generator.md), and seeded tests in `eval-results/`). You run evals when it matters; when you learn something new, you update the right file (see "Where to update" in the evals guide).
 
 **How evals are used (visual):**
 
@@ -215,17 +215,20 @@ flowchart TB
     Review[You run Level 2 review]
     Guide[1-agent-behavior-guide.md]
     Scenarios[agent-behavior-scenarios.json]
+    Tests[test-generator + eval-results tests]
     Review --> Guide -->|"Match chat to type"| Scenarios
+    Review --> Tests
   end
 
   Orchestrator[Agent per evaluation-orchestration.mdc] --> L1
   Meta2[Agent suggests checklist in meta_reflection] --> L2
+  Hook[Optional post-conversation hook] -->|"append summary to eval-results"| L2
 ```
 
 - **Level 1 during creation:** The agent uses Quick Quality Checks automatically per `.cursor/rules/evaluation-orchestration.mdc` when you work on frameworks with evaluation support (PRD, Opportunity Assessment, North Star, One-Pager, OKR, Roadmap).
-- **Level 2:** You (or an AI with the pasteable prompt) run the checklist when you choose; the agent may suggest it after substantial conversations (see [AGENTS.md](AGENTS.md), [ORCHESTRATION.md](ORCHESTRATION.md) → meta_reflection). Scenarios in JSON are reference only—you match your conversation to a scenario type and use success_indicators / failure_modes to score; the agent does not read the JSON.
+- **Level 2:** You (or an AI with the pasteable prompt) run the checklist when you choose; the agent may suggest it after substantial conversations (see [AGENTS.md](AGENTS.md), [ORCHESTRATION.md](ORCHESTRATION.md) → meta_reflection). Scenarios in JSON are reference only—you match your conversation to a scenario type and use success_indicators / failure_modes to score; the agent does not read the JSON. [`test-generator.md`](.cursor/evals/test-generator.md) and `eval-results/test-*-*.md` files give you a library of concrete test conversations.
 - **Entry point:** [.cursor/evals/README.md](.cursor/evals/README.md) — intro, separation of evals, how it learns / ask user to adapt, pasteable prompts, file map.
-- **Behavior logging and pattern detection:** For optional instrumentation hooks and log format, see [eval-functions.md](.cursor/evals/eval-functions.md) and [eval-results/README.md](.cursor/evals/eval-results/README.md). These enable tracking agent behavior over time for pattern detection (non-blocking).
+- **Behavior logging and pattern detection:** For optional instrumentation hooks and log format, see [eval-functions.md](.cursor/evals/eval-functions.md), [eval-results/README.md](.cursor/evals/eval-results/README.md), and the post-conversation hook `.cursor/hooks/log-eval.js`. These enable tracking agent behavior over time for pattern detection (non-blocking).
 
 ---
 

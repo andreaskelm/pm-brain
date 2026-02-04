@@ -90,11 +90,14 @@ Store analysis/snapshots here (or in initiative research/); raw data external wi
 
 ## Skills (.cursor/skills)
 
-**When to wake:** User is in execution_mode and needs framework selection or workflow guidance.
+**When to wake:** User is in product_sense or execution_mode and needs framework selection or workflow guidance.
 
 | Path | Purpose |
 |------|---------|
-| [.cursor/skills/pm-brain-workflow/SKILL.md](.cursor/skills/pm-brain-workflow/SKILL.md) | PM workflow: braindump → framework choice → templates; when to use which framework |
+| [.cursor/skills/pm-brain-workflow/SKILL.md](.cursor/skills/pm-brain-workflow/SKILL.md) | Overall PM workflow: Foundations → Strategy → Discovery → Execution → Communication; high-level routing. |
+| [.cursor/skills/discovery-research/SKILL.md](.cursor/skills/discovery-research/SKILL.md) | Discovery workflows: research interviews, continuous discovery, JTBD, opportunity assessment, idea validation, problem/solution space, PMF. |
+| [.cursor/skills/strategy-planning/SKILL.md](.cursor/skills/strategy-planning/SKILL.md) | Strategy and planning: strategy docs, OKRs, roadmaps, prioritization. |
+| [.cursor/skills/stakeholder-management/SKILL.md](.cursor/skills/stakeholder-management/SKILL.md) | Stakeholder comms: one-pagers, newsletters, stakeholder management, saying no, escalation, crisis management. |
 
 ---
 

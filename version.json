@@ -1,8 +1,14 @@
 {
-  "version": "2.0.0",
-  "lastUpdated": "2026-02-03T00:00:00Z",
+  "version": "2.1.0",
+  "lastUpdated": "2026-02-04T00:00:00Z",
   "schemaVersion": "1.0",
   "changelog": [
+    {
+      "version": "2.1.0",
+      "date": "2026-02-04",
+      "type": "minor",
+      "summary": "Added eval test generator and seeded test cases; introduced specialized skills (discovery-research, strategy-planning, stakeholder-management); added common slash commands; wired optional post-conversation eval logging hook; updated MEMORY and eval docs."
+    },
     {
       "version": "2.0.0",
       "date": "2026-02-03",
@@ -31,7 +37,7 @@
   "structure": {
     "frameworks": 14,
     "rules": 6,
-    "skills": 1,
+    "skills": 3,
     "evalSystem": true,
     "orchestrationFile": true,
     "memoryManifest": true,

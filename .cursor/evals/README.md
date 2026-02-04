@@ -50,7 +50,7 @@ Evals are **guidance-based**: they don’t produce scores in a dashboard. They h
 
 2. **You update the repo when you learn something new** — If a method check is wrong or the method has evolved → edit `1-*-framework.md` or `3-*-evaluation.md`. If agent behavior should change → use the "Where to update" map in [1-agent-behavior-guide.md](1-agent-behavior-guide.md) and edit AGENTS.md, ORCHESTRATION.md, or the relevant `.cursor/rules` file.
 
-The agent can **ask you to adapt** after substantial conversations: it may suggest running the agent-behavior checklist or logging in `00-Meta/`. That keeps evals and practice in the loop without requiring scripts.
+The agent can **ask you to adapt** after substantial conversations: it may suggest running the agent-behavior checklist or logging in `00-Meta/`. That keeps evals and practice in the loop without requiring scripts. Optionally, the post-conversation hook defined in `.cursor/hooks/log-eval.js` can append lightweight summary entries to `eval-results/` for easier pattern detection over time.
 
 ---
 
@@ -66,6 +66,38 @@ Numbered files follow the same pattern as `02-Methods-and-Tools/` (1 = main guid
 | **agent-behavior-scenarios.json** | Level 2 scenario definitions (success_indicators, failure_modes). Reference only—you use them when you run the guide and match a chat to a scenario type; the agent does not read this file. |
 | **eval-functions.md** | Optional instrumentation hooks: structured eval functions (`check_braindump_sufficient()`, `check_questions_before_framework()`, etc.) that agents can call at checkpoints. Non-blocking; used for pattern detection. |
 | **eval-results/README.md** | Log format and usage guide for eval results. When eval checkpoints are hit, results can be logged here for pattern detection over time. |
+
+---
+
+## How to run agent evals with the test generator
+
+You can turn the scenarios in `agent-behavior-scenarios.json` into **concrete test conversations** and log files using [`test-generator.md`](test-generator.md).
+
+### Steps
+
+1. **Pick a scenario**
+   - Open `agent-behavior-scenarios.json` and choose a `scenario_id` (e.g. `vague_product_idea_001`).
+
+2. **Choose or create a test file**
+   - Look in `eval-results/` for an existing file named like `test-[scenario_id]-YYYY-MM-DD-XX.md`.
+   - If none exists, create one following the guidance in `test-generator.md` (copy an existing test as a starting point).
+
+3. **Replay the conversation with the agent**
+   - Paste each `User:` line into the agent, in order.
+   - After each agent reply, compare what it actually did with the **Expected Behavior (Checkpoints)** in the test file.
+
+4. **Log the outcome**
+   - In the same test file, fill in an **Eval Run** section (`Result: PASS / FAIL / MIXED`, plus notes).
+   - Alternatively, create a separate log in `eval-results/` using the format from `eval-results/README.md` and reference the test file.
+
+5. **Feed patterns back into the repo**
+   - When you see recurring failures (e.g. “suggests templates too early for `vague_product_idea_001`”), use:
+     - `1-agent-behavior-guide.md` → “where to update” map
+     - `ORCHESTRATION.md` → routing and state transitions
+     - `.cursor/rules/*.mdc` → detailed behavior tweaks
+   - For meaningful behavior changes, bump `version.json` (see `ARCHITECTURE.md` → Version Management).
+
+The goal is fast, **low-friction** testing: a handful of short, realistic conversations that reveal whether the agent is honoring the golden rule and the scenario success indicators.
 
 ---
 
