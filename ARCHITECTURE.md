@@ -16,14 +16,14 @@
 
 ```mermaid
 flowchart TB
-  subgraph Core["Product Sense Agent Brain"]
+  subgraph Core["Core (agent + orchestration)"]
     V[version.json]
     A[AGENTS.md]
     O[ORCHESTRATION.md]
     V --> A --> O
   end
 
-  subgraph Content["Coaching & Frameworks"]
+  subgraph Content["Content (frameworks & prompts)"]
     PSR[PRODUCT-SENSE-RULES.md]
     PROM[2-product-sense-prompts.md]
     ENTRY[0-start-here...]
@@ -31,7 +31,7 @@ flowchart TB
     FW[1-*-framework.md]
   end
 
-  subgraph Memory["Memory & Context"]
+  subgraph Memory["Sleeping memory & context"]
     MEM[MEMORY.md]
     C01[01-Company-Context]
     C03[03-Research-Artifacts]
@@ -101,15 +101,17 @@ flowchart TB
 
 ## Repo layers
 
-The repo has five main folders at the top level. Each holds a different kind of content. The box view below works in any preview; the list and table follow.
+The repo has five main folders at the top level. Each holds a different kind of content. The diagram below shows them side by side; the list and table follow.
 
-**Visual (boxes):**
+**Visual:**
 
-```
-┌─────────────────┐ ┌─────────────────────┐ ┌──────────────────────┐ ┌─────────────────────┐ ┌──────────────┐
-│ 00-Meta         │ │ 01-Company-Context   │ │ 02-Methods-and-Tools  │ │ 03-Research-Artifacts│ │ 04-Initiatives│
-│ practice, learn │ │ vision, strategy    │ │ frameworks (2.0–2.4)  │ │ research storage     │ │ active work   │
-└─────────────────┘ └─────────────────────┘ └──────────────────────┘ └─────────────────────┘ └──────────────┘
+```mermaid
+flowchart LR
+  Meta["00-Meta (practice, learn)"]
+  Company["01-Company-Context (vision, strategy)"]
+  Methods["02-Methods-and-Tools (frameworks 2.0–2.4)"]
+  Research["03-Research-Artifacts (research storage)"]
+  Initiatives["04-Initiatives (active work)"]
 ```
 
 **The five folders:**
@@ -132,15 +134,19 @@ The repo has five main folders at the top level. Each holds a different kind of 
 
 ## Methods flow (02-Methods-and-Tools)
 
-Inside `02-Methods-and-Tools/` you work in this order: **think** (Foundations) → **set direction** (Strategy) → **discover** (Discovery) → **build and ship** (Execution), while **communicating** all along (Communication). The box flow below works in any preview; the table follows.
+Inside `02-Methods-and-Tools/` you work in this order: **think** (Foundations) → **set direction** (Strategy) → **discover** (Discovery) → **build and ship** (Execution), while **communicating** all along (Communication). The diagram below shows the flow; the table follows.
 
 **Visual (flow, left to right):**
 
-```
-┌──────────────┐     ┌──────────────┐     ┌──────────────┐     ┌──────────────┐     ┌──────────────────┐
-│ 2.0 Found.   │ ──► │ 2.1 Strategy │ ──► │ 2.2 Discovery│ ──► │ 2.3 Execution│ ──► │ 2.4 Communication│
-│ think first  │     │ set direction│     │ discover     │     │ build & ship │     │ communicate      │
-└──────────────┘     └──────────────┘     └──────────────┘     └──────────────┘     └──────────────────┘
+```mermaid
+flowchart LR
+  F2_0["2.0 Foundations (think first)"]
+  F2_1["2.1 Strategy (set direction)"]
+  F2_2["2.2 Discovery (discover)"]
+  F2_3["2.3 Execution (build & ship)"]
+  F2_4["2.4 Communication (communicate)"]
+
+  F2_0 --> F2_1 --> F2_2 --> F2_3 --> F2_4
 ```
 
 **Flow (text):** `2.0 Foundations` → `2.1 Strategy` → `2.2 Discovery` → `2.3 Execution` → `2.4 Communication`
