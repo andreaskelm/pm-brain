@@ -14,20 +14,39 @@
 
 **Architecture (core, content on-demand, sleeping memory):**
 
-```
-┌─ Core always loaded ─────────────────┐
-│  version.json → AGENTS.md → ORCHESTRATION.md
-└──────────────────┬───────────────────┘
-                   │
-     ┌─────────────┴─────────────┐
-     ▼                           ▼
-┌─ Content on-demand ──────────┐   ┌─ Sleeping memory (MEMORY.md) ─────────┐
-│ PRODUCT-SENSE-RULES.md      │   │  01-Company-Context                   │
-│ 2-product-sense-prompts    │   │  03-Research-Artifacts                │
-│ 0-start-here...            │   │  04-Initiatives                       │
-│ eval-functions.md           │   │  .cursor/rules, skills                │
-│ 1-*-framework.md            │   └───────────────────────────────────────┘
-└─────────────────────────────┘
+```mermaid
+flowchart TB
+  subgraph Core["Product Sense Agent Brain"]
+    V[version.json]
+    A[AGENTS.md]
+    O[ORCHESTRATION.md]
+    V --> A --> O
+  end
+
+  subgraph Content["Coaching & Frameworks"]
+    PSR[PRODUCT-SENSE-RULES.md]
+    PROM[2-product-sense-prompts.md]
+    ENTRY[0-start-here...]
+    EVAL[eval-functions.md]
+    FW[1-*-framework.md]
+  end
+
+  subgraph Memory["Memory & Context"]
+    MEM[MEMORY.md]
+    C01[01-Company-Context]
+    C03[03-Research-Artifacts]
+    C04[04-Initiatives]
+    Rules[.cursor/rules]
+    Skills[.cursor/skills]
+    MEM --> C01
+    MEM --> C03
+    MEM --> C04
+    MEM --> Rules
+    MEM --> Skills
+  end
+
+  O --> Content
+  O --> Memory
 ```
 
 ORCHESTRATION drives both **content on-demand** (Layer 2 by state: product_sense → entry point, prompts, eval-functions; execution_mode → template-finder or framework guide) and **sleeping memory** (when the user mentions company, initiative, or research, consult MEMORY.md and load the relevant paths).
@@ -38,15 +57,39 @@ ORCHESTRATION drives both **content on-demand** (Layer 2 by state: product_sense
 
 High-level flow: the agent loads a small core at conversation start, infers state from your message, and loads more context only when needed. Sleeping memory is woken only when the conversation touches that area.
 
-```
-On conversation start:
-  version.json → AGENTS.md → ORCHESTRATION.md
+```mermaid
+flowchart TB
+  subgraph Startup["On conversation start"]
+    V2[version.json]
+    A2[AGENTS.md]
+    O2[ORCHESTRATION.md]
+    V2 --> A2 --> O2
+  end
 
-Each turn:
-  User message → ORCHESTRATION routing → State (product_sense | execution_mode | meta_reflection | conversation) → Load Layer 2 by state
+  subgraph Turn["Each turn"]
+    U[User message]
+    R[ORCHESTRATION routing]
+    S[State: product_sense / execution_mode / meta_reflection / conversation]
+    L[Load Layer 2 by state]
+    U --> R --> S --> L
+  end
 
-Sleeping memory (wake on trigger: user mentions company, initiative, or research):
-  MEMORY.md → 01-Company-Context, 03-Research-Artifacts, 04-Initiatives, .cursor/rules, .cursor/skills
+  subgraph Sleep["Sleeping memory (wake on trigger)"]
+    M[MEMORY.md]
+    C1[01-Company-Context]
+    C3[03-Research-Artifacts]
+    C4[04-Initiatives]
+    Rrules[.cursor/rules]
+    Sskills[.cursor/skills]
+    M --> C1
+    M --> C3
+    M --> C4
+    M --> Rrules
+    M --> Sskills
+  end
+
+  Startup --> Turn
+  R -.->|"User mentions company / initiative / research"| M
 ```
 
 **In words:**
@@ -116,20 +159,24 @@ Inside `02-Methods-and-Tools/` you work in this order: **think** (Foundations) �
 
 The assistant operates in four **modes**: **product_sense**, **execution_mode**, **meta_reflection**, and **conversation**. The template-finder path is an **entry path** into execution_mode (when the user asks to write/draft/fill a specific doc), not a separate mode.
 
-```
-                    product or think-through topic
-  conversation ──────────────────────────────────────► product_sense
-       │                                                      │
-       │ write draft fill specific doc                         │ braindump sufficient
-       ▼                                                      ▼
-  template-finder path ──preflight + template──► execution_mode
-                                                       │
-                                                       │ substantial decision done
-                                                       ▼
-                                                meta_reflection
-                                                       │
-                                                       │ suggest 00-Meta log or rule update
-                                                       └──────────────────────────────────► conversation
+```mermaid
+flowchart LR
+  Conversation[conversation]
+  ProductSense[product_sense]
+  TemplatePath[template-finder path]
+  Execution[execution_mode]
+  Meta[meta_reflection]
+
+  Conversation -->|"product or think-through topic"| ProductSense
+  Conversation -->|"write / draft / fill specific doc"| TemplatePath
+
+  ProductSense -->|"braindump sufficient"| Execution
+  ProductSense -->|"more prompts"| ProductSense
+
+  TemplatePath -->|"preflight + template"| Execution
+
+  Execution -->|"substantial decision done"| Meta
+  Meta -->|"suggest 00-Meta log or rule update"| Conversation
 ```
 
 - **conversation** (default): General questions, navigation, non-product topics. When the user message matches product or doc-request triggers, re-route using the decision tree in [ORCHESTRATION.md](ORCHESTRATION.md).
@@ -148,14 +195,25 @@ Evals are **guidance-based** (no scripts). Two levels: (1) **Level 1** = artifac
 
 **How evals are used (visual):**
 
-```
-Level 1 (Artifact quality):     Level 2 (Agent behavior):
-  User creates artifact    Agent      You run Level 2 review
-         → scans for red flags  (eval-     → 1-agent-behavior-guide.md
-         → Quick Quality Checks   orchestration)   → match chat to type → scenarios.json
-         → optional: 3-*-evaluation.md
+```mermaid
+flowchart TB
+  subgraph L1["Level 1: Artifact quality"]
+    Create[User creates artifact]
+    Scan[Agent scans for red flags]
+    QC[Quick Quality Checks in 1-*-framework.md]
+    Eval3[Optional: 3-*-evaluation.md]
+    Create --> Scan --> QC --> Eval3
+  end
 
-  Agent suggests checklist in meta_reflection → Level 2
+  subgraph L2["Level 2: Agent behavior"]
+    Review[You run Level 2 review]
+    Guide[1-agent-behavior-guide.md]
+    Scenarios[agent-behavior-scenarios.json]
+    Review --> Guide -->|"Match chat to type"| Scenarios
+  end
+
+  Orchestrator[Agent per evaluation-orchestration.mdc] --> L1
+  Meta2[Agent suggests checklist in meta_reflection] --> L2
 ```
 
 - **Level 1 during creation:** The agent uses Quick Quality Checks automatically per `.cursor/rules/evaluation-orchestration.mdc` when you work on frameworks with evaluation support (PRD, Opportunity Assessment, North Star, One-Pager, OKR, Roadmap).
@@ -181,13 +239,29 @@ The repo has a few main entry points. Depending on what you're doing, the agent 
 | **Run evals** (artifact quality or agent behavior) | [.cursor/evals/README.md](.cursor/evals/README.md) — Level 1 (methods) or Level 2 (agent behavior) |
 | **Set up for the first time** | [01-Company-Context/SETUP.md](01-Company-Context/SETUP.md) — company context, agent config, optional 00-Meta setup |
 
-```
-You ──Think through a decision──► Product thinking ──► 02-Methods-and-Tools
-  │                                    └──After substantial work──► 00-Meta
-  ├──Write / draft a doc──► Template finder ──► 02-Methods-and-Tools
-  └──Review agent or artifacts──► Evals ──Level 1──► Methods  ──Level 2──► Evals
+```mermaid
+flowchart LR
+  You[You]
+  ProductThink[Product thinking]
+  TemplateFind[Template finder]
+  EvalsNode[Evals]
+  Methods[02-Methods-and-Tools]
+  Meta[00-Meta]
+  Company[01-Company-Context]
+  Initiatives[04-Initiatives]
 
-  Methods ──► 01-Company-Context, 04-Initiatives
+  You -->|"Think through a decision"| ProductThink
+  You -->|"Write / draft a doc"| TemplateFind
+  You -->|"Review agent or artifacts"| EvalsNode
+
+  ProductThink --> Methods
+  ProductThink -->|"After substantial work"| Meta
+  TemplateFind --> Methods
+  EvalsNode -->|"Level 1 index"| Methods
+  EvalsNode -->|"Level 2 guide"| EvalsNode
+
+  Methods --> Company
+  Methods --> Initiatives
 ```
 
 | Entry point | Trigger | Where it leads |
@@ -225,13 +299,33 @@ The agent needs to load different files at different times to stay within contex
 
 **Visual (what gets loaded when):**
 
-```
-Layer 1 (Always)          Layer 2 (By mode)                    Layer 3 (When using)
-AGENTS.md                 product_sense:                      2-*-template.md
-ORCHESTRATION.md    ──►    0-start-here, prompts, eval-functions   ──►  3-*-evaluation.md
-version.json               execution_mode: template-finder or framework guide
+```mermaid
+flowchart LR
+  subgraph L1core["Layer 1 - Always"]
+    L1A[AGENTS.md]
+    L1O[ORCHESTRATION.md]
+    L1V[version.json]
+  end
 
-Trigger (company, initiative, research) ──► MEMORY.md ──► 01-Company-Context, 03-Research-Artifacts, 04-Initiatives, .cursor rules/skills
+  subgraph L2on["Layer 2 - By mode"]
+    L2P[product_sense: 0-start-here, prompts, eval-functions]
+    L2E[execution_mode: template-finder or framework guide]
+  end
+
+  subgraph L3ref["Layer 3 - When using"]
+    L3T[2-*-template.md]
+    L3Ev[3-*-evaluation.md]
+  end
+
+  subgraph Wake["Wake via MEMORY.md"]
+    W1[01-Company-Context]
+    W2[03-Research-Artifacts]
+    W3[04-Initiatives]
+    W4[.cursor rules/skills]
+  end
+
+  L1core --> L2on --> L3ref
+  L1core -.->|"Trigger: company / initiative / research"| Wake
 ```
 
 *The "wake" trigger comes from the user message (e.g. they mention strategy or an initiative); the agent then consults MEMORY.md and loads the relevant paths.*
