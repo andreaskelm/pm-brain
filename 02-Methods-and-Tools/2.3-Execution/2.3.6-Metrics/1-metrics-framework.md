@@ -1,13 +1,5 @@
 # Product Metrics Framework
 
-## Overview
-
-This framework helps product teams distinguish between meaningful metrics and misleading ones, ensuring you measure what actually drives your product and business forward. Metrics are NOT status symbols—they're strategic tools for decision-making.
-
-## Step 0: Braindump & Think First (Critical!)
-
-**Use prompts from:** [2-product-sense-prompts.md](../../../../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md) → [Generic Step 0 (any framework)](../../../../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md#generic-step-0-any-framework). Quick start: What outcomes? What metrics feel meaningful? What assumptions about what to measure? What biases might affect your metric choices? **See prompts file for full list.**
-
 ## For Agents: When to Suggest This Framework
 
 **Trigger conditions:**
@@ -40,6 +32,16 @@ This framework helps product teams distinguish between meaningful metrics and mi
 - **When to use North Star:** Need single strategic alignment metric, team alignment around one number
 
 **Cross-reference:** Metrics often feed into OKRs (metrics → key results) and PRDs (metrics → success criteria). If user has defined metrics, they may be ready for OKRs or PRD.
+
+---
+
+## Overview
+
+This framework helps product teams distinguish between meaningful metrics and misleading ones, ensuring you measure what actually drives your product and business forward. Metrics are NOT status symbols—they're strategic tools for decision-making.
+
+## Step 0: Braindump & Think First (Critical!)
+
+**Use prompts from:** [2-product-sense-prompts.md](../../../../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md) → [Generic Step 0 (any framework)](../../../../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md#generic-step-0-any-framework). Quick start: What outcomes? What metrics feel meaningful? What assumptions about what to measure? What biases might affect your metric choices? **See prompts file for full list.**
 
 ## Core Philosophy
 

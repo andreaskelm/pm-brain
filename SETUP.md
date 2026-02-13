@@ -290,50 +290,49 @@ Create your first initiative folder to see how the system works:
 
 ---
 
-## 🤖 Step 7: Using with AI Tools
+## 🤖 Step 7: Platform Setup
 
-### Option A: Cursor (Recommended for Technical Users)
+PM Brain works on any AI platform. The core knowledge (frameworks, templates, orchestration) is platform-agnostic. Each platform just needs a different bootstrap method.
 
-If you're using **Cursor**:
+### Cursor (auto-loads)
 
-1. **Open the repository** in Cursor
-2. **The AI already knows** the repo (via root `AGENTS.md`). For **product/stakeholder/org thinking**, it will start from the entry point [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md): braindump first, then suggest a framework (Strategy, Discovery, Execution, Communication).
-3. **Use slash commands** for common workflows (see `.cursor/commands/`):
-   - `/start` - Launch a new initiative end-to-end
-   - `/review` - Review current doc or selection for PM Brain alignment
-   - `/day` - Plan your day with PM rituals
-   - `/week` - Plan your week with strategic focus
-   - `/focus` - Get help when you're stuck or need focus
-   - `/unstuck` - Get unstuck from blockers
-   - `/navigate` - Find the right framework for your situation
-   - `/bias` - Check for cognitive biases in your thinking
-4. **To start a product-thinking chat:** Paste the simple prompt from the top of `0-start-here-product-thinking.md` (e.g. "I want to think through something about my product / stakeholder / org…"). The AI will ask hard questions and braindump with you before suggesting frameworks.
+1. **Open the repository** in Cursor — rules, skills, and commands load automatically from `.cursor/`.
+2. The AI already knows the repo via `AGENTS.md`. For product thinking, it starts from [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md): braindump first, then frameworks.
+3. **Slash commands** available (see `.cursor/commands/`): `/start`, `/braindump`, `/framework`, `/day`, `/week`, `/focus`, `/unstuck`, `/navigate`, `/bias`, `/evaluate`, `/meta`.
 
 **Use PM Brain in any project (Cursor only):**
 ```bash
 npx skills add andreaskelm/pm-brain
 ```
-Installs the workflow skill from [skills.sh](https://skills.sh/); use it in any repo where you do PM work.
 
-### Option B: ChatGPT, Claude, Gemini (Copy-Paste Method)
+### Claude Code (reads CLAUDE.md)
 
-1. **Browse** to the framework you need
-2. **Copy** the README + framework + template files
-3. **Paste** into your AI chat with a prompt like:
-   ```
-   Here's the PRD framework I use. First, help me braindump my thoughts 
-   on [feature]. Then help me fill out the template.
-   ```
+1. Open the repo in Claude Code — it reads [CLAUDE.md](CLAUDE.md) automatically.
+2. Full file system access. The agent reads `AGENTS.md`, `ORCHESTRATION.md`, and `MEMORY.md` to know what to do.
+3. Use `/compact` when context grows heavy. Use the checkpoint protocol (see `ORCHESTRATION.md` → Context Health) for long sessions.
 
-### Option C: Upload to AI Projects
+### Claude.ai Projects
 
-Many AI tools support "Projects" where you can upload files:
+1. Create a Project and upload these files to Project Knowledge: `AGENTS.md`, `ORCHESTRATION.md`, `MEMORY.md`, `PRODUCT-SENSE-RULES.md`.
+2. Upload `.cursor/rules/voice.mdc` content for communication style (recommended — this is the persona's tone and voice).
+3. Reference framework files by asking the agent to work from them (paste or describe).
 
-- **ChatGPT:** Create a GPT and upload key files
-- **Claude:** Use Claude Projects feature
-- **GitHub Copilot:** Point it at this repository
+**For persistent coaching:** Use the [Product Coach setup template](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/templates/6-product-coach-setup.md) — copy it into a Claude Project for the same braindump-first coaching approach.
 
-**For persistent product coaching in ChatGPT/Claude:** If you want consistent product coaching across multiple sessions (same persona and workflow as Cursor's product_sense state), use the [Product Coach setup template](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/templates/6-product-coach-setup.md). Copy it into a ChatGPT or Claude Project to get the same braindump-first coaching approach.
+### ChatGPT / Gemini / Other
+
+1. Create a GPT or Project and upload `AGENTS.md` + `PRODUCT-SENSE-RULES.md` as system context.
+2. Browse to the framework you need, copy the README + framework + template files.
+3. Paste into your chat with: "Here's the PRD framework I use. First, help me braindump my thoughts on [feature]. Then help me fill out the template."
+
+### GitHub Copilot / VS Code
+
+1. Point Copilot at this repository. It reads `AGENTS.md` from root.
+2. Reference framework files via `@workspace` mentions.
+
+### Universal (any platform)
+
+Copy `AGENTS.md` content as your system prompt. Reference `ORCHESTRATION.md` for workflow. Paste framework content when needed. The checkpoint protocol (saving state to `checkpoints/` and resuming in a new conversation) works everywhere — it's just text files.
 
 ---
 

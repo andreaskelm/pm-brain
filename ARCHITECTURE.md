@@ -292,11 +292,11 @@ flowchart LR
 
 **Deep links:** Only use deep links (e.g., `../../2.0-Foundations/2.0.3-Self-Reflection/README.md`) when specifically referencing a particular framework in context, or in "Related frameworks" sections. Prefer domain indices for general navigation.
 
-**Agent guidance placement:** "For Agents" sections (agent-facing instructions on when/how to suggest frameworks) follow this convention:
-- **If a framework folder has `1-*-framework.md`:** Place "For Agents" section in `1-*-framework.md` (after the overview). The folder `README.md` serves as human-facing index/navigation only.
-- **If a framework folder does NOT have `1-*-framework.md`:** Place "For Agents" section in the folder `README.md` (which serves as both human guide and agent guidance).
+**Agent guidance placement:** "For Agents" sections (agent-facing instructions on when/how to suggest frameworks) must appear **at the very top** of the document so the agent sees them first (avoids lost-in-middle and ensures consistent behavior). Convention:
+- **If a framework folder has `1-*-framework.md`:** Place "For Agents" section in `1-*-framework.md` at the top (immediately after the main title and optional one-line description). The folder `README.md` serves as human-facing index/navigation only.
+- **If a framework folder does NOT have `1-*-framework.md`:** Place "For Agents" section in the folder `README.md` at the top (after the main title).
 
-This keeps agent-facing instructions co-located with the detailed framework methodology, while keeping README files focused on navigation and overview.
+This keeps agent-facing instructions visible first when the file is loaded; human-facing content (overview, methodology, templates) follows below.
 
 **When adding new frameworks:** Follow these conventions to maintain consistent navigation patterns.
 
@@ -361,7 +361,7 @@ flowchart LR
 **Files loaded in product_sense:**
 - Entry point: [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md) (persona section + workflow, ~100 lines)
 - Prompts file: [2-product-sense-prompts.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md) (relevant situation section, ~50-100 lines)
-- Eval functions: [.cursor/evals/eval-functions.md](.cursor/evals/eval-functions.md) (checkpoint definitions, ~50 lines)
+- Eval functions: eval-functions.md (checkpoint definitions, ~50 lines; see [MEMORY.md](MEMORY.md) → Evals for path)
 
 **Files loaded in execution_mode:**
 - Framework guide: `1-*-framework.md` for the framework being used (~100-200 lines)
@@ -411,6 +411,10 @@ flowchart LR
 **For framework authors:** Keep framework guides focused. Put detailed examples in separate files. Keep "For Agents" sections concise.
 
 **For system maintainers:** Monitor context usage. If Layer 1 grows beyond ~100 lines, consider splitting into core vs. extended instructions.
+
+### Context Health (Preventing Rot)
+
+Long conversations degrade quality as context fills up. The agent uses heuristic triggers (heavy context loaded, state transitions, ~25-30 turn ceiling) to offer **checkpoints** — saving session state to `checkpoints/session-*.md` so the user can continue in a fresh conversation. Re-anchoring happens silently at state transitions. Full protocol: [ORCHESTRATION.md](ORCHESTRATION.md) → Context Health.
 
 ---
 

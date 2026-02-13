@@ -1,29 +1,5 @@
 # One-Pager Framework
 
-## Overview
-
-This framework helps product teams create compelling one-page documents that drive alignment and action. One-pagers are NOT bureaucracy—they're strategic communication tools that enable quick decision-making and clear communication.
-
-## Core Philosophy
-
-### Good Communication is NOT Optional
-
-Effective one-pagers should:
-
-- **Drive decisions over discussions** - Move things forward, not in circles
-- **Respect time over tradition** - Every word must add value
-- **Enable clarity over comprehension** - Make understanding effortless
-- **Foster action over information** - Create clear next steps
-
-### Understanding One-Pagers
-
-**ONE-PAGERS (Asynchronous Communication)**
-
-- Standalone documents that inform and persuade
-- Enable pre-reading and independent review
-- Create lasting reference materials
-- Time-efficient and distributable
-
 ## For Agents: When to Suggest This Framework
 
 **Trigger conditions:**
@@ -47,6 +23,32 @@ Effective one-pagers should:
 - User needs comprehensive strategy doc (use Strategy frameworks)
 - User needs meeting notes or agenda (use Meeting Agendas framework)
 - User needs ongoing communication (use Newsletter framework)
+
+---
+
+## Overview
+
+This framework helps product teams create compelling one-page documents that drive alignment and action. One-pagers are NOT bureaucracy—they're strategic communication tools that enable quick decision-making and clear communication.
+
+## Core Philosophy
+
+### Good Communication is NOT Optional
+
+Effective one-pagers should:
+
+- **Drive decisions over discussions** - Move things forward, not in circles
+- **Respect time over tradition** - Every word must add value
+- **Enable clarity over comprehension** - Make understanding effortless
+- **Foster action over information** - Create clear next steps
+
+### Understanding One-Pagers
+
+**ONE-PAGERS (Asynchronous Communication)**
+
+- Standalone documents that inform and persuade
+- Enable pre-reading and independent review
+- Create lasting reference materials
+- Time-efficient and distributable
 
 ## Framework Structure
 

@@ -1,18 +1,5 @@
 # North Star Framework
 
-## Overview
-
-This framework helps product teams align around a single metric that captures customer value and drives sustainable growth. The North Star Framework is NOT a project plan or feature list—it's a strategic alignment tool.
-
-## Step 0: Braindump & Product Sense (Do this first!)
-
-**Use prompts from:** [2-product-sense-prompts.md](../../../../../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md) → [Before a Product Strategy Session](../../../../../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md#before-a-product-strategy-session). Quick start: What outcomes are you trying to achieve? What metric feels like it captures real value? What assumptions? What biases might affect your metric choice? **See prompts file for full list.**
-
-**Product sense exercise:**
-- If you had to pick ONE metric that represents customer value, what would it be? Why?
-- What would make you say "this North Star is obviously wrong"?
-- What would make you say "this North Star is obviously right"?
-
 ## For Agents: When to Suggest This Framework
 
 **Trigger conditions:**
@@ -36,6 +23,21 @@ This framework helps product teams align around a single metric that captures cu
 - User is exploring opportunities (use Opportunity Assessment)
 - User needs multiple metrics (use Metrics framework)
 - Very early-stage product without clear direction (use Discovery frameworks)
+
+---
+
+## Overview
+
+This framework helps product teams align around a single metric that captures customer value and drives sustainable growth. The North Star Framework is NOT a project plan or feature list—it's a strategic alignment tool.
+
+## Step 0: Braindump & Product Sense (Do this first!)
+
+**Use prompts from:** [2-product-sense-prompts.md](../../../../../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md) → [Before a Product Strategy Session](../../../../../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md#before-a-product-strategy-session). Quick start: What outcomes are you trying to achieve? What metric feels like it captures real value? What assumptions? What biases might affect your metric choice? **See prompts file for full list.**
+
+**Product sense exercise:**
+- If you had to pick ONE metric that represents customer value, what would it be? Why?
+- What would make you say "this North Star is obviously wrong"?
+- What would make you say "this North Star is obviously right"?
 
 ## Core Philosophy
 

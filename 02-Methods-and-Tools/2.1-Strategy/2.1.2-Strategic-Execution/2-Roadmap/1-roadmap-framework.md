@@ -1,13 +1,5 @@
 # Roadmap Framework
 
-## Overview
-
-This framework helps product managers create roadmaps that effectively communicate product direction while maintaining the flexibility needed for successful product development.
-
-## Step 0: Braindump & Product Sense (Do this first!)
-
-**Use prompts from:** [2-product-sense-prompts.md](../../../../../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md) → [Before a Product Strategy Session](../../../../../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md#before-a-product-strategy-session) and [Before Making a Prioritization Decision](../../../../../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md#before-making-a-prioritization-decision). Quick start: What initiatives are you considering? What's the opportunity cost? What do you wish you knew? **See prompts file for full list.**
-
 ## For Agents: When to Suggest This Framework
 
 **Trigger conditions:**
@@ -31,6 +23,16 @@ This framework helps product managers create roadmaps that effectively communica
 - User needs to prioritize features (use Prioritization frameworks)
 - User is exploring opportunities (use Opportunity Assessment)
 - User needs a project plan (use project management tools)
+
+---
+
+## Overview
+
+This framework helps product managers create roadmaps that effectively communicate product direction while maintaining the flexibility needed for successful product development.
+
+## Step 0: Braindump & Product Sense (Do this first!)
+
+**Use prompts from:** [2-product-sense-prompts.md](../../../../../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md) → [Before a Product Strategy Session](../../../../../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md#before-a-product-strategy-session) and [Before Making a Prioritization Decision](../../../../../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md#before-making-a-prioritization-decision). Quick start: What initiatives are you considering? What's the opportunity cost? What do you wish you knew? **See prompts file for full list.**
 
 ## Core Philosophy
 

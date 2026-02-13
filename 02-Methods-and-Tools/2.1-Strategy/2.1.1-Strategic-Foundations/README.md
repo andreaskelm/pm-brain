@@ -1,21 +1,5 @@
 # Strategic Foundations
 
-Use these guides to define long-term direction before you execute. The three core frameworks are complementary:
-- **Strategy Blocks** — the process for creating strategy (Chandra/Lenny)
-- **Playing to Win** — the strategic choice framework (Lafley/Martin)
-- **Good Strategy/Bad Strategy** — evaluation criteria (Rumelt)
-
-**When to use Strategic Foundations:**
-- You need to craft or refresh product strategy
-- Debates are circular without clear direction
-- Disconnect between vision and roadmap decisions
-- You want a shared, defensible set of strategic choices
-
-**When strategy might not be needed:**
-- Very small teams with clear, shared direction
-- One-off projects with fixed scope
-- Technical infrastructure work with no strategic choices
-
 ## For Agents: When to Suggest Strategic Foundations
 
 **Trigger conditions:**
@@ -39,6 +23,24 @@ Use these guides to define long-term direction before you execute. The three cor
 - User is evaluating a specific opportunity (use Opportunity Assessment)
 - User needs to prioritize features (use Prioritization frameworks)
 - User is doing tactical execution (use PRD or execution frameworks)
+
+---
+
+Use these guides to define long-term direction before you execute. The three core frameworks are complementary:
+- **Strategy Blocks** — the process for creating strategy (Chandra/Lenny)
+- **Playing to Win** — the strategic choice framework (Lafley/Martin)
+- **Good Strategy/Bad Strategy** — evaluation criteria (Rumelt)
+
+**When to use Strategic Foundations:**
+- You need to craft or refresh product strategy
+- Debates are circular without clear direction
+- Disconnect between vision and roadmap decisions
+- You want a shared, defensible set of strategic choices
+
+**When strategy might not be needed:**
+- Very small teams with clear, shared direction
+- One-off projects with fixed scope
+- Technical infrastructure work with no strategic choices
 
 ## Files
 - `1-Strategy-Blocks/` — Full guide + quickstart + templates

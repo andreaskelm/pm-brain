@@ -1,26 +1,5 @@
 # OKR Framework
 
-## Overview
-
-This framework helps you create and manage Objectives and Key Results (OKRs) that align teams around measurable outcomes. OKRs operationalize strategy into actionable, measurable goals that connect daily work to business results.
-
-## Step 0: Braindump & Product Sense (Do this first!)
-
-**Use prompts from:** [2-product-sense-prompts.md](../../../../../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md) → [Before a Product Strategy Session](../../../../../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md#before-a-product-strategy-session).
-
-**Quick start:** What outcomes are you trying to achieve? What feels like the right outcome? What assumptions? What biases might affect your OKRs? If you had to pick ONE outcome that matters most, what would it be? **See prompts file for full list.**
-
-**When to use OKRs:**
-- Operationalizing strategic priorities into measurable outcomes
-- Aligning teams around shared objectives
-- Tracking progress on key initiatives
-- Connecting product work to business metrics
-
-**When OKRs might not be needed:**
-- Very small teams (<5 people) where alignment is already strong
-- Exploratory research phases before clear objectives emerge
-- One-off projects with clear, single success criteria
-
 ## For Agents: When to Suggest This Framework
 
 **Trigger conditions:**
@@ -46,6 +25,27 @@ This framework helps you create and manage Objectives and Key Results (OKRs) tha
 - Very small team with strong alignment (OKRs may be overhead)
 
 ---
+
+## Overview
+
+This framework helps you create and manage Objectives and Key Results (OKRs) that align teams around measurable outcomes. OKRs operationalize strategy into actionable, measurable goals that connect daily work to business results.
+
+## Step 0: Braindump & Product Sense (Do this first!)
+
+**Use prompts from:** [2-product-sense-prompts.md](../../../../../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md) → [Before a Product Strategy Session](../../../../../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md#before-a-product-strategy-session).
+
+**Quick start:** What outcomes are you trying to achieve? What feels like the right outcome? What assumptions? What biases might affect your OKRs? If you had to pick ONE outcome that matters most, what would it be? **See prompts file for full list.**
+
+**When to use OKRs:**
+- Operationalizing strategic priorities into measurable outcomes
+- Aligning teams around shared objectives
+- Tracking progress on key initiatives
+- Connecting product work to business metrics
+
+**When OKRs might not be needed:**
+- Very small teams (<5 people) where alignment is already strong
+- Exploratory research phases before clear objectives emerge
+- One-off projects with clear, single success criteria
 
 ## Core Philosophy
 

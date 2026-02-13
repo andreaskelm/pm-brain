@@ -1,5 +1,40 @@
 # Jobs To Be Done Framework
 
+## For Agents: When to Suggest This Framework
+
+**Trigger conditions:**
+- User mentions: "jobs to be done", "JTBD", "what job is the user hiring this for", "customer jobs", "user needs", "why do customers choose this"
+- User is in: product_sense (during discovery braindump) or execution_mode (when user asks to understand users)
+- Prerequisites: User is exploring user needs or trying to understand why customers choose their product
+- User has: Some initial thinking about users/customers (may be incomplete or feature-focused)
+
+**How to introduce:**
+- "You're trying to understand why customers choose your product. Let's use Jobs-To-Be-Done to reframe this from features to the progress customers are trying to make."
+- "Based on your thinking about [users/features], let's structure your understanding using JTBD to focus on the job, not the solution."
+
+**Common mistakes to avoid:**
+- Don't suggest JTBD if user already has validated jobs (suggest Opportunity Assessment or PRD instead)
+- Don't suggest JTBD if user is asking "how do I build X" without understanding "why" (help them understand the job first)
+- Don't skip braindump - JTBD organizes understanding, it doesn't create empathy
+- Don't suggest JTBD if user needs demographic personas (suggest Personas framework instead - different lens)
+- Don't create feature-focused job statements (focus on progress, not solutions)
+
+**When NOT to use JTBD:**
+- User already understands the job and needs to validate solutions (use Opportunity Assessment or Idea Validation)
+- User needs demographic/psychographic personas (use Personas framework - HEART or demographic approach)
+- User is ready to write requirements (use PRD - JTBD should inform PRD, not replace it)
+- User is doing technical infrastructure work (JTBD may not apply)
+
+**Distinction from Personas:**
+- **JTBD:** Focuses on the job/progress customers seek (outcome-driven, situation-based)
+- **Personas:** Focuses on who the user is (demographic/psychographic, HEART framework)
+- **When to use JTBD:** Understanding why customers choose, reframing features as jobs, outcome-driven design
+- **When to use Personas:** Need demographic segments, building empathy with specific user types, stakeholder alignment
+
+**Cross-reference:** JTBD often feeds into Opportunity Assessment (jobs → opportunities) and PRD (jobs → requirements). If user has completed JTBD, suggest Opportunity Assessment next.
+
+---
+
 ## Introduction
 
 Use this framework to understand the underlying jobs customers hire your product to do, focusing on progress rather than demographics. JTBD helps you understand why customers choose your product and what progress they're trying to make.
@@ -40,41 +75,6 @@ Specifically, the "Before Writing a PRD" section (User Understanding):
 ### 3. Then Use This Framework
 
 After your braindump, use JTBD to structure your understanding.
-
----
-
-## For Agents: When to Suggest This Framework
-
-**Trigger conditions:**
-- User mentions: "jobs to be done", "JTBD", "what job is the user hiring this for", "customer jobs", "user needs", "why do customers choose this"
-- User is in: product_sense (during discovery braindump) or execution_mode (when user asks to understand users)
-- Prerequisites: User is exploring user needs or trying to understand why customers choose their product
-- User has: Some initial thinking about users/customers (may be incomplete or feature-focused)
-
-**How to introduce:**
-- "You're trying to understand why customers choose your product. Let's use Jobs-To-Be-Done to reframe this from features to the progress customers are trying to make."
-- "Based on your thinking about [users/features], let's structure your understanding using JTBD to focus on the job, not the solution."
-
-**Common mistakes to avoid:**
-- Don't suggest JTBD if user already has validated jobs (suggest Opportunity Assessment or PRD instead)
-- Don't suggest JTBD if user is asking "how do I build X" without understanding "why" (help them understand the job first)
-- Don't skip braindump - JTBD organizes understanding, it doesn't create empathy
-- Don't suggest JTBD if user needs demographic personas (suggest Personas framework instead - different lens)
-- Don't create feature-focused job statements (focus on progress, not solutions)
-
-**When NOT to use JTBD:**
-- User already understands the job and needs to validate solutions (use Opportunity Assessment or Idea Validation)
-- User needs demographic/psychographic personas (use Personas framework - HEART or demographic approach)
-- User is ready to write requirements (use PRD - JTBD should inform PRD, not replace it)
-- User is doing technical infrastructure work (JTBD may not apply)
-
-**Distinction from Personas:**
-- **JTBD:** Focuses on the job/progress customers seek (outcome-driven, situation-based)
-- **Personas:** Focuses on who the user is (demographic/psychographic, HEART framework)
-- **When to use JTBD:** Understanding why customers choose, reframing features as jobs, outcome-driven design
-- **When to use Personas:** Need demographic segments, building empathy with specific user types, stakeholder alignment
-
-**Cross-reference:** JTBD often feeds into Opportunity Assessment (jobs → opportunities) and PRD (jobs → requirements). If user has completed JTBD, suggest Opportunity Assessment next.
 
 ## How to Use This Framework
 

@@ -2,6 +2,30 @@
 
 > **Before using this framework:** Braindump first! Dump your thoughts, concerns, and ideas about what to build. Use your product sense. Challenge your assumptions. Then use this framework to structure your thinking.
 
+## For Agents: When to Suggest This Framework
+
+**Trigger conditions:**
+- User mentions: "write a PRD", "draft requirements", "product spec", "requirements doc"
+- User is in: `execution_mode` (after braindump sufficient checklist is met)
+- Prerequisites: User has completed discovery/validation (Opportunity Assessment, JTBD, or user research)
+- User has: Validated opportunity, clear success metrics, stakeholder buy-in
+
+**How to introduce:**
+- "Based on your thinking about [problem/opportunity], let's structure this using the PRD framework. This will help translate your validated opportunity into actionable specifications."
+- "You've done good discovery work. Now let's capture the requirements in a PRD so the team knows what to build and why."
+
+**Common mistakes to avoid:**
+- Don't suggest PRD if user is still in discovery phase (suggest Opportunity Assessment instead)
+- Don't suggest PRD if user hasn't validated the opportunity (suggest discovery frameworks first)
+- Don't skip the braindump - user must have done thinking before structuring
+- Don't suggest PRD for small experiments (<1 week) - suggest lightweight spec instead
+
+**When NOT to use this framework:**
+- User is exploring problems (use Opportunity Assessment or Discovery frameworks)
+- User needs quick prototype spec (use lightweight spec)
+- User is doing technical infrastructure work (use tech design doc)
+
+---
 
 ## Purpose
 The PRD (Product Requirements Document) bridges discovery and execution. It translates validated opportunities into actionable specifications that align cross-functional teams around what to build, why, and how success will be measured.
@@ -27,29 +51,6 @@ The PRD (Product Requirements Document) bridges discovery and execution. It tran
 - Discovery-phase work (use opportunity docs instead)
 - Technical spikes (use lightweight spec)
 - Infrastructure/operations work (use tech design doc)
-
-## For Agents: When to Suggest This Framework
-
-**Trigger conditions:**
-- User mentions: "write a PRD", "draft requirements", "product spec", "requirements doc"
-- User is in: `execution_mode` (after braindump sufficient checklist is met)
-- Prerequisites: User has completed discovery/validation (Opportunity Assessment, JTBD, or user research)
-- User has: Validated opportunity, clear success metrics, stakeholder buy-in
-
-**How to introduce:**
-- "Based on your thinking about [problem/opportunity], let's structure this using the PRD framework. This will help translate your validated opportunity into actionable specifications."
-- "You've done good discovery work. Now let's capture the requirements in a PRD so the team knows what to build and why."
-
-**Common mistakes to avoid:**
-- Don't suggest PRD if user is still in discovery phase (suggest Opportunity Assessment instead)
-- Don't suggest PRD if user hasn't validated the opportunity (suggest discovery frameworks first)
-- Don't skip the braindump - user must have done thinking before structuring
-- Don't suggest PRD for small experiments (<1 week) - suggest lightweight spec instead
-
-**When NOT to use this framework:**
-- User is exploring problems (use Opportunity Assessment or Discovery frameworks)
-- User needs quick prototype spec (use lightweight spec)
-- User is doing technical infrastructure work (use tech design doc)
 
 ## Inputs Required
 

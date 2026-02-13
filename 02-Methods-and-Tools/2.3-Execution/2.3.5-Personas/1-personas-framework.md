@@ -1,18 +1,5 @@
 # Personas Framework
 
-## Overview
-
-This framework provides two approaches for creating personas: HEART (human-centered) and JOBS (outcome-driven). Personas help teams build empathy and make user-centered decisions.
-
-## Step 0: Braindump & Product Sense (Do this first!)
-
-**Use prompts from:** [2-product-sense-prompts.md](../../../../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md) → [Generic Step 0 (any framework)](../../../../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md#generic-step-0-any-framework) and [Before Writing a PRD](../../../../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md#before-writing-a-prd) (user understanding). Quick start: Who are your users? What segments matter most? What assumptions about users? What biases might affect your personas? **See prompts file for full list.**
-
-**Product sense exercise:**
-- If you had to pick ONE user type to focus on, who would it be? Why?
-- What would make you say "these personas are obviously wrong"?
-- What would make you say "these personas are obviously right"?
-
 ## For Agents: When to Suggest This Framework
 
 **Trigger conditions:**
@@ -50,7 +37,20 @@ This framework provides two approaches for creating personas: HEART (human-cente
 
 **Cross-reference:** Personas often feed into PRD (personas → requirements). If user has completed Personas, they may be ready for PRD or Opportunity Assessment.
 
------
+---
+
+## Overview
+
+This framework provides two approaches for creating personas: HEART (human-centered) and JOBS (outcome-driven). Personas help teams build empathy and make user-centered decisions.
+
+## Step 0: Braindump & Product Sense (Do this first!)
+
+**Use prompts from:** [2-product-sense-prompts.md](../../../../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md) → [Generic Step 0 (any framework)](../../../../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md#generic-step-0-any-framework) and [Before Writing a PRD](../../../../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md#before-writing-a-prd) (user understanding). Quick start: Who are your users? What segments matter most? What assumptions about users? What biases might affect your personas? **See prompts file for full list.**
+
+**Product sense exercise:**
+- If you had to pick ONE user type to focus on, who would it be? Why?
+- What would make you say "these personas are obviously wrong"?
+- What would make you say "these personas are obviously right"?
 
 ## HEART Framework
 

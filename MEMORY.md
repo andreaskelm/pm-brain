@@ -2,7 +2,9 @@
 
 **What this file is:** The **sleeping memory manifest**: it lists context that lives in the repo but is not in the active prompt until "woken"—loaded when the conversation touches that area. The agent uses this to decide what to load. Orchestration: [ORCHESTRATION.md](ORCHESTRATION.md) → Context Loading Strategy.
 
-**Concept:** Content in 01-Company-Context, 03-Research-Artifacts, 04-Initiatives, and .cursor (rules, skills) is **sleeping memory**. The agent wakes it by loading the right files when the user mentions company strategy, an initiative, research, or when personalization/behavior rules are relevant.
+**Concept:** Content in 01-Company-Context, 03-Research-Artifacts, 04-Initiatives, and platform-specific config (rules, skills, evals) is **sleeping memory**. The agent wakes it by loading the right files when the user mentions company strategy, an initiative, research, or when personalization/behavior rules are relevant.
+
+**Platform note:** Paths below assume the default repo layout. On **Cursor**, `.cursor/rules/` and `.cursor/skills/` are auto-loaded by the IDE. On **other platforms** (Claude Code, Claude.ai, Replit, etc.), load the referenced content manually when needed — see [SETUP.md](SETUP.md) → Platform Setup for how.
 
 ---
 
@@ -80,11 +82,27 @@ Store analysis/snapshots here (or in initiative research/); raw data external wi
 
 | File | Purpose |
 |------|---------|
+| voice.mdc | Communication style: tone, structure, endings, situational angles (on Cursor: always loaded automatically) |
 | evaluation-orchestration.mdc | When to run Quick Quality Checks and full evals during artifact creation |
 | template-finder.mdc | When user asks for a specific doc; route to 0-template-finder |
 | product-sense.mdc | Golden rule, braindump before structure for product topics |
 | thinking.mdc | High-level how the user wants AI to support thinking/work |
 | thinking.personal.mdc | Personal working style preferences (depth, pace, etc.) |
+
+---
+
+## Evals
+
+**When to wake:** Agent needs eval functions for transition checks, agent-behavior guide for Level 2 evals, or test cases for replay.
+
+| File | Purpose |
+|------|---------|
+| .cursor/evals/eval-functions.md | check_braindump_sufficient, check_questions_before_framework, match_scenario_type — used at state transitions |
+| .cursor/evals/1-agent-behavior-guide.md | Level 2 agent behavior review: dimensions, reflection checklist, "where to update" map |
+| .cursor/evals/2-checklist.md | When to run Level 1/2 evals, ongoing rhythm |
+| .cursor/evals/agent-behavior-scenarios.json | Reference scenarios for matching conversation types (agent does not read directly) |
+| .cursor/evals/test-generator.md | How to turn scenarios into test cases |
+| .cursor/evals/eval-results/ | Log storage for eval results and test cases |
 
 ---
 
@@ -107,6 +125,6 @@ Store analysis/snapshots here (or in initiative research/); raw data external wi
 - **Initiative** → 04-Initiatives/[initiative-name]/ (opportunity-assessment, prd, decisions, roadmap, summary).
 - **Research / evidence** → 03-Research-Artifacts or 04-Initiatives/[name]/research/.
 - **Personalization** → [01-Company-Context/CONTEXT.md](01-Company-Context/CONTEXT.md), [.cursor/rules/thinking.personal.mdc](.cursor/rules/thinking.personal.mdc).
-- **Evals / template finder / product sense** → See [ORCHESTRATION.md](ORCHESTRATION.md) and the rules/skills above.
+- **Evals / template finder / product sense** → See [ORCHESTRATION.md](ORCHESTRATION.md) and the rules/skills/evals sections above.
 
 Do not load everything at once. Wake only what the conversation needs.

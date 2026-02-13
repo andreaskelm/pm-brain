@@ -1,20 +1,5 @@
 # Continuous Discovery Habits Framework
 
-## Introduction
-
-Use these templates to conduct systematic customer discovery interviews and synthesize insights into actionable opportunities and solutions. This framework helps you move from raw customer conversations to validated product opportunities.
-
-**When to use this framework:**
-- Conducting customer interviews and user research
-- Synthesizing patterns from multiple interviews
-- Identifying product opportunities from research
-- Generating solution concepts based on discovered needs
-
-**When discovery might not be needed:**
-- Well-understood problems with existing solutions
-- Technical infrastructure work with no customer impact
-- Very early exploration before clear problem space exists
-
 ## For Agents: When to Suggest This Framework
 
 **Trigger conditions:**
@@ -47,6 +32,23 @@ Use these templates to conduct systematic customer discovery interviews and synt
 - **When to use Research Interviews:** Specific research questions, one-time validation, focused discovery project
 
 **Cross-reference:** Continuous Discovery Habits feeds into Opportunity Assessment (discovery → opportunities) and Problem-Solution Space (ongoing discovery → problem exploration). If user completes discovery, suggest Opportunity Assessment next.
+
+---
+
+## Introduction
+
+Use these templates to conduct systematic customer discovery interviews and synthesize insights into actionable opportunities and solutions. This framework helps you move from raw customer conversations to validated product opportunities.
+
+**When to use this framework:**
+- Conducting customer interviews and user research
+- Synthesizing patterns from multiple interviews
+- Identifying product opportunities from research
+- Generating solution concepts based on discovered needs
+
+**When discovery might not be needed:**
+- Well-understood problems with existing solutions
+- Technical infrastructure work with no customer impact
+- Very early exploration before clear problem space exists
 
 ## Files
 - `1-create-interview-snapshot.md` — Template for capturing individual interview insights

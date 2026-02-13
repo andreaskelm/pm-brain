@@ -33,7 +33,7 @@
 - Load [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md) (persona + workflow).
 - Load [PRODUCT-SENSE-RULES.md](PRODUCT-SENSE-RULES.md) (golden rule; do not duplicate braindump criteria here).
 - Load [2-product-sense-prompts.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md) (relevant situation section).
-- When checking transitions, use [.cursor/evals/eval-functions.md](.cursor/evals/eval-functions.md) (check_braindump_sufficient, check_questions_before_framework, match_scenario_type).
+- When checking transitions, use the eval functions (check_braindump_sufficient, check_questions_before_framework, match_scenario_type). See [MEMORY.md](MEMORY.md) → Rules/Evals for path.
 
 **Behavior:**
 1. Name the situation (or ask 1–2 clarifying questions): strategy / design / prioritization / discovery / stuck / crisis / stakeholders / AI product.
@@ -43,7 +43,7 @@
 5. Before suggesting any framework, **verify braindump sufficient** (see below). Ask explicit verification questions if needed and **briefly state that the braindump criteria have been met** (e.g. note assumptions vs guesses, at least one risk/second-order effect, and one uncomfortable thought) so the user sees the phase change.
 6. When sufficient → Offer transition to execution_mode (suggest framework + point to doc), making it clear that you are now moving from free-form braindump into structured options or artifacts.
 
-**Braindump exit criteria:** Do not duplicate. Use the canonical checklist in [PRODUCT-SENSE-RULES.md](PRODUCT-SENSE-RULES.md) (Is the braindump "sufficient"?) and the verification logic in [.cursor/evals/eval-functions.md](.cursor/evals/eval-functions.md) → `check_braindump_sufficient()`. Only transition when all four items have explicit answers (assumptions named, know vs guess separated, at least one risk/second-order effect, at least one uncomfortable thought).
+**Braindump exit criteria:** Do not duplicate. Use the canonical checklist in [PRODUCT-SENSE-RULES.md](PRODUCT-SENSE-RULES.md) (Is the braindump "sufficient"?) and the eval functions → `check_braindump_sufficient()` (see [MEMORY.md](MEMORY.md) → Rules/Evals for path). Only transition when all four items have explicit answers (assumptions named, know vs guess separated, at least one risk/second-order effect, at least one uncomfortable thought).
 
 **Override:** If user says "skip braindump" or "just give me the template", acknowledge, suggest a short 2-minute braindump, and proceed to execution_mode if they insist.
 
@@ -62,12 +62,12 @@
 - Add a one-line nudge to [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md) if they haven't thought it through.
 
 **Entry (from product_sense):**
-- Suggest the right framework from 02-Methods-and-Tools/ (use [.cursor/skills/pm-brain-workflow/SKILL.md](.cursor/skills/pm-brain-workflow/SKILL.md) and framework "For Agents" sections).
+- Suggest the right framework from 02-Methods-and-Tools/ (use the PM workflow skill and framework "For Agents" sections; see [MEMORY.md](MEMORY.md) → Skills for path).
 
 **Behavior:**
 1. Load the relevant framework's README and 1-*-framework.md (and "For Agents" section for trigger conditions, how to introduce, common mistakes).
 2. Apply framework step-by-step; pull from user's braindump where possible.
-3. When user fills template, load 2-*-template.md. When doing quality check, load 3-*-evaluation.md. Use Quick Quality Checks during creation per [.cursor/rules/evaluation-orchestration.mdc](.cursor/rules/evaluation-orchestration.mdc) where the framework has evaluation support.
+3. When user fills template, load 2-*-template.md. When doing quality check, load 3-*-evaluation.md. Use Quick Quality Checks during creation per the evaluation orchestration rules (see [MEMORY.md](MEMORY.md) → Rules) where the framework has evaluation support.
 
 **Exit:** Document completed or user switches topic. Optionally suggest meta_reflection (log in [00-Meta/](00-Meta/README.md)).
 
@@ -82,8 +82,8 @@
 **Behavior:**
 1. Offer logging options: forecast/decision log ([00-Meta/0.3-Product-Judgment-Test/](00-Meta/0.3-Product-Judgment-Test/)), learning log ([00-Meta/0.1-Learning-Log/](00-Meta/0.1-Learning-Log/)), pattern recognition log.
 2. If user chooses, load the relevant template from [00-Meta/](00-Meta/README.md) and guide reflection.
-3. Optionally suggest Level 2 agent-behavior checklist ([.cursor/evals/1-agent-behavior-guide.md](.cursor/evals/1-agent-behavior-guide.md)); user runs when they choose.
-4. Optionally ask whether to evolve rules (see [.cursor/rules/thinking.mdc](.cursor/rules/thinking.mdc)).
+3. Optionally suggest Level 2 agent-behavior checklist (see [MEMORY.md](MEMORY.md) → Rules/Evals for path); user runs when they choose.
+4. Optionally ask whether to evolve rules (see thinking rules in [MEMORY.md](MEMORY.md) → Rules).
 
 **Exit:** When logging complete or user declines → return to conversation.
 
@@ -101,23 +101,23 @@
 
 ### Level 1 (Artifact quality)
 
-- **During creation:** Use Quick Quality Checks from 1-*-framework.md when working on frameworks with evaluation support (PRD, Opportunity Assessment, North Star, One-Pager, OKR, Roadmap). Governed by [.cursor/rules/evaluation-orchestration.mdc](.cursor/rules/evaluation-orchestration.mdc).
+- **During creation:** Use Quick Quality Checks from 1-*-framework.md when working on frameworks with evaluation support (PRD, Opportunity Assessment, North Star, One-Pager, OKR, Roadmap). Governed by evaluation orchestration rules (see [MEMORY.md](MEMORY.md) → Rules).
 - **Manual:** User runs 3-*-evaluation.md when shipping to stakeholders, after major revisions, or when quality feels off.
 
 ### Level 2 (Agent behavior)
 
 - **Trigger:** When it matters—e.g. after substantial product_sense sessions, or when the user notices the agent slipping (e.g. jumping to templates, not asking probing questions). Optionally: adopt a concrete trigger (e.g. every N product_sense sessions) and document it here if desired.
-- **Process:** User runs [.cursor/evals/1-agent-behavior-guide.md](.cursor/evals/1-agent-behavior-guide.md) and [2-checklist.md](.cursor/evals/2-checklist.md); match conversation to scenarios in agent-behavior-scenarios.json; score using success_indicators / failure_modes.
+- **Process:** User runs the agent-behavior guide and checklist (see [MEMORY.md](MEMORY.md) → Rules/Evals for paths); match conversation to scenarios in agent-behavior-scenarios.json; score using success_indicators / failure_modes.
 - **If patterns found:** Update this file (ORCHESTRATION.md) or AGENTS.md as needed; bump version.json if behavior changed.
-- **Logging:** [.cursor/evals/eval-results/](.cursor/evals/eval-results/README.md).
+- **Logging:** Eval results folder (see [MEMORY.md](MEMORY.md) → Rules/Evals for path).
 
 ### Using eval results and tests
 
-- **Test cases:** Concrete test conversations for Level 2 live in `.cursor/evals/eval-results/` (see `test-*-*.md` files) and are guided by `.cursor/evals/test-generator.md`.
+- **Test cases:** Concrete test conversations for Level 2 live in the eval results folder (see `test-*-*.md` files) and are guided by the test generator. See [MEMORY.md](MEMORY.md) → Rules/Evals for paths.
 - **How to use:** Replay these tests with the agent, compare behavior against the **Expected Behavior (Checkpoints)** sections in each file, and record `PASS / FAIL / MIXED` plus notes.
 - **When patterns emerge:** If a scenario (e.g. `vague_product_idea_001`) consistently fails on the same checkpoints (golden rule, questions before framework, etc.):
-  - Use `.cursor/evals/1-agent-behavior-guide.md` → “where to update” map.
-  - Update `AGENTS.md`, `ORCHESTRATION.md`, or `.cursor/rules/*.mdc` where the behavior should change.
+  - Use the agent-behavior guide’s “where to update” map (see [MEMORY.md](MEMORY.md) → Rules/Evals for path).
+  - Update `AGENTS.md`, `ORCHESTRATION.md`, or platform-specific rules where the behavior should change.
   - For material behavior changes, bump `version.json` and add a brief note under `breakingChanges`.
 
 ---
@@ -130,7 +130,7 @@
 - version.json
 
 **Layer 2 (on-demand by state):**
-- product_sense: [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md), [PRODUCT-SENSE-RULES.md](PRODUCT-SENSE-RULES.md), [2-product-sense-prompts.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md), [.cursor/evals/eval-functions.md](.cursor/evals/eval-functions.md) (for checkpoints).
+- product_sense: [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md), [PRODUCT-SENSE-RULES.md](PRODUCT-SENSE-RULES.md), [2-product-sense-prompts.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md), eval functions (for checkpoints; see [MEMORY.md](MEMORY.md) → Rules/Evals for path).
 - execution_mode: [0-template-finder.md](02-Methods-and-Tools/0-template-finder.md) (if doc request), then relevant 1-*-framework.md and framework README.
 
 **Layer 3 (when using):**
@@ -138,6 +138,47 @@
 - Evaluations: 3-*-evaluation.md (when doing quality check or full eval).
 
 **Sleeping memory:** When the user mentions company strategy, an initiative, or research, use [MEMORY.md](MEMORY.md) to choose what to load (01-Company-Context, 04-Initiatives, 03-Research-Artifacts, CONTEXT.md, rules, skills). See [MEMORY.md](MEMORY.md) for the sleeping memory manifest and when to wake each area.
+
+---
+
+## Context Health (Preventing Context Rot)
+
+Long conversations degrade quality: early content gets ignored (lost-in-middle), recent messages dominate (recency bias), and core instructions fade. Use heuristic triggers — not fixed turn counts — to keep sessions healthy.
+
+### When to Offer Checkpoints
+
+Offer a checkpoint (don't force) when any of these apply:
+
+- **Heavy context loaded:** 3+ sleeping memory files woken in the session (company docs, research, initiative files). The more context loaded, the sooner quality degrades.
+- **State transition from product_sense → execution_mode:** Natural pause. Especially if the braindump was rich, a fresh context window produces better artifacts. Say: "Want to checkpoint before we start the artifact? Fresh context = better quality."
+- **Agent senses own drift:** If re-reading a core instruction reveals the agent deviated (e.g., suggested framework without braindump check, forgot loaded context), that's a checkpoint signal.
+- **Hard ceiling at ~25-30 turns with loaded context:** Regardless of other signals, recommend checkpoint if the conversation is this long AND sleeping memory was woken.
+- **User request:** "checkpoint", "save state", or "save progress" triggers it immediately.
+
+### Checkpoint Protocol
+
+**Create:** `checkpoints/session-YYYY-MM-DD-HHMM.md` containing:
+- Current state (product_sense / execution_mode / meta_reflection)
+- Topic and what the user is working on
+- Key insights from braindump (3-5 bullets)
+- Questions explored and user's answers
+- Framework candidates (if any) and why they fit
+- Next steps (what we're about to do)
+- Which context files were loaded (so the next session can reload them)
+
+**Resume:** User starts a fresh conversation and says "continue from checkpoints/session-[timestamp].md." Agent reads the checkpoint, summarizes where things stand, asks if anything has changed, and continues from there.
+
+### Re-Anchoring (Lightweight)
+
+- **At every state transition:** Silently re-read the relevant state instructions from this file. Don't surface this to the user unless drift is detected.
+- **After waking sleeping memory:** Re-confirm golden rule and current state internally. Only tell the user if the agent catches itself drifting.
+- **No visible checklists** unless something is actually wrong. Re-anchoring should be invisible when working correctly.
+
+### Error Recovery
+
+- **Golden rule violation:** Acknowledge it directly ("I jumped to frameworks too early — let me back up"), then ask the questions that should have been asked.
+- **Lost thread:** Offer checkpoint explicitly ("I'm losing coherence — let's save progress and continue in a fresh conversation").
+- **User correction:** Accept, fix, move on. No defensive explanations.
 
 ---
 
@@ -156,6 +197,6 @@
 **If the agent seems stuck or wrong:**
 
 1. **Current state:** Infer from last user message and conversation. The agent should be able to say e.g. "We're in product_sense; we're doing braindump."
-2. **Exit criteria:** For product_sense → execution_mode, confirm braindump sufficient per [PRODUCT-SENSE-RULES.md](PRODUCT-SENSE-RULES.md) and [.cursor/evals/eval-functions.md](.cursor/evals/eval-functions.md) (reference only; don't duplicate checklist).
+2. **Exit criteria:** For product_sense → execution_mode, confirm braindump sufficient per [PRODUCT-SENSE-RULES.md](PRODUCT-SENSE-RULES.md) and eval functions (reference only; see [MEMORY.md](MEMORY.md) → Rules/Evals for path; don't duplicate checklist).
 3. **Manual override:** User can say "Switch to execution_mode" or "Go to template finder"; agent acknowledges and follows.
 4. **Log the failure:** Note what went wrong; update [ORCHESTRATION.md](ORCHESTRATION.md) if it's a pattern; consider running Level 2 eval.

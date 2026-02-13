@@ -1,11 +1,5 @@
 # Opportunity Assessment Framework
 
-## Overview
-
-An opportunity assessment helps you structure early thinking about a potential product initiative. It captures what you know, what you assume, and what needs validation before committing resources to build.
-
-**Purpose:** Bridge the gap between initial idea and evidence-based discovery.
-
 ## For Agents: When to Suggest This Framework
 
 **Trigger conditions:**
@@ -28,6 +22,14 @@ An opportunity assessment helps you structure early thinking about a potential p
 - User has already validated the opportunity (use PRD or execution frameworks)
 - User is asking for prioritization between multiple validated opportunities (use Prioritization frameworks)
 - User needs to do user research first (suggest Research/Discovery frameworks)
+
+---
+
+## Overview
+
+An opportunity assessment helps you structure early thinking about a potential product initiative. It captures what you know, what you assume, and what needs validation before committing resources to build.
+
+**Purpose:** Bridge the gap between initial idea and evidence-based discovery.
 
 ## Core Principles
 

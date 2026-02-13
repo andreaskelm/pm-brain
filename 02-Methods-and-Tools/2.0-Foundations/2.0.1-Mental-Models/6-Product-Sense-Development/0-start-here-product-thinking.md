@@ -2,6 +2,23 @@
 
 **This is the single entry point for product thinking in this repo.** Use it to decide where to go next; everything else is a reference from here. (This is the only **0-** file in this folder; see [README](README.md) → "Numbering in this folder" for the full sequence.)
 
+## For Agents
+
+When the user is thinking about a product decision, the agent is in **product_sense**:
+
+0. **Adopt the persona and background** in this file: [Persona & background (for agent)](#persona-and-background-for-agent).
+1. **Start from here.** Name the situation (or ask the user) so you know which part of the prompts file to use.
+2. **Context check:** Ask whether the user has added (or wants you to reference) relevant context from [01-Company-Context/](../../../../01-Company-Context/README.md), [03-Research-Artifacts/](../../../../03-Research-Artifacts/README.md), or [04-Initiatives/](../../../../04-Initiatives/README.md). Remind that having key docs in the conversation speeds up thinking; you can also read files from the repo if not in chat.
+3. **Use prompts from** [2-product-sense-prompts.md](2-product-sense-prompts.md) for that situation. Pick 3–5 that feel uncomfortable; challenge assumptions, don't validate.
+4. **If stuck:** Use [3-product-sense-evaluation.md](3-product-sense-evaluation.md).
+5. **If AI product:** Use [5-ai-product-sense.md](5-ai-product-sense.md) and the [For AI Product Decisions](2-product-sense-prompts.md#for-ai-product-decisions) section.
+6. **If bias or thinking quality:** Reference [6-meta-thinking-for-product-sense.md](6-meta-thinking-for-product-sense.md) and the canonical [2.0.2-Bias/1-bias-framework.md](../../2.0.2-Bias/1-bias-framework.md); don't duplicate bias lists.
+7. **Stay in product_sense** until the "braindump sufficient" checklist in [PRODUCT-SENSE-RULES.md](../../../../PRODUCT-SENSE-RULES.md) is met (assumptions named, know vs guess separated, at least one risk/second-order effect, at least one uncomfortable thought).
+8. **Then move into execution_mode:** suggest a framework (PRD, prioritization, etc.) and point to the right doc using the workflow skill: see [.cursor/skills/pm-brain-workflow/SKILL.md](../../../../.cursor/skills/pm-brain-workflow/SKILL.md) for frameworks by situation. Optionally suggest logging in [00-Meta/](../../../../00-Meta/) (daily log, prioritization log, pattern recognition log, or forecast log).
+9. **After substantial decisions:** briefly enter a meta step by suggesting logging in [00-Meta/](../../../../00-Meta/README.md) and, when appropriate, asking whether any rules or practices should evolve (see [.cursor/rules/thinking.mdc](../../../../.cursor/rules/thinking.mdc)).
+
+Do not repeat content that lives elsewhere; reference it.
+
 ---
 
 ## Simple prompt to start (new chat)
@@ -129,25 +146,6 @@ So: **AGENTS** is always on; **ORCHESTRATION** defines when to load what and whe
 **In Cursor, you don't need this** — the default product_sense state already provides the same coaching. Just start talking about a product decision and the agent will guide you through the workflow automatically.
 
 Both approaches follow the same golden rule: braindump before structure.
-
----
-
-## For Agents
-
-When the user is thinking about a product decision, the agent is in **product_sense**:
-
-0. **Adopt the persona and background** in this file: [Persona & background (for agent)](#persona-and-background-for-agent).
-1. **Start from here.** Name the situation (or ask the user) so you know which part of the prompts file to use.
-2. **Context check:** Ask whether the user has added (or wants you to reference) relevant context from [01-Company-Context/](../../../../01-Company-Context/README.md), [03-Research-Artifacts/](../../../../03-Research-Artifacts/README.md), or [04-Initiatives/](../../../../04-Initiatives/README.md). Remind that having key docs in the conversation speeds up thinking; you can also read files from the repo if not in chat.
-3. **Use prompts from** [2-product-sense-prompts.md](2-product-sense-prompts.md) for that situation. Pick 3–5 that feel uncomfortable; challenge assumptions, don't validate.
-4. **If stuck:** Use [3-product-sense-evaluation.md](3-product-sense-evaluation.md).
-5. **If AI product:** Use [5-ai-product-sense.md](5-ai-product-sense.md) and the [For AI Product Decisions](2-product-sense-prompts.md#for-ai-product-decisions) section.
-6. **If bias or thinking quality:** Reference [6-meta-thinking-for-product-sense.md](6-meta-thinking-for-product-sense.md) and the canonical [2.0.2-Bias/1-bias-framework.md](../../2.0.2-Bias/1-bias-framework.md); don't duplicate bias lists.
-7. **Stay in product_sense** until the "braindump sufficient" checklist in [PRODUCT-SENSE-RULES.md](../../../../PRODUCT-SENSE-RULES.md) is met (assumptions named, know vs guess separated, at least one risk/second-order effect, at least one uncomfortable thought).
-8. **Then move into execution_mode:** suggest a framework (PRD, prioritization, etc.) and point to the right doc using the workflow skill: see [.cursor/skills/pm-brain-workflow/SKILL.md](../../../../.cursor/skills/pm-brain-workflow/SKILL.md) for frameworks by situation. Optionally suggest logging in [00-Meta/](../../../../00-Meta/) (daily log, prioritization log, pattern recognition log, or forecast log).
-9. **After substantial decisions:** briefly enter a meta step by suggesting logging in [00-Meta/](../../../../00-Meta/README.md) and, when appropriate, asking whether any rules or practices should evolve (see [.cursor/rules/thinking.mdc](../../../../.cursor/rules/thinking.mdc)).
-
-Do not repeat content that lives elsewhere; reference it.
 
 ---
 

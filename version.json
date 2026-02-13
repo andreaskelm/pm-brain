@@ -1,8 +1,14 @@
 {
-  "version": "2.2.0",
+  "version": "3.0.0",
   "lastUpdated": "2026-02-13T00:00:00Z",
   "schemaVersion": "1.0",
   "changelog": [
+    {
+      "version": "3.0.0",
+      "date": "2026-02-13",
+      "type": "major",
+      "summary": "Platform-agnostic core and context rot prevention. AGENTS.md and ORCHESTRATION.md no longer reference .cursor/ paths directly; MEMORY.md is now the single path-mapping layer for platform-specific files (rules, skills, evals). Added Context Health section to ORCHESTRATION.md (heuristic-based checkpointing, re-anchoring, error recovery). Created CLAUDE.md for Claude Code. Added checkpoints/ folder for session state persistence. Updated SETUP.md with multi-platform setup guide."
+    },
     {
       "version": "2.2.0",
       "date": "2026-02-13",
@@ -35,18 +41,22 @@
     }
   ],
   "breakingChanges": [
-    "Orchestration logic moved from AGENTS.md to ORCHESTRATION.md",
-    "State transitions and context loading now defined in ORCHESTRATION.md; agent infers state from conversation (no persistent state store)",
-    "Braindump exit criteria remain in PRODUCT-SENSE-RULES.md and eval-functions.md; ORCHESTRATION references them only",
-    "Sleeping memory manifest (MEMORY.md) added; use it to decide what to load for company context, initiatives, research, rules, skills"
+    "AGENTS.md and ORCHESTRATION.md no longer contain .cursor/ paths; all platform-specific paths now routed through MEMORY.md",
+    "MEMORY.md now includes Evals section as path-mapping layer for eval functions, behavior guide, and test infrastructure",
+    "Context Health section added to ORCHESTRATION.md: heuristic checkpointing, re-anchoring at state transitions, error recovery",
+    "New file: CLAUDE.md (Claude Code adapter); new folder: checkpoints/ (session state persistence)",
+    "SETUP.md Step 7 rewritten as multi-platform setup guide (Cursor, Claude Code, Claude.ai, ChatGPT, GitHub Copilot, universal)"
   ],
   "structure": {
     "frameworks": 14,
     "rules": 7,
-    "skills": 3,
+    "skills": 4,
     "evalSystem": true,
     "orchestrationFile": true,
     "memoryManifest": true,
+    "platformAdapters": ["CLAUDE.md"],
+    "contextHealth": true,
+    "checkpoints": true,
     "agentInstructions": {
       "states": ["product_sense", "execution_mode", "meta_reflection", "conversation"],
       "evalCheckpoints": 4,

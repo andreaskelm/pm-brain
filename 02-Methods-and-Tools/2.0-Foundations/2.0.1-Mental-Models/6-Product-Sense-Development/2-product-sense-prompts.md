@@ -1,5 +1,11 @@
 # Braindump Prompts - Think Before You Structure
 
+## For Agents
+
+This file is **situation-based braindump prompts** for product_sense. Use the **Situation → section (quick map)** table below to find the right section for the user's situation. For **AI product decisions**, use the [For AI Product Decisions](#for-ai-product-decisions) section near the end of the file. Do not duplicate the prompt lists here—reference the section and pull 3–5 questions that fit.
+
+---
+
 **What this file is:** The **questions** (prompts) and red flags by situation. Not a fill-in form—you (or the agent) use these to drive thinking *before* opening any execution template (PRD, OKR, Opportunity Assessment, etc.). Fill-in templates live in `02-Methods-and-Tools/` (e.g. `2.3-Execution/2.3.4-PRD/2-prd-template.md`).
 
 **Purpose:** Help you think deeply *before* jumping into frameworks, so artifacts reflect real judgment instead of shallow, filled‑in boxes.
