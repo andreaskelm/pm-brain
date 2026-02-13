@@ -151,6 +151,7 @@ Offer a checkpoint (don't force) when any of these apply:
 
 - **Heavy context loaded:** 3+ sleeping memory files woken in the session (company docs, research, initiative files). The more context loaded, the sooner quality degrades.
 - **State transition from product_sense → execution_mode:** Natural pause. Especially if the braindump was rich, a fresh context window produces better artifacts. Say: "Want to checkpoint before we start the artifact? Fresh context = better quality."
+- **Entering execution_mode with heavy context (e.g. template-finder only):** User went straight to "write PRD / OKR / roadmap" with 3+ sleeping memory files already loaded (company, initiative, research). Consider offering a checkpoint before drafting: "Lots of context in play — want to save progress and start the doc in a fresh conversation for better quality?"
 - **Agent senses own drift:** If re-reading a core instruction reveals the agent deviated (e.g., suggested framework without braindump check, forgot loaded context), that's a checkpoint signal.
 - **Hard ceiling at ~25-30 turns with loaded context:** Regardless of other signals, recommend checkpoint if the conversation is this long AND sleeping memory was woken.
 - **User request:** "checkpoint", "save state", or "save progress" triggers it immediately.
