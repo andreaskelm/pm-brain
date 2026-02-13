@@ -50,7 +50,7 @@ Evals are **guidance-based**: they don’t produce scores in a dashboard. They h
 
 2. **You update the repo when you learn something new** — If a method check is wrong or the method has evolved → edit `1-*-framework.md` or `3-*-evaluation.md`. If agent behavior should change → use the "Where to update" map in [1-agent-behavior-guide.md](1-agent-behavior-guide.md) and edit AGENTS.md, ORCHESTRATION.md, or the relevant `.cursor/rules` file.
 
-The agent can **ask you to adapt** after substantial conversations: it may suggest running the agent-behavior checklist or logging in `00-Meta/`. That keeps evals and practice in the loop without requiring scripts. Optionally, the post-conversation hook defined in `.cursor/hooks/log-eval.js` can append lightweight summary entries to `eval-results/` for easier pattern detection over time.
+The agent can **ask you to adapt** after substantial conversations: it may suggest running the agent-behavior checklist or logging in `00-Meta/`. That keeps evals and practice in the loop without requiring scripts. A post-conversation hook (`.cursor/hooks/log-eval.js`) is available to append lightweight summary entries to `eval-results/` for pattern detection, but it is **currently disabled** in `.cursor/hooks.json` (was creating empty files; re-enable there when the hook payload/behavior is fixed).
 
 ---
 

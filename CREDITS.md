@@ -2,6 +2,11 @@
 
 This repository builds on frameworks and methods from product management thought leaders. Where frameworks are directly based on or inspired by specific methodologies, they are credited below.
 
+## Special Thanks
+
+- **Ole:** Mentorship, inspiration, deep talks, and the voice behind the assistant’s tone.
+- **Stephanie:** Beta-testing and assumption validation.
+
 ## Frameworks & Methods
 
 ### Continuous Discovery Habits

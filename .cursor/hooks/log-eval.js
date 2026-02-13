@@ -3,6 +3,10 @@
 // to `.cursor/evals/eval-results/auto-[YYYY-MM-DD].md`.
 //
 // This is intentionally minimal: no external dependencies, no secrets.
+//
+// Currently disabled: hooks in .cursor/hooks.json are empty (stop: [])
+// because the hook was creating empty files. Re-enable by restoring
+// the "stop" hook command in hooks.json when the payload/behavior is fixed.
 
 const fs = require('fs');
 const path = require('path');

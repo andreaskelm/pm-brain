@@ -1,8 +1,14 @@
 {
-  "version": "2.1.0",
-  "lastUpdated": "2026-02-04T00:00:00Z",
+  "version": "2.2.0",
+  "lastUpdated": "2026-02-13T00:00:00Z",
   "schemaVersion": "1.0",
   "changelog": [
+    {
+      "version": "2.2.0",
+      "date": "2026-02-13",
+      "type": "minor",
+      "summary": "Added communication style / voice layer. Agent now speaks with direct, experience-backed, prose-first personality. New voice.mdc (alwaysApply). Updated Core Persona in AGENTS.md and state-specific personas in 0-start-here-product-thinking.md. DevX===UX recurring theme added."
+    },
     {
       "version": "2.1.0",
       "date": "2026-02-04",
@@ -36,7 +42,7 @@
   ],
   "structure": {
     "frameworks": 14,
-    "rules": 6,
+    "rules": 7,
     "skills": 3,
     "evalSystem": true,
     "orchestrationFile": true,

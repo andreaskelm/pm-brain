@@ -1,10 +1,6 @@
 {
   "version": 1,
   "hooks": {
-    "stop": [
-      {
-        "command": "node .cursor/hooks/log-eval.js"
-      }
-    ]
+    "stop": []
   }
 }
