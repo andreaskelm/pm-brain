@@ -51,7 +51,8 @@ Use this framework to understand the underlying jobs customers hire your product
 - Very early exploration before customer understanding exists
 
 ## Files
-- `1-jobs-to-be-done.md` — Complete JTBD framework including interview techniques and job mapping
+- `1-jtbd-framework.md` — Complete JTBD framework including interview techniques and job mapping
+- `2-jtbd-template.md` — Job file template for individual jobs (copy into `03-Research-Artifacts/jobs/`)
 
 ## Before Using This Framework
 

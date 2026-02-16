@@ -34,76 +34,13 @@ Understand the progress customers seek in specific situations (jobs), along with
 9. **Traceability:** Link to interviews, synthesis, opportunities, solutions, and validation plans.
 10. **Handoffs:** Use jobs to inform opportunity framing and assumptions for validation.
 
-## Template Structure
-```markdown
-# Job: [Clear job story]
-When [situation], I want to [progress], so I can [outcome].
+## Template
 
-## Meta
-- **Owner:** [Name]
-- **Date:** [YYYY-MM-DD]
-- **Status:** [Draft | Validating | Validated]
-- **Segments:** [Primary audience(s)]
-- **Evidence sources:** [Links to snapshots/interviews/data]
+For individual job files, use the separate template in this folder:
 
-## Context
-- **Situation/Trigger:** [When does this job arise?]
-- **Constraints:** [Time, tools, compliance, environment]
-- **Frequency:** [How often? Cadence? Seasonality?]
+- **Job file template:** `2-jtbd-template.md` — copy into `03-Research-Artifacts/jobs/` (or your initiative folder), rename it (e.g. `job-[handle]-[YYYY-MM-DD].md`), and fill it using your JTBD research.
 
-## Forces of Progress (Switch)
-- **Push (from current):** [What’s not working]
-- **Pull (to new):** [What’s attractive]
-- **Anxieties (about new):** [Risks/unknowns]
-- **Habits (status quo):** [What keeps them in place]
-
-## Current Solutions & Workarounds
-- **Primary approach:** [What they do today]
-- **Alternatives:** [Other ways they handle it]
-- **Failure modes:** [When/how it breaks]
-- **Social/organizational context:** [Who else is involved]
-
-## Outcome Statements (ODI-style)
-- Minimize/Increase [metric] when [circumstance] while [constraint]
-- Minimize/Increase [...]
-- [List 5–10 clear, measurable outcomes]
-
-## Evidence & Patterns
-- **Customer stories (3+):**
-  - [Story A: brief, with quote and outcome]
-  - [Story B: brief, with quote and outcome]
-  - [Story C: brief, with quote and outcome]
-- **Quote bank:**
-  > “[Verbatim that reflects job/outcome]” — [Persona/Role]
-- **Pattern strength:** [Strong/Moderate/Weak] — why
-
-## Segment Differences
-- **Segment A:** [Unique context/outcomes]
-- **Segment B:** [Differences in frequency/constraints]
-
-## Opportunity Scoring
-| Outcome/Need | Importance (1–10) | Satisfaction (1–10) | Opportunity = Importance + max(Importance - Satisfaction, 0) |
-|--------------|-------------------|---------------------|----------------------------------------------------------------|
-|              |                   |                     |                                                                |
-
-- **Top opportunities:** [Outcomes with highest scores and evidence]
-- **Risks/unknowns:** [Key assumptions to validate]
-
-## Implications
-- **For product:** [How jobs/outcomes inform scope or solution space]
-- **For research:** [What to learn/test next; riskiest assumptions]
-- **For business:** [Expected impact/risks]
-
-## Links
-- **Interview snapshots:** [refs]
-- **Synthesis:** [ref]
-- **Opportunities:** [ref to `3-create-opportunities`]
-- **Solutions:** [ref to `4-generate-solutions`]
-- **Validation plan:** [ref to `idea-validation`]
-
-## Tags
-#[segment] #[job-theme] #[priority] #[date]
-```
+The template includes sections for Meta, Context, Forces of Progress, Current Solutions, ODI-style outcomes, Evidence & Patterns, Segment Differences (with a pointer to **2.2.7-Segmentation** for systematic segmentation), Opportunity Scoring, Implications, Links, and Tags.
 
 ## Evidence Strength (guidance)
 - **Stronger:** Multiple recent, independent stories; observed behavior; quantified outcome gaps; consistent language across segments.
@@ -167,5 +104,6 @@ Act as a product management coach. Help me think through customer jobs before we
 - Find patterns → `../2.2.2-Continuous-Discovery-Habits/2-synthesize-interview-snapshots.md`
 - Frame opportunities → `../2.2.2-Continuous-Discovery-Habits/3-create-opportunities.md`
 - Generate solutions → `../2.2.2-Continuous-Discovery-Habits/4-generate-solutions.md`
+- **From JTBD to segments:** Once you have 15–30+ job stories, cluster them into 3–5 segments → `../2.2.7-Segmentation/README.md`
 - Assess opportunities → `../2.2.4-Opportunity-Assessment/1-opportunity-assessment-framework.md`
 - Validate assumptions → `../2.2.5-Idea-Validation/1-idea-validation.md`

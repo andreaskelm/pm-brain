@@ -40,7 +40,12 @@ Use these frameworks to create actionable personas that guide product decisions.
 - **Quarterly Reviews**: Revisit personas after major product changes
 - **After Feature Launches**: Validate that features address persona needs
 
+## Segments vs. Personas
+- **Segments** (2.2.7-Segmentation) define *who to serve* and *what to build* (strategy). Create segments from JTBD research first.
+- **Personas** (this framework) bring segments to life for execution (marketing, UX). Create 1–2 personas per *priority* segment. See [1-personas-framework.md](1-personas-framework.md) → "Segments vs. Personas."
+
 ## Links
+- Segmentation (define segments first): `../../2.2-Discovery/2.2.7-Segmentation/README.md`
 - Continuous Discovery: `../../2.2-Discovery/2.2.2-Continuous-Discovery-Habits/README.md`
 - Jobs To Be Done: `../../2.2-Discovery/2.2.3-Jobs-To-Be-Done/README.md`
 - Company Context: `../../../01-Company-Context/4-company-product-explanation.md`

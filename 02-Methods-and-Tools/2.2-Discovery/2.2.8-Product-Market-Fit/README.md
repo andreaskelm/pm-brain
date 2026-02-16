@@ -81,6 +81,7 @@ After assessment, reflect:
 - Use `2.2.1-Research-Interviews/` to understand customer needs
 - Use `2.2.2-Continuous-Discovery-Habits/` to synthesize evidence
 - Use `2.2.3-Jobs-To-Be-Done/` to frame customer progress
+- Use `2.2.7-Segmentation/` to group jobs into segments (assess PMF by segment when relevant)
 - Use `2.2.4-Opportunity-Assessment/` to structure early thinking
 - Use `2.2.5-Idea-Validation/` to test solutions before PMF
 
@@ -89,6 +90,7 @@ After assessment, reflect:
 - Use `../../2.3-Execution/README.md` (PRD templates) to specify requirements when PMF is validated
 
 ## Links
+- Segmentation: `../2.2.7-Segmentation/README.md`
 - Idea Validation: `../2.2.5-Idea-Validation/README.md`
 - Opportunity Assessment: `../2.2.4-Opportunity-Assessment/README.md`
 - Jobs to Be Done: `../2.2.3-Jobs-To-Be-Done/README.md`

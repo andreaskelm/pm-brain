@@ -45,7 +45,8 @@ Content is organized by **the flow of product work**: from foundational thinking
 │   ├── 2.2.4-Opportunity-Assessment/
 │   ├── 2.2.5-Idea-Validation/
 │   ├── 2.2.6-Problem-Solution-Space/
-│   └── 2.2.7-Product-Market-Fit/
+│   ├── 2.2.7-Segmentation/
+│   └── 2.2.8-Product-Market-Fit/
 │
 ├── 2.3-Execution/                # BUILD, SHIP, MEASURE
 │   ├── 2.3.1-Daily-Execution-And-Rituals/
@@ -142,7 +143,8 @@ Learn from customers, validate assumptions, find the right problem to solve. Con
 - `2.2.4-Opportunity-Assessment/` - Evaluate opportunities before committing
 - `2.2.5-Idea-Validation/` - Test ideas quickly and cheaply
 - `2.2.6-Problem-Solution-Space/` - Navigate discovery using Double Diamond, Opportunity Solution Trees
-- `2.2.7-Product-Market-Fit/` - Assess whether you're solving a real problem well
+- `2.2.7-Segmentation/` - Group customers by jobs (JTBD → segments → personas)
+- `2.2.8-Product-Market-Fit/` - Assess whether you're solving a real problem well
 
 ---
 
@@ -259,7 +261,7 @@ Act as a product management coach. We'll work iteratively and challenge assumpti
 - Propose 1–3 starting points under `02-Methods-and-Tools/` using the product flow structure:
   - 2.0-Foundations (HOW TO THINK: 2.0.1-Mental-Models, 2.0.2-Bias, 2.0.3-Self-Reflection)
   - 2.1-Strategy (WHERE ARE WE GOING: 2.1.1-Strategic-Foundations, 2.1.2-Strategic-Execution with OKR/Roadmap/North-Star/Prioritization)
-  - 2.2-Discovery (WHAT TO BUILD: 2.2.1-Research-Interviews, 2.2.2-Continuous-Discovery-Habits, 2.2.3-Jobs-To-Be-Done, 2.2.4-Opportunity-Assessment, 2.2.5-Idea-Validation, 2.2.6-Problem-Solution-Space, 2.2.7-Product-Market-Fit)
+  - 2.2-Discovery (WHAT TO BUILD: 2.2.1-Research-Interviews, 2.2.2-Continuous-Discovery-Habits, 2.2.3-Jobs-To-Be-Done, 2.2.4-Opportunity-Assessment, 2.2.5-Idea-Validation, 2.2.6-Problem-Solution-Space, 2.2.7-Segmentation, 2.2.8-Product-Market-Fit)
   - 2.3-Execution (BUILD, SHIP, MEASURE: 2.3.1-Daily-Execution-And-Rituals, 2.3.2-User-Stories, 2.3.3-Backlog-Prioritization, 2.3.4-PRD, 2.3.5-Personas, 2.3.6-Metrics, 2.3.7-AARRR-Pirate-Metrics)
   - 2.4-Communication (ALIGN STAKEHOLDERS: 2.4.1-Newsletter, 2.4.2-Meeting-Agendas, 2.4.3-One-Pagers, 2.4.4-Crisis-Management, 2.4.5-Escalation, 2.4.6-Saying-No, 2.4.7-Stakeholder-Management, 2.4.9-Courses)
 

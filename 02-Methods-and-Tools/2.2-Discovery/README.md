@@ -48,10 +48,13 @@ After your braindump, use the frameworks below to structure your research.
 - **2.2.6-Problem-Solution-Space**  
   Framework for systematically exploring ambiguous problems and generating multiple solution options. Use this when you need to deeply understand a problem before committing to a solution.
 
-- **2.2.7-Product-Market-Fit**  
+- **2.2.7-Segmentation**  
+  Framework for grouping customers by the job they are trying to do (not demographics). Use after JTBD research to cluster job stories into 3–5 segments, then define and validate; segments drive strategy, personas (2.3.5) drive execution.
+
+- **2.2.8-Product-Market-Fit**  
   Framework for understanding and achieving product-market fit. Use this to assess PMF status, validate market demand, and decide when to scale vs. iterate.
 
-Typical flow: **Research-Interviews → Continuous-Discovery-Habits → JTBD (optional/parallel) → Problem-Solution-Space → Opportunity-Assessment → Idea-Validation → Product-Market-Fit → Strategy/Execution**.
+Typical flow: **Research-Interviews → Continuous-Discovery-Habits → JTBD (optional/parallel) → Segmentation (after JTBD) → Problem-Solution-Space → Opportunity-Assessment → Idea-Validation → Product-Market-Fit → Strategy/Execution**.
 
 ## Related domains / cross-links
 

@@ -30,7 +30,8 @@ Paths below are relative to `02-Methods-and-Tools/`.
 - [2.2.4-Opportunity-Assessment/](2.2-Discovery/2.2.4-Opportunity-Assessment/)  
 - [2.2.5-Idea-Validation/](2.2-Discovery/2.2.5-Idea-Validation/)  
 - [2.2.6-Problem-Solution-Space/](2.2-Discovery/2.2.6-Problem-Solution-Space/)  
-- [2.2.7-Product-Market-Fit/](2.2-Discovery/2.2.7-Product-Market-Fit/)
+- [2.2.7-Segmentation/](2.2-Discovery/2.2.7-Segmentation/) — group customers by jobs (JTBD → segments → personas)  
+- [2.2.8-Product-Market-Fit/](2.2-Discovery/2.2.8-Product-Market-Fit/)
 
 **Escalation**  
 - [2.4-Communication/2.4.5-Escalation/](2.4-Communication/2.4.5-Escalation/)
@@ -41,6 +42,7 @@ Paths below are relative to `02-Methods-and-Tools/`.
 
 **Jobs-to-be-done (JTBD)**  
 - [2.2-Discovery/2.2.3-Jobs-To-Be-Done/](2.2-Discovery/2.2.3-Jobs-To-Be-Done/)  
+- [2.2-Discovery/2.2.7-Segmentation/](2.2-Discovery/2.2.7-Segmentation/) — from job stories to segments  
 - [2.3-Execution/2.3.4-PRD/](2.3-Execution/2.3.4-PRD/) (PRD-JTBD variant)
 
 **Meetings / agendas**  

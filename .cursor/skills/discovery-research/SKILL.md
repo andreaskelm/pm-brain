@@ -1,6 +1,6 @@
 ---
 name: discovery-research
-description: Support discovery and research workflows using PM Brain’s discovery frameworks (research interviews, continuous discovery, JTBD, opportunity assessment, idea validation, problem-solution space, product-market-fit).
+description: Support discovery and research workflows using PM Brain’s discovery frameworks (research interviews, continuous discovery, JTBD, segmentation, opportunity assessment, idea validation, problem-solution space, product-market-fit).
 ---
 
 # Discovery & Research Skill
@@ -35,7 +35,8 @@ Most discovery frameworks live under:
   - `2.2.4-Opportunity-Assessment/`
   - `2.2.5-Idea-Validation/`
   - `2.2.6-Problem-Solution-Space/`
-  - `2.2.7-Product-Market-Fit/`
+  - `2.2.7-Segmentation/`
+  - `2.2.8-Product-Market-Fit/`
 
 Each follows the usual pattern:
 
@@ -78,9 +79,16 @@ Each follows the usual pattern:
 
 1. Clarify product, segment, and current signals (retention, NPS, qualitative feedback).
 2. Point to:
-   - `2.2-Discovery/2.2.7-Product-Market-Fit/1-pmf-framework.md`
+   - `2.2-Discovery/2.2.8-Product-Market-Fit/1-pmf-framework.md`
 3. Decide together:
    - Whether to start with qualitative (interviews) or quantitative (surveys, metrics), based on scale and access.
+
+### 4. “I have JTBD job stories; how do I segment?”
+
+1. Clarify: Have they done 15–30+ job interviews? Do they need to decide who to serve first?
+2. Point to:
+   - `2.2-Discovery/2.2.7-Segmentation/README.md` and `1-segmentation-framework.md`
+3. Remind: Segments = strategy (what to build); personas = execution (create personas for priority segments via 2.3.5-Personas).
 
 ## Response guidelines
 

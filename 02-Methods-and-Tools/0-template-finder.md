@@ -19,6 +19,7 @@ Pick one and open the README + template in that folder. Paths are relative to `0
 | **Newsletter / stakeholder update** | [2.4-Communication/2.4.1-Newsletter/](2.4-Communication/2.4.1-Newsletter/) — README, then 2-newsletter-template.md |
 | **Crisis comms** | [2.4-Communication/2.4.4-Crisis-Management/](2.4-Communication/2.4.4-Crisis-Management/) — README, then 2-crisis-management-templates.md |
 | **Personas** | [2.3-Execution/2.3.5-Personas/](2.3-Execution/2.3.5-Personas/) — README, then 2-personas-template.md |
+| **Segment definition** | [2.2-Discovery/2.2.7-Segmentation/](2.2-Discovery/2.2.7-Segmentation/) — README, then 2-segment-definition-template.md |
 | **North Star / metrics** | [2.1-Strategy/2.1.2-Strategic-Execution/3-North-Star/](2.1-Strategy/2.1.2-Strategic-Execution/3-North-Star/) |
 | **Prioritization (RICE, MoSCoW, etc.)** | [2.1-Strategy/2.1.2-Strategic-Execution/4-Prioritization/](2.1-Strategy/2.1.2-Strategic-Execution/4-Prioritization/) — README, then subfolder templates |
 | **Strategy doc (Playing to Win, etc.)** | [2.1-Strategy/2.1.1-Strategic-Foundations/](2.1-Strategy/2.1.1-Strategic-Foundations/) — when-to-use-which.md, then 3-Playing-To-Win or 2-Good-Strategy-Bad-Strategy |

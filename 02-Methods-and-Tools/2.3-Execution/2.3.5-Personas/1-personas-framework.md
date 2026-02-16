@@ -39,6 +39,16 @@
 
 ---
 
+## Segments vs. Personas
+
+**Segments = strategy.** Groups of customers with similar jobs, needs, and behaviors that can be served with similar solutions. Segments drive: which markets to serve, what to build, how to price and position. Based on jobs, context, forces, value.
+
+**Personas = execution.** Archetypal representations of people within segments that help teams empathize and execute. Personas drive: who to target in marketing, how to write copy, how to design UX. Based on demographics, psychographics, goals, frustrations.
+
+**Workflow:** Define segments first (see [2.2.7-Segmentation](../../2.2-Discovery/2.2.7-Segmentation/README.md)) → Prioritize which 1–2 segments to serve → Create 1–2 personas **per priority segment** using this framework. Same segment can have multiple personas (e.g. different channels, copy tone); same persona type can show up in different segments when the job changes. Segments tell you *what* to build; personas tell you *how* to market and design.
+
+---
+
 ## Overview
 
 This framework provides two approaches for creating personas: HEART (human-centered) and JOBS (outcome-driven). Personas help teams build empathy and make user-centered decisions.
