@@ -1,8 +1,14 @@
 {
-  "version": "3.0.0",
-  "lastUpdated": "2026-02-13T00:00:00Z",
+  "version": "3.1.0",
+  "lastUpdated": "2026-02-16T00:00:00Z",
   "schemaVersion": "1.0",
   "changelog": [
+    {
+      "version": "3.1.0",
+      "date": "2026-02-16",
+      "type": "minor",
+      "summary": "Human docs moved to docs/ (setup, guidelines, architecture, credits, agent-manifest). Added Design Principles and Naming conventions to docs/architecture.md. README restructured as single entry point for humans, agents, and forkers. MEMORY.md wake trigger for repo structure/architecture topics. ORCHESTRATION.md: check filesystem before asking user about context. Renamed BRIER-CALCULATION.md to brier-calculation.md. All cross-references updated."
+    },
     {
       "version": "3.0.0",
       "date": "2026-02-13",

@@ -4,7 +4,7 @@
 
 **Concept:** Content in 01-Company-Context, 03-Research-Artifacts, 04-Initiatives, and platform-specific config (rules, skills, evals) is **sleeping memory**. The agent wakes it by loading the right files when the user mentions company strategy, an initiative, research, or when personalization/behavior rules are relevant.
 
-**Platform note:** Paths below assume the default repo layout. On **Cursor**, `.cursor/rules/` and `.cursor/skills/` are auto-loaded by the IDE. On **other platforms** (Claude Code, Claude.ai, Replit, etc.), load the referenced content manually when needed — see [SETUP.md](SETUP.md) → Platform Setup for how.
+**Platform note:** Paths below assume the default repo layout. On **Cursor**, `.cursor/rules/` and `.cursor/skills/` are auto-loaded by the IDE. On **other platforms** (Claude Code, Claude.ai, Replit, etc.), load the referenced content manually when needed — see [docs/setup.md](docs/setup.md) → Platform Setup for how.
 
 ---
 
@@ -19,6 +19,7 @@
 | How to evaluate artifacts / when to run evals | [.cursor/rules/evaluation-orchestration.mdc](.cursor/rules/evaluation-orchestration.mdc), [.cursor/evals/](.cursor/evals/README.md) |
 | Template finder / which doc to use | [02-Methods-and-Tools/0-template-finder.md](02-Methods-and-Tools/0-template-finder.md) |
 | Product sense / braindump / golden rule | [PRODUCT-SENSE-RULES.md](PRODUCT-SENSE-RULES.md), [2-product-sense-prompts.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md), [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md) |
+| Repo structure, refactoring, architecture, adding files, reorganizing | [docs/architecture.md](docs/architecture.md) → Design Principles section |
 
 ---
 

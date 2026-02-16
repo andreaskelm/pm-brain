@@ -14,7 +14,7 @@ import sys
 from pathlib import Path
 from typing import List
 
-# Weights (from BRIER-CALCULATION.md)
+# Weights (from brier-calculation.md)
 BET_TYPE_WEIGHT = {"New Product": 3.0, "Expansion": 2.0, "Iteration": 1.0}
 NOVELTY_WEIGHT = {"New Behavior": 1.5, "Known Problem": 1.0}
 OUTCOME_VALUE = {"Exceeded": 1.0, "Met": 0.8, "Failed": 0.0}

@@ -133,7 +133,7 @@ To actually use these tests to evaluate the agent:
    - When you see a recurring failure (e.g. “keeps suggesting templates too early”):
      - Use `.cursor/evals/1-agent-behavior-guide.md` → “Where to update” map
      - Update `AGENTS.md`, `ORCHESTRATION.md`, or relevant `.cursor/rules/*.mdc`
-     - If behavior changes meaningfully, bump `version.json` (see `ARCHITECTURE.md` → Version Management)
+     - If behavior changes meaningfully, bump `version.json` (see `docs/architecture.md` → Version Management)
 
 ---
 

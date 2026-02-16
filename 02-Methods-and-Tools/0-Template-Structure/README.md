@@ -113,5 +113,5 @@ When using templates with AI:
 ## References
 
 - Main Methods & Tools README: `../README.md`
-- Guidelines: `../../GUIDELINES.md`
-- Setup Guide: `../../SETUP.md`
+- Guidelines: `../../docs/guidelines.md`
+- Setup Guide: `../../docs/setup.md`

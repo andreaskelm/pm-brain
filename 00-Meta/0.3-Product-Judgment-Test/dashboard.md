@@ -1,6 +1,6 @@
 # Product Judgment Test – Dashboard
 
-**Purpose:** Record your **Overall Brier Score** and trend. Update monthly after resolving closed bets and computing your score (see [BRIER-CALCULATION.md](BRIER-CALCULATION.md) or the optional script).
+**Purpose:** Record your **Overall Brier Score** and trend. Update monthly after resolving closed bets and computing your score (see [brier-calculation.md](brier-calculation.md) or the optional script).
 
 ---
 
@@ -12,7 +12,7 @@
 
 **Overall Brier Score:** *(e.g. 0.14)*
 
-**Interpretation:** *(e.g. Strong Calibration — see [BRIER-CALCULATION.md](BRIER-CALCULATION.md) for bands)*
+**Interpretation:** *(e.g. Strong Calibration — see [brier-calculation.md](brier-calculation.md) for bands)*
 
 **Trend:** *(e.g. 0.18 → 0.14 over last 12 closed forecasts)*
 

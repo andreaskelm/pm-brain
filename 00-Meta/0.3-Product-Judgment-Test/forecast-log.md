@@ -8,7 +8,7 @@
 
 ## Bet Type and Novelty (Weights)
 
-Weights are used to compute your **Weighted Brier Score**. High-stakes bets count more. See [BRIER-CALCULATION.md](BRIER-CALCULATION.md) for the full table and formula.
+Weights are used to compute your **Weighted Brier Score**. High-stakes bets count more. See [brier-calculation.md](brier-calculation.md) for the full table and formula.
 
 | Bet Type | Weight | Novelty | Weight |
 |----------|--------|---------|--------|

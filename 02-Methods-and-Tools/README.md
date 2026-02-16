@@ -73,7 +73,7 @@ Inside each numbered framework folder, files follow this pattern:
 - `2-*-template.md` - Fill-in-the-blanks template
 - `3-*-evaluation.md` - Evaluation framework (if applicable)
 
-**Agent guidance placement:** "For Agents" sections live at the **very top** of `1-*-framework.md` (when that file exists) or of `README.md` for lightweight frameworks, so the agent sees when/how to suggest the framework first. See [ARCHITECTURE.md](../ARCHITECTURE.md) → Linking Conventions for details.
+**Agent guidance placement:** "For Agents" sections live at the **very top** of `1-*-framework.md` (when that file exists) or of `README.md` for lightweight frameworks, so the agent sees when/how to suggest the framework first. See [docs/architecture.md](../docs/architecture.md) → Linking Conventions for details.
 
 ---
 

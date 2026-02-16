@@ -2,7 +2,7 @@
 
 **What this folder is:** The evaluation system for PM Brain. It has **two levels** and is **guidance-based**—no scripts to run. You use prompts and checklists to reflect on artifact quality and agent behavior, and to know **where to update** when you learn something new.
 
-**Orchestration:** Evals are wired into the repo in three places: (1) **Level 1** lives in `02-Methods-and-Tools/` (Quick Quality Checks + `3-*-evaluation.md` per framework); (2) **Level 2** lives here ([1-agent-behavior-guide.md](1-agent-behavior-guide.md), [2-checklist.md](2-checklist.md)); (3) the **agent** uses Level 1 during creation (`.cursor/rules/evaluation-orchestration.mdc`) and can suggest the Level 2 checklist after substantial conversations. Routing and when to run evals: [ORCHESTRATION.md](../ORCHESTRATION.md) → Eval Checkpoints; persona: [AGENTS.md](../AGENTS.md). For the big picture and a visual, see [ARCHITECTURE.md](../ARCHITECTURE.md) → "Evaluation system (evals)" and "How the repo is used".
+**Orchestration:** Evals are wired into the repo in three places: (1) **Level 1** lives in `02-Methods-and-Tools/` (Quick Quality Checks + `3-*-evaluation.md` per framework); (2) **Level 2** lives here ([1-agent-behavior-guide.md](1-agent-behavior-guide.md), [2-checklist.md](2-checklist.md)); (3) the **agent** uses Level 1 during creation (`.cursor/rules/evaluation-orchestration.mdc`) and can suggest the Level 2 checklist after substantial conversations. Routing and when to run evals: [ORCHESTRATION.md](../ORCHESTRATION.md) → Eval Checkpoints; persona: [AGENTS.md](../AGENTS.md). For the big picture and a visual, see [docs/architecture.md](../../docs/architecture.md) → "Evaluation system (evals)" and "How the repo is used".
 
 **When and how scenarios are used:** The agent does **not** read or run `agent-behavior-scenarios.json`. Scenarios are **reference only**: when you (or an AI using the pasteable prompt) run a Level 2 review, you match your conversation to a scenario type (e.g. "user said something like 'I want to build an app for remote teams'"), then use the JSON's success_indicators and failure_modes to score. They are generic, static patterns so reviewers have a consistent checklist per conversation type. You can add or edit scenarios when you discover new failure modes (see [2-checklist.md](2-checklist.md)).
 
@@ -95,7 +95,7 @@ You can turn the scenarios in `agent-behavior-scenarios.json` into **concrete te
      - `1-agent-behavior-guide.md` → “where to update” map
      - `ORCHESTRATION.md` → routing and state transitions
      - `.cursor/rules/*.mdc` → detailed behavior tweaks
-   - For meaningful behavior changes, bump `version.json` (see `ARCHITECTURE.md` → Version Management).
+   - For meaningful behavior changes, bump `version.json` (see `docs/architecture.md` → Version Management).
 
 The goal is fast, **low-friction** testing: a handful of short, realistic conversations that reveal whether the agent is honoring the golden rule and the scenario success indicators.
 

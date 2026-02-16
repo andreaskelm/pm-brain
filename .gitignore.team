@@ -43,7 +43,7 @@
 # Metrics dashboard (your personal metrics)
 00-Meta/metrics-dashboard*.md
 
-# Product Judgment Test (your forecast log and dashboard; README + BRIER-CALCULATION + scripts stay tracked)
+# Product Judgment Test (your forecast log and dashboard; README + brier-calculation + scripts stay tracked)
 00-Meta/0.3-Product-Judgment-Test/forecast-log.md
 00-Meta/0.3-Product-Judgment-Test/dashboard.md
 

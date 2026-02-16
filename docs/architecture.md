@@ -1,8 +1,58 @@
 # PM Brain – Architecture Overview
 
-**What this file is:** Short visual reference for repo structure and methods flow. **This is documentation for humans (and for agents when they need a system overview); it is not executed behavior.** Executed behavior lives in [ORCHESTRATION.md](ORCHESTRATION.md). For full navigation: [README.md](README.md), [AGENTS.md](AGENTS.md), [ORCHESTRATION.md](ORCHESTRATION.md), [MEMORY.md](MEMORY.md). For a short reference summary (not loaded by the agent): [AGENT-MANIFEST.md](AGENT-MANIFEST.md). For product thinking: [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md). For “I need a template”: [0-template-finder.md](02-Methods-and-Tools/0-template-finder.md). For “everything about topic X”: [1-frameworks-by-topic.md](02-Methods-and-Tools/1-frameworks-by-topic.md). For evals (methods + agent behavior): [.cursor/evals/README.md](.cursor/evals/README.md).
+**What this file is:** Short visual reference for repo structure and methods flow. **This is documentation for humans (and for agents when they need a system overview); it is not executed behavior.** Executed behavior lives in [ORCHESTRATION.md](ORCHESTRATION.md). For full navigation: [README.md](README.md), [AGENTS.md](AGENTS.md), [ORCHESTRATION.md](ORCHESTRATION.md), [MEMORY.md](MEMORY.md). For a short reference summary (not loaded by the agent): [agent-manifest.md](agent-manifest.md). For product thinking: [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md). For “I need a template”: [0-template-finder.md](02-Methods-and-Tools/0-template-finder.md). For “everything about topic X”: [1-frameworks-by-topic.md](02-Methods-and-Tools/1-frameworks-by-topic.md). For evals (methods + agent behavior): [.cursor/evals/README.md](.cursor/evals/README.md).
 
 **Cursor preview:** The built-in Markdown preview in Cursor (and VS Code) does not render Mermaid diagrams by default. To see flowcharts and diagrams in preview, install a Mermaid-capable extension (e.g. **Markdown Preview Mermaid Support** or **Mermaid Preview** from the Extensions view). Diagrams in this file also render on GitHub and in online Mermaid editors.
+
+---
+
+## Design Principles
+
+This section documents **why** the repo is structured this way. Use it when evaluating structural changes (e.g. adding root files, moving agent config, refactoring).
+
+### Root file policy
+
+- **Root is reserved for:** (a) files AI platforms expect at root by convention (AGENTS.md, CLAUDE.md), (b) core orchestration the agent loads at startup (ORCHESTRATION.md, MEMORY.md, version.json), and (c) Layer 2 specs loaded on-demand (PRODUCT-SENSE-RULES.md).
+- **Human documentation** goes in `docs/`, not at root.
+- Adding a new root file requires justification against these criteria.
+
+### Loading layer rationale
+
+- **Layer 1** (always loaded) MUST stay under ~100 lines total — this is the context budget for every conversation regardless of topic.
+- A file belongs in Layer 1 only if the agent needs it on **every** turn. Everything else is Layer 2+ (on-demand).
+- Example: PRODUCT-SENSE-RULES.md (445 lines) is Layer 2 because it is only needed in product_sense state — putting it in Layer 1 would waste context on every non-product conversation.
+
+### Separation of concerns
+
+- **AGENTS.md** = WHO (persona, pointers) — slim, Layer 1.
+- **ORCHESTRATION.md** = WHAT (routing, states, loading) — Layer 1.
+- **MEMORY.md** = WHERE (sleeping memory, path mapping) — consulted on trigger.
+- **PRODUCT-SENSE-RULES.md** = HOW the golden rule works (full spec) — Layer 2.
+- Each file has one job; if you cannot describe it in one sentence, consider splitting.
+
+### Platform agnosticism
+
+- AGENTS.md at root is a cross-platform convention (Cursor, Claude Code, GitHub Copilot).
+- CLAUDE.md at root is a Claude Code requirement (auto-discovered).
+- Platform-specific paths are routed through MEMORY.md, never hardcoded in AGENTS.md or ORCHESTRATION.md.
+- Any structural change must work on Cursor **and** Claude Code without extra configuration.
+
+### Structural "do nots"
+
+- Do **not** create JSON manifests duplicating the filesystem (they go stale).
+- Do **not** pre-declare frameworks as enabled/disabled (fights the repo philosophy).
+- Do **not** move agent core files into subdirectories for tidiness (breaks conventions).
+- Do **not** merge large Layer 2 files into Layer 1 files (wastes context budget).
+
+### Naming conventions
+
+- **Root:** UPPERCASE for agent/core and former human docs (AGENTS.md, ORCHESTRATION.md, …); README.md; version.json lowercase. New human docs go in `docs/` as lowercase.
+- **docs/:** lowercase hyphenated (setup.md, guidelines.md, architecture.md, credits.md, agent-manifest.md).
+- **02-Methods-and-Tools:** README.md plus `N-name-with-hyphens.md` (number prefix, lowercase).
+- **01-Company-Context:** Entry/setup UPPERCASE (CONTEXT.md, SETUP.md); content number-lowercase (1-company-vision.md, …).
+- **04-Initiatives:** lowercase (summary.md, prd.md, opportunity-assessment.md, …).
+- **00-Meta:** Content lowercase; entry/guide docs may stay UPPERCASE. No UPPERCASE in otherwise lowercase folders — fix outliers.
+- **.cursor:** lowercase hyphenated for rules/skills (voice.mdc, product-sense.mdc).
 
 ---
 
@@ -242,9 +292,9 @@ The repo has a few main entry points. Depending on what you're doing, the agent 
 |--------------|-------|
 | **Think through a product decision** | [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md) — braindump first, then frameworks |
 | **I know the doc I need** (PRD, OKR, roadmap, etc.) | [0-template-finder.md](02-Methods-and-Tools/0-template-finder.md) — jump straight to template |
-| **Understand the system architecture** | [ARCHITECTURE.md](ARCHITECTURE.md) — visual overview, flows, context management |
+| **Understand the system architecture** | [architecture.md](architecture.md) — visual overview, flows, context management |
 | **Configure the agent / orchestration** | [AGENTS.md](AGENTS.md) — persona; [ORCHESTRATION.md](ORCHESTRATION.md) — routing, states, loading; [MEMORY.md](MEMORY.md) — sleeping memory manifest. *These are what the agent loads.* |
-| **Quick reference** (not loaded by agent) | [AGENT-MANIFEST.md](AGENT-MANIFEST.md) — summary of entrypoints, states, and content clusters; for humans and maintainers only |
+| **Quick reference** (not loaded by agent) | [agent-manifest.md](agent-manifest.md) — summary of entrypoints, states, and content clusters; for humans and maintainers only |
 | **Run evals** (artifact quality or agent behavior) | [.cursor/evals/README.md](.cursor/evals/README.md) — Level 1 (methods) or Level 2 (agent behavior) |
 | **Set up for the first time** | [01-Company-Context/SETUP.md](01-Company-Context/SETUP.md) — company context, agent config, optional 00-Meta setup |
 
@@ -424,7 +474,7 @@ Long conversations degrade quality as context fills up. The agent uses heuristic
 
 **When to update version.json:**
 
-- **MAJOR version** (e.g., 1.0.0 → 2.0.0): Breaking changes to `AGENTS.md` (mode definitions, eval checkpoints, core behavior), `ARCHITECTURE.md` (structure changes, new layers), framework structure changes, or "For Agents" convention changes.
+- **MAJOR version** (e.g., 1.0.0 → 2.0.0): Breaking changes to `AGENTS.md` (mode definitions, eval checkpoints, core behavior), `docs/architecture.md` (structure changes, new layers), framework structure changes, or "For Agents" convention changes.
 - **MINOR version** (e.g., 1.0.0 → 1.1.0): New frameworks added, new rules or skills added, significant new documentation (new entry points, major sections), or eval system enhancements.
 - **PATCH version** (e.g., 1.0.0 → 1.0.1): Typically not tracked for this knowledge base (bug fixes and clarifications don't require version bumps).
 

@@ -117,7 +117,7 @@ When you see a pattern, edit the file(s) listed. Use this map to know where to c
 | **Questioning weak / jumps to template** | [AGENTS.md](../AGENTS.md) — "First move for product-related chats", "Golden Rule"; [2-product-sense-prompts.md](../02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md); [PRODUCT-SENSE-RULES.md](../PRODUCT-SENSE-RULES.md) |
 | **Wrong or no framework suggested** | [0-template-finder.md](../02-Methods-and-Tools/0-template-finder.md); [.cursor/rules/template-finder.mdc](../.cursor/rules/template-finder.mdc); [.cursor/skills/pm-brain-workflow/SKILL.md](../.cursor/skills/pm-brain-workflow/SKILL.md) |
 | **Overbearing / does thinking for user** | [AGENTS.md](../AGENTS.md) — "Challenge Assumptions", "User Agency"; product-sense prompts (user agency) |
-| **Misses product_sense vs execution** | [AGENTS.md](../AGENTS.md) — "First move for product-related chats"; [ARCHITECTURE.md](../ARCHITECTURE.md) — mode flow |
+| **Misses product_sense vs execution** | [AGENTS.md](../AGENTS.md) — "First move for product-related chats"; [docs/architecture.md](../../docs/architecture.md) — mode flow |
 | **No meta / no 00-Meta suggestions** | [AGENTS.md](../AGENTS.md), [ORCHESTRATION.md](../ORCHESTRATION.md) — meta_reflection, "Recognize Product Sense Moments"; [.cursor/rules/thinking.mdc](../.cursor/rules/thinking.mdc) |
 | **Evaluation / quality checks not offered** | [.cursor/rules/evaluation-orchestration.mdc](../.cursor/rules/evaluation-orchestration.mdc); framework folder READMEs (PRD, Opportunity Assessment, North Star, One-Pagers) |
 

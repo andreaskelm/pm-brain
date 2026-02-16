@@ -7,7 +7,7 @@
 - [ ] Clone or fork the repository
 - [ ] Read this SETUP guide
 - [ ] Review the main README.md
-- [ ] Read [GUIDELINES.md](./GUIDELINES.md) for best practices
+- [ ] Read [guidelines.md](guidelines.md) for best practices
 - [ ] Customize Company Context (Priority 1)
 - [ ] Review AI/Agent configuration (if using Cursor or similar)
 - [ ] Try your first framework
@@ -417,11 +417,11 @@ Once you're set up:
 - **Main README:** [README.md](README.md) — Overview and philosophy
 - **Product thinking entry point:** [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md) — Simple prompt to start; braindump first, then frameworks by situation
 - **Golden rule:** [PRODUCT-SENSE-RULES.md](PRODUCT-SENSE-RULES.md) — Braindump before structure
-- **Guidelines:** [GUIDELINES.md](GUIDELINES.md) — Best practices for using and maintaining your PM brain
+- **Guidelines:** [guidelines.md](guidelines.md) — Best practices for using and maintaining your PM brain
 - **Agent configuration:** [AGENTS.md](AGENTS.md) (persona), [ORCHESTRATION.md](ORCHESTRATION.md) (routing & states), [MEMORY.md](MEMORY.md) (what to wake); `.cursor/rules/AGENTS.template.md` for custom agents
 - **Framework Navigation:** [02-Methods-and-Tools/README.md](02-Methods-and-Tools/README.md) — Strategy, Discovery, Execution, Communication
 - **00-Meta (practice):** [00-Meta/README.md](00-Meta/README.md) — Daily log, learning log, growth portfolio, Product Judgment Test
-- **Credits:** [CREDITS.md](CREDITS.md) — Attribution for frameworks and methods
+- **Credits:** [credits.md](credits.md) — Attribution for frameworks and methods
 
 ---
 

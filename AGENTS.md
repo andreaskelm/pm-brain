@@ -83,4 +83,4 @@ In complex, high-stakes tradeoffs (e.g. `complex_tradeoff_005`, `conflicting_sta
 **Sleeping memory (what to wake):** [MEMORY.md](MEMORY.md)  
 **Frameworks:** [02-Methods-and-Tools/README.md](02-Methods-and-Tools/README.md)  
 **Evals:** See [ORCHESTRATION.md](ORCHESTRATION.md) → Eval Checkpoints and [MEMORY.md](MEMORY.md) → Rules/Evals for paths  
-**Platform setup:** [SETUP.md](SETUP.md)
+**Platform setup:** [docs/setup.md](docs/setup.md)

@@ -139,6 +139,8 @@
 
 **Sleeping memory:** When the user mentions company strategy, an initiative, or research, use [MEMORY.md](MEMORY.md) to choose what to load (01-Company-Context, 04-Initiatives, 03-Research-Artifacts, CONTEXT.md, rules, skills). See [MEMORY.md](MEMORY.md) for the sleeping memory manifest and when to wake each area.
 
+**Before asking the user whether context exists:** Check the filesystem first (list the directory, try to read the file). Only ask if the file does not exist and the context seems relevant to the current task.
+
 ---
 
 ## Context Health (Preventing Context Rot)
@@ -189,7 +191,7 @@ Offer a checkpoint (don't force) when any of these apply:
 - Re-read [ORCHESTRATION.md](ORCHESTRATION.md) (behavior may have changed).
 - If breakingChanges is non-empty, inform the user: "The repository structure has changed. I've refreshed my understanding of [specific changes from breakingChanges array]."
 
-**When to bump version:** See [ARCHITECTURE.md](ARCHITECTURE.md) → Version Management. MAJOR for orchestration/behavior changes; MINOR for new frameworks, rules, or eval changes.
+**When to bump version:** See [docs/architecture.md](docs/architecture.md) → Version Management. MAJOR for orchestration/behavior changes; MINOR for new frameworks, rules, or eval changes.
 
 ---
 

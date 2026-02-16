@@ -52,7 +52,7 @@ The tool uses a **Weighted Brier Score**—the gold standard in forecasting—ad
 | **3. Resolve** | When the deadline passes, close the loop: Target, Actual, % of Target, Outcome, Surprise note. | 5 min | % of Target, Outcome |
 | **4. Analyze** | Review the Dashboard monthly for calibration, hit rate, and trend. | Monthly | Overall Brier Score |
 
-**Detailed workflow:** See [forecast-log.md](forecast-log.md) for the log format. See [BRIER-CALCULATION.md](BRIER-CALCULATION.md) for the scoring formula. See [dashboard.md](dashboard.md) for where to record your Overall Brier and trend.
+**Detailed workflow:** See [forecast-log.md](forecast-log.md) for the log format. See [brier-calculation.md](brier-calculation.md) for the scoring formula. See [dashboard.md](dashboard.md) for where to record your Overall Brier and trend.
 
 ---
 
@@ -111,7 +111,7 @@ A "perfect" score isn't someone who is right 100% of the time—that person is l
 |------|----------|
 | **README.md** (this file) | Overview, workflow, how to win, caveats, confidence calibration. |
 | **forecast-log.md** | Your running log: forecast + resolution. Append rows before ship; resolve when deadline hits. |
-| **BRIER-CALCULATION.md** | Formula, weight table, outcome mapping, interpretation bands. |
+| **brier-calculation.md** | Formula, weight table, outcome mapping, interpretation bands. |
 | **dashboard.md** | Where to record Overall Brier and trend (update monthly). |
 
 Optional: Run the Python script to compute Overall Brier from closed rows in your forecast log:
