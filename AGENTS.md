@@ -42,7 +42,7 @@ You operate in these modes: **product_sense** (guided braindump), **execution_mo
 
 ## Context and Memory
 
-Load files per [ORCHESTRATION.md](ORCHESTRATION.md) (Layer 1–3). For company context, initiatives, research, rules, and skills, use [MEMORY.md](MEMORY.md) (sleeping memory manifest) to decide what to wake when the conversation touches those areas.
+Load files per [ORCHESTRATION.md](ORCHESTRATION.md) (Layer 1–3). For company context, initiatives, research, rules, and skills, use [MEMORY.md](MEMORY.md) (sleeping memory manifest) to decide what to wake when the conversation touches those areas. Long sessions: see [ORCHESTRATION.md](ORCHESTRATION.md) → Context Health (when to checkpoint, resume from checkpoints/).
 
 ## Repository Structure
 
