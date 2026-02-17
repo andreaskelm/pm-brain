@@ -104,7 +104,7 @@ Use this to deepen thinking. **Don't skip levels.**
 For any significant decision, run through:
 
 - **First-order:** What happens directly and immediately?
-- **Second-order:** And then what? (User behavior changes? System effects? Team/org effects? Market/competitor response?)
+- **Second-order:** And then what? (User behavior changes? System effects? Team/organization effects? Market/competitor response?)
 - **Third-order:** And then what after that? (What compounds? What becomes irreversible? What new equilibrium?)
 - **Feedback loops:** What reinforces? What balances? What lags?
 - **Tipping points:** At what point does this break, flip, or become irreversible?
@@ -261,7 +261,7 @@ Before you dive into any specific section, quickly run through these:
 - What would have to be true for that to happen?
 - What are we uniquely positioned to do?
 - What are we deluding ourselves about?
-- If this strategy works, what second-order effects will it create across users, org, and product over time?
+- If this strategy works, what second-order effects will it create across users, organization, and product over time?
 
 ### Market & Competition
 

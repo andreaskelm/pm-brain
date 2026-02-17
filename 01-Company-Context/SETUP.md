@@ -32,7 +32,7 @@ This guide helps you:
 This information will be referenced throughout your PM Brain to personalize AI assistance and make documents more relevant.
 
 **Relationship to other personalization files:**
-- **`CONTEXT.md`** (this file) = Organizational context (company name, teams, BUs, your role in the org)
+- **`CONTEXT.md`** (this file) = Organizational context (company name, teams, BUs, your role in the organization)
 - **`.cursor/rules/thinking.personal.mdc`** = Personal working style and preferences (how you like to work, communication style, cognitive preferences)
 - Both files may include your name - keep them consistent. `CONTEXT.md` focuses on organizational context; `thinking.personal.mdc` focuses on how you work.
 
@@ -96,7 +96,7 @@ Answer these questions to understand your company's structure. **Don't create fi
 
 **Question:** How is Product and Engineering organized?
 
-- [ ] **Centralized** - Single PM/Eng org, teams work across products
+- [ ] **Centralized** - Single PM/Eng organization, teams work across products
 - [ ] **Decentralized** - PM/Eng embedded in business units
 - [ ] **Matrix** - PM/Eng report to both functional and BU leadership
 - [ ] **Hybrid** - Mix of centralized and decentralized
@@ -174,7 +174,7 @@ Now let's understand how your organization operates.
 
 **Question:** How are stakeholders organized?
 
-- [ ] **Centralized PM** - PMs report to a central PM org
+- [ ] **Centralized PM** - PMs report to a central PM organization
 - [ ] **Distributed PM** - PMs report to different BUs/functions
 - [ ] **Embedded PM** - PMs are embedded in engineering teams
 - [ ] **Hybrid** - Mix of the above
@@ -187,6 +187,15 @@ Now let's understand how your organization operates.
 - [ ] **Many** (16+ people)
 
 **Why this matters:** Determines how detailed your stakeholder document needs to be and whether you need BU/team-level stakeholder docs.
+
+### 3.5 Stakeholder avatars (optional)
+
+If you want the PM Brain agent to simulate "what would my manager say?" or run politics checks when key people aren't in the room, you can set up a **stakeholder avatars** (brainfeed) cast. This lives in the **`1.1-Stakeholder-Avatars/`** subfolder: one file per person (e.g. `1-jane-manager.md`, `2-alex-eng-lead.md`). Naming: **single digit**, **name**, **role**, optional **company/organization**.
+
+- **Folder and naming:** [1.1-Stakeholder-Avatars/README.md](1.1-Stakeholder-Avatars/README.md)
+- **How to set up (guided quiz):** [02-Methods-and-Tools/2.4-Communication/2.4.8-Stakeholder-Avatars/](../02-Methods-and-Tools/2.4-Communication/2.4.8-Stakeholder-Avatars/README.md)
+
+You can do this during company context setup or anytime later. It's optional but useful if you work with a recurring cast of stakeholders and want to pressure-test plans and communication before live conversations.
 
 ---
 

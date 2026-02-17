@@ -26,7 +26,7 @@ Do not repeat content that lives elsewhere; reference it.
 **Manual starting point:** Copy the text in the block below into a new chat. The agent will treat it as product thinking, name or ask about your situation, and use prompts from [2-product-sense-prompts.md](2-product-sense-prompts.md) to guide you—without jumping to frameworks or templates first.
 
 ```
-I want to think through something about my product / stakeholder / org. Ask me hard clarifying questions, challenge my assumptions, and help me grow my thinking. Don't suggest frameworks or templates until we've braindumped first.
+I want to think through something about my product / stakeholder / organization. Ask me hard clarifying questions, challenge my assumptions, and help me grow my thinking. Don't suggest frameworks or templates until we've braindumped first.
 ```
 
 ---
@@ -45,7 +45,7 @@ You stay in braindump mode until the user has done real work: multiple exchanges
 
 ### Execution Persona (execution_mode)
 
-Once the thinking is done (or the user explicitly asks to write/draft/fill a specific doc), you become the person who turns a messy whiteboard into something a VP can actually read. You help shape raw thinking into clear artifacts — PRDs, one-pagers, OKRs, roadmaps, research plans, stakeholder comms — optimizing for clarity, narrative, and stakeholder alignment.
+Once the thinking is done (or the user explicitly asks to write/draft/fill a specific doc), you become the person who turns a messy whiteboard into something a VP can actually read. You help shape raw thinking into clear artifacts — PRDs, one-pagers, OKRs, roadmaps, research plans, stakeholder communication — optimizing for clarity, narrative, and stakeholder alignment.
 
 You respect the braindump: you pull real sentences and insights from the user's raw notes rather than inventing a story from scratch. When you spot logical gaps or contradictions ("This section assumes X, but earlier you said Y"), you flag them directly — but you don't block shipping on perfect thinking. Use [.cursor/skills/pm-brain-workflow/SKILL.md](../../../../.cursor/skills/pm-brain-workflow/SKILL.md) and [02-Methods-and-Tools/](../../../../02-Methods-and-Tools/README.md) to pick the right framework, always showing the framework guide before the template.
 
@@ -95,7 +95,7 @@ When the user is asking for something **outside** product thinking (e.g. "how do
 
 | What | Role |
 |------|------|
-| **.cursor/rules** (e.g. **product-sense.mdc**) | **Middleware / policy hook** — Loaded when *context* matches (e.g. user talks about product, stakeholder, org). When loaded, enforces: start from entry point, apply golden rule, use prompts file; don't suggest frameworks yet. |
+| **.cursor/rules** (e.g. **product-sense.mdc**) | **Middleware / policy hook** — Loaded when *context* matches (e.g. user talks about product, stakeholder, organization). When loaded, enforces: start from entry point, apply golden rule, use prompts file; don't suggest frameworks yet. |
 | **.cursor/skills** (e.g. **pm-brain-workflow**) | **Plugin / library** — Loaded when *task* matches (PM workflow, braindump, PRD, strategy, research). Provides framework map, flow, and braindump workflow; points to [PRODUCT-SENSE-RULES.md](../../../../PRODUCT-SENSE-RULES.md) and [2-product-sense-prompts.md](2-product-sense-prompts.md). |
 
 So: **AGENTS** is always on; **ORCHESTRATION** defines when to load what and when to apply product sense vs execution vs meta; **rules** fire when the conversation topic matches; **skills** fire when the task type matches. Both rules and skills point back to this entry point and the prompts file.
@@ -151,11 +151,11 @@ Both approaches follow the same golden rule: braindump before structure.
 
 ## How the agent moves (workflow)
 
-When the user starts a chat about product, stakeholder, org, strategy, roadmap, prioritization, discovery, or “help me think through something,” the agent moves through the repo as follows. Use this to guide your behavior autonomously.
+When the user starts a chat about product, stakeholder, organization, strategy, roadmap, prioritization, discovery, or “help me think through something,” the agent moves through the repo as follows. Use this to guide your behavior autonomously.
 
 ```
 ┌─────────────────────────────────────────────────────────────────────────────┐
-│ USER: New chat about product / stakeholder / org / strategy / “think        │
+│ USER: New chat about product / stakeholder / organization / strategy / “think        │
 │       through something” (or pastes the simple prompt above)                 │
 └─────────────────────────────────────────────────────────────────────────────┘
                                         │

@@ -63,9 +63,10 @@ Content is organized by **the flow of product work**: from foundational thinking
     ├── 2.4.3-One-Pagers/
     ├── 2.4.4-Crisis-Management/
     ├── 2.4.5-Escalation/
-    ├── 2.4.6-Saying-No/
-    ├── 2.4.7-Stakeholder-Management/
-    └── 2.4.9-Courses/
+├── 2.4.6-Saying-No/
+├── 2.4.7-Stakeholder-Management/
+├── 2.4.8-Stakeholder-Avatars/
+└── 2.4.9-Courses/
 ```
 
 Inside each numbered framework folder, files follow this pattern:

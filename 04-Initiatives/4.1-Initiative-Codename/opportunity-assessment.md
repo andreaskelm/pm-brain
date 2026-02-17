@@ -51,7 +51,7 @@
 ## Links & artifacts
 - Research notes: [link to `03-Research-Artifacts/…`]
 - Data/dashboard: [link]
-- Stakeholders & comms rhythm: [link or notes]
+- Stakeholders & communication rhythm: [link or notes]
 - Decision log: [`decisions.md` entry]
 
 

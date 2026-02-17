@@ -14,11 +14,11 @@ Trigger this skill when the user:
 - Says things like:
   - “How do I convince stakeholders / execs?”
   - “I need to write a one-pager / update / newsletter”
-  - “I’m overwhelmed by stakeholder requests”
+      - “I’m overwhelmed by stakeholder requests”
   - “How do I say no to this request?”
   - “How do I escalate this issue?”
 - Or explicitly mentions:
-  - One-pagers, newsletters, stakeholder management, saying no, escalations, crisis comms, meeting agendas.
+  - One-pagers, newsletters, stakeholder management, saying no, escalations, crisis Comms, meeting agendas.
 
 If they’re mainly deciding **what the strategy is**, prefer `strategy-planning`. If they’re mainly figuring out **what to build**, prefer `discovery-research` or execution frameworks.
 
@@ -74,7 +74,7 @@ Most communication frameworks live under:
    - `2.4-Communication/2.4.5-Escalation/1-escalation-framework.md`
    - or `2.4-Communication/2.4.4-Crisis-Management/1-crisis-management-framework.md`
 3. Help outline:
-   - Situation → impact → asks → next steps, tailored to their org.
+      - Situation → impact → asks → next steps, tailored to their organization.
 
 ## Response guidelines
 

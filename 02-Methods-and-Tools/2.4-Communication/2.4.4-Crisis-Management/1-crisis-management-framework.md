@@ -314,7 +314,7 @@ NOTIFICATION SEQUENCE (Within 15 minutes):
 1. Crisis Coordinator → Crisis Manager
 2. Crisis Manager → Core CMT members
 3. Crisis Coordinator → Extended team as needed
-4. Communications Lead → Prepare stakeholder comms
+4. Communications Lead → Prepare stakeholder communication
 
 INTERNAL COMMUNICATIONS:
 • All-hands: [How/when to communicate to employees]
@@ -441,7 +441,7 @@ SECTION 7: POST-CRISIS REVIEW
 
 POST-MORTEM PROCESS (Within 1 Week):
 
-1. Gather all documentation (logs, decisions, comms)
+1. Gather all documentation (logs, decisions, communication)
 2. Interview key participants
 3. Create timeline of events
 4. Identify what went well

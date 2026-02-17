@@ -13,7 +13,7 @@ When you start a real initiative, copy this structure (or create a new `4.x-[Ini
 - `decisions.md` – Simple decision log (what, why, who, when).  
 - `risks.md` – Key risks and mitigations.  
 - `research/` – Links to artifacts in `03-Research-Artifacts/` (interviews, synthesis, experiments).  
-- `stakeholders/` – Stakeholder map and comms plan.  
+- `stakeholders/` – Stakeholder map and communication plan.  
 - `metrics/` – Initiative-level metrics and links to dashboards.  
 
 See `../README.md` for the full opportunity assessment template and process.

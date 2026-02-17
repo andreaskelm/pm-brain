@@ -17,7 +17,7 @@ This folder captures early thinking, research links, and execution docs for this
 - `decisions.md` — Decision log (what/why/who/when). **Use when:** any material decision is made.
 - `risks.md` — Key risks and mitigations. **Use when:** risk profile changes.
 - `research/` — Links to artifacts in `03-Research-Artifacts/` (interviews, synthesis, experiments).
-- `stakeholders/` — Stakeholder map and comms plan. **Use when:** mapping influence and communication rhythm.
+- `stakeholders/` — Stakeholder map and communication plan. **Use when:** mapping influence and communication rhythm.
 - `metrics/` — Initiative-level metrics and dashboard links. **Use when:** defining success and tracking it.
 
 ## Initiative lifecycle (suggested flow)

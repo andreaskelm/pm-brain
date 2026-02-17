@@ -42,7 +42,7 @@
 
 If you want a shared repo for your team’s frameworks/templates:
 
-1. Fork the repo into your org (public or private as appropriate).  
+1. Fork the repo into your organization (public or private as appropriate).  
 2. Treat this fork as the **team library**:
    - Track `02-Methods-and-Tools/` and any sanitized examples.  
    - Keep everyone’s personal `00-Meta/` logs private via **Team mode** (see below).

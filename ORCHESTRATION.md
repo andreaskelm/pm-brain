@@ -18,7 +18,7 @@
 **Input:** User's message and conversation so far.  
 **Output:** One of the states below.
 
-- **Product keywords?** (strategy, discovery, prioritization, roadmap, PRD, stakeholder, organization, "help me think through") and user is **not** explicitly asking to write/draft/fill a specific doc → **product_sense**.
+- **Product keywords?** (strategy, discovery, prioritization, roadmap, PRD, stakeholder, organization, "help me think through", politics, "what would my manager say?", "how will stakeholders react?") and user is **not** explicitly asking to write/draft/fill a specific doc → **product_sense**.
 - **Explicit doc request?** ("write PRD", "create OKR", "draft roadmap", "fill one-pager", etc.) → **execution_mode via template-finder path** (preflight first for non-trivial docs, then framework + template).
 - **After substantial product decision work** (decision reached or clear pause) → **Suggest meta_reflection** (user chooses whether to log).
 - **None of the above** (general question, navigation, non-product topic) → **conversation**.
@@ -41,7 +41,10 @@
 3. Pull **3–5 prompts max per batch** from [2-product-sense-prompts.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md) for that situation. Ask hard questions; challenge assumptions; don't validate or fill boxes.
 4. After each response (or short batch of responses), **summarize what you heard and check whether the user wants to go deeper** before adding another small batch of prompts; if stuck, use [3-product-sense-evaluation.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/3-product-sense-evaluation.md).
 5. Before suggesting any framework, **verify braindump sufficient** (see below). Ask explicit verification questions if needed and **briefly state that the braindump criteria have been met** (e.g. note assumptions vs guesses, at least one risk/second-order effect, and one uncomfortable thought) so the user sees the phase change.
-6. When sufficient → Offer transition to execution_mode (suggest framework + point to doc), making it clear that you are now moving from free-form braindump into structured options or artifacts.
+6. When sufficient:
+   - Offer transition to execution_mode (suggest framework + point to doc), making it clear that you are now moving from free-form braindump into structured options or artifacts.
+   - When politics or stakeholder dynamics are clearly in play (or the user asks "what would [Name] say?" / "how will stakeholders react?"), optionally offer a **politics pass** using the politics coach skill and stakeholder avatars before or alongside the transition:
+     - "Do you want to run a quick politics check on this through your manager / key stakeholders' eyes before we move to artifacts?"
 
 **Braindump exit criteria:** Do not duplicate. Use the canonical checklist in [PRODUCT-SENSE-RULES.md](PRODUCT-SENSE-RULES.md) (Is the braindump "sufficient"?) and the eval functions → `check_braindump_sufficient()` (see [MEMORY.md](MEMORY.md) → Rules/Evals for path). Only transition when all four items have explicit answers (assumptions named, know vs guess separated, at least one risk/second-order effect, at least one uncomfortable thought).
 

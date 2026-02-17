@@ -117,8 +117,8 @@ pm-brain/04-Initiatives/
       experiments/             # Hypotheses, plans, results (markdown docs)
       links.md                 # Links to external raw data (transcripts, recordings in Google Drive/SharePoint/Teams)
     stakeholders/
-      insights.md              # Who cares, needs, influence
-      comms.md                 # Cadence, updates, audiences
+      insights.md              # Who cares, needs, influence (initiative-level view)
+      comms.md                 # Cadence, updates, audiences, and how this initiative shows up in communication and politics
     metrics/
       north-star.md            # Metrics tree, targets, guardrails
       dashboard-links.md       # BI links, definitions
@@ -136,7 +136,7 @@ pm-brain/04-Initiatives/
   - roadmap.md: milestones, dependencies, risks.
   - decisions.md: one-line entries; link to context.
   - research/*: **Save analysis as markdown documents** (interview snapshots, synthesis, insights, experiment results). Store raw data (transcripts, recordings, large files) externally (Google Drive/SharePoint/Teams) and link in `research/links.md`.
-  - stakeholders/*: map, comms plan.
+  - stakeholders/*: stakeholder map, Comms plan, and initiative-level politics notes. Use this together with company-level stakeholders (`01-Company-Context/6-company-stakeholders.md`), stakeholder avatars (`01-Company-Context/1.1-Stakeholder-Avatars/`), and Org Survival docs (`01-Company-Context/1.2-Org-Survival/`) when you're pressure-testing "who gets surprised" and "who can block this".
   - metrics/*: targets, dashboards, definitions.
   - compliance/, architecture/: use as needed.
   - retrospective.md, lessons-learned.md: after major delivery.
@@ -214,5 +214,5 @@ pm-brain/04-Initiatives/
 ## Links & artifacts
 - Research notes: [...]
 - Data/dashboard: [...]
-- Stakeholders & comms rhythm: [...]
+- Stakeholders & communication rhythm: [...]
 - Decision log: [...]

@@ -12,7 +12,7 @@
 
 | Trigger (user mentions or topic) | Wake (load or reference) |
 |----------------------------------|--------------------------|
-| Company, strategy, vision, roadmap, stakeholders, org | [01-Company-Context/](01-Company-Context/README.md) (see below); start with [CONTEXT.md](01-Company-Context/CONTEXT.md) for name/company/team |
+| Company, strategy, vision, roadmap, stakeholders, organization | [01-Company-Context/](01-Company-Context/README.md) (see below); start with [CONTEXT.md](01-Company-Context/CONTEXT.md) for name/company/team |
 | A specific initiative or "my initiative", "current bet" | 04-Initiatives/[initiative-name]/ (see below) |
 | Research, interviews, discovery, evidence, user insights | [03-Research-Artifacts/](03-Research-Artifacts/README.md) or 04-Initiatives/[name]/research/ |
 | Personalization (who I am, my team, my style) | [01-Company-Context/CONTEXT.md](01-Company-Context/CONTEXT.md), [.cursor/rules/thinking.personal.mdc](.cursor/rules/thinking.personal.mdc) |
@@ -32,13 +32,15 @@
 | Purpose | Path |
 |---------|------|
 | Personalization (name, company, team/BU) | [01-Company-Context/CONTEXT.md](01-Company-Context/CONTEXT.md) |
-| Setup / org structure | [01-Company-Context/SETUP.md](01-Company-Context/SETUP.md) |
+| Setup / organization structure | [01-Company-Context/SETUP.md](01-Company-Context/SETUP.md) |
 | Vision | 01-Company-Context/1-company-vision.md (or BU/team equivalent) |
 | Strategy | 01-Company-Context/2-company-strategy.md (or BU/team equivalent) |
 | Principles | 01-Company-Context/3-company-product-principles.md |
 | Portfolio | 01-Company-Context/4-company-product-explanation.md |
 | Roadmap | 01-Company-Context/5-company-roadmap.md |
-| Stakeholders | 01-Company-Context/6-company-stakeholders.md |
+| Stakeholders list | 01-Company-Context/6-company-stakeholders.md |
+| Stakeholder avatars / brainfeed cast | [01-Company-Context/1.1-Stakeholder-Avatars/](01-Company-Context/1.1-Stakeholder-Avatars/README.md) (folder; one file per avatar; agent lists and loads by name/role) |
+| Org survival (power, politics, red flags) | [01-Company-Context/1.2-Org-Survival/](01-Company-Context/1.2-Org-Survival/README.md) (folder; organization-level politics, power maps, alliances, stakeholder games, coalitions, red flags) |
 | Overview | [01-Company-Context/README.md](01-Company-Context/README.md) |
 
 ---
@@ -58,6 +60,7 @@
 - roadmap.md
 - summary.md
 - research/ — initiative-specific research artifacts (if present)
+- stakeholders/ — initiative-level stakeholder insights and Comms rhythm (use together with company stakeholders, stakeholder avatars, and Org-Survival docs when politics are in play)
 
 **Index:** See [04-Initiatives/README.md](04-Initiatives/README.md). To list initiatives, use the filesystem or README; paths are `04-Initiatives/<folder-name>/<file>.md`.
 
@@ -116,13 +119,14 @@ Store analysis/snapshots here (or in initiative research/); raw data external wi
 | [.cursor/skills/pm-brain-workflow/SKILL.md](.cursor/skills/pm-brain-workflow/SKILL.md) | Overall PM workflow: Foundations → Strategy → Discovery → Execution → Communication; high-level routing. |
 | [.cursor/skills/discovery-research/SKILL.md](.cursor/skills/discovery-research/SKILL.md) | Discovery workflows: research interviews, continuous discovery, JTBD, segmentation, opportunity assessment, idea validation, problem/solution space, PMF. |
 | [.cursor/skills/strategy-planning/SKILL.md](.cursor/skills/strategy-planning/SKILL.md) | Strategy and planning: strategy docs, OKRs, roadmaps, prioritization. |
-| [.cursor/skills/stakeholder-management/SKILL.md](.cursor/skills/stakeholder-management/SKILL.md) | Stakeholder comms: one-pagers, newsletters, stakeholder management, saying no, escalation, crisis management. |
+| [.cursor/skills/stakeholder-management/SKILL.md](.cursor/skills/stakeholder-management/SKILL.md) | Stakeholder Comms: one-pagers, newsletters, stakeholder management, saying no, escalation, crisis management. |
+| [.cursor/skills/politics-coach/SKILL.md](.cursor/skills/politics-coach/SKILL.md) | Politics and power dynamics: set up stakeholder/peer avatars (brainfeed cast), run politics checks, and simulate stakeholder reactions when people aren’t in the room. |
 
 ---
 
 ## Summary
 
-- **Company / strategy / org** → 01-Company-Context (CONTEXT.md first, then vision/strategy/roadmap/stakeholders as needed).
+- **Company / strategy / organization** → 01-Company-Context (CONTEXT.md first, then vision/strategy/roadmap/stakeholders as needed).
 - **Initiative** → 04-Initiatives/[initiative-name]/ (opportunity-assessment, prd, decisions, roadmap, summary).
 - **Research / evidence** → 03-Research-Artifacts or 04-Initiatives/[name]/research/.
 - **Personalization** → [01-Company-Context/CONTEXT.md](01-Company-Context/CONTEXT.md), [.cursor/rules/thinking.personal.mdc](.cursor/rules/thinking.personal.mdc).

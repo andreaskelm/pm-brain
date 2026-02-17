@@ -1,8 +1,14 @@
 {
-  "version": "3.1.0",
+  "version": "3.2.0",
   "lastUpdated": "2026-02-16T00:00:00Z",
   "schemaVersion": "1.0",
   "changelog": [
+    {
+      "version": "3.2.0",
+      "date": "2026-02-16",
+      "type": "minor",
+      "summary": "Added politics-coach skill, stakeholder avatars framework, and Org-Survival company-context layer (power, alliances, stakeholder games, red flags). Updated ORCHESTRATION and MEMORY to route politics-related queries through avatars and Org-Survival docs, and wired initiative stakeholders/ docs to this political layer. Normalized language for organization and communication across core docs."
+    },
     {
       "version": "3.1.0",
       "date": "2026-02-16",
@@ -56,7 +62,7 @@
   "structure": {
     "frameworks": 14,
     "rules": 7,
-    "skills": 4,
+    "skills": 5,
     "evalSystem": true,
     "orchestrationFile": true,
     "memoryManifest": true,

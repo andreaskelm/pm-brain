@@ -207,7 +207,7 @@ flowchart LR
 | **2.1 Strategy** | Direction, goals, roadmap, prioritization. |
 | **2.2 Discovery** | Research, JTBD, opportunity assessment, idea validation. |
 | **2.3 Execution** | PRDs, personas, metrics, execution rituals. |
-| **2.4 Communication** | Stakeholder comms, one-pagers, crisis, escalation, saying no. |
+| **2.4 Communication** | Stakeholder Comms, one-pagers, crisis, escalation, saying no. |
 
 ---
 
@@ -236,7 +236,7 @@ flowchart LR
 ```
 
 - **conversation** (default): General questions, navigation, non-product topics. When the user message matches product or doc-request triggers, re-route using the decision tree in [ORCHESTRATION.md](ORCHESTRATION.md).
-- **product_sense**: Entered when the topic is product/stakeholder/org/strategy/roadmap/prioritization/discovery/execution or "help me think through something". Stay here while you braindump using prompts from `2-product-sense-prompts.md` and the golden rule in `PRODUCT-SENSE-RULES.md`, until the "braindump sufficient" checklist is met.
+- **product_sense**: Entered when the topic is product/stakeholder/organization/strategy/roadmap/prioritization/discovery/execution or "help me think through something". Stay here while you braindump using prompts from `2-product-sense-prompts.md` and the golden rule in `PRODUCT-SENSE-RULES.md`, until the "braindump sufficient" checklist is met.
 - **Template finder path** (entry into execution_mode): When you ask to write/draft/fill a specific doc (PRD, OKR, one-pager, etc.), use [0-template-finder.md](02-Methods-and-Tools/0-template-finder.md) to jump to the right README + template, with 1–2 preflight prompts for non-trivial docs.
 - **execution_mode**: After sufficient braindump (or via template-finder path), help structure thinking and apply the right framework/template from `02-Methods-and-Tools/`.
 - **meta_reflection**: After substantial decision work, suggest logging in `00-Meta/` (forecast log, learning log, pattern recognition), optionally running the Level 2 checklist ([.cursor/evals/1-agent-behavior-guide.md](.cursor/evals/1-agent-behavior-guide.md)), and optionally updating rules (see `.cursor/rules/thinking.mdc`). Exit → return to **conversation**.

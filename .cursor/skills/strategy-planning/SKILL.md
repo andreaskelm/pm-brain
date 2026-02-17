@@ -55,7 +55,7 @@ Most strategy frameworks live under:
 ### 2. “Help me set OKRs”
 
 1. Clarify:
-   - Timeframe and scope (team vs org, quarter vs half).
+   - Timeframe and scope (team vs organization, quarter vs half).
    - How OKRs will be used (alignment vs strict commitment).
 2. Point to:
    - `2.1-Strategy/2.1.2-Strategic-Execution/1-OKR/1-okr-framework.md`

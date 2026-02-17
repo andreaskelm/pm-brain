@@ -58,7 +58,7 @@ Use this template to define one market segment. Fill one copy per segment after 
 ## Market sizing
 
 - **TAM (total addressable):** _______________ (people/companies). Basis: ___________________________
-- **Job frequency in market:** This job arises _______ times per _______ (day/week/month/year) per person/org
+- **Job frequency in market:** This job arises _______ times per _______ (day/week/month/year) per person/organization
 - **Market maturity:** □ Emergent  □ Growing  □ Mature  □ Declining
 
 ---

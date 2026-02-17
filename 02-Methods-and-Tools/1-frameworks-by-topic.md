@@ -13,7 +13,7 @@ Paths below are relative to `02-Methods-and-Tools/`.
 - Product sense: [6-Product-Sense-Development/6-meta-thinking-for-product-sense.md](2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/6-meta-thinking-for-product-sense.md) (assumptions, real-time bias check)
 
 **Crisis / incident**  
-- [2.4-Communication/2.4.4-Crisis-Management/](2.4-Communication/2.4.4-Crisis-Management/) — comms playbooks, templates  
+- [2.4-Communication/2.4.4-Crisis-Management/](2.4-Communication/2.4.4-Crisis-Management/) — communication playbooks, templates  
 - Product-sense prompts: [6-Product-Sense-Development/2-product-sense-prompts.md](2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md) (Crisis section)
 
 **Decision-making (reversibility, speed)**  

@@ -61,6 +61,8 @@ This structure creates a natural flow: **Why → What → How → What Exists �
 
 ### Organizational
 - **`6-company-stakeholders.md`** - Technology & Product organization stakeholder directory
+- **`1.1-Stakeholder-Avatars/`** - Stakeholder and peer avatars (brainfeed cast) for simulation and politics checks — one file per person (e.g. 1-jane-manager.md). Naming: single digit, name, role, optional organization. See [1.1-Stakeholder-Avatars/README.md](1.1-Stakeholder-Avatars/README.md) for naming and how to add; setup method: [02-Methods-and-Tools/2.4-Communication/2.4.8-Stakeholder-Avatars/](../02-Methods-and-Tools/2.4-Communication/2.4.8-Stakeholder-Avatars/README.md). See also [SETUP.md](SETUP.md) → Stakeholder avatars.
+- **`1.2-Org-Survival/`** - Organization-level politics and survival cheat sheet (power map, alliances, games, timing, red flags). Personal and agent-facing only. See [1.2-Org-Survival/README.md](1.2-Org-Survival/README.md) for structure and prompts.
 
 ## How to Use This Directory
 
@@ -95,6 +97,7 @@ Act as a product strategy coach helping me build a minimal but useful company co
   - 4-company-product-explanation.md
   - 5-company-roadmap.md
   - 6-company-stakeholders.md
+  - 1.1-Stakeholder-Avatars/ (optional; for brainfeed cast / "what would my manager say?" simulation)
 
 2) For the chosen document:
 - Ask me to paste any existing notes, slides, or docs.
@@ -111,10 +114,10 @@ I'll start by telling you which parts of our company context feel most unclear r
 ## Maintenance
 
 - **Quarterly Reviews**: Review all documents quarterly for accuracy and relevance
-- **After Major Changes**: Update relevant documents when strategy, org structure, or priorities change
+- **After Major Changes**: Update relevant documents when strategy, organization structure, or priorities change
 - **Organizational Structure Changes**: When new BUs, teams, or strategic planning structures emerge, review [`SETUP.md`](SETUP.md) to determine if your directory structure needs updating, and update [`CONTEXT.md`](CONTEXT.md) accordingly
 - **Version Control**: Use git to track changes and maintain history
-- **Stakeholder Updates**: Update stakeholder directory when org changes occur
+- **Stakeholder Updates**: Update stakeholder directory when organization changes occur
 
 ## Related Methods & Tools
 

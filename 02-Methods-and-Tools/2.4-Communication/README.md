@@ -29,7 +29,7 @@ After your braindump, use the frameworks below to structure your communication.
 
 ## How this is organized
 
-- `2.4.1-Newsletter/` — Framework and template for recurring stakeholder updates (e.g. monthly or weekly product newsletters). **Use when:** You need consistent, scalable comms about progress, risks, and decisions.
+- `2.4.1-Newsletter/` — Framework and template for recurring stakeholder updates (e.g. monthly or weekly product newsletters). **Use when:** You need consistent, scalable Comms about progress, risks, and decisions.
 
 - `2.4.2-Meeting-Agendas/` — Agenda templates and frameworks for sprint reviews, retrospectives, planning sessions, stakeholder readouts, and other common PM meetings. **Use when:** You need to run effective meetings that drive decisions.
 
@@ -42,6 +42,8 @@ After your braindump, use the frameworks below to structure your communication.
 - `2.4.6-Saying-No/` — Framework for declining requests gracefully without burning bridges. **Use when:** Capacity is limited and you need to say no professionally.
 
 - `2.4.7-Stakeholder-Management/` — Framework for identifying, prioritizing, and managing stakeholders. Includes mapping, managing up, and cross-functional alignment guides. **Use when:** You need to build relationships and ensure the right people have the right information.
+
+- `2.4.8-Stakeholder-Avatars/` — Framework and template for building a reusable "brainfeed cast" of stakeholder and peer avatars (goals, fears, tone, history). **Use when:** You want to simulate "what would my manager say?" or run politics checks when those people aren't in the room; output lives in [01-Company-Context/1.1-Stakeholder-Avatars/](../../01-Company-Context/1.1-Stakeholder-Avatars/README.md) (one file per avatar; naming: single digit, name, role, optional organization).
 
 - `2.4.9-Courses/` — Course design framework and template. **Use when:** You need to structure internal enablement, PM onboarding, or external training materials in a repeatable way.
 
@@ -66,6 +68,7 @@ Courses (for training and enablement)
 | Need executive decision/authority | `2.4.5-Escalation/` | Framework for when and how to escalate |
 | Too many requests, need to decline | `2.4.6-Saying-No/` | Graceful way to say no without burning bridges |
 | Starting new initiative | `2.4.7-Stakeholder-Management/` | Map and manage stakeholders effectively |
+| "What would my manager say?" / politics check | `2.4.8-Stakeholder-Avatars/` | Set up or use stakeholder avatars for simulation |
 | Creating training materials | `2.4.9-Courses/` | Brain-based learning design framework |
 
 ## Related domains / cross-links
@@ -88,6 +91,5 @@ Help me braindump first, then suggest where to start in this domain. Challenge m
 - Keep "How this is organized" and "When to use what" current.
 - Update flows when frameworks are added/removed.
 - Add/remove "Before using…" prompts if the domain needs them.
-- Note: 2.4.8 is intentionally skipped (reserved for future framework if needed).
 
 

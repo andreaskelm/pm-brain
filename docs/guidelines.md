@@ -111,12 +111,12 @@ When in doubt:
 ## 5. Using AI with This Repo
 
 - **Think first, template second (golden rule)**  
-  - See [PRODUCT-SENSE-RULES.md](PRODUCT-SENSE-RULES.md). Start product/stakeholder/org thinking from the **entry point** [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md): copy the simple prompt into a new chat; the agent will braindump with you, then point to Strategy, Discovery, Execution, or Communication.  
+  - See [PRODUCT-SENSE-RULES.md](PRODUCT-SENSE-RULES.md). Start product/stakeholder/organization thinking from the **entry point** [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md): copy the simple prompt into a new chat; the agent will braindump with you, then point to Strategy, Discovery, Execution, or Communication.  
   - Use frameworks’ **braindump prompts** ([2-product-sense-prompts.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md)) before filling in templates.  
   - Ask AI to challenge assumptions, not just “fill the blanks”.
 
 - **Good patterns**
-  - “I want to think through something about my product / stakeholder / org…” (then use the prompts the agent suggests).
+  - “I want to think through something about my product / stakeholder / organization…” (then use the prompts the agent suggests).
   - “Help me braindump everything I know about [initiative] before we touch the template.”
   - “Based on my current `opportunity-assessment.md`, what’s unclear or risky?”
   - “Summarize changes between these two versions of the PRD.”

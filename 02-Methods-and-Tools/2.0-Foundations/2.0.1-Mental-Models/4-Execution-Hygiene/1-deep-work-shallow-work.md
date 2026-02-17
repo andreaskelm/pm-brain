@@ -12,12 +12,12 @@ Protect deep work as the default for hard problems; batch shallow tasks. Treat i
 - Recovering from “Slack/meeting” weeks
 
 ## PM Example
-Monday was all meetings, no product thinking. PM moves 3 meetings to one block, books 2×90-minute deep-work holds for strategy doc, and uses shallow blocks for comms.
+Monday was all meetings, no product thinking. PM moves 3 meetings to one block, books 2×90-minute deep-work holds for strategy doc, and uses shallow blocks for communication.
 
 ## Framework Structure
 - **Deep Work Criteria:** Requires focus, creates reusable assets, changes decisions
 - **Shallow Work Criteria:** Coordination, updates, administrative work
-- **Guardrails/Operating Rules:** Time blocks, meeting caps, batching comms, focus signals
+- **Guardrails/Operating Rules:** Time blocks, meeting caps, batching communication, focus signals
 
 ## Combines With
 - LNO Framework (`lno-framework.md`)
