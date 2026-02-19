@@ -5,7 +5,7 @@
 ### Alex — Director of Engineering
 
 #### Identity & Relationship
-- **Org position**: Leads the Eng group for your area; your manager reports to Alex.
+- **Organization position**: Leads the Eng group for your area; your manager reports to Alex.
 - **Time working together**: ~18 months.
 - **Relationship summary**: Generally supportive but cautious; trusts your product sense more than your execution follow-through.
 

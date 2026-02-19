@@ -22,7 +22,7 @@ Start by clarifying the core elements:
 > Audience: Mid-level PMs with 2+ years experience at tech company
 > Problem: PMs struggle with conflicting stakeholder priorities
 > Format: 3-hour workshop, max 15 people
-> Org Challenge: Projects delayed due to stakeholder misalignment
+> Organization challenge: Projects delayed due to stakeholder misalignment
 
 ### Step 2: Brainstorm Learning Outcomes (10 minutes)
 Use this template to generate 3-5 specific learning outcomes:

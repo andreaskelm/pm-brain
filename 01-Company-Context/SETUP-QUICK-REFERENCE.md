@@ -102,7 +102,7 @@
 ## When to Update
 
 - **Quarterly:** Review all documents, update CONTEXT.md if needed
-- **After org changes:** New BUs, teams, strategic planning structure changes → Update CONTEXT.md
+- **After organization changes:** New BUs, teams, strategic planning structure changes → Update CONTEXT.md
 - **When agent suggests:** If agent detects new organizational structures
 
 ## Getting Help

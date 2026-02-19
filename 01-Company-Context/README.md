@@ -62,7 +62,7 @@ This structure creates a natural flow: **Why → What → How → What Exists �
 ### Organizational
 - **`6-company-stakeholders.md`** - Technology & Product organization stakeholder directory
 - **`1.1-Stakeholder-Avatars/`** - Stakeholder and peer avatars (brainfeed cast) for simulation and politics checks — one file per person (e.g. 1-jane-manager.md). Naming: single digit, name, role, optional organization. See [1.1-Stakeholder-Avatars/README.md](1.1-Stakeholder-Avatars/README.md) for naming and how to add; setup method: [02-Methods-and-Tools/2.4-Communication/2.4.8-Stakeholder-Avatars/](../02-Methods-and-Tools/2.4-Communication/2.4.8-Stakeholder-Avatars/README.md). See also [SETUP.md](SETUP.md) → Stakeholder avatars.
-- **`1.2-Org-Survival/`** - Organization-level politics and survival cheat sheet (power map, alliances, games, timing, red flags). Personal and agent-facing only. See [1.2-Org-Survival/README.md](1.2-Org-Survival/README.md) for structure and prompts.
+- **`1.2-Organization-Survival/`** - Organization-level politics and survival cheat sheet (power map, alliances, games, timing, red flags). Personal and agent-facing only. See [1.2-Organization-Survival/README.md](1.2-Organization-Survival/README.md) for structure and prompts.
 
 ## How to Use This Directory
 

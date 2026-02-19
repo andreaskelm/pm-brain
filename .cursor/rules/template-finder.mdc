@@ -1,5 +1,5 @@
 ---
-description: When the user explicitly asks to write, draft, or fill in a specific doc (PRD, one-pager, OKR, opportunity assessment, roadmap, meeting agenda, newsletter, crisis comms), route to the template finder instead of forcing the full product-sense braindump loop.
+description: When the user explicitly asks to write, draft, or fill in a specific doc (PRD, one-pager, OKR, opportunity assessment, roadmap, meeting agenda, newsletter, crisis communication), route to the template finder instead of forcing the full product-sense braindump loop.
 alwaysApply: false
 ---
 # Template Finder Path

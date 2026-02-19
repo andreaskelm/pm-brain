@@ -9,7 +9,7 @@
 - Output: Guided quiz → write/update [01-Company-Context/1.1-Stakeholder-Avatars/](../../../01-Company-Context/1.1-Stakeholder-Avatars/README.md) (one file per avatar: N-name-role.md; see that folder's README for naming)
 
 **How to introduce:**  
-"We can set up your stakeholder brainfeed cast so I can later simulate how they'd react to plans or Comms. I'll ask you about 3–7 key people and, for each, a short set of questions about their goals, fears, tone, and how they've worked with you. The result lives in your company context so we can use it whenever you ask 'what would my manager say?' or run a politics check. Ready to pick the first person?"
+"We can set up your stakeholder brainfeed cast so I can later simulate how they'd react to plans or communication. I'll ask you about 3–7 key people and, for each, a short set of questions about their goals, fears, tone, and how they've worked with you. The result lives in your company context so we can use it whenever you ask 'what would my manager say?' or run a politics check. Ready to pick the first person?"
 
 **Common mistakes:**
 - Running the quiz in the middle of a product_sense braindump (offer it after or in a separate pass).
@@ -55,6 +55,6 @@ The **method** (quiz questions, template, when to update) lives here in 02-Metho
 
 ## Links
 
-- Stakeholder Management (mapping, Comms): [2.4.7-Stakeholder-Management/](../2.4.7-Stakeholder-Management/README.md)
+- Stakeholder Management (mapping, communication): [2.4.7-Stakeholder-Management/](../2.4.7-Stakeholder-Management/README.md)
 - Politics-coach skill (when to use avatars): [.cursor/skills/politics-coach/SKILL.md](../../../.cursor/skills/politics-coach/SKILL.md)
 - Product sense (braindump first): [2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md](../../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md)

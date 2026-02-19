@@ -7,7 +7,7 @@ TODO: Define empowered product teams (autonomy + accountability to outcomes).
 TODO: Explain shifting from delivery of requirements to ownership of problems/outcomes.
 
 ## When to Apply
-- TODO: Org design or team chartering
+- TODO: Organization design or team chartering
 - TODO: Moving from feature factory patterns
 - TODO: Leadership coaching on empowerment
 

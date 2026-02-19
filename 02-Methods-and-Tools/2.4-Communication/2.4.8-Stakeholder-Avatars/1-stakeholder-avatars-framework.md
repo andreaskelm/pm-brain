@@ -2,7 +2,7 @@
 
 ## Overview
 
-Stakeholder avatars are **reusable, structured profiles** of real people you work with. Each profile captures what they say they want (explicit goals), what they might not say (implicit goals, fears), what moves them (incentives), how they talk (tone, example phrases), and how they’ve behaved with you (history). The agent uses these profiles to simulate how they’d react to a plan, PRD, or decision when they’re not in the room — so you can pressure-test ideas and Comms before live conversations.
+Stakeholder avatars are **reusable, structured profiles** of real people you work with. Each profile captures what they say they want (explicit goals), what they might not say (implicit goals, fears), what moves them (incentives), how they talk (tone, example phrases), and how they’ve behaved with you (history). The agent uses these profiles to simulate how they’d react to a plan, PRD, or decision when they’re not in the room — so you can pressure-test ideas and communication before live conversations.
 
 **Concepts:**
 - **Avatar** = one person’s profile in a file [01-Company-Context/1.1-Stakeholder-Avatars/N-name-role.md](../../../01-Company-Context/1.1-Stakeholder-Avatars/README.md) (one file per person; see that folder’s README for naming).
@@ -83,6 +83,6 @@ Use the structure in [2-avatar-template.md](2-avatar-template.md). One **file** 
 
 ## Relation to other frameworks
 
-- **2.4.7-Stakeholder-Management**: Mapping and engaging stakeholders; Comms tactics. Use that for *how* to communicate. Use avatars for *simulating* how specific people will react before you communicate.
+- **2.4.7-Stakeholder-Management**: Mapping and engaging stakeholders; communication tactics. Use that for *how* to communicate. Use avatars for *simulating* how specific people will react before you communicate.
 - **Politics-coach skill**: The agent uses this framework when you say "set up my brainfeed" or "add/update avatars"; it uses the *data* in [01-Company-Context/1.1-Stakeholder-Avatars/](../../../01-Company-Context/1.1-Stakeholder-Avatars/README.md) (one file per avatar) when you say "what would [Name] say?" or "run a politics check."
-- **01-Company-Context/1.2-Org-Survival/**: Use this for **system-level politics** (power map, alliances, games, timing, red flags). Person-level patterns go into avatars; system-level patterns go into `1.2-Org-Survival/`.
+- **01-Company-Context/1.2-Organization-Survival/**: Use this for **system-level politics** (power map, alliances, games, timing, red flags). Person-level patterns go into avatars; system-level patterns go into `1.2-Organization-Survival/`.

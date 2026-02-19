@@ -313,7 +313,7 @@ Low Interest
 **Quarterly:**
 
 - [ ] Full stakeholder map refresh
-- [ ] Add new stakeholders (org changes)
+- [ ] Add new stakeholders (organization changes)
 - [ ] Remove departed stakeholders
 - [ ] Reassess power/interest scores
 

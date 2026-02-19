@@ -40,7 +40,7 @@
 | Roadmap | 01-Company-Context/5-company-roadmap.md |
 | Stakeholders list | 01-Company-Context/6-company-stakeholders.md |
 | Stakeholder avatars / brainfeed cast | [01-Company-Context/1.1-Stakeholder-Avatars/](01-Company-Context/1.1-Stakeholder-Avatars/README.md) (folder; one file per avatar; agent lists and loads by name/role) |
-| Org survival (power, politics, red flags) | [01-Company-Context/1.2-Org-Survival/](01-Company-Context/1.2-Org-Survival/README.md) (folder; organization-level politics, power maps, alliances, stakeholder games, coalitions, red flags) |
+| Organization survival (power, politics, red flags) | [01-Company-Context/1.2-Organization-Survival/](01-Company-Context/1.2-Organization-Survival/README.md) (folder; organization-level politics, power maps, alliances, stakeholder games, coalitions, red flags) |
 | Overview | [01-Company-Context/README.md](01-Company-Context/README.md) |
 
 ---
@@ -60,7 +60,7 @@
 - roadmap.md
 - summary.md
 - research/ — initiative-specific research artifacts (if present)
-- stakeholders/ — initiative-level stakeholder insights and Comms rhythm (use together with company stakeholders, stakeholder avatars, and Org-Survival docs when politics are in play)
+- stakeholders/ — initiative-level stakeholder insights and communication rhythm (use together with company stakeholders, stakeholder avatars, and organization survival docs when politics are in play)
 
 **Index:** See [04-Initiatives/README.md](04-Initiatives/README.md). To list initiatives, use the filesystem or README; paths are `04-Initiatives/<folder-name>/<file>.md`.
 
@@ -119,7 +119,7 @@ Store analysis/snapshots here (or in initiative research/); raw data external wi
 | [.cursor/skills/pm-brain-workflow/SKILL.md](.cursor/skills/pm-brain-workflow/SKILL.md) | Overall PM workflow: Foundations → Strategy → Discovery → Execution → Communication; high-level routing. |
 | [.cursor/skills/discovery-research/SKILL.md](.cursor/skills/discovery-research/SKILL.md) | Discovery workflows: research interviews, continuous discovery, JTBD, segmentation, opportunity assessment, idea validation, problem/solution space, PMF. |
 | [.cursor/skills/strategy-planning/SKILL.md](.cursor/skills/strategy-planning/SKILL.md) | Strategy and planning: strategy docs, OKRs, roadmaps, prioritization. |
-| [.cursor/skills/stakeholder-management/SKILL.md](.cursor/skills/stakeholder-management/SKILL.md) | Stakeholder Comms: one-pagers, newsletters, stakeholder management, saying no, escalation, crisis management. |
+| [.cursor/skills/stakeholder-management/SKILL.md](.cursor/skills/stakeholder-management/SKILL.md) | Stakeholder communication: one-pagers, newsletters, stakeholder management, saying no, escalation, crisis management. |
 | [.cursor/skills/politics-coach/SKILL.md](.cursor/skills/politics-coach/SKILL.md) | Politics and power dynamics: set up stakeholder/peer avatars (brainfeed cast), run politics checks, and simulate stakeholder reactions when people aren’t in the room. |
 
 ---

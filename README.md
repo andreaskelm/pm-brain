@@ -4,9 +4,17 @@
 
 > **Your external product management brain. Single source of truth = latest commit.**
 
-A living knowledge base that bridges the gap between Product Management frameworks and actual execution. Git-versioned, shareable, ready to use.
+<p align="center"><img src="assets/pm-brain-hero.png" alt="From messy thinking to structured insight" width="560"></p>
 
-**Product teams drown in blog posts and frameworks** but don't know *how* to run sprint planning or write a strategy document by EOD. This gives you battle-tested guides, templates, and playbooks—and **product sense is built in**: when you work with the repo (e.g. in Cursor), the agent guides you to think first, then structure.
+**Scattered knowledge.** Product knowledge ends up everywhere — Slack threads, meeting notes, Google Docs. When you need a strategy doc or to evaluate a feature, you're either starting from scratch or digging through old stuff hoping you remember where you put that framework. A repo with frameworks, templates, and context in one place, version-controlled and searchable, changes that. Give the agent this context and you get a **thinking partner** that understands your product, your customers, your company's approach. The difference in output quality is massive.
+
+**Product sense is a muscle.** Most PMs only really train it when the stakes are high — strategy doc due, prioritization call, big bet. That's the worst time to get better. PM Brain turns every strategy doc, opportunity assessment, and spec into a rep. The agent doesn't hand you a template; it challenges your thinking and forces a messy braindump before any structure. When you ship the artifact, you've actually done the thinking. The commit history becomes the history of how your judgment evolves.
+
+**Curated truth, not everything wired.** PM Brain keeps the core that matters in one place: latest commit = current reality. The rest is referenced; you go deep when you need to. Company context, initiatives, research are sleeping until the conversation touches them — then the agent pulls in the right stuff. It's a learning system where AI plus your context plus opinionated workflows sharpen your product sense every day. From messy thinking to strategy, discovery, execution, and communication, in one flow.
+
+**One place for your team.** Strategy in Notion, roadmap in Confluence, discovery in Slack — nothing is the source of truth. Clone or fork, add your company context and initiatives, and the repo becomes your team's PM operating system. Onboard new PMs by pointing them at the repo. Update frameworks when reality teaches you something. If it's valuable, make it findable, reusable, and version-controlled. Your PM craft is valuable.
+
+If that's your world — clone or fork the repo and run through [setup](docs/setup.md). You'll have one place to think, structure, and ship product work.
 
 ---
 

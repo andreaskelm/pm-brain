@@ -12,7 +12,7 @@
 - **Team mode:** Ignored by default, but can be optionally tracked for team consistency (see `.gitignore.team` comments)
 
 **Relationship to other personalization files:**
-- **`CONTEXT.md`** (this file) = Organizational context (company name, teams, BUs, your role in the org)
+- **`CONTEXT.md`** (this file) = Organizational context (company name, teams, BUs, your role in the organization)
 - **`.cursor/rules/thinking.personal.mdc`** = Personal working style and preferences (how you like to work, communication style, cognitive preferences)
 - Both files may include your name - keep them consistent. This file focuses on organizational context; `thinking.personal.mdc` focuses on how you work.
 

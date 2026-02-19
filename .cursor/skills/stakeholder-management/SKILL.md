@@ -18,7 +18,7 @@ Trigger this skill when the user:
   - “How do I say no to this request?”
   - “How do I escalate this issue?”
 - Or explicitly mentions:
-  - One-pagers, newsletters, stakeholder management, saying no, escalations, crisis Comms, meeting agendas.
+  - One-pagers, newsletters, stakeholder management, saying no, escalations, crisis communication, meeting agendas.
 
 If they’re mainly deciding **what the strategy is**, prefer `strategy-planning`. If they’re mainly figuring out **what to build**, prefer `discovery-research` or execution frameworks.
 

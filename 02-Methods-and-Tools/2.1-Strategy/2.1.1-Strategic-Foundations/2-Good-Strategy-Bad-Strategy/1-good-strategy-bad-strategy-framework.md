@@ -730,7 +730,7 @@ Result: Actions flow logically from diagnosis
 **What it looks like:**
 - Kernel becomes 50-page document
 - Includes detailed execution plans
-- Has budgets, timelines, org charts
+- Has budgets, timelines, organization charts
 - Too complex to understand simply
 
 **Why it's a problem:**
@@ -747,7 +747,7 @@ Result: Actions flow logically from diagnosis
 
 **Example:**
 ```
-Before: 50-page "strategy" with budgets, org charts, detailed plans
+Before: 50-page "strategy" with budgets, organization charts, detailed plans
 After: 2-page Kernel (Diagnosis, Policy, Actions) + separate execution plan
 Result: Clear strategy that can be communicated simply
 ```

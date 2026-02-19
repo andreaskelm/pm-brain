@@ -62,7 +62,7 @@ The PM Brain follows a natural product development sequence:
 - One-Pagers: `02-Methods-and-Tools/2.4-Communication/2.4.3-One-Pagers/`
 - Stakeholder Management: `02-Methods-and-Tools/2.4-Communication/2.4.7-Stakeholder-Management/`
 - Saying No: `02-Methods-and-Tools/2.4-Communication/2.4.6-Saying-No/`
-- Politics & Org Survival: use the `politics-coach` skill with `01-Company-Context/1.1-Stakeholder-Avatars/` (person-level avatars) and `01-Company-Context/1.2-Org-Survival/` (system-level politics: power map, alliances, red flags) when stakeholder problems are clearly political, not just about message shape.
+- Politics & organization survival: use the `politics-coach` skill with `01-Company-Context/1.1-Stakeholder-Avatars/` (person-level avatars) and `01-Company-Context/1.2-Organization-Survival/` (system-level politics: power map, alliances, red flags) when stakeholder problems are clearly political, not just about message shape.
 
 ## Typical File Patterns
 

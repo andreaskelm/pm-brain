@@ -1,4 +1,4 @@
-# Org Survival Cheat Sheet
+# Organization Survival Cheat Sheet
 
 This subfolder is your **organizational survival layer**: how power, politics, and timing really work in your company. It’s personal and agent-facing, not something you’d ever ship to stakeholders.
 

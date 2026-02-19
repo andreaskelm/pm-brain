@@ -157,7 +157,7 @@ Rate yourself monthly on these dimensions (1-5 scale):
 **2 - Framework-Driven:** I use scoring/prioritization methods mechanically
 **3 - Context-Aware:** I adapt prioritization to situation and constraints
 **4 - Principled:** I make clear tradeoffs aligned with strategy and can defend them
-**5 - Masterful:** I see second-order effects (user behavior shifts, team/org consequences, future optionality) and make bets that compound over time, even when the information is messy or incomplete
+**5 - Masterful:** I see second-order effects (user behavior shifts, team/organization consequences, future optionality) and make bets that compound over time, even when the information is messy or incomplete
 
 **See:** `templates/2-self-assessment-template.md` for detailed assessment framework.
 

@@ -1,4 +1,4 @@
-# [Company] Stakeholders – Technology & Product Org
+# [Company] Stakeholders – Technology & Product Organization
 
 ## Introduction
 
@@ -52,12 +52,12 @@ This file is optimized for both human reference and AI/LLM parsing.
 - **Meeting Preparation**: Look up stakeholders before meetings to understand their role and reporting structure
 - **Stakeholder Mapping**: Use to identify key decision-makers and influencers for initiatives
 - **Communication Planning**: Reference when planning communications to understand audience hierarchy
-- **Org Structure Understanding**: Use to understand the Technology & Product organization structure
+- **Organization structure understanding**: Use to understand the Technology & Product organization structure
 
 ## How to Maintain
 
 - **Quarterly Reviews**: Review and update quarterly or when organizational changes occur
-- **After Org Changes**: Update immediately when reporting lines, roles, or team structure changes
+- **After organization changes**: Update immediately when reporting lines, roles, or team structure changes
 - **New Hires**: Add new stakeholders when they join the organization
 - **Departures**: Remove or mark stakeholders who leave the organization
 - **Key Stakeholders Section**: Keep the "Key Stakeholders I'm Currently Working With" section current with your active collaborators

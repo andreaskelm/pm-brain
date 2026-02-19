@@ -44,4 +44,4 @@ This folder holds your **global cast of recurring people** you work with (manage
 - **Setup method (guided quiz):** [02-Methods-and-Tools/2.4-Communication/2.4.8-Stakeholder-Avatars/](../../02-Methods-and-Tools/2.4-Communication/2.4.8-Stakeholder-Avatars/README.md)
 - **Stakeholder directory (organization list):** [6-company-stakeholders.md](../6-company-stakeholders.md)
 - **Company context setup:** [SETUP.md](../SETUP.md) → §3.5 Stakeholder avatars
-- **Org survival (system-level politics):** [1.2-Org-Survival/](../1.2-Org-Survival/README.md)
+- **Organization survival (system-level politics):** [1.2-Organization-Survival/](../1.2-Organization-Survival/README.md)

@@ -207,7 +207,7 @@ flowchart LR
 | **2.1 Strategy** | Direction, goals, roadmap, prioritization. |
 | **2.2 Discovery** | Research, JTBD, opportunity assessment, idea validation. |
 | **2.3 Execution** | PRDs, personas, metrics, execution rituals. |
-| **2.4 Communication** | Stakeholder Comms, one-pagers, crisis, escalation, saying no. |
+| **2.4 Communication** | Stakeholder communication, one-pagers, crisis, escalation, saying no. |
 
 ---
 

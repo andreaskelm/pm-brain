@@ -1,6 +1,6 @@
 ---
 name: politics-coach
-description: Help PMs navigate organization politics, simulate stakeholder/peer feedback when people aren't in the room, and run politics checks on plans and Comms.
+description: Help PMs navigate organization politics, simulate stakeholder/peer feedback when people aren't in the room, and run politics checks on plans and communication.
 ---
 
 # Politics Coach Skill
@@ -36,7 +36,7 @@ If they're mainly focused on **documents and tactics** (one-pagers, escalations,
 |--------|------|
 | **Set up or update avatars** (guided quiz, methodology) | [02-Methods-and-Tools/2.4-Communication/2.4.8-Stakeholder-Avatars/](../../02-Methods-and-Tools/2.4-Communication/2.4.8-Stakeholder-Avatars/README.md) — load README + 1-stakeholder-avatars-framework.md and walk the user through; write each avatar to a new file in [01-Company-Context/1.1-Stakeholder-Avatars/](../../01-Company-Context/1.1-Stakeholder-Avatars/README.md) using the naming convention in that folder's README |
 | **Avatar data** (who to simulate) | [01-Company-Context/1.1-Stakeholder-Avatars/](../../01-Company-Context/1.1-Stakeholder-Avatars/README.md) — one file per person (e.g. 1-jane-manager.md); list folder and load the relevant N-name-role.md by name/role |
-| **Stakeholder Comms tactics** (one-pagers, saying no, escalation) | [02-Methods-and-Tools/2.4-Communication/](../../02-Methods-and-Tools/2.4-Communication/) — use with stakeholder-management skill |
+| **Stakeholder communication tactics** (one-pagers, saying no, escalation) | [02-Methods-and-Tools/2.4-Communication/](../../02-Methods-and-Tools/2.4-Communication/) — use with stakeholder-management skill |
 
 ---
 
@@ -89,15 +89,15 @@ If no avatars exist, offer to run the setup framework (2.4.8) first, or do a lig
 - When simulating: use the three-part structure (out-loud, inner monologue, concerns + de-risking). Make it clear when you're speaking as a stakeholder vs as the agent.
 - Nudge occasionally to **update avatars** after real conversations.
 
-## Org survival docs
+## Organization survival docs
 
-- For **system-level politics** (power, alliances, games, timing, history), wake [01-Company-Context/1.2-Org-Survival/](../../01-Company-Context/1.2-Org-Survival/README.md):
+- For **system-level politics** (power, alliances, games, timing, history), wake [01-Company-Context/1.2-Organization-Survival/](../../01-Company-Context/1.2-Organization-Survival/README.md):
   - Use `1-power-map.md` for who really decides and who can veto.
   - Use `2-political-landscape.md` for alliances, fault lines, and protected systems.
   - Use `3-stakeholder-games.md` for recurring behaviour patterns and how to work with them.
   - Use `4-coalitions-and-timing.md` to think through timing and sequencing before big moves.
   - Use `5-red-flags-and-history.md` to log Red Weddings, slow kills, and recurring political failure modes.
-- After a politics pass or a real incident, suggest updating the relevant org-survival files, especially `1-power-map.md` and `5-red-flags-and-history.md`, so future runs can spot patterns earlier.
+- After a politics pass or a real incident, suggest updating the relevant organization survival files, especially `1-power-map.md` and `5-red-flags-and-history.md`, so future runs can spot patterns earlier.
 
 ---
 

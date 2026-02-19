@@ -29,13 +29,13 @@ After your braindump, use the frameworks below to structure your communication.
 
 ## How this is organized
 
-- `2.4.1-Newsletter/` — Framework and template for recurring stakeholder updates (e.g. monthly or weekly product newsletters). **Use when:** You need consistent, scalable Comms about progress, risks, and decisions.
+- `2.4.1-Newsletter/` — Framework and template for recurring stakeholder updates (e.g. monthly or weekly product newsletters). **Use when:** You need consistent, scalable communication about progress, risks, and decisions.
 
 - `2.4.2-Meeting-Agendas/` — Agenda templates and frameworks for sprint reviews, retrospectives, planning sessions, stakeholder readouts, and other common PM meetings. **Use when:** You need to run effective meetings that drive decisions.
 
 - `2.4.3-One-Pagers/` — Framework and templates for narrative one-pagers and lightweight briefs. **Use when:** You need to align leadership and teams on proposals, decisions, and strategy.
 
-- `2.4.4-Crisis-Management/` — Comms playbooks and templates for when things go wrong (incidents, outages, serious bugs). **Use when:** You need to communicate quickly and clearly during high-pressure situations.
+- `2.4.4-Crisis-Management/` — Communication playbooks and templates for when things go wrong (incidents, outages, serious bugs). **Use when:** You need to communicate quickly and clearly during high-pressure situations.
 
 - `2.4.5-Escalation/` — Framework for knowing when and how to escalate issues in large organizations. **Use when:** You need to navigate authority, resources, and decision-making effectively.
 
