@@ -96,5 +96,21 @@
 
 -----
 
+## PM Brain This Week (Optional, 5 minutes)
+
+**Used for**
+- [What you actually used PM Brain for this week – frameworks, templates, initiatives, or commands like /day, /week, /navigate, /start]
+
+**Frustrated by**
+- [What was hard, confusing, or slow about using PM Brain – navigation, naming, structure, complexity, missing cross-links, agent behavior, etc.]
+
+**Missing**
+- [Templates, guides, prompts, or context you wished existed in the moment]
+
+**Action**
+- [Exactly one small change you could make to PM Brain next week (add / simplify / remove / rename / promote something)]
+
+-----
+
 **Time spent:** [X minutes]
 **Quality:** [Self-rate 1-5 on depth/honesty]
