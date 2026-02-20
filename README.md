@@ -6,15 +6,22 @@
 
 <p align="center"><img src="assets/pm-brain-hero.png" alt="From messy thinking to structured insight" width="560"></p>
 
-**Scattered knowledge.** Product knowledge ends up everywhere — Slack threads, meeting notes, Google Docs. When you need a strategy doc or to evaluate a feature, you're either starting from scratch or digging through old stuff hoping you remember where you put that framework. A repo with frameworks, templates, and context in one place, version-controlled and searchable, changes that. Give the agent this context and you get a **thinking partner** that understands your product, your customers, your company's approach. The difference in output quality is massive.
+Product work is messy, and no one can keep all the important context in their brain.
 
-**Product sense is a muscle.** Most PMs only really train it when the stakes are high — strategy doc due, prioritization call, big bet. That's the worst time to get better. PM Brain turns every strategy doc, opportunity assessment, and spec into a rep. The agent doesn't hand you a template; it challenges your thinking and forces a messy braindump before any structure. When you ship the artifact, you've actually done the thinking. The commit history becomes the history of how your judgment evolves.
+You have probably felt this before:
+- *"Sprint planning starts in 30 minutes, and we still do not have a clear prioritization call."*
+- *"Leadership wants the strategy document by end of day, and I am still stitching context from Confluence, Jira tickets, old emails, and town hall slides from four months ago."*
+- *"A stakeholder flips their position right before go-live, and now launch is postponed or canceled over something we could have pressure-tested upfront."*
 
-**Curated truth, not everything wired.** PM Brain keeps the core that matters in one place: latest commit = current reality. The rest is referenced; you go deep when you need to. Company context, initiatives, research are sleeping until the conversation touches them — then the agent pulls in the right stuff. It's a learning system where AI plus your context plus opinionated workflows sharpen your product sense every day. From messy thinking to strategy, discovery, execution, and communication, in one flow.
+**PM Brain is a git-versioned product management system plus an AI thinking partner.**
 
-**One place for your team.** Strategy in Notion, roadmap in Confluence, discovery in Slack — nothing is the source of truth. Clone or fork, add your company context and initiatives, and the repo becomes your team's PM operating system. Onboard new PMs by pointing them at the repo. Update frameworks when reality teaches you something. If it's valuable, make it findable, reusable, and version-controlled. Your PM craft is valuable.
+Think of it as an external knowledge base of frameworks, guides, templates, and playbooks that bridges PM theory and day-to-day execution. Your thinking has a home here. The workflow starts where real PM work starts: messy thinking first. The agent pushes a braindump before structure, challenges weak assumptions, and helps you build stronger critical thinking, judgment, intuition, and product sense through daily reps.
 
-If that's your world — clone or fork the repo and run through [setup](docs/setup.md). You'll have one place to think, structure, and ship product work.
+The core knowledge stays in one place: latest commit = current reality. Everything else can stay referenced (Confluence pages, Jira tickets, old emails) instead of trying to wire every source all the time.
+
+From there, the flow is natural: thinking → strategy → discovery → execution → communication. You move from "brain soup" to clear artifacts without losing the nuance.
+
+If this sounds like your world, start with [setup](docs/setup.md) below.
 
 ---
 
@@ -58,10 +65,10 @@ pm-brain/
 ## 💡 What this is / What it isn't
 
 **What it is:**  
-A bridge from PM theory to daily execution: frameworks plus an agent that guides you to think first, then structure your messy thinking into clear artifacts. A place to store the messy reality of product work using git as the single source of truth. A way to make AI useful for product work: give it your company context, a framework, and a template, and it helps condense your braindump into structured thinking.
+A practical PM system that helps you think better and execute faster. Keep core product knowledge in git, use frameworks and templates when needed, and let the agent guide messy thinking into clear artifacts.
 
 **What it isn't:**  
-Not a productivity tool that saves hours on trivial tasks (it's about better thinking, not faster checkboxes). Not a replacement for project management tools (link to Jira, Confluence, Figma instead of duplicating). Not about perfect prompts (the agent guides; you do the thinking, deciding, and writing).
+Not a checkbox productivity hack, not a replacement for Jira/Confluence/Figma, and not a magic-prompt system. You still own the thinking and the decisions.
 
 ---
 

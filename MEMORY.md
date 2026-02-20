@@ -19,6 +19,7 @@
 | How to evaluate artifacts / when to run evals | [.cursor/rules/evaluation-orchestration.mdc](.cursor/rules/evaluation-orchestration.mdc), [.cursor/evals/](.cursor/evals/README.md) |
 | Template finder / which doc to use | [02-Methods-and-Tools/0-template-finder.md](02-Methods-and-Tools/0-template-finder.md) |
 | Product sense / braindump / golden rule | [PRODUCT-SENSE-RULES.md](PRODUCT-SENSE-RULES.md), [2-product-sense-prompts.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md), [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md) |
+| Repo usage, maintenance, hygiene, "how should we use this repo?" | [docs/guidelines.md](docs/guidelines.md) |
 | Repo structure, refactoring, architecture, adding files, reorganizing | [docs/architecture.md](docs/architecture.md) → Design Principles section |
 
 ---

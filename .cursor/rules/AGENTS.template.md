@@ -1,6 +1,6 @@
 # Custom Agents Template
 
-This file is a **template/guide** for defining custom AI agents (roles) for your workspace. This is **separate** from the root `AGENTS.md` file, which defines the PM Brain Assistant agent for navigating this repository.
+This file is a **template/guide** for defining custom AI agents (roles) for your workspace. This is **separate** from the root `AGENTS.md` file, which defines the PM Brain Coach agent for navigating this repository.
 
 Use the prompt below to have the AI help you design and fill out your own custom agent definitions.
 

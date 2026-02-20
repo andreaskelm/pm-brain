@@ -1,8 +1,14 @@
 {
-  "version": "3.2.0",
-  "lastUpdated": "2026-02-16T00:00:00Z",
+  "version": "3.3.0",
+  "lastUpdated": "2026-02-20T11:47:37Z",
   "schemaVersion": "1.0",
   "changelog": [
+    {
+      "version": "3.3.0",
+      "date": "2026-02-20",
+      "type": "minor",
+      "summary": "Refined README opening for stronger PM pain clarity and concise positioning. Added lightweight guidelines wiring by adding docs/guidelines.md wake triggers in MEMORY and reminder behavior in ORCHESTRATION. Standardized terminology to full forms (organization/communication), renamed 01-Company-Context/1.2-Org-Survival to 1.2-Organization-Survival and updated links, and aligned agent naming to PM Brain Coach across AGENTS/setup/rules docs."
+    },
     {
       "version": "3.2.0",
       "date": "2026-02-16",
@@ -57,7 +63,8 @@
     "MEMORY.md now includes Evals section as path-mapping layer for eval functions, behavior guide, and test infrastructure",
     "Context Health section added to ORCHESTRATION.md: heuristic checkpointing, re-anchoring at state transitions, error recovery",
     "New file: CLAUDE.md (Claude Code adapter); new folder: checkpoints/ (session state persistence)",
-    "SETUP.md Step 7 rewritten as multi-platform setup guide (Cursor, Claude Code, Claude.ai, ChatGPT, GitHub Copilot, universal)"
+    "SETUP.md Step 7 rewritten as multi-platform setup guide (Cursor, Claude Code, Claude.ai, ChatGPT, GitHub Copilot, universal)",
+    "Renamed company-context politics folder from 01-Company-Context/1.2-Org-Survival/ to 01-Company-Context/1.2-Organization-Survival/; update external links and personal references accordingly"
   ],
   "structure": {
     "frameworks": 14,

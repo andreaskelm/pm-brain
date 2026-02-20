@@ -175,7 +175,7 @@ If you're using **Cursor** (or similar AI-powered IDE), the repository includes 
 #### Location: Root and `.cursor/rules/`
 
 **Key files:**
-- `AGENTS.md` (root) — PM Brain Assistant persona and core instructions; points to orchestration and memory.
+- `AGENTS.md` (root) — PM Brain Coach persona and core instructions; points to orchestration and memory.
 - `ORCHESTRATION.md` (root) — Routing, states (product_sense, execution_mode, meta_reflection, conversation), context loading; single source of truth for agent behavior.
 - `MEMORY.md` (root) — Sleeping memory manifest: when to load company context, initiatives, research, rules, skills.
 - `.cursor/rules/AGENTS.template.md` — Template for creating custom agents (separate from root `AGENTS.md`).
@@ -183,7 +183,7 @@ If you're using **Cursor** (or similar AI-powered IDE), the repository includes 
 - `thinking.personal.mdc` — Personal context (you can customize this).
 
 **What to do:**
-1. **Review** `AGENTS.md` and `ORCHESTRATION.md` — Understand how the PM Brain Assistant is configured and how it routes and loads context
+1. **Review** `AGENTS.md` and `ORCHESTRATION.md` — Understand how the PM Brain Coach is configured and how it routes and loads context
 2. **Fill out** `01-Company-Context/CONTEXT.md` - Add your name, company name, and team/BU names (organizational context)
    - **Note:** In private/team modes, this file is ignored by default. In team mode, you can optionally track it for team consistency (see `.gitignore.team` comments).
 3. **Customize** `.cursor/rules/thinking.personal.mdc` - Add your personal working style, preferences, and communication style (how you like to work)
@@ -446,7 +446,7 @@ Once you're set up:
 ### "The AI assistant doesn't understand my question"
 
 - Make sure you're in the repository directory
-- Check that `AGENTS.md` (root) exists (this defines the PM Brain Assistant)
+- Check that `AGENTS.md` (root) exists (this defines the PM Brain Coach)
 - Try rephrasing your question more specifically
 
 ### "I'm overwhelmed by all the files"

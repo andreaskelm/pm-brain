@@ -71,6 +71,7 @@
 1. Load the relevant framework's README and 1-*-framework.md (and "For Agents" section for trigger conditions, how to introduce, common mistakes).
 2. Apply framework step-by-step; pull from user's braindump where possible.
 3. When user fills template, load 2-*-template.md. When doing quality check, load 3-*-evaluation.md. Use Quick Quality Checks during creation per the evaluation orchestration rules (see [MEMORY.md](MEMORY.md) → Rules) where the framework has evaluation support.
+4. If the user asks how to keep docs clean, current, or maintainable while creating artifacts, wake [docs/guidelines.md](docs/guidelines.md) and give a short hygiene reminder (golden record, link-don't-duplicate, think-first-then-template).
 
 **Exit:** Document completed or user switches topic. Optionally suggest meta_reflection (log in [00-Meta/](00-Meta/README.md)).
 
@@ -96,7 +97,7 @@
 
 **When entered:** Default for non-product topics (general questions, navigation, "what's in X?", etc.).
 
-**Behavior:** Answer questions, provide info, point to docs. If user message later matches product or doc-request triggers, re-route using the decision tree above.
+**Behavior:** Answer questions, provide info, point to docs. If the user asks about usage norms, maintenance, or "how should we work in this repo?", wake [docs/guidelines.md](docs/guidelines.md) and give a concise guideline check (golden record, link-don't-duplicate, think-first-then-template). If user message later matches product or doc-request triggers, re-route using the decision tree above.
 
 ---
 
