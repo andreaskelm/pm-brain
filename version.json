@@ -1,8 +1,14 @@
 {
-  "version": "3.3.0",
-  "lastUpdated": "2026-02-20T11:47:37Z",
+  "version": "3.4.0",
+  "lastUpdated": "2026-02-27T00:00:00Z",
   "schemaVersion": "1.0",
   "changelog": [
+    {
+      "version": "3.4.0",
+      "date": "2026-02-27",
+      "type": "minor",
+      "summary": "Added a lightweight onboarding cluster under 01-Company-Context/1.3-Onboarding (Top 10 guide, metrics glossary, acronyms quick-reference) to make new-PM setup faster. Reworked the Product Judgment Test to be script-free by adding a transparent brier-calculation doc and a spreadsheet calculator, updating README/dashboard, and removing the Python helper script. Introduced a concrete Context Health table in 01-Company-Context/CONTEXT-HEALTH.md and wired it into MEMORY and ORCHESTRATION so the agent can offer gentle freshness checks when company/initiative docs feed into real decisions."
+    },
     {
       "version": "3.3.0",
       "date": "2026-02-20",

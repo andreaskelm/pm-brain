@@ -14,6 +14,8 @@ This directory contains the foundational company context documents that provide 
 
 **Personalization:** Start by filling out [`CONTEXT.md`](CONTEXT.md) with your name, company name, and team/BU names. This personalizes AI assistance and makes documents more relevant.
 
+**Onboarding:** Once basic context exists, read [`1.3-Onboarding/1-top-10-things-you-should-know.md`](1.3-Onboarding/1-top-10-things-you-should-know.md) for a fast tour of how company context, metrics, acronyms, and methods fit together.
+
 The setup guide helps you:
 - Discover your organizational structure through probing questions
 - Plan the right document structure (flat, BU-level, team-level, etc.)

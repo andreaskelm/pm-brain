@@ -141,7 +141,7 @@
 - Templates: 2-*-template.md (when filling).
 - Evaluations: 3-*-evaluation.md (when doing quality check or full eval).
 
-**Sleeping memory:** When the user mentions company strategy, an initiative, or research, use [MEMORY.md](MEMORY.md) to choose what to load (01-Company-Context, 04-Initiatives, 03-Research-Artifacts, CONTEXT.md, rules, skills). See [MEMORY.md](MEMORY.md) for the sleeping memory manifest and when to wake each area.
+**Sleeping memory:** When the user mentions company strategy, an initiative, or research, use [MEMORY.md](MEMORY.md) to choose what to load (01-Company-Context, 04-Initiatives, 03-Research-Artifacts, CONTEXT.md, rules, skills). See [MEMORY.md](MEMORY.md) for the sleeping memory manifest and when to wake each area. When these files are used as **inputs to real work** (roadmaps, OKRs, strategy docs, PRDs, initiative decisions, politics checks), the agent may also consult the **context health table** ([01-Company-Context/CONTEXT-HEALTH.md](01-Company-Context/CONTEXT-HEALTH.md)) to decide whether a gentle “is this still roughly true?” nudge is appropriate (see Context Health → Content Freshness).
 
 **Before asking the user whether context exists:** Check the filesystem first (list the directory, try to read the file). Only ask if the file does not exist and the context seems relevant to the current task.
 
@@ -149,11 +149,16 @@
 
 ## Context Health (Preventing Context Rot)
 
-Long conversations degrade quality: early content gets ignored (lost-in-middle), recent messages dominate (recency bias), and core instructions fade. Use heuristic triggers — not fixed turn counts — to keep sessions healthy.
+Context rot shows up in two places:
 
-### When to Offer Checkpoints
+1. **Conversation rot** — long sessions where early content gets ignored (lost-in-middle), recent messages dominate (recency bias), and core instructions fade.
+2. **Content rot** — company/initiative/stakeholder docs inside the repo that become outdated but are still treated as live inputs to decisions.
 
-Offer a checkpoint (don't force) when any of these apply:
+Use heuristic triggers — not fixed turn counts or rigid schedules — to keep both healthy.
+
+### Conversation Health (checkpoints)
+
+Long conversations degrade quality. Offer a checkpoint (don't force) when any of these apply:
 
 - **Heavy context loaded:** 3+ sleeping memory files woken in the session (company docs, research, initiative files). The more context loaded, the sooner quality degrades.
 - **State transition from product_sense → execution_mode:** Natural pause. Especially if the braindump was rich, a fresh context window produces better artifacts. Say: "Want to checkpoint before we start the artifact? Fresh context = better quality."
@@ -162,7 +167,7 @@ Offer a checkpoint (don't force) when any of these apply:
 - **Hard ceiling at ~25-30 turns with loaded context:** Regardless of other signals, recommend checkpoint if the conversation is this long AND sleeping memory was woken.
 - **User request:** "checkpoint", "save state", or "save progress" triggers it immediately.
 
-### Checkpoint Protocol
+#### Checkpoint Protocol
 
 **Create:** `checkpoints/session-YYYY-MM-DD-HHMM.md` containing:
 - Current state (product_sense / execution_mode / meta_reflection)
@@ -172,20 +177,57 @@ Offer a checkpoint (don't force) when any of these apply:
 - Framework candidates (if any) and why they fit
 - Next steps (what we're about to do)
 - Which context files were loaded (so the next session can reload them)
+- (Optional) Any **stale-but-used docs** the user explicitly chose to treat as “good enough for now” (see Content Freshness below).
 
 **Resume:** User starts a fresh conversation and says "continue from checkpoints/session-[timestamp].md." Agent reads the checkpoint, summarizes where things stand, asks if anything has changed, and continues from there.
 
-### Re-Anchoring (Lightweight)
+#### Re-Anchoring (Lightweight)
 
 - **At every state transition:** Silently re-read the relevant state instructions from this file. Don't surface this to the user unless drift is detected.
 - **After waking sleeping memory:** Re-confirm golden rule and current state internally. Only tell the user if the agent catches itself drifting.
 - **No visible checklists** unless something is actually wrong. Re-anchoring should be invisible when working correctly.
 
-### Error Recovery
+#### Error Recovery
 
 - **Golden rule violation:** Acknowledge it directly ("I jumped to frameworks too early — let me back up"), then ask the questions that should have been asked.
 - **Lost thread:** Offer checkpoint explicitly ("I'm losing coherence — let's save progress and continue in a fresh conversation").
 - **User correction:** Accept, fix, move on. No defensive explanations.
+
+### Content Health (repo docs)
+
+Some sleeping memory docs (company vision/strategy/roadmap, stakeholders, politics, initiative roadmaps) act as **live inputs** to decisions and artifacts. Over time, they can become stale while still being treated as ground truth. The **context health table** ([01-Company-Context/CONTEXT-HEALTH.md](01-Company-Context/CONTEXT-HEALTH.md)) is the single place that tracks which docs matter most for staleness and how often they should be sanity-checked.
+
+#### When to run a freshness check
+
+The agent may consult the context health table and offer a short, optional nudge **only** in these flows:
+
+- **Roadmap / OKR / Strategy work**  
+  When entering execution_mode for Roadmap, OKR, or Strategy frameworks **and** company context has been woken (e.g. `1-company-vision.md`, `2-company-strategy.md`, `5-company-roadmap.md`):
+  - If any of those docs appear in the context health table with medium/high rot risk and are overdue vs. their cadence, the agent can say a one-line prompt such as:  
+    - "We're about to lean on `01-Company-Context/5-company-roadmap.md`, which the context health table marks as likely-stale. Do you want to sanity-check whether it's still roughly true before we treat it as ground truth?"
+
+- **Initiative-level artifacts**  
+  When using initiative docs under `04-Initiatives/<name>/` (especially `roadmap.md`, `decisions.md`, `prd.md`) as inputs to a new decision or artifact:
+  - If those paths are in the context health table and overdue, offer the same style of **short, optional** “is this still roughly true?” nudge.
+
+- **Stakeholder & politics flows**  
+  When using stakeholder avatars (`01-Company-Context/1.1-Stakeholder-Avatars/`) or Organization-Survival docs (`01-Company-Context/1.2-Organization-Survival/`) in politics-coach or stakeholder-management flows:
+  - If the relevant files are marked medium/high rot risk and overdue, the agent may ask whether alliances, reporting lines, or red flags need a quick update before reasoning from them.
+
+Outside these flows (e.g. casual browsing of company docs, light navigation questions), **do not** trigger freshness checks.
+
+#### Reminder style and escape hatches
+
+Freshness nudges must be:
+
+- **Short and optional** — one or two sentences max.
+- Framed as a **question**, not a command.
+- Paired with clear escapes, for example:
+  - "Quick sense-check now"
+  - "Assume roughly true and continue"
+  - "Treat as historical for this session (don't nudge again here)"
+
+If the user chooses to accept stale input as-is, honour that choice and, if helpful, note it in the current checkpoint as “stale-but-used” context rather than repeating the nudge.
 
 ---
 

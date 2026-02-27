@@ -1,6 +1,6 @@
 # Product Judgment Test – Dashboard
 
-**Purpose:** Record your **Overall Brier Score** and trend. Update monthly after resolving closed bets and computing your score (see [brier-calculation.md](brier-calculation.md) or the optional script).
+**Purpose:** Record your **Overall Brier Score** and trend. Update monthly after resolving closed bets and computing your score (see [brier-calculation.md](brier-calculation.md) or use the simple spreadsheet calculator).
 
 ---
 

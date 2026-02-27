@@ -111,11 +111,13 @@ A "perfect" score isn't someone who is right 100% of the time—that person is l
 |------|----------|
 | **README.md** (this file) | Overview, workflow, how to win, caveats, confidence calibration. |
 | **forecast-log.md** | Your running log: forecast + resolution. Append rows before ship; resolve when deadline hits. |
-| **brier-calculation.md** | Formula, weight table, outcome mapping, interpretation bands. |
+| **brier-calculation.md** | Formula, weight table, outcome mapping, interpretation bands, and a worked example. |
 | **dashboard.md** | Where to record Overall Brier and trend (update monthly). |
+| **product-judgment-test-calculator.csv** | Simple spreadsheet-style calculator you can open in Excel/Sheets to compute Overall Brier from closed rows (no scripts, just formulas). |
 
-Optional: Run the Python script to compute Overall Brier from closed rows in your forecast log:
-`python scripts/compute_brier.py` (from this folder) or `python 00-Meta/0.3-Product-Judgment-Test/scripts/compute_brier.py` from repo root.
+To compute your Overall Brier Score, you have two options:
+- **Manual:** Follow the step-by-step math in `brier-calculation.md` and use any basic calculator.
+- **Spreadsheet:** Copy closed rows from `forecast-log.md` into `product-judgment-test-calculator.csv` (open it in Excel or Google Sheets). The sheet includes example formulas plus an Overall Brier summary cell and interpretation band.
 
 ---
 

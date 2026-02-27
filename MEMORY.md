@@ -21,6 +21,7 @@
 | Product sense / braindump / golden rule | [PRODUCT-SENSE-RULES.md](PRODUCT-SENSE-RULES.md), [2-product-sense-prompts.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md), [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md) |
 | Repo usage, maintenance, hygiene, "how should we use this repo?" | [docs/guidelines.md](docs/guidelines.md) |
 | Repo structure, refactoring, architecture, adding files, reorganizing | [docs/architecture.md](docs/architecture.md) → Design Principles section |
+| Context health / “is this still roughly true?” when using company/initiative docs | [01-Company-Context/CONTEXT-HEALTH.md](01-Company-Context/CONTEXT-HEALTH.md) (see Freshness section below) |
 
 ---
 
@@ -43,6 +44,18 @@
 | Stakeholder avatars / brainfeed cast | [01-Company-Context/1.1-Stakeholder-Avatars/](01-Company-Context/1.1-Stakeholder-Avatars/README.md) (folder; one file per avatar; agent lists and loads by name/role) |
 | Organization survival (power, politics, red flags) | [01-Company-Context/1.2-Organization-Survival/](01-Company-Context/1.2-Organization-Survival/README.md) (folder; organization-level politics, power maps, alliances, stakeholder games, coalitions, red flags) |
 | Overview | [01-Company-Context/README.md](01-Company-Context/README.md) |
+
+---
+
+## Context Health (living docs and anti-rot hints)
+
+Some context docs are treated as **living inputs** to PM work (vision, strategy, company roadmap, stakeholders, politics, initiative roadmaps). Rather than putting `Last reviewed` headers on every file, [01-Company-Context/CONTEXT-HEALTH.md](01-Company-Context/CONTEXT-HEALTH.md) holds a **context health table** that tracks which docs matter most for staleness and how often they should be sanity-checked.
+
+- **Table location:** [01-Company-Context/CONTEXT-HEALTH.md](01-Company-Context/CONTEXT-HEALTH.md).
+- **What it contains:** Doc paths, roles, rough review cadences, rot risk, and optional “last reviewed” notes.
+- **How the agent uses it:** When waking `01-Company-Context/`, `04-Initiatives/`, or `03-Research-Artifacts/` as inputs to a roadmap/OKR/strategy/PRD/initiative decision or a politics flow, the agent **may** consult this table and, if a doc is high/medium rot risk and overdue vs. its cadence, offer a short optional “is this still roughly true?” reminder.
+
+Outside those flows (e.g. casual browsing, light questions), the agent should **not** use context health to nag about freshness.
 
 ---
 
