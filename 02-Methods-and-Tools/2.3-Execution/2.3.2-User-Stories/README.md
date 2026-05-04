@@ -6,6 +6,7 @@ This framework provides a structured method for writing user stories that captur
 
 ## Files
 - `1-user-stories.md` — Complete user stories framework with format, examples, splitting patterns, and INVEST criteria
+- `2-user-stories-template.md` — Fill-in template; copy once per story
 
 ## How to Use This Framework
 

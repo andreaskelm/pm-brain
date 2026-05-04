@@ -1,35 +1,32 @@
 # ============================================
-# PM-Brain: Public Mode (Default)
+# PM-Brain .gitignore
 # ============================================
-# This repo is configured for FULLY PUBLIC use - ideal for:
-# - Building a public learning portfolio
-# - Sharing your growth journey openly
-# - Creating content for blogs or portfolios
-# - Open source contribution
 #
-# Everything is tracked and visible:
-# - Daily learning logs
-# - Weekly/monthly reflections  
-# - Growth portfolio
-# - Self-assessments
-# - All learning artifacts
-# - Company context (sanitize sensitive data)
-# - Research and active work
+# PUBLIC MODE is active by default — nothing extra to enable.
+# Everything in the repo is tracked except the always-active block below.
 #
-# ============================================
-# SWITCHING MODES
-# ============================================
-# To switch to PRIVATE mode (personal learning only):
-#   cat .gitignore.private >> .gitignore
+# To switch modes: tell the PM Brain agent "switch me to private/team/public mode"
+#   The agent will uncomment the right block below and list any already-tracked
+#   files that might contain sensitive data.
 #
-# To switch to TEAM mode (share templates, keep personal logs private):
-#   cat .gitignore.team >> .gitignore
+# ⚠ IMPORTANT — switching modes after already committing files:
+#   .gitignore only gates future untracked files. It does not un-track files
+#   already in git history. To un-track a file that was already committed, run:
+#     git rm --cached <file>
+#     git commit -m "setup: un-track sensitive file"
+#   Or ask the agent: "what tracked files might be sensitive in private mode?"
 #
-# See 00-Meta/README.md or 00-Meta/MODE-SELECTION-GUIDE.md for details.
+# ⚠ BEFORE YOUR FIRST PUSH: verify your GitHub repo visibility is set to Private
+#   if you are using private or team mode.
+#   Go to: repo Settings → Danger Zone → Change visibility
 #
 # ============================================
 
-# Sensitive data (always ignored in all modes)
+# ============================================
+# ALWAYS ACTIVE (all modes)
+# ============================================
+
+# Sensitive data (always ignored)
 TODO.md
 .env
 **/secrets.md
@@ -44,3 +41,59 @@ Thumbs.db
 *~
 .vscode/settings.json
 .idea/
+
+# ============================================
+# PRIVATE MODE — uncomment this block to enable
+# (or tell the agent "switch me to private mode")
+# ============================================
+
+# # --- Personal practice content ---
+# 00-Meta/1-daily-log-*.md
+# 00-Meta/0.1-Learning-Log/*/
+# 00-Meta/0.2-Growth-Portfolio/*.md
+# !00-Meta/0.2-Growth-Portfolio/README.md
+# 00-Meta/self-assessment-*.md
+# 00-Meta/metrics-dashboard*.md
+# 00-Meta/0.3-Product-Judgment-Test/forecast-log.md
+# 00-Meta/0.3-Product-Judgment-Test/dashboard.md
+#
+# # --- Company-specific content ---
+# 01-Company-Context/*.md
+# !01-Company-Context/README.md
+#
+# # --- Personal configuration ---
+# .cursor/rules/thinking.personal.mdc
+#
+# # --- Active work & research ---
+# 04-Initiatives/*
+# !04-Initiatives/README.md
+# !04-Initiatives/4.1-Initiative-Codename/
+# 03-Research-Artifacts/*
+# !03-Research-Artifacts/README.md
+# !03-Research-Artifacts/3.1-User-Interviews/README.md
+# !03-Research-Artifacts/3.2-Qualitative-Research/
+
+# ============================================
+# TEAM MODE — uncomment this block to enable
+# (or tell the agent "switch me to team mode")
+# Note: uncomment the CONTEXT.md exception line if you want to share company
+# naming conventions with your team.
+# ============================================
+
+# # --- Personal practice content (each team member keeps theirs private) ---
+# 00-Meta/1-daily-log-*.md
+# 00-Meta/0.1-Learning-Log/*/
+# 00-Meta/0.2-Growth-Portfolio/*.md
+# !00-Meta/0.2-Growth-Portfolio/README.md
+# 00-Meta/self-assessment-*.md
+# 00-Meta/metrics-dashboard*.md
+# 00-Meta/0.3-Product-Judgment-Test/forecast-log.md
+# 00-Meta/0.3-Product-Judgment-Test/dashboard.md
+#
+# # --- Company-specific content ---
+# 01-Company-Context/*.md
+# !01-Company-Context/README.md
+# # !01-Company-Context/CONTEXT.md   ← uncomment to share company naming with team
+#
+# # --- Personal configuration (each team member has their own) ---
+# .cursor/rules/thinking.personal.mdc

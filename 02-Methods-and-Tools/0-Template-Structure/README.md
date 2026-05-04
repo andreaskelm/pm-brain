@@ -86,6 +86,9 @@ Every framework should include:
 
 **Note:** Playbook variants are acceptable when frameworks require detailed process documentation beyond standard framework structure. They complement Quickstart/Full Framework guides and focus on operational execution rather than framework structure.
 
+**Multi-Template Frameworks (Special Case):**
+- Documentation Standards (`2.4-Communication/2.4.10-Documentation-Standards/`) — ships three templates (DR, Architecture/Technical, ADR) at slots `2`, `3`, `4` and evaluation at slot `5`, instead of the standard `2-template` / `3-evaluation` pair. The framework covers fundamentally different document types that cannot share a single template without loss of specificity. This is a justified exception: splitting into a subfolder or lettered numbering would create more churn than value given the README and cross-links already make the structure legible.
+
 ## File Naming Convention
 
 When creating new frameworks, follow this pattern:

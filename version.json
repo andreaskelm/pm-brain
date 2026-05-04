@@ -1,8 +1,14 @@
 {
-  "version": "3.5.0",
-  "lastUpdated": "2026-04-01T00:00:00Z",
+  "version": "3.5.1",
+  "lastUpdated": "2026-04-23T00:00:00Z",
   "schemaVersion": "1.0",
   "changelog": [
+    {
+      "version": "3.5.1",
+      "date": "2026-04-23",
+      "type": "patch",
+      "summary": "Authority cleanup: trim-and-align pass on sleeping memory layer. product-sense.mdc stripped from 10-step routing duplicate to compact eval-instrumentation hooks (removed stale persona pointer, removed routing logic that duplicates ORCHESTRATION.md STATE: product_sense). pm-brain-workflow SKILL.md 'Modes & evals' section replaced with single ORCHESTRATION.md pointer — skills are framework-navigation only, not mode-governance. strategy-planning SKILL.md OKR section formatting glitch fixed. rules/README.md product-sense description updated to reflect trimmed purpose."
+    },
     {
       "version": "3.5.0",
       "date": "2026-04-01",

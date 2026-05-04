@@ -264,7 +264,7 @@ Product sense (think first, then structure) is built into the agent; see `PRODUC
 
 ## 🤝 Contributing
 
-- **Fork (private)** for real company context: after forking, append `.gitignore.private` or `.gitignore.team` to `.gitignore`. See [`00-Meta/MODE-SELECTION-GUIDE.md`](00-Meta/MODE-SELECTION-GUIDE.md).  
+- **Fork (private)** for real company context: after forking, tell the PM Brain agent your mode (public/private/team) and it will configure `.gitignore` and surface any sensitive files already tracked. See [`docs/setup.md`](docs/setup.md) → Step 3.  
 - **Contribute back** improvements to the public template — new frameworks, better guides, clearer patterns. Keep examples generic and remove proprietary detail.  
 
 Conventions: follow the existing folder and naming patterns, write clear commit messages, and prefer small, reviewable changes.
@@ -279,7 +279,7 @@ Conventions: follow the existing folder and naming patterns, write clear commit 
 
 ## 📚 Credits & license
 
-Frameworks build on the work of many product management thinkers. See [`docs/credits.md`](docs/credits.md) for attributions.
+Frameworks build on the work of product management thought leaders. See [`docs/credits.md`](docs/credits.md) for attributions.
 
 Licensed under **CC BY‑NC‑SA 4.0** — view, use, modify, and share with attribution for non‑commercial purposes. See [`LICENSE`](LICENSE) for full terms.
 

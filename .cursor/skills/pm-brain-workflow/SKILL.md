@@ -76,7 +76,7 @@ Most framework folders follow this structure:
 When a user wants to work on something or is thinking/braindumping (the agent is in **product_sense**): **apply the golden rule from `PRODUCT-SENSE-RULES.md`** (braindump before structure), including the "braindump sufficient" checklist. Use prompts from `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md` for the relevant context (PRD, prioritization, strategy, research, stuck).
 
 1. **Listen and probe**
-   - Ask if the user has added (or should add) relevant context from [01-Company-Context/](../../../../01-Company-Context/README.md), [03-Research-Artifacts/](../../../../03-Research-Artifacts/README.md), or [04-Initiatives/](../../../../04-Initiatives/README.md); having it in the conversation speeds up thinking.
+   - Ask if the user has added (or should add) relevant context from [01-Company-Context/](../../../01-Company-Context/README.md), [03-Research-Artifacts/](../../../03-Research-Artifacts/README.md), or [04-Initiatives/](../../../04-Initiatives/README.md); having it in the conversation speeds up thinking.
    - What's the core problem or opportunity?
    - What stage are they at? (ideation, validation, building, shipping)
    - What constraints exist?
@@ -93,9 +93,7 @@ When a user wants to work on something or is thinking/braindumping (the agent is
 
 ## Modes & evals
 
-- **product_sense** → braindump, prompts, no framework until sufficient. **execution_mode** → structure + framework/template (or template-finder path). **meta_reflection** → after substantial conversations: suggest `00-Meta/` (log, forecast, learning), optionally Level 2 checklist ([.cursor/evals/](../../../../.cursor/evals/README.md)), and rule updates (`.cursor/rules/thinking.mdc`). Full routing and states: [ORCHESTRATION.md](../../../../ORCHESTRATION.md).
-- **Signal mode transitions** in natural language when switching (per [AGENTS.md](../../../../AGENTS.md) and [ORCHESTRATION.md](../../../../ORCHESTRATION.md)); e.g. "We've got enough to structure this—here's the framework that fits…"
-- **Evals** are a separate workflow, not a conversation mode: Level 1 (artifact quality) lives in `02-Methods-and-Tools/` and the agent uses Quick Quality Checks per `.cursor/rules/evaluation-orchestration.mdc` when creating supported frameworks; Level 2 (agent behavior) lives in [.cursor/evals/](../../../../.cursor/evals/README.md). See ORCHESTRATION.md → Eval Checkpoints. You may suggest the Level 2 checklist in meta_reflection; the user runs evals when they choose.
+Routing, state transitions, and when to load context live in [ORCHESTRATION.md](../../../ORCHESTRATION.md). This skill is the **framework-library navigation layer** — use it to find the right folder and file for a given topic; use ORCHESTRATION.md to know which mode you're in and what to do next.
 
 ## Common Scenarios
 
