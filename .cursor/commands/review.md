@@ -6,7 +6,7 @@ Let's do a review. Before starting, ask or clarify:
 
 1. **What are we reviewing?**
    - A specific file or artifact (e.g. stakeholder avatar, opportunity assessment, roadmap, initiative folder)
-   - A folder or cluster (e.g. all of 01-Company-Context, the full 04-Initiatives/4.2-Resultatopgørelse folder)
+   - A folder or cluster (e.g. all of 01-Company-Context, the full 04-Initiatives/[initiative-folder])
    - Company context freshness and accuracy
    - PM Brain system health (rules, frameworks, ORCHESTRATION, MEMORY alignment)
 
@@ -28,7 +28,7 @@ Let's do a review. Before starting, ask or clarify:
    - Check for link rot or orphaned references
 
    **System health review** — Is PM Brain working well?
-   - Review `04-Initiatives/4.9-PM-Brain-Learnings/` for open gaps and pending fixes
+   - Review your system learnings folder (e.g. `04-Initiatives/[initiative-name]/`) for open gaps and pending fixes
    - Check `ORCHESTRATION.md` and `.cursor/rules/` for any known inconsistencies or TODOs
    - Review `eval-results/` for patterns not yet addressed in rules or scenarios
    - Check `agent-behavior-scenarios.json` for missing scenario types identified in eval logs
@@ -37,6 +37,13 @@ Let's do a review. Before starting, ask or clarify:
    - Summarise findings: what's solid, what needs updating, what's stale or broken
    - Give specific, actionable recommendations — name the file and the change, don't be vague
    - If fixes are small and clear, offer to implement them in-session
-   - If fixes are large or require decisions, log as an open item in `04-Initiatives/4.9-PM-Brain-Learnings/` or the relevant initiative file
+   - If fixes are large or require decisions, log as an open item in your system learnings folder or the relevant initiative file
+
+4. **Capture routing (always run before closing a review session)**
+   - Before finishing, ask: did the review surface anything worth routing to the growth portfolio?
+     - A decision that shows good judgment → [2-decision-showcase.md](../../00-Meta/0.2-Growth-Portfolio/2-decision-showcase.md)?
+     - A pattern in how you think or what you missed → [1-product-sense-journey.md](../../00-Meta/0.2-Growth-Portfolio/1-product-sense-journey.md)?
+     - A system gap or agent behavior miss → your system learnings folder?
+   - Keep it brief — one question, one pass. Most reviews produce nothing for the portfolio; the point is not skipping the check.
 
 **Related:** Use `/evaluate` for quality checks on a specific freshly-created artifact or this conversation's agent behavior. Use `/meta` for PM Brain system improvement conversations. Use `/navigate` to find what's in the repo.

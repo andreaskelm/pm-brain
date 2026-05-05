@@ -39,7 +39,7 @@ These guidelines describe **how to use and evolve** this repo so it stays useful
 - **00-Meta/**  
   - Personal practice: daily log, weekly/monthly reflection, growth portfolio, Product Judgment Test (forecast log, calibration).  
   - Canonical prompts and templates live in `02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/`; `00-Meta/` stores what you *do* and *learn*.  
-  - See [00-Meta/README.md](..\/00-Meta/README.md) and [MODE-SELECTION-GUIDE.md](..\/00-Meta/MODE-SELECTION-GUIDE.md) for modes (Public/Private/Team).
+  - See [00-Meta/README.md](..\/00-Meta/README.md) and [docs/setup.md](setup.md) → Step 3 for modes (Public/Private/Team) and how to switch.
 
 - **01-Company-Context/**  
   - Vision, strategy, principles, roadmap, stakeholders.  

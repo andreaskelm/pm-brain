@@ -164,6 +164,139 @@ link and provide a one-line summary.]
 
 ---
 
+## AI Auto-Fill Prompts
+
+Architecture/Technical docs have **two** auto-fill workflows: **initial creation** (drafting from a design doc, codebase exploration, or onboarding interview) and **refresh** (updating an existing doc against current system state). Use the prompt that matches your workflow.
+
+### Initial Creation Prompt
+
+Paste this prompt into your agent along with the template above and the source material (design doc, README, repo tour notes, onboarding interview transcript, codebase summary).
+
+```text
+You are filling out an Architecture/Technical document using the template above.
+
+This is a LIVING document — it must reflect the CURRENT state of the system,
+not its design intent or aspirational state.
+
+Rules:
+1. Populate every section. If a field isn't covered by the source material,
+   write "[TBD: <what's missing>]". Never invent.
+2. status defaults to "draft" unless the source clearly states otherwise.
+3. owner is REQUIRED. If unknown, ask the user before drafting.
+4. next-review must be set 3–6 months from created. Don't leave blank.
+5. Known Limitations and Technical Debt section MUST be non-empty. If silent,
+   end your response with: "Question for owner: what doesn't work well in
+   this system right now? What would you fix if you had time?"
+6. Decision History: link related ADRs and DRs that shaped this architecture.
+   If you can identify them from the source, populate the table. If not,
+   mark "[TBD: link related ADRs/DRs]".
+7. Pair every diagram reference with a text description. If only diagrams
+   are available, write the equivalent text description.
+8. Quote source material verbatim for technical specifics (component names,
+   technology versions, throughput numbers, integration protocols).
+9. Translate Danish to English for the body. Preserve original-language
+   quotes inline if they're load-bearing.
+10. Output a single Markdown document starting with the YAML frontmatter.
+11. After drafting, run the Quick Quality Check self-check (next section
+    below). Fix any red flags before returning.
+```
+
+### Refresh Prompt (for existing docs)
+
+When the source material is the existing architecture doc PLUS evidence that the system has changed (new ADRs, recent PRs, code diffs, deployment changes), use this prompt instead.
+
+```text
+You are refreshing an existing Architecture/Technical document against the
+current state of the system.
+
+Inputs:
+- Current doc: [paste below]
+- Evidence of changes: [recent ADRs, PRs, deployment changes, etc.]
+
+Rules:
+1. Compare the current doc against the evidence. For each section, identify
+   whether it's still accurate, partially accurate, or out of date.
+2. Update only what's actually changed. Do NOT rewrite accurate sections.
+3. Update last-reviewed to today's date. Update next-review 3–6 months out.
+4. If a major change is detected (component added/removed, technology
+   migration, integration replaced), check whether an ADR exists for it.
+   If yes, link it in Decision History. If no, flag to the user:
+   "Major change detected without an ADR — should we capture this as ADR-NNNN?"
+5. Update the Known Limitations section to reflect what's currently true —
+   resolved limitations should be removed; new ones should be added.
+6. Output a unified diff or annotated version showing what changed and why.
+7. Run the Quick Quality Check after refresh. Surface freshness signals
+   prominently.
+```
+
+---
+
+## Quick Quality Checks (run after auto-fill or refresh)
+
+These checks run **automatically** — by the AI agent after filling/refreshing the template, or by a human reviewer in under 2 minutes. They catch the predictable failure modes of architecture docs (especially staleness, since this is a living doc).
+
+For comprehensive peer review, audits, or quality gates, use the full evaluation in [5-documentation-standards-evaluation.md](5-documentation-standards-evaluation.md) → **Architecture/Technical-Specific Evaluation**.
+
+### Red Flags (each one is a hard fail)
+
+❌ **No owner** — `owner` field empty or pointing to someone who left the team
+❌ **No next-review** — Date missing or in the past
+❌ **Empty Known Limitations** — Section blank, missing, or "none" — every system has warts
+❌ **Diagram-only architecture** — Architecture explained primarily through images with no text equivalent (AI-unreadable, version-control unfriendly)
+❌ **Stale by evidence** — `last-reviewed` is more than 6 months ago AND new ADRs/major PRs exist for this system since
+❌ **Missing data flow** — Integrations listed but no description of how data actually moves end-to-end
+❌ **No operational context** — Missing monitoring, alerts, or "where to look when things break"
+❌ **Code walkthrough** — Doc reads as a function-by-function summary instead of system context
+❌ **Aspirational state** — Describes how the system is DESIGNED to work, not how it actually works (the "Marketing Doc" antipattern)
+❌ **Leftover scaffolding** — `[TBD: ...]` markers in critical fields (`owner`, `Purpose`, `System Boundary`, `Known Limitations`)
+
+### Green Flags (signals the doc is doing its job)
+
+✅ **Owner is current and accountable** — Named person actively maintains it
+✅ **Recent review** — `last-reviewed` within the past quarter
+✅ **Diagrams paired with text** — Every diagram has an equivalent text description
+✅ **Known Limitations is honest** — Specific tech debt, workarounds, gotchas listed
+✅ **Data flow described as numbered sequence** — Reader can trace a request end-to-end
+✅ **Operational context populated** — Monitoring, alerts, performance numbers, where to look
+✅ **Decision History links ADRs/DRs** — Architectural choices traceable to their reasoning
+✅ **Getting Started works today** — A new engineer could actually use it now
+
+### AI Self-Check Prompt (run after auto-fill or refresh, before returning doc)
+
+```text
+You have just auto-filled or refreshed an Architecture/Technical document.
+Before returning it, run this self-check:
+
+1. Is `owner` populated with a current, named person (not "[TBD]" and not
+   someone who has left the team)?
+2. Is `next-review` set 3–6 months from `last-reviewed`, and not in the past?
+3. Is the Known Limitations section non-empty AND concrete (not "none" and
+   not "to be determined")?
+4. Is every diagram reference paired with a text description? Could an AI
+   agent (or a screen reader user) understand the architecture from text alone?
+5. Is the Data Flow section a numbered sequence a reader can follow end-to-end?
+6. Does the doc describe how the system ACTUALLY works (current state), or
+   how it was designed to work (aspirational)? Flag any aspirational language.
+7. Is there operational context — monitoring, alerts, performance, where to
+   look when things break?
+8. Are major architectural choices linked to their ADRs/DRs in Decision History?
+9. Are there any leftover `[TBD: ...]` markers in critical fields (owner,
+   Purpose, System Boundary, Known Limitations)?
+10. **Freshness check:** Is `last-reviewed` within the past 6 months? If
+    longer, AND any new ADRs exist for this system since `last-reviewed`,
+    flag prominently: "This doc is likely STALE — recent ADRs suggest the
+    system has changed. Recommend full refresh before relying on it."
+
+For each red flag found:
+- If it can be fixed from existing source material, fix it.
+- If it requires user input, append a question block to your response:
+    "Before this doc can be marked current, please answer:
+     - [Specific question per red flag]"
+- Do NOT silently return an architecture doc with red flags present.
+```
+
+---
+
 ## How to Use This Template
 
 ### Living Doc Maintenance

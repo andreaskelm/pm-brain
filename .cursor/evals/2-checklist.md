@@ -25,7 +25,7 @@ Use this checklist to run Level 1 (methods/frameworks) and Level 2 (agent behavi
 ### When you learn something new
 
 - [ ] If a **method or framework** check is wrong or the method has evolved → edit the relevant `1-*-framework.md` (Quick Quality Checks) and/or `3-*-evaluation.md`. If the list of frameworks with evaluation support changes, update `.cursor/rules/evaluation-orchestration.mdc`.
-- [ ] If **agent behavior** should change (e.g. more questioning, better framework fit, more meta suggestions) → use the **"Where to update"** map in [1-agent-behavior-guide.md](1-agent-behavior-guide.md) and edit [AGENTS.md](../AGENTS.md) or the relevant `.cursor/rules` file (e.g. template-finder.mdc, evaluation-orchestration.mdc, thinking.mdc).
+- [ ] If **agent behavior** should change (e.g. more questioning, better framework fit, more meta suggestions) → use the **"Where to update"** map in [1-agent-behavior-guide.md](1-agent-behavior-guide.md) and edit [AGENTS.md](../../AGENTS.md) or the relevant `.cursor/rules` file (e.g. template-finder.mdc, evaluation-orchestration.mdc, thinking.mdc).
 
 ---
 

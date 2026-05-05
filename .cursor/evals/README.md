@@ -2,7 +2,7 @@
 
 **What this folder is:** The evaluation system for PM Brain. It has **two levels** and is **guidance-based**—no scripts to run. You use prompts and checklists to reflect on artifact quality and agent behavior, and to know **where to update** when you learn something new.
 
-**Orchestration:** Evals are wired into the repo in three places: (1) **Level 1** lives in `02-Methods-and-Tools/` (Quick Quality Checks + `3-*-evaluation.md` per framework); (2) **Level 2** lives here ([1-agent-behavior-guide.md](1-agent-behavior-guide.md), [2-checklist.md](2-checklist.md)); (3) the **agent** uses Level 1 during creation (`.cursor/rules/evaluation-orchestration.mdc`) and can suggest the Level 2 checklist after substantial conversations. Routing and when to run evals: [ORCHESTRATION.md](../ORCHESTRATION.md) → Eval Checkpoints; persona: [AGENTS.md](../AGENTS.md). For the big picture and a visual, see [docs/architecture.md](../../docs/architecture.md) → "Evaluation system (evals)" and "How the repo is used".
+**Orchestration:** Evals are wired into the repo in three places: (1) **Level 1** lives in `02-Methods-and-Tools/` (Quick Quality Checks + `3-*-evaluation.md` per framework); (2) **Level 2** lives here ([1-agent-behavior-guide.md](1-agent-behavior-guide.md), [2-checklist.md](2-checklist.md)); (3) the **agent** uses Level 1 during creation (`.cursor/rules/evaluation-orchestration.mdc`) and can suggest the Level 2 checklist after substantial conversations. Routing and when to run evals: [ORCHESTRATION.md](../../ORCHESTRATION.md) → Eval Checkpoints; persona: [AGENTS.md](../../AGENTS.md). For the big picture and a visual, see [docs/architecture.md](../../docs/architecture.md) → "Evaluation system (evals)" and "How the repo is used".
 
 **When and how scenarios are used:** The agent does **not** read or run `agent-behavior-scenarios.json`. Scenarios are **reference only**: when you (or an AI using the pasteable prompt) run a Level 2 review, you match your conversation to a scenario type (e.g. "user said something like 'I want to build an app for remote teams'"), then use the JSON's success_indicators and failure_modes to score. They are generic, static patterns so reviewers have a consistent checklist per conversation type. You can add or edit scenarios when you discover new failure modes (see [2-checklist.md](2-checklist.md)).
 
@@ -13,7 +13,7 @@
 | Level | What it evaluates | Where it lives | When it runs |
 |-------|-------------------|----------------|---------------|
 | **Level 1** | Methods and frameworks (artifact quality) | `02-Methods-and-Tools/` — Quick Quality Checks in `1-*-framework.md`, full review in `3-*-evaluation.md` | During creation (agent); or on demand for peer review / quality gate |
-| **Level 2** | Agent behavior (does AGENTS.md + ORCHESTRATION + rules guide correctly?) | This folder — [1-agent-behavior-guide.md](1-agent-behavior-guide.md), [2-checklist.md](2-checklist.md) | After important conversations or when tuning the agent; see [ORCHESTRATION.md](../ORCHESTRATION.md) → Eval Checkpoints |
+| **Level 2** | Agent behavior (does AGENTS.md + ORCHESTRATION + rules guide correctly?) | This folder — [1-agent-behavior-guide.md](1-agent-behavior-guide.md), [2-checklist.md](2-checklist.md) | After important conversations or when tuning the agent; see [ORCHESTRATION.md](../../ORCHESTRATION.md) → Eval Checkpoints |
 
 ---
 
@@ -24,7 +24,7 @@
 **Where it lives:**
 
 - **Creation-time:** "Quick Quality Checks" in each `1-*-framework.md`. The agent uses these automatically per `.cursor/rules/evaluation-orchestration.mdc`.
-- **Deeper review:** `3-*-evaluation.md` in each framework folder. Full list: [02-Methods-and-Tools/README.md](../02-Methods-and-Tools/README.md) → "Evaluation Frameworks".
+- **Deeper review:** `3-*-evaluation.md` in each framework folder. Full list: [02-Methods-and-Tools/README.md](../../02-Methods-and-Tools/README.md) → "Evaluation Frameworks".
 
 **When to use:** During creation (agent applies lightweight checks), or when you do peer review / quality gate / learning review (use the full `3-*-evaluation.md`).
 
@@ -34,7 +34,7 @@
 
 ## Level 2: Agent behavior
 
-**What it is:** Whether [AGENTS.md](../AGENTS.md), [ORCHESTRATION.md](../ORCHESTRATION.md), and `.cursor/rules` are guiding the user and answering correctly.
+**What it is:** Whether [AGENTS.md](../../AGENTS.md), [ORCHESTRATION.md](../../ORCHESTRATION.md), and `.cursor/rules` are guiding the user and answering correctly.
 
 **Where it lives:** [1-agent-behavior-guide.md](1-agent-behavior-guide.md) — dimensions, reflection prompts, checklist, "where to update" map, scenario-based prompts.
 

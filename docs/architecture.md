@@ -173,7 +173,7 @@ flowchart TB
 **In words:**
 - **Start (bootstrap):** Agent reads the 5-file bootstrap set: AGENTS.md (persona), ORCHESTRATION.md (routing and modes), voice.mdc (communication style), thinking.mdc (coaching behavior), and thinking.personal.mdc (personal context). No other files are loaded yet.
 - **Each turn:** Your message is matched against ORCHESTRATION's decision tree → one mode is chosen (product_sense, execution_mode, meta_reflection, or conversation). The agent then loads only the Layer 2 files for that mode (e.g. 0-start-here + prompts for product_sense; template-finder + framework for execution_mode).
-- **Cross-cutting behaviors:** Some rules fire in ANY state, regardless of mode: the Product Judgment Test capture trigger (decision with confidence → offer PJT), intent disambiguation (clarify ambiguous topic signals before loading), and the company context routing guard (check CONTEXT-HEALTH.md before suggesting updates to company docs).
+- **Cross-cutting behaviors:** Some rules fire in ANY state, regardless of mode: the Product Judgment Test capture trigger (decision with confidence → offer PJT), intent disambiguation (clarify ambiguous topic signals before loading), the company context routing guard (check CONTEXT-HEALTH.md before suggesting updates to company docs), and synthesis-first (when user signals they're about to share content, ask for their takeaways before analyzing).
 - **Sleeping memory:** 01-Company-Context, 03-Research-Artifacts, 04-Initiatives, and .cursor (conditional rules, skills) are **not** in the prompt until the conversation touches them. When you mention strategy, an initiative, or research, the agent consults MEMORY.md and loads the relevant paths. This keeps the prompt small and focused.
 
 ---

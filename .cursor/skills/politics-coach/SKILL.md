@@ -34,9 +34,9 @@ If they're mainly focused on **documents and tactics** (one-pagers, escalations,
 
 | Purpose | Path |
 |--------|------|
-| **Set up or update avatars** (guided quiz, methodology) | [02-Methods-and-Tools/2.4-Communication/2.4.8-Stakeholder-Avatars/](../../02-Methods-and-Tools/2.4-Communication/2.4.8-Stakeholder-Avatars/README.md) — load README + 1-stakeholder-avatars-framework.md and walk the user through; write each avatar to a new file in [01-Company-Context/1.1-Stakeholder-Avatars/](../../01-Company-Context/1.1-Stakeholder-Avatars/README.md) using the naming convention in that folder's README |
-| **Avatar data** (who to simulate) | [01-Company-Context/1.1-Stakeholder-Avatars/](../../01-Company-Context/1.1-Stakeholder-Avatars/README.md) — one file per person (e.g. 1-jane-manager.md); list folder and load the relevant N-name-role.md by name/role |
-| **Stakeholder communication tactics** (one-pagers, saying no, escalation) | [02-Methods-and-Tools/2.4-Communication/](../../02-Methods-and-Tools/2.4-Communication/) — use with stakeholder-management skill |
+| **Set up or update avatars** (guided quiz, methodology) | [02-Methods-and-Tools/2.4-Communication/2.4.8-Stakeholder-Avatars/](../../../02-Methods-and-Tools/2.4-Communication/2.4.8-Stakeholder-Avatars/README.md) — load README + 1-stakeholder-avatars-framework.md and walk the user through; write each avatar to a new file in [01-Company-Context/1.1-Stakeholder-Avatars/](../../../01-Company-Context/1.1-Stakeholder-Avatars/README.md) using the naming convention in that folder's README |
+| **Avatar data** (who to simulate) | [01-Company-Context/1.1-Stakeholder-Avatars/](../../../01-Company-Context/1.1-Stakeholder-Avatars/README.md) — one file per person (e.g. 1-jane-manager.md); list folder and load the relevant N-name-role.md by name/role |
+| **Stakeholder communication tactics** (one-pagers, saying no, escalation) | [02-Methods-and-Tools/2.4-Communication/](../../../02-Methods-and-Tools/2.4-Communication/) — use with stakeholder-management skill |
 
 ---
 
@@ -44,13 +44,13 @@ If they're mainly focused on **documents and tactics** (one-pagers, escalations,
 
 ### 1. "Set up my stakeholder brainfeed" / "Create stakeholder avatars"
 
-- Load [2.4.8-Stakeholder-Avatars README](../../02-Methods-and-Tools/2.4-Communication/2.4.8-Stakeholder-Avatars/README.md) and [1-stakeholder-avatars-framework.md](../../02-Methods-and-Tools/2.4-Communication/2.4.8-Stakeholder-Avatars/1-stakeholder-avatars-framework.md).
+- Load [2.4.8-Stakeholder-Avatars README](../../../02-Methods-and-Tools/2.4-Communication/2.4.8-Stakeholder-Avatars/README.md) and [1-stakeholder-avatars-framework.md](../../../02-Methods-and-Tools/2.4-Communication/2.4.8-Stakeholder-Avatars/1-stakeholder-avatars-framework.md).
 - Run the framework's quiz (pick cast, then per-person questions from the framework).
-- Write each avatar to a new file in [01-Company-Context/1.1-Stakeholder-Avatars/](../../01-Company-Context/1.1-Stakeholder-Avatars/README.md) using the naming convention in that folder's README (e.g. 1-jane-manager.md) and the structure in [2-avatar-template.md](../../02-Methods-and-Tools/2.4-Communication/2.4.8-Stakeholder-Avatars/2-avatar-template.md).
+- Write each avatar to a new file in [01-Company-Context/1.1-Stakeholder-Avatars/](../../../01-Company-Context/1.1-Stakeholder-Avatars/README.md) using the naming convention in that folder's README (e.g. 1-jane-manager.md) and the structure in [2-avatar-template.md](../../../02-Methods-and-Tools/2.4-Communication/2.4.8-Stakeholder-Avatars/2-avatar-template.md).
 
 ### 2. "What would [Name] say about this?" (single-stakeholder simulation)
 
-1. List [01-Company-Context/1.1-Stakeholder-Avatars/](../../01-Company-Context/1.1-Stakeholder-Avatars/README.md) and load the file matching the name/role (e.g. 1-jane-manager.md).
+1. List [01-Company-Context/1.1-Stakeholder-Avatars/](../../../01-Company-Context/1.1-Stakeholder-Avatars/README.md) and load the file matching the name/role (e.g. 1-jane-manager.md).
 2. Summarize their lens in 1–2 lines (goals, fears, style).
 3. Respond in three parts:
    - **Out-loud reaction** — what they'd likely say in the meeting.
@@ -62,7 +62,7 @@ If no avatars exist, offer to run the setup framework (2.4.8) first, or do a lig
 
 ### 3. "How will [Manager], [Eng], [Design] react?" (panel simulation)
 
-1. Load each relevant avatar file from [01-Company-Context/1.1-Stakeholder-Avatars/](../../01-Company-Context/1.1-Stakeholder-Avatars/README.md).
+1. Load each relevant avatar file from [01-Company-Context/1.1-Stakeholder-Avatars/](../../../01-Company-Context/1.1-Stakeholder-Avatars/README.md).
 2. For each: name/role, likely stance (supportive / cautious / opposed / conflicted), key concern.
 3. Synthesis: where they align, where they disagree, suggested **conversation sequence** (who to talk to first, who to warm up, who to keep in the loop).
 
@@ -84,14 +84,14 @@ If no avatars exist, offer to run the setup framework (2.4.8) first, or do a lig
 ## For Agents
 
 - When you see politics-heavy language or "what would X say?":
-  - Wake this skill and [01-Company-Context/1.1-Stakeholder-Avatars/](../../01-Company-Context/1.1-Stakeholder-Avatars/README.md) (list folder and load the relevant N-name-role.md by name/role) if the folder exists.
-  - If avatars don't exist and the user wants simulation, offer to run [2.4.8-Stakeholder-Avatars](../../02-Methods-and-Tools/2.4-Communication/2.4.8-Stakeholder-Avatars/README.md) to create them.
+  - Wake this skill and [01-Company-Context/1.1-Stakeholder-Avatars/](../../../01-Company-Context/1.1-Stakeholder-Avatars/README.md) (list folder and load the relevant N-name-role.md by name/role) if the folder exists.
+  - If avatars don't exist and the user wants simulation, offer to run [2.4.8-Stakeholder-Avatars](../../../02-Methods-and-Tools/2.4-Communication/2.4.8-Stakeholder-Avatars/README.md) to create them.
 - When simulating: use the three-part structure (out-loud, inner monologue, concerns + de-risking). Make it clear when you're speaking as a stakeholder vs as the agent.
 - Nudge occasionally to **update avatars** after real conversations.
 
 ## Organization survival docs
 
-- For **system-level politics** (power, alliances, games, timing, history), wake [01-Company-Context/1.2-Organization-Survival/](../../01-Company-Context/1.2-Organization-Survival/README.md):
+- For **system-level politics** (power, alliances, games, timing, history), wake [01-Company-Context/1.2-Organization-Survival/](../../../01-Company-Context/1.2-Organization-Survival/README.md):
   - Use `1-power-map.md` for who really decides and who can veto.
   - Use `2-political-landscape.md` for alliances, fault lines, and protected systems.
   - Use `3-stakeholder-games.md` for recurring behaviour patterns and how to work with them.

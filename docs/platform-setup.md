@@ -79,6 +79,9 @@ Practical workaround: use agent mode, and watch the tool call panel at the start
 **Known limitation - mid-session rule changes don't apply retroactively:**
 If you update a rule file (e.g. `voice.mdc`, `thinking.personal.mdc`) during a conversation, the change does NOT propagate back into the active context window. The agent will keep using whatever version of the file was loaded at session start. If you want the updated rule to take effect immediately, either: (a) tell the agent explicitly ("re-read `thinking.personal.mdc` and apply it from now on"), or (b) start a fresh conversation. Don't assume edits take effect mid-session.
 
+**Known quirk - VS Code sync button bypasses `.gitmessage` template:**
+When you commit via the VS Code Source Control panel (the sync/checkmark button), any `.gitmessage` commit template configured in your git settings is ignored. Copilot generates its own commit message from the diff — usually a wall of text. If you want clean, template-respecting commit messages, commit via terminal: `git commit` (no `-m` flag) — this opens the template in your editor. This is a VS Code + Copilot platform behaviour, not a PM Brain bug.
+
 ---
 
 ### Claude Code

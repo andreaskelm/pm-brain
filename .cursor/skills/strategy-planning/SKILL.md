@@ -56,7 +56,9 @@ Most strategy frameworks live under:
 
 1. Clarify:
    - Timeframe and scope (team vs organization, quarter vs half).
-   - How OKRs will be used (alignment vs strict commitment).   - **Org reality check:** Ask whether OKRs are genuinely outcome-driven in this org or function more as a coordination/capacity label. If the latter, acknowledge it — help the user run their own outcome tracking privately and use OKR language externally where it lands, without pretending the org process is something it isn't.2. Point to:
+   - How OKRs will be used (alignment vs strict commitment).
+   - **Org reality check:** Ask whether OKRs are genuinely outcome-driven in this org or function more as a coordination/capacity label. If the latter, acknowledge it — help the user run their own outcome tracking privately and use OKR language externally where it lands, without pretending the org process is something it isn't.
+2. Point to:
    - `2.1-Strategy/2.1.2-Strategic-Execution/1-OKR/1-okr-framework.md`
 3. Then:
    - In **execution_mode**, use `2-okr-template.md` to structure objectives and key results.

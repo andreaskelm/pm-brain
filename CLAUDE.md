@@ -27,14 +27,43 @@ Then:
 
 **Skills and commands:** When [ORCHESTRATION.md](ORCHESTRATION.md) dispatches to a skill (via the skill dispatch table in execution_mode), read the skill file directly from `.cursor/skills/[skill-name]/SKILL.md`. Conditional rules (`.cursor/rules/template-finder.mdc`, `.cursor/rules/evaluation-orchestration.mdc`, `.cursor/rules/product-sense.mdc`) work the same way — read them when ORCHESTRATION triggers them, not upfront.
 
-> **Resumed sessions:** If this conversation started from a conversation summary (or after `/compact`), you MUST still complete the full bootstrap file reads listed above before responding. A conversation summary provides task context only — it does not substitute for behavioral rules. The check is: have I read each bootstrap file in this session? Not: do I know what to do?
+> **Resumed sessions:** If this conversation started from a conversation summary (or after `/compact`), you MUST still complete the full bootstrap file reads listed above before responding. A conversation summary provides task context only — it does not substitute for behavioral rules. AGENTS.md in a system prompt attachment provides identity, not behavior. Feeling like you have enough context is not the same as having loaded the right files. The check is: have I read each bootstrap file in this session? Not: do I know what to do?
+
+---
+
+## BOOTSTRAP COMPLIANCE CHECK
+
+**RUN THIS BEFORE YOUR FIRST RESPONSE. NO EXCEPTIONS.**
+
+This file is read automatically — but reading this file is NOT the same as completing bootstrap. You must actively call the Read tool on each of the 5 files above.
+
+Go through this checklist RIGHT NOW:
+
+- [ ] Did I call Read on `AGENTS.md` **in full**?
+- [ ] Did I call Read on `ORCHESTRATION.md` **in full**?
+- [ ] Did I call Read on `.cursor/rules/voice.mdc` **in full**?
+- [ ] Did I call Read on `.cursor/rules/thinking.mdc` **in full**?
+- [ ] Did I call Read on `.cursor/rules/thinking.personal.mdc` **in full**?
+
+**IF ANY BOX IS UNCHECKED: read that file now before doing anything else.**
+
+**Reading "in full" means:** do not cap line ranges arbitrarily. Read until the actual end of the file. If a file is long, read it in chunks — but read all of it. A partial read is not a completed read.
+
+Common failure modes to reject:
+- "The request is simple so I'll skip bootstrap" — NO. Bootstrap is unconditional.
+- "I have workspace context so I know enough" — NO. Context ≠ behavioral rules.
+- "AGENTS.md is in my system prompt so I've covered that one" — NO. Attachment ≠ file read.
+- "I'll read them after I respond to this quick message" — NO. Bootstrap is pre-response, always.
+- "I read the first N lines and got the gist" — NO. Partial reads leave behavior rules unread. Read in full.
+
+**This check has failed before on this platform. Treat it as a hard gate, not a suggestion.**
 
 ---
 
 ## Context Management
 
 - Use `/compact` when context grows heavy — this is Claude Code's built-in context compression.
-- Follow the checkpoint protocol in [ORCHESTRATION.md](ORCHESTRATION.md) → Context Health for longer sessions.
+- Follow the checkpoint protocol in [ORCHESTRATION.md](ORCHESTRATION.md) -> Context Health for longer sessions.
 - The `checkpoints/` folder is available for saving session state.
 
 ---

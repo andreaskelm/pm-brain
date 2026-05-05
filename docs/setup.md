@@ -55,6 +55,13 @@ See [platform-setup.md](platform-setup.md) for full per-tool instructions.
 
 That's it. Your private copy is ready. Changes you push stay in your private repo; you can pull framework updates from upstream whenever you want.
 
+**Pulling updates from upstream (syncing your fork):**
+```bash
+git fetch upstream
+git merge upstream/main
+```
+If you get a merge conflict, it's almost always in a file where you have real company content that the upstream version replaced with a placeholder — keep yours (`git checkout --ours <file>`). Private fork note: GitHub won't let you open a PR from a private fork to the public upstream directly. If you want to contribute improvements back, either push a branch directly to upstream (if you have access) or make the branch temporarily public.
+
 **Alternatives**
 
 - **Local only (no GitHub):** Clone directly — no GitHub account, no privacy risk, no syncing.
@@ -98,48 +105,42 @@ pm-brain/
 
 ## ⚙️ Step 3: Choose Public / Private / Team Mode
 
-This repo supports three usage modes. Setup is **manual and simple**: you choose a mode by appending the right `.gitignore` template and committing. No scripts required.
+This repo supports three usage modes. The `.gitignore` file contains all three as clearly labeled, commented-out blocks — public is active by default, and private/team are ready to uncomment.
 
 ### Modes at a Glance
 
-- **🌍 Public** (default)
-  - **Best for**: open learning, public examples, blog/portfolio content.  
-  - **Tracked**: everything (frameworks, Meta logs, company context, initiatives).  
+- **🌍 Public** (default, nothing to do)
+  - **Best for**: open learning, public examples, blog/portfolio content.
+  - **Tracked**: everything (frameworks, Meta logs, company context, initiatives).
 
 - **🔒 Private**
-  - **Best for**: real company work or personal growth where content must not leak.  
-  - **Tracked**: frameworks and docs.  
-  - **Ignored** (via `.gitignore.private`): Meta logs, growth portfolio, company context, active initiatives (per patterns).  
+  - **Best for**: real company work or personal growth where content must not leak.
+  - **Tracked**: frameworks and docs only.
+  - **Ignored**: Meta logs, growth portfolio, company context, active initiatives, personal configuration.
 
 - **👥 Team**
-  - **Best for**: a shared frameworks repo, with each person keeping their own practice private.  
-  - **Tracked**: `02-Methods-and-Tools/` and any shared docs.  
-  - **Ignored** (via `.gitignore.team`): each contributor’s `00-Meta` logs and personal growth artefacts.
+  - **Best for**: a shared frameworks repo, with each person keeping their own practice private.
+  - **Tracked**: `02-Methods-and-Tools/` and shared docs.
+  - **Ignored**: each contributor's `00-Meta` logs, personal growth artefacts, personal configuration.
 
-### How to Apply a Mode (Manual)
+### How to Apply a Mode
 
-Run **one** of these in your fork’s root:
+**Tell the agent your mode** — the simplest path:
 
-- **Public (do nothing)**  
-  - Leave `.gitignore` as‑is. Everything can be tracked.
+> "Switch me to private mode" (or team / public)
 
-- **Private mode**:
+The agent will uncomment the right block in `.gitignore`, commit it, and list any files already tracked in git that might contain sensitive information so you can decide whether to un-track them.
 
-  ```bash
-  cat .gitignore.private >> .gitignore
-  git add .gitignore
-  git commit -m "setup: configure private mode"
-  ```
+**⚠ Check your GitHub repo visibility** before your first push. If you're in private or team mode, your repo must be set to Private on GitHub: Settings → Danger Zone → Change visibility.
 
-- **Team mode**:
+**⚠ Switching modes after already committing files:** `.gitignore` only gates future untracked files. Files already in git history stay tracked regardless. To un-track a file that was already committed:
 
-  ```bash
-  cat .gitignore.team >> .gitignore
-  git add .gitignore
-  git commit -m "setup: configure team mode"
-  ```
+```bash
+git rm --cached <file>
+git commit -m "setup: un-track sensitive file"
+```
 
-For details and decision help, see `00-Meta/MODE-SELECTION-GUIDE.md`.
+Or ask the agent: *"what tracked files might be sensitive in private mode?"*
 
 ---
 

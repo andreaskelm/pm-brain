@@ -9,15 +9,30 @@
 - Prerequisite: User has something to document or wants to establish documentation practices
 
 **How to introduce:**
+
 - "You're capturing a decision — let's use the decision record template so it's structured and findable."
 - "Before documenting this, let's figure out what TYPE of documentation you need. Different audiences need different things."
 - "This looks like an architecture doc. Let me pull the technical documentation template."
 
+**Type dispatch (when the user has source material — transcript, design doc, ticket, chat thread — and wants the doc auto-filled):**
+
+| User signal | Use this template |
+|---|---|
+| Product / business / cross-cutting decision; audience includes non-engineers | [2-decision-record-template.md](2-decision-record-template.md) (DR) |
+| Engineering-internal architectural choice (database, integration pattern, library, service boundary); audience is engineering-only | [4-adr-template.md](4-adr-template.md) (ADR) |
+| "How does this system work?" — describing a system, service, or integration | [3-architecture-technical-template.md](3-architecture-technical-template.md) |
+| User wants to refresh an existing architecture doc against current system state | [3-architecture-technical-template.md](3-architecture-technical-template.md) → Refresh Prompt |
+
+Each template ships with an **AI Auto-Fill Prompt** and hardwired **Quick Quality Check self-check**. The flow is: load template → load auto-fill prompt → attach source material → agent drafts → agent runs self-check → agent returns ADR/DR/Architecture doc with any unresolved questions for the owner.
+
 **Common mistakes to avoid:**
+
 - Don't let user write a "doc" without identifying the audience and doc type first
 - Don't treat all documentation the same — a decision record ≠ a how-to guide ≠ a technical spec
 - Don't skip the metadata header — it's what makes docs findable and maintainable
 - Don't assume English is always correct — ask about primary audience language when the template prompts it
+- Don't auto-fill an ADR/DR without source material; if the user has only a vague idea, stay in `product_sense` until there's something concrete to capture
+- Don't silently return an auto-filled doc that has red flags from the self-check; surface unresolved questions to the user
 
 **When NOT to use this framework:**
 - User needs a PRD (use PRD framework)
@@ -67,17 +82,31 @@ This framework gives you:
 
 Every document you create falls into one of these types. Name the type BEFORE you start writing.
 
-### Type 1: Decision Record
+### Type 1a: Decision Record (DR)
 
-**What it captures:** Why we chose option A over options B and C. The context, constraints, alternatives considered, and expected outcomes.
+**What it captures:** Why we chose option A over options B and C for a **product, business, or cross-cutting decision**. Context, constraints, alternatives, expected outcomes.
 
-**Primary audience:** Future you, future PMs, stakeholders who weren't in the room, engineers who need to understand the "why" behind requirements.
+**Primary audience:** Future PMs, stakeholders who weren't in the room, leadership, cross-functional teams.
 
-**Key property:** It's a SNAPSHOT — it captures what was true and what was decided at a point in time. It should never be "updated" to reflect new information; instead, new decisions reference old ones.
+**Key property:** SNAPSHOT — captures what was true at a point in time. Never updated; new decisions supersede old ones.
 
-**When to create:** When a meaningful product or technical decision is made. Not every decision — use judgment. If someone will ask "why did we do it this way?" in 6 months, write a decision record.
+**When to create:** Meaningful product or cross-cutting decision where someone will ask "why did we do it this way?" in 6 months. Audience includes non-engineers.
 
-**Template:** `2-decision-record-template.md`
+**Template:** `2-decision-record-template.md` (prefix `DR-NNNN`)
+
+### Type 1b: Architecture Decision Record (ADR)
+
+**What it captures:** Why we chose architectural option A over B and C — database, integration pattern, library, service boundary, data model trade-off.
+
+**Primary audience:** Engineers, tech leads, future on-call responders. Co-located with the codebase.
+
+**Key property:** SNAPSHOT, like DR. Tighter and more technical: Status / Context / Decision Drivers / Options / Decision / Consequences / Validation. Higher volume than DRs (one per significant architectural choice).
+
+**When to create:** Engineering-internal architectural choice that affects code. If the audience is exclusively engineering and the decision is about HOW the system is built (not WHAT to build or WHY for the business), it's an ADR.
+
+**Template:** `4-adr-template.md` (prefix `ADR-NNNN`). AI-auto-fill optimized.
+
+**ADR vs DR — quick rule:** Audience includes non-engineers → DR. Audience is engineering-only and the choice is code-level → ADR. When in doubt and the decision affects code architecture, default to ADR.
 
 ### Type 2: Architecture / Technical
 
@@ -433,7 +462,7 @@ knowledge worth capturing separately.
 
 - [Decision Record Template](2-decision-record-template.md)
 - [Architecture/Technical Template](3-architecture-technical-template.md)
-- [Documentation Evaluation](4-documentation-standards-evaluation.md)
+- [Documentation Evaluation](5-documentation-standards-evaluation.md)
 - [One-Pagers](../2.4.3-One-Pagers/README.md)
 - [PRD Framework](../../2.3-Execution/2.3.4-PRD/README.md)
 - [Product Sense Entry](../../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md)

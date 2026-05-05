@@ -9,9 +9,10 @@ This framework helps you recognize the different types of documentation, choose 
 ## Files
 
 - `1-documentation-standards-framework.md` — Full framework: documentation taxonomy, AI-readiness principles, language guidance, structured metadata, and the "For Agents" section
-- `2-decision-record-template.md` — Template for capturing product and technical decisions (why we chose X, what alternatives we considered, what we expect to happen)
-- `3-architecture-technical-template.md` — Template for documenting how systems work, component relationships, data flows, and technical context
-- `4-documentation-standards-evaluation.md` — Evaluation framework for assessing documentation quality (freshness, findability, audience fit, AI-readiness)
+- `2-decision-record-template.md` — Template for capturing product and cross-cutting decisions. AI-auto-fill optimized with hardwired Quick Quality Checks.
+- `3-architecture-technical-template.md` — Template for documenting how systems work. AI-auto-fill optimized with separate creation and refresh prompts; freshness check hardwired.
+- `4-adr-template.md` — Architecture Decision Record (ADR) template, AI-auto-fill optimized; for engineering-internal architectural choices co-located with code.
+- `5-documentation-standards-evaluation.md` — Comprehensive evaluation framework with type-specific quality gates (DR, ADR, Architecture/Technical) and AI-runnable self-check prompts.
 
 ## Before Using This Framework
 
@@ -50,23 +51,30 @@ Read the taxonomy in `1-documentation-standards-framework.md` → **Documentatio
 
 ### Step 2: Choose the Right Template
 
-Use the template that matches your doc type. This framework ships with Decision Record and Architecture/Technical. Other types (how-to, troubleshooting, onboarding, runbook) can use the same structural principles — metadata header, clear audience, plain language — adapted to their purpose.
+Use the template that matches your doc type. This framework ships AI-auto-fill optimized templates for Decision Record (DR), Architecture Decision Record (ADR), and Architecture/Technical. Other types (how-to, troubleshooting, onboarding, runbook) can use the same structural principles — metadata header, clear audience, plain language — adapted to their purpose.
 
 ### Step 3: Fill in the Metadata Header
 
 Every doc starts with structured metadata. This is what makes docs findable, maintainable, and machine-readable. Don't skip it.
 
-### Step 4: Write the Content
+### Step 4: Write the Content (or Auto-Fill It)
 
-Use the template structure. Write in the language appropriate for your audience (see language guidance in the framework doc). Default to English for new docs unless there's a strong reason not to.
+Two paths:
+
+- **Manual:** Use the template structure and fill it yourself. Default to English for new docs unless there's a strong reason not to.
+- **AI auto-fill:** Each template (`2-`, `3-`, `4-`) ships with an **AI Auto-Fill Prompt**. Paste the template, the prompt, and your source material (transcript, design doc, ticket, chat thread) into your AI agent. The agent drafts the doc, runs the hardwired Quick Quality Check self-check, fixes silent failures from source material, and escalates remaining gaps as questions for the owner. The Architecture/Technical template has a second prompt for **refreshing** existing docs against current system state.
 
 ### Step 5: Quality Check
 
-Use `4-documentation-standards-evaluation.md` or the Quick Quality Checks in the framework doc to verify your doc meets the bar.
+Three levels, in order of effort:
+
+- **Hardwired Quick Quality Checks** (in templates 2/3/5) — fire automatically during/after auto-fill via the self-check prompts. Catches predictable failure modes (hedged decisions, empty Negative consequences, leftover scaffolding, staleness).
+- **Type-specific evaluation** (in `5-documentation-standards-evaluation.md`) — deeper red/green flag scan plus antipatterns, with AI self-check prompts that produce verdicts (ACCEPT / REVISE / REJECT / STALE for Architecture).
+- **Generic evaluation** (in `5-documentation-standards-evaluation.md`, STEPS 0–4) — weighted rubric for peer review or audits across any doc type.
 
 ### Step 6: Publish and Set a Review Date
 
-Every doc needs an owner and a next-review date. No exceptions. Stale docs are worse than no docs.
+Every doc needs an owner and a next-review date. No exceptions. Stale docs are worse than no docs. ADRs and DRs are snapshots (`next-review: N/A`); Architecture/Technical docs are living and need a real review date 3–6 months out.
 
 ---
 
@@ -83,7 +91,8 @@ Every doc needs an owner and a next-review date. No exceptions. Stale docs are w
 
 | Type | Primary Audience | Job-to-be-Done | Template |
 |------|-----------------|-----------------|----------|
-| **Decision Record** | Product team, future PMs, stakeholders | Understand why we chose X | [2-decision-record-template.md](2-decision-record-template.md) |
+| **Decision Record (DR)** | Product team, future PMs, stakeholders | Understand why we chose X (product / cross-cutting) | [2-decision-record-template.md](2-decision-record-template.md) |
+| **Architecture Decision Record (ADR)** | Engineering, tech leads | Understand why we chose X (architectural / code-level) | [4-adr-template.md](4-adr-template.md) |
 | **Architecture / Technical** | Engineering, tech leads, on-call | Understand how the system works | [3-architecture-technical-template.md](3-architecture-technical-template.md) |
 | **How-to / Procedural** | End users, helpdesk, support agents | Complete a specific task | *(future — build when user feedback patterns emerge)* |
 | **Troubleshooting** | Support, engineering | Diagnose and fix a problem | *(future)* |
@@ -101,7 +110,8 @@ Every doc needs an owner and a next-review date. No exceptions. Stale docs are w
 - [Documentation Standards Framework](1-documentation-standards-framework.md)
 - [Decision Record Template](2-decision-record-template.md)
 - [Architecture/Technical Template](3-architecture-technical-template.md)
-- [Documentation Evaluation](4-documentation-standards-evaluation.md)
+- [Documentation Evaluation](5-documentation-standards-evaluation.md)
+- [ADR Template (AI-auto-fill optimized)](4-adr-template.md)
 - [One-Pagers](../2.4.3-One-Pagers/README.md) — for communicating decisions
 - [PRD Framework](../../2.3-Execution/2.3.4-PRD/README.md) — for detailed requirements
 - [Product Sense](../../2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md) — braindump first
