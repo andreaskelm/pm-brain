@@ -4,14 +4,28 @@
 
 ---
 
+## Model Selection
+
+Pick this once, apply everywhere.
+
+**For thinking and coaching conversations (default):** Use a mid-tier model — Sonnet-class (Claude), flagship (GPT), or equivalent. PM Brain's routing and golden rule depend on solid instruction-following. Fast/cheap models tend to skip the braindump and jump straight to templates — that defeats the whole point.
+
+**For mechanical work (once thinking is done):** Switch to a fast/cheap model (Haiku-class, Flash-class) when filling templates, drafting artifacts from completed thinking, or running bulk repo operations. On Cursor you can do this mid-conversation via the model dropdown. On Claude Code, use a subagent at the cheaper tier.
+
+**Avoid:** Models that don't follow complex multi-step instructions. If the agent skips braindump, jumps to templates, or ignores the golden rule — suspect the model first.
+
+**Don't pin version numbers** — model SKUs go stale fast. Pick by capability tier and re-evaluate when you upgrade.
+
+---
+
 ## Platform Overview
 
-| Platform | Rules Auto-Load? | How to Load | Model Selection | Best For |
-|----------|------------------|------------|-----------------|----------|
-| **Cursor** | Yes (`.cursor/rules/`) | Automatic | Built-in model selector | Full PM Brain experience; all features work |
-| **VS Code + Copilot** | Yes (`.github/copilot-instructions.md`) | Automatic | VS Code settings | Local IDE experience; full auto-load |
-| **Claude Code** | No | Manual (read rules + context) | Explicit in first turn | Web-based; need manual setup |
-| **ChatGPT / Claude.ai** | No | Manual copy-paste | Model picker in UI | Simplest onboarding; lightweight |
+| Platform | Rules Auto-Load? | How to Load | Best For |
+|----------|------------------|------------|----------|
+| **Cursor** | Yes (`.cursor/rules/`) | Automatic | Full PM Brain experience; all features work |
+| **VS Code + Copilot** | Yes (`.github/copilot-instructions.md`) | Automatic | Local IDE experience; full auto-load |
+| **Claude Code** | No | Manual (read rules + context) | Web-based; need manual setup |
+| **ChatGPT / Claude.ai** | No | Manual copy-paste | Simplest onboarding; lightweight |
 
 ---
 
@@ -21,26 +35,17 @@
 
 **What happens automatically:**
 - `.cursor/rules/` files auto-load into every conversation
-- Model defaults to your selected Cursor model
-- `CLAUDE.md` is metadata (for reference only)
 - Agent behavior rules applied from day one
 
 **Setup steps:**
 1. Clone or fork the repo: `git clone https://github.com/[you]/pm-brain.git`
 2. Open in Cursor
-3. Done - rules auto-apply
-4. Fill in `01-Company-Context/CONTEXT.md` and `thinking.personal.mdc`
-5. Start a chat
+3. Fill in [`USER.md`](../USER.md) at the repo root
+4. Start a chat
 
-**Model selection in Cursor:**
-- Cursor settings -> Model -> Pick Claude (Sonnet 4.6+ ), Haiku 4.5, or GPT-5.4
-- **Recommended for PM Brain:** Claude Haiku 4.5 or Claude Sonnet 4.6+
-- **Avoid:** Grok, older models that don't follow instructions well
-
-**Gotchas:**
-- If you enable model auto-toggle, it may switch to a random model mid-conversation
-- Turn OFF auto-toggle and pick a stable model
-- If behavior feels wrong, check which model is active (model icon in chat)
+**Watch out:**
+- If you enable model auto-toggle, it may switch to a random model mid-conversation — turn it off
+- If behavior feels wrong (skipping braindump, jumping to templates), check which model is active
 
 ---
 
@@ -48,93 +53,62 @@
 
 **What happens automatically:**
 - `.github/copilot-instructions.md` auto-loads into every Copilot conversation
-- The Copilot bootstrap reads the always-on bootstrap set at the start of each session: `AGENTS.md`, `ORCHESTRATION.md`, `voice.mdc`, `thinking.mdc`, and `thinking.personal.mdc`
-- Always-on rules (voice, thinking, personal context) are part of bootstrap, not sleeping memory
+- Bootstrap set (AGENTS, ORCHESTRATION, voice, thinking, USER.md) is read at session start
 - No setup prompt required
 
 **Setup steps:**
 1. Clone or fork the repo: `git clone https://github.com/[you]/pm-brain.git`
 2. Open in VS Code
 3. Install GitHub Copilot extension (`GitHub.copilot`)
-4. Fill in `01-Company-Context/CONTEXT.md` and `.cursor/rules/thinking.personal.mdc`
-5. **Important** Set to Agent mode in Copilot Chat panel
-6. Start chatting - the agent initializes automatically
+4. Fill in [`USER.md`](../USER.md) at the repo root
+5. **Important:** Set to Agent mode in Copilot Chat panel
+6. Start chatting
 
-**Model selection:**
-- VS Code + Copilot defaults to whatever model is configured (Claude Sonnet 4.6+ recommended)
-- Change model via the model picker in the Copilot Chat panel
-- **Recommended:** Claude Sonnet 4.6 or newer
-- **Avoid:** Grok, older models that don't follow instructions well
-
-**Gotchas:**
+**Watch out:**
 - No persistent memory between conversations (each session starts fresh, but rules auto-load)
-- If agent behavior feels off, check which model is active - model quality matters
-- The `.cursor/rules/` files still drive Cursor behavior; `.github/copilot-instructions.md` is the VS Code equivalent
+- If agent behavior feels off, check which model is active
 
-**Known limitation - bootstrap compliance (as of April 2026):**
-The bootstrap instruction in `copilot-instructions.md` tells the agent to read 5 files before responding. In **agent mode** this is physically possible (file read tools are available) but not guaranteed - if your first message looks like a direct task, the model may skip the bootstrap and respond immediately as a generic coding assistant. In **ask and plan modes** it's impossible regardless, since file read tools don't exist in those modes.
+**Known limitation — bootstrap compliance:**
+The bootstrap instruction tells the agent to read 5 files before responding. In agent mode this is physically possible but not guaranteed — if your first message looks like a direct task, the model may skip bootstrap and respond immediately. In ask and plan modes it's impossible (no file read tools). Workaround: use agent mode, watch the tool call panel. If you don't see file reads at the start, say "load your bootstrap set."
 
-Practical workaround: use agent mode, and watch the tool call panel at the start of each conversation. If you don't see file reads happening before the first response, the bootstrap was skipped - you can call it out directly ("load your bootstrap set") and the agent will usually comply. This is a model compliance issue, not a configuration issue, and may improve in future model versions.
+**Known limitation — mid-session rule changes don't apply retroactively:**
+If you edit a rule file or `USER.md` during a conversation, the change doesn't propagate back. Either tell the agent explicitly ("re-read `USER.md` now") or start a fresh conversation.
 
-**Known limitation - mid-session rule changes don't apply retroactively:**
-If you update a rule file (e.g. `voice.mdc`, `thinking.personal.mdc`) during a conversation, the change does NOT propagate back into the active context window. The agent will keep using whatever version of the file was loaded at session start. If you want the updated rule to take effect immediately, either: (a) tell the agent explicitly ("re-read `thinking.personal.mdc` and apply it from now on"), or (b) start a fresh conversation. Don't assume edits take effect mid-session.
-
-**Known quirk - VS Code sync button bypasses `.gitmessage` template:**
-When you commit via the VS Code Source Control panel (the sync/checkmark button), any `.gitmessage` commit template configured in your git settings is ignored. Copilot generates its own commit message from the diff — usually a wall of text. If you want clean, template-respecting commit messages, commit via terminal: `git commit` (no `-m` flag) — this opens the template in your editor. This is a VS Code + Copilot platform behaviour, not a PM Brain bug.
+**Known quirk — VS Code sync button bypasses `.gitmessage` template:**
+Committing via the VS Code Source Control panel ignores any `.gitmessage` template. Commit via terminal (`git commit` with no `-m` flag) to use the template.
 
 ---
 
 ### Claude Code
 
-**What you need to do manually:**
-- Read CLAUDE.md at the start (it tells you exactly what to load)
-- Manually read `.cursor/rules/` files in first turn
-- Model: Use Claude (you pick version in Claude.ai settings)
-
 **Setup steps:**
 1. Clone or fork the repo (local or GitHub)
 2. Open this repo in Claude Code
-3. Fill in `01-Company-Context/CONTEXT.md` and `thinking.personal.mdc`
-4. **At start of each conversation**, say something like:
+3. Fill in [`USER.md`](../USER.md) at the repo root
+4. **At start of each conversation**, say:
 
 ```text
-Let's set up PM Brain for this conversation.
-
-Read:
-1. AGENTS.md (persona, golden rules)
-2. ORCHESTRATION.md (routing, state machine)
-3. .cursor/rules/voice.mdc (communication style)
-4. .cursor/rules/thinking.mdc (coaching workflow)
-5. .cursor/rules/thinking.personal.mdc (my personal context)
-
-Then help me with: [your question/topic]
+I'm using PM Brain; load your bootstrap set. Then help me with: [your question/topic]
 ```
 
-5. Or shorter: Just say "I'm using PM Brain; load your bootstrap set" and the agent should handle it
+Or use the full prompt if the agent doesn't pick it up:
 
-**Model selection:**
-- Claude Code lets you pick model in claude.ai settings (Sonnet, Haiku, etc.)
-- **Recommended:** Claude Haiku 4.5 or Claude Sonnet 4.6+
-- **Avoid:** Grok, older models
-- **Best practice:** Lock in Haiku 4.5 in settings and don't toggle
+```text
+Read in order: AGENTS.md, ORCHESTRATION.md, .cursor/rules/voice.mdc, .cursor/rules/thinking.mdc, USER.md — then help me with: [your topic]
+```
 
 **Gotchas:**
-- Rules don't auto-load - you must ask the agent to read them
+- Rules don't auto-load — you must ask the agent to read them each conversation
 - Context window resets between conversations
-- If setup is tedious, create a "system prompt" or reusable setup message in Claude.ai settings
+- For subagent model efficiency, see [CLAUDE.md](../CLAUDE.md) → Subagents and Model Efficiency
 
 ---
 
 ### ChatGPT or Claude.ai (Web, No IDE)
 
-**When to use:** Quick braindumps, lightweight project, learning the framework
+**When to use:** Quick braindumps, lightweight one-off questions, learning the framework.
 
-**What you need to do:**
-- Copy-paste relevant docs into chat manually
-- No persistent workspace (paste fresh each time)
-- Model: ChatGPT 5.4+ or Claude Sonnet 4.6+ (you pick)
-
-**Minimal setup for one question:**
+**Minimal setup:**
 1. Start a new chat
 2. Paste this:
 
@@ -146,7 +120,7 @@ Load this bootstrap context first:
 - ORCHESTRATION.md
 - voice.mdc
 - thinking.mdc
-- thinking.personal.mdc
+- USER.md
 
 Key rules:
 - Braindump BEFORE structure
@@ -156,75 +130,37 @@ Key rules:
 I need help with: [your topic]
 ```
 
-3. Ask your question
-
-**For ongoing work:**
-Save your context as a reusable ChatGPT "custom instruction" or workspace note (if available).
-
-**Model selection:**
-- ChatGPT: Use GPT-5.4+ (don't use 4-Turbo, it's older)
-- Claude.ai: Use Claude Sonnet 4.6+ or Haiku 4.5
-- **Avoid:** Grok, older models
-
----
-
-## Model Selection: Why It Matters
-
-**The issue:** PM Brain relies on **instruction-following** and **nuanced routing** (product_sense vs execution_mode). Weaker models don't follow the golden rule; they skip braindump and jump to templates. Better models respect the workflow.
-
-**Model Tier List:**
-- Excellent: Claude Haiku 4.5, Claude Sonnet 4.6+, Claude Opus 4.6+, GPT-5.4+, 
-- Good: GPT-4 (older), Claude 3 Sonnet
-- Avoid: Grok, older Claude/GPT models, local models (unless specifically tuned)
-
-**Pro tip:** Lock your model choice in settings and turn OFF auto-toggle. Consistency matters.
+**For ongoing work:** Save as a reusable custom instruction or workspace note.
 
 ---
 
 ## Troubleshooting
 
-### "The agent isn't following the golden rule; it's suggesting templates too early"
-- **Cause:** Weak model or rules not loaded
-- **Fix:** Switch to Haiku 4.5 or Sonnet 4.6+; reload rules; paste the setup prompt again
+**"The agent is suggesting templates too early / skipping braindump"**
+Model is likely too cheap or rules weren't loaded. Switch to a mid-tier model; reload rules; paste the setup prompt again.
 
-### "Rules aren't auto-loading"
-- **If Cursor:** Check `.cursor/rules/` folder exists; restart Cursor
-- **If VS Code / Claude Code / ChatGPT:** You're on a platform that requires manual loading - expected behavior
+**"Rules aren't auto-loading"**
+On Cursor: check `.cursor/rules/` folder exists; restart Cursor. On all other platforms: manual loading is expected — use the setup prompt.
 
-### "Agent behavior feels inconsistent"
-- **Cause:** Model toggled between conversations or rules loaded unevenly
-- **Fix:** Lock the model in settings; at start of each conversation (if not Cursor), paste setup rules again
+**"Agent behavior feels inconsistent"**
+Stick to the same model tier for thinking conversations. If not on Cursor, paste setup rules at the start of each session.
 
-### "I forked the repo and now it's public; I need it private"
-- **See:** docs/setup.md -> Step 3 (Fork/Privacy) for migration instructions
+**"I forked the repo and now it's public; I need it private"**
+See `docs/setup.md` → Step 3 (Fork/Privacy).
 
 ---
 
-## Summary Table: What You Need to Do
+## Summary
 
 | Step | Cursor | VS Code+Copilot | Claude Code | ChatGPT/Claude.ai |
 |------|--------|-----------------|-------------|-------------------|
 | Clone/set up | `git clone` | `git clone` | Sync folder / GitHub | N/A (web only) |
-| Load rules | Automatic | Automatic (`.github/copilot-instructions.md`) | Paste bootstrap prompt | Paste minimal bootstrap |
-| Model selection | Cursor settings | Copilot model picker | claude.ai settings | Site model picker |
-| Fill personal context | `thinking.personal.mdc` | Same | Same | (Optional) |
-| Start chat | Normal | Normal - no setup prompt needed | Paste setup first | Paste rules + question |
-| Lock model | Yes (recommended) | Yes (recommended) | Yes (recommended) | Yes (recommended) |
+| Load rules | Automatic | Automatic | Paste bootstrap prompt | Paste minimal bootstrap |
+| Fill `USER.md` | Yes | Yes | Yes | Optional |
+| Start chat | Normal | Normal | Paste setup first | Paste rules + question |
 
----
+**If you're on Cursor:** You're ready. Open [`USER.md`](../USER.md), fill it in, start a chat.
 
-## Next Steps
-
-**If you're on Cursor:** You're ready. Start with [01-Company-Context/CONTEXT.md](../01-Company-Context/CONTEXT.md).
-
-**If you're on VS Code + Copilot:** You're ready too - `.github/copilot-instructions.md` auto-loads. Just open a chat and go.
+**If you're on VS Code + Copilot:** You're ready — `.github/copilot-instructions.md` auto-loads. Fill `USER.md` and go.
 
 **If you're on Claude Code or ChatGPT:** Bookmark this doc. Use the setup prompt at the top of each conversation.
-
-**If you're deploying PM Brain for a team:** Highlight this doc. Every team member needs to know their platform's setup flow.
-
----
-
-## Questions?
-
-If something doesn't work on your platform, [log it as a gap](../04-Initiatives/) so we can improve the docs.

@@ -1,37 +1,5 @@
 ---
-description: personal context for [You]
+description: redirect — personal context lives in USER.md
 alwaysApply: false
 ---
-# Personal Context
-
-**Name:** [Your Name or Alias]  
-**Role:** [Your Title / Role]
-
-> **Note:** For organizational context (company name, teams, business units), see `01-Company-Context/CONTEXT.md`. This file focuses on your personal working style and preferences.
-
-> **Git tracking:** This file is ignored in private and team modes (kept private). In public mode, it's tracked - sanitize any sensitive personal information if needed.  
-
-**Cognitive Profile (optional):**  
-[Brief description of any relevant cognitive traits, if you want the AI to adapt to them. Focus on what helps you work best.]
-
-**Working Preferences:**
-- [e.g. Clear, structured info (bullets, tables, visuals)]
-- [e.g. Written documentation and summaries]
-- [e.g. Extra time for complex/ambiguous topics]
-- [e.g. Agendas/key points before meetings]
-- [e.g. Written action items/decisions]
-- [e.g. Space for asynchronous feedback]
-
-**Strengths:**
-- [e.g. Pattern recognition; connecting ideas across domains]
-- [e.g. Systematic thinking; empathy with stakeholders]
-
-**Challenges:**
-- [e.g. Context-switching; unstructured or last-minute info]
-- [e.g. Tendency toward all-or-nothing thinking]
-
-**Communication Style:**
-- [e.g. Direct, constructive feedback]
-- [e.g. Prefer written communications for complex topics]
-- [e.g. Need clear expectations and next steps]
-
+> Personal context has moved to [USER.md](../../USER.md).

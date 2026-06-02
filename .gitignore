@@ -62,7 +62,7 @@ Thumbs.db
 # !01-Company-Context/README.md
 #
 # # --- Personal configuration ---
-# .cursor/rules/thinking.personal.mdc
+# USER.md
 #
 # # --- Active work & research ---
 # 04-Initiatives/*
@@ -76,8 +76,8 @@ Thumbs.db
 # ============================================
 # TEAM MODE — uncomment this block to enable
 # (or tell the agent "switch me to team mode")
-# Note: uncomment the CONTEXT.md exception line if you want to share company
-# naming conventions with your team.
+# Note: company naming in USER.md can be shared with team by tracking USER.md
+# in team mode (see team block below).
 # ============================================
 
 # # --- Personal practice content (each team member keeps theirs private) ---
@@ -93,7 +93,5 @@ Thumbs.db
 # # --- Company-specific content ---
 # 01-Company-Context/*.md
 # !01-Company-Context/README.md
-# # !01-Company-Context/CONTEXT.md   ← uncomment to share company naming with team
-#
 # # --- Personal configuration (each team member has their own) ---
-# .cursor/rules/thinking.personal.mdc
+# USER.md

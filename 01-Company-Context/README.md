@@ -8,7 +8,7 @@ This directory contains the foundational company context documents that provide 
 
 **New to this directory?** Start with the main setup guide: [`docs/setup.md`](../docs/setup.md) — it covers company context setup as part of the overall PM Brain configuration.
 
-**Personalization:** Fill out [`CONTEXT.md`](CONTEXT.md) with your name, company name, and team/BU names.
+**Personalization:** Fill out [`USER.md`](../USER.md) at the repo root with your name, role, company, team, and how you work.
 
 **Onboarding:** Once basic context exists, read [`1.3-Onboarding/1-top-10-things-you-should-know.md`](1.3-Onboarding/1-top-10-things-you-should-know.md) for a fast tour of how company context, metrics, acronyms, and methods fit together.
 
@@ -52,7 +52,7 @@ This structure creates a natural flow: **Why → What → How → What Exists �
 
 ## How to Use This Directory
 
-**First time setup:** See [`docs/setup.md`](../docs/setup.md) → Priority 1. Fill out CONTEXT.md, create the core docs that apply to your org, skip what doesn't.
+**First time setup:** See [`docs/setup.md`](../docs/setup.md) → Step 4. Fill out [`USER.md`](../USER.md), then create the core docs that apply to your org; skip what doesn't.
 
 **Ongoing use:**
 1. **Start with Vision & Strategy** - These documents should be created first through the Product Strategy framework
@@ -60,7 +60,7 @@ This structure creates a natural flow: **Why → What → How → What Exists �
 3. **Document Portfolio** - Catalog your products and customer segments
 4. **Build Roadmap** - Create company-wide roadmap aligned with strategy (and BU/team roadmaps if applicable)
 5. **Maintain Stakeholders** - Keep stakeholder directory current
-6. **Update structure** - When organizational changes occur (new BUs, teams), add subfolders as needed and update [`CONTEXT.md`](CONTEXT.md)
+6. **Update structure** - When organizational changes occur (new BUs, teams), add subfolders as needed and update [`USER.md`](../USER.md) and the relevant company docs
 
 ---
 
@@ -98,7 +98,7 @@ I'll start by telling you which parts of our company context feel most unclear r
 
 - **Quarterly Reviews**: Review all documents quarterly for accuracy and relevance
 - **After Major Changes**: Update relevant documents when strategy, organization structure, or priorities change
-- **Organizational Structure Changes**: When new BUs, teams, or strategic planning structures emerge, add subfolders as needed and update [`CONTEXT.md`](CONTEXT.md) accordingly
+- **Organizational Structure Changes**: When new BUs, teams, or strategic planning structures emerge, add subfolders as needed and update [`USER.md`](../USER.md) and the relevant company docs accordingly
 - **Version Control**: Use git to track changes and maintain history
 - **Stakeholder Updates**: Update stakeholder directory when organization changes occur
 

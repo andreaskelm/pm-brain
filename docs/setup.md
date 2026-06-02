@@ -1,4 +1,4 @@
-﻿# 🚀 PM Brain Setup Guide
+# 🚀 PM Brain Setup Guide
 
 > **Welcome!** This guide gets you from zero to running in under 30 minutes.
 
@@ -148,10 +148,9 @@ Or ask the agent: *"what tracked files might be sensitive in private mode?"*
 
 **Minimum to start (10 minutes):**
 
-- `01-Company-Context/CONTEXT.md` — your name, role, company, team, and 2 sentences on what you build
-- `.cursor/rules/thinking.personal.mdc` *(Cursor / VS Code)* — how you work, what you struggle with, communication preferences. For other tools, paste this content as part of your system prompt — see [platform-setup.md](platform-setup.md).
+- [`USER.md`](../USER.md) at the repo root — your name, role, company, team, what you build, and how you work (working preferences, strengths, challenges, communication style). For other tools without repo file access, paste this content as part of your system prompt — see [platform-setup.md](platform-setup.md).
 
-That's it. The agent uses these two files on every conversation.
+That's it. The agent loads `USER.md` on every conversation (part of the bootstrap set).
 
 **Add as you go:**
 
@@ -164,7 +163,7 @@ That's it. The agent uses these two files on every conversation.
 
 If your org has layers (company → division → business unit → team), don't try to model all of them upfront. Start at the level you actually work at — usually your team or business unit — and add layers only when the distinction matters for your work.
 
-**A note on git tracking:** In private/team modes, `CONTEXT.md` and `thinking.personal.mdc` are ignored by git — your personal context stays private. See Step 3 to configure your mode.
+**A note on git tracking:** In private/team modes, `USER.md` is ignored by git — your personal context stays private. See Step 3 to configure your mode.
 
 ---
 

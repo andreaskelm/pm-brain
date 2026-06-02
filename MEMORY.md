@@ -2,7 +2,7 @@
 
 **What this file is:** The **sleeping memory manifest**: it lists context that lives in the repo but is not in the active prompt until "woken" - loaded when the conversation touches that area. The agent uses this to decide what to load after the always-on bootstrap set is already in place. Orchestration: [ORCHESTRATION.md](ORCHESTRATION.md) -> Routing Logic and Cross-Cutting Behaviors.
 
-**Concept:** This file is for **on-demand context only**. The always-on bootstrap set lives in [ORCHESTRATION.md](ORCHESTRATION.md): [AGENTS.md](AGENTS.md), [ORCHESTRATION.md](ORCHESTRATION.md), [.cursor/rules/voice.mdc](.cursor/rules/voice.mdc), [.cursor/rules/thinking.mdc](.cursor/rules/thinking.mdc), and [.cursor/rules/thinking.personal.mdc](.cursor/rules/thinking.personal.mdc). Content in 01-Company-Context, 03-Research-Artifacts, 04-Initiatives, conditional rules, skills, and evals is **sleeping memory** and should be woken only when relevant.
+**Concept:** This file is for **on-demand context only**. The always-on bootstrap set lives in [ORCHESTRATION.md](ORCHESTRATION.md): [AGENTS.md](AGENTS.md), [ORCHESTRATION.md](ORCHESTRATION.md), [.cursor/rules/voice.mdc](.cursor/rules/voice.mdc), [.cursor/rules/thinking.mdc](.cursor/rules/thinking.mdc), and [USER.md](USER.md). Content in 01-Company-Context, 03-Research-Artifacts, 04-Initiatives, conditional rules, skills, and evals is **sleeping memory** and should be woken only when relevant.
 
 **Platform note:** Paths below assume the default repo layout. On **Cursor**, `.cursor/rules/` files with `alwaysApply: true` can satisfy part of the bootstrap automatically; skills and conditional rules still load on-demand. On **VS Code + GitHub Copilot**, [.github/copilot-instructions.md](.github/copilot-instructions.md) is the bootstrap/invocation layer and should load the entire always-on bootstrap set into every conversation before responding. On **other platforms** (Claude Code, ChatGPT, Claude.ai, Codex, etc.), use that platform's startup mechanism or a manual setup prompt to load the bootstrap set first, then use this file for everything else.
 
@@ -15,7 +15,7 @@
 - [ORCHESTRATION.md](ORCHESTRATION.md)
 - [.cursor/rules/voice.mdc](.cursor/rules/voice.mdc)
 - [.cursor/rules/thinking.mdc](.cursor/rules/thinking.mdc)
-- [.cursor/rules/thinking.personal.mdc](.cursor/rules/thinking.personal.mdc)
+- [USER.md](USER.md)
 
 **Sleeping memory (wake only when needed):**
 - [version.json](version.json) — repo version and changelog (wake when user asks about version, recent changes, or when bumping after structural work)
@@ -33,11 +33,11 @@
 
 | Trigger (user mentions or topic) | Wake (load or reference) |
 |----------------------------------|--------------------------|
-| Company, strategy, vision, roadmap, stakeholders, organization — **as background context** | [01-Company-Context/](01-Company-Context/README.md) (see below); start with [CONTEXT.md](01-Company-Context/CONTEXT.md) for name/company/team |
+| Company, strategy, vision, roadmap, stakeholders, organization — **as background context** | [01-Company-Context/](01-Company-Context/README.md) (see below); identity in [USER.md](USER.md) is already in bootstrap |
 | Roadmap, OKRs, prioritization, discovery, stakeholder comms, politics — **as a framework/skill to apply** | Skills load on topic signal in any state — see skills dispatch table in [ORCHESTRATION.md](ORCHESTRATION.md) → Cross-Cutting Behaviors |
 | A specific initiative or "my initiative", "current bet" | 04-Initiatives/[initiative-name]/ (see below) |
 | Research, interviews, discovery, evidence, user insights | [03-Research-Artifacts/](03-Research-Artifacts/README.md) or 04-Initiatives/[name]/research/ |
-| Personalization beyond the bootstrap set (who I am, my team, my company context) | [01-Company-Context/CONTEXT.md](01-Company-Context/CONTEXT.md) |
+| Personalization beyond the bootstrap set (who I am, my team, my company context) | [USER.md](USER.md) + numbered docs in [01-Company-Context/](01-Company-Context/README.md) |
 | How to evaluate artifacts / when to run evals | [.cursor/rules/evaluation-orchestration.mdc](.cursor/rules/evaluation-orchestration.mdc), [.cursor/evals/](.cursor/evals/README.md) |
 | Template finder / which doc to use | [02-Methods-and-Tools/0-template-finder.md](02-Methods-and-Tools/0-template-finder.md) |
 | Product sense / braindump / golden rule | [PRODUCT-SENSE-RULES.md](PRODUCT-SENSE-RULES.md), [2-product-sense-prompts.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/2-product-sense-prompts.md), [0-start-here-product-thinking.md](02-Methods-and-Tools/2.0-Foundations/2.0.1-Mental-Models/6-Product-Sense-Development/0-start-here-product-thinking.md) |
@@ -65,7 +65,7 @@
 
 | Purpose | Path |
 |---------|------|
-| Personalization (name, company, team/BU) | [01-Company-Context/CONTEXT.md](01-Company-Context/CONTEXT.md) |
+| Personalization (name, company, team/BU) | [USER.md](USER.md) |
 | Vision | [01-Company-Context/1-company-vision.md](01-Company-Context/1-company-vision.md) |
 | Strategy | [01-Company-Context/2-company-strategy.md](01-Company-Context/2-company-strategy.md) |
 | Principles | [01-Company-Context/3-company-product-principles.md](01-Company-Context/3-company-product-principles.md) |
@@ -170,7 +170,7 @@ Store analysis/snapshots here (or in initiative research/); raw data external wi
 
 ## Summary
 
-- **Company / strategy / organization** -> [01-Company-Context/](01-Company-Context/README.md) (CONTEXT.md first, then vision/strategy/roadmap/stakeholders as needed).
+- **Company / strategy / organization** -> [01-Company-Context/](01-Company-Context/README.md) (README for orientation, then vision/strategy/roadmap/stakeholders as needed).
 - **Initiative** -> [04-Initiatives/](04-Initiatives/README.md) (opportunity-assessment, prd, decisions, roadmap, summary — one folder per initiative).
 - **Research / evidence** -> [03-Research-Artifacts/](03-Research-Artifacts/README.md) or 04-Initiatives/[name]/research/.
 - **Always-on coaching + personalization rules** -> already in the bootstrap set; do not treat them as sleeping memory.

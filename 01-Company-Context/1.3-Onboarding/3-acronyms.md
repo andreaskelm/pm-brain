@@ -23,7 +23,7 @@ Use this section for names that are specific to your company, BU, or this reposi
 
 | Acronym / Term | Expansion / Plain words | What it refers to | Canonical doc / folder |
 |----------------|------------------------|-------------------|------------------------|
-| BU | Business Unit | High-level organizational grouping for products/markets | Typically defined in `01-Company-Context/CONTEXT.md` and your org structure docs |
+| BU | Business Unit | High-level organizational grouping for products/markets | Typically defined in [`USER.md`](../../USER.md) and your org structure docs |
 | TBD | To Be Defined | Placeholder for acronyms and internal project names you will add over time | Add links once you have real initiatives and internal names |
 
 ---

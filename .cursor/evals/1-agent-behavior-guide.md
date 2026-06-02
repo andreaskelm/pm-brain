@@ -175,5 +175,5 @@ Common structural root causes (not agent errors):
 | Agent skipped bootstrap | Was there a resumed session without explicit bootstrap instruction in the platform file? |
 | Mode-specific files not loaded at transition | Does ORCHESTRATION.md list entry files as mandatory for that state? |
 | Recurring rule miss despite rule existing | Is the trigger a judgment call (fragile) or a named event (reliable)? Make it unconditional. |
-| Rule ended up in wrong file | Does the rule belong in a universal layer (thinking.mdc) or a specific file (ORCHESTRATION, AGENTS, thinking.personal)? |
+| Rule ended up in wrong file | Does the rule belong in a universal layer (thinking.mdc) or a specific file (ORCHESTRATION, AGENTS, USER.md)? |
 | Agent treated attachment as bootstrap | Platform bootstrap file missing explicit "attachment ≠ bootstrap" note. |

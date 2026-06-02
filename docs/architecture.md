@@ -121,7 +121,7 @@ Each platform has a different auto-load mechanism. The CONTENT is shared (same r
 - **Root:** UPPERCASE for agent/core and former human docs (AGENTS.md, ORCHESTRATION.md, …); README.md; version.json lowercase. New human docs go in `docs/` as lowercase.
 - **docs/:** lowercase hyphenated (setup.md, guidelines.md, architecture.md, credits.md, agent-manifest.md).
 - **02-Methods-and-Tools:** README.md plus `N-name-with-hyphens.md` (number prefix, lowercase).
-- **01-Company-Context:** Entry UPPERCASE (CONTEXT.md, CONTEXT-HEALTH.md); content number-lowercase (1-company-vision.md, …). Setup guide lives in `docs/setup.md`.
+- **01-Company-Context:** Entry UPPERCASE (CONTEXT-HEALTH.md); content number-lowercase (1-company-vision.md, …). Personal + work quick context in root `USER.md`. Setup guide lives in `docs/setup.md`.
 - **04-Initiatives:** lowercase (summary.md, prd.md, opportunity-assessment.md, …).
 - **00-Meta:** Content lowercase; entry/guide docs may stay UPPERCASE. No UPPERCASE in otherwise lowercase folders — fix outliers.
 - **.cursor:** lowercase hyphenated for rules/skills (voice.mdc, product-sense.mdc).
@@ -139,7 +139,7 @@ flowchart TB
     O2[ORCHESTRATION.md]
     Voice2[voice.mdc]
     Think2[thinking.mdc]
-    Personal2[thinking.personal.mdc]
+    Personal2[USER.md]
     A2 --> O2
     Voice2 --- Think2 --- Personal2
   end
@@ -171,7 +171,7 @@ flowchart TB
 ```
 
 **In words:**
-- **Start (bootstrap):** Agent reads the 5-file bootstrap set: AGENTS.md (persona), ORCHESTRATION.md (routing and modes), voice.mdc (communication style), thinking.mdc (coaching behavior), and thinking.personal.mdc (personal context). No other files are loaded yet.
+- **Start (bootstrap):** Agent reads the 5-file bootstrap set: AGENTS.md (persona), ORCHESTRATION.md (routing and modes), voice.mdc (communication style), thinking.mdc (coaching behavior), and USER.md (personal + work context). No other files are loaded yet.
 - **Each turn:** Your message is matched against ORCHESTRATION's decision tree → one mode is chosen (product_sense, execution_mode, meta_reflection, or conversation). The agent then loads only the Layer 2 files for that mode (e.g. 0-start-here + prompts for product_sense; template-finder + framework for execution_mode).
 - **Cross-cutting behaviors:** Some rules fire in ANY state, regardless of mode: the Product Judgment Test capture trigger (decision with confidence → offer PJT), intent disambiguation (clarify ambiguous topic signals before loading), the company context routing guard (check CONTEXT-HEALTH.md before suggesting updates to company docs), and synthesis-first (when user signals they're about to share content, ask for their takeaways before analyzing).
 - **Sleeping memory:** 01-Company-Context, 03-Research-Artifacts, 04-Initiatives, and .cursor (conditional rules, skills) are **not** in the prompt until the conversation touches them. When you mention strategy, an initiative, or research, the agent consults MEMORY.md and loads the relevant paths. This keeps the prompt small and focused.
@@ -404,7 +404,7 @@ flowchart LR
     L1O[ORCHESTRATION.md]
     L1Voice[voice.mdc]
     L1Think[thinking.mdc]
-    L1Personal[thinking.personal.mdc]
+    L1Personal[USER.md]
   end
 
   subgraph L2on["Layer 2 - By mode"]
@@ -429,7 +429,7 @@ flowchart LR
 ```
 
 **Three layers, short version:**
-- **Layer 1 (bootstrap):** 5 files loaded unconditionally at conversation start (AGENTS, ORCHESTRATION, voice, thinking, thinking.personal). No response before these are loaded. Platform wiring determines how (see Design Principles → Platform-specific wiring above).
+- **Layer 1 (bootstrap):** 5 files loaded unconditionally at conversation start (AGENTS, ORCHESTRATION, voice, thinking, USER). No response before these are loaded. Platform wiring determines how (see Design Principles → Platform-specific wiring above).
 - **Layer 2 (by mode):** Loaded when a mode is entered — product_sense gets entry point + prompts + eval-functions; execution_mode gets template-finder or framework guide.
 - **Layer 3 (reference):** Templates (`2-*-template.md`) and evaluations (`3-*-evaluation.md`) loaded only when actively filling or checking.
 - **Sleeping memory:** Company context, research, initiatives, conditional rules (`.cursor/rules/`), and skills (`.cursor/skills/`) load only when the conversation touches that area — triggered by user message, routed via MEMORY.md.
