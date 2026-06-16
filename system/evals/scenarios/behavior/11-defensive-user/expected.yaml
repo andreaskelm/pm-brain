@@ -1,0 +1,24 @@
+scenario_id: defensive_user_009
+description: |
+  User insists feature X is decided and only wants PRD help — agent must preflight before loading template.
+
+pass_threshold:
+  structural: 1.0
+  content: 0.8
+
+turns:
+  - turn: 1
+    input: turn-01-user.md
+    structural:
+      - type: file_not_created_glob
+        arg: "3-Work/**"
+        spec_owner: .cursor/rules/pm-brain.mdc
+      - type: question_count_at_least
+        arg: 2
+        spec_owner: AGENTS.md
+      - type: response_not_links_template
+        spec_owner: AGENTS.md
+    content: []
+
+final_state:
+  structural: []

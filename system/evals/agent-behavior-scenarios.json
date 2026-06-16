@@ -1,0 +1,183 @@
+{
+  "version": "2.0",
+  "_meta": {
+    "canonical_spec": "Each behavior scenario: scenarios/behavior/<NN-slug>/expected.yaml + README.md. This file is an index for discovery and stub generation only.",
+    "rubric_scenarios": "scenarios/rubric/<slug>/ — not listed here; see run_rubric_regression.py",
+    "numbering": "Folder prefix NN (01–15) is catalog order. scenario_id (_001, _002, …) is the stable harness ID in expected.yaml — not repeated in the folder slug."
+  },
+  "scenarios": [
+    {
+      "scenario_id": "braindump_floor_gate_001",
+      "harness_path": "behavior/01-braindump-floor-gate",
+      "scenario_type": "harness_only",
+      "tags": [
+        "coaching"
+      ],
+      "initial_prompt": "Write my PRD for the new onboarding flow. I need it by Friday for the exec review."
+    },
+    {
+      "scenario_id": "pjt_trigger_001",
+      "harness_path": "behavior/02-pjt-trigger",
+      "scenario_type": "harness_only",
+      "tags": [
+        "coaching"
+      ],
+      "initial_prompt": "We're going with the multi-tenant architecture. I'm about 75% confident this is the right call for Q3. Deadline to know is end of September."
+    },
+    {
+      "scenario_id": "vague_product_idea_001",
+      "harness_path": "behavior/03-vague-product-idea",
+      "scenario_type": "vague_problem",
+      "tags": [
+        "beginner",
+        "product_definition",
+        "critical"
+      ],
+      "initial_prompt": "I want to build an app for remote teams."
+    },
+    {
+      "scenario_id": "conflicting_stakeholders_002",
+      "harness_path": "behavior/04-conflicting-stakeholders",
+      "scenario_type": "conflicting_priorities",
+      "tags": [
+        "intermediate",
+        "prioritization",
+        "stakeholder_management",
+        "critical"
+      ],
+      "initial_prompt": "Engineering wants to do a full rewrite but Sales is promising new features to close deals. I need to decide what to prioritize."
+    },
+    {
+      "scenario_id": "framework_selection_003",
+      "harness_path": "behavior/05-framework-selection",
+      "scenario_type": "framework_need",
+      "tags": [
+        "advanced",
+        "documentation",
+        "frameworks"
+      ],
+      "initial_prompt": "I need to write a strategy doc but I'm not sure how to structure it."
+    },
+    {
+      "scenario_id": "premature_solution_004",
+      "harness_path": "behavior/06-premature-solution",
+      "scenario_type": "vague_problem",
+      "tags": [
+        "intermediate",
+        "problem_diagnosis",
+        "critical",
+        "common_mistake"
+      ],
+      "initial_prompt": "Users are churning. I think we need to build an onboarding flow."
+    },
+    {
+      "scenario_id": "complex_tradeoff_005",
+      "harness_path": "behavior/07-complex-tradeoff",
+      "scenario_type": "complex_decision",
+      "tags": [
+        "advanced",
+        "architecture",
+        "decision_making",
+        "cross_functional"
+      ],
+      "initial_prompt": "Should we go multi-tenant or keep single-tenant architecture? Enterprise customers are asking for it but it's a 6-month engineering project."
+    },
+    {
+      "scenario_id": "first_time_roadmap_006",
+      "harness_path": "behavior/08-first-time-roadmap",
+      "scenario_type": "framework_need",
+      "tags": [
+        "beginner",
+        "roadmapping",
+        "learning",
+        "common_scenario"
+      ],
+      "initial_prompt": "I just got promoted to PM and need to create my first roadmap. Where do I start?"
+    },
+    {
+      "scenario_id": "metrics_confusion_007",
+      "harness_path": "behavior/09-metrics-confusion",
+      "scenario_type": "framework_need",
+      "tags": [
+        "intermediate",
+        "metrics",
+        "common_scenario"
+      ],
+      "initial_prompt": "My exec asked for KPIs but I'm not sure what metrics matter for my product."
+    },
+    {
+      "scenario_id": "user_research_planning_008",
+      "harness_path": "behavior/10-user-research-planning",
+      "scenario_type": "vague_problem",
+      "tags": [
+        "intermediate",
+        "user_research",
+        "methodology"
+      ],
+      "initial_prompt": "I need to do user research but don't know where to start."
+    },
+    {
+      "scenario_id": "defensive_user_009",
+      "harness_path": "behavior/11-defensive-user",
+      "scenario_type": "complex_decision",
+      "tags": [
+        "advanced",
+        "difficult_interaction",
+        "user_psychology",
+        "critical"
+      ],
+      "initial_prompt": "I already know we need to build feature X, I just need help documenting it in a PRD."
+    },
+    {
+      "scenario_id": "overwhelm_paralysis_010",
+      "harness_path": "behavior/12-overwhelm-paralysis",
+      "scenario_type": "complex_decision",
+      "tags": [
+        "any_level",
+        "emotional_support",
+        "user_psychology",
+        "common_scenario"
+      ],
+      "initial_prompt": "I have so many things I could work on. I'm stuck and don't know where to start."
+    },
+    {
+      "scenario_id": "end_of_week_wrap_011",
+      "harness_path": "behavior/13-end-of-week-wrap",
+      "scenario_type": "meta_reflection",
+      "tags": [
+        "any_level",
+        "weekly_ritual",
+        "meta_reflection",
+        "learning_capture",
+        "critical"
+      ],
+      "initial_prompt": "It's Friday. Let's wrap up the week and figure out what to focus on next week."
+    },
+    {
+      "scenario_id": "novel_framework_build_012",
+      "harness_path": "behavior/14-novel-framework-build",
+      "scenario_type": "framework_creation",
+      "tags": [
+        "any_level",
+        "framework_design",
+        "meta_work",
+        "critical"
+      ],
+      "initial_prompt": "I need to create a [documentation standards / onboarding process / decision log system] from scratch. Can you help me build it?"
+    },
+    {
+      "scenario_id": "transcript_to_artifact_013",
+      "harness_path": "behavior/15-transcript-to-artifact",
+      "scenario_type": "execution_with_raw_material",
+      "tags": [
+        "any_level",
+        "transcript_processing",
+        "execution_mode",
+        "recurring_pattern",
+        "critical"
+      ],
+      "initial_prompt": "I have a meeting transcript / workshop notes / someone else's notes. Help me structure this into [OA / avatar / knowledge base / team doc]."
+    }
+  ]
+}
+

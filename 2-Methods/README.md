@@ -1,0 +1,305 @@
+# 2-Methods
+
+This directory is the **core of the PM brain**: it contains the decision models, guides, templates, playbooks, and prompts you use every day to **ship valuable products**.
+
+**Important:** These frameworks are designed to **guide your thinking**, not replace it. Before jumping into templates:
+1. **Braindump first** — Use the prompts in each framework to dump your raw thoughts
+2. **Develop product sense** — Use the exercises to build judgment and taste
+3. **Think critically** — Answer quiz questions honestly, challenge your assumptions
+4. **Reflect** — Use self-reflection prompts to learn and improve
+
+**To start a product-thinking chat (e.g. with AI):** Use the single entry point [README.md](../system/coaching/README.md) — copy the simple prompt at the top; the agent will braindump with you before suggesting any framework. After braindump, use the **Frameworks by situation** table there (or the domain READMEs below) to jump to Strategy, Discovery, Execution, or Communication.
+
+**I know what doc I need:** [0-template-finder.md](0-template-finder.md) — go straight to the right README + template. **Find by topic:** [1-frameworks-by-topic.md](1-frameworks-by-topic.md). **Foundations only (all mental models, bias, self-reflection):** [1-Foundations/0-index.md](1-Foundations/0-index.md).
+
+Content is organized by **the flow of product work**: from foundational thinking → defining direction → discovering what to build → executing and shipping → aligning stakeholders. This logical progression helps you move from ambiguity to shipped outcomes.
+
+---
+
+## Directory Structure
+
+```text
+2-Methods/
++-- 0-Template-Structure/ # Reusable templates for creating frameworks
+
++-- 1-Foundations/ # HOW TO THINK
+| +-- 1-Mental-Models/ # Decision-making, product thinking, execution
+| +-- 2-Bias/ # Cognitive bias awareness
+| +-- 3-Self-Reflection/ # Regular reflection practices
+
++-- 2-Strategy/ # WHERE ARE WE GOING?
+| +-- 1-Strategic-Foundations/
+— — +-- 1-Strategy-Blocks/
+— — +-- 2-Good-Strategy-Bad-Strategy/
+— — +-- 3-Playing-To-Win/
+| +-- 2-Strategic-Execution/
+— +-- 1-OKR/
+— +-- 2-Roadmap/
+— +-- 3-North-Star/
+— +-- 4-Prioritization/
+
++-- 3-Discovery/ # WHAT TO BUILD?
+| +-- 1-Research-Interviews/
+| +-- 2-Continuous-Discovery-Habits/
+| +-- 3-Jobs-To-Be-Done/
+| +-- 4-Opportunity-Assessment/
+| +-- 5-Idea-Validation/
+| +-- 6-Problem-Solution-Space/
+| +-- 7-Segmentation/
+| +-- 8-Product-Market-Fit/
+
++-- 4-Execution/ # BUILD, SHIP, MEASURE
+| +-- 1-Daily-Execution-And-Rituals/
+| +-- 2-User-Stories/
+| +-- 3-Backlog-Prioritization/
+| +-- 4-PRD/
+| +-- 5-Personas/
+| +-- 6-Metrics/
+| +-- 7-AARRR-Pirate-Metrics/
+| +-- 8-10-Things-Workshop/
+
++-- 5-Communication/ # ALIGN STAKEHOLDERS
+ +-- 1-Newsletter/
+ +-- 2-Meeting-Agendas/
+ +-- 3-One-Pagers/
+ +-- 4-Crisis-Management/
+ +-- 5-Escalation/
+ +-- 6-Saying-No/
+ +-- 7-Stakeholder-Management/
+ +-- 8-Stakeholder-Avatars/
+ +-- 9-Courses/
+ +-- 10-Documentation-Standards/
+ +-- 11-Sprint-Summary/
+```
+
+## Numbering convention
+
+Three levels — keep each level simple `N-Name` (no legacy `2.x.y` prefixes):
+
+| Level | Pattern | Example |
+|-------|---------|---------|
+| **Repo content** | `N-Context`, `N-Methods`, — (CamelCase) | `1-Context/`, `2-Methods/` |
+| **Methods domain** | `N-Domain/` under `2-Methods/` (CamelCase) | `1-Foundations/`, `3-Discovery/` |
+| **Framework folder** | `N-FrameworkName/` under each domain | `4-Opportunity-Assessment/`, `4-PRD/` |
+| **Files in a framework** | `README`, `1-*-framework`, `2-*-template`, `3-*-evaluation` | See [0-Template-Structure/](0-Template-Structure/README.md) |
+
+**Rule of thumb:** Number by **order in the product flow** within each parent. Sub-groups (e.g. `1-Strategic-Foundations/` vs `2-Strategic-Execution/`) use the same `N-Name` pattern.
+
+Inside each numbered framework folder, files follow this pattern:
+- `README.md` - Overview and navigation (human-facing index: what the framework is, when to use it, which files exist). For frameworks without `1-*-framework.md`, this may also serve as the main guide.
+- `1-*-framework.md` - Main framework guide (detailed methodology, principles, process). Includes "For Agents" section with agent-facing instructions (trigger conditions, how to introduce, common mistakes, when NOT to use).
+- `2-*-template.md` - Fill-in-the-blanks template
+- `3-*-evaluation.md` - Evaluation framework (if applicable)
+
+**Agent guidance placement:** "For Agents" sections live at the **very top** of `1-*-framework.md` (when that file exists) or of `README.md` for lightweight frameworks, so the agent sees when/how to suggest the framework first. See [docs/architecture.md](../docs/architecture.md) → Linking Conventions for details.
+
+---
+
+## Evaluation Frameworks
+
+**Frameworks with evaluation support** (high-stakes, peer-reviewed, quality-gated) have comprehensive evaluation frameworks available. For the two-level eval system (Level 1 = methods/frameworks, Level 2 = agent behavior) and how evals learn / ask you to adapt, see [system/evals/README.md](../system/evals/README.md).
+
+- **OKRs:** `2-Strategy/2-Strategic-Execution/1-OKR/3-okr-evaluation.md`
+- **Roadmaps:** `2-Strategy/2-Strategic-Execution/2-Roadmap/3-roadmap-evaluation.md`
+- **PRDs:** `4-Execution/4-PRD/3-prd-evaluation.md`
+- **Opportunity Assessments:** `3-Discovery/4-Opportunity-Assessment/3-opportunity-assessment-evaluation.md`
+- **North Star:** `2-Strategy/2-Strategic-Execution/3-North-Star/3-north-star-evaluation.md`
+- **One-Pagers:** `5-Communication/3-One-Pagers/3-one-pager-evaluation.md`
+
+**How evaluations work:**
+
+1. **During Creation (Automatic):** The agent automatically scans for red flags as you create frameworks with evaluation support. See "Quick Quality Checks" sections in each `1-*-framework.md` file.
+
+2. **After Creation (Optional):** You can request a quick quality check (< 2 min) or full evaluation (comprehensive peer review, quality gates, learning).
+
+3. **For Peer Review:** Use the full evaluation framework (`3-*-evaluation.md`) for comprehensive feedback with scoring and improvements.
+
+**Evaluation Process:** Each evaluation follows a consistent structure:
+- **STEP 0:** Product Sense & Gut Check (do this first!)
+- **STEP 1:** Quality Check (red/green flags)
+- **STEP 2:** Evaluator Prompt (weighted scoring)
+- **STEP 3:** Antipattern Detector (common mistakes)
+- **STEP 4:** Improvement Generator (actionable fixes)
+
+---
+
+## How PM Work Flows (foundations → strategy → discovery → execution → communication)
+
+### 1-Foundations/ — HOW TO THINK
+
+**Mental models, bias awareness, self-reflection**
+
+Start here to build foundational product sense. Learn how to think about product decisions, recognize biases, and develop judgment that guides all other work.
+
+- `1-Mental-Models/` - Decision-making models, product thinking, work levels, execution hygiene, team dynamics
+- `2-Bias/` - Recognize and mitigate cognitive biases
+- `3-Self-Reflection/` - Regular reflection to improve your product sense
+
+---
+
+### 2-Strategy/ — WHERE ARE WE GOING?
+
+**Strategic foundations (vision, strategy choices) + Strategic execution (OKRs, roadmap, north star, prioritization)**
+
+Define direction before discovering solutions. Set vision, make strategic choices, translate into goals and plans.
+
+- `1-Strategic-Foundations/` - Strategy Blocks, Good Strategy/Bad Strategy, Playing to Win
+- `2-Strategic-Execution/` - OKRs, Roadmap, North Star, Prioritization (RICE/ICE, MoSCoW, Kano)
+
+---
+
+### 3-Discovery/ — WHAT TO BUILD?
+
+**Research interviews, continuous discovery, JTBD, opportunity assessment, validation, PMF**
+
+Learn from customers, validate assumptions, find the right problem to solve. Continuous learning reduces risk.
+
+- `1-Research-Interviews/` - How to conduct effective user research
+- `2-Continuous-Discovery-Habits/` - Snapshot, synthesize, opportunities, solutions
+- `3-Jobs-To-Be-Done/` - Understand the job customers hire your product to do
+- `4-Opportunity-Assessment/` - Evaluate opportunities before committing
+- `5-Idea-Validation/` - Test ideas quickly and cheaply
+- `6-Problem-Solution-Space/` - Navigate discovery using Double Diamond, Opportunity Solution Trees
+- `7-Segmentation/` - Group customers by jobs (JTBD → segments → personas)
+- `8-Product-Market-Fit/` - Assess whether you're solving a real problem well
+
+---
+
+### 4-Execution/ — BUILD, SHIP, MEASURE
+
+**PRDs, personas, metrics, AARRR, daily rituals**
+
+Specify, build, ship, and measure outcomes. Execution turns strategy and discovery into customer value.
+
+- `1-Daily-Execution-And-Rituals/` - Daily/weekly operating rhythms
+- `2-User-Stories/` - Translate requirements into implementable stories
+- `3-Backlog-Prioritization/` - Prioritize execution work
+- `4-PRD/` - Specify what to build and why
+- `5-Personas/` - Define who you're building for
+- `6-Metrics/` - Measure what matters
+- `7-AARRR-Pirate-Metrics/` - Acquisition, Activation, Retention, Revenue, Referral
+- `8-10-Things-Workshop/` - Workshop format for alignment and prioritization
+
+---
+
+### 5-Communication/ — ALIGN STAKEHOLDERS
+
+**Newsletters, meetings, one-pagers, crisis management, stakeholder management**
+
+Keep everyone aligned throughout the journey. Communication happens continuously across all stages.
+
+- `1-Newsletter/` - Regular stakeholder updates
+- `2-Meeting-Agendas/` - Run effective meetings
+- `3-One-Pagers/` - Communicate concisely
+- `4-Crisis-Management/` - Handle urgent issues
+- `5-Escalation/` - Escalate effectively
+- `6-Saying-No/` - Say no gracefully
+- `7-Stakeholder-Management/` - Build and maintain relationships
+- `8-Stakeholder-Avatars/` - Build reusable stakeholder/peer avatars for politics checks
+- `9-Courses/` - Train and onboard
+- `10-Documentation-Standards/` - DR, architecture docs, ADRs
+- `11-Sprint-Summary/` - Sprint recap communications
+
+---
+
+## Day-to-Day Operational Guide: Where Are You Right Now?
+
+Use this guide to figure out which frameworks to use based on **where you are in the product journey**:
+
+- **Starting a new area or initiative?** → `2-Strategy/` (foundations, OKRs)
+- **Don't know what to build?** → `3-Discovery/` (interviews, JTBD, opportunities)
+- **Ready to commit resources?** → `2-Strategy/` (prioritization, roadmap)
+- **Ready to specify the work?** → `4-Execution/` (PRDs, personas)
+- **Building and shipping?** → `4-Execution/` (daily rituals, metrics)
+- **Uncertain if you have product-market fit?** → `3-Discovery/` (PMF assessment)
+- **Need to align stakeholders?** → `5-Communication/` (anytime, continuously)
+- **Stuck, biased, or need to reflect?** → `1-Foundations/` (mental models, bias, reflection)
+
+---
+
+## Flow-Based Navigation Examples
+
+### Example: Launching a new initiative
+
+Follow the full flow from thinking to shipping:
+
+1. **1-foundations** - Check biases, use mental models (pre-mortem, first principles)
+2. **2-strategy** - Define direction (strategy frameworks, OKRs)
+3. **3-discovery** - Talk to users (interviews, JTBD, identify opportunities)
+4. **2-strategy** - Prioritize and commit (prioritization frameworks, roadmap)
+5. **4-execution** - Specify the work (PRD, personas)
+6. **4-execution** - Build, ship, measure (daily rituals, metrics, AARRR)
+7. **5-communication** - Keep stakeholders aligned (newsletters, meetings, one-pagers)
+8. **3-discovery** - Validate you solved the right problem (PMF assessment)
+9. **1-foundations** - Reflect and learn (self-reflection)
+
+**Where to save work:**
+- Strategy artifacts → `3-Work/[initiative-name]/`
+- Research notes → `4-Research/`
+- PRDs and specs → `3-Work/[initiative-name]/`
+
+### Example: Stuck in discovery
+
+You're doing research but not making progress:
+
+- Use `3-Discovery/` to structure research approach
+- Check `1-Foundations/2-Bias/` - Are biases affecting your interpretation?
+- Use `5-Communication/` to share findings and get feedback
+- Review `2-Strategy/` - Is the strategic direction clear enough to guide discovery?
+
+### Example: Team is building the wrong things
+
+Something's misaligned - work back through the flow:
+
+- **Check direction:** `2-Strategy/` - Is the direction clear → Do you have OKRs?
+- **Check discovery:** `3-Discovery/` - Are you talking to users regularly → Do you understand JTBD?
+- **Check measurement:** `4-Execution/6-Metrics/` - Are you measuring the right outcomes?
+- **Check alignment:** `5-Communication/` - Do stakeholders understand the strategy?
+
+### Example: Daily/weekly execution
+
+You're in the rhythm of shipping:
+
+- **Daily:** Use `4-Execution/1-Daily-Execution-And-Rituals/` for daily planning and focus
+- **Weekly:** Review metrics (`4-Execution/6-Metrics/`), send updates (`5-Communication/1-Newsletter/`)
+- **Continuously:** Talk to customers (`3-Discovery/1-Research-Interviews/`)
+- **Regularly:** Reflect (`1-Foundations/3-Self-Reflection/`), check for biases
+
+As you adapt these to your team, keep this flow-based structure but tune the content to match your reality.
+
+---
+
+## Quick start: self-quiz + AI collaboration for methods
+
+Use this prompt to figure out **where to start in `2-Methods/`** when you're not sure which framework to use:
+
+```markdown
+Act as a product management coach. We'll work iteratively and challenge assumptions. Your role is to help me think, not to think for me.
+
+1) First, help me braindump and locate the right area in the product flow:
+- Ask me to braindump: "What are you trying to do right now → Dump all your thoughts, concerns, and ideas - don't worry about structure yet."
+- Based on my braindump, ask clarifying questions to understand my context and challenge my assumptions.
+- Propose 1–3 starting points under `2-Methods/` using the product flow structure:
+ - 1-foundations (HOW TO THINK: 1-Mental-Models, 2-Bias, 3-Self-Reflection)
+ - 2-strategy (WHERE ARE WE GOING: 1-Strategic-Foundations, 2-Strategic-Execution with OKR/Roadmap/North-Star/Prioritization)
+ - 3-discovery (WHAT TO BUILD: 1-Research-Interviews, 2-Continuous-Discovery-Habits, 3-Jobs-To-Be-Done, 4-Opportunity-Assessment, 5-Idea-Validation, 6-Problem-Solution-Space, 7-Segmentation, 8-Product-Market-Fit)
+ - 4-execution (BUILD, SHIP, MEASURE: 1-Daily-Execution-And-Rituals, 2-User-Stories, 3-Backlog-Prioritization, 4-PRD, 5-Personas, 6-Metrics, 7-AARRR-Pirate-Metrics)
+ - 5-communication (ALIGN STAKEHOLDERS: 1-Newsletter, 2-Meeting-Agendas, 3-One-Pagers, 4-Crisis-Management, 5-Escalation, 6-Saying-No, 7-Stakeholder-Management, 9-Courses)
+
+2) For the chosen starting framework:
+- DON'T just ask me to paste notes. Instead, quiz me: "Before looking at your notes, tell me what you know about [topic]. What's your gut feeling → What assumptions are you making?"
+- Help me braindump my thoughts on this topic first.
+- Then ask me to paste any relevant notes or context.
+- Challenge my thinking: "What biases might be affecting your view → What would someone with different product sense say?"
+- Summarize which parts of the framework I've already covered vs what's missing.
+- Suggest the next 1–3 concrete steps, but make me think: "What do you think should come next → Why?"
+
+3) At the end of each pass:
+- Ask me to reflect: "What did you learn → What would you do differently → What's your product sense telling you?"
+- List: (a) the framework files I should touch next, (b) which repo directory to update in `3-Work/` or `4-Research/`, and (c) any risks or open questions to track.
+- Remind me of the product flow: Am I ready to move to the next stage (Foundations → Strategy → Discovery → Execution → Communication), or do I need to loop back?
+
+I'll start by telling you what I'm working on right now.
+```
+
+

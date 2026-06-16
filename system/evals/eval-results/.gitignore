@@ -1,0 +1,6 @@
+# Eval log files
+*.json
+self-critique-queue-*.md
+
+# Keep README.md tracked
+!README.md

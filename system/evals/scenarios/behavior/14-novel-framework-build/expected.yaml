@@ -1,0 +1,21 @@
+scenario_id: novel_framework_build_012
+description: |
+  User asks to build a new process/doc system from scratch — braindump must continue before artifact creation.
+
+pass_threshold:
+  structural: 1.0
+  content: 0.8
+
+turns:
+  - turn: 1
+    input: turn-01-user.md
+    structural:
+      - type: question_count_at_least
+        arg: 2
+        spec_owner: AGENTS.md
+      - type: response_not_links_template
+        spec_owner: AGENTS.md
+    content: []
+
+final_state:
+  structural: []

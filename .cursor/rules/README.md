@@ -1,82 +1,9 @@
-## `.cursor/rules` – Workspace Rules Overview
+# Cursor Rules
 
-This directory contains **rule files** that tell the AI how to behave in this workspace. They are **local to this repo** and can be tailored to your work style and projects.
+**Required:** [pm-brain.mdc](pm-brain.mdc) — always-on enforcement for coaching lenses, voice, braindump floor, and minimal footprint. Ships with the repo; do not delete.
 
-### What these files are
+**Persona and routing:** [AGENTS.md](../../AGENTS.md) and [system/ORCHESTRATION.md](../../system/ORCHESTRATION.md).
 
-- `thinking.mdc` – General "how to think with me" instructions for the AI (e.g. coaching style, language handling, focus areas).  
-- [`USER.md`](../../USER.md) (repo root) – **Your personal + work context**: name, role, company, how you work. Loaded on every conversation start (bootstrap). `thinking.personal.mdc` is a redirect only.  
-- `product-sense.mdc` – **Eval instrumentation hooks** for the product_sense state: call `match_scenario_type()` at entry, `check_questions_before_framework()` during braindump, and `check_braindump_sufficient()` before transitioning to execution_mode. Routing and behavioral rules live in `ORCHESTRATION.md`; this file only holds the eval checkpoints.  
-- `template-finder.mdc` – When the user explicitly asks to write/draft/fill a specific doc (PRD, one-pager, OKR, opportunity assessment, etc.), route to `02-Methods-and-Tools/0-template-finder.md` and point to the right template; add a one-line nudge to 0-start-here if they haven't thought it through.  
-- `evaluation-orchestration.mdc` – When the user creates frameworks with evaluation support (OKRs, roadmaps, PRDs, opportunity assessments, North Star, one-pagers), automatically use Quick Quality Checks during creation and optionally offer full evaluation after. Level 2 (agent behavior) evals are a separate workflow in `.cursor/evals/`; the agent may suggest the checklist in meta_reflection (see ORCHESTRATION.md).  
-- `AGENTS.template.md` – Template/guide for defining custom AI "agents" (roles) for this workspace. **Note:** This is separate from the root `AGENTS.md` file, which defines the PM Brain Coach. Routing, states, and context loading live in root `ORCHESTRATION.md`; sleeping memory (what to wake) in `MEMORY.md`.
+Legacy rule files (thinking, voice, product-sense, template-finder, evaluation-orchestration) were consolidated into `pm-brain.mdc`, AGENTS.md, and `system/`.
 
-### Flexible Rule Structure
-
-**Consider creating multiple rule files for different purposes:**
-- `thinking.mdc` – Core coaching and thinking style (always relevant)
-- `USER.md` – Personal + work context (bootstrap)
-- `thinking.code.mdc` – Code-specific rules (apply when coding)
-- `thinking.docs.mdc` – Documentation rules (apply when writing docs)
-- `thinking.strategy.mdc` – Strategy/planning rules (apply for strategic work)
-- `thinking.review.mdc` – Review/critique rules (apply when reviewing work)
-
-**Benefits of multiple rules:**
-- **Context-aware**: Rules apply only when relevant (use `alwaysApply: false` and reference them in prompts)
-- **Focused**: Each rule file stays focused on its domain
-- **Maintainable**: Easier to update specific areas without touching everything
-- **Flexible**: Mix and match rules based on the task at hand
-
-**How to use multiple rules:**
-- Set `alwaysApply: false` in rule files you want to invoke selectively
-- Reference specific rules in your prompts: "Use the strategy thinking rules for this task"
-- Or let the AI suggest which rules are relevant based on the work you're doing  
-
-> **Important:** These files are meant to describe *how* you want the AI to work with you – not to store confidential business data. Keep actual private/company information in regular project files that are not shared publicly.
-
-### When and how rules are applied
-
-- Rules in `thinking.mdc` can be referenced whenever you ask for:
-  - Strategic thinking, coaching, or decision support
-  - Help structuring work (roadmaps, OKRs, discovery, PRDs, etc.)
-  - Help synthesizing notes, research, or stakeholder input
-- `USER.md` is used to adapt tone, pacing, and structure to your preferences (e.g. more bullets, slower pacing, more probing questions).
-- `AGENTS.template.md` is a guide for creating custom "personas" or roles (e.g. Product Coach, Architect, Research Partner) that you can invoke explicitly in prompts. **Note:** The root `AGENTS.md` file defines the PM Brain Coach for this repository—use `AGENTS.template.md` to create additional custom agents.
-- **Domain-specific rules** (if you create them) should be referenced when working in that domain, or let the AI suggest which rules are relevant.
-
-**Rule evolution:**
-- The AI will proactively ask if rules should be updated after insightful conversations
-- Rules should evolve as you learn what works best for your workflow
-- Keep rules living documents that reflect your current working style
-
-### Quick start: set up your rules
-
-You can use the prompt below to have the AI help you configure these rule files:
-
-```markdown
-Act as a workspace setup coach. I want to configure `.cursor/rules` for this repo.
-
-1) Ask me:
-- What kind of work I mostly do here (e.g. product, engineering, research, writing, coding).
-- How I like to work (e.g. lots of structure vs. loose exploration, written vs. spoken style).
-- Any accessibility or neurodiversity considerations I want you to adapt to.
-
-2) Help me fill out or adjust:
-- `thinking.mdc`: high-level description of how I want the AI to think and support me.
-- [`USER.md`](../../USER.md): my identity, work context, working preferences, and communication style (keeping sensitive details minimal or private).
-- `AGENTS.template.md`: 1–3 agents/roles that would be genuinely useful for this repo (separate from the root `AGENTS.md` which defines the PM Brain Coach).
-
-3) Propose:
-- A short checklist for keeping these rules up to date.
-- Any safeguards I should consider so private/company information doesn’t leak into public repos.
-
-I'll start by telling you what I use this repo for and how I like to work.
-```
-
-### Using these rules across tools
-
-- In **Cursor**, this `.cursor/rules` folder is read automatically; update these files and commit them to keep behavior consistent across collaborators.  
-- In other tools (e.g. **Replit**, **VS Code + AI extensions**), you can **reuse the same content** by:
-  - Copying relevant sections from `thinking.mdc`, `USER.md`, and the root `AGENTS.md` into those tools' "system prompt" / "instructions" / "workspace settings" areas.  
-  - Keeping this folder as the **single source of truth**, and pasting updated snippets into other IDEs when needed.
-- If you adopt multiple IDEs, consider adding a short “Where I use these rules” note here with links or notes for each environment (Cursor, Replit, VS Code, etc.).
+Setup details: [docs/platform-setup.md](../../docs/platform-setup.md).

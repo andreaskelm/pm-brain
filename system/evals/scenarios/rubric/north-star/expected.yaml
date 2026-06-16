@@ -1,0 +1,14 @@
+scenario_id: rubric_north_star_001
+type: rubric_regression
+description: |
+  Rubric regression: grade North Star test specimens against canonical 3-north-star-evaluation.md.
+
+rubric_path: 2-Methods/2-Strategy/2-Strategic-Execution/3-North-Star/3-north-star-evaluation.md
+judge: judges/artifact_quality.md
+spec_owner: 2-Methods/2-Strategy/2-Strategic-Execution/3-North-Star/3-north-star-evaluation.md
+
+fixtures:
+  - input: fixtures/good.md
+    expect_verdict: PASS
+  - input: fixtures/bad.md
+    expect_verdict: FAIL

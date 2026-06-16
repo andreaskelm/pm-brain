@@ -1,0 +1,19 @@
+scenario_id: transcript_to_artifact_013
+description: |
+  User has raw material (transcript/notes) and wants structured artifact — agent must ask user's takeaways before analyzing.
+
+pass_threshold:
+  structural: 1.0
+  content: 0.8
+
+turns:
+  - turn: 1
+    input: turn-01-user.md
+    structural:
+      - type: question_count_at_least
+        arg: 2
+        spec_owner: AGENTS.md
+    content: []
+
+final_state:
+  structural: []

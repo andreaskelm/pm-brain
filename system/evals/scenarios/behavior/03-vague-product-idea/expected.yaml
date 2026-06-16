@@ -1,0 +1,21 @@
+scenario_id: vague_product_idea_001
+description: |
+  No validated problem, no defined segment, no mention of existing tools (Slack, Zoom, etc.). User has not distinguished 'remote teams' from 'distributed workforce' or 'async collaboration'.
+
+pass_threshold:
+  structural: 1.0
+  content: 0.8
+
+turns:
+  - turn: 1
+    input: turn-01-user.md
+    structural:
+      - type: question_count_at_least
+        arg: 2
+        spec_owner: AGENTS.md
+      - type: response_not_links_template
+        spec_owner: AGENTS.md
+    content: []
+
+final_state:
+  structural: []

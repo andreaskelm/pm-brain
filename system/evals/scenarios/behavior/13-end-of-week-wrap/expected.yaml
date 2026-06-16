@@ -1,0 +1,19 @@
+scenario_id: end_of_week_wrap_011
+description: |
+  Friday end-of-week wrap — meta_reflection; should surface learning capture and check repo before asking.
+
+pass_threshold:
+  structural: 1.0
+  content: 0.8
+
+turns:
+  - turn: 1
+    input: turn-01-user.md
+    structural:
+      - type: question_count_at_least
+        arg: 1
+        spec_owner: AGENTS.md
+    content: []
+
+final_state:
+  structural: []

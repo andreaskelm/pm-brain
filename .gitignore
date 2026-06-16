@@ -39,6 +39,8 @@ Thumbs.db
 *.swp
 *.swo
 *~
+__pycache__/
+*.py[cod]
 .vscode/settings.json
 .idea/
 
@@ -48,30 +50,30 @@ Thumbs.db
 # ============================================
 
 # # --- Personal practice content ---
-# 00-Meta/1-daily-log-*.md
-# 00-Meta/0.1-Learning-Log/*/
-# 00-Meta/0.2-Growth-Portfolio/*.md
-# !00-Meta/0.2-Growth-Portfolio/README.md
-# 00-Meta/self-assessment-*.md
-# 00-Meta/metrics-dashboard*.md
-# 00-Meta/0.3-Product-Judgment-Test/forecast-log.md
-# 00-Meta/0.3-Product-Judgment-Test/dashboard.md
+# 5-Growth/1-daily-log-*.md
+# 5-Growth/1-Learning-Log/*/
+# 5-Growth/2-Growth-Portfolio/*.md
+# !5-Growth/2-Growth-Portfolio/README.md
+# 5-Growth/self-assessment-*.md
+# 5-Growth/metrics-dashboard*.md
+# 5-Growth/3-Product-Judgment-Test/forecast-log.md
+# 5-Growth/3-Product-Judgment-Test/dashboard.md
 #
 # # --- Company-specific content ---
-# 01-Company-Context/*.md
-# !01-Company-Context/README.md
+# 1-Context/*.md
+# !1-Context/README.md
 #
 # # --- Personal configuration ---
 # USER.md
 #
 # # --- Active work & research ---
-# 04-Initiatives/*
-# !04-Initiatives/README.md
-# !04-Initiatives/4.1-Initiative-Codename/
-# 03-Research-Artifacts/*
-# !03-Research-Artifacts/README.md
-# !03-Research-Artifacts/3.1-User-Interviews/README.md
-# !03-Research-Artifacts/3.2-Qualitative-Research/
+# 3-Work/*
+# !3-Work/README.md
+# !3-Work/1-Initiative-Codename/
+# 4-Research/*
+# !4-Research/README.md
+# !4-Research/1-User-Interviews/README.md
+# !4-Research/2-Qualitative-Research/
 
 # ============================================
 # TEAM MODE — uncomment this block to enable
@@ -81,17 +83,23 @@ Thumbs.db
 # ============================================
 
 # # --- Personal practice content (each team member keeps theirs private) ---
-# 00-Meta/1-daily-log-*.md
-# 00-Meta/0.1-Learning-Log/*/
-# 00-Meta/0.2-Growth-Portfolio/*.md
-# !00-Meta/0.2-Growth-Portfolio/README.md
-# 00-Meta/self-assessment-*.md
-# 00-Meta/metrics-dashboard*.md
-# 00-Meta/0.3-Product-Judgment-Test/forecast-log.md
-# 00-Meta/0.3-Product-Judgment-Test/dashboard.md
+# 5-Growth/1-daily-log-*.md
+# 5-Growth/1-Learning-Log/*/
+# 5-Growth/2-Growth-Portfolio/*.md
+# !5-Growth/2-Growth-Portfolio/README.md
+# 5-Growth/self-assessment-*.md
+# 5-Growth/metrics-dashboard*.md
+# 5-Growth/3-Product-Judgment-Test/forecast-log.md
+# 5-Growth/3-Product-Judgment-Test/dashboard.md
 #
 # # --- Company-specific content ---
-# 01-Company-Context/*.md
-# !01-Company-Context/README.md
+# 1-Context/*.md
+# !1-Context/README.md
+#
+# # --- Active work & research ---
+# 3-Work/*
+# !3-Work/README.md
+# 4-Research/*
+# !4-Research/README.md
 # # --- Personal configuration (each team member has their own) ---
 # USER.md

@@ -1,0 +1,14 @@
+scenario_id: rubric_okr_001
+type: rubric_regression
+description: |
+  Rubric regression: grade OKR test specimens against canonical 3-okr-evaluation.md.
+
+rubric_path: 2-Methods/2-Strategy/2-Strategic-Execution/1-OKR/3-okr-evaluation.md
+judge: judges/artifact_quality.md
+spec_owner: 2-Methods/2-Strategy/2-Strategic-Execution/1-OKR/3-okr-evaluation.md
+
+fixtures:
+  - input: fixtures/good.md
+    expect_verdict: PASS
+  - input: fixtures/bad.md
+    expect_verdict: FAIL

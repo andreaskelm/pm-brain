@@ -1,0 +1,19 @@
+scenario_id: user_research_planning_008
+description: |
+  User wants to do user research but has not stated goal, segment, or decision the research should inform.
+
+pass_threshold:
+  structural: 1.0
+  content: 0.8
+
+turns:
+  - turn: 1
+    input: turn-01-user.md
+    structural:
+      - type: question_count_at_least
+        arg: 2
+        spec_owner: AGENTS.md
+    content: []
+
+final_state:
+  structural: []

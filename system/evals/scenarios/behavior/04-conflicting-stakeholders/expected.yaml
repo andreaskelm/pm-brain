@@ -1,0 +1,19 @@
+scenario_id: conflicting_stakeholders_002
+description: |
+  Rewrite cost and impact are unquantified; sales 'promises' may be untracked; no shared view of opportunity cost or which deals are actually feature-blocked.
+
+pass_threshold:
+  structural: 1.0
+  content: 0.8
+
+turns:
+  - turn: 1
+    input: turn-01-user.md
+    structural:
+      - type: question_count_at_least
+        arg: 2
+        spec_owner: AGENTS.md
+    content: []
+
+final_state:
+  structural: []

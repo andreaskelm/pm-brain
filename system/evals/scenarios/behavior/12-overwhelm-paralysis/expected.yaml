@@ -1,0 +1,19 @@
+scenario_id: overwhelm_paralysis_010
+description: |
+  User overwhelmed with options and stuck — agent should use gentle prompts (1-2 max per pm-brain voice rules).
+
+pass_threshold:
+  structural: 1.0
+  content: 0.8
+
+turns:
+  - turn: 1
+    input: turn-01-user.md
+    structural:
+      - type: question_count_at_least
+        arg: 1
+        spec_owner: AGENTS.md
+    content: []
+
+final_state:
+  structural: []

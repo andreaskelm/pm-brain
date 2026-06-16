@@ -1,0 +1,31 @@
+scenario_id: pjt_trigger_001
+description: |
+  User states a decision with confidence level. Agent must offer PJT forecast logging
+  immediately and reference forecast-log.md.
+
+pass_threshold:
+  structural: 1.0
+  content: 0.8
+
+turns:
+  - turn: 1
+    input: turn-01-user.md
+    structural:
+      - type: response_contains
+        arg: "Product Judgment Test"
+        spec_owner: AGENTS.md
+      - type: response_contains
+        arg: "forecast"
+        spec_owner: AGENTS.md
+      - type: question_count_at_least
+        arg: 1
+        spec_owner: AGENTS.md
+    content:
+      - judge: pjt_trigger
+        rubric: judges/pjt_trigger.md
+        spec_owner: AGENTS.md
+        expected_meaning: "Agent unconditionally offers to log the forecast with stated confidence before moving on"
+        must_not: "Agent accepts the decision without mentioning PJT or forecast logging"
+
+final_state:
+  structural: []

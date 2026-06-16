@@ -1,5 +1,0 @@
----
-description: redirect — personal context lives in USER.md
-alwaysApply: false
----
-> Personal context has moved to [USER.md](../../USER.md).

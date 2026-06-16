@@ -1,0 +1,68 @@
+# Meeting Agendas Framework
+
+## Introduction
+
+This framework helps product teams run effective meetings that drive decisions and action. Meetings are NOT bureaucracy—they're strategic communication tools that enable alignment and progress.
+
+## Files
+- `1-meeting-agendas-framework.md` — Complete meeting framework with principles and best practices
+- [prompts.md](../../../system/coaching/prompts.md)
+
+## How to Use This Framework
+
+### Step 0: Braindump & Think First (Critical!)
+
+**Use prompts from:** [system/coaching/prompts.md](../../../system/coaching/prompts.md) → [Before Scheduling a Meeting](../../../system/coaching/prompts.md#before-scheduling-a-meeting).
+
+**Quick start:** What are you trying to accomplish → Is a meeting really needed → Could this be async → What biases might affect your planning → **See prompts file for full list.**
+
+**Product sense exercise:**
+- If you had to accomplish this in 15 minutes, how would you do it?
+- What would make you say "this meeting is obviously unnecessary"?
+- What would make you say "this meeting is obviously valuable"?
+
+### Step 1: Review Framework
+Read `1-meeting-agendas-framework.md` to understand meeting types and best practices
+
+### Step 2: Choose Meeting Type
+Select the appropriate meeting type for your goal
+
+### Step 3: Use Agenda Template
+Copy the relevant agenda template and customize for your context
+
+### Step 4: Prepare Materials
+Share pre-read materials 24 hours in advance
+
+### Step 5: Facilitate Meeting
+Follow the agenda, keep on track, document decisions
+
+### Step 6: Follow Up
+Share notes within 24 hours with action items and owners
+
+### Step 7: Self-Reflection
+After the meeting, reflect:
+- Did we accomplish the goal?
+- Could this have been async?
+- What would you do differently next time?
+
+## When to Use
+
+- Daily standups
+- Sprint planning and reviews
+- Retrospectives
+- Backlog refinement
+- 1-on-1s
+- Strategy/planning sessions
+
+## How to Maintain
+
+- **Regular Review**: Challenge recurring meetings quarterly
+- **After Each Meeting**: Share notes, track action items
+- **Quarterly Audit**: Review meeting effectiveness and cancel unnecessary ones
+
+## Links
+- One-Pagers: `../3-One-Pagers/README.md`
+- Stakeholder Management: `../7-Stakeholder-Management/README.md`
+- Newsletter: `../1-Newsletter/README.md`
+- Foundations: `../../1-Foundations/README.md` (Self-Reflection, Mental Models, Bias)
+

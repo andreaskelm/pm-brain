@@ -1,0 +1,14 @@
+scenario_id: rubric_oa_001
+type: rubric_regression
+description: |
+  Rubric regression: grade OA test specimens against canonical 3-opportunity-assessment-evaluation.md.
+
+rubric_path: 2-Methods/3-Discovery/4-Opportunity-Assessment/3-opportunity-assessment-evaluation.md
+judge: judges/artifact_quality.md
+spec_owner: 2-Methods/3-Discovery/4-Opportunity-Assessment/3-opportunity-assessment-evaluation.md
+
+fixtures:
+  - input: fixtures/good.md
+    expect_verdict: PASS
+  - input: fixtures/bad.md
+    expect_verdict: FAIL

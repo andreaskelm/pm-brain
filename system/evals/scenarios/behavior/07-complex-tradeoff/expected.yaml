@@ -1,0 +1,19 @@
+scenario_id: complex_tradeoff_005
+description: |
+  Multi-tenant vs single-tenant architecture tradeoff with enterprise pressure and 6-month cost estimate stated.
+
+pass_threshold:
+  structural: 1.0
+  content: 0.8
+
+turns:
+  - turn: 1
+    input: turn-01-user.md
+    structural:
+      - type: question_count_at_least
+        arg: 2
+        spec_owner: AGENTS.md
+    content: []
+
+final_state:
+  structural: []

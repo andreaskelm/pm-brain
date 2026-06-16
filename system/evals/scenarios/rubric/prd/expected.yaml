@@ -1,0 +1,14 @@
+scenario_id: rubric_prd_001
+type: rubric_regression
+description: |
+  Rubric regression: grade PRD test specimens against canonical 3-prd-evaluation.md.
+
+rubric_path: 2-Methods/4-Execution/4-PRD/3-prd-evaluation.md
+judge: judges/artifact_quality.md
+spec_owner: 2-Methods/4-Execution/4-PRD/3-prd-evaluation.md
+
+fixtures:
+  - input: fixtures/good.md
+    expect_verdict: PASS
+  - input: fixtures/bad.md
+    expect_verdict: FAIL

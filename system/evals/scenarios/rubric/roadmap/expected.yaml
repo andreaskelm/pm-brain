@@ -1,0 +1,14 @@
+scenario_id: rubric_roadmap_001
+type: rubric_regression
+description: |
+  Rubric regression: grade Roadmap test specimens against canonical 3-roadmap-evaluation.md.
+
+rubric_path: 2-Methods/2-Strategy/2-Strategic-Execution/2-Roadmap/3-roadmap-evaluation.md
+judge: judges/artifact_quality.md
+spec_owner: 2-Methods/2-Strategy/2-Strategic-Execution/2-Roadmap/3-roadmap-evaluation.md
+
+fixtures:
+  - input: fixtures/good.md
+    expect_verdict: PASS
+  - input: fixtures/bad.md
+    expect_verdict: FAIL

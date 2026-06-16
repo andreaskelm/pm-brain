@@ -1,166 +1,137 @@
 # Multi-Platform Setup Guide
 
-> **tl;dr:** PM Brain works on multiple platforms (Cursor, VS Code, Claude Code, ChatGPT, Claude.ai). Each loads configuration differently. This guide tells you exactly what to do on your platform.
+> **tl;dr:** Bootstrap is always **AGENTS.md** + **system/MEMORY.md** + **USER.md** (if filled). In Cursor, **pm-brain.mdc** is required — it enforces coaching lenses, voice, and braindump floor at the platform level.
+
+---
+
+## Bootstrap (all platforms)
+
+```
+Load before responding:
+1. AGENTS.md
+2. system/MEMORY.md
+3. USER.md (if present)
+
+Follow system/MEMORY.md for on-demand loading.
+system/ORCHESTRATION.md loads at state entry — not bootstrap.
+```
 
 ---
 
 ## Model Selection
 
-Pick this once, apply everywhere.
+**Thinking/coaching:** Mid-tier model (Sonnet-class, flagship GPT). Fast/cheap models skip braindump.
 
-**For thinking and coaching conversations (default):** Use a mid-tier model — Sonnet-class (Claude), flagship (GPT), or equivalent. PM Brain's routing and golden rule depend on solid instruction-following. Fast/cheap models tend to skip the braindump and jump straight to templates — that defeats the whole point.
-
-**For mechanical work (once thinking is done):** Switch to a fast/cheap model (Haiku-class, Flash-class) when filling templates, drafting artifacts from completed thinking, or running bulk repo operations. On Cursor you can do this mid-conversation via the model dropdown. On Claude Code, use a subagent at the cheaper tier.
-
-**Avoid:** Models that don't follow complex multi-step instructions. If the agent skips braindump, jumps to templates, or ignores the golden rule — suspect the model first.
-
-**Don't pin version numbers** — model SKUs go stale fast. Pick by capability tier and re-evaluate when you upgrade.
+**Mechanical work (templates, bulk ops):** Fast/cheap model after thinking is done.
 
 ---
 
-## Platform Overview
+## Cursor (required setup)
 
-| Platform | Rules Auto-Load? | How to Load | Best For |
-|----------|------------------|------------|----------|
-| **Cursor** | Yes (`.cursor/rules/`) | Automatic | Full PM Brain experience; all features work |
-| **VS Code + Copilot** | Yes (`.github/copilot-instructions.md`) | Automatic | Local IDE experience; full auto-load |
-| **Claude Code** | No | Manual (read rules + context) | Web-based; need manual setup |
-| **ChatGPT / Claude.ai** | No | Manual copy-paste | Simplest onboarding; lightweight |
+The repo ships **[`.cursor/rules/pm-brain.mdc`](../.cursor/rules/pm-brain.mdc)** — do not skip this step.
+
+**What it does:** Cursor injects `alwaysApply: true` rules into every conversation. Without it, coaching lenses, voice, braindump floor, and minimal footprint only apply if the agent manually loads AGENTS.md.
+
+**What it contains (enforcement, not identity):**
+- 8 coaching lenses (with full upstream language)
+- Voice and communication style
+- Braindump sufficiency criteria (all 4)
+- Minimal footprint as agent behavior
+- Bootstrap reminder → AGENTS.md for persona and routing
+
+**Verify:** Start a new Cursor chat. Agent should braindump before templates, use prose over bullets, and load context on demand — not dump the whole repo.
+
+If you forked an older version without `pm-brain.mdc`, copy it from upstream or recreate per the file in this repo.
+
+---
+
+## Cursor CLI (optional — live evals)
+
+The **Cursor IDE** (`cursor.exe`) is not the same as the **headless agent CLI** used by the eval harness for live runs (L1 rubric grading, L2 content judges). CI uses `--dry-run --skip-content` and does not need the CLI.
+
+**Install** (Windows PowerShell):
+
+```powershell
+irm 'https://cursor.com/install?win32=true' | iex
+```
+
+macOS / Linux / WSL:
+
+```bash
+curl https://cursor.com/install -fsS | bash
+```
+
+**Verify:** `agent --version` or `cursor-agent --version` (binary name varies by install). Add the install directory to PATH if needed (often `~/.local/bin` on Unix, user-local bin on Windows).
+
+**Authenticate:** `agent auth`, or set `CURSOR_API_KEY` from [Cursor dashboard → Integrations](https://cursor.com/dashboard?tab=integrations).
+
+**Point the harness at your binary** if the default name does not match:
+
+```powershell
+$env:PM_BRAIN_CURSOR_BIN = "agent"   # or cursor-agent
+```
+
+Both `run_scenario.py` and `run_rubric_regression.py` honor `PM_BRAIN_CURSOR_BIN`.
+
+**Live eval commands** (after install + auth):
+
+```bash
+pip install -r system/evals/requirements.txt
+python system/evals/harness/run_rubric_regression.py --all
+python system/evals/harness/run_scenario.py system/evals/scenarios/behavior/01-braindump-floor-gate
+```
+
+Omit `--dry-run` and `--skip-content` for real agent + judge runs. Full eval docs: [system/evals/README.md](../system/evals/README.md).
 
 ---
 
-## Setup by Platform
-
-### Cursor (Recommended)
-
-**What happens automatically:**
-- `.cursor/rules/` files auto-load into every conversation
-- Agent behavior rules applied from day one
-
-**Setup steps:**
-1. Clone or fork the repo: `git clone https://github.com/[you]/pm-brain.git`
-2. Open in Cursor
-3. Fill in [`USER.md`](../USER.md) at the repo root
-4. Start a chat
-
-**Watch out:**
-- If you enable model auto-toggle, it may switch to a random model mid-conversation — turn it off
-- If behavior feels wrong (skipping braindump, jumping to templates), check which model is active
-
----
+## Other Platforms
 
 ### VS Code + GitHub Copilot
 
-**What happens automatically:**
-- `.github/copilot-instructions.md` auto-loads into every Copilot conversation
-- Bootstrap set (AGENTS, ORCHESTRATION, voice, thinking, USER.md) is read at session start
-- No setup prompt required
-
-**Setup steps:**
-1. Clone or fork the repo: `git clone https://github.com/[you]/pm-brain.git`
-2. Open in VS Code
-3. Install GitHub Copilot extension (`GitHub.copilot`)
-4. Fill in [`USER.md`](../USER.md) at the repo root
-5. **Important:** Set to Agent mode in Copilot Chat panel
-6. Start chatting
-
-**Watch out:**
-- No persistent memory between conversations (each session starts fresh, but rules auto-load)
-- If agent behavior feels off, check which model is active
-
-**Known limitation — bootstrap compliance:**
-The bootstrap instruction tells the agent to read 5 files before responding. In agent mode this is physically possible but not guaranteed — if your first message looks like a direct task, the model may skip bootstrap and respond immediately. In ask and plan modes it's impossible (no file read tools). Workaround: use agent mode, watch the tool call panel. If you don't see file reads at the start, say "load your bootstrap set."
-
-**Known limitation — mid-session rule changes don't apply retroactively:**
-If you edit a rule file or `USER.md` during a conversation, the change doesn't propagate back. Either tell the agent explicitly ("re-read `USER.md` now") or start a fresh conversation.
-
-**Known quirk — VS Code sync button bypasses `.gitmessage` template:**
-Committing via the VS Code Source Control panel ignores any `.gitmessage` template. Commit via terminal (`git commit` with no `-m` flag) to use the template.
-
----
+The repo ships [`.github/copilot-instructions.md`](../.github/copilot-instructions.md) — verify the bootstrap block matches the section above. Note: no always-on lens enforcement — rely on AGENTS.md content.
 
 ### Claude Code
 
-**Setup steps:**
-1. Clone or fork the repo (local or GitHub)
-2. Open this repo in Claude Code
-3. Fill in [`USER.md`](../USER.md) at the repo root
-4. **At start of each conversation**, say:
+The repo ships [`CLAUDE.md`](../CLAUDE.md) at repo root with the bootstrap block above — verify it matches. At session start say: "Load your bootstrap set."
 
-```text
-I'm using PM Brain; load your bootstrap set. Then help me with: [your question/topic]
-```
+**Private fork note:** This repo may include fork-only eval CI ([`.github/workflows/evals.yml`](../.github/workflows/evals.yml)) and the executable eval stack under [`system/evals/`](../system/evals/README.md). Upstream ships prose eval guides under `.cursor/evals/` only. On upstream merge, reconcile prose into `system/evals/`; do not blind-overwrite harness files.
 
-Or use the full prompt if the agent doesn't pick it up:
+### ChatGPT / Claude.ai
 
-```text
-Read in order: AGENTS.md, ORCHESTRATION.md, .cursor/rules/voice.mdc, .cursor/rules/thinking.mdc, USER.md — then help me with: [your topic]
-```
-
-**Gotchas:**
-- Rules don't auto-load — you must ask the agent to read them each conversation
-- Context window resets between conversations
-- For subagent model efficiency, see [CLAUDE.md](../CLAUDE.md) → Subagents and Model Efficiency
+Paste the bootstrap block at the start of each chat, or save as custom instructions.
 
 ---
 
-### ChatGPT or Claude.ai (Web, No IDE)
+## Setup Steps
 
-**When to use:** Quick braindumps, lightweight one-off questions, learning the framework.
-
-**Minimal setup:**
-1. Start a new chat
-2. Paste this:
-
-```text
-You are the PM Brain Coach (AGENTS.md persona).
-
-Load this bootstrap context first:
-- AGENTS.md
-- ORCHESTRATION.md
-- voice.mdc
-- thinking.mdc
-- USER.md
-
-Key rules:
-- Braindump BEFORE structure
-- Ask hard questions; don't fill templates until thinking is done
-- Communicate directly, grounded in experience
-
-I need help with: [your topic]
-```
-
-**For ongoing work:** Save as a reusable custom instruction or workspace note.
+1. Clone or fork the repo
+2. Fill in [USER.md](../USER.md)
+3. **Cursor:** Confirm `.cursor/rules/pm-brain.mdc` exists (ships with repo)
+4. **Other platforms:** Verify shipped wrappers (Copilot, Claude) or paste bootstrap (ChatGPT/Claude.ai)
+5. Start chatting — default posture is product sense / braindump first
 
 ---
 
 ## Troubleshooting
 
-**"The agent is suggesting templates too early / skipping braindump"**
-Model is likely too cheap or rules weren't loaded. Switch to a mid-tier model; reload rules; paste the setup prompt again.
+**Skipping braindump:** Check model tier; confirm AGENTS.md loaded; in Cursor, confirm `pm-brain.mdc` exists and `alwaysApply: true`.
 
-**"Rules aren't auto-loading"**
-On Cursor: check `.cursor/rules/` folder exists; restart Cursor. On all other platforms: manual loading is expected — use the setup prompt.
+**Rules not loading (Cursor):** Ensure `.cursor/rules/pm-brain.mdc` is present. Reopen project or start fresh chat.
 
-**"Agent behavior feels inconsistent"**
-Stick to the same model tier for thinking conversations. If not on Cursor, paste setup rules at the start of each session.
+**Too much context loaded:** Agent should follow minimal footprint — load only what the conversation needs. See AGENTS.md Principle 3.
 
-**"I forked the repo and now it's public; I need it private"**
-See `docs/setup.md` → Step 3 (Fork/Privacy).
+**Mid-session edits:** Re-read AGENTS.md or start fresh conversation.
+
+**Private fork:** See [setup.md](setup.md) → [Step 3: Choose Public / Private / Team Mode](#step-3-choose-public--private--team-mode).
 
 ---
 
-## Summary
+## Platform Summary
 
-| Step | Cursor | VS Code+Copilot | Claude Code | ChatGPT/Claude.ai |
-|------|--------|-----------------|-------------|-------------------|
-| Clone/set up | `git clone` | `git clone` | Sync folder / GitHub | N/A (web only) |
-| Load rules | Automatic | Automatic | Paste bootstrap prompt | Paste minimal bootstrap |
-| Fill `USER.md` | Yes | Yes | Yes | Optional |
-| Start chat | Normal | Normal | Paste setup first | Paste rules + question |
-
-**If you're on Cursor:** You're ready. Open [`USER.md`](../USER.md), fill it in, start a chat.
-
-**If you're on VS Code + Copilot:** You're ready — `.github/copilot-instructions.md` auto-loads. Fill `USER.md` and go.
-
-**If you're on Claude Code or ChatGPT:** Bookmark this doc. Use the setup prompt at the top of each conversation.
+| Platform | Enforcement layer | Bootstrap |
+|----------|-------------------|-----------|
+| Cursor | `.cursor/rules/pm-brain.mdc` (required, ships with repo) | AGENTS.md + system/MEMORY.md + USER.md |
+| VS Code + Copilot | `.github/copilot-instructions.md` (ships with repo; verify bootstrap) | Same |
+| Claude Code | `CLAUDE.md` (ships with repo; verify bootstrap) | Same + manual prompt |
+| ChatGPT / Claude.ai | Custom instructions | Paste bootstrap block |

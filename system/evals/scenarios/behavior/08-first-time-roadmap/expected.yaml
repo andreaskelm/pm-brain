@@ -1,0 +1,21 @@
+scenario_id: first_time_roadmap_006
+description: |
+  New PM asking where to start on first roadmap — needs coaching before framework/template load.
+
+pass_threshold:
+  structural: 1.0
+  content: 0.8
+
+turns:
+  - turn: 1
+    input: turn-01-user.md
+    structural:
+      - type: question_count_at_least
+        arg: 2
+        spec_owner: AGENTS.md
+      - type: response_not_links_template
+        spec_owner: AGENTS.md
+    content: []
+
+final_state:
+  structural: []

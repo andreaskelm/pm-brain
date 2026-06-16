@@ -6,21 +6,21 @@ Let's do a review. Before starting, ask or clarify:
 
 1. **What are we reviewing?**
    - A specific file or artifact (e.g. stakeholder avatar, opportunity assessment, roadmap, initiative folder)
-   - A folder or cluster (e.g. all of 01-Company-Context, the full 04-Initiatives/[initiative-folder])
+   - A folder or cluster (e.g. all of 1-Context, the full 3-Work/[initiative-folder])
    - Company context freshness and accuracy
    - PM Brain system health (rules, frameworks, ORCHESTRATION, MEMORY alignment)
 
 2. **What kind of review?**
 
    **Quality review** — Is this artifact good?
-   - Load the relevant `3-*-evaluation.md` and `1-*-framework.md` Quick Quality Checks from `02-Methods-and-Tools/`
+   - Load the relevant `3-*-evaluation.md` and `1-*-framework.md` Quick Quality Checks from `2-Methods/`
    - Work through: gut check, quality flags (red/green), scored rubric if applicable
    - Flag what's missing, stale, inconsistent, or at odds with decisions captured elsewhere
 
    **Freshness review** — Is this still current?
    - Check `lastUpdated` metadata against recent weekly logs and daily log entries
    - Flag anything that contradicts newer decisions, observations, or context captured since the file was written
-   - Reference `01-Company-Context/CONTEXT-HEALTH.md` for company context freshness signals
+   - Reference `1-Context/CONTEXT-HEALTH.md` for company context freshness signals
 
    **Consistency review** — Does this align with the rest of the repo?
    - Cross-check with related initiative files, stakeholder avatars, strategy docs, and OKRs
@@ -28,10 +28,10 @@ Let's do a review. Before starting, ask or clarify:
    - Check for link rot or orphaned references
 
    **System health review** — Is PM Brain working well?
-   - Review your system learnings folder (e.g. `04-Initiatives/[initiative-name]/`) for open gaps and pending fixes
-   - Check `ORCHESTRATION.md` and `.cursor/rules/` for any known inconsistencies or TODOs
-   - Review `eval-results/` for patterns not yet addressed in rules or scenarios
-   - Check `agent-behavior-scenarios.json` for missing scenario types identified in eval logs
+   - Review your system learnings folder (e.g. `3-Work/[initiative-name]/`) for open gaps and pending fixes
+   - Check `system/ORCHESTRATION.md` and `.cursor/rules/pm-brain.mdc` for any known inconsistencies or TODOs
+   - Review `system/evals/eval-results/` for patterns not yet addressed in rules or scenarios
+   - Check `system/evals/agent-behavior-scenarios.json` for missing scenario types identified in eval logs
 
 3. **Output**
    - Summarise findings: what's solid, what needs updating, what's stale or broken
@@ -41,8 +41,8 @@ Let's do a review. Before starting, ask or clarify:
 
 4. **Capture routing (always run before closing a review session)**
    - Before finishing, ask: did the review surface anything worth routing to the growth portfolio?
-     - A decision that shows good judgment → [2-decision-showcase.md](../../00-Meta/0.2-Growth-Portfolio/2-decision-showcase.md)?
-     - A pattern in how you think or what you missed → [1-product-sense-journey.md](../../00-Meta/0.2-Growth-Portfolio/1-product-sense-journey.md)?
+     - A decision that shows good judgment → [2-decision-showcase.md](../../5-Growth/2-Growth-Portfolio/2-decision-showcase.md)?
+     - A pattern in how you think or what you missed → [1-product-sense-journey.md](../../5-Growth/2-Growth-Portfolio/1-product-sense-journey.md)?
      - A system gap or agent behavior miss → your system learnings folder?
    - Keep it brief — one question, one pass. Most reviews produce nothing for the portfolio; the point is not skipping the check.
 
