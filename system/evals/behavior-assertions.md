@@ -89,7 +89,7 @@ Maps each [AGENTS.md](../../AGENTS.md) invariant principle to testable pass/fail
 
 | Scenario ID | Pass | Failure |
 |-------------|------|---------|
-| `vague_product_idea_001` | Reads AGENTS.md + system/MEMORY.md before substantive response | Responds without loading bootstrap set |
+| `vague_product_idea_001` | Reads full bootstrap set (AGENTS.md + pm-brain.mdc + system/MEMORY.md) before substantive response | Responds without loading bootstrap set |
 | `framework_selection_003` | Full read of AGENTS.md (not capped partial) | Partial read misses principles/lenses |
 
 ---

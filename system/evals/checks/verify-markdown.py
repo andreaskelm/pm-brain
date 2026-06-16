@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import importlib.util
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -149,6 +150,45 @@ def check_eval_spec_consistency(errors: list[str]) -> None:
             errors.append(
                 f"eval-spec: {sid} harness_path {harness_paths[sid]!r} != {rel_path!r}"
             )
+
+    check_behavior_folder_uniqueness(errors, harness_paths)
+
+
+def check_behavior_folder_uniqueness(
+    errors: list[str], harness_paths: dict[str, str]
+) -> None:
+    behavior = EVALS_DIR / "scenarios" / "behavior"
+    if not behavior.exists():
+        return
+
+    indexed_paths = {p for p in harness_paths.values() if p}
+    folders = sorted(d for d in behavior.iterdir() if d.is_dir())
+    folder_names = [d.name for d in folders]
+
+    # Orphan folders: on disk but not in JSON index
+    for folder in folders:
+        rel = f"behavior/{folder.name}"
+        if rel not in indexed_paths:
+            errors.append(f"eval-spec: orphan behavior folder not in JSON index: {rel}")
+
+    # Duplicate NN-prefix folders (e.g. 03-foo and 03-foo-001)
+    by_prefix: dict[str, list[str]] = {}
+    for name in folder_names:
+        prefix = name.split("-", 1)[0] if "-" in name else name
+        by_prefix.setdefault(prefix, []).append(name)
+    for prefix, names in by_prefix.items():
+        if len(names) > 1:
+            errors.append(
+                f"eval-spec: duplicate behavior folder prefix {prefix}: {', '.join(names)}"
+            )
+
+    # JSON paths pointing at missing folders
+    for sid, rel_path in harness_paths.items():
+        if not rel_path:
+            continue
+        target = EVALS_DIR / "scenarios" / rel_path.replace("/", os.sep)
+        if not target.is_dir():
+            errors.append(f"eval-spec: {sid} harness_path missing on disk: {rel_path}")
 
 
 def main() -> int:

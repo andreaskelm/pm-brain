@@ -1,6 +1,6 @@
 ﻿# Sleeping Memory — What to Wake When
 
-**What this file is:** On-demand context manifest. Bootstrap: [AGENTS.md](../AGENTS.md) + this file + [USER.md](../USER.md). Routing detail: [ORCHESTRATION.md](ORCHESTRATION.md).
+**What this file is:** On-demand context manifest. Bootstrap: [AGENTS.md](../AGENTS.md) + [`.cursor/rules/pm-brain.mdc`](../.cursor/rules/pm-brain.mdc) + this file + [USER.md](../USER.md). Routing detail: [ORCHESTRATION.md](ORCHESTRATION.md).
 
 Do not load everything at once. Wake only what the conversation needs.
 
@@ -10,6 +10,7 @@ Do not load everything at once. Wake only what the conversation needs.
 
 **Bootstrap (not sleeping):**
 - [AGENTS.md](../AGENTS.md) — persona, principles, lenses, routing intent
+- [`.cursor/rules/pm-brain.mdc`](../.cursor/rules/pm-brain.mdc) — enforcement (voice, lenses, braindump floor)
 - [MEMORY.md](MEMORY.md) — this file
 - [USER.md](../USER.md) — personal context (optional if unfilled)
 

@@ -1,12 +1,23 @@
 ## Agent Manifest
 
-**What this file is:** A **reference summary** for humans and maintainers. The agent does **not** load this file—it loads [AGENTS.md](../AGENTS.md), [system/ORCHESTRATION.md](../system/ORCHESTRATION.md), and [system/MEMORY.md](../system/MEMORY.md) as defined in ORCHESTRATION. Use this doc to quickly see entrypoints, states, and content clusters; for executed behavior, see ORCHESTRATION and AGENTS.
+**What this file is:** A **reference summary** for humans and maintainers. The agent does **not** load this file. Bootstrap (read every conversation): [AGENTS.md](../AGENTS.md) → [`.cursor/rules/pm-brain.mdc`](../.cursor/rules/pm-brain.mdc) → [system/MEMORY.md](../system/MEMORY.md) → [USER.md](../USER.md). [system/ORCHESTRATION.md](../system/ORCHESTRATION.md) loads at **state entry**, not bootstrap. Use this doc to quickly see entrypoints, states, and content clusters; for executed behavior, see ORCHESTRATION and AGENTS.
 
-This file summarizes the AGENT assistant’s main capabilities, entrypoints, and canonical specs for the PM Brain repository.
+This file summarizes the AGENT assistant's main capabilities, entrypoints, and canonical specs for the PM Brain repository.
+
+### Platform entry points
+
+| Platform | Entry point | Bootstrap wiring |
+|----------|-------------|------------------|
+| Cursor | `.cursor/rules/pm-brain.mdc` (auto-injected) | Four-file bootstrap; mdc enforced via `alwaysApply` |
+| Claude Code | [CLAUDE.md](../CLAUDE.md) | Compliance checklist → read full bootstrap including mdc |
+| GitHub Copilot | [.github/copilot-instructions.md](../.github/copilot-instructions.md) | Same |
+| ChatGPT / Claude.ai | Manual paste | Bootstrap block from [platform-setup.md](platform-setup.md) |
+
+Full per-platform setup: [platform-setup.md](platform-setup.md).
 
 ### Orchestration and memory
 
-- **Routing, states, context loading:** [system/ORCHESTRATION.md](../system/ORCHESTRATION.md) — single source of truth for agent behavior (product_sense, execution_mode, meta_reflection, conversation). [AGENTS.md](../AGENTS.md) holds persona and points there.
+- **Routing, states, context loading:** [system/ORCHESTRATION.md](../system/ORCHESTRATION.md) — single source of truth for agent behavior (product_sense, execution_mode, meta_reflection, conversation). Loads at state entry, not bootstrap. [AGENTS.md](../AGENTS.md) holds persona and points there.
 - **Sleeping memory (what to wake when):** [system/MEMORY.md](../system/MEMORY.md) — manifest for company context, initiatives, research, rules, skills; use when the conversation touches those areas.
 
 ### Entrypoints
@@ -33,7 +44,7 @@ This file summarizes the AGENT assistant’s main capabilities, entrypoints, and
 
 **Mode signaling:** One short natural sentence when switching (e.g. "We've got enough to structure this—here's the framework—"). No internal labels.
 
-**Evals:** Separate workflow. Level 1 in `2-Methods/` + [system/EVALUATION.md](../system/EVALUATION.md) QQC rules; always-on enforcement in Cursor via `.cursor/rules/pm-brain.mdc`. Level 2 in `system/evals/` ([README](../system/evals/README.md)). See system/ORCHESTRATION.md → Eval Checkpoints.
+**Evals:** Separate workflow. Artifact QQC in `2-Methods/` + [system/EVALUATION.md](../system/EVALUATION.md); coaching enforcement via `pm-brain.mdc` on all platforms (Cursor auto-injects, others read explicitly). Agent behavior evals in `system/evals/` ([README](../system/evals/README.md)). Fork maintainers: [evals-fork.md](evals-fork.md). See system/ORCHESTRATION.md → Eval Checkpoints.
 
 ### Content clusters
 
@@ -42,4 +53,3 @@ This file summarizes the AGENT assistant’s main capabilities, entrypoints, and
 - **Company context**: `1-Context/` (wake via MEMORY.md when relevant)
 - **Research artifacts**: `4-Research/`
 - **Active initiatives**: `3-Work/`
-

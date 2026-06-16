@@ -1,20 +1,25 @@
 # Multi-Platform Setup Guide
 
-> **tl;dr:** Bootstrap is always **AGENTS.md** + **system/MEMORY.md** + **USER.md** (if filled). In Cursor, **pm-brain.mdc** is required — it enforces coaching lenses, voice, and braindump floor at the platform level.
+> **tl;dr:** Bootstrap is always **AGENTS.md** + **`.cursor/rules/pm-brain.mdc`** + **system/MEMORY.md** + **USER.md** (if filled) — on every platform. Cursor auto-injects `pm-brain.mdc`; Claude Code and Copilot must read it explicitly via their entry-point checklists.
 
 ---
 
 ## Bootstrap (all platforms)
 
 ```
-Load before responding:
+Load before responding (read each file in full):
 1. AGENTS.md
-2. system/MEMORY.md
-3. USER.md (if present)
+2. .cursor/rules/pm-brain.mdc   ← enforcement (voice, lenses, braindump floor)
+3. system/MEMORY.md
+4. USER.md (if present)
 
 Follow system/MEMORY.md for on-demand loading.
 system/ORCHESTRATION.md loads at state entry — not bootstrap.
 ```
+
+**Two-tier enforcement:** Cursor auto-injects `pm-brain.mdc` via `alwaysApply: true`. Claude Code and Copilot do **not** — their entry points ([`CLAUDE.md`](../CLAUDE.md), [`.github/copilot-instructions.md`](../.github/copilot-instructions.md)) include a compliance checklist and inline guardrails so coaching behavior survives when bootstrap reads are skipped. Same content, different wiring — see [architecture.md](architecture.md#why-pm-brainmdc-exists).
+
+**Why a separate mdc file?** On Cursor it is the only always-on hook that does not depend on the agent choosing to read bootstrap. It overlaps AGENTS.md by design; see architecture for the tradeoff.
 
 ---
 
@@ -89,13 +94,13 @@ Omit `--dry-run` and `--skip-content` for real agent + judge runs. Full eval doc
 
 ### VS Code + GitHub Copilot
 
-The repo ships [`.github/copilot-instructions.md`](../.github/copilot-instructions.md) — verify the bootstrap block matches the section above. Note: no always-on lens enforcement — rely on AGENTS.md content.
+The repo ships [`.github/copilot-instructions.md`](../.github/copilot-instructions.md) — it auto-loads as Copilot's system prompt and instructs the agent to **read** the bootstrap set in full (including `pm-brain.mdc`). Verify paths match the bootstrap block above. Copilot does not auto-inject rules files; the compliance checklist in copilot-instructions is required.
 
 ### Claude Code
 
-The repo ships [`CLAUDE.md`](../CLAUDE.md) at repo root with the bootstrap block above — verify it matches. At session start say: "Load your bootstrap set."
+The repo ships [`CLAUDE.md`](../CLAUDE.md) at repo root — Claude Code auto-discovers it. It instructs the agent to **read** the bootstrap set in full (including `pm-brain.mdc`). At session start you can also say: "Load your bootstrap set." Claude Code does not auto-inject `pm-brain.mdc`; the compliance checklist in CLAUDE.md is required.
 
-**Private fork note:** This repo may include fork-only eval CI ([`.github/workflows/evals.yml`](../.github/workflows/evals.yml)) and the executable eval stack under [`system/evals/`](../system/evals/README.md). Upstream ships prose eval guides under `.cursor/evals/` only. On upstream merge, reconcile prose into `system/evals/`; do not blind-overwrite harness files.
+**Private fork note:** This repo may include fork-only eval CI ([`.github/workflows/evals.yml`](../.github/workflows/evals.yml)) and the executable eval stack under [`system/evals/`](../system/evals/README.md). Upstream ships prose eval guides under `.cursor/evals/` only. On upstream merge, reconcile prose into `system/evals/`; do not blind-overwrite harness files. Full maintainer guide: [evals-fork.md](evals-fork.md).
 
 ### ChatGPT / Claude.ai
 
@@ -129,9 +134,9 @@ Paste the bootstrap block at the start of each chat, or save as custom instructi
 
 ## Platform Summary
 
-| Platform | Enforcement layer | Bootstrap |
-|----------|-------------------|-----------|
-| Cursor | `.cursor/rules/pm-brain.mdc` (required, ships with repo) | AGENTS.md + system/MEMORY.md + USER.md |
-| VS Code + Copilot | `.github/copilot-instructions.md` (ships with repo; verify bootstrap) | Same |
-| Claude Code | `CLAUDE.md` (ships with repo; verify bootstrap) | Same + manual prompt |
-| ChatGPT / Claude.ai | Custom instructions | Paste bootstrap block |
+| Platform | Enforcement layer | Bootstrap (read in full) |
+|----------|-------------------|--------------------------|
+| Cursor | `.cursor/rules/pm-brain.mdc` auto-injected (`alwaysApply`) | AGENTS.md + pm-brain.mdc + system/MEMORY.md + USER.md |
+| VS Code + Copilot | `.github/copilot-instructions.md` auto-loads + compliance checklist | Same (manual read via tool) |
+| Claude Code | `CLAUDE.md` auto-discovered + compliance checklist | Same (manual read via tool) |
+| ChatGPT / Claude.ai | Custom instructions | Paste bootstrap block + guardrails |

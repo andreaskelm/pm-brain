@@ -14,14 +14,14 @@ See [Step 1: Get the Repository](#step-1-get-the-repository) for exact instructi
 
 ## First: Choose Your AI Tool
 
-Your tool choice affects how PM Brain configures itself—some tools auto-load rules, others require a manual setup prompt each session.
+Your tool choice affects how PM Brain wires the agent bootstrap—some platforms auto-inject enforcement rules, others require the agent to read the full bootstrap set explicitly each session.
 
-| Tool | Rules auto-load? | Setup effort |
-|------|-----------------|---------------|
-| **Cursor** | Yes (`.cursor/rules/`) | Minimal |
-| **VS Code + GitHub Copilot** | Yes (`.github/copilot-instructions.md`) | Minimal |
-| **Claude Code** | No—manual per session | Some |
-| **ChatGPT / Claude.ai** | No—copy-paste per session | More |
+| Tool | Entry point auto-loads? | Bootstrap read |
+|------|-------------------------|----------------|
+| **Cursor** | Yes — `.cursor/rules/pm-brain.mdc` injected | AGENTS + pm-brain.mdc + MEMORY + USER |
+| **VS Code + GitHub Copilot** | Yes — `.github/copilot-instructions.md` | Same four files (agent reads via tool) |
+| **Claude Code** | Partial — `CLAUDE.md` auto-discovered | Same four files (agent reads via tool) |
+| **ChatGPT / Claude.ai** | No — paste bootstrap block | Same four files (manual paste) |
 
 See [platform-setup.md](platform-setup.md) for full per-tool instructions.
 
@@ -79,8 +79,6 @@ If you get a merge conflict, it's almost always in a file where you have real co
   ```
 - **Team/org repo:** Fork into a private org repo instead of a personal one, then follow [Step 3](#step-3-choose-public--private--team-mode) → Team mode.
 
-├──
-
 ## Step 2: Understand the Structure
 
 PM Brain uses **numbered top-level folders (1–5)** so you always know *what kind of content* belongs where. The number is not decorative—it is the mental model for the repo.
@@ -101,8 +99,12 @@ PM Brain uses **numbered top-level folders (1–5)** so you always know *what ki
 |---------------|------|
 | `system/` | Agent orchestration, coaching prompts, skills, evals |
 | `docs/` | Human docs (this guide, architecture, principles) |
-| `AGENTS.md` | Agent bootstrap—loaded every conversation |
-| `USER.md` | Your profile—customize first (Step 4) |
+| `AGENTS.md` | Persona, principles, routing intent — bootstrap file 1 |
+| `.cursor/rules/pm-brain.mdc` | Enforcement (voice, lenses, braindump floor) — bootstrap file 2 |
+| `system/MEMORY.md` | Sleeping memory manifest — bootstrap file 3 |
+| `USER.md` | Your profile — bootstrap file 4 (customize in Step 4) |
+| `CLAUDE.md` | Claude Code entry point (auto-discovered) |
+| `.github/copilot-instructions.md` | GitHub Copilot entry point (auto-loads) |
 
 **Nested numbering inside `2-Methods/`:** Subfolders use their own 1–5 sequence (`1-Foundations` → `5-Communication`). That is *domain* numbering inside the methods library—not the same as the top-level 1–5 folders.
 
@@ -114,7 +116,8 @@ pm-brain/
 |   |-- CONTEXT-HEALTH.md      # Freshness tracker (add when you have multiple docs)
 |   |-- 1-company-vision.md
 |   |-- 2-company-strategy.md
-|   +-- 1.1-Stakeholder-Avatars/   # Optional: simulate stakeholder reactions
+|   |-- 1.1-Stakeholder-Avatars/   # Optional: simulate stakeholder reactions
+|   +-- 1.2-Organization-Survival/ # Power map, politics, red flags
 |-- 2-Methods/                 # Frameworks & templates (ready to use)
 |   |-- 1-Foundations/         # Think first, mental models, bias, product sense
 |   |-- 2-Strategy/              # OKRs, roadmap, north star, prioritization
@@ -133,7 +136,10 @@ pm-brain/
 |   +-- 4-Coaching-Templates/
 |-- system/                    # Agent infrastructure (orchestration, coaching, skills)
 |-- docs/                      # Human documentation
-|-- AGENTS.md
+|-- .cursor/rules/             # Cursor always-on rules (pm-brain.mdc)
+|-- .github/                   # Copilot instructions, CI workflows
+|-- AGENTS.md                  # Bootstrap anchor
+|-- CLAUDE.md                  # Claude Code entry point
 +-- USER.md                    # Customize first (Step 4)
 ```
 
@@ -152,9 +158,7 @@ Typical flow across the numbered folders:
 - **`3-Work/`** is where day-to-day product work lives—PRDs, roadmaps, decision logs.
 - **`5-Growth/`** captures practice over time—daily logs, learning syntheses, forecast calibration.
 
-More detail: [principles.md](principles.md) (where things go) and [architecture.md](architecture.md) (system overview).
-
-├──
+More detail: [principles.md](principles.md) (where things go) and [architecture.md](architecture.md) (system overview). If you see legacy `00–04` prefixed folders, see [legacy-migration.md](legacy-migration.md).
 
 ## Step 3: Choose Public / Private / Team Mode
 
@@ -203,7 +207,7 @@ Or ask the agent: *"what tracked files might be sensitive in private mode?"*
 
 - [`USER.md`](../USER.md) at the repo root—your name, role, company, team, what you build, and how you work (working preferences, strengths, challenges, communication style). For other tools without repo file access, paste this content as part of your system prompt—see [platform-setup.md](platform-setup.md).
 
-That's it. The agent loads `USER.md` on every conversation (part of the bootstrap set).
+**Agent bootstrap (every conversation, all platforms):** The agent reads four files in order before responding: [AGENTS.md](../AGENTS.md) → [`.cursor/rules/pm-brain.mdc`](../.cursor/rules/pm-brain.mdc) → [system/MEMORY.md](../system/MEMORY.md) → [USER.md](../USER.md). Cursor auto-injects `pm-brain.mdc`; Claude Code and Copilot read it via their entry-point checklists. Per-tool wiring: [platform-setup.md](platform-setup.md).
 
 **Add as you go (follow the 1–5 model):**
 
@@ -276,5 +280,8 @@ From here, everything is driven by real work and real problems.
 - **Golden rule:** [system/coaching/braindump.md](../system/coaching/braindump.md)—braindump before structure
 - **Best practices:** [principles.md](principles.md)
 - **Per-tool instructions:** [platform-setup.md](platform-setup.md)
+- **Fork eval CI and harness:** [evals-fork.md](evals-fork.md)
+- **Legacy folder migration:** [legacy-migration.md](legacy-migration.md)
+- **All human docs index:** [README.md](README.md)
 - **Framework navigation:** [2-Methods/README.md](../2-Methods/README.md)
 - **Template finder:** [2-Methods/0-template-finder.md](../2-Methods/0-template-finder.md)

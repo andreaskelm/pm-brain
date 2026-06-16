@@ -1,6 +1,6 @@
 # PM Brain → Architecture Overview
 
-**What this file is:** Short visual reference for repo structure and methods flow. **This is documentation for humans (and for agents when they need a system overview); it is not executed behavior.** Executed behavior lives in [system/ORCHESTRATION.md](../system/ORCHESTRATION.md). For full navigation: [README.md](../README.md), [AGENTS.md](../AGENTS.md), [system/ORCHESTRATION.md](../system/ORCHESTRATION.md), [system/MEMORY.md](../system/MEMORY.md). For a short reference summary (not loaded by the agent): [agent-manifest.md](agent-manifest.md). For product thinking: [system/coaching/README.md](../system/coaching/README.md). For "I need a template?": [0-template-finder.md](../2-Methods/0-template-finder.md). For "everything about topic X?": [1-frameworks-by-topic.md](../2-Methods/1-frameworks-by-topic.md). For evals (methods + agent behavior): [system/evals/README.md](../system/evals/README.md).
+**What this file is:** Short visual reference for repo structure and methods flow. **This is documentation for humans (and for agents when they need a system overview); it is not executed behavior.** Executed behavior lives in [system/ORCHESTRATION.md](../system/ORCHESTRATION.md). For full navigation: [README.md](../README.md), [docs/README.md](README.md), [AGENTS.md](../AGENTS.md), [system/ORCHESTRATION.md](../system/ORCHESTRATION.md), [system/MEMORY.md](../system/MEMORY.md). For a short reference summary (not loaded by the agent): [agent-manifest.md](agent-manifest.md). For product thinking: [system/coaching/README.md](../system/coaching/README.md). For "I need a template?": [0-template-finder.md](../2-Methods/0-template-finder.md). For "everything about topic X?": [1-frameworks-by-topic.md](../2-Methods/1-frameworks-by-topic.md). For evals (methods + agent behavior): [system/evals/README.md](../system/evals/README.md). Fork eval CI: [evals-fork.md](evals-fork.md).
 
 **Preview:** The built-in Markdown preview in Cursor (and VS Code) does not render Mermaid diagrams by default. To see flowcharts and diagrams in preview, install a Mermaid-capable extension (e.g. **Markdown Preview Mermaid Support** or **Mermaid Preview** from the Extensions view). Diagrams in this file also render on GitHub and in online Mermaid editors.
 
@@ -23,7 +23,7 @@ graph TB
             A["5-Growth<br/>Learning log → Forecasts → Daily tracking"]
         end
         subgraph ai["AI Coaching Layer"]
-            BOOT["Bootstrap (AGENTS + MEMORY + USER)<br/>+ pm-brain.mdc in Cursor"]
+            BOOT["Bootstrap (all platforms)<br/>AGENTS + pm-brain.mdc + MEMORY + USER<br/>Cursor auto-injects mdc"]
             MEM["Sleeping Memory<br/>Loaded on demand when conversation touches that area"]
         end
     end
@@ -71,13 +71,13 @@ This section documents **why** the repo is structured this way. Use it when eval
 
 ### Root file policy
 
-- **Root is reserved for:** (a) files AI platforms expect at root by convention (AGENTS.md, CLAUDE.md), (b) bootstrap files the agent loads at conversation start (AGENTS.md, system/MEMORY.md, USER.md if present), (c) platform entry points (`.cursor/rules/pm-brain.mdc`, `.github/copilot-instructions.md`). Human docs live in `docs/`. Version history lives in git — no separate manifest file required.
+- **Root is reserved for:** (a) files AI platforms expect at root by convention (AGENTS.md, CLAUDE.md), (b) bootstrap files the agent loads at conversation start (AGENTS.md, `.cursor/rules/pm-brain.mdc`, system/MEMORY.md, USER.md if present), (c) platform entry points (`.cursor/rules/pm-brain.mdc`, `.github/copilot-instructions.md`). Human docs live in `docs/`. Version history lives in git — no separate manifest file required.
 - **Human documentation** goes in `docs/`, not at root.
 - Adding a new root file requires justification against these criteria.
 
 ### Loading layer rationale
 
-- **Layer 1** (bootstrap) is the small set loaded at conversation start: **AGENTS.md**, **system/MEMORY.md**, **USER.md** (if present), plus Cursor's always-on **`.cursor/rules/pm-brain.mdc`**. Keep it lean — every line here costs context on every conversation regardless of topic.
+- **Layer 1** (bootstrap) is the small set loaded at conversation start on **every platform**: **AGENTS.md**, **`.cursor/rules/pm-brain.mdc`**, **system/MEMORY.md**, **USER.md** (if present). Cursor auto-injects `pm-brain.mdc`; Claude Code and Copilot must read it explicitly via their entry-point checklists. Keep it lean — every line here costs context on every conversation regardless of topic.
 - **system/ORCHESTRATION.md** loads at **state entry**, not bootstrap — when the agent needs routing detail for the current mode.
 - A file belongs in Layer 1 only if the agent needs it on **every** turn. Everything else is Layer 2+ (on-demand).
 - Example: system/coaching/braindump.md is Layer 2 because it is only needed in product_sense state → putting it in Layer 1 would waste context on every non-product conversation.
@@ -88,7 +88,21 @@ This section documents **why** the repo is structured this way. Use it when eval
 - **system/ORCHESTRATION.md** = WHAT (routing, states, loading) → Layer 2, loaded at state entry.
 - **system/MEMORY.md** = WHERE (sleeping memory, path mapping) → Layer 1 bootstrap, consulted on trigger.
 - **system/coaching/braindump.md** = HOW the golden rule works (full spec) → Layer 2.
+- **`.cursor/rules/pm-brain.mdc`** = always-on enforcement (voice, lenses, braindump floor) → Layer 1 on all platforms; Cursor auto-injects, others read explicitly.
 - Each file has one job; if you cannot describe it in one sentence, consider splitting.
+
+### Why pm-brain.mdc exists
+
+`pm-brain.mdc` overlaps with [AGENTS.md](../AGENTS.md) on lenses and the golden rule — that overlap is intentional, not accidental drift.
+
+| Platform | Why keep it |
+|----------|-------------|
+| **Cursor** | `alwaysApply: true` injects enforcement without trusting the agent to read bootstrap. Evals show bootstrap reads get skipped in real sessions. |
+| **Claude Code / Copilot / paste** | Not physically required if bootstrap is read faithfully — but it carries full voice rules and expanded lens language that AGENTS only summarizes. Included in the 4-file bootstrap for one enforcement source across platforms. |
+
+**Tradeoff:** Reading both AGENTS and mdc costs context every turn. The alternative — collapse everything into AGENTS and drop mdc — saves tokens but weakens Cursor reliability unless you move enforcement into a different always-on mechanism.
+
+**When editing behavior:** Update lenses/principles in AGENTS for persona; update enforcement detail (voice, braindump criteria, minimal footprint) in mdc. If you change one, check the other for drift.
 
 ### Platform agnosticism
 
@@ -120,7 +134,7 @@ Each platform has a different auto-load mechanism. The CONTENT is shared (same r
 ### Naming conventions
 
 - **Root:** UPPERCASE for agent/core docs (AGENTS.md, CLAUDE.md); README.md. Routing lives in `system/ORCHESTRATION.md`. New human docs go in `docs/` as lowercase.
-- **docs/:** lowercase hyphenated (setup.md, guidelines.md, architecture.md, credits.md, agent-manifest.md).
+- **docs/:** lowercase hyphenated (setup.md, principles.md, architecture.md, credits.md, agent-manifest.md).
 - **2-Methods:** README.md plus `N-name-with-hyphens.md` (number prefix, lowercase).
 - **1-Context:** Entry UPPERCASE (CONTEXT-HEALTH.md); content number-lowercase (1-company-vision.md, etc.). Personal + work quick context in root `USER.md`. Setup guide lives in `docs/setup.md`.
 - **3-Work:** lowercase (summary.md, prd.md, opportunity-assessment.md, roadmap.md, decisions.md).
@@ -170,7 +184,7 @@ flowchart TB
 ```
 
 **In words:**
-- **Start (bootstrap):** Agent reads **AGENTS.md**, **system/MEMORY.md**, and **USER.md** (if present). In Cursor, **`.cursor/rules/pm-brain.mdc`** (`alwaysApply: true`) enforces coaching lenses, voice, braindump floor, and minimal footprint. **system/ORCHESTRATION.md** loads at state entry — not bootstrap.
+- **Start (bootstrap):** Agent reads **AGENTS.md**, **`.cursor/rules/pm-brain.mdc`**, **system/MEMORY.md**, and **USER.md** (if present) on every platform. Cursor auto-injects `pm-brain.mdc` via `alwaysApply: true`; Claude Code and Copilot read it via bootstrap checklists in their entry points. **system/ORCHESTRATION.md** loads at state entry — not bootstrap.
 - **Each turn:** Your message is matched against orchestration's decision tree → one mode is chosen (product_sense, execution_mode, meta_reflection, or conversation). The agent then loads only the Layer 2 files for that mode (e.g. coaching/README + prompts for product_sense; template-finder + framework for execution_mode).
 - **Cross-cutting behaviors:** Some rules fire in ANY state, regardless of mode: the Product Judgment Test capture trigger (decision with confidence → offer PJT), intent disambiguation (clarify ambiguous topic signals before loading), the company context routing guard (check CONTEXT-HEALTH.md before suggesting updates to company docs), and synthesis-first (when user signals they're about to share content, ask for their takeaways before analyzing).
 - **Sleeping memory:** 1-Context, 4-Research, 3-Work, and `system/skills/` (on-demand) are **not** in the prompt until the conversation touches them. When you mention strategy, an initiative, or research, the agent consults system/MEMORY.md and loads the relevant paths. This keeps the prompt small and focused.
@@ -286,7 +300,12 @@ Some agent behaviors are **unconditional** — they fire regardless of which mod
 
 ## Evaluation system (evals)
 
-Evals span five levels (L0–L4). Rubrics live in `2-Methods/`; harness loads them at runtime. **Entry:** [system/evals/README.md](../system/evals/README.md).
+Evals use two naming schemes — do not conflate them:
+
+- **Harness tiers (L0–L4):** Architecture levels in [system/evals/README.md](../system/evals/README.md) — repo health (L0), rubric regression (L1), behavior scenarios (L2), human review (L3), in-turn write hooks (L4).
+- **Artifact QQC ("Level 1" in methods):** Quick Quality Checks in `2-Methods/` frameworks during artifact creation, per [system/EVALUATION.md](../system/EVALUATION.md). This is not the same as harness L1.
+
+Fork maintainers: CI, harness commands, and upstream merge policy → [evals-fork.md](evals-fork.md). **Entry:** [system/evals/README.md](../system/evals/README.md).
 
 **How evals are used (visual):**
 
@@ -314,8 +333,8 @@ flowchart TB
   Hook[Optional post-conversation hook] -->|"append summary to eval-results"| L2
 ```
 
-- **Level 1 during creation:** The agent uses Quick Quality Checks from [system/EVALUATION.md](../system/EVALUATION.md) when you work on frameworks with evaluation support (PRD, Opportunity Assessment, North Star, One-Pager, OKR, Roadmap). Always-on coaching enforcement in Cursor: `.cursor/rules/pm-brain.mdc`.
-- **Level 2:** Harness scenarios (`run_scenario.py`) for automated regression; human transcript review via [1-agent-behavior-guide.md](../system/evals/1-agent-behavior-guide.md). [agent-behavior-scenarios.json](../system/evals/agent-behavior-scenarios.json) is a discovery index; ground truth is each scenario's `expected.yaml` plus [behavior-assertions.md](../system/evals/behavior-assertions.md).
+- **Artifact QQC during creation:** The agent uses Quick Quality Checks from [system/EVALUATION.md](../system/EVALUATION.md) when you work on frameworks with evaluation support (PRD, Opportunity Assessment, North Star, One-Pager, OKR, Roadmap). Coaching enforcement via `pm-brain.mdc` on all platforms (Cursor auto-injects; others read explicitly).
+- **L2 behavior evals:** Harness scenarios (`run_scenario.py`) for automated regression; human transcript review via [1-agent-behavior-guide.md](../system/evals/1-agent-behavior-guide.md). [agent-behavior-scenarios.json](../system/evals/agent-behavior-scenarios.json) is a discovery index; ground truth is each scenario's `expected.yaml` plus [behavior-assertions.md](../system/evals/behavior-assertions.md). See also [2-checklist.md](../system/evals/2-checklist.md).
 - **Entry point:** [system/evals/README.md](../system/evals/README.md).
 - **Hooks:** `system/evals/hooks/validate_write.py` (in-turn), `.cursor/hooks/trigger-self-critique.js` (stop). See [eval-functions.md](../system/evals/eval-functions.md) for implementation pointers.
 
@@ -332,7 +351,7 @@ The repo has a few main entry points. Depending on what you're doing, the agent 
 | **Think through a product decision** | [system/coaching/README.md](../system/coaching/README.md) → braindump first, then frameworks |
 | **I know the doc I need** (PRD, OKR, roadmap, etc.) | [0-template-finder.md](../2-Methods/0-template-finder.md) → jump straight to template |
 | **Understand the system architecture** | [architecture.md](architecture.md) → visual overview, flows, context management |
-| **Configure the agent / orchestration** | [AGENTS.md](../AGENTS.md) → persona; [system/ORCHESTRATION.md](../system/ORCHESTRATION.md) → routing, states, loading; [system/MEMORY.md](../system/MEMORY.md) → sleeping memory manifest. *These are what the agent loads.* |
+| **Configure the agent / orchestration** | [AGENTS.md](../AGENTS.md) → persona; [`.cursor/rules/pm-brain.mdc`](../.cursor/rules/pm-brain.mdc) → enforcement; [system/MEMORY.md](../system/MEMORY.md) → sleeping memory; [platform-setup.md](platform-setup.md) → per-platform wiring. Bootstrap = those four files. [system/ORCHESTRATION.md](../system/ORCHESTRATION.md) → routing at state entry. |
 | **Quick reference** (not loaded by agent) | [agent-manifest.md](agent-manifest.md) → summary of entrypoints, states, and content clusters; for humans and maintainers only |
 | **Run evals** (artifact quality or agent behavior) | [system/evals/README.md](../system/evals/README.md) → Level 1 (methods) or Level 2 (agent behavior) |
 | **Set up for the first time** | [docs/setup.md](setup.md) → company context, agent config, optional 5-Growth setup |
@@ -434,7 +453,7 @@ flowchart LR
 ```
 
 **Three layers, short version:**
-- **Layer 1 (bootstrap):** AGENTS.md + system/MEMORY.md + USER.md (if present). In Cursor, `.cursor/rules/pm-brain.mdc` enforces always-on coaching. ORCHESTRATION loads at state entry — not bootstrap.
+- **Layer 1 (bootstrap):** AGENTS.md + `.cursor/rules/pm-brain.mdc` + system/MEMORY.md + USER.md (if present) on every platform. Cursor auto-injects mdc; Claude Code and Copilot read it via entry-point checklists. ORCHESTRATION loads at state entry — not bootstrap.
 - **Layer 2 (by mode):** Loaded when a mode is entered — product_sense gets coaching/README + prompts + eval-functions; execution_mode gets template-finder or framework guide.
 - **Layer 3 (reference):** Templates (`2-*-template.md`) and evaluations (`3-*-evaluation.md`) loaded only when actively filling or checking.
 - **Sleeping memory:** Company context, research, initiatives, and skills (`system/skills/`) load only when the conversation touches that area — triggered by user message, routed via system/MEMORY.md.

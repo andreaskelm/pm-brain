@@ -54,7 +54,7 @@ Most PMs have no idea if their judgment is actually improving. This system gives
 `system/MEMORY.md` defines what is “sleeping” and when to wake it. Company context, initiatives, research artifacts, and organizational-survival documents load only when the conversation touches them — not all at once as noise. When a long session needs continuity, capture durable state in `5-Growth/` or the relevant `3-Work/[initiative]/` artifact — not a separate checkpoint folder (see `system/ORCHESTRATION.md`).
 
 **Platform-agnostic.**  
-The repo works with Cursor, Claude Code, Claude.ai, ChatGPT, GitHub Copilot, or any AI tool that can take files as context. Core behavior is defined in `AGENTS.md` (bootstrap) and `system/MEMORY.md` (on-demand manifest). Routing detail: `system/ORCHESTRATION.md`.
+The repo works with Cursor, Claude Code, Claude.ai, ChatGPT, GitHub Copilot, or any AI tool that can take files as context. Bootstrap (every conversation, all platforms): `AGENTS.md` → `.cursor/rules/pm-brain.mdc` → `system/MEMORY.md` → `USER.md`. Routing detail: `system/ORCHESTRATION.md` (state entry, not bootstrap). Per-platform wiring: [docs/platform-setup.md](docs/platform-setup.md).
 
 ---
 
@@ -89,15 +89,17 @@ At the top level, the repo looks like this:
 
 ```text
 pm-brain/
-|-- AGENTS.md # Bootstrap anchor — persona, principles, lenses (self-contained)
-|-- USER.md # Your personal context
-|-- system/ # Agent infrastructure (MEMORY, orchestration, coaching, skills, evals)
-|-- 1-Context/ # Vision, strategy, stakeholders, org survival
-|-- 2-Methods/ # Frameworks, guides, templates
-|-- 3-Work/ # Active initiatives
-|-- 4-Research/ # Research artifacts
-|-- 5-Growth/ # Practice loop (logs, PJT, portfolio)
-+-- docs/ # Setup, principles, architecture
+|-- AGENTS.md                  # Bootstrap — persona, principles, routing intent
+|-- CLAUDE.md                  # Claude Code entry point
+|-- USER.md                    # Your personal context
+|-- .cursor/rules/pm-brain.mdc # Enforcement — voice, lenses, braindump floor
+|-- system/                    # Agent infrastructure (MEMORY, orchestration, coaching, skills, evals)
+|-- 1-Context/                 # Vision, strategy, stakeholders, org survival
+|-- 2-Methods/                 # Frameworks, guides, templates
+|-- 3-Work/                    # Active initiatives
+|-- 4-Research/                # Research artifacts
+|-- 5-Growth/                  # Practice loop (logs, PJT, portfolio)
++-- docs/                      # Setup, principles, architecture
 ```
 
 **Latest commit = current reality.** No stale Notion or Confluence pages.
@@ -191,7 +193,7 @@ You can use PM Brain either directly in an AI chat tool or in an IDE.
 3. **Use the repo in your IDE** — open a framework or start a conversation with the agent; it will guide you (think first, then structure, then templates).
 
 **Using the agent in Cursor.**
-Open this repo in Cursor and start a chat. Say what you are working on (“I am stuck on prioritization,” “Help me think through this feature,” “I need to write a PRD”). The agent will guide you and signal when it switches from exploring to structuring. Behavior is defined in `AGENTS.md` + `system/MEMORY.md`. Create a platform wrapper per [docs/platform-setup.md](docs/platform-setup.md).
+Open this repo in Cursor and start a chat. Say what you are working on (“I am stuck on prioritization,” “Help me think through this feature,” “I need to write a PRD”). The agent will guide you and signal when it switches from exploring to structuring. Bootstrap: `AGENTS.md` → `pm-brain.mdc` → `system/MEMORY.md` → `USER.md`. Platform wiring: [docs/platform-setup.md](docs/platform-setup.md).
 
 **Use PM Brain in any project (Cursor only):**
 
@@ -249,6 +251,7 @@ Small, regular updates beat big annual overhauls.
 If you are new and just want the right entry point:
 
 - **Setup & install:** [`docs/setup.md`](docs/setup.md)  
+- **All human docs index:** [`docs/README.md`](docs/README.md)  
 - **Architecture & design principles:** [`docs/architecture.md`](docs/architecture.md)  
 - **I want to think through a product decision:**  
   → [`system/coaching/README.md`](system/coaching/README.md)  
@@ -257,7 +260,7 @@ If you are new and just want the right entry point:
 - **I want everything about a topic:**  
   → [`1-frameworks-by-topic.md`](2-Methods/1-frameworks-by-topic.md)  
 - **I want to see or run evals:**  
-  → [`system/evals/README.md`](system/evals/README.md)  
+  → [`system/evals/README.md`](system/evals/README.md) (fork CI/harness: [`docs/evals-fork.md`](docs/evals-fork.md))  
 - **I want repo usage and maintenance guidelines:**  
   → [`docs/principles.md`](docs/principles.md)  
 

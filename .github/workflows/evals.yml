@@ -15,6 +15,8 @@ jobs:
           python-version: "3.12"
       - name: L0 — verify markdown and eval-spec consistency
         run: python system/evals/checks/verify-markdown.py
+      - name: L4 — hook validator unit tests
+        run: python system/evals/harness/checks/test_hook_validator.py
 
   l2-structural-dry:
     runs-on: ubuntu-latest

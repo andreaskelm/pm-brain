@@ -50,7 +50,7 @@ This repo is the **single source of truth** for product decisions, frameworks, a
 **Good:** "Help me think through X" — braindump before template — challenge assumptions  
 **Bad:** Jump straight to templates — fill boxes without revisiting — duplicate content across files
 
-Setup: [setup.md](setup.md) — Cursor enforcement: [platform-setup.md](platform-setup.md) (`.cursor/rules/pm-brain.mdc` ships with repo)
+Setup: [setup.md](setup.md) — enforcement via `.cursor/rules/pm-brain.mdc` on **all platforms** (Cursor auto-injects; Claude Code and Copilot read it via bootstrap checklists in [platform-setup.md](platform-setup.md))
 
 ---
 

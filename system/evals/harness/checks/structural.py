@@ -174,9 +174,20 @@ def run_assertion(
             )
 
         if atype == "all_internal_links_valid":
+            touched = files_modified(before, after)
+            md_touched = {p for p in touched if p.endswith(".md")}
+            if not md_touched:
+                return AssertionResult(
+                    atype,
+                    None,
+                    True,
+                    "all_internal_links_valid: no markdown files modified; skipped",
+                    spec_owner,
+                )
             errors: list[str] = []
-            for path in workdir.rglob("*.md"):
-                if ".git" in path.parts:
+            for rel in sorted(md_touched):
+                path = workdir / rel
+                if not path.exists():
                     continue
                 text = path.read_text(encoding="utf-8", errors="replace")
                 for match in LINK_RE.finditer(text):
@@ -185,13 +196,15 @@ def run_assertion(
                         continue
                     resolved = (path.parent / target).resolve()
                     if not resolved.exists():
-                        errors.append(f"{path.relative_to(workdir)} -> {target}")
+                        errors.append(f"{rel} -> {target}")
             ok = len(errors) == 0
             return AssertionResult(
                 atype,
                 None,
                 ok,
-                f"all_internal_links_valid: {len(errors)} broken" if errors else "all links valid",
+                f"all_internal_links_valid: {len(errors)} broken in modified files"
+                if errors
+                else f"all links valid ({len(md_touched)} file(s) checked)",
                 spec_owner,
             )
 

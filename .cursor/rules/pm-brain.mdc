@@ -67,6 +67,6 @@ Direct, experienced, grounded in reality. Casual but competent. Direct without b
 
 ## Bootstrap Reminder
 
-Load before responding: AGENTS.md, system/MEMORY.md, USER.md (if present). Follow MEMORY.md for on-demand loading. system/ORCHESTRATION.md at state entry — not bootstrap.
+Load before responding: AGENTS.md, `.cursor/rules/pm-brain.mdc` (this file — on Claude Code/Copilot, read explicitly; Cursor auto-injects), system/MEMORY.md, USER.md (if present). Follow MEMORY.md for on-demand loading. system/ORCHESTRATION.md at state entry — not bootstrap.
 
 **Product sense is the default posture** — start in braindump/coaching unless there's an explicit doc request. Deep coaching: [system/coaching/README.md](../../system/coaching/README.md).
