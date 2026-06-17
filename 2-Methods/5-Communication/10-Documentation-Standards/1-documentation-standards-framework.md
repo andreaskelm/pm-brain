@@ -52,7 +52,7 @@ The core insight is simple: **there is no such thing as "documentation."** There
 
 ## Step 0: Braindump First (Do this first!)
 
-**Use prompts from:** [system/coaching/prompts.md](../../../system/coaching/prompts.md) — "Always-Ask Core Prompts" section. Quick start: Who actually needs this doc, and what job does it do for them → What happens when this information changes → Should an AI agent be able to reason over this → **See prompts file for full list.**
+**Use prompts from:** [system/coaching/prompts.md](../../../system/coaching/prompts.md) — [Golden nuggets](../../../system/coaching/prompts.md#generic-step-0-any-framework). Quick start: Who actually needs this doc, and what job does it do for them → What happens when this information changes → Should an AI agent be able to reason over this → **See prompts file for full list.**
 
 **Documentation structures the knowledge — it doesn't create it.** If you don't have clarity on what you're capturing, no template will save you.
 

@@ -28,7 +28,7 @@ Let’s evaluate the quality of what we just worked on.
    - Most sessions produce nothing for most targets. The point is asking, not forcing entries.
 
 5. **Log key findings**
-   - Suggest a short summary I could add to `system/evals/eval-results/` (using the format from `eval-results/README.md`), focusing on:
+   - Suggest a short summary I could add to `system/evals/eval-results/` (using the format from `system/evals/eval-results/README.md`), focusing on:
      - What worked well,
      - What needs improvement,
      - Which files we should update (AGENTS, ORCHESTRATION, rules, or framework docs),

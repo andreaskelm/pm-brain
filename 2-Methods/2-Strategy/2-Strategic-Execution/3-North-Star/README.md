@@ -17,7 +17,7 @@ This framework helps product teams align around a single metric that captures cu
 
 **Braindump first:** See [`../../../../system/coaching/braindump.md`](../../../../system/coaching/braindump.md) for the golden rule and workflow.
 
-**Use prompts from:** [`../../../../system/coaching/prompts.md`](../../../../system/coaching/prompts.md) → "Before a Product Strategy Session" section.
+**Use prompts from:** [`../../../../system/coaching/prompts.md`](../../../../system/coaching/prompts.md) → [Mid — direction exists, deciding on approach](../../../../system/coaching/prompts.md#before-a-product-strategy-session).
 
 **Quick start (top 3-4 questions):**
 - What outcomes are you trying to achieve → Dump everything - don't structure yet.

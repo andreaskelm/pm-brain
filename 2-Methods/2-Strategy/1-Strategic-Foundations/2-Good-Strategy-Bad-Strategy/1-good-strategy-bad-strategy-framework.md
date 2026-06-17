@@ -12,7 +12,7 @@ Good Strategy/Bad Strategy provides diagnostic criteria for evaluating whether y
 
 ## Step 0: Braindump & Product Sense (Do this first!)
 
-**Use prompts from:** [system/coaching/prompts.md](../../../../system/coaching/prompts.md) → [Before a Product Strategy Session](../../../../system/coaching/prompts.md#before-a-product-strategy-session).
+**Use prompts from:** [system/coaching/prompts.md](../../../../system/coaching/prompts.md) → [Mid — direction exists, deciding on approach](../../../../system/coaching/prompts.md#before-a-product-strategy-session).
 
 **Quick start:** What's the real challenge we're facing → What does your product sense tell you is the REAL problem vs. symptoms → What assumptions might be hiding the true challenge → What biases might make us avoid facing hard truths → If you had to explain the challenge to a 10-year-old, what would you say → **See prompts file for full list.**
 

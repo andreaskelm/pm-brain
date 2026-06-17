@@ -1,6 +1,6 @@
 # PM Brain — Human Documentation
 
-Human-facing docs for setup, architecture, and maintenance. **The agent does not load this folder at bootstrap** — agent behavior lives in [AGENTS.md](../AGENTS.md), [`.cursor/rules/pm-brain.mdc`](../.cursor/rules/pm-brain.mdc), [system/MEMORY.md](../system/MEMORY.md), and [USER.md](../USER.md).
+Human-facing docs for setup, architecture, and maintenance. **The agent does not load this folder at bootstrap** — agent behavior lives in [AGENTS.md](../AGENTS.md), [`.cursor/rules/pm-brain.mdc`](../.cursor/rules/pm-brain.mdc), [system/MEMORY.md](../system/MEMORY.md), and [USER.md](../USER.md). Individual docs here (e.g. [principles.md](principles.md), [architecture.md](architecture.md)) load **on demand** when [system/MEMORY.md](../system/MEMORY.md) wake triggers fire.
 
 ---
 
@@ -29,7 +29,7 @@ Human-facing docs for setup, architecture, and maintenance. **The agent does not
 | Doc | Audience | Purpose |
 |-----|----------|---------|
 | [evals-fork.md](evals-fork.md) | Private fork owners | Harness, CI, upstream merge policy, scenario hygiene |
-| [legacy-migration.md](legacy-migration.md) | Migrators | Old `00–04` prefixed folders → canonical `1–5` model |
+| [legacy-migration.md](legacy-migration.md) | Migrators | `00–04` → `1–5`, Meta→Growth split, bootstrap files, renumbering |
 
 ---
 

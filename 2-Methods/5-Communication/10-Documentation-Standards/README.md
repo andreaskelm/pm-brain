@@ -24,7 +24,7 @@ This framework helps you recognize the different types of documentation, choose 
 
 ### 2. Braindump First (5–10 min)
 
-Use the prompts: [`../../../system/coaching/prompts.md`](../../../system/coaching/prompts.md) — "Always-Ask Core Prompts" and the situation-specific sections.
+Use the prompts: [`../../../system/coaching/prompts.md`](../../../system/coaching/prompts.md) — [Golden nuggets](../../../system/coaching/prompts.md#generic-step-0-any-framework) and situation-specific sections.
 Or start from the entry point: [`../../../system/coaching/README.md`](../../../system/coaching/README.md).
 
 Before you write, answer these questions honestly:

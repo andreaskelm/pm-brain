@@ -1,7 +1,6 @@
 # PM Brain Principles
 
-> **Why this repo is designed the way it is.** Agent enforcement lives in [AGENTS.md](../AGENTS.md). Deep coaching process: [system/coaching/](../system/coaching/).
-
+> **Repo design principles** — not company product principles (those live in [`1-Context/3-company-product-principles.md`](../1-Context/3-company-product-principles.md)). Maintainer reference for structure: [architecture.md](architecture.md). Agent persona and principles: [AGENTS.md](../AGENTS.md). Always-on enforcement (voice, lenses, braindump floor): [`.cursor/rules/pm-brain.mdc`](../.cursor/rules/pm-brain.mdc). Deep coaching process: [system/coaching/](../system/coaching/).
 ---
 
 ## 1. Golden Record & Minimal Footprint

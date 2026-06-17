@@ -1,3 +1,7 @@
+---
+description: Launch a new initiative from braindump through execution.
+---
+
 # Start a new initiative
 
 Launch a new initiative end-to-end. Run braindump and bias check first (system/coaching/braindump.md: think before structure), then walk through phases: early thinking → opportunity assessment → strategy alignment → discovery → PRD/roadmap → execution and communication.

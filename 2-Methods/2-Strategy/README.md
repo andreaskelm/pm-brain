@@ -12,14 +12,14 @@ This domain contains the core strategy methods you use to set direction, transla
 
 ### 2. Braindump First (20-30 min)
 
-**Use the prompts:** [system/coaching/prompts.md](../../system/coaching/prompts.md) — "Before a Product Strategy Session" section.  
+**Use the prompts:** [system/coaching/prompts.md](../../system/coaching/prompts.md) — [Mid — direction exists, deciding on approach](../../system/coaching/prompts.md#before-a-product-strategy-session).
 **Or start from the entry point:** [README.md](../../system/coaching/README.md) (simple prompt for a product-thinking chat).
 
-Specifically, the "Before a Product Strategy Session" section:
-- What's actually working → (Be honest)
-- What's definitely not working → (Be honest)
-- What are we uniquely positioned to do?
-- What are we deluding ourselves about?
+Quick start from that section:
+- What's the single most important assumption you're making right now?
+- What does success look like in 6 months → How exactly would you measure it?
+- Who loses if this succeeds → What are you trading off?
+- What's the minimum you'd ship to test this → What are you over-building?
 
 **Strategy frameworks organize direction—they don't create vision.**
 

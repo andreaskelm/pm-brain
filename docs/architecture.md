@@ -67,7 +67,7 @@ flowchart TD
 
 ## Design Principles
 
-This section documents **why** the repo is structured this way. Use it when evaluating structural changes (e.g. adding root files, moving agent config, refactoring).
+User-facing summary: [principles.md](principles.md). This section documents **why** the repo is structured this way for maintainers evaluating structural changes (e.g. adding root files, moving agent config, refactoring).
 
 ### Root file policy
 

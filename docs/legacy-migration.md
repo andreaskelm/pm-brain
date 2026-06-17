@@ -6,6 +6,8 @@ PM Brain uses a **canonical 1–5 top-level model** plus root bootstrap files an
 
 If your fork still has **both** legacy and canonical trees (common during transition), treat the canonical paths as source of truth and delete legacy folders only after the safe-delete checklist below.
 
+**Already migrated?** If top-level `00–04` folders are gone, skip to [Internal renumbering](#internal-renumbering) and [Safe delete checklist](#safe-delete-checklist) for any remaining decimal subfolders (`0.1-Learning-Log`, eval scenario duplicates, stale markdown links).
+
 ---
 
 ## Top-level folder mapping
@@ -107,7 +109,7 @@ Your fork may still have **both** (e.g. `5-Growth/0.1-Learning-Log/` and `5-Grow
 - Deep framework library → `2-Methods/1-Foundations/1-Mental-Models/6-Product-Sense-Development/`
 
 **Evals (fork):**
-- Upstream prose guides → `.cursor/evals/`
+- Legacy pointer → `.cursor/evals/README.md` (redirects to `system/evals/`)
 - Executable harness in this fork → `system/evals/` + [evals-fork.md](evals-fork.md)
 - Clean up duplicate scenario folders (e.g. `06-premature-solution/` vs `06-premature-solution-004/`) before deleting legacy eval paths
 

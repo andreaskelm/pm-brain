@@ -19,13 +19,13 @@ This framework helps you create and manage Objectives and Key Results (OKRs) tha
 
 ### 2. Braindump First (15 min)
 
-**Use prompts from:** [`../../../../system/coaching/prompts.md`](../../../../system/coaching/prompts.md) → "Before a Product Strategy Session" section.
+**Use prompts from:** [`../../../../system/coaching/prompts.md`](../../../../system/coaching/prompts.md) → [Mid — direction exists, deciding on approach](../../../../system/coaching/prompts.md#before-a-product-strategy-session).
 
-**Quick start (top 3-4 questions):**
-- What's actually working → (Be honest)
-- What's definitely not working → (Be honest)
-- If everything goes right, what does success look like?
-- What are we deluding ourselves about?
+**Quick start (top 3–4 questions):**
+- What's the single most important assumption you're making right now?
+- What does success look like in 6 months → How exactly would you measure it?
+- Who loses if this succeeds → What are you trading off?
+- What's the minimum you'd ship to test this → What are you over-building?
 
 **See prompts file for full list.** OKRs organize your strategy—they don't create it.
 

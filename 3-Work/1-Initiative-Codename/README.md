@@ -4,6 +4,8 @@ This folder is an **example initiative** that shows how to structure early think
 
 When you start a real initiative, copy this structure (or create a new `[initiative-name]/` folder) and replace all placeholder content.
 
+This is a **minimal example** — see `../README.md` for the full recommended layout (e.g. `research/interviews/`, `research/data/` subfolders).
+
 ## Suggested files
 
 - `opportunity-assessment.md` — Early thinking, hypotheses, assumptions, and questions.  

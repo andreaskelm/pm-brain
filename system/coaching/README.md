@@ -16,7 +16,7 @@ When the user is in **product_sense**, follow this sequence. Do not suggest fram
 2. **Name the situation** — one question: are they early (exploring), mid (deciding), or late (committing)?
 3. **Context check** — has the user added relevant company, research, or initiative context → Offer to load it from the repo if not.
 4. **Use [prompts.md](prompts.md)** — pick 3–5 that feel uncomfortable for their maturity stage. Challenge assumptions; don't validate.
-5. **Stay in braindump** until [braindump.md](braindump.md) sufficiency criteria are met: assumptions named, know vs. guess separated, at least one risk/second-order effect, at least one uncomfortable thought.
+5. **Stay in braindump** until [braindump.md](braindump.md) sufficiency criteria are met — and until the quality of what's surfaced is real, not fig-leaf. The goal is sharper judgment, not a checked list.
 6. **Move to execution_mode** — suggest the right framework via [pm-brain-workflow SKILL](../skills/pm-brain-workflow/SKILL.md). Offer to log in [5-Growth/](../../5-Growth/README.md).
 
 ---
@@ -28,6 +28,7 @@ When the user is in **product_sense**, follow this sequence. Do not suggest fram
 | [braindump.md](braindump.md) | Golden rule, sufficiency criteria, product mode check, decision table |
 | [prompts.md](prompts.md) | Questions by situation — 3–5 per batch. Uses `<a id="...">` anchor tags so framework docs can deep-link to prompt sections (e.g. `#before-writing-a-prd`). |
 | [evaluation.md](evaluation.md) | When stuck; braindump quality check |
+| [6-meta-thinking-for-product-sense.md](../../2-Methods/1-Foundations/1-Mental-Models/6-Product-Sense-Development/6-meta-thinking-for-product-sense.md) | Mid-braindump thinking check (mode, quality, bias) |
 
 ---
 
@@ -38,6 +39,7 @@ When the user is in **product_sense**, follow this sequence. Do not suggest fram
 | Braindump golden rule and exit criteria | [braindump.md](braindump.md) |
 | Questions by maturity stage | [prompts.md](prompts.md) |
 | Stuck mid-braindump | [evaluation.md](evaluation.md) |
+| Mid-braindump thinking check (mode, quality, bias) | [6-meta-thinking-for-product-sense.md](../../2-Methods/1-Foundations/1-Mental-Models/6-Product-Sense-Development/6-meta-thinking-for-product-sense.md) |
 | Frameworks after braindump | [pm-brain-workflow SKILL](../skills/pm-brain-workflow/SKILL.md) |
 | Where to log after decisions | [5-Growth/](../../5-Growth/README.md) |
 

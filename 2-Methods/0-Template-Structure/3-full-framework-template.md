@@ -16,7 +16,7 @@
 
 **Braindump first:** See [`../../system/coaching/braindump.md`](../../system/coaching/braindump.md) for the golden rule and workflow.
 
-**Use prompts from:** [`../../system/coaching/prompts.md`](../../system/coaching/prompts.md) for the relevant situation (e.g., "Before Writing a PRD", "Before Making a Prioritization Decision", "Before User Research / Discovery", "Before a Product Strategy Session").
+**Use prompts from:** [`../../system/coaching/prompts.md`](../../system/coaching/prompts.md) for the relevant situation (e.g., [Late — ready to act](../../system/coaching/prompts.md#before-writing-a-prd), [Mid — prioritization](../../system/coaching/prompts.md#before-making-a-prioritization-decision), [Early — problem not yet clear](../../system/coaching/prompts.md#before-user-research--discovery), [Mid — direction exists](../../system/coaching/prompts.md#before-a-product-strategy-session)).
 
 **Quick start (top 3-4 questions from the prompts file):**
 - [Pick the most relevant questions from the canonical prompts file for this framework's context]

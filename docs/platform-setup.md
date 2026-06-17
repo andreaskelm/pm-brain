@@ -132,6 +132,19 @@ Paste the bootstrap block at the start of each chat, or save as custom instructi
 
 ---
 
+## Cursor hooks (eval stack)
+
+Cursor-only wiring in [`.cursor/hooks.json`](../.cursor/hooks.json):
+
+- **postToolUse** — `system/evals/hooks/validate_write.py` blocks template scaffolds in `3-Work/` without thinking markers (L4 write gate).
+- **stop** — `.cursor/hooks/trigger-self-critique.js` queues L3 self-critique in `system/evals/eval-results/`.
+
+Claude Code and Copilot do **not** ship equivalent hook wiring. Behavior enforcement on those platforms relies on bootstrap reads and compliance checklists in [`CLAUDE.md`](../CLAUDE.md) and [`.github/copilot-instructions.md`](../.github/copilot-instructions.md).
+
+**Claude Code commands:** Canonical command bodies live in [`.cursor/commands/`](../.cursor/commands/). Claude wrappers in [`.claude/commands/`](../.claude/commands/) point there — keep both trees in sync.
+
+---
+
 ## Platform Summary
 
 | Platform | Enforcement layer | Bootstrap (read in full) |

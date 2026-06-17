@@ -12,7 +12,7 @@ Playing to Win treats strategy as a creative act focused on making integrated ch
 
 ## Step 0: Braindump & Product Sense (Do this first!)
 
-**Use prompts from:** [system/coaching/prompts.md](../../../../system/coaching/prompts.md) → [Before a Product Strategy Session](../../../../system/coaching/prompts.md#before-a-product-strategy-session).
+**Use prompts from:** [system/coaching/prompts.md](../../../../system/coaching/prompts.md) → [Mid — direction exists, deciding on approach](../../../../system/coaching/prompts.md#before-a-product-strategy-session).
 
 **Quick start:** What does "winning" mean for your product/company → What does your product sense tell you about where you should focus → What assumptions about customers, competition, capabilities → What biases might cloud your strategic choices → If you could only compete in ONE market/segment, which would it be → **See prompts file for full list.**
 

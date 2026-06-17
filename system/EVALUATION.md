@@ -17,6 +17,17 @@ Scan for red flags as the user creates. Name issue, ask clarifying question, sug
 
 Use Quick Quality Checks in each framework's `1-*-framework.md` under `2-Methods/`.
 
+### Evaluation file paths
+
+| Framework | `3-*-evaluation.md` path |
+|-----------|--------------------------|
+| OKR | `2-Methods/2-Strategy/2-Strategic-Execution/1-OKR/3-okr-evaluation.md` |
+| Roadmap | `2-Methods/2-Strategy/2-Strategic-Execution/2-Roadmap/3-roadmap-evaluation.md` |
+| PRD | `2-Methods/4-Execution/4-PRD/3-prd-evaluation.md` |
+| Opportunity Assessment | `2-Methods/3-Discovery/4-Opportunity-Assessment/3-opportunity-assessment-evaluation.md` |
+| North Star | `2-Methods/2-Strategy/2-Strategic-Execution/3-North-Star/3-north-star-evaluation.md` |
+| One-Pager | `2-Methods/5-Communication/3-One-Pagers/3-one-pager-evaluation.md` |
+
 Periodically ask: "What feels right → What feels off?" and "Explain to a skeptical stakeholder in 2 minutes."
 
 ## After Creation

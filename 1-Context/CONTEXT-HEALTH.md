@@ -24,8 +24,8 @@ The table below is the **freshness index** for context docs that act as living i
 | `1-Context/1-company-vision.md` | Company mission & vision | Yearly or on major strategy shift | medium | Reference | - |
 | `1-Context/2-company-strategy.md` | Strategy & priorities (inputs to OKRs, roadmaps) | Quarterly planning cycle | high | Reference | - |
 | `1-Context/3-company-product-principles.md` | Product principles | On major strategy shift | low | Reference | - |
-| `1-Context/4-company-product-explanation.md` | Product portfolio for PM's team | After significant product changes | high | Maintained | - |
-| `1-Context/5-company-roadmap.md` | Company-wide roadmap | Quarterly planning cycle | high | External | - |
+| `1-Context/4-company-product-explanation.md` | Product portfolio for PM's team | After significant product changes | high | Reference | - |
+| `1-Context/5-company-roadmap.md` | Company-wide roadmap (local file is stub; canonical roadmap may live outside repo) | Quarterly planning cycle | high | External | - |
 | `1-Context/6-company-stakeholders.md` | Stakeholder directory | On major org change | medium | Reference | - |
 
 #### Politics & stakeholders

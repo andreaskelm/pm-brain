@@ -1,3 +1,7 @@
+---
+description: Diagnose blocks and recommend next actions.
+---
+
 # Unstuck diagnostic
 
 Diagnose where the user is blocked: direction unclear, too many priorities, no customer insight, stakeholder misalignment, execution chaos, decision paralysis, or team dysfunction. Recommend frameworks and next actions (this week + next 2 weeks).

@@ -1,6 +1,8 @@
 # When Stuck — Decision Diagnostic
 
-Use after a braindump that isn't moving. Name the block type, then act. Don't try to solve every block at once.
+Use after a braindump that isn't moving. Exit criteria for leaving braindump live in [braindump.md](braindump.md). Session sequence: [README.md](README.md). More prompts: [prompts.md](prompts.md).
+
+Name the block type, then act. Don't try to solve every block at once.
 
 ## Step 1: Name the block
 

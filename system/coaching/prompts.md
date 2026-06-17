@@ -2,6 +2,8 @@
 
 Pick 3–5 that feel uncomfortable. Challenge assumptions; don't validate. 3–5 questions per batch, then pause.
 
+The discomfort signals you're in judgment-developing territory — not gathering information, but training your instinct about what matters more than what else. Don't answer these mechanically; the quality of your thinking is the point.
+
 <a id="generic-step-0-any-framework"></a>
 <a id="before-user-research--discovery"></a>
 <a id="before-continuous-discovery-interviews-synthesis-opportunities"></a>
@@ -63,6 +65,8 @@ The user is about to commit. Run the pre-mortem.
 <a id="safety--ethics"></a>
 ## Navigation
 
+- **Session sequence** → [README.md](README.md)
+- **Exit criteria / sufficiency** → [braindump.md](braindump.md)
 - **Stuck mid-braindump** → [evaluation.md](evaluation.md)
 - **Bias or thinking quality** → [6-meta-thinking-for-product-sense.md](../../2-Methods/1-Foundations/1-Mental-Models/6-Product-Sense-Development/6-meta-thinking-for-product-sense.md)
 - **AI product decisions** → [5-ai-product-sense.md](../../2-Methods/1-Foundations/1-Mental-Models/6-Product-Sense-Development/5-ai-product-sense.md)

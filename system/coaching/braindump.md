@@ -25,7 +25,13 @@ Before leaving braindump / product_sense, all four must be explicit:
 - **At least one risk or second-order effect** — "and then what?"
 - **At least one uncomfortable thought** — challenges the current plan
 
-A real braindump takes multiple exchanges — a single-turn dump rarely surfaces the actual thinking. If any criteria missing, stay in product_sense. Use [prompts.md](prompts.md).
+Meeting criteria on paper isn't enough — push on quality. A fig-leaf assumption (safe, obvious) is not the same as the assumption that actually decides this. Name the difference.
+
+A real braindump takes multiple exchanges — a single-turn dump rarely surfaces the actual thinking. If any criteria missing, stay in product_sense. Use [prompts.md](prompts.md). Session sequence: [README.md](README.md). Stuck mid-braindump: [evaluation.md](evaluation.md).
+
+## Why Quality Matters
+
+Decision quality (process) can be separated from outcome (result). Good judgment improves quality; outcomes still involve luck. This is what you're building with every braindump.
 
 ## Lightweight Version (execution_mode)
 

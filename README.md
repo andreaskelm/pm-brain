@@ -99,7 +99,9 @@ pm-brain/
 |-- 3-Work/                    # Active initiatives
 |-- 4-Research/                # Research artifacts
 |-- 5-Growth/                  # Practice loop (logs, PJT, portfolio)
-+-- docs/                      # Setup, principles, architecture
+|-- docs/                      # Setup, principles, architecture (see docs/README.md)
++-- .cursor/                   # Cursor rules, commands, skills wrappers, hooks
++-- .github/                   # Copilot instructions, CI workflows
 ```
 
 **Latest commit = current reality.** No stale Notion or Confluence pages.
@@ -159,10 +161,12 @@ Details and templates live in `5-Growth/README.md` and the subfolder READMEs.
 
 ## Evaluation system
 
-PM Brain includes a two-level evaluation system:
+PM Brain uses two related eval layers — do not conflate the naming:
 
-- **Level 1 — Artifact quality.** Quick Quality Checks are built into key frameworks (OKRs, roadmaps, PRDs, opportunity assessments, North Star, one-pagers). They run while you create artifacts to catch thin problem definitions, missing risks, or weak metrics.
-- **Level 2 — Agent behavior.** When it matters, you can review whether the agent actually honored the golden rule (braindump before structure), stayed in product_sense long enough, and surfaced meaningful risks. Guides and scenarios live under `system/evals/`.
+- **Artifact QQC (methods “Level 1”).** Quick Quality Checks built into key frameworks (OKRs, roadmaps, PRDs, opportunity assessments, North Star, one-pagers). They run while you create artifacts to catch thin problem definitions, missing risks, or weak metrics. Rules: [system/EVALUATION.md](system/EVALUATION.md).
+- **Harness tiers L0–L4 (`system/evals/`).** Repo health (L0), rubric regression (L1), behavior scenarios (L2), human review (L3), in-turn write hooks (L4). Use these to check whether the agent honored the golden rule, stayed in product_sense long enough, and surfaced meaningful risks.
+
+Overview: [system/evals/README.md](system/evals/README.md). Fork CI and local commands: [docs/evals-fork.md](docs/evals-fork.md). Full architecture: [docs/architecture.md](docs/architecture.md).
 
 The eval system exists so both **you** and the **agent** improve over time, based on real work rather than theory.
 
@@ -189,11 +193,12 @@ You can use PM Brain either directly in an AI chat tool or in an IDE.
    cd pm-brain
    ```
 
-2. **Follow [`docs/setup.md`](docs/setup.md)** — configure Company Context, agent behavior, and optional `5-Growth/` setup.
-3. **Use the repo in your IDE** — open a framework or start a conversation with the agent; it will guide you (think first, then structure, then templates).
+2. **Follow [`docs/setup.md`](docs/setup.md)** — configure Company Context, privacy mode, and optional `5-Growth/` setup.
+3. **Wire the agent per tool:** [`docs/platform-setup.md`](docs/platform-setup.md) — 4-file bootstrap and Cursor / Copilot / Claude Code entry points.
+4. **Use the repo in your IDE** — open a framework or start a conversation with the agent; it will guide you (think first, then structure, then templates).
 
 **Using the agent in Cursor.**
-Open this repo in Cursor and start a chat. Say what you are working on (“I am stuck on prioritization,” “Help me think through this feature,” “I need to write a PRD”). The agent will guide you and signal when it switches from exploring to structuring. Bootstrap: `AGENTS.md` → `pm-brain.mdc` → `system/MEMORY.md` → `USER.md`. Platform wiring: [docs/platform-setup.md](docs/platform-setup.md).
+Open this repo in Cursor and start a chat. Say what you are working on (“I am stuck on prioritization,” “Help me think through this feature,” “I need to write a PRD”). The agent will guide you and signal when it switches from exploring to structuring. Bootstrap: `AGENTS.md` → `.cursor/rules/pm-brain.mdc` → `system/MEMORY.md` → `USER.md`. Platform wiring: [docs/platform-setup.md](docs/platform-setup.md).
 
 **Use PM Brain in any project (Cursor only):**
 
@@ -251,8 +256,11 @@ Small, regular updates beat big annual overhauls.
 If you are new and just want the right entry point:
 
 - **Setup & install:** [`docs/setup.md`](docs/setup.md)  
+- **Agent wiring (bootstrap per platform):** [`docs/platform-setup.md`](docs/platform-setup.md)  
 - **All human docs index:** [`docs/README.md`](docs/README.md)  
-- **Architecture & design principles:** [`docs/architecture.md`](docs/architecture.md)  
+- **Architecture:** [`docs/architecture.md`](docs/architecture.md)  
+- **Design principles & repo maintenance:** [`docs/principles.md`](docs/principles.md)  
+- **Migrating from old folder layout:** [`docs/legacy-migration.md`](docs/legacy-migration.md)  
 - **I want to think through a product decision:**  
   → [`system/coaching/README.md`](system/coaching/README.md)  
 - **I know the document I need (PRD, OKR, roadmap, etc.):**  
@@ -260,9 +268,7 @@ If you are new and just want the right entry point:
 - **I want everything about a topic:**  
   → [`1-frameworks-by-topic.md`](2-Methods/1-frameworks-by-topic.md)  
 - **I want to see or run evals:**  
-  → [`system/evals/README.md`](system/evals/README.md) (fork CI/harness: [`docs/evals-fork.md`](docs/evals-fork.md))  
-- **I want repo usage and maintenance guidelines:**  
-  → [`docs/principles.md`](docs/principles.md)  
+  → [`system/evals/README.md`](system/evals/README.md) (fork CI/harness: [`docs/evals-fork.md`](docs/evals-fork.md))
 
 Product sense (think first, then structure) is built into the agent; see `system/coaching/braindump.md` for the full golden-rule spec.
 

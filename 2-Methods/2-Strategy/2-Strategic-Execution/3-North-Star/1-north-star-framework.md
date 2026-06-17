@@ -12,7 +12,7 @@ This framework helps product teams align around a single metric that captures cu
 
 ## Step 0: Braindump & Product Sense (Do this first!)
 
-**Use prompts from:** [system/coaching/prompts.md](../../../../system/coaching/prompts.md) → [Before a Product Strategy Session](../../../../system/coaching/prompts.md#before-a-product-strategy-session). Quick start: What outcomes are you trying to achieve → What metric feels like it captures real value → What assumptions → What biases might affect your metric choice → **See prompts file for full list.**
+**Use prompts from:** [system/coaching/prompts.md](../../../../system/coaching/prompts.md) → [Mid — direction exists, deciding on approach](../../../../system/coaching/prompts.md#before-a-product-strategy-session). Quick start: What outcomes are you trying to achieve → What metric feels like it captures real value → What assumptions → What biases might affect your metric choice → **See prompts file for full list.**
 
 **Product sense exercise:**
 - If you had to pick ONE metric that represents customer value, what would it be → Why?

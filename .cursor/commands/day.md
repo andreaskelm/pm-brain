@@ -1,4 +1,8 @@
-﻿# Day planning
+﻿---
+description: Plan today using daily rituals and focus blocks.
+---
+
+# Day planning
 
 Plan today: morning check (fire drill, commitments, focus list), midday check, evening wrap (close loops, prep tomorrow). Protect at least one 2-hour focus block.
 

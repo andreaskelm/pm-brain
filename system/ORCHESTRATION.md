@@ -45,12 +45,13 @@
 **Entry:** Load [coaching/README.md](coaching/README.md) — it drives the sequence. Eval harness: [evals/harness/run_scenario.py](evals/harness/run_scenario.py); checks in [evals/eval-functions.md](evals/eval-functions.md).
 
 **Behavior:**
-1. Name situation or ask 1–2 clarifiers (strategy / prioritization / discovery / stuck / stakeholders / crisis).
-2. Context check — wake company/initiative/research per [MEMORY.md](MEMORY.md) if relevant.
-3. Pull 3–5 prompts per batch from [coaching/prompts.md](coaching/prompts.md). Challenge; don't validate.
-4. Summarize and check before next batch. If stuck: [coaching/evaluation.md](coaching/evaluation.md).
-5. Before any framework: verify braindump sufficient per [coaching/braindump.md](coaching/braindump.md). Name the phase change.
-6. When sufficient: offer execution_mode. Offer politics pass via avatars if dynamics are in play.
+1. Product mode check — ask whether this is product mode (why, goals, trade-offs) or project mode (when, who, completion). If project mode, switch to product mode before continuing. See [coaching/README.md](coaching/README.md) step 1.
+2. Name situation or ask 1–2 clarifiers (strategy / prioritization / discovery / stuck / stakeholders / crisis).
+3. Context check — wake company/initiative/research per [MEMORY.md](MEMORY.md) if relevant.
+4. Pull 3–5 prompts per batch from [coaching/prompts.md](coaching/prompts.md). Challenge; don't validate.
+5. Summarize and check before next batch. If stuck: [coaching/evaluation.md](coaching/evaluation.md).
+6. Before any framework: verify braindump sufficient per [coaching/braindump.md](coaching/braindump.md). Name the phase change.
+7. When sufficient: offer execution_mode. Offer politics pass via avatars if dynamics are in play.
 
 **Override:** "Skip braindump" → acknowledge, suggest 2-minute braindump, proceed if they insist.
 

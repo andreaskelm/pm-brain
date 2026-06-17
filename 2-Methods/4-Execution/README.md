@@ -43,6 +43,8 @@ After your braindump, use the frameworks below to structure your work.
 
 - `7-AARRR-Pirate-Metrics/` — Growth funnel framework (Acquisition, Activation, Retention, Revenue, Referral). **Use when:** Setting up analytics for growth products, identifying funnel bottlenecks, growth strategy planning.
 
+- `8-10-Things-Workshop/` — Facilitated workshop for surfacing and prioritizing the top 10 things to work on. **Use when:** Team alignment sessions, quarterly planning kickoffs, clearing backlog ambiguity.
+
 ## Typical flows
 
 **Discovery → Execution Flow:**
@@ -76,6 +78,7 @@ Research Interviews → Personas → PRD → User Stories → (Delivery)
 | Understanding users | `5-Personas/` | HEART and JOBS persona frameworks |
 | Defining success metrics | `6-Metrics/` | Avoid vanity metrics, focus on meaningful measurement |
 | Measuring growth funnel | `7-AARRR-Pirate-Metrics/` | AARRR pirate metrics framework |
+| Team alignment on top priorities | `8-10-Things-Workshop/` | Facilitated 10-things workshop framework |
 
 ## Related domains / cross-links
 

@@ -12,13 +12,13 @@ This domain contains methods for understanding customers, framing opportunities,
 
 ### 2. Braindump First (10-15 min)
 
-**Use the prompts:** [system/coaching/prompts.md](../../system/coaching/prompts.md) — "Before User Research / Discovery" section.  
+**Use the prompts:** [system/coaching/prompts.md](../../system/coaching/prompts.md) — [Early — problem not yet clear](../../system/coaching/prompts.md#before-user-research--discovery).
 **Or start from the entry point:** [README.md](../../system/coaching/README.md) (simple prompt for a product-thinking chat).
 
-Specifically, the "Before User Research / Discovery" section:
-- What assumption, if wrong, would completely change our plans?
-- What am I hoping NOT to hear → (Red flag - investigate this)
-- What evidence would change my mind?
+Quick start from that section:
+- What are you actually trying to solve → Not the feature — the real problem underneath.
+- Who specifically has this problem → Describe one person and their day.
+- How do you know this is real → What have you actually seen or heard?
 
 **Discovery frameworks guide your learning—they don't replace thinking.**
 

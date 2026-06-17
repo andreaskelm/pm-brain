@@ -1,4 +1,8 @@
-﻿# Focus and prioritization
+﻿---
+description: Prioritize focus using execution hygiene frameworks.
+---
+
+# Focus and prioritization
 
 Prioritize and protect focus: Eisenhower Matrix, deep work vs shallow work, context zones if juggling multiple initiatives. Identify what to do now, schedule, delegate, or drop.
 

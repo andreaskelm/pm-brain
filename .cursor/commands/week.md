@@ -1,4 +1,8 @@
-﻿# Week planning
+﻿---
+description: Plan the week using weekly cadence rituals.
+---
+
+# Week planning
 
 Plan the week: Monday (last-week retrospective, this-week priorities, team sync, calendar gardening), Wednesday (progress check, course correct, team pulse), Friday (retrospective, stakeholder update, prep next week).
 

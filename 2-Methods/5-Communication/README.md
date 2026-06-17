@@ -10,12 +10,12 @@ This domain contains methods and templates for keeping stakeholders informed, al
 
 **See:** [braindump.md](../../system/coaching/braindump.md) (coaching)
 
-### 2. Braindump First (1015 min)
+### 2. Braindump First (10–15 min)
 
-**Use the prompts:** [system/coaching/prompts.md](../../system/coaching/prompts.md)  "Always-Ask Core Prompts" and situation-specific sections (e.g. stakeholders, crisis).  
+**Use the prompts:** [system/coaching/prompts.md](../../system/coaching/prompts.md) — [Golden nuggets](../../system/coaching/prompts.md#generic-step-0-any-framework) and situation-specific sections (e.g. stakeholders, crisis).
 **Or start from the entry point:** [README.md](../../system/coaching/README.md) (simple prompt for a product-thinking chat).
 
-**Communication frameworks structure the messagethey don't replace clarity of thinking.**
+**Communication frameworks structure the message—they don't replace clarity of thinking.**
 
 ### 3. Then Use Communication Frameworks
 

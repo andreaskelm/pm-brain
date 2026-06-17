@@ -31,7 +31,7 @@ A comprehensive framework for creating stakeholder-friendly product roadmaps tha
 
 ### 2. Braindump First (15 min)
 
-**Use prompts from:** [`../../../../system/coaching/prompts.md`](../../../../system/coaching/prompts.md) → "Before a Product Strategy Session" and "Before Making a Prioritization Decision" sections.
+**Use prompts from:** [`../../../../system/coaching/prompts.md`](../../../../system/coaching/prompts.md) → [Mid — direction exists](../../../../system/coaching/prompts.md#before-a-product-strategy-session) and [Mid — prioritization](../../../../system/coaching/prompts.md#before-making-a-prioritization-decision).
 
 **Quick start (top 3-4 questions):**
 - What's changed in the last 3-6 months that we're not talking about?

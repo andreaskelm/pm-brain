@@ -4,6 +4,20 @@ Maps each [AGENTS.md](../../AGENTS.md) invariant principle to testable pass/fail
 
 **Harness scenarios:** Executable scenarios live under `system/evals/scenarios/behavior/`. Each `expected.yaml` assertion includes a `spec_owner` field pointing at the file that owns the behavior.
 
+## AGENTS.md ↔ eval principle mapping
+
+[AGENTS.md](../../AGENTS.md) lists seven invariant principles; this doc groups them into six eval sections for scenario mapping. Principles 2 and 3 in AGENTS (SSoT + response discipline) are combined here as **Principle 2: Minimal footprint**.
+
+| AGENTS.md principle | Eval section in this doc |
+|---------------------|--------------------------|
+| 1. Think first, always | Principle 1 |
+| 2. Minimal footprint — SSoT | Principle 2 |
+| 3. Minimal footprint — response discipline | Principle 2 |
+| 4. Challenge before validate | Principle 3 |
+| 5. Product Judgment Test trigger | Principle 4 |
+| 6. Check filesystem before asking user | Principle 5 |
+| 7. Layer 1 identity | Principle 6 |
+
 ---
 
 ## Principle 1: Think first, always

@@ -12,7 +12,7 @@ This framework helps product managers create roadmaps that effectively communica
 
 ## Step 0: Braindump & Product Sense (Do this first!)
 
-**Use prompts from:** [system/coaching/prompts.md](../../../../system/coaching/prompts.md) → [Before a Product Strategy Session](../../../../system/coaching/prompts.md#before-a-product-strategy-session) and [Before Making a Prioritization Decision](../../../../system/coaching/prompts.md#before-making-a-prioritization-decision). Quick start: What initiatives are you considering → What's the opportunity cost → What do you wish you knew → **See prompts file for full list.**
+**Use prompts from:** [system/coaching/prompts.md](../../../../system/coaching/prompts.md) → [Mid — direction exists](../../../../system/coaching/prompts.md#before-a-product-strategy-session) and [Mid — prioritization](../../../../system/coaching/prompts.md#before-making-a-prioritization-decision). Quick start: What initiatives are you considering → What's the opportunity cost → What do you wish you knew → **See prompts file for full list.**
 
 ## Core Philosophy
 

@@ -1,4 +1,8 @@
-﻿# Bias check
+﻿---
+description: Pre-decision bias check using the bias framework.
+---
+
+# Bias check
 
 Run a pre-decision bias check. Identify likely biases affecting this decision, suggest mitigations, and point to debiasing actions. Having biases is normal; the goal is awareness and systematic debiasing, not perfection.
 

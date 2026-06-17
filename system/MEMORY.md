@@ -46,6 +46,9 @@ Do not load everything at once. Wake only what the conversation needs.
 | Artifact QQC / eval during creation | [EVALUATION.md](EVALUATION.md) |
 | Agent behavior eval | [evals/behavior-assertions.md](evals/behavior-assertions.md), [evals/1-agent-behavior-guide.md](evals/1-agent-behavior-guide.md) |
 | Learning log, daily log, week wrap | [5-Growth/](../5-Growth/README.md) |
+| meta_reflection, substantial decision pause | [5-Growth/README.md](../5-Growth/README.md) |
+| End-of-week wrap, Friday close | [5-Growth/1-Learning-Log/](../5-Growth/1-Learning-Log/) |
+| Decision + confidence level (PJT trigger) | [5-Growth/3-Product-Judgment-Test/forecast-log.md](../5-Growth/3-Product-Judgment-Test/forecast-log.md) |
 | PJT, forecast, calibration | [5-Growth/3-Product-Judgment-Test/](../5-Growth/3-Product-Judgment-Test/) |
 | Repo philosophy / golden record | [docs/principles.md](../docs/principles.md) |
 | Repo structure / architecture | [docs/architecture.md](../docs/architecture.md) |
@@ -74,7 +77,7 @@ Before updating numbered company docs, check `Maintained?` in CONTEXT-HEALTH.md.
 
 ## Initiatives (3-Work/)
 
-One folder per initiative. Typical files: README.md, opportunity-assessment.md, prd.md, decisions.md, roadmap.md, research/
+One folder per initiative. Typical files: README.md, opportunity-assessment.md, prd.md, decisions.md, roadmap.md, research/ — see [3-Work/README.md](../3-Work/README.md) for the full exemplar layout.
 
 ---
 
