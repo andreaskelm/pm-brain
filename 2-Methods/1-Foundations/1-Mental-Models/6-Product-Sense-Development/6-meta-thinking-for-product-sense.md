@@ -67,7 +67,7 @@ Quick checks (antidotes in parentheses):
 - **Sunk cost:** Am I continuing because I've already invested → ("If I started fresh today, would I choose this?")
 - **Optimism bias:** Am I underestimating time or difficulty → (2— your estimate, then explain why that's wrong.)
 
-**Full list and debiasing strategies:** [2-Bias/1-bias-framework.md](../../2-Bias/1-bias-framework.md). Red flags in [system/coaching/prompts.md](../../../../system/coaching/prompts.md) often map to these biases.
+**Full list and debiasing strategies:** [2-Bias/1-bias-framework.md](../../2-Bias/1-bias-framework.md). Pre-flight red flags in [braindump.md](../../../../system/coaching/braindump.md) often map to these biases.
 
 ---
 
@@ -100,7 +100,7 @@ Use this in braindumps: the template's "What assumptions am I making → What do
 
 The biases most relevant to product sense (confirmation, anchoring, sunk cost, availability, optimism, loss aversion, plus social and time biases) are covered there with PM examples and decision checklists.
 
-**Product sense link:** Red flags in [system/coaching/prompts.md](../../../../system/coaching/prompts.md) often map to these biases (e.g. "prioritizing based on who shouted loudest" → availability/anchoring). Use the prompts file's red flags as a quick bias check; use the [Bias framework](../../2-Bias/1-bias-framework.md) for full definitions and debiasing strategies.
+**Product sense link:** Red/green flags in [braindump.md](../../../../system/coaching/braindump.md) and situation prompts in [prompts.md](../../../../system/coaching/prompts.md) often map to these biases (e.g. deciding on one data point → confirmation/availability). Use the pre-flight bias check as a quick scan; use the [Bias framework](../../2-Bias/1-bias-framework.md) for full definitions and debiasing strategies.
 
 ---
 
@@ -126,7 +126,7 @@ You can make a high-quality decision and get a bad outcome, or a low-quality dec
 
 - **Start here (entry point):** [README.md](../../../../system/coaching/README.md)
 - **Braindump prompts:** [system/coaching/prompts.md](../../../../system/coaching/prompts.md)
-- **Red flags by situation:** [system/coaching/prompts.md](../../../../system/coaching/prompts.md) (Quick situation check and Red flags)
+- **Pre-flight red/green flags:** [braindump.md](../../../../system/coaching/braindump.md)
 - **Decision diagnostic (when stuck):** [evaluation.md](../../../../system/coaching/evaluation.md)
 - **Bias framework (canonical list and debiasing):** [2-Bias/1-bias-framework.md](../../2-Bias/1-bias-framework.md)
 - **Golden rule:** [braindump.md](../../../../system/coaching/braindump.md)

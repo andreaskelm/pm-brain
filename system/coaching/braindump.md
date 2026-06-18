@@ -37,6 +37,28 @@ Decision quality (process) can be separated from outcome (result). Good judgment
 
 Even on "write my PRD": 2–3 preflight questions before template — "Why this, why now?", "What do you know vs. guess?", "Who is this for?" Lenses from AGENTS.md still run.
 
+## 30-Second Pre-Flight (before any major decision)
+
+Quick gate before the decision table. Don't aim to answer everything — honest, messy thinking in 10–30 minutes is enough.
+
+| Check | Question |
+|-------|----------|
+| **Why** | Can I articulate WHY this matters in one sentence? |
+| **Second-order** | Have I asked "and then what?" at least twice? |
+| **Edge cases** | Have I identified 3+ ways this could break? |
+| **Trade-offs** | Do I know who loses from this choice? |
+| **Bias** | What bias might I be falling for? (See [6-meta-thinking](../../2-Methods/1-Foundations/1-Mental-Models/6-Product-Sense-Development/6-meta-thinking-for-product-sense.md) and [2-Bias](../../2-Methods/1-Foundations/2-Bias/1-bias-framework.md).) |
+| **Information** | Do I have enough info to decide with 70%+ confidence? |
+| **Reversibility** | Do I know if this is reversible? |
+| **Communication** | Can I explain this decision clearly to a skeptic? |
+| **Taste** | Does this feel right, or just defensible? If a team I respect shipped this, would I be proud of it? |
+| **Conviction** | Do I have a real point of view, or am I waiting for data to tell me what to think? |
+| **Political** | Who has informal veto power? Have I gotten signal from them — not just their reports? |
+
+**Red flags (STOP if any):** I can't explain why this matters; I haven't thought through what could go wrong; I'm deciding on one data point; I'm afraid to share this reasoning publicly; this feels rushed but I can't say why; I haven't considered alternatives; I don't know what success looks like.
+
+**Green lights (PROCEED if most):** I can explain the rationale; I've identified second-order effects; I've anticipated edge cases; I know what we're trading off; I'd defend this publicly; I've considered alternatives; I know how we'll measure success; I've set a review date.
+
 ## Decision Table (before execution_mode)
 
 When braindump is sufficient and a decision is on the table, use confidence + reversibility:
