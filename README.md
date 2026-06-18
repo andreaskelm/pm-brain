@@ -166,7 +166,7 @@ PM Brain uses two related eval layers — do not conflate the naming:
 - **Artifact QQC (methods “Level 1”).** Quick Quality Checks built into key frameworks (OKRs, roadmaps, PRDs, opportunity assessments, North Star, one-pagers). They run while you create artifacts to catch thin problem definitions, missing risks, or weak metrics. Rules: [system/EVALUATION.md](system/EVALUATION.md).
 - **Harness tiers L0–L4 (`system/evals/`).** Repo health (L0), rubric regression (L1), behavior scenarios (L2), human review (L3), in-turn write hooks (L4). Use these to check whether the agent honored the golden rule, stayed in product_sense long enough, and surfaced meaningful risks.
 
-Overview: [system/evals/README.md](system/evals/README.md). Fork CI and local commands: [docs/evals-fork.md](docs/evals-fork.md). Full architecture: [docs/architecture.md](docs/architecture.md).
+Overview: [system/evals/README.md](system/evals/README.md). CI and local commands: [docs/evals-fork.md](docs/evals-fork.md). Full architecture: [docs/architecture.md](docs/architecture.md).
 
 The eval system exists so both **you** and the **agent** improve over time, based on real work rather than theory.
 
@@ -268,7 +268,7 @@ If you are new and just want the right entry point:
 - **I want everything about a topic:**  
   → [`1-frameworks-by-topic.md`](2-Methods/1-frameworks-by-topic.md)  
 - **I want to see or run evals:**  
-  → [`system/evals/README.md`](system/evals/README.md) (fork CI/harness: [`docs/evals-fork.md`](docs/evals-fork.md))
+  → [`system/evals/README.md`](system/evals/README.md) (CI/harness: [`docs/evals-fork.md`](docs/evals-fork.md))
 
 Product sense (think first, then structure) is built into the agent; see `system/coaching/braindump.md` for the full golden-rule spec.
 

@@ -1,20 +1,21 @@
-# Evals — Fork Maintainer Guide
+# Evals — Maintainer Guide
 
-This guide is for **private forks** that ship the executable eval stack under [`system/evals/`](../system/evals/README.md) and CI in [`.github/workflows/evals.yml`](../.github/workflows/evals.yml). Upstream [andreaskelm/pm-brain](https://github.com/andreaskelm/pm-brain) ships prose eval guides under `.cursor/evals/` only — no harness.
+Executable eval infrastructure lives under [`system/evals/`](../system/evals/README.md) with CI in [`.github/workflows/evals.yml`](../.github/workflows/evals.yml). [`.cursor/evals/`](../.cursor/evals/README.md) is a pointer only — canonical specs, harness, scenarios, and results live in `system/evals/`.
 
 ---
 
-## Upstream vs fork
+## Layout
 
-| Location | Upstream | This fork |
-|----------|----------|-----------|
-| Prose guides | `.cursor/evals/` | `system/evals/*.md` |
-| Harness | None | `system/evals/harness/` |
-| Scenarios | None | `system/evals/scenarios/` |
-| CI | None | `.github/workflows/evals.yml` |
-| Hooks | None | `system/evals/hooks/`, `.cursor/hooks/` |
+| Location | Purpose |
+|----------|---------|
+| `system/evals/*.md` | Guides, checklists, behavior assertions |
+| `system/evals/harness/` | Runners (L1 rubric, L2 behavior) |
+| `system/evals/scenarios/` | Ground-truth fixtures (`behavior/`, `rubric/`) |
+| `system/evals/hooks/` | L4 write gate (`validate_write.py`) |
+| `.cursor/hooks/` | Cursor wiring (stop hook, hook manifest) |
+| `.github/workflows/evals.yml` | CI on push/PR to `main`/`master` |
 
-**Merge policy:** When pulling upstream, reconcile prose changes into `system/evals/` manually. Do **not** blind-overwrite harness files, scenarios, or workflow YAML.
+**Do not duplicate eval content under `.cursor/evals/`** — update `system/evals/` and keep the pointer README in sync if paths change.
 
 ---
 
@@ -101,6 +102,23 @@ Use the **"Where to update"** map in [1-agent-behavior-guide.md](../system/evals
 - Scenario expectations → scenario `expected.yaml` + [behavior-assertions.md](../system/evals/behavior-assertions.md)
 
 After rule changes, run L2 dry-run plumbing, then spot-check one live scenario if you have the CLI installed.
+
+---
+
+## Private fork merge policy
+
+If you maintain a **private fork** with company-specific content:
+
+```bash
+git fetch upstream
+git merge upstream/main
+```
+
+- **Prose eval docs** (`system/evals/*.md`) — merge normally; resolve conflicts like any other doc.
+- **Harness, scenarios, CI** — upstream now ships these. If you customized harness files locally, review diffs before accepting upstream wholesale.
+- **Personal content** (`1-Context/`, `3-Work/`, `5-Growth/`, `USER.md`) — keep yours on conflict (`git checkout --ours <file>`). See [setup.md](setup.md) → syncing your fork.
+
+If your fork still has legacy `.cursor/evals/` copies from pre-4.0.0, delete them after confirming `system/evals/` is canonical. See [legacy-migration.md](legacy-migration.md).
 
 ---
 

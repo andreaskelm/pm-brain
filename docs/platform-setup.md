@@ -100,7 +100,7 @@ The repo ships [`.github/copilot-instructions.md`](../.github/copilot-instructio
 
 The repo ships [`CLAUDE.md`](../CLAUDE.md) at repo root — Claude Code auto-discovers it. It instructs the agent to **read** the bootstrap set in full (including `pm-brain.mdc`). At session start you can also say: "Load your bootstrap set." Claude Code does not auto-inject `pm-brain.mdc`; the compliance checklist in CLAUDE.md is required.
 
-**Private fork note:** This repo may include fork-only eval CI ([`.github/workflows/evals.yml`](../.github/workflows/evals.yml)) and the executable eval stack under [`system/evals/`](../system/evals/README.md). Upstream ships prose eval guides under `.cursor/evals/` only. On upstream merge, reconcile prose into `system/evals/`; do not blind-overwrite harness files. Full maintainer guide: [evals-fork.md](evals-fork.md).
+**Eval stack:** Executable evals live under [`system/evals/`](../system/evals/README.md) with CI in [`.github/workflows/evals.yml`](../.github/workflows/evals.yml). [`.cursor/evals/`](../.cursor/evals/README.md) is a pointer only. Maintainer guide: [evals-fork.md](evals-fork.md). Private forks: see merge policy there before pulling upstream.
 
 ### ChatGPT / Claude.ai
 

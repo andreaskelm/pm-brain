@@ -44,7 +44,7 @@ Full per-platform setup: [platform-setup.md](platform-setup.md).
 
 **Mode signaling:** One short natural sentence when switching (e.g. "We've got enough to structure this—here's the framework—"). No internal labels.
 
-**Evals:** Separate workflow. Artifact QQC in `2-Methods/` + [system/EVALUATION.md](../system/EVALUATION.md); coaching enforcement via `pm-brain.mdc` on all platforms (Cursor auto-injects, others read explicitly). Agent behavior evals in `system/evals/` ([README](../system/evals/README.md)). Fork maintainers: [evals-fork.md](evals-fork.md). See system/ORCHESTRATION.md → Eval Checkpoints.
+**Evals:** Separate workflow. Artifact QQC in `2-Methods/` + [system/EVALUATION.md](../system/EVALUATION.md); coaching enforcement via `pm-brain.mdc` on all platforms (Cursor auto-injects, others read explicitly). Agent behavior evals in `system/evals/` ([README](../system/evals/README.md)). Maintainer guide: [evals-fork.md](evals-fork.md). See system/ORCHESTRATION.md → Eval Checkpoints.
 
 ### Content clusters
 

@@ -305,7 +305,7 @@ Evals use two naming schemes — do not conflate them:
 - **Harness tiers (L0–L4):** Architecture levels in [system/evals/README.md](../system/evals/README.md) — repo health (L0), rubric regression (L1), behavior scenarios (L2), human review (L3), in-turn write hooks (L4).
 - **Artifact QQC ("Level 1" in methods):** Quick Quality Checks in `2-Methods/` frameworks during artifact creation, per [system/EVALUATION.md](../system/EVALUATION.md). This is not the same as harness L1.
 
-Fork maintainers: CI, harness commands, and upstream merge policy → [evals-fork.md](evals-fork.md). **Entry:** [system/evals/README.md](../system/evals/README.md).
+Maintainers: CI, harness commands, and private-fork merge policy → [evals-fork.md](evals-fork.md). **Entry:** [system/evals/README.md](../system/evals/README.md).
 
 **How evals are used (visual):**
 

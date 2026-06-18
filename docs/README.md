@@ -28,7 +28,7 @@ Human-facing docs for setup, architecture, and maintenance. **The agent does not
 
 | Doc | Audience | Purpose |
 |-----|----------|---------|
-| [evals-fork.md](evals-fork.md) | Private fork owners | Harness, CI, upstream merge policy, scenario hygiene |
+| [evals-fork.md](evals-fork.md) | Maintainers | Harness, CI, scenario hygiene, private-fork merge policy |
 | [legacy-migration.md](legacy-migration.md) | Migrators | `00–04` → `1–5`, Meta→Growth split, bootstrap files, renumbering |
 
 ---

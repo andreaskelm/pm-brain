@@ -2,7 +2,7 @@
 
 Evaluation system for the PM Brain **Coach** — specs, harness, judges, hooks.
 
-**Fork note:** This private repo extends [andreaskelm/pm-brain](https://github.com/andreaskelm/pm-brain) (`git remote upstream`). Upstream ships prose eval guides under `.cursor/evals/` only — no harness. The executable eval stack here (`system/evals/harness/`, scenarios, CI) lives in this fork and does not sync from upstream automatically. When merging upstream, reconcile prose changes into `system/evals/`; do not overwrite harness files blindly.
+**Canonical location:** All eval specs, harness, and scenarios live here. [`.cursor/evals/`](../../.cursor/evals/README.md) is a pointer only. CI: [`.github/workflows/evals.yml`](../../.github/workflows/evals.yml). Maintainer guide: [docs/evals-fork.md](../../docs/evals-fork.md).
 
 ## Quick mental model
 

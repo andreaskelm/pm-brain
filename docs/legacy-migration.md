@@ -110,7 +110,7 @@ Your fork may still have **both** (e.g. `5-Growth/0.1-Learning-Log/` and `5-Grow
 
 **Evals (fork):**
 - Legacy pointer → `.cursor/evals/README.md` (redirects to `system/evals/`)
-- Executable harness in this fork → `system/evals/` + [evals-fork.md](evals-fork.md)
+- Executable harness → `system/evals/` + [evals-fork.md](evals-fork.md) (shipped in upstream as of 4.0.0)
 - Clean up duplicate scenario folders (e.g. `06-premature-solution/` vs `06-premature-solution-004/`) before deleting legacy eval paths
 
 **Skills:**
