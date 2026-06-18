@@ -4,7 +4,7 @@ This repository builds on frameworks and methods from product management thought
 
 ## Special Thanks
 
-- **Ole:** Mentorship, inspiration, deep talks, and the voice behind the assistant’s tone.
+- **Ole:** Mentorship, inspiration, deep talks, and the PM-brain coaching voice and tone.
 - **Stephanie:** Beta-testing and assumption validation.
 
 ## Frameworks & Methods
@@ -79,7 +79,7 @@ This repository builds on frameworks and methods from product management thought
 ### Product Judgment Test (Weighted Brier Score)
 - **Source:** Viveck P Kumar (product application); Brier score from Glenn W. Brier (1950), standard in forecasting
 - **Resource:** [The Product Judgment Test](https://www.notion.so/The-Product-Judgment-Test-2e92182754b68081a535fd7f507f7b91) (Notion)
-- **Note:** Forecast-before-ship calibration tracker using a **Weighted Brier Score**. Viveck P Kumar adapted the Brier score for product work (bet type, novelty weights, outcome mapping). Used in `5-Growth/3-Product-Judgment-Test/`.
+- **Note:** Forecast-before-ship calibration tracker using a **Weighted Brier Score**. Viveck P Kumar adapted the Brier score for product work (bet type, novelty weights, outcome mapping).
 
 ### Shreyas Doshi — PM Senses & Work Levels
 - **Source:** Shreyas Doshi (ex-Stripe, ex-Google, ex-Twitter)
