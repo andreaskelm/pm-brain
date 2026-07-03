@@ -235,7 +235,7 @@ Brain-wide pass over episodic logs — memory systems rot when nothing sweeps. R
 
 Route findings to the learning log. One recommended action for next week.
 
-Reference: [7-evidence-strength.md](../../1-Mental-Models/1-Decision-Making/7-evidence-strength.md) for naming evidence tiers when flagging weak claims.
+Reference: [7-evidence-strength.md](../../1-Foundations/1-Mental-Models/1-Decision-Making/7-evidence-strength.md) for naming evidence tiers when flagging weak claims.
 
 -----
 
