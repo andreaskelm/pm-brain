@@ -16,6 +16,7 @@ Mental models are organized by category. Each provides a quick lens for thinking
 - **[First Principles](1-Mental-Models/1-Decision-Making/4-first-principles.md)** - Break problems into fundamental truths
 - [Opportunity Cost](1-Mental-Models/1-Decision-Making/5-opportunity-cost.md) - *TODO: stub*
 - [Regret Minimization](1-Mental-Models/1-Decision-Making/6-regret-minimization.md) - *TODO: stub*
+- **[Evidence Strength](1-Mental-Models/1-Decision-Making/7-evidence-strength.md)** - Four-tier vocabulary for know vs. guess
 
 ### Product-Thinking
 

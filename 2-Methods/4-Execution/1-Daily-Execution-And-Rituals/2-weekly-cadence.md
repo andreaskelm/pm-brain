@@ -178,7 +178,7 @@ Decision: [Choose one and execute]
 
 -----
 
-### FRIDAY: Week Closing (45 minutes)
+### FRIDAY: Week Closing (55 minutes)
 
 **Best Time:** Friday afternoon, last hour
 
@@ -213,6 +213,29 @@ Decision: [Choose one and execute]
 - [What's coming]
 - [What to prep for]
 ```
+
+-----
+
+**STEP 1b: Drift Sweep (10 min)**
+
+Brain-wide pass over episodic logs — memory systems rot when nothing sweeps. Run via `/week` or inline here.
+
+**Scan:**
+- `5-Growth/3-Product-Judgment-Test/forecast-log.md` — unresolved bets; reopen triggers that may have fired
+- `5-Growth/2-prioritization-decision-log.md` — recent decisions vs. this week's evidence
+- `5-Growth/3-research-insight-log.md` — new insights contradicting prior calls
+- Weekly reflection **live assumptions to revisit** block (see [3-weekly-reflection-template.md](../../../5-Growth/4-Coaching-Templates/3-weekly-reflection-template.md))
+- Relevant `3-Work/[initiative]/` and `1-Context/` if strategy or stakeholder context shifted
+
+**Flag (3–5 bullets max):**
+1. Fired reopen triggers — "what would change my mind" conditions new evidence may satisfy
+2. Stale beliefs — assumptions unchallenged 3+ weeks; forecasts/decisions not revisited in 6+ weeks
+3. Contradictions — this week's signals cutting against prior logged decisions
+4. Weak evidence — load-bearing claims on verbal/hunch/industry only where documented was expected
+
+Route findings to the learning log. One recommended action for next week.
+
+Reference: [7-evidence-strength.md](../../1-Mental-Models/1-Decision-Making/7-evidence-strength.md) for naming evidence tiers when flagging weak claims.
 
 -----
 
