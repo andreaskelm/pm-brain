@@ -33,6 +33,9 @@ Copy this section for each meaningful prioritization decision.
 - **Decision:**  
   > What did you actually choose → (e.g. “Ship A before B”, “Delay initiative X”, “Kill Y”)
 
+- **Reopen trigger:**  
+  > What would change your mind about this call? Be specific and falsifiable. Used by Friday drift sweep and contradiction detection.
+
 ---
 
 #### Product Sense Check (Before Scoring)

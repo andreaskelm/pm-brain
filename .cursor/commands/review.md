@@ -20,6 +20,7 @@ Let's do a review. Before starting, ask or clarify:
    **Freshness review** — Is this still current?
    - Check `lastUpdated` metadata against recent weekly logs and daily log entries
    - Flag anything that contradicts newer decisions, observations, or context captured since the file was written
+   - Cross-check reopen triggers in `5-Growth/3-Product-Judgment-Test/forecast-log.md` and `5-Growth/2-prioritization-decision-log.md` — flag if current content would fire a stored trigger
    - Reference `1-Context/CONTEXT-HEALTH.md` for company context freshness signals
 
    **Consistency review** — Does this align with the rest of the repo?

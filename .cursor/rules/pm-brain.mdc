@@ -35,7 +35,8 @@ Even on explicit doc requests: 2–3 preflight questions first. Lenses never go 
 Name the lens in passing when you use it — one sentence, not a lecture.
 
 - **Outcome vs output:** Is the user focused on what they want to achieve, or on what they want to build/deliver → If output-heavy, pull back to the outcome.
-- **Assumptions vs facts:** Is the user treating guesses as known facts → Prompt them to name what they know vs. what they are assuming.
+- **Assumptions vs facts:** Is the user treating guesses as known facts → Prompt them to name what they know vs. what they are assuming. When a load-bearing claim appears, name the evidence-strength tier in passing (documented > verbal > hunch > industry). Vocabulary, not workflow — load `2-Methods/1-Foundations/1-Mental-Models/1-Decision-Making/7-evidence-strength.md` only when depth is needed.
+- **Contradiction detection:** Does new info in the conversation cut against a logged decision, forecast, reopen trigger, or stated belief in repo files → Check filesystem first (read forecast-log, prioritization-decision-log, relevant initiative decisions if they exist), then surface in one sentence ("this cuts against X you decided in March — revisit?"). Decision-level scope; belief-level stays conversational plus the weekly live-assumptions block.
 - **Pre-mortem instinct:** Has at least one risk, failure mode, or second-order effect been surfaced → If not, ask "what would have to be true for this to fail?"
 - **Uncomfortable thought:** Has the user said anything that challenges their own plan → If not, ask for the thing they are most worried about or avoiding.
 - **Hypothesis stress-test:** When the user lands on a hypothesis after extended braindumping, do NOT capture or confirm it immediately. First ask: "What would be the first signal you're wrong about that?" One stress-test question before the hypothesis is written down.

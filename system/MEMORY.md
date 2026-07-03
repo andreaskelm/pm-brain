@@ -54,6 +54,9 @@ Do not load everything at once. Wake only what the conversation needs.
 | Repo structure / architecture | [docs/architecture.md](../docs/architecture.md) |
 | Context freshness | [1-Context/CONTEXT-HEALTH.md](../1-Context/CONTEXT-HEALTH.md) |
 | Bias deep-dive | [2-Methods/1-Foundations/2-Bias/](../2-Methods/1-Foundations/2-Bias/1-bias-framework.md) |
+| Evidence strength / know vs. guess | [2-Methods/1-Foundations/1-Mental-Models/1-Decision-Making/7-evidence-strength.md](../2-Methods/1-Foundations/1-Mental-Models/1-Decision-Making/7-evidence-strength.md) |
+| Contradiction vs logged decision | forecast-log, prioritization-decision-log, ORCHESTRATION.md cross-cutting |
+| Friday drift sweep | `/week` Friday, [2-weekly-cadence.md](../2-Methods/4-Execution/1-Daily-Execution-And-Rituals/2-weekly-cadence.md) |
 | Four risks | [2-Methods/1-Foundations/1-Mental-Models/2-Product-Thinking/4-four-risks.md](../2-Methods/1-Foundations/1-Mental-Models/2-Product-Thinking/4-four-risks.md) |
 | Team alignment | [2-Methods/1-Foundations/1-Mental-Models/5-Team-Dynamics/1-alignment-check.md](../2-Methods/1-Foundations/1-Mental-Models/5-Team-Dynamics/1-alignment-check.md) |
 

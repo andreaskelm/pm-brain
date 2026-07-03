@@ -29,6 +29,7 @@ Mental model (framing) → Bias checklist → Core framework (e.g., OKR/PRD/Disc
 | Product / stakeholder / organization thinking (braindump first) | `../../system/coaching/README.md` | Single entry: prompts → braindump → then framework |
 | Need a fast lens before deciding | `1-Mental-Models/` | Quick framing and vocabulary |
 | Worried about decision quality/bias | `2-Bias/1-bias-framework.md` | Checklist + debiasing strategies |
+| Separating know vs. guess / evidence strength | `1-Mental-Models/1-Decision-Making/7-evidence-strength.md` | Four-tier vocabulary for load-bearing claims |
 | Post-launch or weekly retro | `3-Self-Reflection/2-self-reflection-template.md` | Structured prompts to capture learning |
 | Navigating work scope/stage | `1-Mental-Models/3-Work-Levels/` | Align effort to altitude and stage |
 

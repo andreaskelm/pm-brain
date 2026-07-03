@@ -25,15 +25,16 @@ Weights are used to compute your **Weighted Brier Score**. High-stakes bets coun
 **Instructions:**
 - **Forecast columns:** Fill *before* you ship. Be specific: metric must be numeric (e.g. "Increase Task Completion from 60% to 70%").
 - **Confidence %:** 0–100. 50% = coin flip; 70% = some evidence, risks; 90% = almost certain (wrong at 90% = big Brier hit).
+- **Reopen trigger:** What would change your mind about this bet? Be specific and falsifiable (e.g. "2+ enterprise customers request real-time and show intent-to-buy"). Used by Friday drift sweep and contradiction detection.
 - **Resolution columns:** Fill when the deadline has passed and you have actual data. Outcome: Exceeded | Met | Failed.
 
-| Date | Bet | Metric (target) | Deadline | Confidence % | Bet Type | Novelty | Target | Actual | % of Target | Outcome | Surprise note |
-|------|-----|-----------------|----------|-------------|----------|---------|--------|--------|------------|---------|----------------|
-| *(example)* | New checkout flow | Task completion 60% → 70% | 2026-02-28 | 75 | Iteration | Known Problem | 70 | — | — | — | — |
-| *(example resolved)* | Signup step removal | Signup completion 40% → 55% | 2026-01-15 | 70 | Iteration | Known Problem | 55 | 58 | 105 | Exceeded | Users completed faster than expected; fewer drop-offs at step 2. |
+| Date | Bet | Metric (target) | Deadline | Confidence % | Reopen trigger | Bet Type | Novelty | Target | Actual | % of Target | Outcome | Surprise note |
+|------|-----|-----------------|----------|-------------|----------------|----------|---------|--------|--------|------------|---------|----------------|
+| *(example)* | New checkout flow | Task completion 60% → 70% | 2026-02-28 | 75 | 2+ user tests show checkout confusion is navigation, not step count | Iteration | Known Problem | 70 | — | — | — | — |
+| *(example resolved)* | Signup step removal | Signup completion 40% → 55% | 2026-01-15 | 70 | Support tickets cite signup as top-3 pain for 2+ weeks | Iteration | Known Problem | 55 | 58 | 105 | Exceeded | Users completed faster than expected; fewer drop-offs at step 2. |
 
 *(Add your rows below. Leave Resolution columns blank until the deadline.)*
 
-| Date | Bet | Metric (target) | Deadline | Confidence % | Bet Type | Novelty | Target | Actual | % of Target | Outcome | Surprise note |
-|------|-----|-----------------|----------|-------------|----------|---------|--------|--------|------------|---------|----------------|
+| Date | Bet | Metric (target) | Deadline | Confidence % | Reopen trigger | Bet Type | Novelty | Target | Actual | % of Target | Outcome | Surprise note |
+|------|-----|-----------------|----------|-------------|----------------|----------|---------|--------|--------|------------|---------|----------------|
 | | | | | | | | | | | | |

@@ -11,7 +11,7 @@
 - **Product keywords** (strategy, discovery, prioritization, roadmap, PRD, stakeholder, organization, "help me think through", politics) **and no explicit doc request** → **product_sense**
 - **Explicit doc request** ("write PRD", "create OKR", "draft roadmap") → **execution_mode** (template-finder path; preflight first)
 - **Substantial decision work complete or clear pause** → suggest **meta_reflection**
-- **End-of-week signal** ("wrap up", "Friday", "close the week") → always suggest learning log + daily log close ([5-Growth/1-Learning-Log/](../5-Growth/1-Learning-Log/))
+- **End-of-week signal** ("wrap up", "Friday", "close the week", `/week`) → suggest learning log + daily log close ([5-Growth/1-Learning-Log/](../5-Growth/1-Learning-Log/)) **and** Friday drift sweep (scan episodic logs per `/week` or [2-weekly-cadence.md](../2-Methods/4-Execution/1-Daily-Execution-And-Rituals/2-weekly-cadence.md) STEP 1b)
 - **Otherwise** → **conversation**
 
 ---
@@ -37,6 +37,10 @@
 **Named stakeholder:** Auto-load avatar from [1-Context/1.1-Stakeholder-Avatars/](../1-Context/1.1-Stakeholder-Avatars/README.md).
 
 **End-of-week:** Unconditional learning log suggestion — don't wait to be asked.
+
+**Contradiction detection (decision-level):** When new info in conversation contradicts a logged decision, forecast, reopen trigger, or stated belief in repo files, surface it in one sentence ("this cuts against X you decided in March — revisit?"). Before asserting a contradiction, check `5-Growth/3-Product-Judgment-Test/forecast-log.md`, `5-Growth/2-prioritization-decision-log.md`, and relevant `3-Work/[initiative]/decisions.md` if they exist. Compare against stored reopen triggers. Belief-level contradiction stays conversational (hypothesis stress-test lens) plus the live-assumptions block in the weekly reflection template.
+
+**Evidence strength:** When a load-bearing claim appears, name its tier in passing (documented > verbal > hunch > industry). Vocabulary only — see [evidence-strength.md](../2-Methods/1-Foundations/1-Mental-Models/1-Decision-Making/7-evidence-strength.md).
 
 ---
 
@@ -80,7 +84,7 @@
 
 **Entry:** [5-Growth/README.md](../5-Growth/README.md) for logging options.
 
-**Behavior:** Offer PJT, learning log, pattern log. PJT exit checklist on every exit: "Any decisions with confidence levels to log?" Rule updates go to AGENTS.md (principles), system/ORCHESTRATION.md (routing), system/MEMORY.md (wake triggers) — not scattered catch-alls.
+**Behavior:** Offer PJT, learning log, pattern log. PJT exit checklist on every exit: "Any decisions with confidence levels to log?" Include reopen trigger when logging forecasts or prioritization decisions. Rule updates go to AGENTS.md (principles), system/ORCHESTRATION.md (routing), system/MEMORY.md (wake triggers) — not scattered catch-alls.
 
 ---
 
@@ -103,8 +107,11 @@ Answer questions; point to docs. Repo hygiene → [docs/principles.md](../docs/p
 | Named stakeholder | 1-Context/1.1-Stakeholder-Avatars/ |
 | Initiative | 3-Work/[name]/ |
 | Research | 4-Research/ or 3-Work/[name]/research/ |
-| End-of-week | 5-Growth/1-Learning-Log/ daily + learning log |
+| End-of-week | 5-Growth/1-Learning-Log/ daily + learning log; drift sweep via `/week` or 2-weekly-cadence STEP 1b |
 | Decision + confidence | 5-Growth/3-Product-Judgment-Test/forecast-log.md |
+| Contradiction vs logged decision | forecast-log, prioritization-decision-log, 3-Work/[initiative]/decisions.md |
+| Evidence strength depth | 2-Methods/1-Foundations/1-Mental-Models/1-Decision-Making/7-evidence-strength.md |
+| Friday drift sweep | `/week` command or 2-Methods/4-Execution/1-Daily-Execution-And-Rituals/2-weekly-cadence.md STEP 1b |
 | Repo usage | docs/principles.md |
 | Repo structure change | docs/architecture.md |
 | Bias deep-dive | 2-Methods/1-Foundations/2-Bias/ |

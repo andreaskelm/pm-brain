@@ -27,6 +27,7 @@
 **What I decided:** [The call]
 **Why:** [Reasoning]
 **Confidence:** [Low/Medium/High or %]
+**Reopen trigger:** [What would change your mind — specific and falsifiable]
 **Review date:** [When to check outcome]
 
 ### Decision 2: [Brief description]
@@ -36,6 +37,19 @@
 ### Decision 3: [Brief description]
 
 [Same format]
+
+-----
+
+## Live Assumptions to Revisit
+
+Open beliefs you haven't decided on yet — not commitments, just things you're carrying. The Friday drift sweep reads this block. Keep it light (3–5 items max); drop items when you decide, disprove, or document them.
+
+| Assumption | Evidence strength | Last challenged | What would change my mind |
+|------------|-------------------|-----------------|---------------------------|
+| [e.g. Mid-market users batch weekly, not daily] | [documented / verbal / hunch / industry] | [YYYY-MM-DD or "never"] | [e.g. 2+ interviews say daily is required] |
+| | | | |
+
+**This week I learned that challenges:** [One line — or "nothing new"]
 
 -----
 
