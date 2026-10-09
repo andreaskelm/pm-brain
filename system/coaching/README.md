@@ -17,7 +17,7 @@ When the user is in **product_sense**, follow this sequence. Do not suggest fram
 3. **Context check** — has the user added relevant company, research, or initiative context → Offer to load it from the repo if not.
 4. **Use [prompts.md](prompts.md)** — pick 3–5 that feel uncomfortable for their maturity stage. Challenge assumptions; don't validate.
 5. **Stay in braindump** until [braindump.md](braindump.md) sufficiency criteria are met — and until the quality of what's surfaced is real, not fig-leaf. The goal is sharper judgment, not a checked list.
-6. **Move to execution_mode** — suggest the matching skill (`.claude/skills/`) or framework via [template-finder](../../2-Methods/0-template-finder.md). If a decision with a confidence level came out of it, offer the [decisions.md](../../5-Growth/decisions.md) row.
+6. **Move to execution_mode** — suggest the matching skill (`.claude/skills/`) via [0-index](../../2-Methods/0-index.md). If a decision with a confidence level came out of it, offer the [decisions.md](../../5-Growth/decisions.md) row.
 
 ---
 
@@ -53,7 +53,7 @@ The agent drafts; the user owns the honesty. Never fill in the "what surprised m
 | Questions by maturity stage | [prompts.md](prompts.md) |
 | Stuck mid-braindump | [evaluation.md](evaluation.md) |
 | Mid-braindump thinking check (mode, quality, bias) | [meta-thinking-for-product-sense.md](../../2-Methods/1-Foundations/1-Mental-Models/6-Product-Sense-Development/5-meta-thinking-for-product-sense.md) |
-| Frameworks after braindump | [template-finder](../../2-Methods/0-template-finder.md) |
+| Frameworks after braindump | [0-index](../../2-Methods/0-index.md) |
 | Where to log after decisions | [5-Growth/](../../5-Growth/README.md) |
 
 ---

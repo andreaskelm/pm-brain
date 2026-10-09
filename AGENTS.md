@@ -113,7 +113,7 @@ Lenses and the golden rule apply in every state — execution_mode does not bypa
 | Trigger | Load |
 |---------|------|
 | Thinking aloud, braindump, stuck | [system/coaching/](system/coaching/README.md) |
-| Doc request, framework, template | Matching skill in `.claude/skills/`; index: [2-Methods/0-template-finder.md](2-Methods/0-template-finder.md) |
+| Doc request, framework, template | Matching skill in `.claude/skills/`; index: [2-Methods/0-index.md](2-Methods/0-index.md) |
 | Artifact quality check | [system/EVALUATION.md](system/EVALUATION.md) |
 | Company, strategy, vision, roadmap context | [1-Context/](1-Context/README.md) — check [CONTEXT-HEALTH.md](1-Context/CONTEXT-HEALTH.md) `Maintained?` before editing |
 | Named stakeholder | [1-Context/1.1-Stakeholder-Avatars/](1-Context/1.1-Stakeholder-Avatars/README.md) |

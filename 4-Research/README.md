@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This directory stores research outputs and artifacts from discovery activities. This is **storage for research results**, not a process framework. Use the discovery methods in [2-Methods/3-Discovery/](../2-Methods/3-Discovery/README.md) to conduct research, then store your outputs here.
+This directory stores research outputs and artifacts from discovery activities. This is **storage for research results**, not a process framework. Use the **`discovery-synthesis`** skill (`.claude/skills/discovery-synthesis/`) and [2-Methods/3-Discovery/README.md](../2-Methods/3-Discovery/README.md) to conduct research, then store your outputs here.
 
 **For agents:** This folder is one of the context sources the PM Brain agent asks about early in product_sense (and when starting execution_mode for non-trivial docs). If the user has not added relevant research context, suggest adding or @-mentioning key artifacts from here; having them in context speeds up thinking and grounds answers in evidence. 
 
@@ -13,10 +13,10 @@ This directory stores research outputs and artifacts from discovery activities. 
 
 ## How This Relates to Frameworks
 
-**Research Process (Use Frameworks):**
-- Conduct interviews using discovery guides in [2-Methods/3-Discovery/1-Research-Interviews/](../2-Methods/3-Discovery/1-Research-Interviews/README.md)
-- Synthesize patterns using discovery steps in [2-Methods/3-Discovery/2-Continuous-Discovery-Habits/](../2-Methods/3-Discovery/2-Continuous-Discovery-Habits/README.md)
-- Create opportunities using [2-Continuous-Discovery-Habits/3-create-opportunities.md](../2-Methods/3-Discovery/2-Continuous-Discovery-Habits/3-create-opportunities.md)
+**Research process (use the skill):**
+- Plan and run interviews → `discovery-synthesis` → `references/interviews.md`
+- Synthesize snapshots and opportunities → `references/continuous-discovery.md`
+- JTBD, validation, PMF → other files under `.claude/skills/discovery-synthesis/references/`
 
 **Research Storage (This Directory):**
 - Store **analysis and insights** as markdown documents (interview snapshots, synthesis summaries, key findings, patterns)

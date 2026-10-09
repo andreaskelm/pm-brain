@@ -3,7 +3,7 @@ type: rubric_regression
 description: |
   Rubric regression: grade North Star test specimens against canonical 3-north-star-evaluation.md.
 
-rubric_path: 2-Methods/2-Strategy/2-Strategic-Execution/3-North-Star/3-north-star-evaluation.md
+rubric_path: .claude/skills/north-star/references/criteria.md
 judge: judges/artifact_quality.md
 spec_owner: 2-Methods/2-Strategy/2-Strategic-Execution/3-North-Star/3-north-star-evaluation.md
 

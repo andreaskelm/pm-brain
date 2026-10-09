@@ -1,6 +1,6 @@
 # Foundations Library
 
-**What this file is:** Index of **everything in 1-Foundations only** — mental models (Decision-Making, Product-Thinking, Work-Levels, etc.) plus Bias and Self-Reflection. For frameworks **across** Strategy, Discovery, Execution, and Communication (by topic), see [1-frameworks-by-topic.md](../1-frameworks-by-topic.md) at the root of `2-Methods/`.
+**What this file is:** Index of **everything in 1-Foundations only** — mental models (Decision-Making, Product-Thinking, Work-Levels, etc.) plus Bias and Self-Reflection. For workflows and skills (PRD, OKRs, discovery, etc.), see [0-index.md](../0-index.md) at the root of `2-Methods/`.
 
 This library gives quick access to all mental models and foundational frameworks in the PM Brain system. Mental models are quick-reference thinking tools; frameworks here provide structured processes and templates.
 

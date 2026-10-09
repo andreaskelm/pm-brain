@@ -2,7 +2,7 @@
 
 Tests whether the canonical Roadmap evaluation rubric correctly PASSes a good specimen and FAILs a bad one.
 
-**Rubric:** [2-Methods/2-Strategy/2-Strategic-Execution/2-Roadmap/3-roadmap-evaluation.md](../../../../../2-Methods/2-Strategy/2-Strategic-Execution/2-Roadmap/3-roadmap-evaluation.md)
+**Rubric:** [.claude/skills/roadmap/references/criteria.md](../../../../../.claude/skills/roadmap/references/criteria.md)
 
 **Test specimens:** `fixtures/good.md`, `fixtures/bad.md` (synthetic — not real work)
 

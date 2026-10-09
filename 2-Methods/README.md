@@ -10,7 +10,7 @@ This directory is the **core of the PM brain**: it contains the decision models,
 
 **To start a product-thinking chat (e.g. with AI):** Use the single entry point [README.md](../system/coaching/README.md) — copy the simple prompt at the top; the agent will braindump with you before suggesting any framework. After braindump, use the **Frameworks by situation** table there (or the domain READMEs below) to jump to Strategy, Discovery, Execution, or Communication.
 
-**I know what doc I need:** [0-template-finder.md](0-template-finder.md) — go straight to the right README + template. **Find by topic:** [1-frameworks-by-topic.md](1-frameworks-by-topic.md). **Foundations only (all mental models, bias, self-reflection):** [1-Foundations/0-index.md](1-Foundations/0-index.md).
+**Skills (workflows + templates):** [.claude/skills/README.md](../.claude/skills/README.md) and [0-index.md](0-index.md). **Foundations only (mental models, bias, self-reflection):** [1-Foundations/0-index.md](1-Foundations/0-index.md).
 
 Content is organized by **the flow of product work**: from foundational thinking → defining direction → discovering what to build → executing and shipping → aligning stakeholders. This logical progression helps you move from ambiguity to shipped outcomes.
 

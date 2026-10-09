@@ -35,7 +35,7 @@
 
 ## STATE: execution_mode
 
-**Entry:** load the matching skill (`.claude/skills/`). No obvious match → [2-Methods/0-template-finder.md](../2-Methods/0-template-finder.md). Nothing fits at all → AGENTS.md principle 6 (read comparable artifacts, propose structure in prose), then [2-Methods/0-Template-Structure/](../2-Methods/0-Template-Structure/README.md) if a new framework is warranted.
+**Entry:** load the matching skill (`.claude/skills/`). No obvious match → [2-Methods/0-index.md](../2-Methods/0-index.md). Nothing fits at all → AGENTS.md principle 6 (read comparable artifacts, propose structure in prose), then [2-Methods/0-writing-a-skill.md](../2-Methods/0-writing-a-skill.md) if a new skill is warranted.
 
 **Preflight:** 2–3 questions before any non-trivial doc — "Why this, why now?", "What do you know vs. guess?", "Who is this for?" Trivial docs (agenda, status note): one scoping question.
 

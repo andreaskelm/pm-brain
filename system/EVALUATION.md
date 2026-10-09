@@ -10,12 +10,14 @@ Agent behavior evals (is the *coach* behaving?) are a different thing: [evals/RE
 
 | Artifact | Criteria |
 |---|---|
-| OKR | [3-okr-evaluation.md](../2-Methods/2-Strategy/2-Strategic-Execution/1-OKR/3-okr-evaluation.md) |
-| Roadmap | [3-roadmap-evaluation.md](../2-Methods/2-Strategy/2-Strategic-Execution/2-Roadmap/3-roadmap-evaluation.md) |
-| North Star | [3-north-star-evaluation.md](../2-Methods/2-Strategy/2-Strategic-Execution/3-North-Star/3-north-star-evaluation.md) |
-| Opportunity Assessment | [3-opportunity-assessment-evaluation.md](../2-Methods/3-Discovery/4-Opportunity-Assessment/3-opportunity-assessment-evaluation.md) |
-| PRD | [3-prd-evaluation.md](../2-Methods/4-Execution/4-PRD/3-prd-evaluation.md) |
-| One-Pager | [3-one-pager-evaluation.md](../2-Methods/5-Communication/3-One-Pagers/3-one-pager-evaluation.md) |
+| OKR | [.claude/skills/okr/references/criteria.md](../.claude/skills/okr/references/criteria.md) |
+| Roadmap | [.claude/skills/roadmap/references/criteria.md](../.claude/skills/roadmap/references/criteria.md) |
+| North Star | [.claude/skills/north-star/references/criteria.md](../.claude/skills/north-star/references/criteria.md) |
+| Opportunity Assessment | [.claude/skills/opportunity-assessment/references/criteria.md](../.claude/skills/opportunity-assessment/references/criteria.md) |
+| PRD | [.claude/skills/write-prd/references/criteria.md](../.claude/skills/write-prd/references/criteria.md) |
+| One-Pager | [.claude/skills/stakeholder-comms/references/criteria-one-pager.md](../.claude/skills/stakeholder-comms/references/criteria-one-pager.md) |
+| Strategy doc | [.claude/skills/strategy/references/criteria.md](../.claude/skills/strategy/references/criteria.md) (flags only) |
+| Prioritization record | [.claude/skills/prioritize/references/criteria.md](../.claude/skills/prioritize/references/criteria.md) (flags only) |
 
 No criteria file for the artifact? Use the red-flag table below plus the gut check — don't invent a scoring rubric on the fly.
 
