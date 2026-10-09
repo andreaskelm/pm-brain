@@ -26,7 +26,7 @@ Mental models are organized by category. Each provides a quick lens for thinking
 - **[Four Risks of Product Management](1-Mental-Models/2-Product-Thinking/4-four-risks.md)** - Value, viability, usability, feasibility risks
 - **[Jobs vs Features](1-Mental-Models/2-Product-Thinking/5-jobs-vs-features.md)** - Serve jobs, not feature lists
 - **[0-1 vs 1-100](1-Mental-Models/2-Product-Thinking/6-zero-to-one-vs-one-to-one-hundred.md)** - Adapting approach to product stage
-- [Build-Measure-Learn](1-Mental-Models/2-Product-Thinking/7-build-measure-learn.md) - *TODO: empty file*
+- [Build-Measure-Learn](1-Mental-Models/2-Product-Thinking/7-build-measure-learn.md) - Run the lean loop backwards
 
 ### Execution-Hygiene
 

@@ -37,7 +37,7 @@ Mental models are organized by category:
 - [Four Risks of Product Management](2-Product-Thinking/4-four-risks.md) - Value, viability, usability, feasibility risks
 - [Jobs vs Features](2-Product-Thinking/5-jobs-vs-features.md) - Serve jobs, not feature lists
 - [0-1 vs 1-100](2-Product-Thinking/6-zero-to-one-vs-one-to-one-hundred.md) - Adapting approach to product stage
-- [Build-Measure-Learn](2-Product-Thinking/7-build-measure-learn.md) - *TODO: empty file*
+- [Build-Measure-Learn](2-Product-Thinking/7-build-measure-learn.md) - Run the lean loop backwards
 
 ### Work-Levels
 - [Tactical, Operational, Strategic Work Levels](3-Work-Levels/1-tactical-operational-strategic.md)

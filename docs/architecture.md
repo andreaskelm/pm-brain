@@ -416,7 +416,7 @@ This keeps agent-facing instructions visible first when the file is loaded; huma
 
 ## Context Management Strategy
 
-The agent loads different files at different times to stay within context limits. **Definitive loading logic:** [system/ORCHESTRATION.md](../system/ORCHESTRATION.md) → Context Loading Strategy. **Sleeping memory manifest:** [system/MEMORY.md](../system/MEMORY.md).
+The agent loads different files at different times to stay within context limits. **Definitive loading logic:** [system/ORCHESTRATION.md](../system/ORCHESTRATION.md) → Context Loading Table. **Sleeping memory manifest:** [system/MEMORY.md](../system/MEMORY.md).
 
 **Visual (what gets loaded when):**
 

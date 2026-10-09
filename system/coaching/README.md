@@ -10,7 +10,7 @@
 
 ## Product Sense Session — Agent Sequence
 
-When the user is in **product_sense**, follow this sequence. Do not suggest frameworks or templates until step 4 is satisfied.
+When the user is in **product_sense**, follow this sequence. Do not suggest frameworks or templates until step 5 is satisfied.
 
 1. **Product mode check** — ask explicitly: "Are we in product mode (why, goals, trade-offs) or project mode (when, who, completion)?" If project mode, switch before braindump. See [braindump.md](braindump.md).
 2. **Name the situation** — one question: are they early (exploring), mid (deciding), or late (committing)?

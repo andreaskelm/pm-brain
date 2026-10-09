@@ -38,7 +38,7 @@ The repo ships **[`.cursor/rules/pm-brain.mdc`](../.cursor/rules/pm-brain.mdc)**
 **What it does:** Cursor injects `alwaysApply: true` rules into every conversation. Without it, coaching lenses, voice, braindump floor, and minimal footprint only apply if the agent manually loads AGENTS.md.
 
 **What it contains (enforcement, not identity):**
-- 8 coaching lenses (with full upstream language)
+- 9 coaching lenses (with full upstream language)
 - Voice and communication style
 - Braindump sufficiency criteria (all 4)
 - Minimal footprint as agent behavior

@@ -13,6 +13,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
+      - run: pip install pyyaml
       - name: L0 — verify markdown and eval-spec consistency
         run: python system/evals/checks/verify-markdown.py
       - name: L4 — hook validator unit tests

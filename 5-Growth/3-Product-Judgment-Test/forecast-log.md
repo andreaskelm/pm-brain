@@ -16,7 +16,7 @@ Weights are used to compute your **Weighted Brier Score**. High-stakes bets coun
 | Expansion | 2.0 | Known Problem | 1.0 |
 | Iteration | 1.0 | — | — |
 
-**Weight for a forecast** = Bet Type Weight — Novelty Weight (e.g. New Product — New Behavior = 3.0 — 1.5 = 4.5).
+**Weight for a forecast** = Bet Type Weight × Novelty Weight (e.g. New Product × New Behavior = 3.0 × 1.5 = 4.5).
 
 ---
 

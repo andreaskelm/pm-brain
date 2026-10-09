@@ -6,7 +6,7 @@ Your ongoing daily practice log. Append new entries at the top.
 
 -----
 
-## YYYY-MM-DD DayOfWeel
+## YYYY-MM-DD DayOfWeek
 
 
 -----

@@ -6,7 +6,7 @@
 
 ---
 
-   Routing Decision Tree
+## Routing Decision Tree
 
 - **Product keywords** (strategy, discovery, prioritization, roadmap, PRD, stakeholder, organization, "help me think through", politics) **and no explicit doc request** → **product_sense**
 - **Explicit doc request** ("write PRD", "create OKR", "draft roadmap") → **execution_mode** (template-finder path; preflight first)
@@ -16,7 +16,7 @@
 
 ---
 
-   Cross-Cutting (any state)
+## Cross-Cutting (any state)
 
 **Intent disambiguation:** When "roadmap" could mean background context OR build-a-roadmap — state interpretation in one sentence and confirm before loading.
 
@@ -44,7 +44,7 @@
 
 ---
 
-   STATE: product_sense
+## STATE: product_sense
 
 **Entry:** Load [coaching/README.md](coaching/README.md) — it drives the sequence. Eval harness: [evals/harness/run_scenario.py](evals/harness/run_scenario.py); checks in [evals/eval-functions.md](evals/eval-functions.md).
 
@@ -61,7 +61,7 @@
 
 ---
 
-   STATE: execution_mode
+## STATE: execution_mode
 
 **Entry:** Load [2-Methods/0-template-finder.md](../2-Methods/0-template-finder.md) FIRST, then matched framework README + `1-*-framework.md`. No match → [2-Methods/1-frameworks-by-topic.md](../2-Methods/1-frameworks-by-topic.md) → new framework path in EVALUATION.md.
 
@@ -70,7 +70,7 @@
 **Behavior:**
 1. Apply framework; pull from braindump where possible.
 2. Template: `2-*-template.md`. Quality: `3-*-evaluation.md` + [EVALUATION.md](EVALUATION.md) QQC rules.
-3. Raw material / transcripts: clarify scope; ask 12 "what's YOUR read?" before structuring.
+3. Raw material / transcripts: clarify scope; ask 1–2 "what's YOUR read?" questions before structuring.
 4. Stakeholder cross-reference: load avatars; offer updates when new signal emerges.
 5. **Quality gate:** Auto-QQC before presenting non-trivial artifacts as complete.
 
@@ -80,7 +80,7 @@
 
 ---
 
-   STATE: meta_reflection
+## STATE: meta_reflection
 
 **Entry:** [5-Growth/README.md](../5-Growth/README.md) for logging options.
 
@@ -88,13 +88,13 @@
 
 ---
 
-   STATE: conversation
+## STATE: conversation
 
 Answer questions; point to docs. Repo hygiene → [docs/principles.md](../docs/principles.md). Re-route when product/doc triggers appear.
 
 ---
 
-   Context Loading Table
+## Context Loading Table
 
 | Trigger | Load |
 |---------|------|
@@ -122,7 +122,7 @@ Check filesystem before asking user whether context exists.
 
 ---
 
-   Context Health
+## Context Health
 
 **Conversation rot:** At product_sense → execution_mode transition, ~25–30 turns with heavy loaded context, or when quality drops — suggest the user start a **fresh conversation** using native platform continuity (Cursor agent resume, Claude thread, etc.). Before switching: capture durable state in `5-Growth/` (daily log, prioritization log, pattern recognition) or the relevant `3-Work/[initiative]/` artifact — not a separate checkpoint folder.
 
@@ -132,7 +132,7 @@ Check filesystem before asking user whether context exists.
 
 ---
 
-   Eval Checkpoints
+## Eval Checkpoints
 
 - **Level 1:** QQC during creation — see [EVALUATION.md](EVALUATION.md)
 - **Level 2:** After substantial product_sense or when behavior slips — [evals/1-agent-behavior-guide.md](evals/1-agent-behavior-guide.md), [evals/behavior-assertions.md](evals/behavior-assertions.md)
