@@ -8,7 +8,7 @@ Human-facing docs for setup, architecture, and maintenance. **The agent does not
 
 | Doc | Audience | Purpose |
 |-----|----------|---------|
-| [setup.md](setup.md) | New users | Onboarding, 1–5 folder model, privacy modes, first initiative |
+| [setup.md](setup.md) | New users | Onboarding, who it's for, day-to-day loop, upkeep, 1–5 folders, privacy, first initiative |
 | [platform-setup.md](platform-setup.md) | All users | AGENTS.md bootstrap + per-platform wiring (Cursor, Copilot, Claude Code, ChatGPT) |
 | [principles.md](principles.md) | All users | Why the repo is designed this way — golden record, think-first, privacy |
 

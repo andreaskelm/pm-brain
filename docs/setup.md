@@ -268,6 +268,47 @@ From here, everything is driven by real work and real problems.
 
 ---
 
+## Who it's for
+
+PM Brain is for:
+
+- PMs at any level whose actual Tuesday mornings look nothing like LinkedIn thought-leadership threads.  
+- Teams who want shared language and a living knowledge base that does not go stale.  
+- Managers who want judgment, discovery, and strategy **visible** and coachable, not just shipped outcomes.  
+
+If you are tired of frameworks that assume the organization is already aligned and the problem is already obvious, this is for you.
+
+---
+
+## Day-to-day workflow
+
+On a typical day:
+
+1. Open a conversation with the agent (or your AI tool) with this repo as context.  
+2. Describe what you are thinking through — messy is fine; that is the point.  
+3. Stay in product_sense while the agent asks hard questions and surfaces risks.  
+4. When the thinking is solid enough, let it route you to the right skill or template.  
+5. After substantial work, log forecasts and decisions in `5-Growth/` when you stated a confidence level.  
+6. Update company context, avatars, or organizational-survival docs when reality teaches you something new.  
+
+Over time you get **better decisions** and a **paper trail of how you think** — git history included.
+
+---
+
+## Keeping it alive
+
+Living system, not a annual slide deck:
+
+- **When you use a file, update it.** Let git be the changelog.  
+- **Weekly:** Active initiatives; optional [weekly review](../.claude/skills/weekly-review/SKILL.md) for `5-Growth/weekly/`.  
+- **Monthly:** Frameworks you touched; stakeholder avatars after key conversations.  
+- **Quarterly:** Company context, strategy, OKRs.  
+- **After political incidents:** Organizational-survival docs — power maps and red flags first.  
+
+Small, regular updates beat big overhauls. Design rationale: [principles.md](principles.md).
+
+---
+
 ## Reference
 
 - **Overview and philosophy:** [README.md](../README.md)
