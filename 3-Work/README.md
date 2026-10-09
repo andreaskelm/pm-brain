@@ -26,7 +26,7 @@ This directory holds **active initiatives** — early thinking through PRD and r
 1. Create a new initiative folder when you have an early idea (copy [1-Initiative-Codename/](1-Initiative-Codename/) if helpful).
 2. Run the **`opportunity-assessment`** skill and save output to `opportunity-assessment.md`.
 3. Validate with **`discovery-synthesis`**; store summaries in `research/` and link `4-Research/`.
-4. When ready, **`write-prd`** / **`roadmap`** into this folder; log bets with confidence in `5-Growth/decisions.md`.
+4. When ready, **`write-prd`** / **`roadmap`** into this folder; log big calls in `5-Growth/decisions.md` (local in private mode).
 
 ## Quick start: self-quiz + AI collaboration
 

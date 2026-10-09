@@ -218,7 +218,7 @@ Decision: [Choose one and execute]
 
 **STEP 1b: Drift Sweep (10 min)**
 
-Brain-wide pass over logged decisions and beliefs — memory systems rot when nothing sweeps. Run via `/weekly-review` or inline here.
+Brain-wide pass over logged decisions and beliefs — memory systems rot when nothing sweeps. Run via `weekly-review` skill or inline here.
 
 **Scan:**
 - [5-Growth/decisions.md](../../../5-Growth/decisions.md) — unresolved rows past their resolve-by date; reopen triggers that may have fired

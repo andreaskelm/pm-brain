@@ -9,14 +9,18 @@
 ## Routing
 
 - **Product signals** (strategy, discovery, prioritization, roadmap, stakeholder, politics, "help me think through") **and no explicit doc request** → **product_sense**
-- **Explicit doc request** ("write a PRD", "create OKRs", "draft the roadmap") → **execution_mode** (preflight first)
+- **Explicit doc request** ("write a PRD", "create OKRs", "draft the roadmap") → **execution_mode** (preflight first; load matching skill)
 - **Substantial decision or artifact done, or a clear pause** → suggest **meta_reflection**
-- **End-of-week signal** ("wrap up", "Friday", "close the week") → suggest the weekly reflection and drift sweep — unconditionally, don't wait to be asked
+- **End-of-week signal** ("wrap up", "Friday", "close the week") → suggest **weekly-review** skill + drift sweep ([2-weekly-cadence.md](../2-Methods/4-Execution/1-Daily-Execution-And-Rituals/2-weekly-cadence.md) STEP 1b) — unconditionally, don't wait to be asked
 - **Otherwise** → **conversation**
 
 **Intent disambiguation:** when a word could mean background context OR build-an-artifact ("roadmap", "strategy"), state your interpretation in one sentence and confirm before loading anything.
 
 **Company context guard:** before editing numbered docs in `1-Context/`, check `Maintained?` in [CONTEXT-HEALTH.md](../1-Context/CONTEXT-HEALTH.md). `Reference` or `External` → route the update to `3-Work/[initiative]/` or a stakeholder avatar instead. Avatars are always maintained.
+
+**Contradiction detection (decision-level):** When new info contradicts a logged decision, reopen trigger, or stated belief in repo files, surface it in one sentence ("this cuts against X you decided in March — revisit?"). Before asserting, check [5-Growth/decisions.md](../5-Growth/decisions.md), live assumptions in the latest [weekly note](../5-Growth/weekly/README.md), and relevant `3-Work/[initiative]/decisions.md`. Belief-level stays conversational (hypothesis stress-test lens) plus weekly live-assumptions.
+
+**Evidence strength:** When a load-bearing claim appears, name its tier in passing (documented > verbal > hunch > industry). Vocabulary only — see [evidence-strength.md](../2-Methods/1-Foundations/1-Mental-Models/1-Decision-Making/7-evidence-strength.md).
 
 ---
 
@@ -52,9 +56,9 @@
 
 **Entry:** [5-Growth/README.md](../5-Growth/README.md) for where to log.
 
-Keep it light — a few pointed questions, then move on. Exit checklist, every time: "Any decisions with a confidence level worth logging?" Include a reopen trigger with every logged decision or forecast.
+Keep it light — a few pointed questions, then move on. Exit checklist, every time: "Any decisions with a confidence level worth logging?" Include a reopen trigger with every logged decision.
 
-**Rule changes** go to one place each: persona, voice, lenses, principles → [AGENTS.md](../AGENTS.md); state behavior → this file. No scattered catch-alls.
+**Rule changes** go to one place each: persona, voice, lenses, principles, wake table → [AGENTS.md](../AGENTS.md); state behavior → this file. No scattered catch-alls.
 
 ---
 

@@ -128,7 +128,7 @@ Keep shifts natural — one sentence is enough. These are postures, not costumes
 
 **execution_mode:** Turn messy thinking into clear artifacts. Pull real sentences from their braindump; don't invent a story. Flag gaps ("This assumes X but earlier you said Y") without blocking. **Read the matching `.claude/skills/<name>/SKILL.md` first** — skills own steps and templates; use `2-Methods/` only as reference when the skill points there. Don't browse framework folders instead of a skill.
 
-**meta_reflection:** Lightweight. "What did we learn?" / "What would reopen this?" / "What should we watch?" Offer a row in `5-Growth/decisions.md` when there's a bet with confidence, then move on.
+**meta_reflection:** Lightweight. "What did we learn?" / "What would you do differently?" / "What would reopen this?" / "What should we watch?" Offer a row in `5-Growth/decisions.md` when there's a bet with confidence (reopen trigger included), then move on.
 
 **conversation:** Help them find things in the repo; re-route when product signals show up.
 
