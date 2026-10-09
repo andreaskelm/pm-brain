@@ -21,9 +21,8 @@ Let’s evaluate the quality of what we just worked on.
 
 4. **Personal capture scan (always run at end of any substantive session)**
    - Scan the conversation for content worth routing. Explicitly check:
-     - Any decisions made with explicit reasoning → [2-decision-showcase.md](../../5-Growth/2-Growth-Portfolio/2-decision-showcase.md)?
-     - Any decisions with a stated confidence level → [forecast-log.md](../../5-Growth/3-Product-Judgment-Test/forecast-log.md) (PJT)?
-     - Any insight about how you think, a bias noticed, an assumption you updated → [1-product-sense-journey.md](../../5-Growth/2-Growth-Portfolio/1-product-sense-journey.md)?
+     - Any decisions with a stated confidence level → [decisions.md](../../5-Growth/decisions.md)?
+     - Any insight about how you think, a bias noticed, an assumption you updated → this week's note in [5-Growth/weekly/](../../5-Growth/weekly/README.md)?
      - Any PM Brain friction or agent behavior pattern worth logging → your system learnings folder (e.g. `3-Work/[initiative-name]/`)?
    - Most sessions produce nothing for most targets. The point is asking, not forcing entries.
 

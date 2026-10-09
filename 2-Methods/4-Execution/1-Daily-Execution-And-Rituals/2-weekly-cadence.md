@@ -218,13 +218,12 @@ Decision: [Choose one and execute]
 
 **STEP 1b: Drift Sweep (10 min)**
 
-Brain-wide pass over episodic logs — memory systems rot when nothing sweeps. Run via `/week` or inline here.
+Brain-wide pass over logged decisions and beliefs — memory systems rot when nothing sweeps. Run via `/weekly-review` or inline here.
 
 **Scan:**
-- `5-Growth/3-Product-Judgment-Test/forecast-log.md` — unresolved bets; reopen triggers that may have fired
-- `5-Growth/2-prioritization-decision-log.md` — recent decisions vs. this week's evidence
-- `5-Growth/3-research-insight-log.md` — new insights contradicting prior calls
-- Weekly reflection **live assumptions to revisit** block (see [3-weekly-reflection-template.md](../../../5-Growth/4-Coaching-Templates/3-weekly-reflection-template.md))
+- [5-Growth/decisions.md](../../../5-Growth/decisions.md) — unresolved rows past their resolve-by date; reopen triggers that may have fired
+- Last week's **live assumptions** block in [5-Growth/weekly/](../../../5-Growth/weekly/README.md)
+- New research in `4-Research/` or `3-Work/[initiative]/research/` that contradicts a prior call
 - Relevant `3-Work/[initiative]/` and `1-Context/` if strategy or stakeholder context shifted
 
 **Flag (3–5 bullets max):**
@@ -233,7 +232,7 @@ Brain-wide pass over episodic logs — memory systems rot when nothing sweeps. R
 3. Contradictions — this week's signals cutting against prior logged decisions
 4. Weak evidence — load-bearing claims on verbal/hunch/industry only where documented was expected
 
-Route findings to the learning log. One recommended action for next week.
+Route findings to this week's note (`5-Growth/weekly/`). One recommended action for next week.
 
 Reference: [7-evidence-strength.md](../../1-Foundations/1-Mental-Models/1-Decision-Making/7-evidence-strength.md) for naming evidence tiers when flagging weak claims.
 

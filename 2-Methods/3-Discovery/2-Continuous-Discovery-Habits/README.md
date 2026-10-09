@@ -67,11 +67,7 @@ Use these templates to conduct systematic customer discovery interviews and synt
 ### Step 1: Conduct Interviews
 Use `1-create-interview-snapshot.md` to capture insights from each interview.
 
-After each interview (or small batch of interviews), consider adding a short entry in:
-
-- `5-Growth/3-research-insight-log.md`
-
-to record:
+After each interview (or small batch of interviews), add a short note next to the snapshots (`4-Research/` or `3-Work/[initiative]/research/`) to record:
 - 1–3 key learnings,
 - the underlying problem/job,
 - how this affects your current prioritization assumptions,

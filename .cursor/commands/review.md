@@ -20,7 +20,7 @@ Let's do a review. Before starting, ask or clarify:
    **Freshness review** — Is this still current?
    - Check `lastUpdated` metadata against recent weekly logs and daily log entries
    - Flag anything that contradicts newer decisions, observations, or context captured since the file was written
-   - Cross-check reopen triggers in `5-Growth/3-Product-Judgment-Test/forecast-log.md` and `5-Growth/2-prioritization-decision-log.md` — flag if current content would fire a stored trigger
+   - Cross-check reopen triggers in `5-Growth/decisions.md` — flag if current content would fire a stored trigger
    - Reference `1-Context/CONTEXT-HEALTH.md` for company context freshness signals
 
    **Consistency review** — Does this align with the rest of the repo?
@@ -42,8 +42,8 @@ Let's do a review. Before starting, ask or clarify:
 
 4. **Capture routing (always run before closing a review session)**
    - Before finishing, ask: did the review surface anything worth routing to the growth portfolio?
-     - A decision that shows good judgment → [2-decision-showcase.md](../../5-Growth/2-Growth-Portfolio/2-decision-showcase.md)?
-     - A pattern in how you think or what you missed → [1-product-sense-journey.md](../../5-Growth/2-Growth-Portfolio/1-product-sense-journey.md)?
+     - A decision worth tracking → [decisions.md](../../5-Growth/decisions.md)?
+     - A pattern in how you think or what you missed → this week's note in [5-Growth/weekly/](../../5-Growth/weekly/README.md)?
      - A system gap or agent behavior miss → your system learnings folder?
    - Keep it brief — one question, one pass. Most reviews produce nothing for the portfolio; the point is not skipping the check.
 

@@ -15,10 +15,8 @@ Plan the week: Monday (last-week retrospective, this-week priorities, team sync,
 Run this as part of Friday close — before or after the week retrospective. Scan episodic logs for drift; route dated findings to the learning log.
 
 **Load and scan:**
-- `5-Growth/3-Product-Judgment-Test/forecast-log.md` — unresolved bets; reopen triggers that may have fired based on this week's signals
-- `5-Growth/2-prioritization-decision-log.md` — recent decisions; reopen triggers vs. new evidence
-- `5-Growth/3-research-insight-log.md` — insights that contradict prior decisions or open assumptions
-- `5-Growth/1-Learning-Log/` — current week's reflection; **live assumptions to revisit** block
+- `5-Growth/decisions.md` — unresolved rows past resolve-by; reopen triggers that may have fired based on this week's signals
+- `5-Growth/weekly/` — last week's note; **live assumptions** block
 - Relevant `3-Work/[initiative]/` decision files and `1-Context/` if strategy or stakeholder context shifted this week
 
 **Flag:**

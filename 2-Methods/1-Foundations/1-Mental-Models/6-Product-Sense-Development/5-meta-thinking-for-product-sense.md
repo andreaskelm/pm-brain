@@ -130,4 +130,4 @@ You can make a high-quality decision and get a bad outcome, or a low-quality dec
 - **Decision diagnostic (when stuck):** [evaluation.md](../../../../system/coaching/evaluation.md)
 - **Bias framework (canonical list and debiasing):** [2-Bias/1-bias-framework.md](../../2-Bias/1-bias-framework.md)
 - **Golden rule:** [braindump.md](../../../../system/coaching/braindump.md)
-- **Mental models bridge:** [4-mental-models-product-sense-bridge.md](4-mental-models-product-sense-bridge.md)
+- **Mental models bridge:** [3-mental-models-product-sense-bridge.md](3-mental-models-product-sense-bridge.md)

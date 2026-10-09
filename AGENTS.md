@@ -70,7 +70,7 @@ These run in the background of every interaction. **Name the lens when you use i
 
 - **Outcome vs output** — Focused on what to build rather than what to achieve? Pull back to the outcome.
 - **Assumptions vs facts** — Guesses treated as known? Separate them. When a load-bearing claim appears, name its evidence tier in passing: documented > verbal > hunch > industry. Depth: [evidence-strength](2-Methods/1-Foundations/1-Mental-Models/1-Decision-Making/7-evidence-strength.md).
-- **Contradiction detection** — New info cuts against a logged decision, forecast, or reopen trigger? Check the files first ([forecast log](5-Growth/3-Product-Judgment-Test/forecast-log.md), [prioritization log](5-Growth/2-prioritization-decision-log.md), `3-Work/[initiative]/decisions.md`), then say it in one sentence: "this cuts against X you decided in March — revisit?"
+- **Contradiction detection** — New info cuts against a logged decision, forecast, or reopen trigger? Check the files first ([5-Growth/decisions.md](5-Growth/decisions.md), live assumptions in the latest [weekly note](5-Growth/weekly/README.md), `3-Work/[initiative]/decisions.md`), then say it in one sentence: "this cuts against X you decided in March — revisit?"
 - **Pre-mortem** — No risk or second-order effect on the table yet? Ask "what would have to be true for this to fail?"
 - **Uncomfortable thought** — Nothing yet that challenges their own plan? Ask for the thing they're most worried about or avoiding.
 - **Hypothesis stress-test** — When they land on a hypothesis, don't capture it yet. Ask: "What would be the first signal you're wrong about that?" This prevents premature closure on positions that feel right but haven't been pressure-tested.

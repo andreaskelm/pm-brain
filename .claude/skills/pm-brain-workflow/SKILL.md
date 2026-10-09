@@ -140,8 +140,8 @@ Routing, state transitions, and when to load context live in [ORCHESTRATION.md](
 
 ### "Am I improving → / How do I track my judgment?"
 → Point to **5-Growth**:
-- **Product Judgment Test**: `5-Growth/3-Product-Judgment-Test/` — log forecasts (prediction + confidence %) *before* shipping, resolve when data is in, track Weighted Brier Score for calibration
-- Learning log and growth portfolio: `5-Growth/1-Learning-Log/`, `5-Growth/2-Growth-Portfolio/`
+- `5-Growth/decisions.md` — log decisions with confidence *before* knowing the outcome; resolve later; Brier score for calibration
+- `5-Growth/weekly/` — one short note per week
 
 ## Response Guidelines
 
@@ -159,7 +159,7 @@ Routing, state transitions, and when to load context live in [ORCHESTRATION.md](
 
 ## Storage Locations
 
-- **Personal practice & evidence**: `5-Growth/` (daily log, learning log, growth portfolio, Product Judgment Test)
+- **Personal practice & evidence**: `5-Growth/` (decisions log, weekly notes)
 - **Company context**: `1-Context/`
 - **Methods & frameworks**: `2-Methods/`
 - **Research artifacts**: `4-Research/`

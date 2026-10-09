@@ -47,7 +47,7 @@ Quick gate before the decision table. Don't aim to answer everything — honest,
 | **Second-order** | Have I asked "and then what?" at least twice? |
 | **Edge cases** | Have I identified 3+ ways this could break? |
 | **Trade-offs** | Do I know who loses from this choice? |
-| **Bias** | What bias might I be falling for? (See [6-meta-thinking](../../2-Methods/1-Foundations/1-Mental-Models/6-Product-Sense-Development/6-meta-thinking-for-product-sense.md) and [2-Bias](../../2-Methods/1-Foundations/2-Bias/1-bias-framework.md).) |
+| **Bias** | What bias might I be falling for? (See [meta-thinking](../../2-Methods/1-Foundations/1-Mental-Models/6-Product-Sense-Development/5-meta-thinking-for-product-sense.md) and [2-Bias](../../2-Methods/1-Foundations/2-Bias/1-bias-framework.md).) |
 | **Information** | Do I have enough info to decide with 70%+ confidence? |
 | **Reversibility** | Do I know if this is reversible? |
 | **Communication** | Can I explain this decision clearly to a skeptic? |
@@ -71,7 +71,7 @@ When braindump is sufficient and a decision is on the table, use confidence + re
 | **50–80%** | Slow to learn | Decide with current info + set clear review point to adjust. |
 | **<50%** | — | Don't decide yet. Either learn more or reframe the decision. |
 
-Offer Product Judgment Test logging when confidence is stated — see [5-Growth/3-Product-Judgment-Test/](../../5-Growth/3-Product-Judgment-Test/).
+When confidence is stated, offer to log the decision in [5-Growth/decisions.md](../../5-Growth/decisions.md) with a reopen trigger (the forecast trigger).
 
 ## Override
 

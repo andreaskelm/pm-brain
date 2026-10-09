@@ -375,11 +375,7 @@
 
 Before you treat this PRD as “done”, run a quick product-sense pass and, if it’s a meaningful initiative, capture it in your personal logs.
 
-**Where to reflect/log:**
-- Quick check-in: `5-Growth/daily-log-*.md`
-- Bigger bets / roadmap-shaping work:
-  - Decision context in `5-Growth/2-prioritization-decision-log.md`
-  - Key research learnings in `5-Growth/3-research-insight-log.md`
+**Where to log:** the bet itself (expected outcome, confidence, reopen trigger) as a row in `5-Growth/decisions.md`. Research behind it stays in `4-Research/` or the initiative's `research/` folder.
 
 **Prompts to sanity-check this PRD:**
 - Who specifically is this for, and what job are they really hiring this for?
@@ -388,7 +384,7 @@ Before you treat this PRD as “done”, run a quick product-sense pass and, if 
 - What qualitative and quantitative evidence are we actually using?
 - What would make us change our mind 4–8 weeks after launch?
 
-You don’t need pages of extra writing—2–5 thoughtful lines in the relevant `5-Growth` log is enough to keep your day-to-day execution anchored in product sense.
+You don’t need pages of extra writing—one honest row in `5-Growth/decisions.md` is enough to keep your day-to-day execution anchored in product sense.
 
 -----
 

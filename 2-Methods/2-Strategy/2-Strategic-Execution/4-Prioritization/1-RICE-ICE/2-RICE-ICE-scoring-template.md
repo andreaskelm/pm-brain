@@ -36,7 +36,7 @@ This prioritization reflects our current strategy and understanding. Priorities 
 
 For the few initiatives that actually drive your roadmap, run this **before** you treat the RICE score as truth. For each top item, consider adding a short entry to:
 
-- `5-Growth/2-prioritization-decision-log.md`
+- `5-Growth/decisions.md` (decision, confidence, reopen trigger)
 
 Use these prompts:
 

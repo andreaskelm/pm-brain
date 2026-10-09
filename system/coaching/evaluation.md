@@ -57,4 +57,4 @@ Sometimes the block isn't missing data — it's the wrong frame. Check these bef
 
 Use the `/unstuck` command or bring it to a colleague. Sometimes the block is emotional, not analytical.
 
-For mental models that help with specific block types: [4-mental-models-product-sense-bridge.md](../../2-Methods/1-Foundations/1-Mental-Models/6-Product-Sense-Development/4-mental-models-product-sense-bridge.md)
+For mental models that help with specific block types: [mental-models-product-sense-bridge.md](../../2-Methods/1-Foundations/1-Mental-Models/6-Product-Sense-Development/3-mental-models-product-sense-bridge.md)

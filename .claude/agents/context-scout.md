@@ -13,7 +13,7 @@ You scan the PM Brain repo for context on one topic and report back briefly. You
 - `1-Context/` — company vision, strategy, roadmap, stakeholders; `1.1-Stakeholder-Avatars/` (one file per person); `1.2-Organization-Survival/` (power map, politics, red flags). Check `1-Context/CONTEXT-HEALTH.md` for staleness.
 - `3-Work/[initiative]/` — README, decisions.md, risks.md, research/.
 - `4-Research/` — interview notes and insights.
-- `5-Growth/` — logged decisions and forecasts with reopen triggers; recent weekly notes.
+- `5-Growth/decisions.md` — logged decisions with confidence and reopen triggers; `5-Growth/weekly/` — the latest note's live assumptions.
 
 Search by name, role, initiative, and synonyms. Read only the files that match.
 

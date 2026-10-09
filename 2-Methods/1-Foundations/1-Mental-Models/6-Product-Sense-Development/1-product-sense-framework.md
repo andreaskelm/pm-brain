@@ -50,7 +50,7 @@ Two abilities quietly sit underneath strong product sense:
 - **Reflection** that accelerates learning
 - **Tracking** that proves growth
 
-**The research:** Deliberate practice is how experts develop expertise (Ericsson, Dweck, Dweck). 10 minutes daily compounds faster than 2 hours monthly.
+**The research:** Deliberate practice is how experts develop expertise (Ericsson, Dweck). 10 minutes daily compounds faster than 2 hours monthly.
 
 -----
 
@@ -58,68 +58,15 @@ Two abilities quietly sit underneath strong product sense:
 
 ### The Practice Cycle
 
-```
-Daily Practice (10 min)
- ?
-Weekly Reflection (30 min)
- ?
-Monthly Synthesis (60 min)
- ?
-Growth Portfolio (evidence for reviews)
-```
+Earlier versions of this system prescribed daily logs, weekly reflections, monthly syntheses and a growth portfolio. In practice nobody kept all four going, and the gaps made people feel behind. What actually compounds is smaller:
 
-### Daily Practice (10 minutes)
+**Log calls before you know the outcome.** Every real decision with a confidence level goes into `5-Growth/decisions.md`, with a reopen trigger. This is the core of the system: it turns intuition into a track record you can check ([calibration](../1-Decision-Making/8-calibration.md)).
 
-**What:** Pick ONE exercise from the daily practice menu
-- User observation
-- Product teardown
-- Cross-domain inspiration
-- Pattern recognition
-- Judgment training
+**One short weekly note.** `5-Growth/weekly/YYYY-Www.md`: what resolved, what assumptions you're carrying, what you're avoiding. The agent drafts it; you correct it. Fifteen minutes.
 
-**How:** Set timer, do it, log 1-2 sentence insight
+**Reps when you want to train something specific.** One 10-minute exercise from [2-practice-exercises.md](2-practice-exercises.md): observation, teardown, cross-domain, pattern, or judgment. Set a timer, do it, write one sentence.
 
-**Why:** Builds product thinking into muscle memory
-
-**Where:** Log in `5-Growth/1-daily-log-YYYY-QX.md`
-
-### Weekly Reflection (30 minutes)
-
-**What:** Synthesize week's practice and decisions
-
-**How:** 
-1. Review daily log
-2. Copy weekly reflection template
-3. Identify patterns, decisions, learnings
-4. Set focus for next week
-
-**Why:** Connects daily dots into weekly insights
-
-**Where:** `5-Growth/1-Learning-Log/[Year]-Q[#]/week-##.md`
-
-### Monthly Synthesis (60 minutes)
-
-**What:** Review month's growth and patterns
-
-**How:**
-1. Review all weekly reflections
-2. Update self-assessment (rate 4 dimensions)
-3. Update growth portfolio
-4. Identify trajectory and focus areas
-
-**Why:** Tracks growth trajectory, calibrates judgment
-
-**Where:** `5-Growth/1-Learning-Log/[Year]-Q[#]/monthly-[month].md`
-
-### Growth Portfolio (Ongoing)
-
-**What:** Evidence of product sense development
-
-**How:** Document journey, decisions, and outcomes
-
-**Why:** Proof for 1:1s, performance reviews, career growth
-
-**Where:** `5-Growth/2-Growth-Portfolio/`
+**Monthly or quarterly, on request.** The agent rolls weekly notes and resolved decisions into a synthesis; you add the honest parts. Templates in [3-Self-Reflection](../../3-Self-Reflection/README.md). That's also your evidence for 1:1s and reviews; no separate portfolio needed.
 
 -----
 
@@ -159,7 +106,7 @@ Rate yourself monthly on these dimensions (1-5 scale):
 **4 - Principled:** I make clear tradeoffs aligned with strategy and can defend them
 **5 - Masterful:** I see second-order effects (user behavior shifts, team/organization consequences, future optionality) and make bets that compound over time, even when the information is messy or incomplete
 
-**See:** `../../../../5-Growth/4-Coaching-Templates/2-self-assessment-template.md` for detailed assessment framework.
+**See:** [4-self-assessment-template.md](../../3-Self-Reflection/4-self-assessment-template.md) for the quarterly assessment.
 
 -----
 
@@ -196,17 +143,11 @@ Everything else in the templates is optional depth layered on top of these few q
 - **Output:** Shipped features, user value, business impact
 
 **The flow:**
-```
-1. Practice product thinking (5-Growth)
- ?
-2. Use frameworks to structure thinking (2-Methods)
- ?
-3. Execute on initiatives (3-Work)
- ?
-4. Reflect on outcomes (5-Growth)
- ?
-[repeat]
-```
+1. Think first: braindump, and log the call with a confidence level (`5-Growth/decisions.md`)
+2. Structure the thinking with a skill or framework
+3. Execute on the initiative (`3-Work/`)
+4. Resolve the call when the outcome is in, and read the misses (`5-Growth/`)
+5. Repeat
 
 **Key principle:** Product sense practice makes you better at using frameworks, which makes you better at executing initiatives.
 
@@ -392,9 +333,9 @@ You will often be deciding in fog. Practicing with these prompts trains you to n
 
 - **Braindump prompts:** [system/coaching/prompts.md](../../../../system/coaching/prompts.md)
 - **Decision diagnostic:** [system/coaching/evaluation.md](../../../../system/coaching/evaluation.md)
-- **Daily practice:** [1-daily-practice-exercises.md](../../../../5-Growth/4-Coaching-Templates/1-daily-practice-exercises.md)
-- **Self-assessment:** [2-self-assessment-template.md](../../../../5-Growth/4-Coaching-Templates/2-self-assessment-template.md)
+- **Practice exercises:** [2-practice-exercises.md](2-practice-exercises.md)
+- **Self-assessment:** [4-self-assessment-template.md](../../3-Self-Reflection/4-self-assessment-template.md)
 - **Golden rule:** [system/coaching/braindump.md](../../../../system/coaching/braindump.md)
-- **Practice space:** [5-Growth/](../../../../5-Growth/)
+- **Your track record:** [5-Growth/](../../../../5-Growth/README.md)
 
-**Start with daily practice. Everything else follows.**
+**Start by logging your next real decision with a confidence level. Everything else follows.**

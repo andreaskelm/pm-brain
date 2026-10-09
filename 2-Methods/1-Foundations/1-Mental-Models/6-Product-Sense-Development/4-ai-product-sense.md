@@ -84,5 +84,5 @@ Decide explicitly:
 ## Links
 
 - **Braindump prompts for AI decisions:** [system/coaching/prompts.md — For AI Product Decisions](../../../../system/coaching/prompts.md#for-ai-product-decisions)
-- **Mental models (second-order, inversion):** [4-mental-models-product-sense-bridge.md](4-mental-models-product-sense-bridge.md)
+- **Mental models (second-order, inversion):** [3-mental-models-product-sense-bridge.md](3-mental-models-product-sense-bridge.md)
 - **Golden rule:** [braindump.md](../../../../system/coaching/braindump.md)

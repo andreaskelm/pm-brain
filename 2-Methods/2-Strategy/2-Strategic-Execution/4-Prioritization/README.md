@@ -60,9 +60,9 @@ Systematic methods to decide what to do first. Use these to make defensible, tra
 
 ### 3. Log the Decision (Optional but Recommended)
 
-Before or after you score, capture the decision in your **prioritization decision log**:
+Before or after you score, log the call in your **decisions log** (decision, confidence, reopen trigger):
 
-- **Log file:** `5-Growth/2-prioritization-decision-log.md`
+- **Log file:** `5-Growth/decisions.md`
 - **What to capture:** who this is for, the real job/pain, evidence, opportunity cost, and “what could catastrophically go wrong if we’re wrong?”
 
 This gives you a reusable trail of **why** you prioritized what you did, and lets you revisit the quality of your calls later.

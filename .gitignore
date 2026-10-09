@@ -50,14 +50,12 @@ __pycache__/
 # ============================================
 
 # # --- Personal practice content ---
-# 5-Growth/1-daily-log-*.md
-# 5-Growth/1-Learning-Log/*/
-# 5-Growth/2-Growth-Portfolio/*.md
-# !5-Growth/2-Growth-Portfolio/README.md
+# # (decisions.md ships as a template; once you add rows, run: git rm --cached 5-Growth/decisions.md)
+# 5-Growth/decisions.md
+# 5-Growth/weekly/*
+# !5-Growth/weekly/README.md
+# 5-Growth/monthly-*.md
 # 5-Growth/self-assessment-*.md
-# 5-Growth/metrics-dashboard*.md
-# 5-Growth/3-Product-Judgment-Test/forecast-log.md
-# 5-Growth/3-Product-Judgment-Test/dashboard.md
 #
 # # --- Company-specific content ---
 # 1-Context/*.md
@@ -83,14 +81,11 @@ __pycache__/
 # ============================================
 
 # # --- Personal practice content (each team member keeps theirs private) ---
-# 5-Growth/1-daily-log-*.md
-# 5-Growth/1-Learning-Log/*/
-# 5-Growth/2-Growth-Portfolio/*.md
-# !5-Growth/2-Growth-Portfolio/README.md
+# 5-Growth/decisions.md
+# 5-Growth/weekly/*
+# !5-Growth/weekly/README.md
+# 5-Growth/monthly-*.md
 # 5-Growth/self-assessment-*.md
-# 5-Growth/metrics-dashboard*.md
-# 5-Growth/3-Product-Judgment-Test/forecast-log.md
-# 5-Growth/3-Product-Judgment-Test/dashboard.md
 #
 # # --- Company-specific content ---
 # 1-Context/*.md

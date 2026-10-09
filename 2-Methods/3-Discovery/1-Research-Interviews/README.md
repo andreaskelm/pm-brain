@@ -63,9 +63,9 @@ Specifically, the "Before User Research / Discovery" section:
 
 ### 3. Log the Insights (Optional but Recommended)
 
-Right after interviews, capture the most important learnings in your **research & insight log**:
+Right after interviews, capture the most important learnings next to the raw notes:
 
-- **Log file:** `5-Growth/3-research-insight-log.md`
+- **Where:** `4-Research/` or `3-Work/[initiative]/research/`
 - **What to capture:** 1–3 key learnings, the underlying problem/job, how this supports or challenges your current assumptions, and what surprised you.
 
 This creates a lightweight evidence trail you can reuse later for prioritization, PRDs, and strategy debates.

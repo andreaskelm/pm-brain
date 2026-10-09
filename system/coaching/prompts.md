@@ -68,6 +68,6 @@ The user is about to commit. Run the pre-mortem.
 - **Session sequence** → [README.md](README.md)
 - **Exit criteria / sufficiency** → [braindump.md](braindump.md)
 - **Stuck mid-braindump** → [evaluation.md](evaluation.md)
-- **Bias or thinking quality** → [6-meta-thinking-for-product-sense.md](../../2-Methods/1-Foundations/1-Mental-Models/6-Product-Sense-Development/6-meta-thinking-for-product-sense.md)
-- **AI product decisions** → [5-ai-product-sense.md](../../2-Methods/1-Foundations/1-Mental-Models/6-Product-Sense-Development/5-ai-product-sense.md)
+- **Bias or thinking quality** → [meta-thinking-for-product-sense.md](../../2-Methods/1-Foundations/1-Mental-Models/6-Product-Sense-Development/5-meta-thinking-for-product-sense.md)
+- **AI product decisions** → [ai-product-sense.md](../../2-Methods/1-Foundations/1-Mental-Models/6-Product-Sense-Development/4-ai-product-sense.md)
 - **Braindump sufficient → frameworks** → [template-finder](../../2-Methods/0-template-finder.md)

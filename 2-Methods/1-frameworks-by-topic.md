@@ -10,7 +10,7 @@ Paths below are relative to `2-Methods/`.
 
 **Bias (cognitive)**  
 - [2-Bias/1-bias-framework.md](1-Foundations/2-Bias/1-bias-framework.md) — checklist, debiasing strategies  
-- Product sense: [6-Product-Sense-Development/6-meta-thinking-for-product-sense.md](1-Foundations/1-Mental-Models/6-Product-Sense-Development/6-meta-thinking-for-product-sense.md) (assumptions, real-time bias check)
+- Product sense: [6-Product-Sense-Development/5-meta-thinking-for-product-sense.md](1-Foundations/1-Mental-Models/6-Product-Sense-Development/5-meta-thinking-for-product-sense.md) (assumptions, real-time bias check)
 
 **Crisis / incident**  
 - [5-Communication/4-Crisis-Management/](5-Communication/4-Crisis-Management/) — communication playbooks, templates  
@@ -20,7 +20,7 @@ Paths below are relative to `2-Methods/`.
 - [1-Mental-Models/1-Decision-Making/2-one-way-two-way-doors.md](1-Foundations/1-Mental-Models/1-Decision-Making/2-one-way-two-way-doors.md)  
 - [1-Mental-Models/1-Decision-Making/1-pre-mortems.md](1-Foundations/1-Mental-Models/1-Decision-Making/1-pre-mortems.md)  
 - [1-Mental-Models/1-Decision-Making/3-assumptions-framework.md](1-Foundations/1-Mental-Models/1-Decision-Making/3-assumptions-framework.md)  
-- Bridge to product sense: [6-Product-Sense-Development/4-mental-models-product-sense-bridge.md](1-Foundations/1-Mental-Models/6-Product-Sense-Development/4-mental-models-product-sense-bridge.md)
+- Bridge to product sense: [6-Product-Sense-Development/3-mental-models-product-sense-bridge.md](1-Foundations/1-Mental-Models/6-Product-Sense-Development/3-mental-models-product-sense-bridge.md)
 
 **Discovery / research**  
 - [3-Discovery/README.md](3-Discovery/README.md) — overview  
@@ -51,7 +51,7 @@ Paths below are relative to `2-Methods/`.
 **Mental models (when to use)**  
 - [1-Foundations/0-index.md](1-Foundations/0-index.md) — **full list** of every mental model (Decision-Making, Product-Thinking, Work-Levels, Execution-Hygiene, Team-Dynamics) plus Bias and Self-Reflection  
 - [1-Mental-Models/README.md](1-Foundations/1-Mental-Models/README.md) — Mental Models folder overview  
-- [6-Product-Sense-Development/4-mental-models-product-sense-bridge.md](1-Foundations/1-Mental-Models/6-Product-Sense-Development/4-mental-models-product-sense-bridge.md) — which model for which situation
+- [6-Product-Sense-Development/3-mental-models-product-sense-bridge.md](1-Foundations/1-Mental-Models/6-Product-Sense-Development/3-mental-models-product-sense-bridge.md) — which model for which situation
 
 **Metrics**  
 - [4-Execution/6-Metrics/](4-Execution/6-Metrics/)  
