@@ -30,7 +30,7 @@ Let's do a review. Before starting, ask or clarify:
 
    **System health review** — Is PM Brain working well?
    - Review your system learnings folder (e.g. `3-Work/[initiative-name]/`) for open gaps and pending fixes
-   - Check `system/ORCHESTRATION.md` and `.cursor/rules/pm-brain.mdc` for any known inconsistencies or TODOs
+   - Check `AGENTS.md` and `system/ORCHESTRATION.md` for any known inconsistencies or TODOs
    - Review `system/evals/eval-results/` for patterns not yet addressed in rules or scenarios
    - Check `system/evals/agent-behavior-scenarios.json` for missing scenario types identified in eval logs
 

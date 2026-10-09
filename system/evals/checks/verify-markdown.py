@@ -30,7 +30,7 @@ ACTIVE_PREFIXES = {
     ".cursor",
     ".claude",
 }
-ROOT_FILES = {"AGENTS.md", "README.md", "USER.md", "TODO.md", "CLAUDE.md"}
+ROOT_FILES = {"AGENTS.md", "README.md", "USER.md", "TODO.md"}
 LINK_RE = re.compile(r"\[([^\]]*)\]\(([^)]+)\)")
 BACKTICK_PATH_RE = re.compile(
     r"`((?:\.\./)+(?:[0-9]-[^/`]+/)+[^`\s]+\.(?:md|mdc))`"

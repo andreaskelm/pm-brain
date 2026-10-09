@@ -220,7 +220,7 @@ def run_single(
             before = snapshot_files(workdir)
             prompt = f"""You are the PM Brain coach agent. Respond to this user message.
 
-Load AGENTS.md, system/MEMORY.md, and follow all routing rules.
+Follow AGENTS.md (read USER.md if present) and all routing rules.
 
 User message:
 {user_text}

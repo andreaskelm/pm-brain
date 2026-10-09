@@ -83,7 +83,7 @@ Recognize and mitigate cognitive biases that distort decision-making. Includes t
 
 ## How This Wires Into the Coaching System
 
-Two-tier architecture: some content is **always-on** (distilled into coaching lenses), the rest is **on-demand** (woken by conversation triggers). The wiring is declared in [MEMORY.md](../../system/MEMORY.md) and [ORCHESTRATION.md](../../system/ORCHESTRATION.md) — this section is the human-readable map of those decisions.
+Two-tier architecture: some content is **always-on** (distilled into coaching lenses), the rest is **on-demand** (woken by conversation triggers). The wiring is declared in [AGENTS.md](../../AGENTS.md) (lenses + wake table) — this section is the human-readable map of those decisions.
 
 ### Always-On (coaching lenses in AGENTS.md)
 
