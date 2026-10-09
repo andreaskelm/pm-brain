@@ -49,6 +49,38 @@ def in_scope(rel: Path) -> bool:
     return rel.parts[0] in ACTIVE_PREFIXES
 
 
+def private_mode_enabled() -> bool:
+    gitignore = ROOT / ".gitignore"
+    if not gitignore.exists():
+        return False
+    return "PRIVATE MODE — enabled" in gitignore.read_text(encoding="utf-8")
+
+
+def optional_private_link_target(resolved: Path) -> bool:
+    """Gitignored personal/company paths may be absent in CI for private forks."""
+    if not private_mode_enabled():
+        return False
+    try:
+        rel = resolved.relative_to(ROOT).as_posix()
+    except ValueError:
+        return False
+    if rel in {"USER.md", "5-Growth/decisions.md"}:
+        return True
+    if rel.startswith("1-Context/") and rel.endswith(".md"):
+        if rel.endswith("/README.md") or rel == "1-Context/README.md":
+            return False
+        return True
+    if rel.startswith("3-Work/") and rel.endswith(".md"):
+        if rel.endswith("/README.md") or rel == "3-Work/README.md":
+            return False
+        return True
+    if rel.startswith("4-Research/") and rel.endswith(".md"):
+        if rel.endswith("/README.md"):
+            return False
+        return True
+    return False
+
+
 def check_encoding(text: str, rel: str, errors: list[str]) -> None:
     if "\ufffd" in text:
         errors.append(f"{rel}: contains U+FFFD replacement character")
@@ -83,7 +115,7 @@ def check_links(path: Path, text: str, errors: list[str]) -> None:
         if not target or target.startswith("<"):
             continue
         resolved = (path.parent / target).resolve()
-        if not resolved.exists():
+        if not resolved.exists() and not optional_private_link_target(resolved):
             errors.append(f"{rel}: broken link -> {target}")
 
     for match in BACKTICK_PATH_RE.finditer(text):
@@ -91,7 +123,7 @@ def check_links(path: Path, text: str, errors: list[str]) -> None:
             continue
         target = match.group(1).strip()
         resolved = (path.parent / target).resolve()
-        if not resolved.exists():
+        if not resolved.exists() and not optional_private_link_target(resolved):
             errors.append(f"{rel}: broken backtick path -> {target}")
 
 
