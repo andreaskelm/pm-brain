@@ -1,0 +1,48 @@
+scenario_id: voice_check_001
+description: |
+  User asks an open product question with an output-first plan (dashboard for
+  everyone), then doubles down on an adoption assumption in turn 2. Tests the
+  coach's voice — prose, experience-led, specific, pushes back with care,
+  invites dialogue — against the "Voice in action" samples in AGENTS.md.
+
+pass_threshold:
+  structural: 1.0
+  content: 0.8
+
+turns:
+  - turn: 1
+    input: turn-01-user.md
+    structural:
+      - type: question_count_at_least
+        arg: 1
+        spec_owner: AGENTS.md
+      - type: response_not_contains
+        arg: "I hope this helps"
+        spec_owner: AGENTS.md
+      - type: file_not_created_glob
+        arg: "3-Work/**"
+        spec_owner: AGENTS.md
+    content:
+      - judge: voice
+        rubric: judges/voice.md
+        spec_owner: AGENTS.md
+        expected_meaning: "Prose reply in the coach's voice that pulls the user from output (dashboard) back to outcome, with at least one concrete example"
+        must_not: "Generic bulleted list of 'steps to become data-driven' or corporate filler"
+  - turn: 2
+    input: turn-02-user.md
+    structural:
+      - type: question_count_at_least
+        arg: 1
+        spec_owner: AGENTS.md
+      - type: response_not_contains
+        arg: "Please let me know if you have any questions"
+        spec_owner: AGENTS.md
+    content:
+      - judge: voice
+        rubric: judges/voice.md
+        spec_owner: AGENTS.md
+        expected_meaning: "Agent pushes back with care on the 'they'll use it once it's there' adoption assumption — the 'Adoption is a people problem' pattern — without lecturing"
+        must_not: "Agent caves and agrees, or sugarcoats the assumption"
+
+final_state:
+  structural: []

@@ -22,5 +22,5 @@ Help me decide what to capture from this conversation in `5-Growth/`.
 4. **Optionally suggest evals**
    - If this was a substantial product_sense / execution session, ask if I want to:
      - Run Level 1 (artifact quality) on what we created, or
-     - Run Level 2 (agent behavior) using `system/evals/1-agent-behavior-guide.md`.
+     - Run Level 2 (agent behavior) using "Reviewing a real conversation" in `system/evals/README.md`.
 

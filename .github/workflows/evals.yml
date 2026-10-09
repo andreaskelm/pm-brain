@@ -6,29 +6,15 @@ on:
     branches: [main, master]
 
 jobs:
-  l0-repo-health:
+  repo-health:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-      - run: pip install pyyaml
-      - name: L0 — verify markdown and eval-spec consistency
+      - run: pip install -r system/evals/requirements.txt
+      - name: L0 — links, encoding, scenario consistency
         run: python system/evals/checks/verify-markdown.py
-      - name: L4 — hook validator unit tests
+      - name: L4 — write-gate hook unit tests
         run: python system/evals/harness/checks/test_hook_validator.py
-
-  l2-structural-dry:
-    runs-on: ubuntu-latest
-    needs: l0-repo-health
-    steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
-        with:
-          python-version: "3.12"
-      - run: pip install pyyaml
-      - name: L1 — artifact eval (dry-run)
-        run: python system/evals/harness/run_rubric_regression.py --all --dry-run
-      - name: L2 — structural harness (dry-run, no agent)
-        run: python system/evals/harness/run_all.py --dry-run --skip-content --plumbing

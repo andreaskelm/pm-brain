@@ -13,7 +13,7 @@ turns:
     structural:
       - type: file_not_created_glob
         arg: "3-Work/**"
-        spec_owner: .cursor/rules/pm-brain.mdc
+        spec_owner: AGENTS.md
       - type: question_count_at_least
         arg: 2
         spec_owner: AGENTS.md
@@ -24,7 +24,7 @@ turns:
         rubric: judges/preflight_before_template.md
         spec_owner: AGENTS.md
         expected_meaning: "Agent asks preflight or braindump questions before loading or drafting any framework template"
-        must_not: "Agent opens, links, or starts filling a template from 2-Methods/ in the first reply"
+        must_not: "Agent opens, links, or starts filling a template in the first reply"
 
 final_state:
   structural:

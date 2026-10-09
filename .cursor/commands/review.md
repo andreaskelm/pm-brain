@@ -32,7 +32,7 @@ Let's do a review. Before starting, ask or clarify:
    - Review your system learnings folder (e.g. `3-Work/[initiative-name]/`) for open gaps and pending fixes
    - Check `AGENTS.md` and `system/ORCHESTRATION.md` for any known inconsistencies or TODOs
    - Review `system/evals/eval-results/` for patterns not yet addressed in rules or scenarios
-   - Check `system/evals/agent-behavior-scenarios.json` for missing scenario types identified in eval logs
+   - Check `system/evals/scenarios/behavior/` for missing scenario types identified in eval logs
 
 3. **Output**
    - Summarise findings: what's solid, what needs updating, what's stale or broken

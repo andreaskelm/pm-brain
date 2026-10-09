@@ -12,5 +12,5 @@
 | `/week` | Plan week | [2-Methods/4-Execution/1-Daily-Execution-And-Rituals/2-weekly-cadence.md](../../2-Methods/4-Execution/1-Daily-Execution-And-Rituals/2-weekly-cadence.md) |
 | `/braindump` | Start product sense coaching | [system/coaching/README.md](../../system/coaching/README.md) |
 | `/framework` | Match braindump to framework | [2-Methods/0-template-finder.md](../../2-Methods/0-template-finder.md) |
-| `/evaluate` | Artifact QQC + agent behavior eval | [system/evals/1-agent-behavior-guide.md](../../system/evals/1-agent-behavior-guide.md) |
+| `/evaluate` | Artifact QQC + agent behavior eval | [system/evals/README.md](../../system/evals/README.md) |
 | `/meta` | Route learnings to 5-Growth | [5-Growth/README.md](../../5-Growth/README.md) |

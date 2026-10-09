@@ -15,8 +15,8 @@ Let’s evaluate the quality of what we just worked on.
    - Find the relevant evaluation file in `2-Methods/` (`3-*-evaluation.md`) and its Quick Quality Checks in `1-*-framework.md`.
    - Walk me through the Quick Quality Checks first, then any deeper questions from `3-*-evaluation.md` if needed.
 3. **If agent behavior (Level 2)**
-   - Use `system/evals/1-agent-behavior-guide.md` and `system/evals/2-checklist.md` to review this conversation.
-   - Match it to a scenario from `system/evals/agent-behavior-scenarios.json`, then read that scenario's `expected.yaml` under `scenarios/behavior/` for pass/fail criteria.
+   - Use "Reviewing a real conversation" in `system/evals/README.md` to review this conversation.
+   - Match it to the closest scenario in `system/evals/scenarios/behavior/`, then read its `expected.yaml` for pass/fail criteria.
    - Flag any repo adjustments needed: rules to update, scenarios to add, ORCHESTRATION gaps, or framework issues.
 
 4. **Personal capture scan (always run at end of any substantive session)**

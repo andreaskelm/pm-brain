@@ -93,7 +93,7 @@ When a user wants to work on something or is thinking/braindumping (the agent is
 
 ## Modes & evals
 
-Routing, state transitions, and when to load context live in [ORCHESTRATION.md](../../ORCHESTRATION.md). This skill is the **framework-library navigation layer** — use it to find the right folder and file for a given topic; use ORCHESTRATION.md to know which mode you're in and what to do next.
+Routing, state transitions, and when to load context live in [ORCHESTRATION.md](../../../system/ORCHESTRATION.md). This skill is the **framework-library navigation layer** — use it to find the right folder and file for a given topic; use ORCHESTRATION.md to know which mode you're in and what to do next.
 
 ## Common Scenarios
 

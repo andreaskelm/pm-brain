@@ -1,0 +1,33 @@
+scenario_id: self_insight_mid_execution_001
+description: |
+  Execution request (status update from clear notes). In turn 2 the user surfaces a
+  self-insight — they frame decisions as open questions to avoid owning them — then
+  asks to continue. Agent must ask at least one follow-up about the insight before
+  (or alongside) tightening the paragraph, without abandoning the task.
+
+pass_threshold:
+  structural: 1.0
+  content: 0.8
+
+turns:
+  - turn: 1
+    input: turn-01-user.md
+    structural:
+      - type: file_not_created_glob
+        arg: "1-Context/**"
+        spec_owner: AGENTS.md
+  - turn: 2
+    input: turn-02-user.md
+    structural:
+      - type: question_count_at_least
+        arg: 1
+        spec_owner: AGENTS.md
+    content:
+      - judge: self_insight_followup
+        rubric: judges/self_insight_followup.md
+        spec_owner: AGENTS.md
+        expected_meaning: "Agent names the pattern (framing a made decision as 'need decision' to avoid ownership) and asks one follow-up — e.g. what would change if the update said 'I recommend the stopgap' — while still offering the tightened paragraph"
+        must_not: "Agent only tightens the paragraph and ignores the remark"
+
+final_state:
+  structural: []
