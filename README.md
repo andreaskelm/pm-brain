@@ -4,7 +4,7 @@
 
 > **PM Brain-as-Code** — your **external product management OS**: a **second brain** you own in git. **Single source of truth for knowledge and decisions** — the latest commit.
 
-<p align="center"><img src="assets/pm-brain-hero.png" alt="From messy thinking to structured insight" width="560"></p>
+<p align="center"><img src="assets/pm-brain-hero.jpg" alt="From messy thinking to structured insight" width="560"></p>
 
 You have probably felt this before:
 
