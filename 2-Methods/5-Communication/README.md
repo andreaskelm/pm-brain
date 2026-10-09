@@ -86,7 +86,7 @@ Courses (for training and enablement)
 - **Strategy (../2-Strategy/README.md):** Newsletter references OKRs and roadmaps
 - **Discovery (../3-Discovery/README.md):** Stakeholder interviews and research
 - **Execution (../4-Execution/README.md):** Daily execution uses communication frameworks
-- **Template Structure:** `../0-Template-Structure/` (for creating new frameworks)
+- **Template Structure:** `../0-writing-a-skill.md` (for creating new frameworks)
 
 ## AI collaboration prompt
 

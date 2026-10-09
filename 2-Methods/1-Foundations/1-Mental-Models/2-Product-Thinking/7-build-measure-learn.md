@@ -25,7 +25,7 @@ A team wants to build a full reporting dashboard. Backwards loop: *Learn* — do
 - [Outcome vs Output](1-outcome-vs-output.md) — the loop measures outcomes
 - [Assumptions Framework](../1-Decision-Making/3-assumptions-framework.md) — pick which assumption the loop tests
 - [Evidence Strength](../1-Decision-Making/7-evidence-strength.md) — what counts as "learned"
-- [Idea Validation](../../../3-Discovery/5-Idea-Validation/README.md)
+- [Idea Validation](../../../3-Discovery/README.md)
 
 ## Further Reading
 - *The Lean Startup* — Eric Ries

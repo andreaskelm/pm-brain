@@ -124,6 +124,6 @@ These exist in the index but have no or minimal content: Opportunity Cost, Regre
 ## Related Content
 
 - [Mental Models README](1-Mental-Models/README.md) - Complete mental models directory
-- [Template Structure Guide](../0-Template-Structure/1-template-structure-guide.md) - How frameworks are structured
+- [Template Structure Guide](../0-writing-a-skill.md) - How frameworks are structured
 - [Strategy Frameworks](../2-Strategy/) - OKRs, Roadmaps, PRDs, Prioritization
 - [Discovery Frameworks](../3-Discovery/) - Research, Validation, Opportunity Assessment

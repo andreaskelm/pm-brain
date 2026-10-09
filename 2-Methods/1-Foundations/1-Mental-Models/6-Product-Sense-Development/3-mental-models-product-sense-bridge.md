@@ -53,7 +53,7 @@ Reveals: Confusing navigation, unclear value prop, friction points, fear of brea
 
 **In this repo:** [Pre-mortems](../1-Decision-Making/1-pre-mortems.md) — imagine the project has failed and work backward (Tigers, Paper Tigers, Elephants).
 
-**When to use in the repo:** Before [PRD](../../../4-Execution/4-PRD/README.md) (what could go wrong?); during design reviews; before launch—run a formal pre-mortem using [Pre-mortems](../1-Decision-Making/1-pre-mortems.md). [TEAR-2: "Why This Sucks"](2-practice-exercises.md) practices inversion on existing products.
+**When to use in the repo:** Before [PRD](../../../0-index.md) (what could go wrong?); during design reviews; before launch—run a formal pre-mortem using [Pre-mortems](../1-Decision-Making/1-pre-mortems.md). [TEAR-2: "Why This Sucks"](2-practice-exercises.md) practices inversion on existing products.
 
 **Practice:** For any feature, list 5 ways it could fail. Which are preventable → Design to prevent the top 2. **Log in:** [this week's note](../../../../5-Growth/weekly/README.md).
 
@@ -82,7 +82,7 @@ First principles:
 
 **In this repo:** [First Principles](../1-Decision-Making/4-first-principles.md).
 
-**When to use in the repo:** Before [Opportunity Assessment](../../../3-Discovery/4-Opportunity-Assessment/README.md) (what's the real need?); when evaluating feature requests for [PRD](../../../4-Execution/4-PRD/README.md); before [JTBD](../../../3-Discovery/3-Jobs-To-Be-Done/README.md) (go five whys deep). [TEAR-1: Feature Forensics](2-practice-exercises.md) practices first principles on one feature.
+**When to use in the repo:** Before [Opportunity Assessment](../../../0-index.md) (what's the real need?); when evaluating feature requests for [PRD](../../../0-index.md); before [JTBD](../../../0-index.md) (go five whys deep). [TEAR-1: Feature Forensics](2-practice-exercises.md) practices first principles on one feature.
 
 **Practice:** For a feature request, ask "Why does the user want this?" five levels deep. What fundamental need does this serve → **Log in:** [this week's note](../../../../5-Growth/weekly/README.md).
 
@@ -101,7 +101,7 @@ First principles:
 
 **In this repo:** [One-Way vs Two-Way Doors](../1-Decision-Making/2-one-way-two-way-doors.md).
 
-**When to use in the repo:** Before [Prioritization](../../../2-Strategy/2-Strategic-Execution/4-Prioritization/README.md) (reversible → bias toward action); when using [evaluation.md](../../../../system/coaching/evaluation.md) (stuck); before [Roadmap](../../../2-Strategy/2-Strategic-Execution/2-Roadmap/README.md) (which bets are one-way?). [JUDGE-3: Fast Prioritization Drill](2-practice-exercises.md) — rank 5 ideas in 5 min, name one-way vs two-way.
+**When to use in the repo:** Before [Prioritization](../../../0-index.md) (reversible → bias toward action); when using [evaluation.md](../../../../system/coaching/evaluation.md) (stuck); before [Roadmap](../../../0-index.md) (which bets are one-way?). [JUDGE-3: Fast Prioritization Drill](2-practice-exercises.md) — rank 5 ideas in 5 min, name one-way vs two-way.
 
 **Practice:** For your next decision, name it: one-way or two-way → If two-way, set a "decide by" date and move. **Log in:** [this week's note](../../../../5-Growth/weekly/README.md) or [decisions.md](../../../../5-Growth/decisions.md).
 
@@ -120,7 +120,7 @@ First principles:
 
 **In this repo:** [Pre-mortems](../1-Decision-Making/1-pre-mortems.md).
 
-**When to use in the repo:** Early in [Opportunity Assessment](../../../3-Discovery/4-Opportunity-Assessment/README.md) or before [PRD](../../../4-Execution/4-PRD/README.md) commitment; before [Roadmap](../../../2-Strategy/2-Strategic-Execution/2-Roadmap/README.md) big bets. Run the full process in [Pre-mortems](../1-Decision-Making/1-pre-mortems.md) (Tigers, Paper Tigers, Elephants).
+**When to use in the repo:** Early in [Opportunity Assessment](../../../0-index.md) or before [PRD](../../../0-index.md) commitment; before [Roadmap](../../../0-index.md) big bets. Run the full process in [Pre-mortems](../1-Decision-Making/1-pre-mortems.md) (Tigers, Paper Tigers, Elephants).
 
 **Practice:** Before a key decision, ask: "Imagine this failed in 6 months—what went wrong?" Prioritize mitigating Tigers first. **Log in:** [this week's note](../../../../5-Growth/weekly/README.md).
 
@@ -139,7 +139,7 @@ First principles:
 
 **In this repo:** [Opportunity Cost](../1-Decision-Making/5-opportunity-cost.md).
 
-**When to use in the repo:** Before [Prioritization](../../../2-Strategy/2-Strategic-Execution/4-Prioritization/README.md) (what are we NOT doing?); in [Strategy](../../../2-Strategy/1-Strategic-Foundations/) (what doors does this open or close?); in braindump "Before Making a Prioritization Decision" in [system/coaching/prompts.md](../../../../system/coaching/prompts.md).
+**When to use in the repo:** Before [Prioritization](../../../0-index.md) (what are we NOT doing?); in [Strategy](../../../2-Strategy/1-Strategic-Foundations/) (what doors does this open or close?); in braindump "Before Making a Prioritization Decision" in [system/coaching/prompts.md](../../../../system/coaching/prompts.md).
 
 **Practice:** For any "yes," name the single best "no" and why you're okay with that tradeoff. **Log in:** [5-Growth/decisions.md](../../../../5-Growth/decisions.md) for big bets.
 
@@ -158,7 +158,7 @@ First principles:
 
 **In this repo:** [Regret Minimization](../1-Decision-Making/6-regret-minimization.md).
 
-**When to use in the repo:** When stuck—use [evaluation.md](../../../../system/coaching/evaluation.md) ("Regret Minimization" and "Two-Way Door" sections); before [Strategy](../../../2-Strategy/1-Strategic-Foundations/) or [OKR](../../../2-Strategy/2-Strategic-Execution/1-OKR/README.md) (1 year from now, which would I regret NOT trying?). [JUDGE-1: Make a Prediction](2-practice-exercises.md) + follow-up builds regret-minimization muscle.
+**When to use in the repo:** When stuck—use [evaluation.md](../../../../system/coaching/evaluation.md) ("Regret Minimization" and "Two-Way Door" sections); before [Strategy](../../../2-Strategy/1-Strategic-Foundations/) or [OKR](../../../0-index.md) (1 year from now, which would I regret NOT trying?). [JUDGE-1: Make a Prediction](2-practice-exercises.md) + follow-up builds regret-minimization muscle.
 
 **Practice:** For a hard decision, ask: "Which failure would I be okay with (learned something)→ Which would I not be okay with (negligent)?" **Log in:** [this week's note](../../../../5-Growth/weekly/README.md) or, if it's a real call, [decisions.md](../../../../5-Growth/decisions.md).
 
@@ -177,7 +177,7 @@ First principles:
 
 **In this repo:** [Assumptions Framework](../1-Decision-Making/3-assumptions-framework.md).
 
-**When to use in the repo:** In every braindump—[system/coaching/prompts.md](../../../../system/coaching/prompts.md) "What assumptions am I making?"; when stakeholders disagree—[Assumptions Framework](../1-Decision-Making/3-assumptions-framework.md) (align on beliefs before solutions); before [Roadmap](../../../2-Strategy/2-Strategic-Execution/2-Roadmap/README.md) (shared foundation). [Alignment Check](../5-Team-Dynamics/1-alignment-check.md) combines with this for team decisions.
+**When to use in the repo:** In every braindump—[system/coaching/prompts.md](../../../../system/coaching/prompts.md) "What assumptions am I making?"; when stakeholders disagree—[Assumptions Framework](../1-Decision-Making/3-assumptions-framework.md) (align on beliefs before solutions); before [Roadmap](../../../0-index.md) (shared foundation). [Alignment Check](../5-Team-Dynamics/1-alignment-check.md) combines with this for team decisions.
 
 **Practice:** Before a key decision, write down your recommendation and list 5–10 assumptions. For each: How do I know → What would falsify it → Which are critical → Test those before deciding. **Log in:** [this week's note](../../../../5-Growth/weekly/README.md).
 
@@ -196,7 +196,7 @@ First principles:
 
 **In this repo:** [Outcome vs Output](../2-Product-Thinking/1-outcome-vs-output.md); [Feature Factory](../2-Product-Thinking/3-feature-factory.md) (diagnostic when output-heavy).
 
-**When to use in the repo:** Before [OKR](../../../2-Strategy/2-Strategic-Execution/1-OKR/README.md) (outcome-based goals); before [PRD](../../../4-Execution/4-PRD/README.md) (what outcome does this serve?); in [Prioritization](../../../2-Strategy/2-Strategic-Execution/4-Prioritization/README.md) (outcome per dollar/hour). Braindump "What metrics actually change if this succeeds?" in [system/coaching/prompts.md](../../../../system/coaching/prompts.md).
+**When to use in the repo:** Before [OKR](../../../0-index.md) (outcome-based goals); before [PRD](../../../0-index.md) (what outcome does this serve?); in [Prioritization](../../../0-index.md) (outcome per dollar/hour). Braindump "What metrics actually change if this succeeds?" in [system/coaching/prompts.md](../../../../system/coaching/prompts.md).
 
 **Practice:** For any feature, state the outcome first ("Increase X by Y") then the output ("Ship Z"). If you can't state the outcome, don't ship yet. **Log in:** [this week's note](../../../../5-Growth/weekly/README.md).
 
@@ -217,7 +217,7 @@ First principles:
 
 **How to apply (example):** Stakeholders ask for "export to CSV." Reframe: "When analysts share results, they want reusable outputs to avoid rework." Solutions: exports, shared views, email digests. Test the one that best serves the job.
 
-**When to use in the repo:** Before [PRD](../../../4-Execution/4-PRD/README.md) ("What job are they hiring this feature to do?"); in [Opportunity Assessment](../../../3-Discovery/4-Opportunity-Assessment/README.md) and [JTBD](../../../3-Discovery/3-Jobs-To-Be-Done/README.md); in [Research Interviews](../../../3-Discovery/1-Research-Interviews/README.md) (what progress are they trying to make?). [OBS-3: JTBD Spotting](2-practice-exercises.md) and [TEAR-1: Feature Forensics](2-practice-exercises.md) practice this.
+**When to use in the repo:** Before [PRD](../../../0-index.md) ("What job are they hiring this feature to do?"); in [Opportunity Assessment](../../../0-index.md) and [JTBD](../../../0-index.md); in [Research Interviews](../../../3-Discovery/README.md) (what progress are they trying to make?). [OBS-3: JTBD Spotting](2-practice-exercises.md) and [TEAR-1: Feature Forensics](2-practice-exercises.md) practice this.
 
 **Practice:** For any feature request, write: "When I [situation], I want to [progress], so I can [result]." Then list 3 different solutions that could serve that job. **Log in:** [this week's note](../../../../5-Growth/weekly/README.md) or next to the research in `4-Research/`.
 
@@ -243,7 +243,7 @@ First principles:
 - **Regret minimization:** JUDGE-1 + 3-month check-in, [evaluation.md](../../../../system/coaching/evaluation.md)
 - **Assumptions:** Every braindump; [3-assumptions-framework.md](../1-Decision-Making/3-assumptions-framework.md) when disagreeing
 - **Outcome vs output:** PATTERN-1 (Principle Hunting), OKR/roadmap work
-- **Jobs vs features:** OBS-3 (JTBD Spotting), TEAR-1 (Feature Forensics), [JTBD](../../../3-Discovery/3-Jobs-To-Be-Done/README.md)
+- **Jobs vs features:** OBS-3 (JTBD Spotting), TEAR-1 (Feature Forensics), [JTBD](../../../0-index.md)
 
 ---
 
@@ -287,5 +287,5 @@ For a feature request: (1) State the job ("When I— I want to— so I can—").
 - **Decision-Making mental models:** [1-Decision-Making/README.md](../1-Decision-Making/README.md)
 - **Product-Thinking mental models:** [2-Product-Thinking/README.md](../2-Product-Thinking/README.md)
 - **Feature Factory (output-heavy diagnostic):** [3-feature-factory.md](../2-Product-Thinking/3-feature-factory.md) — use when asking "are we measuring output or outcome?"
-- **Repo methods (when to use which):** [PRD](../../../4-Execution/4-PRD/README.md) — [Prioritization](../../../2-Strategy/2-Strategic-Execution/4-Prioritization/README.md) — [OKR](../../../2-Strategy/2-Strategic-Execution/1-OKR/README.md) — [Opportunity Assessment](../../../3-Discovery/4-Opportunity-Assessment/README.md) — [JTBD](../../../3-Discovery/3-Jobs-To-Be-Done/README.md) — [Strategy](../../../2-Strategy/1-Strategic-Foundations/README.md)
+- **Repo methods (when to use which):** [PRD](../../../0-index.md) — [Prioritization](../../../0-index.md) — [OKR](../../../0-index.md) — [Opportunity Assessment](../../../0-index.md) — [JTBD](../../../0-index.md) — [Strategy](../../../2-Strategy/1-Strategic-Foundations/README.md)
 - **Mental Models overview:** [../README.md](../README.md)

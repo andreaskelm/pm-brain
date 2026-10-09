@@ -81,7 +81,7 @@ Three levels — keep each level simple `N-Name` (no legacy `2.x.y` prefixes):
 | **Repo content** | `N-Context`, `N-Methods`, — (CamelCase) | `1-Context/`, `2-Methods/` |
 | **Methods domain** | `N-Domain/` under `2-Methods/` (CamelCase) | `1-Foundations/`, `3-Discovery/` |
 | **Framework folder** | `N-FrameworkName/` under each domain | `4-Opportunity-Assessment/`, `4-PRD/` |
-| **Files in a framework** | `README`, `1-*-framework`, `2-*-template`, `3-*-evaluation` | See [0-Template-Structure/](0-Template-Structure/README.md) |
+| **Files in a framework** | `README`, `1-*-framework`, `2-*-template`, `3-*-evaluation` | See [0-writing-a-skill.md](0-writing-a-skill.md) |
 
 **Rule of thumb:** Number by **order in the product flow** within each parent. Sub-groups (e.g. `1-Strategic-Foundations/` vs `2-Strategic-Execution/`) use the same `N-Name` pattern.
 
@@ -99,9 +99,7 @@ Inside each numbered framework folder, files follow this pattern:
 
 **Frameworks with evaluation support** (high-stakes, peer-reviewed, quality-gated) have comprehensive evaluation frameworks available. For the two-level eval system (Level 1 = methods/frameworks, Level 2 = agent behavior) and how evals learn / ask you to adapt, see [system/evals/README.md](../system/evals/README.md).
 
-- **OKRs:** `2-Strategy/2-Strategic-Execution/1-OKR/3-okr-evaluation.md`
-- **Roadmaps:** `2-Strategy/2-Strategic-Execution/2-Roadmap/3-roadmap-evaluation.md`
-- **PRDs:** `4-Execution/4-PRD/3-prd-evaluation.md`
+- **OKRs / roadmaps / PRDs / etc.:** criteria in `.claude/skills/*/references/criteria.md` — see [system/EVALUATION.md](../system/EVALUATION.md)
 - **Opportunity Assessments:** `3-Discovery/4-Opportunity-Assessment/3-opportunity-assessment-evaluation.md`
 - **North Star:** `2-Strategy/2-Strategic-Execution/3-North-Star/3-north-star-evaluation.md`
 - **One-Pagers:** `5-Communication/3-One-Pagers/3-one-pager-evaluation.md`

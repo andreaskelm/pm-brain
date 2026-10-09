@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This directory is your starting point for capturing early initiative thinking before you have evidence. Use the opportunity assessment template (based on the framework in [2-Methods/3-Discovery/4-Opportunity-Assessment/](../2-Methods/3-Discovery/4-Opportunity-Assessment/README.md)) to document hypotheses, assumptions, and initial ideas. Once you have enough clarity, move to the discovery frameworks in [2-Methods/3-Discovery/](../2-Methods/3-Discovery/README.md) to validate your thinking with evidence.
+This directory is your starting point for capturing early initiative thinking before you have evidence. Use the opportunity assessment template (based on the framework in [2-Methods/3-Discovery/4-Opportunity-Assessment/](../2-Methods/0-index.md)) to document hypotheses, assumptions, and initial ideas. Once you have enough clarity, move to the discovery frameworks in [2-Methods/3-Discovery/](../2-Methods/3-Discovery/README.md) to validate your thinking with evidence.
 
 **For agents:** This folder is one of the context sources the PM Brain agent asks about early in product_sense (and when starting execution_mode for non-trivial docs). If the user has not added relevant initiative context, suggest adding or @-mentioning key docs from here (e.g. opportunity assessment, PRD, roadmap for the initiative); having them in context speeds up thinking and keeps answers aligned to active work. 
 
@@ -19,12 +19,12 @@ This directory is your starting point for capturing early initiative thinking be
 - Identify key questions to validate
 
 **Discovery Frameworks ([2-Methods/3-Discovery/](../2-Methods/3-Discovery/README.md)):**
-- Use [4-Opportunity-Assessment/](../2-Methods/3-Discovery/4-Opportunity-Assessment/README.md) to structure your opportunity assessment (this template is based on that framework)
-- Validate assumptions with user interviews (see [1-Research-Interviews/](../2-Methods/3-Discovery/1-Research-Interviews/README.md))
-- Synthesize patterns from evidence (see [2-Continuous-Discovery-Habits/](../2-Methods/3-Discovery/2-Continuous-Discovery-Habits/README.md))
-- Frame problems as jobs (see [3-Jobs-To-Be-Done/](../2-Methods/3-Discovery/3-Jobs-To-Be-Done/README.md))
-- Generate and validate solutions (see [5-Idea-Validation/](../2-Methods/3-Discovery/5-Idea-Validation/README.md))
-- Write PRDs (see [4-PRD/](../2-Methods/4-Execution/4-PRD/README.md))
+- Use [4-Opportunity-Assessment/](../2-Methods/0-index.md) to structure your opportunity assessment (this template is based on that framework)
+- Validate assumptions with user interviews (see [1-Research-Interviews/](../2-Methods/3-Discovery/README.md))
+- Synthesize patterns from evidence (see [2-Continuous-Discovery-Habits/](../2-Methods/3-Discovery/README.md))
+- Frame problems as jobs (see [3-Jobs-To-Be-Done/](../2-Methods/0-index.md))
+- Generate and validate solutions (see [5-Idea-Validation/](../2-Methods/3-Discovery/README.md))
+- Write PRDs (see [4-PRD/](../2-Methods/0-index.md))
 
 **The Flow:**
 1. Start here with opportunity assessment (early thinking)
@@ -148,9 +148,9 @@ pm-brain/3-Work/
 1. **Start Early**: Create opportunity assessment when you have an initial idea or hypothesis
 2. **Document What You Know**: Fill out sections with current knowledge; mark unknowns explicitly
 3. **Identify Research Needs**: Use "What we should research" section to plan validation
-4. **Move to Discovery**: When ready, use discovery methods in [2-Methods/3-Discovery/](../2-Methods/3-Discovery/README.md) to validate assumptions. Start with [4-Opportunity-Assessment/](../2-Methods/3-Discovery/4-Opportunity-Assessment/README.md) (this template is based on that framework)
+4. **Move to Discovery**: When ready, use discovery methods in [2-Methods/3-Discovery/](../2-Methods/3-Discovery/README.md) to validate assumptions. Start with [4-Opportunity-Assessment/](../2-Methods/0-index.md) (this template is based on that framework)
 5. **Update as You Learn**: Return to update opportunity assessment with new evidence
-6. **Transition to Execution**: When validated, create PRD using [4-PRD/](../2-Methods/4-Execution/4-PRD/README.md) and roadmap documents
+6. **Transition to Execution**: When validated, create PRD using [4-PRD/](../2-Methods/0-index.md) and roadmap documents
 
 ## How to Maintain
 
