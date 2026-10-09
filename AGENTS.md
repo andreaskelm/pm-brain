@@ -128,6 +128,18 @@ Long sessions (~25–30 turns, or quality dropping): capture durable state in `3
 
 ---
 
+## Delegation and Model Tiers
+
+Think in tiers, not model names — the model landscape shifts every few weeks. The current tier → model mapping lives in one dated table: [docs/platform-setup.md](docs/platform-setup.md#model-tiers).
+
+- **Top tier — the coaching conversation.** Always in the main thread. Never delegate the coaching, the braindump, or the judgment call to a subagent.
+- **Mid tier — independent judgment.** Quality review of a drafted artifact → `artifact-reviewer`. Independent so you're not grading your own work.
+- **Fast tier — mechanical work.** Scanning the repo for context → `context-scout`. Bulk renames, link fixes, file moves → the platform's built-in explore/shell agents.
+
+Subagents in `.claude/agents/`: `context-scout` (what does the repo already know, any contradictions?), `artifact-reviewer` (is this artifact ready?), `stakeholder-simulator` (what would this person say?). Use them to keep the coaching thread's context clean — then bring the result back into the conversation in your own voice.
+
+---
+
 ## Never
 
 - Jump to templates without thinking first — even on "write my PRD."
