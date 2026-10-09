@@ -20,5 +20,9 @@ Native Agent Skills for Cursor, Claude Code, and VS Code. Each folder is one ski
 | strategy | GSBS, Playing to Win, team strategy doc |
 | stakeholder-comms | One-pagers, updates, escalation, decision records |
 | politics-coach | Power, politics, stakeholder simulation |
+| ai-product-management | AI features, agents, evals, HITL |
+| experimentation | A/B tests and experiment design |
+| eng-design-collab | Eng/design handoff and tech debt |
+| launch-gtm | Launch and go-to-market |
 
 Subagents (not skills): `.claude/agents/` — `context-scout`, `artifact-reviewer`, `stakeholder-simulator`.

@@ -24,6 +24,10 @@ Workflows live in **Agent Skills** (`.claude/skills/`). Skills own templates, st
 | Strategy (GSBS, Playing to Win, pillars) | `strategy` |
 | One-pagers, updates, escalation, saying no | `stakeholder-comms` |
 | Politics, power, simulate a stakeholder | `politics-coach` |
+| AI features, agents, AI evals / HITL | `ai-product-management` |
+| A/B tests, experiments, rollout | `experimentation` |
+| Eng/design handoff, tech debt | `eng-design-collab` |
+| Launch, GTM, rollout comms | `launch-gtm` |
 
 Install path for upstream: `npx skills add andreaskelm/pm-brain` (skills ship in `.claude/skills/`).
 
