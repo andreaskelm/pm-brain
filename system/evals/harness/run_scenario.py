@@ -85,7 +85,7 @@ def invoke_agent(
         return (
             "What problem are you solving, and for whom? "
             "What assumptions are you making? "
-            "Would you like to log this in the Product Judgment Test forecast log? "
+            "Want to log that as a forecast with a reopen trigger? "
             "[DRY RUN — mock response for harness plumbing]",
             0.0,
         )
@@ -140,18 +140,24 @@ def parse_verdict(text: str) -> tuple[str, str]:
     return "FAIL", "no VERDICT line in judge output"
 
 
+def format_history(history: list[tuple[str, str]]) -> str:
+    return "\n\n".join(f"### {speaker}\n{text.strip()}" for speaker, text in history)
+
+
 def run_judge(
     assertion: dict[str, Any],
     *,
     agent_response: str,
     scenario_desc: str,
     workdir: Path,
+    history: list[tuple[str, str]] | None = None,
     dry_run: bool = False,
 ) -> dict[str, Any]:
     rubric_path = EVALS / assertion["rubric"]
     if not rubric_path.exists():
         rubric_path = HARNESS / assertion["rubric"]
     rubric = rubric_path.read_text(encoding="utf-8") if rubric_path.exists() else ""
+    prior = format_history(history) if history else "(first turn — no prior conversation)"
 
     prompt = f"""You are an eval judge for PM Brain agent behavior.
 
@@ -160,6 +166,9 @@ def run_judge(
 
 ## Scenario
 {scenario_desc}
+
+## Conversation before the graded reply
+{prior}
 
 ## Expected meaning
 {assertion.get('expected_meaning', '')}
@@ -205,7 +214,9 @@ def run_single(
     copy_brain(workdir)
 
     turn_results: list[dict[str, Any]] = []
+    history: list[tuple[str, str]] = []
     total_cost_proxy = 0.0
+    initial_snapshot = snapshot_files(workdir)
 
     try:
         for spec in expected.get("turns", []):
@@ -218,9 +229,21 @@ def run_single(
             user_text = input_path.read_text(encoding="utf-8") if input_path.exists() else ""
 
             before = snapshot_files(workdir)
-            prompt = f"""You are the PM Brain coach agent. Respond to this user message.
+            if history:
+                prompt = f"""You are the PM Brain coach agent, continuing an ongoing conversation.
 
-Load AGENTS.md, system/MEMORY.md, and follow all routing rules.
+Follow AGENTS.md (read USER.md if present) and all routing rules.
+
+Conversation so far:
+{format_history(history)}
+
+Latest user message (respond to this, in context of the conversation above):
+{user_text}
+"""
+            else:
+                prompt = f"""You are the PM Brain coach agent. Respond to this user message.
+
+Follow AGENTS.md (read USER.md if present) and all routing rules.
 
 User message:
 {user_text}
@@ -257,10 +280,14 @@ User message:
                         agent_response=agent_response,
                         scenario_desc=expected.get("description", ""),
                         workdir=workdir,
+                        history=history,
                         dry_run=dry_run,
                     )
                     content_payload.append(jr)
                     total_cost_proxy += jr.get("cost_proxy_sec", 0)
+
+            history.append(("User", user_text))
+            history.append(("Agent", agent_response))
 
             turn_results.append(
                 {
@@ -272,14 +299,11 @@ User message:
                 }
             )
 
-        # final_state
-        before = snapshot_files(workdir)
-        after = before
         final_struct = run_assertions(
             workdir,
             expected.get("final_state", {}).get("structural", []),
-            before=before,
-            after=after,
+            before=initial_snapshot,
+            after=snapshot_files(workdir),
             agent_response="",
         )
         final_content: list[dict[str, Any]] = []
@@ -287,7 +311,7 @@ User message:
             for judge_assert in expected.get("final_state", {}).get("content", []):
                 jr = run_judge(
                     judge_assert,
-                    agent_response=json.dumps(turn_results, indent=2)[:4000],
+                    agent_response=format_history(history)[-8000:],
                     scenario_desc=expected.get("description", ""),
                     workdir=workdir,
                     dry_run=dry_run,

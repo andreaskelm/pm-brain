@@ -87,7 +87,7 @@ Research Interviews → Personas → PRD → User Stories → (Delivery)
 - **Strategy (../2-Strategy/README.md):** OKRs define outcomes to optimize for, Roadmap shows public view of priorities, Strategic Foundations inform execution decisions
 - **Discovery (../3-Discovery/README.md):** Opportunity Assessment and Idea Validation feed into PRDs, Jobs-to-Be-Done informs User Stories and Personas
 - **Communication (../5-Communication/README.md):** Stakeholder Management, Meeting Agendas, and Newsletter support daily execution
-- **Template Structure:** `../0-Template-Structure/` (for creating new frameworks)
+- **Template Structure:** `../0-writing-a-skill.md` (for creating new frameworks)
 
 ## AI collaboration prompt
 

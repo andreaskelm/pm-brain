@@ -1,16 +1,12 @@
 # 2-Methods
 
-This directory is the **core of the PM brain**: it contains the decision models, guides, templates, playbooks, and prompts you use every day to **ship valuable products**.
+**Reference library** — mental models, org-reality playbooks, and long-form guides. **Workflows (PRD, OKR, prioritize, discovery, …) live in Agent Skills:** [.claude/skills/](../.claude/skills/README.md) and the map in **[0-index.md](0-index.md)**.
 
-**Important:** These frameworks are designed to **guide your thinking**, not replace it. Before jumping into templates:
-1. **Braindump first** — Use the prompts in each framework to dump your raw thoughts
-2. **Develop product sense** — Use the exercises to build judgment and taste
-3. **Think critically** — Answer quiz questions honestly, challenge your assumptions
-4. **Reflect** — Use self-reflection prompts to learn and improve
+**For agents:** On a doc or workflow request, load the matching **`.claude/skills/<name>/SKILL.md` first**. Use `2-Methods/` only when the skill points here for depth (or for foundations / Strategy Blocks–style reference). Do not browse template trees instead of a skill.
 
-**To start a product-thinking chat (e.g. with AI):** Use the single entry point [README.md](../system/coaching/README.md) — copy the simple prompt at the top; the agent will braindump with you before suggesting any framework. After braindump, use the **Frameworks by situation** table there (or the domain READMEs below) to jump to Strategy, Discovery, Execution, or Communication.
+**For humans:** Start in [system/coaching/README.md](../system/coaching/README.md) (braindump first). When thinking is solid enough, pick a skill from [0-index.md](0-index.md) — not a random framework folder.
 
-**I know what doc I need:** [0-template-finder.md](0-template-finder.md) — go straight to the right README + template. **Find by topic:** [1-frameworks-by-topic.md](1-frameworks-by-topic.md). **Foundations only (all mental models, bias, self-reflection):** [1-Foundations/0-index.md](1-Foundations/0-index.md).
+**Foundations (product sense, bias, calibration, self-reflection):** [1-Foundations/0-index.md](1-Foundations/0-index.md).
 
 Content is organized by **the flow of product work**: from foundational thinking → defining direction → discovering what to build → executing and shipping → aligning stakeholders. This logical progression helps you move from ambiguity to shipped outcomes.
 
@@ -81,7 +77,7 @@ Three levels — keep each level simple `N-Name` (no legacy `2.x.y` prefixes):
 | **Repo content** | `N-Context`, `N-Methods`, — (CamelCase) | `1-Context/`, `2-Methods/` |
 | **Methods domain** | `N-Domain/` under `2-Methods/` (CamelCase) | `1-Foundations/`, `3-Discovery/` |
 | **Framework folder** | `N-FrameworkName/` under each domain | `4-Opportunity-Assessment/`, `4-PRD/` |
-| **Files in a framework** | `README`, `1-*-framework`, `2-*-template`, `3-*-evaluation` | See [0-Template-Structure/](0-Template-Structure/README.md) |
+| **Files in a framework** | `README`, `1-*-framework`, `2-*-template`, `3-*-evaluation` | See [0-writing-a-skill.md](0-writing-a-skill.md) |
 
 **Rule of thumb:** Number by **order in the product flow** within each parent. Sub-groups (e.g. `1-Strategic-Foundations/` vs `2-Strategic-Execution/`) use the same `N-Name` pattern.
 
@@ -99,9 +95,7 @@ Inside each numbered framework folder, files follow this pattern:
 
 **Frameworks with evaluation support** (high-stakes, peer-reviewed, quality-gated) have comprehensive evaluation frameworks available. For the two-level eval system (Level 1 = methods/frameworks, Level 2 = agent behavior) and how evals learn / ask you to adapt, see [system/evals/README.md](../system/evals/README.md).
 
-- **OKRs:** `2-Strategy/2-Strategic-Execution/1-OKR/3-okr-evaluation.md`
-- **Roadmaps:** `2-Strategy/2-Strategic-Execution/2-Roadmap/3-roadmap-evaluation.md`
-- **PRDs:** `4-Execution/4-PRD/3-prd-evaluation.md`
+- **OKRs / roadmaps / PRDs / etc.:** criteria in `.claude/skills/*/references/criteria.md` — see [system/EVALUATION.md](../system/EVALUATION.md)
 - **Opportunity Assessments:** `3-Discovery/4-Opportunity-Assessment/3-opportunity-assessment-evaluation.md`
 - **North Star:** `2-Strategy/2-Strategic-Execution/3-North-Star/3-north-star-evaluation.md`
 - **One-Pagers:** `5-Communication/3-One-Pagers/3-one-pager-evaluation.md`

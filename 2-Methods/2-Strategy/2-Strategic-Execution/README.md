@@ -1,26 +1,12 @@
-# Strategic Execution
+# Strategic execution
 
-Use these when direction is set and you’re turning it into goals, plans, metrics, and priorities.
+Direction is set; you're turning it into goals, plans, metrics, and priorities. **Workflows live in Agent Skills** (see [0-index.md](../../0-index.md)):
 
-## When to use
-- You have strategic pillars/choices defined and need to execute.
-- You’re planning a quarter/half and need goals, plan, and sequencing.
-- You need a measurable north star to track value delivered.
-- You must decide what to build first (or what to cut).
+| Need | Skill |
+|------|--------|
+| Quarterly outcomes | `okr` |
+| Now / Next / Later plan | `roadmap` |
+| North Star + input metrics | `north-star` |
+| What to build first | `prioritize` |
 
-## Modules
-- **OKR (`1-OKR/`)** — Set objectives/key results that express the strategy in measurable outcomes.
-- **Roadmap (`2-Roadmap/`)** — Time-phased plan (e.g., Now/Next/Later) aligned to OKRs and pillars.
-- **North Star (`3-North-Star/`)** — Define the north-star metric and supporting metric tree to keep teams aligned.
-- **Prioritization (`4-Prioritization/`)** — Methods to choose what to do first: RICE/ICE, MoSCoW, Kano, plus a decision tree.
-
-## Typical flow
-1) Start from pillars/choices (see `../1-Strategic-Foundations/`).
-2) Convert to outcomes with **OKRs**.
-3) Sequence initiatives with a **Roadmap**.
-4) Align on value with a **North Star** metric/tree.
-5) Choose what to do first with **Prioritization**.
-
-## Links
-- Strategic Foundations: `../1-Strategic-Foundations/`
-- Prioritization decision help: `4-Prioritization/1-decision-tree.md`
+Typical flow: pillars/choices from [Strategic Foundations](../1-Strategic-Foundations/) → **OKRs** → **roadmap** → **north-star** alignment check → **prioritize** the backlog.

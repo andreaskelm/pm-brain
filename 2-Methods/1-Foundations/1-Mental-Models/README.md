@@ -37,7 +37,7 @@ Mental models are organized by category:
 - [Four Risks of Product Management](2-Product-Thinking/4-four-risks.md) - Value, viability, usability, feasibility risks
 - [Jobs vs Features](2-Product-Thinking/5-jobs-vs-features.md) - Serve jobs, not feature lists
 - [0-1 vs 1-100](2-Product-Thinking/6-zero-to-one-vs-one-to-one-hundred.md) - Adapting approach to product stage
-- [Build-Measure-Learn](2-Product-Thinking/7-build-measure-learn.md) - *TODO: empty file*
+- [Build-Measure-Learn](2-Product-Thinking/7-build-measure-learn.md) - Run the lean loop backwards
 
 ### Work-Levels
 - [Tactical, Operational, Strategic Work Levels](3-Work-Levels/1-tactical-operational-strategic.md)
@@ -58,9 +58,9 @@ Mental models are organized by category:
 ### Product-Sense-Development
 - [Start here: Product thinking](../../../system/coaching/README.md) - Single entry point for product thinking: simple prompt to start, persona & background (for agent), situation → prompts → braindump → then framework; stuck → evaluation; AI, mental models, biases
 - [Product Sense Development](6-Product-Sense-Development/README.md) - Systematic framework for developing product intuition through deliberate practice that acts as a cross-cutting lens on top of Strategy, Discovery, and Execution frameworks
-- [Mental Models → Product Sense Bridge](6-Product-Sense-Development/4-mental-models-product-sense-bridge.md) - When and how to use Decision-Making and Product-Thinking mental models during braindumps and product decisions
-- [AI Product Sense](6-Product-Sense-Development/5-ai-product-sense.md) - Product sense for AI products (model capability, safety, trust)
-- [Meta-Thinking for Product Sense](6-Product-Sense-Development/6-meta-thinking-for-product-sense.md) - Thinking modes, assumptions, and biases that affect product judgment
+- [Mental Models → Product Sense Bridge](6-Product-Sense-Development/3-mental-models-product-sense-bridge.md) - When and how to use Decision-Making and Product-Thinking mental models during braindumps and product decisions
+- [AI Product Sense](6-Product-Sense-Development/4-ai-product-sense.md) - Product sense for AI products (model capability, safety, trust)
+- [Meta-Thinking for Product Sense](6-Product-Sense-Development/5-meta-thinking-for-product-sense.md) - Thinking modes, assumptions, and biases that affect product judgment
 
 ## How to Use Mental Models
 

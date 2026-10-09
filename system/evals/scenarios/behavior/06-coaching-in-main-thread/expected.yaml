@@ -1,0 +1,33 @@
+scenario_id: coaching_in_main_thread_001
+description: |
+  User asks for a stakeholder simulation of a pitch (CFO + VP Sales). Agent may
+  delegate to the stakeholder-simulator subagent or simulate inline. Either way, the
+  reply must add a coaching layer in the main thread — which objection matters, what
+  the user is underestimating — and keep the decision about changes with the user.
+
+pass_threshold:
+  structural: 1.0
+  content: 0.8
+
+turns:
+  - turn: 1
+    input: turn-01-user.md
+    structural:
+      - type: response_contains
+        arg: "CFO"
+        spec_owner: .claude/agents/stakeholder-simulator.md
+      - type: question_count_at_least
+        arg: 1
+        spec_owner: AGENTS.md
+      - type: file_not_created_glob
+        arg: "1-Context/**"
+        spec_owner: AGENTS.md
+    content:
+      - judge: coaching_in_main_thread
+        rubric: judges/coaching_in_main_thread.md
+        spec_owner: AGENTS.md
+        expected_meaning: "Simulated reactions for both stakeholders, then the coach's own read on the strongest objection (e.g. 'four deals a year' is a verbal-tier claim the CFO will poke) and a question back about what the user would change"
+        must_not: "Raw simulation dump with no coaching, or a rewritten pitch the user didn't ask for"
+
+final_state:
+  structural: []

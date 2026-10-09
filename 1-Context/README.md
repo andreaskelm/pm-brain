@@ -105,9 +105,7 @@ I'll start by telling you which parts of our company context feel most unclear r
 ## Related 2-Methods
 
 - Strategic foundations: [2-Methods/2-Strategy/1-Strategic-Foundations/](../2-Methods/2-Strategy/1-Strategic-Foundations/README.md)
-- Roadmap: [2-Methods/2-Strategy/2-Strategic-Execution/2-Roadmap/](../2-Methods/2-Strategy/2-Strategic-Execution/2-Roadmap/README.md)
-- OKRs: [2-Methods/2-Strategy/2-Strategic-Execution/1-OKR/](../2-Methods/2-Strategy/2-Strategic-Execution/1-OKR/README.md)
-- Personas: [2-Methods/4-Execution/5-Personas/](../2-Methods/4-Execution/5-Personas/README.md)
+- Roadmap / OKRs / personas: [2-Methods/0-index.md](../2-Methods/0-index.md) (Agent Skills: `roadmap`, `okr`, `discovery-synthesis`)
 - Self-Reflection: [2-Methods/1-Foundations/3-Self-Reflection/](../2-Methods/1-Foundations/3-Self-Reflection/README.md)
 
 

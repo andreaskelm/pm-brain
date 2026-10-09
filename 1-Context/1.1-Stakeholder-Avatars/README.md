@@ -1,6 +1,6 @@
 ﻿# Stakeholder Avatars (Brainfeed Cast)
 
-This folder holds your **global cast of recurring people** you work with (manager, Eng lead, designer, PM leadership, key cross-functional partners). One file per person. The agent uses these avatars with the [politics-coach skill](../../system/skills/politics-coach/SKILL.md) to simulate "what would my manager say?" and to run politics checks on plans and communication when those people aren't in the room.
+This folder holds your **global cast of recurring people** you work with (manager, Eng lead, designer, PM leadership, key cross-functional partners). One file per person. The agent uses these avatars with the [politics-coach skill](../../.claude/skills/politics-coach/SKILL.md) to simulate "what would my manager say?" and to run politics checks on plans and communication when those people aren't in the room.
 
 **To add or update avatars:** Use the guided quiz and methodology in [2-Methods/5-Communication/8-Stakeholder-Avatars/](../../2-Methods/5-Communication/8-Stakeholder-Avatars/README.md). This folder is where the resulting data lives.
 

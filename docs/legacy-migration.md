@@ -1,5 +1,7 @@
 # Legacy Folder Migration
 
+> **Already migrated (2026-10 overhaul):** Agent wiring is **AGENTS.md–only** at bootstrap (no `system/MEMORY.md`, no `.cursor/rules/pm-brain.mdc`). Workflows live in **`.claude/skills/`** with subagents in **`.claude/agents/`**; framework navigation is **[2-Methods/0-index.md](../2-Methods/0-index.md)** (not `0-template-finder.md`). **`5-Growth/`** is lean — [decisions.md](../5-Growth/decisions.md) and [weekly/](../5-Growth/weekly/README.md) only. Legacy **`.cursor/commands/`** removed. Decision logging: [5-Growth/decisions.md](../5-Growth/decisions.md) (not PJT `forecast-log.md`). Evals: [system/evals/README.md](../system/evals/README.md).
+
 PM Brain uses a **canonical 1–5 top-level model** plus root bootstrap files and a `system/` agent layer. Older repo versions used **`00–04` decimal-prefixed folders** and scattered meta/agent/thinking files.
 
 **Rule going forward:** Put content in `1-Context/` through `5-Growth/`, agent infrastructure in `system/`, human docs in `docs/`, bootstrap files at repo root. Do not add files to legacy folders.
@@ -47,15 +49,15 @@ Framework reference for product sense stays in `2-Methods/1-Foundations/1-Mental
 | Legacy concern | Canonical |
 |----------------|-----------|
 | Orchestration, routing, states | `system/ORCHESTRATION.md` |
-| Context manifest ("what to wake when") | `system/MEMORY.md` |
+| Context manifest ("what to wake when") | Wake table in `AGENTS.md` (was `system/MEMORY.md`) |
 | Braindump loop, situation prompts | `system/coaching/` |
-| Topic-dispatch skills | `system/skills/` |
+| Topic-dispatch skills | `.claude/skills/` (was `system/skills/`) |
 | Eval harness, behavior specs, hooks | `system/evals/` |
 | Artifact Quick Quality Check rules | `system/EVALUATION.md` |
 
 ### → `docs/` (human documentation)
 
-Setup guides, architecture, principles, maintainer references (e.g. `agent-manifest.md`). Not loaded by the agent at runtime except when explicitly referenced.
+Setup guides, architecture, principles. Not loaded by the agent at runtime except when explicitly referenced.
 
 ### → Root bootstrap files (thinking split)
 
@@ -65,7 +67,7 @@ Personal and agent "thinking" used to live in Meta, company context, or scattere
 |---------|-----------|-----------------|
 | **Personal context** — name, role, how you work, strengths/challenges, communication prefs | **`USER.md`** | Was often embedded in company context or personal/thinking files |
 | **Agent persona** — principles, routing intent, coaching posture, lens summary | **`AGENTS.md`** | Agent/thinking rules distilled from meta and orchestration docs |
-| **Always-on enforcement** — voice, expanded lenses, braindump floor, minimal footprint | **`.cursor/rules/pm-brain.mdc`** | Enforcement layer; see [architecture.md](architecture.md#why-pm-brainmdc-exists) |
+| **Always-on enforcement** — voice, lenses, braindump floor | **`AGENTS.md`** | Was split across `pm-brain.mdc` / scattered rules; persona + enforcement consolidated (2026-10) |
 | **Platform entry points** | **`CLAUDE.md`**, **`.github/copilot-instructions.md`** | Wiring only — point at shared bootstrap |
 
 **`1-Context/` did not go away.** Company vision, strategy, stakeholders, and org survival stay there. Only **personalization** moved to `USER.md` so org docs stay org-scoped.
@@ -114,8 +116,8 @@ Your fork may still have **both** (e.g. `5-Growth/0.1-Learning-Log/` and `5-Grow
 - Clean up duplicate scenario folders (e.g. `06-premature-solution/` vs `06-premature-solution-004/`) before deleting legacy eval paths
 
 **Skills:**
-- Canonical skills → `system/skills/`
-- Platform wrappers may exist under `.cursor/skills/` or `.claude/skills/` — they point at `system/skills/`
+- Canonical workflows → `.claude/skills/` (each folder has a full `SKILL.md` + `references/`)
+- Subagents → `.claude/agents/`; Cursor hooks → `.cursor/hooks.json` only (no duplicate command/skill trees)
 
 ---
 
@@ -141,7 +143,7 @@ Before removing a legacy folder:
 2. **Move anything missing** from legacy → canonical
 3. **Grep for legacy paths** — search for `00-Meta`, `01-Company-Context`, `02-Methods-and-Tools`, `03-Research-Artifacts`, `04-Initiatives` in markdown links
 4. **Check internal decimals** — remove `0.1-`, `0.2-`, `2.x.y` subfolders after consolidating into `N-Name` paths
-5. **Update MEMORY triggers** — [system/MEMORY.md](../system/MEMORY.md) should reference canonical paths only
+5. **Update wake table** — [AGENTS.md](../AGENTS.md) → "Where Things Live" should reference canonical paths only
 6. **Run link check** — `python system/evals/checks/verify-markdown.py` (if eval stack is present)
 7. **Delete legacy folder** only when empty or fully superseded
 

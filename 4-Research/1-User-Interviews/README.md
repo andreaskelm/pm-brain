@@ -2,7 +2,7 @@
 
 This folder is for storing artifacts from **user and stakeholder interviews**, not for running the interview process itself.
 
-Use discovery methods in [2-Methods/3-Discovery/](../../2-Methods/3-Discovery/README.md) (especially [1-Research-Interviews/](../../2-Methods/3-Discovery/1-Research-Interviews/README.md) and [2-Continuous-Discovery-Habits/](../../2-Methods/3-Discovery/2-Continuous-Discovery-Habits/README.md)) to plan and conduct interviews, then archive the analysis outputs here.
+Use discovery methods in [2-Methods/3-Discovery/](../../2-Methods/3-Discovery/README.md) (especially [1-Research-Interviews/](../../2-Methods/3-Discovery/README.md) and [2-Continuous-Discovery-Habits/](../../2-Methods/3-Discovery/README.md)) to plan and conduct interviews, then archive the analysis outputs here.
 
 ## Suggested structure
 

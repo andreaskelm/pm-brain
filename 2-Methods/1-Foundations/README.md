@@ -39,7 +39,7 @@ Mental model (framing) → Bias checklist → Core framework (e.g., OKR/PRD/Disc
 - **Discovery (../3-Discovery/README.md):** Research, validation, and opportunity assessment
 - **Execution (../4-Execution/README.md):** PRDs, personas, metrics, and daily execution
 - **Communication (../5-Communication/README.md):** Stakeholder management and communication frameworks
-- **Template Structure (how to build/extend):** `../0-Template-Structure/1-template-structure-guide.md`
+- **Template Structure (how to build/extend):** `../0-writing-a-skill.md`
 
 ## AI collaboration prompt (optional)
 ```

@@ -1,6 +1,6 @@
 # Foundations Library
 
-**What this file is:** Index of **everything in 1-Foundations only** — mental models (Decision-Making, Product-Thinking, Work-Levels, etc.) plus Bias and Self-Reflection. For frameworks **across** Strategy, Discovery, Execution, and Communication (by topic), see [1-frameworks-by-topic.md](../1-frameworks-by-topic.md) at the root of `2-Methods/`.
+**What this file is:** Index of **everything in 1-Foundations only** — mental models (Decision-Making, Product-Thinking, Work-Levels, etc.) plus Bias and Self-Reflection. For workflows and skills (PRD, OKRs, discovery, etc.), see [0-index.md](../0-index.md) at the root of `2-Methods/`.
 
 This library gives quick access to all mental models and foundational frameworks in the PM Brain system. Mental models are quick-reference thinking tools; frameworks here provide structured processes and templates.
 
@@ -26,7 +26,7 @@ Mental models are organized by category. Each provides a quick lens for thinking
 - **[Four Risks of Product Management](1-Mental-Models/2-Product-Thinking/4-four-risks.md)** - Value, viability, usability, feasibility risks
 - **[Jobs vs Features](1-Mental-Models/2-Product-Thinking/5-jobs-vs-features.md)** - Serve jobs, not feature lists
 - **[0-1 vs 1-100](1-Mental-Models/2-Product-Thinking/6-zero-to-one-vs-one-to-one-hundred.md)** - Adapting approach to product stage
-- [Build-Measure-Learn](1-Mental-Models/2-Product-Thinking/7-build-measure-learn.md) - *TODO: empty file*
+- [Build-Measure-Learn](1-Mental-Models/2-Product-Thinking/7-build-measure-learn.md) - Run the lean loop backwards
 
 ### Execution-Hygiene
 
@@ -83,7 +83,7 @@ Recognize and mitigate cognitive biases that distort decision-making. Includes t
 
 ## How This Wires Into the Coaching System
 
-Two-tier architecture: some content is **always-on** (distilled into coaching lenses), the rest is **on-demand** (woken by conversation triggers). The wiring is declared in [MEMORY.md](../../system/MEMORY.md) and [ORCHESTRATION.md](../../system/ORCHESTRATION.md) — this section is the human-readable map of those decisions.
+Two-tier architecture: some content is **always-on** (distilled into coaching lenses), the rest is **on-demand** (woken by conversation triggers). The wiring is declared in [AGENTS.md](../../AGENTS.md) (lenses + wake table) — this section is the human-readable map of those decisions.
 
 ### Always-On (coaching lenses in AGENTS.md)
 
@@ -115,7 +115,7 @@ Load when the conversation touches the relevant area. All deep-linked to specifi
 These have substantive content but are genuinely covered by existing coaching lenses and wired models — adding triggers would create redundancy, not value.
 
 - **Feature Factory** — covered by the "outcome vs output" + "org reality acknowledgment" coaching lenses. The file itself describes it as a companion to Outcome vs Output.
-- **Alignment Check (external)** — covered by the politics and stakeholder-management skills for external stakeholders. The wired Alignment Check above handles the internal team case.
+- **Alignment Check (external)** — covered by the `politics-coach` and `stakeholder-comms` skills for external stakeholders. The wired Alignment Check above handles the internal team case.
 
 ### TODO Stubs (content not yet written)
 
@@ -124,6 +124,6 @@ These exist in the index but have no or minimal content: Opportunity Cost, Regre
 ## Related Content
 
 - [Mental Models README](1-Mental-Models/README.md) - Complete mental models directory
-- [Template Structure Guide](../0-Template-Structure/1-template-structure-guide.md) - How frameworks are structured
+- [Template Structure Guide](../0-writing-a-skill.md) - How frameworks are structured
 - [Strategy Frameworks](../2-Strategy/) - OKRs, Roadmaps, PRDs, Prioritization
 - [Discovery Frameworks](../3-Discovery/) - Research, Validation, Opportunity Assessment

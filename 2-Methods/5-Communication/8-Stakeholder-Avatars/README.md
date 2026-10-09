@@ -28,7 +28,7 @@ This framework helps you build and maintain a **global cast of stakeholder and p
 - Run politics checks on plans, PRDs, and roadmaps before you share them.
 - Sequence conversations and anticipate objections.
 
-The **method** (quiz questions, template, when to update) lives here in 2-Methods. The **data** — your actual avatars — lives in [1-Context/1.1-Stakeholder-Avatars/](../../../1-Context/1.1-Stakeholder-Avatars/README.md) (one file per person; see that folder's README for file naming). The agent uses the [politics-coach skill](../../../system/skills/politics-coach/SKILL.md) to know when to run this framework or to simulate from existing avatars.
+The **method** (quiz questions, template, when to update) lives here in 2-Methods. The **data** — your actual avatars — lives in [1-Context/1.1-Stakeholder-Avatars/](../../../1-Context/1.1-Stakeholder-Avatars/README.md) (one file per person; see that folder's README for file naming). The agent uses the [politics-coach skill](../../../.claude/skills/politics-coach/SKILL.md) to know when to run this framework or to simulate from existing avatars.
 
 ## Files
 
@@ -56,5 +56,5 @@ The **method** (quiz questions, template, when to update) lives here in 2-Method
 ## Links
 
 - Stakeholder Management (mapping, communication): [7-Stakeholder-Management/](../7-Stakeholder-Management/README.md)
-- Politics-coach skill (when to use avatars): [system/skills/politics-coach/SKILL.md](../../../system/skills/politics-coach/SKILL.md)
+- Politics-coach skill (when to use avatars): [.claude/skills/politics-coach/SKILL.md](../../../.claude/skills/politics-coach/SKILL.md)
 - Product sense (braindump first): [system/coaching/README.md](../../../system/coaching/README.md)

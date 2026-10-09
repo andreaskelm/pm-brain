@@ -1,6 +1,6 @@
 # PM Brain Principles
 
-> **Repo design principles** — not company product principles (those live in [`1-Context/3-company-product-principles.md`](../1-Context/3-company-product-principles.md)). Maintainer reference for structure: [architecture.md](architecture.md). Agent persona and principles: [AGENTS.md](../AGENTS.md). Always-on enforcement (voice, lenses, braindump floor): [`.cursor/rules/pm-brain.mdc`](../.cursor/rules/pm-brain.mdc). Deep coaching process: [system/coaching/](../system/coaching/).
+> **Repo design principles** — not company product principles (those live in [`1-Context/3-company-product-principles.md`](../1-Context/3-company-product-principles.md)). Maintainer reference for structure: [architecture.md](architecture.md). Agent persona, voice, lenses, and braindump floor: [AGENTS.md](../AGENTS.md). Deep coaching process: [system/coaching/](../system/coaching/).
 ---
 
 ## 1. Golden Record & Minimal Footprint
@@ -26,7 +26,7 @@ This repo is the **single source of truth** for product decisions, frameworks, a
 | Frameworks, templates, playbooks | `2-Methods/` |
 | Active bets, PRDs, roadmaps | `3-Work/` |
 | Research evidence | `4-Research/` |
-| Personal practice, logs, PJT | `5-Growth/` |
+| Decisions log, weekly practice | `5-Growth/` |
 | Agent infrastructure | `system/` |
 
 **Coaching process** → `system/coaching/` (how the agent runs braindump sessions)  
@@ -49,7 +49,7 @@ This repo is the **single source of truth** for product decisions, frameworks, a
 **Good:** "Help me think through X" — braindump before template — challenge assumptions  
 **Bad:** Jump straight to templates — fill boxes without revisiting — duplicate content across files
 
-Setup: [setup.md](setup.md) — enforcement via `.cursor/rules/pm-brain.mdc` on **all platforms** (Cursor auto-injects; Claude Code and Copilot read it via bootstrap checklists in [platform-setup.md](platform-setup.md))
+Setup: [setup.md](setup.md) — [AGENTS.md](../AGENTS.md) loads natively on Cursor, Claude Code, and Copilot; see [platform-setup.md](platform-setup.md)
 
 ---
 
