@@ -49,5 +49,5 @@ Example in a decisions row: "Mid-market ops batch weekly, not daily `[documented
 - Assumptions vs facts lens: [AGENTS.md](../../../../AGENTS.md)
 - [Assumptions Framework](3-assumptions-framework.md) — align on beliefs before solutions
 - Reopen triggers (what would change your mind): [5-Growth/decisions.md](../../../../5-Growth/decisions.md); confidence vs. evidence: [Calibration](8-calibration.md)
-- Friday drift sweep: `/weekly-review` + [2-weekly-cadence.md](../../../4-Execution/1-Daily-Execution-And-Rituals/2-weekly-cadence.md)
+- Friday drift sweep: `weekly-review` skill + [2-weekly-cadence.md](../../../4-Execution/1-Daily-Execution-And-Rituals/2-weekly-cadence.md)
 - Bias when evidence is thin: [2-Bias/1-bias-framework.md](../../2-Bias/1-bias-framework.md)
