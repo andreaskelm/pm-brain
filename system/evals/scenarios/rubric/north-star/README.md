@@ -2,7 +2,7 @@
 
 Tests whether the canonical North Star evaluation rubric correctly PASSes a good specimen and FAILs a bad one.
 
-**Rubric:** [2-Methods/2-Strategy/2-Strategic-Execution/3-North-Star/3-north-star-evaluation.md](../../../../../2-Methods/2-Strategy/2-Strategic-Execution/3-North-Star/3-north-star-evaluation.md)
+**Rubric:** [.claude/skills/north-star/references/criteria.md](../../../../../.claude/skills/north-star/references/criteria.md)
 
 **Test specimens:** `fixtures/good.md`, `fixtures/bad.md` (synthetic — not real work)
 

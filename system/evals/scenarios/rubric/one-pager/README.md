@@ -2,7 +2,7 @@
 
 Tests whether the canonical One-Pager evaluation rubric correctly PASSes a good specimen and FAILs a bad one.
 
-**Rubric:** [2-Methods/5-Communication/3-One-Pagers/3-one-pager-evaluation.md](../../../../../2-Methods/5-Communication/3-One-Pagers/3-one-pager-evaluation.md)
+**Rubric:** [.claude/skills/stakeholder-comms/references/criteria-one-pager.md](../../../../../.claude/skills/stakeholder-comms/references/criteria-one-pager.md)
 
 **Test specimens:** `fixtures/good.md`, `fixtures/bad.md` (synthetic — not real work)
 

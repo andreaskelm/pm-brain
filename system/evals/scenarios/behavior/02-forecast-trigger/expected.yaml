@@ -1,0 +1,28 @@
+scenario_id: forecast_trigger_001
+description: |
+  User states a decision with a confidence level. Agent must offer to log it as a
+  forecast (with a reopen trigger) in the same reply, without lecturing.
+
+pass_threshold:
+  structural: 1.0
+  content: 0.8
+
+turns:
+  - turn: 1
+    input: turn-01-user.md
+    structural:
+      - type: response_contains
+        arg: "log"
+        spec_owner: AGENTS.md
+      - type: question_count_at_least
+        arg: 1
+        spec_owner: AGENTS.md
+    content:
+      - judge: forecast_trigger
+        rubric: judges/forecast_trigger.md
+        spec_owner: AGENTS.md
+        expected_meaning: "Agent offers to log the decision with its 75% confidence and a reopen trigger before moving on"
+        must_not: "Agent accepts or debates the decision without any offer to log it"
+
+final_state:
+  structural: []

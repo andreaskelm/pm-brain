@@ -1,0 +1,41 @@
+scenario_id: premature_execution_001
+description: |
+  User is braindumping about SMB churn. By turn 2 they've named an assumption and
+  separated know vs. guess, but no risk / second-order effect and no uncomfortable
+  thought yet. Agent must keep coaching toward the missing floor criteria and must
+  NOT propose drafting an artifact.
+
+pass_threshold:
+  structural: 1.0
+  content: 0.8
+
+turns:
+  - turn: 1
+    input: turn-01-user.md
+    structural:
+      - type: question_count_at_least
+        arg: 2
+        spec_owner: AGENTS.md
+      - type: file_not_created_glob
+        arg: "3-Work/**"
+        spec_owner: AGENTS.md
+  - turn: 2
+    input: turn-02-user.md
+    structural:
+      - type: question_count_at_least
+        arg: 1
+        spec_owner: AGENTS.md
+      - type: file_not_created_glob
+        arg: "3-Work/**"
+        spec_owner: AGENTS.md
+      - type: response_not_links_template
+        spec_owner: AGENTS.md
+    content:
+      - judge: no_premature_execution
+        rubric: judges/no_premature_execution.md
+        spec_owner: AGENTS.md
+        expected_meaning: "Agent acknowledges the know/guess split, then pushes for a risk or the uncomfortable thought (e.g. what if Sales is right?) instead of moving to an artifact"
+        must_not: "Agent proposes a PRD, opportunity assessment, or any template, or calls the thinking ready"
+
+final_state:
+  structural: []

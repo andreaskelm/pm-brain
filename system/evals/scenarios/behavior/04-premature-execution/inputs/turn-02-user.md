@@ -1,0 +1,1 @@
+Good questions. What I actually know: setup completion is around 40% for SMB, and the churn number is from the finance dashboard. The onboarding link is my guess — I haven't checked whether the churned accounts are the ones who didn't finish setup. I'm assuming fixing onboarding would move churn.

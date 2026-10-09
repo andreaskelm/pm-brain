@@ -2,23 +2,23 @@
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/) [![GitHub stars](https://img.shields.io/github/stars/andreaskelm/pm-brain?style=social)](https://github.com/andreaskelm/pm-brain) [![GitHub forks](https://img.shields.io/github/forks/andreaskelm/pm-brain?style=social)](https://github.com/andreaskelm/pm-brain/fork)
 
-> **Your external product management brain-in-code. Single source of truth = latest commit.**
+> **PM Brain-as-Code** — your **external product management OS**: a **second brain** you own in git. **Single source of truth for knowledge and decisions** — the latest commit.
 
-<p align="center"><img src="assets/pm-brain-hero.png" alt="From messy thinking to structured insight" width="560"></p>
+<p align="center"><img src="assets/pm-brain-hero.jpg" alt="From messy thinking to structured insight" width="560"></p>
 
 You have probably felt this before:
 
 - *"Sprint planning starts in 30 minutes and we still do not have a clear prioritization call."*
-- *"Leadership wants the strategy document by end of day, and I am still stitching context from Confluence, Jira tickets, old emails, and town hall slides from four months ago."*
-- *"A stakeholder flips their position right before go-live, and launch is postponed or canceled over something we could have pressure-tested upfront."*
+- *"Leadership wants the strategy doc by EOD and I am still stitching context from Confluence, Jira, old email, and town-hall slides from four months ago."*
+- *"A stakeholder flips right before go-live — and we postpone or kill launch over something we could have pressure-tested upfront."*
 
-Product work is messy — a lot of the time it feels like brain soup. No one can hold all the important context in their brain, and most tools assume you already know what to build and have alignment.
+Product work is messy. A lot of the time it is brain soup. Context lives in Notion, Linear, Slack, dashboards, and slides — and six weeks after a prioritization fight, nobody remembers why you killed the other option. PM Brain keeps **knowledge, reasoning, and decisions** next to the work: plain markdown in a repo on your machine, versioned like code.
 
-**PM Brain is a git-versioned product management system with an AI coaching layer built for that reality — not the theory.** It gives your thinking a home, challenges your assumptions before you execute, and helps you survive the organizational politics that never show up in framework diagrams.
+**A thinking partner that defaults to challenge, not validation** — not a template vending machine. The full behavior is spelled out under [What it actually is](#what-it-actually-is); skills (PRD, OKR, roadmap, discovery, prioritization, politics, weekly review, …) are how work gets structured once thinking is solid; `AGENTS.md` is who shows up in the conversation.
 
-Everything lives in git. Latest commit = current reality. Confluence pages, Jira tickets, and slides stay referenced instead of trying to wire every source into one tool.
+Jira, Confluence, and Figma stay where they are — you link out. This repo is the layer for **intent, bets, evidence, and the calls you would reopen if the world changed**.
 
-If this sounds like your world, you can skip down to [Getting started](#-getting-started).
+If you want setup first, jump to [Getting started](#-getting-started).
 
 ---
 
@@ -29,32 +29,32 @@ Most PM tools are built for execution. They assume the problem is already clear 
 PM Brain is built for everything that happens **before** that — the messy, ambiguous, politically loaded work of figuring out what is worth doing and getting people to agree.
 
 **A thinking partner that defaults to challenge, not validation.**  
-The PM Brain Coach agent does not start by handing you a template. It starts by asking for a braindump and then asks 3–5 uncomfortable questions before any structure is suggested. It stays in thinking mode until:
+The PM Brain Coach does not start by handing you a template. It starts by asking for a braindump, then asks a few uncomfortable questions before any structure is suggested. It stays in **product_sense** until the [braindump floor](system/coaching/braindump.md#sufficiency-criteria) is real, not performative:
 
 - Your assumptions are named  
 - You have separated what you know from what you are guessing  
-- At least one uncomfortable risk or second-order effect is on the table  
+- At least one risk or second-order effect is on the table  
+- At least one uncomfortable thought challenges the plan  
 
-Only then does it move to execution frameworks and templates.
+Only then does it route to a **skill** in `.claude/skills/` — workflows with templates and quality criteria, not a wall of generic framework docs. Along the way it names biases lightly, pressure-tests hypotheses (“what would be the first signal you’re wrong?”), and keeps the judgment call with you.
 
 **An organizational survival system.**  
 You build stakeholder avatars — profiles with goals, fears, incentives, real phrases, and historical behavior. You map power structures, alliances, fault lines, and veto holders. You log the “Red Weddings” so you do not walk into the same one twice. The agent can answer “What would my manager say about this?” with both an out-loud reaction and an inner monologue.
 
 **A learning and growth system.**  
-`5-Growth/` is not just a Product Judgment Test; it is your long-term practice loop:
+Most PMs have no idea if their judgment is actually improving — hindsight makes everyone sound calibrated. PM Brain treats **product sense** as a skill you can practice with evidence:
 
-- Daily and weekly logs where you capture what you tried and what actually happened  
-- A Learning Log where you synthesize weekly and monthly patterns  
-- A Growth Portfolio where you collect evidence for 1:1s, performance reviews, and your own narrative as a PM  
-- A Product Judgment Test that uses weighted Brier scores on forecasts to calibrate your intuition over time  
+- **[decisions.md](5-Growth/decisions.md)** — log calls with confidence and reopen triggers *before* outcomes land; score calibration when you know the result ([background](2-Methods/1-Foundations/1-Mental-Models/1-Decision-Making/8-calibration.md))  
+- **[weekly/](5-Growth/weekly/README.md)** — one short note per week: live assumptions, drift, what you are avoiding (weekly review skill drafts it; you correct it)  
+- **Optional depth** — monthly synthesis, post-project reflection, and 1:1-ready narrative in [2-Methods/1-Foundations/3-Self-Reflection/](2-Methods/1-Foundations/3-Self-Reflection/README.md); research insights stay in [4-Research/](4-Research/README.md), not in Growth  
 
-Most PMs have no idea if their judgment is actually improving. This system gives you the reps **and** the evidence.
+The folder is deliberately small so you actually use it. Rationale: [5-Growth/README.md](5-Growth/README.md).
 
 **Context that does not rot.**  
-`system/MEMORY.md` defines what is “sleeping” and when to wake it. Company context, initiatives, research artifacts, and organizational-survival documents load only when the conversation touches them — not all at once as noise. When a long session needs continuity, capture durable state in `5-Growth/` or the relevant `3-Work/[initiative]/` artifact — not a separate checkpoint folder (see `system/ORCHESTRATION.md`).
+The wake table in [AGENTS.md](AGENTS.md#where-things-live-wake-on-demand) tells the coach what to load when — company context, initiatives, research, stakeholders — instead of dumping the whole repo into context. That is **instruction to the agent** (minimal footprint), not a hard platform lock; it holds when your tool loads `AGENTS.md` and the model follows it. Long sessions: capture durable state in `5-Growth/` or `3-Work/[initiative]/` ([`system/ORCHESTRATION.md`](system/ORCHESTRATION.md)).
 
 **Platform-agnostic.**  
-The repo works with Cursor, Claude Code, Claude.ai, ChatGPT, GitHub Copilot, or any AI tool that can take files as context. Bootstrap (every conversation, all platforms): `AGENTS.md` → `.cursor/rules/pm-brain.mdc` → `system/MEMORY.md` → `USER.md`. Routing detail: `system/ORCHESTRATION.md` (state entry, not bootstrap). Per-platform wiring: [docs/platform-setup.md](docs/platform-setup.md).
+Cursor, Claude Code, VS Code Copilot, Claude.ai, ChatGPT, or any tool that can read repo files. Bootstrap: **`AGENTS.md`** (+ **`USER.md`** when present). Workflows: **`.claude/skills/`**; delegation: **`.claude/agents/`**. Routing: `system/ORCHESTRATION.md` at state entry. Wiring: [docs/platform-setup.md](docs/platform-setup.md) (model tiers, hooks, live evals).
 
 ---
 
@@ -74,12 +74,22 @@ You still own the thinking and the decisions. The agent is there to challenge, s
 
 The PM Brain Coach runs as a lightweight state machine defined in `system/ORCHESTRATION.md`. It operates in four modes:
 
-- **product_sense** — Default when you are thinking through product, strategy, discovery, stakeholders, or organizational dynamics. The agent stays here, asking questions and using product-sense prompts, until a “braindump sufficient” checklist is met.
-- **execution_mode** — After there is enough thinking on the table (or when you explicitly ask for a specific document), the agent routes to the right framework and template and guides you through it step by step.
+- **product_sense** — Default when you are thinking through product, strategy, discovery, stakeholders, or organizational dynamics. The agent stays here until the four sufficiency criteria in [braindump.md](system/coaching/braindump.md) are met for real, not on paper.
+- **execution_mode** — After enough thinking (or an explicit doc request with preflight), the agent loads the matching **skill** in `.claude/skills/` and guides you through templates and quality checks.
 - **meta_reflection** — After substantial decisions or discovery work, the agent suggests logging forecasts, learnings, and patterns in `5-Growth/` and (optionally) running evaluation checklists.
 - **conversation** — Navigation, repo questions, and lightweight topics.
 
-State transitions, loading rules, and context limits are all documented in [`system/ORCHESTRATION.md`](system/ORCHESTRATION.md) and [`docs/architecture.md`](docs/architecture.md).
+State transitions and loading rules: [`system/ORCHESTRATION.md`](system/ORCHESTRATION.md). Maintainer detail: [`docs/architecture.md`](docs/architecture.md).
+
+---
+
+## Skills and subagents
+
+**Skills** (`.claude/skills/`) own workflows — PRD, OKR, roadmap, prioritize, opportunity assessment, politics-coach, weekly review, and more. Pick from the table in [2-Methods/0-index.md](2-Methods/0-index.md) or invoke with `/skill-name` where your platform supports it.
+
+**Subagents** (`.claude/agents/`) handle mechanical or independent work: `context-scout` (repo scan), `artifact-reviewer` (QQC without grading your own draft), `stakeholder-simulator` (avatar-based reactions). Coaching and judgment calls stay in the main thread — see [AGENTS.md](AGENTS.md) → Delegation.
+
+Install skills into another repo (Cursor): `npx skills add andreaskelm/pm-brain` (ships `.claude/skills/` from upstream).
 
 ---
 
@@ -89,24 +99,22 @@ At the top level, the repo looks like this:
 
 ```text
 pm-brain/
-|-- AGENTS.md                  # Bootstrap — persona, principles, routing intent
-|-- CLAUDE.md                  # Claude Code entry point
+|-- AGENTS.md                  # Bootstrap — persona, voice, wake table
 |-- USER.md                    # Your personal context
-|-- .cursor/rules/pm-brain.mdc # Enforcement — voice, lenses, braindump floor
-|-- system/                    # Agent infrastructure (MEMORY, orchestration, coaching, skills, evals)
+|-- .claude/skills/            # Workflows (PRD, OKR, prioritize, …)
+|-- .claude/agents/            # Subagents (scout, reviewer, simulator)
+|-- system/                    # Orchestration, coaching, evals
 |-- 1-Context/                 # Vision, strategy, stakeholders, org survival
-|-- 2-Methods/                 # Frameworks, guides, templates
+|-- 2-Methods/                 # Reference — mental models, guides (0-index → skills)
 |-- 3-Work/                    # Active initiatives
 |-- 4-Research/                # Research artifacts
-|-- 5-Growth/                  # Practice loop (logs, PJT, portfolio)
-|-- docs/                      # Setup, principles, architecture (see docs/README.md)
-+-- .cursor/                   # Cursor rules, commands, skills wrappers, hooks
-+-- .github/                   # Copilot instructions, CI workflows
+|-- 5-Growth/                  # decisions.md + weekly/
+|-- docs/                      # Setup, principles, architecture (docs/README.md)
++-- .cursor/                   # Hooks (Cursor)
++-- .github/                   # CI workflows
 ```
 
-**Latest commit = current reality.** No stale Notion or Confluence pages.
-
-For a deeper architecture walkthrough and how loading works across layers and “sleeping memory,” see [`docs/architecture.md`](docs/architecture.md).
+**Latest commit = source of truth** for knowledge and decisions in this repo. Maintainer architecture: [`docs/architecture.md`](docs/architecture.md).
 
 ---
 
@@ -135,27 +143,9 @@ After a political incident or a “we should have seen this coming” moment, th
 
 ---
 
-## Learning and growth system (`5-Growth/`)
+## Practice loop (`5-Growth/`)
 
-`5-Growth/` is where you track what you **do**, what you **learn**, and how your **judgment** changes over time.
-
-At a high level:
-
-- **Daily & weekly practice** — quick notes on what you worked on, the bets you are making, and what surprised you.
-- **Learning Log** (`1-Learning-Log/`) — weekly reflections and monthly syntheses where you step back and look for patterns rather than one-off incidents.
-- **Growth Portfolio** (`2-Growth-Portfolio/`) — a living narrative and evidence file for 1:1s, performance reviews, promotion packets, and your own sense of progress.
-- **Product Judgment Test** (`3-Product-Judgment-Test/`) — a Brier-score based system for logging forecasts before you ship and scoring them after outcomes resolve.
-
-The loop looks like:
-
-1. You do the daily work.  
-2. You reflect weekly and monthly to notice patterns.  
-3. You collect evidence of decisions and outcomes in your portfolio.  
-4. You log forecasts before shipping and score them later to calibrate your intuition.  
-
-The point is not being “right” all the time. A strong PM is calibrated: when you say 70%, you are right roughly 70% of the time. The Product Judgment Test gives you a measurable view of that calibration across different bet types and novelty levels.
-
-Details and templates live in `5-Growth/README.md` and the subfolder READMEs.
+Same story as [learning and growth](#what-it-actually-is) above — two files you can actually keep current: [decisions.md](5-Growth/decisions.md) and [weekly/](5-Growth/weekly/README.md). When you say 70%, are you right about seven times out of ten? That is the point. Details: [5-Growth/README.md](5-Growth/README.md).
 
 ---
 
@@ -166,9 +156,7 @@ PM Brain uses two related eval layers — do not conflate the naming:
 - **Artifact QQC (methods “Level 1”).** Quick Quality Checks built into key frameworks (OKRs, roadmaps, PRDs, opportunity assessments, North Star, one-pagers). They run while you create artifacts to catch thin problem definitions, missing risks, or weak metrics. Rules: [system/EVALUATION.md](system/EVALUATION.md).
 - **Harness tiers L0–L4 (`system/evals/`).** Repo health (L0), rubric regression (L1), behavior scenarios (L2), human review (L3), in-turn write hooks (L4). Use these to check whether the agent honored the golden rule, stayed in product_sense long enough, and surfaced meaningful risks.
 
-Overview: [system/evals/README.md](system/evals/README.md). CI and local commands: [docs/evals-fork.md](docs/evals-fork.md). Full architecture: [docs/architecture.md](docs/architecture.md).
-
-The eval system exists so both **you** and the **agent** improve over time, based on real work rather than theory.
+Overview: [system/evals/README.md](system/evals/README.md). CI and local commands: [docs/evals-fork.md](docs/evals-fork.md).
 
 ---
 
@@ -194,60 +182,15 @@ You can use PM Brain either directly in an AI chat tool or in an IDE.
    ```
 
 2. **Follow [`docs/setup.md`](docs/setup.md)** — configure Company Context, privacy mode, and optional `5-Growth/` setup.
-3. **Wire the agent per tool:** [`docs/platform-setup.md`](docs/platform-setup.md) — 4-file bootstrap and Cursor / Copilot / Claude Code entry points.
+3. **Wire the agent per tool:** [`docs/platform-setup.md`](docs/platform-setup.md) — AGENTS.md bootstrap, skills, model tiers.
 4. **Use the repo in your IDE** — open a framework or start a conversation with the agent; it will guide you (think first, then structure, then templates).
 
 **Using the agent in Cursor.**
-Open this repo in Cursor and start a chat. Say what you are working on (“I am stuck on prioritization,” “Help me think through this feature,” “I need to write a PRD”). The agent will guide you and signal when it switches from exploring to structuring. Bootstrap: `AGENTS.md` → `.cursor/rules/pm-brain.mdc` → `system/MEMORY.md` → `USER.md`. Platform wiring: [docs/platform-setup.md](docs/platform-setup.md).
+Open this repo in Cursor and start a chat. Say what you are working on (“I am stuck on prioritization,” “Help me think through this feature,” “I need to write a PRD”). The agent will guide you and signal when it switches from exploring to structuring. Bootstrap: `AGENTS.md` + `USER.md`. Platform wiring: [docs/platform-setup.md](docs/platform-setup.md).
 
-**Use PM Brain in any project (Cursor only):**
+**Use PM Brain skills in another repo (Cursor):** `npx skills add andreaskelm/pm-brain` — installs `.claude/skills/` from upstream.
 
-```bash
-npx skills add andreaskelm/pm-brain
-```
-
-Installs the workflow skill from `skills.sh` so you can bring PM Brain workflows into other repos.
-
----
-
-## Who this is for
-
-PM Brain is for:
-
-- PMs at any level whose actual Tuesday mornings look nothing like LinkedIn thought-leadership threads.  
-- Teams who want shared language and a living knowledge base that does not go stale.  
-- Managers who want to make judgment, discovery, and strategy **visible** and coachable, not just outcomes.  
-
-If you are tired of frameworks that assume the organization is already aligned and the problem is already obvious, this is for you.
-
----
-
-## Daily workflow
-
-On a typical day, the loop looks like this:
-
-1. Open a conversation with the agent (or your AI tool of choice) with this repo as context.  
-2. Describe what you are thinking through — messy is fine; that is the point.  
-3. Stay in product_sense while the agent asks hard questions and surfaces risks.  
-4. When the thinking is solid enough, let it route you to the right framework or template.  
-5. After substantial work, log forecasts, decisions, or learnings in `5-Growth/`.  
-6. Update company context, avatars, or organizational-survival documents when reality teaches you something new.  
-
-Over time, this gives you both **better decisions** and a **paper trail of how you think**.
-
----
-
-## Maintenance
-
-This is meant to be a living system, not a giant document you touch once a year.
-
-- **Living-document principle:** Update files when you use them. Let git be the changelog.  
-- **Weekly:** Update active initiatives and — if you are using it — your Learning Log.  
-- **Monthly:** Review frameworks you touched; update your Growth Portfolio and stakeholder avatars after key conversations.  
-- **Quarterly:** Revisit company context, strategy, and OKRs.  
-- **After political incidents:** Update organizational-survival documents, especially power maps and red flags.  
-
-Small, regular updates beat big annual overhauls.
+**Who it is for, a typical day, and upkeep cadence:** [docs/setup.md](docs/setup.md#who-its-for) (onboarding doc — keeps this README focused on *what* PM Brain is).
 
 ---
 
@@ -256,17 +199,15 @@ Small, regular updates beat big annual overhauls.
 If you are new and just want the right entry point:
 
 - **Setup & install:** [`docs/setup.md`](docs/setup.md)  
-- **Agent wiring (bootstrap per platform):** [`docs/platform-setup.md`](docs/platform-setup.md)  
+- **Agent wiring (AGENTS.md + skills per platform):** [`docs/platform-setup.md`](docs/platform-setup.md)  
 - **All human docs index:** [`docs/README.md`](docs/README.md)  
 - **Architecture:** [`docs/architecture.md`](docs/architecture.md)  
 - **Design principles & repo maintenance:** [`docs/principles.md`](docs/principles.md)  
 - **Migrating from old folder layout:** [`docs/legacy-migration.md`](docs/legacy-migration.md)  
 - **I want to think through a product decision:**  
   → [`system/coaching/README.md`](system/coaching/README.md)  
-- **I know the document I need (PRD, OKR, roadmap, etc.):**  
-  → [`0-template-finder.md`](2-Methods/0-template-finder.md)  
-- **I want everything about a topic:**  
-  → [`1-frameworks-by-topic.md`](2-Methods/1-frameworks-by-topic.md)  
+- **I know the workflow I need (PRD, OKR, roadmap, etc.):**  
+  → [`2-Methods/0-index.md`](2-Methods/0-index.md) → `.claude/skills/`  
 - **I want to see or run evals:**  
   → [`system/evals/README.md`](system/evals/README.md) (CI/harness: [`docs/evals-fork.md`](docs/evals-fork.md))
 

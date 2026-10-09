@@ -14,7 +14,7 @@ Frames to keep teams outcome-focused and stage-appropriate.
 - [Four Risks of Product Management](4-four-risks.md) — Value/viability/usability/feasibility.
 - [Jobs vs Features](5-jobs-vs-features.md) — Roadmaps by jobs-to-be-done.
 - [0-1 vs 1-100](6-zero-to-one-vs-one-to-one-hundred.md) — Match methods to product stage.
-- [Build-Measure-Learn](7-build-measure-learn.md) — Lean loop. *TODO scope check*
+- [Build-Measure-Learn](7-build-measure-learn.md) — Run the lean loop backwards: learn → measure → build.
 
 ## Related
 - Discovery: `../../../3-Discovery/README.md` (Idea Validation, Product-Market Fit)

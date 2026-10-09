@@ -5,11 +5,6 @@
       {
         "command": "python system/evals/hooks/validate_write.py"
       }
-    ],
-    "stop": [
-      {
-        "command": "node .cursor/hooks/trigger-self-critique.js"
-      }
     ]
   }
 }

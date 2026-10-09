@@ -15,6 +15,7 @@ Quick lenses to match decision speed to risk and surface hidden assumptions.
 - [Opportunity Cost](5-opportunity-cost.md) — Trade-offs lens. *TODO content*
 - [Regret Minimization](6-regret-minimization.md) — Future self test. *TODO content*
 - [Evidence Strength](7-evidence-strength.md) — Four-tier vocabulary for know vs. guess (documented > verbal > hunch > industry).
+- [Calibration](8-calibration.md) — Product sense as a track record: log confidence before you know, score with Brier.
 
 ## Related
 - Bias checklist (`../../2-Bias/1-bias-framework.md`)

@@ -9,7 +9,7 @@
       "Bash(git show:*)",
       "Bash(git branch:*)",
       "Bash(git remote:*)",
-      "Bash(cat system/skills/*:*)",
+      "Bash(cat .claude/skills/*:*)",
       "Bash(cat .cursor/commands/*:*)"
     ],
     "deny": []

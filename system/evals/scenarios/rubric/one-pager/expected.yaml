@@ -3,7 +3,7 @@ type: rubric_regression
 description: |
   Rubric regression: grade One-Pager test specimens against canonical 3-one-pager-evaluation.md.
 
-rubric_path: 2-Methods/5-Communication/3-One-Pagers/3-one-pager-evaluation.md
+rubric_path: .claude/skills/stakeholder-comms/references/criteria-one-pager.md
 judge: judges/artifact_quality.md
 spec_owner: 2-Methods/5-Communication/3-One-Pagers/3-one-pager-evaluation.md
 

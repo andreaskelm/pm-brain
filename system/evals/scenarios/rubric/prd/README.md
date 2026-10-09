@@ -2,7 +2,7 @@
 
 Tests whether the canonical PRD evaluation rubric correctly PASSes a good specimen and FAILs a bad one.
 
-**Rubric:** [2-Methods/4-Execution/4-PRD/3-prd-evaluation.md](../../../../../2-Methods/4-Execution/4-PRD/3-prd-evaluation.md)
+**Rubric:** [.claude/skills/write-prd/references/criteria.md](../../../../../.claude/skills/write-prd/references/criteria.md)
 
 **Test specimens:** `fixtures/good.md`, `fixtures/bad.md` (synthetic — not real work)
 

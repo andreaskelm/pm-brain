@@ -45,35 +45,34 @@ __pycache__/
 .idea/
 
 # ============================================
-# PRIVATE MODE — uncomment this block to enable
-# (or tell the agent "switch me to private mode")
+# PRIVATE MODE — enabled (see docs/setup.md Step 3)
 # ============================================
 
-# # --- Personal practice content ---
-# 5-Growth/1-daily-log-*.md
-# 5-Growth/1-Learning-Log/*/
-# 5-Growth/2-Growth-Portfolio/*.md
-# !5-Growth/2-Growth-Portfolio/README.md
-# 5-Growth/self-assessment-*.md
-# 5-Growth/metrics-dashboard*.md
-# 5-Growth/3-Product-Judgment-Test/forecast-log.md
-# 5-Growth/3-Product-Judgment-Test/dashboard.md
-#
-# # --- Company-specific content ---
-# 1-Context/*.md
-# !1-Context/README.md
-#
-# # --- Personal configuration ---
-# USER.md
-#
-# # --- Active work & research ---
-# 3-Work/*
-# !3-Work/README.md
-# !3-Work/1-Initiative-Codename/
-# 4-Research/*
-# !4-Research/README.md
-# !4-Research/1-User-Interviews/README.md
-# !4-Research/2-Qualitative-Research/
+# --- Personal practice content ---
+# (decisions.md ships as a template; once you add rows, it stays local)
+5-Growth/decisions.md
+5-Growth/weekly/*
+!5-Growth/weekly/README.md
+5-Growth/monthly-*.md
+5-Growth/self-assessment-*.md
+
+# --- Company-specific content ---
+1-Context/*.md
+!1-Context/README.md
+1-Context/**/*.md
+!1-Context/**/README.md
+
+# --- Personal configuration ---
+USER.md
+
+# --- Active work & research ---
+3-Work/*
+!3-Work/README.md
+!3-Work/1-Initiative-Codename/
+4-Research/*
+!4-Research/README.md
+!4-Research/1-User-Interviews/README.md
+!4-Research/2-Qualitative-Research/
 
 # ============================================
 # TEAM MODE — uncomment this block to enable
@@ -83,14 +82,11 @@ __pycache__/
 # ============================================
 
 # # --- Personal practice content (each team member keeps theirs private) ---
-# 5-Growth/1-daily-log-*.md
-# 5-Growth/1-Learning-Log/*/
-# 5-Growth/2-Growth-Portfolio/*.md
-# !5-Growth/2-Growth-Portfolio/README.md
+# 5-Growth/decisions.md
+# 5-Growth/weekly/*
+# !5-Growth/weekly/README.md
+# 5-Growth/monthly-*.md
 # 5-Growth/self-assessment-*.md
-# 5-Growth/metrics-dashboard*.md
-# 5-Growth/3-Product-Judgment-Test/forecast-log.md
-# 5-Growth/3-Product-Judgment-Test/dashboard.md
 #
 # # --- Company-specific content ---
 # 1-Context/*.md

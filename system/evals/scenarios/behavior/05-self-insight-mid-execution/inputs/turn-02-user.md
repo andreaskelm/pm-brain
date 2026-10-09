@@ -1,0 +1,1 @@
+Looks fine. Funny, I notice I always frame these as "need decision" when really I've already decided I want the stopgap. I just don't want to be the one who said so if it goes wrong. Anyway, can you tighten the last paragraph?

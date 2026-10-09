@@ -1,0 +1,1 @@
+I want to think through something. Our churn is creeping up in the SMB segment — maybe 2 points over the last two quarters. My gut says onboarding is the problem because new accounts don't finish setup. Sales thinks it's pricing.

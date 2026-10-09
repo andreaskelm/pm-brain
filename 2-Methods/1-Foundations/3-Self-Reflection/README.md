@@ -1,33 +1,14 @@
-# Self-Reflection Framework
+# Self-Reflection
 
-## Introduction
+Reflection is where product sense actually compounds: comparing what you thought would happen with what did, and asking why.
 
-Use this framework to develop self-awareness, learn from experience, and improve your product judgment. Regular reflection helps you catch biases, develop product sense, and become a better product manager.
+| File | Use when |
+|---|---|
+| [1-self-reflection-framework.md](1-self-reflection-framework.md) | Background: prompts and exercises for after a project, a launch, or a miss |
+| [2-self-reflection-template.md](2-self-reflection-template.md) | After finishing a piece of work: what you assumed vs. what happened |
+| [3-monthly-synthesis-template.md](3-monthly-synthesis-template.md) | Monthly roll-up of weekly notes and resolved decisions (the agent drafts it) |
+| [4-self-assessment-template.md](4-self-assessment-template.md) | Quarterly honest rating across four dimensions, with evidence |
 
-**When to use self-reflection:**
-- After completing a framework or process (strategy, PRD, discovery, validation)
-- After major decisions or launches
-- When something didn't go as expected
-- Weekly/monthly personal retrospectives
-- When you want to develop your product sense
+The weekly note is the habit underneath all of this: [5-Growth/weekly/](../../../5-Growth/weekly/README.md). Calibration math: [8-calibration.md](../1-Mental-Models/1-Decision-Making/8-calibration.md).
 
-**When reflection might not be needed:**
-- Very routine, low-stakes tasks
-- When you're in pure execution mode with no learning opportunity
-
-## Files
-- `1-self-reflection-framework.md` — Complete reflection framework with prompts and exercises
-- `2-self-reflection-template.md` — Template for structured reflection sessions
-
-## How to Use This Framework
-
-1. **After completing work**: Use reflection prompts to capture learnings
-2. **Regular cadence**: Set aside time weekly/monthly for reflection
-3. **Before starting new work**: Reflect on what you learned from similar past work
-4. **When things go wrong**: Use reflection to understand what happened and learn
-
-## Links
-- Mental Models: `../1-Mental-Models/`
-- Library Index: `../0-index.md`
-- All frameworks in `../../` can benefit from reflection
-
+Skip reflection for routine, low-stakes work. Don't skip it after a miss.

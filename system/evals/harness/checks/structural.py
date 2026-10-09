@@ -9,7 +9,7 @@ from typing import Any
 
 LINK_RE = re.compile(r"\[([^\]]*)\]\(([^)]+)\)")
 
-FORECAST_LOG = Path("5-Growth/3-Product-Judgment-Test/forecast-log.md")
+DECISIONS_LOG = Path("5-Growth/decisions.md")
 
 
 @dataclass
@@ -31,8 +31,8 @@ def _glob_paths(workdir: Path, pattern: str) -> list[Path]:
     return matches
 
 
-def _read_forecast_rows(workdir: Path) -> int:
-    path = workdir / FORECAST_LOG
+def _read_decision_rows(workdir: Path) -> int:
+    path = workdir / DECISIONS_LOG
     if not path.exists():
         return 0
     text = path.read_text(encoding="utf-8", errors="replace")
@@ -131,17 +131,15 @@ def run_assertion(
                 atype, arg, ok, f"question_count_at_least {n}: found {count}", spec_owner
             )
 
-        if atype == "forecast_log_row_added":
-            before_rows = _read_forecast_rows(workdir)  # approximate via snapshot diff
-            # Re-read: compare line count in file if modified
-            rel = FORECAST_LOG.as_posix()
-            if rel not in files_modified(before, after) and rel not in files_created(before, after):
+        if atype == "decision_logged":
+            rel = DECISIONS_LOG.as_posix()
+            if rel not in files_modified(before, after):
                 ok = False
-                msg = "forecast_log_row_added: file not modified"
+                msg = "decision_logged: decisions.md not modified"
             else:
-                rows = _read_forecast_rows(workdir)
+                rows = _read_decision_rows(workdir)
                 ok = rows >= 1
-                msg = f"forecast_log_row_added: rows={rows}"
+                msg = f"decision_logged: rows={rows}"
             return AssertionResult(atype, None, ok, msg, spec_owner)
 
         if atype == "response_contains":

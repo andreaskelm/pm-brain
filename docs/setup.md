@@ -18,10 +18,10 @@ Your tool choice affects how PM Brain wires the agent bootstrap—some platforms
 
 | Tool | Entry point auto-loads? | Bootstrap read |
 |------|-------------------------|----------------|
-| **Cursor** | Yes — `.cursor/rules/pm-brain.mdc` injected | AGENTS + pm-brain.mdc + MEMORY + USER |
-| **VS Code + GitHub Copilot** | Yes — `.github/copilot-instructions.md` | Same four files (agent reads via tool) |
-| **Claude Code** | Partial — `CLAUDE.md` auto-discovered | Same four files (agent reads via tool) |
-| **ChatGPT / Claude.ai** | No — paste bootstrap block | Same four files (manual paste) |
+| **Cursor** | Yes — `AGENTS.md` as project rules | AGENTS + USER (if present) |
+| **VS Code + GitHub Copilot** | Yes — `AGENTS.md` | AGENTS + USER |
+| **Claude Code** | Yes — `AGENTS.md` (v2.1.277+; no `CLAUDE.md` in repo) | AGENTS + USER |
+| **ChatGPT / Claude.ai** | No — paste bootstrap block | AGENTS + USER (manual paste) |
 
 See [platform-setup.md](platform-setup.md) for full per-tool instructions.
 
@@ -91,7 +91,7 @@ PM Brain uses **numbered top-level folders (1–5)** so you always know *what ki
 | **2** | `2-Methods/` | Frameworks, templates, playbooks (Strategy → Communication) | Mostly no—use as reference |
 | **3** | `3-Work/` | Active initiatives—one folder per bet (PRD, roadmap, decisions) | **Yes**—your work |
 | **4** | `4-Research/` | Research artifacts—interviews, synthesis, qualitative findings | **Yes**—your evidence |
-| **5** | `5-Growth/` | Personal practice—logs, learning log, growth portfolio, Product Judgment Test | **Yes**—your growth |
+| **5** | `5-Growth/` | Decisions log + weekly notes (calibration practice) | **Yes**—your growth |
 
 **Unnumbered infrastructure** (not part of the 1–5 content model):
 
@@ -99,12 +99,11 @@ PM Brain uses **numbered top-level folders (1–5)** so you always know *what ki
 |---------------|------|
 | `system/` | Agent orchestration, coaching prompts, skills, evals |
 | `docs/` | Human docs (this guide, architecture, principles) |
-| `AGENTS.md` | Persona, principles, routing intent — bootstrap file 1 |
-| `.cursor/rules/pm-brain.mdc` | Enforcement (voice, lenses, braindump floor) — bootstrap file 2 |
-| `system/MEMORY.md` | Sleeping memory manifest — bootstrap file 3 |
-| `USER.md` | Your profile — bootstrap file 4 (customize in Step 4) |
-| `CLAUDE.md` | Claude Code entry point (auto-discovered) |
-| `.github/copilot-instructions.md` | GitHub Copilot entry point (auto-loads) |
+| `AGENTS.md` | Persona, voice, lenses, principles, wake table — bootstrap |
+| `USER.md` | Your profile (customize in Step 4) |
+| `.claude/skills/` | Workflow skills (PRD, OKR, prioritize, …) |
+| `.claude/agents/` | Optional subagents (scout, reviewer, stakeholder sim) |
+| `.cursor/hooks.json` | Cursor-only write validation hook |
 
 **Nested numbering inside `2-Methods/`:** Subfolders use their own 1–5 sequence (`1-Foundations` → `5-Communication`). That is *domain* numbering inside the methods library—not the same as the top-level 1–5 folders.
 
@@ -129,17 +128,15 @@ pm-brain/
 |-- 4-Research/                # YOUR research storage (link to initiatives)
 |   |-- 1-User-Interviews/
 |   +-- 2-Qualitative-Research/
-|-- 5-Growth/                  # YOUR personal practice & evidence
-|   |-- 1-Learning-Log/
-|   |-- 2-Growth-Portfolio/
-|   |-- 3-Product-Judgment-Test/
-|   +-- 4-Coaching-Templates/
-|-- system/                    # Agent infrastructure (orchestration, coaching, skills)
+|-- 5-Growth/                  # YOUR decisions log + weekly notes
+|   |-- decisions.md
+|   +-- weekly/
+|-- system/                    # Orchestration, coaching, evals
+|-- .claude/skills/            # Workflow skills (all platforms)
 |-- docs/                      # Human documentation
-|-- .cursor/rules/             # Cursor always-on rules (pm-brain.mdc)
-|-- .github/                   # Copilot instructions, CI workflows
+|-- .cursor/                   # Hooks (Cursor)
+|-- .github/                   # CI workflows
 |-- AGENTS.md                  # Bootstrap anchor
-|-- CLAUDE.md                  # Claude Code entry point
 +-- USER.md                    # Customize first (Step 4)
 ```
 
@@ -156,7 +153,7 @@ Typical flow across the numbered folders:
 - **`2-Methods/`** is the library—braindump first via [system/coaching/README.md](../system/coaching/README.md), then pick a framework.
 - **`4-Research/`** stores evidence; link from initiative `research/` folders in `3-Work/`.
 - **`3-Work/`** is where day-to-day product work lives—PRDs, roadmaps, decision logs.
-- **`5-Growth/`** captures practice over time—daily logs, learning syntheses, forecast calibration.
+- **`5-Growth/`** captures decisions with confidence levels and a short weekly note—see [5-Growth/README.md](../5-Growth/README.md).
 
 More detail: [principles.md](principles.md) (where things go) and [architecture.md](architecture.md) (system overview). If you see legacy `00–04` prefixed folders, see [legacy-migration.md](legacy-migration.md).
 
@@ -207,7 +204,7 @@ Or ask the agent: *"what tracked files might be sensitive in private mode?"*
 
 - [`USER.md`](../USER.md) at the repo root—your name, role, company, team, what you build, and how you work (working preferences, strengths, challenges, communication style). For other tools without repo file access, paste this content as part of your system prompt—see [platform-setup.md](platform-setup.md).
 
-**Agent bootstrap (every conversation, all platforms):** The agent reads four files in order before responding: [AGENTS.md](../AGENTS.md) → [`.cursor/rules/pm-brain.mdc`](../.cursor/rules/pm-brain.mdc) → [system/MEMORY.md](../system/MEMORY.md) → [USER.md](../USER.md). Cursor auto-injects `pm-brain.mdc`; Claude Code and Copilot read it via their entry-point checklists. Per-tool wiring: [platform-setup.md](platform-setup.md).
+**Agent bootstrap (every conversation, all platforms):** [AGENTS.md](../AGENTS.md) loads natively; the agent reads [USER.md](../USER.md) on the first response if present. Per-tool wiring: [platform-setup.md](platform-setup.md).
 
 **Add as you go (follow the 1–5 model):**
 
@@ -216,7 +213,7 @@ Or ask the agent: *"what tracked files might be sensitive in private mode?"*
 | Grounded strategic advice | `1-Context/` (vision, strategy, stakeholders) |
 | Freshness tracking for context docs | `1-Context/CONTEXT-HEALTH.md` |
 | Stakeholder simulation | `1-Context/1.1-Stakeholder-Avatars/` |
-| Deliberate product sense practice | `5-Growth/` daily log + forecast calibration |
+| Decision calibration practice | `5-Growth/decisions.md` + weekly review skill |
 | Evidence from discovery | `4-Research/` then link from `3-Work/[initiative]/research/` |
 
 **Not sure what context you have?** Start with your team. Fill in what you know, mark gaps with "TBD" or "unclear", and treat the files as working hypotheses—not finished documents. As you learn more, you update them.
@@ -271,6 +268,47 @@ From here, everything is driven by real work and real problems.
 
 ---
 
+## Who it's for
+
+PM Brain is for:
+
+- PMs at any level whose actual Tuesday mornings look nothing like LinkedIn thought-leadership threads.  
+- Teams who want shared language and a living knowledge base that does not go stale.  
+- Managers who want judgment, discovery, and strategy **visible** and coachable, not just shipped outcomes.  
+
+If you are tired of frameworks that assume the organization is already aligned and the problem is already obvious, this is for you.
+
+---
+
+## Day-to-day workflow
+
+On a typical day:
+
+1. Open a conversation with the agent (or your AI tool) with this repo as context.  
+2. Describe what you are thinking through — messy is fine; that is the point.  
+3. Stay in product_sense while the agent asks hard questions and surfaces risks.  
+4. When the thinking is solid enough, let it route you to the right skill or template.  
+5. After substantial work, log forecasts and decisions in `5-Growth/` when you stated a confidence level.  
+6. Update company context, avatars, or organizational-survival docs when reality teaches you something new.  
+
+Over time you get **better decisions** and a **paper trail of how you think** — git history included.
+
+---
+
+## Keeping it alive
+
+Living system, not a annual slide deck:
+
+- **When you use a file, update it.** Let git be the changelog.  
+- **Weekly:** Active initiatives; optional [weekly review](../.claude/skills/weekly-review/SKILL.md) for `5-Growth/weekly/`.  
+- **Monthly:** Frameworks you touched; stakeholder avatars after key conversations.  
+- **Quarterly:** Company context, strategy, OKRs.  
+- **After political incidents:** Organizational-survival docs — power maps and red flags first.  
+
+Small, regular updates beat big overhauls. Design rationale: [principles.md](principles.md).
+
+---
+
 ## Reference
 
 - **Overview and philosophy:** [README.md](../README.md)
@@ -284,4 +322,4 @@ From here, everything is driven by real work and real problems.
 - **Legacy folder migration:** [legacy-migration.md](legacy-migration.md)
 - **All human docs index:** [README.md](README.md)
 - **Framework navigation:** [2-Methods/README.md](../2-Methods/README.md)
-- **Template finder:** [2-Methods/0-template-finder.md](../2-Methods/0-template-finder.md)
+- **Skills index:** [2-Methods/0-index.md](../2-Methods/0-index.md)

@@ -3,7 +3,7 @@ type: rubric_regression
 description: |
   Rubric regression: grade OA test specimens against canonical 3-opportunity-assessment-evaluation.md.
 
-rubric_path: 2-Methods/3-Discovery/4-Opportunity-Assessment/3-opportunity-assessment-evaluation.md
+rubric_path: .claude/skills/opportunity-assessment/references/criteria.md
 judge: judges/artifact_quality.md
 spec_owner: 2-Methods/3-Discovery/4-Opportunity-Assessment/3-opportunity-assessment-evaluation.md
 

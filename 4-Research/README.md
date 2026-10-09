@@ -2,7 +2,7 @@
 
 ## Introduction
 
-This directory stores research outputs and artifacts from discovery activities. This is **storage for research results**, not a process framework. Use the discovery methods in [2-Methods/3-Discovery/](../2-Methods/3-Discovery/README.md) to conduct research, then store your outputs here.
+This directory stores research outputs and artifacts from discovery activities. This is **storage for research results**, not a process framework. Use the **`discovery-synthesis`** skill (`.claude/skills/discovery-synthesis/`) and [2-Methods/3-Discovery/README.md](../2-Methods/3-Discovery/README.md) to conduct research, then store your outputs here.
 
 **For agents:** This folder is one of the context sources the PM Brain agent asks about early in product_sense (and when starting execution_mode for non-trivial docs). If the user has not added relevant research context, suggest adding or @-mentioning key artifacts from here; having them in context speeds up thinking and grounds answers in evidence. 
 
@@ -13,10 +13,10 @@ This directory stores research outputs and artifacts from discovery activities. 
 
 ## How This Relates to Frameworks
 
-**Research Process (Use Frameworks):**
-- Conduct interviews using discovery guides in [2-Methods/3-Discovery/1-Research-Interviews/](../2-Methods/3-Discovery/1-Research-Interviews/README.md)
-- Synthesize patterns using discovery steps in [2-Methods/3-Discovery/2-Continuous-Discovery-Habits/](../2-Methods/3-Discovery/2-Continuous-Discovery-Habits/README.md)
-- Create opportunities using [2-Continuous-Discovery-Habits/3-create-opportunities.md](../2-Methods/3-Discovery/2-Continuous-Discovery-Habits/3-create-opportunities.md)
+**Research process (use the skill):**
+- Plan and run interviews → `discovery-synthesis` → `references/interviews.md`
+- Synthesize snapshots and opportunities → `references/continuous-discovery.md`
+- JTBD, validation, PMF → other files under `.claude/skills/discovery-synthesis/references/`
 
 **Research Storage (This Directory):**
 - Store **analysis and insights** as markdown documents (interview snapshots, synthesis summaries, key findings, patterns)
@@ -45,7 +45,7 @@ This directory stores research outputs and artifacts from discovery activities. 
 
 ## How to Use This Directory
 
-1. **Before Conducting Research**: Review the interview guide in [1-Research-Interviews](../2-Methods/3-Discovery/1-Research-Interviews/README.md) for principles and best practices
+1. **Before Conducting Research**: Review the interview guide in [1-Research-Interviews](../2-Methods/3-Discovery/README.md) for principles and best practices
 2. **After Conducting Research**: Store outputs from discovery frameworks here
 3. **Organize by Research Type**: Use subdirectories to organize different research activities
 4. **Link from Initiatives**: Reference research artifacts in your initiative folders ([3-Work/](../3-Work/README.md))
@@ -86,5 +86,5 @@ I'll start by telling you what research I just did or am planning to do.
 ## Links
 - Discovery methods: [2-Methods/3-Discovery/](../2-Methods/3-Discovery/README.md)
 - Initiatives: [3-Work/](../3-Work/README.md)
-- Jobs To Be Done: [3-Jobs-To-Be-Done](../2-Methods/3-Discovery/3-Jobs-To-Be-Done/README.md)
+- Jobs To Be Done: [3-Jobs-To-Be-Done](../2-Methods/0-index.md)
 
