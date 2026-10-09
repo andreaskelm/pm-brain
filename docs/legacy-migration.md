@@ -116,8 +116,8 @@ Your fork may still have **both** (e.g. `5-Growth/0.1-Learning-Log/` and `5-Grow
 - Clean up duplicate scenario folders (e.g. `06-premature-solution/` vs `06-premature-solution-004/`) before deleting legacy eval paths
 
 **Skills:**
-- Canonical skills → `system/skills/`
-- Platform wrappers may exist under `.cursor/skills/` or `.claude/skills/` — they point at `system/skills/`
+- Canonical workflows → `.claude/skills/` (each folder has a full `SKILL.md` + `references/`)
+- Subagents → `.claude/agents/`; Cursor hooks → `.cursor/hooks.json` only (no duplicate command/skill trees)
 
 ---
 

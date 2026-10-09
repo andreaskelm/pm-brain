@@ -1,16 +1,12 @@
 # 2-Methods
 
-This directory is the **core of the PM brain**: it contains the decision models, guides, templates, playbooks, and prompts you use every day to **ship valuable products**.
+**Reference library** — mental models, org-reality playbooks, and long-form guides. **Workflows (PRD, OKR, prioritize, discovery, …) live in Agent Skills:** [.claude/skills/](../.claude/skills/README.md) and the map in **[0-index.md](0-index.md)**.
 
-**Important:** These frameworks are designed to **guide your thinking**, not replace it. Before jumping into templates:
-1. **Braindump first** — Use the prompts in each framework to dump your raw thoughts
-2. **Develop product sense** — Use the exercises to build judgment and taste
-3. **Think critically** — Answer quiz questions honestly, challenge your assumptions
-4. **Reflect** — Use self-reflection prompts to learn and improve
+**For agents:** On a doc or workflow request, load the matching **`.claude/skills/<name>/SKILL.md` first**. Use `2-Methods/` only when the skill points here for depth (or for foundations / Strategy Blocks–style reference). Do not browse template trees instead of a skill.
 
-**To start a product-thinking chat (e.g. with AI):** Use the single entry point [README.md](../system/coaching/README.md) — copy the simple prompt at the top; the agent will braindump with you before suggesting any framework. After braindump, use the **Frameworks by situation** table there (or the domain READMEs below) to jump to Strategy, Discovery, Execution, or Communication.
+**For humans:** Start in [system/coaching/README.md](../system/coaching/README.md) (braindump first). When thinking is solid enough, pick a skill from [0-index.md](0-index.md) — not a random framework folder.
 
-**Skills (workflows + templates):** [.claude/skills/README.md](../.claude/skills/README.md) and [0-index.md](0-index.md). **Foundations only (mental models, bias, self-reflection):** [1-Foundations/0-index.md](1-Foundations/0-index.md).
+**Foundations (product sense, bias, calibration, self-reflection):** [1-Foundations/0-index.md](1-Foundations/0-index.md).
 
 Content is organized by **the flow of product work**: from foundational thinking → defining direction → discovering what to build → executing and shipping → aligning stakeholders. This logical progression helps you move from ambiguity to shipped outcomes.
 

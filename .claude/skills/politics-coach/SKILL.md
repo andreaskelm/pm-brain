@@ -26,7 +26,7 @@ Trigger this skill when the user:
   - "Who should I talk to first?"
   - "How do I avoid surprising people?"
 
-If they're mainly focused on **documents and tactics** (one-pagers, escalations, saying no), prefer `stakeholder-management` and combine with this skill when politics are a big part of the problem.
+If they're mainly focused on **documents and tactics** (one-pagers, escalations, saying no), prefer `stakeholder-comms` and combine with this skill when politics are a big part of the problem.
 
 ---
 
@@ -36,7 +36,7 @@ If they're mainly focused on **documents and tactics** (one-pagers, escalations,
 |--------|------|
 | **Set up or update avatars** (guided quiz, methodology) | [2-Methods/5-Communication/8-Stakeholder-Avatars/](../../../2-Methods/5-Communication/8-Stakeholder-Avatars/README.md) — load README + 1-stakeholder-avatars-framework.md and walk the user through; write each avatar to a new file in [1-Context/1.1-Stakeholder-Avatars/](../../../1-Context/1.1-Stakeholder-Avatars/README.md) using the naming convention in that folder's README |
 | **Avatar data** (who to simulate) | [1-Context/1.1-Stakeholder-Avatars/](../../../1-Context/1.1-Stakeholder-Avatars/README.md) — one file per person (e.g. 1-jane-manager.md); list folder and load the relevant N-name-role.md by name/role |
-| **Stakeholder communication tactics** (one-pagers, saying no, escalation) | [2-Methods/5-Communication/](../../../2-Methods/5-Communication/) — use with stakeholder-management skill |
+| **Stakeholder communication tactics** (one-pagers, saying no, escalation) | [2-Methods/5-Communication/](../../../2-Methods/5-Communication/) — use with `stakeholder-comms` skill |
 
 ---
 
@@ -69,7 +69,7 @@ If no avatars exist, offer to run the setup framework (8-Stakeholder-Avatars) fi
 ### 4. Politics pass in product_sense or execution_mode
 
 - After braindump is sufficient (product_sense): optionally offer "Do you want to run a quick politics check on this through your manager / key stakeholders' eyes?"
-- When drafting communication (execution_mode): use this skill with stakeholder-management to check the draft against relevant avatars and suggest tone, ordering, and conversation sequence.
+- When drafting communication (execution_mode): use this skill with `stakeholder-comms` to check the draft against relevant avatars and suggest tone, ordering, and conversation sequence.
 
 ---
 

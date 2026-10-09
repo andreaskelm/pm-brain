@@ -2,42 +2,31 @@
 
 ## Introduction
 
-This directory is your starting point for capturing early initiative thinking before you have evidence. Use the opportunity assessment template (based on the framework in [2-Methods/3-Discovery/4-Opportunity-Assessment/](../2-Methods/0-index.md)) to document hypotheses, assumptions, and initial ideas. Once you have enough clarity, move to the discovery frameworks in [2-Methods/3-Discovery/](../2-Methods/3-Discovery/README.md) to validate your thinking with evidence.
+This directory holds **active initiatives** — early thinking through PRD and roadmap. Store initiative files here; link evidence from [4-Research/](../4-Research/README.md).
 
-**For agents:** This folder is one of the context sources the PM Brain agent asks about early in product_sense (and when starting execution_mode for non-trivial docs). If the user has not added relevant initiative context, suggest adding or @-mentioning key docs from here (e.g. opportunity assessment, PRD, roadmap for the initiative); having them in context speeds up thinking and keeps answers aligned to active work. 
+**For agents:** Wake `3-Work/[initiative]/` when the user names a bet or initiative. Before drafting, read what exists (`opportunity-assessment.md`, `decisions.md`, `research/`, etc.). **Run workflows via skills** (see [2-Methods/0-index.md](../2-Methods/0-index.md)), not by browsing `2-Methods/` template folders.
 
-**Critical agent guidance:** When users share research/discovery insights specific to an initiative, **always guide them to save a document** in `3-Work/[initiative-name]/research/` (e.g. interview snapshots, synthesis summaries, key findings). For raw data (transcripts, recordings, large files), guide users to store externally (Google Drive, SharePoint, Teams) and link to that source from the analysis doc. Paths below are from repo root.
+**Critical agent guidance:** When users share research/discovery insights for an initiative, guide them to save analysis in `3-Work/[initiative-name]/research/` (snapshots, synthesis, findings). Raw recordings and large files stay external — link from the analysis doc.
 
-**This is for:** Early ideas, hypotheses, and initial opportunity assessments  
-**When ready:** Move to discovery methods in [2-Methods/3-Discovery/](../2-Methods/3-Discovery/README.md) for evidence-based discovery
+## Skills-first flow (execution_mode)
 
-## How This Relates to Frameworks
+| Stage | Skill | Initiative files |
+|--------|--------|------------------|
+| Early idea / go–no-go | `opportunity-assessment` | `opportunity-assessment.md` |
+| Interviews, synthesis, JTBD | `discovery-synthesis` | `research/` + links to `4-Research/` |
+| Prioritization / MVP cut | `prioritize` | update `decisions.md` |
+| Requirements | `write-prd` | `prd.md` |
+| Sequencing | `roadmap` | `roadmap.md` |
+| Politics on the plan | `politics-coach` + avatars in `1-Context/1.1-Stakeholder-Avatars/` | `stakeholders/` |
 
-**Early Thinking (This Directory):**
-- Capture initial ideas and hypotheses
-- Document what you know vs. what needs research
-- Identify key questions to validate
-
-**Discovery Frameworks ([2-Methods/3-Discovery/](../2-Methods/3-Discovery/README.md)):**
-- Use [4-Opportunity-Assessment/](../2-Methods/0-index.md) to structure your opportunity assessment (this template is based on that framework)
-- Validate assumptions with user interviews (see [1-Research-Interviews/](../2-Methods/3-Discovery/README.md))
-- Synthesize patterns from evidence (see [2-Continuous-Discovery-Habits/](../2-Methods/3-Discovery/README.md))
-- Frame problems as jobs (see [3-Jobs-To-Be-Done/](../2-Methods/0-index.md))
-- Generate and validate solutions (see [5-Idea-Validation/](../2-Methods/3-Discovery/README.md))
-- Write PRDs (see [4-PRD/](../2-Methods/0-index.md))
-
-**The Flow:**
-1. Start here with opportunity assessment (early thinking)
-2. Move to discovery frameworks when ready to validate
-3. Return here to document your actual initiative as it evolves
+1. Braindump in product_sense → 2. Load the skill → 3. Write into this folder → 4. Offer `5-Growth/decisions.md` when they state confidence.
 
 ## How to Use This Directory
 
-1. Create a new initiative folder when you have an early idea
-2. Use the opportunity assessment template to document your thinking
-3. Identify what needs validation (move to discovery frameworks)
-4. As you learn, update the opportunity assessment
-5. When validated, create PRD and roadmap documents
+1. Create a new initiative folder when you have an early idea (copy [1-Initiative-Codename/](1-Initiative-Codename/) if helpful).
+2. Run the **`opportunity-assessment`** skill and save output to `opportunity-assessment.md`.
+3. Validate with **`discovery-synthesis`**; store summaries in `research/` and link `4-Research/`.
+4. When ready, **`write-prd`** / **`roadmap`** into this folder; log big calls in `5-Growth/decisions.md` (local in private mode).
 
 ## Quick start: self-quiz + AI collaboration
 

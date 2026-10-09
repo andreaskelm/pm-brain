@@ -115,7 +115,7 @@ Load when the conversation touches the relevant area. All deep-linked to specifi
 These have substantive content but are genuinely covered by existing coaching lenses and wired models — adding triggers would create redundancy, not value.
 
 - **Feature Factory** — covered by the "outcome vs output" + "org reality acknowledgment" coaching lenses. The file itself describes it as a companion to Outcome vs Output.
-- **Alignment Check (external)** — covered by the politics and stakeholder-management skills for external stakeholders. The wired Alignment Check above handles the internal team case.
+- **Alignment Check (external)** — covered by the `politics-coach` and `stakeholder-comms` skills for external stakeholders. The wired Alignment Check above handles the internal team case.
 
 ### TODO Stubs (content not yet written)
 
