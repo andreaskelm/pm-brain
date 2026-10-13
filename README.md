@@ -1,6 +1,8 @@
-# PM Brain-as-Code
+# PM Brain as Code
 
 [![License: CC BY-NC-SA 4.0](https://img.shields.io/badge/License-CC%20BY--NC--SA%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by-nc-sa/4.0/) [![GitHub stars](https://img.shields.io/github/stars/andreaskelm/pm-brain?style=social)](https://github.com/andreaskelm/pm-brain) [![GitHub forks](https://img.shields.io/github/forks/andreaskelm/pm-brain?style=social)](https://github.com/andreaskelm/pm-brain/fork)
+
+**Getting started:** [Setup in this README](#getting-started) · [Full onboarding](docs/setup.md) · [Agent wiring](docs/platform-setup.md)
 
 PM Brain is a git repo that works as your external product management brain: knowledge, reasoning, and decisions as plain markdown on your machine, versioned like code. It comes with an AI coach that challenges your thinking by default, so you can think clearly under pressure and not only after the meeting, when it is too late.
 
@@ -21,8 +23,6 @@ The markdown folders give that a home. Knowledge lives in `1-Context/`, `3-Work/
 Jira, Confluence, and Figma stay where they are, and you link out to them. You still own the thinking and the decisions. The agent challenges, structures, and remembers with you.
 
 I built this for my own work and use it daily in a real organization. It has been through dozens of iterations because real use kept breaking my assumptions about what PMs need. The part I use most is the organizational survival layer (stakeholder profiles, power maps, and political landscape docs), because frameworks rarely name what actually kills launches.
-
-If you want setup first, jump to [Getting started](#getting-started).
 
 ---
 
