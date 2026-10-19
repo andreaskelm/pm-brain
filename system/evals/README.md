@@ -120,7 +120,7 @@ Use after an important session, or when something felt off. Paste the transcript
 | Lens never fires, or fires as a lecture | [AGENTS.md](../../AGENTS.md) → Coaching Lenses |
 | Wrong state, wrong load, wrong routing | [ORCHESTRATION.md](../ORCHESTRATION.md) |
 | Wrong or no framework | Matching skill in `.claude/skills/`; [2-Methods/0-index.md](../../2-Methods/0-index.md) |
-| Artifact quality checks missing or wrong | [EVALUATION.md](../EVALUATION.md); the skill's `references/criteria.md` |
+| Artifact quality checks missing or wrong | [EVALUATION.md](../EVALUATION.md); quick = skill `criteria.md`; full = `2-Methods/**/3-*-evaluation.md` |
 | Subagent took over coaching, or wrong subagent | [AGENTS.md](../../AGENTS.md) → Delegation; `.claude/agents/` |
 | Personal preference (tone, format, language) | [USER.md](../../USER.md) — not the shared rules |
 

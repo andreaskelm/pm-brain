@@ -7,6 +7,15 @@ description: Define, sharpen, or audit a North Star metric and its input metrics
 
 A North Star is one metric that captures the value customers actually get, plus 3–5 input metrics that teams can move with their own work. It's an alignment tool, not a dashboard and not a goal for the board deck. The failure I see most often is a "North Star" that's revenue wearing a costume, or registered users because that's the number the dashboard already shows. Both feel safe, both tell you nothing about whether customers are better off, and both get gamed within a quarter. So we start with the moment a customer gets value and work outward to the numbers.
 
+**Canonical library (this repo):**
+
+| Piece | Path |
+|--------|------|
+| Framework | `2-Methods/2-Strategy/2-Strategic-Execution/3-North-Star/1-north-star-framework.md` |
+| Template | `2-Methods/.../3-North-Star/2-north-star-template.md` (skill copy: [references/template.md](references/template.md)) |
+| Full evaluation | `2-Methods/.../3-North-Star/3-north-star-evaluation.md` |
+| Metrics / AARRR depth | `2-Methods/4-Execution/6-Metrics/`, `7-AARRR-Pirate-Metrics/`; skill [references/metrics.md](references/metrics.md) |
+
 ## Is a North Star the right thing?
 
 **Do it when** the product has real users and real usage, more than one team needs to pull in the same direction, and you can describe what "a customer got value" looks like in behaviour, not in sentiment.
@@ -76,7 +85,7 @@ Vanity North Star, revenue or output as the North Star, inputs nobody can move, 
 ## Before calling it done
 
 - **Gut check:** "Explain this North Star to a skeptical exec in two minutes. Then tell me what would make it obviously wrong." If they can't answer the second part, it isn't tested yet.
-- **Quick check** against the red and green flags. Offer the full scored evaluation only if they want it or before a high-stakes review.
+- **Quick check** against [references/criteria.md](references/criteria.md). **Full eval:** `2-Methods/2-Strategy/2-Strategic-Execution/3-North-Star/3-north-star-evaluation.md` + `system/EVALUATION.md`.
 - **Independent review:** if the `artifact-reviewer` subagent is available, offer it. Fresh eyes catch the vanity metric the author has grown fond of. Discuss its findings, don't just paste them.
 - **Log the bet:** offer a row in `5-Growth/decisions.md`: the North Star, the input belief it rests on most, a confidence level, and a reopen trigger (for example "inputs hit target for two months but the North Star doesn't move").
 

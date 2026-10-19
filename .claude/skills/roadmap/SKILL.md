@@ -7,6 +7,14 @@ description: Build, restructure, or review a product roadmap, including Now/Next
 
 A roadmap is a communication tool for direction, not a project plan and not a promise. The failure I see most often: a tidy grid of features with dates, built in a week, and by the following Tuesday someone in Sales has screenshotted Q3 into a deal deck. Now every line is a commitment nobody actually made. So we decide what problems we're solving and how sure we are first, and the roadmap is just how we show it.
 
+**Canonical library (this repo):**
+
+| Piece | Path |
+|--------|------|
+| Framework | `2-Methods/2-Strategy/2-Strategic-Execution/2-Roadmap/1-roadmap-framework.md` |
+| Template | `2-Methods/.../2-Roadmap/2-roadmap-template.md` (skill copy: [references/template.md](references/template.md)) |
+| Full evaluation | `2-Methods/.../2-Roadmap/3-roadmap-evaluation.md` |
+
 ## Is a roadmap the right thing?
 
 **Build one when** there's a direction to communicate (a strategy, OKRs, even a rough "this year is about retention"), the work has already been prioritized, and more than one audience needs to know where you're headed and how sure you are.
@@ -73,7 +81,7 @@ System names instead of problems, migration percentages as outcomes, team names 
 
 - **Gut check:** "Explain this roadmap to a skeptical exec in two minutes. What would make them say it's obviously wrong? What's missing that should be there?"
 - **Bias check, lightly:** is anything here because it was the last loud request (recency, squeaky wheel), or because it was on last quarter's roadmap (status quo)?
-- **Quick check** against the red/green flags. Offer the full scored evaluation only if they want it, or before a big planning review.
+- **Quick check** against [references/criteria.md](references/criteria.md). **Full eval:** `2-Methods/2-Strategy/2-Strategic-Execution/2-Roadmap/3-roadmap-evaluation.md` + `system/EVALUATION.md`.
 - **Independent review:** if the `artifact-reviewer` subagent is available, offer it, since fresh eyes catch what the author can't. Discuss its findings; don't just paste them.
 - **Log the bet:** for the top Now item, offer a row in `5-Growth/decisions.md`: confidence that it moves the outcome, and a reopen trigger that's an observable signal, not "if things change."
 - **Audience versions:** if they're about to present it, the [stakeholder scripts](references/stakeholder-scripts.md) cover the "when exactly?" conversations and how to cut it for each audience.

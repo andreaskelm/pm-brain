@@ -1,105 +1,331 @@
-# North Star Template
+﻿# North Star Framework Template
 
-One page per product, not per team. Fill the North Star and the belief tree first. If you can't write the "because" in the belief tree, the inputs aren't ready.
+## Disclaimer
 
-```markdown
-# North Star — [Product] — [Date]
+This North Star Framework reflects our current product strategy and beliefs about customer value. It is subject to change as we learn and as market conditions evolve.
 
-**Disclaimer:** This North Star reflects our current strategy and beliefs about customer value. It will change as we learn.
-**Product game:** [Attention / Transaction / Productivity] (why: [one line])
-**Owner:** [name]   **Updated:** [date]   **Next review:** [date]
+**Updated on:** [Date]
+**Next review:** [Date]
+**Product game:** [Attention / Transaction / Productivity]
 
-## North Star metric
+-----
 
-| Element | Details |
-|---|---|
-| **Metric name** | [customer-value framed, e.g. "Weekly Learning Users"] |
-| **Definition** | [who counts, which action, what time window] |
-| **Why this metric** | [how it captures customer value and predicts the business outcome; 2–3 sentences] |
-| **Business outcome it predicts** | [e.g. retention, expansion revenue] |
-| **Current value (baseline)** | [number + date measured] |
-| **Target (90 days)** | [number] |
-| **Data source** | [event / table / dashboard] |
+## 🌟 North Star Metric
 
-## Input metrics (3–5)
+### Metric Definition
 
-Repeat per input.
+**Metric Name:** [Your North Star Metric]
 
-| Element | Details |
-|---|---|
-| **Input name** | [action-oriented] |
-| **Definition** | [how it's measured] |
-| **How it influences the North Star** | [the causal belief, with evidence] |
-| **Evidence tier** | [documented / verbal / hunch / industry] |
-| **Owning team** | [team] |
-| **Current value** | [baseline] |
-| **Target (90 days)** | [goal] |
+**Definition:** [Precise definition of how you measure this]
 
-## Guardrails (must not get worse)
+**Why This Metric:**
+[Explain how this metric captures customer value and predicts business outcomes. 2-3 sentences max.]
 
-| Guardrail | Current | Threshold | What we do if it's breached |
-|---|---|---|---|
-| [e.g. CSAT] | [4.3] | [stays > 4.0] | [pause the experiment, review] |
+**Example:**
 
-## Belief tree
+- **Metric Name:** Weekly Learning Users (WLU)
+- **Definition:** Count of active Amplitude users who shared a learning that at least two other people consumed in the last seven days
+- **Why This Metric:** WLU focuses on value exchange rather than passive usage. It represents our unique strategy of collaborative learning and connects directly to retention and account expansion.
 
-Business outcome: [e.g. net revenue retention]
-└── North Star: [metric]
-    ├── Input 1: [metric] → owned by [team] → work: [initiatives]
-    ├── Input 2: [metric] → owned by [team] → work: [initiatives]
-    └── Input 3: [metric] → owned by [team] → work: [initiatives]
+-----
 
-- We believe [Input 1] drives [North Star] because [reason + evidence].
-- We believe [Input 2] drives [North Star] because [reason + evidence].
-- We believe [North Star] drives [business outcome] because [reason + evidence].
+**Your North Star Metric:**
 
-## Work connections
+|Element |Details |
+|--------------------|---------|
+|**Metric Name** |[Fill in]|
+|**Definition** |[Fill in]|
+|**Why This Metric** |[Fill in]|
+|**Current Value** |[Fill in]|
+|**Target (90 days)**|[Fill in]|
 
-| Initiative / bet | Input(s) it moves | Expected impact | Success criteria | Owner |
-|---|---|---|---|---|
+-----
+
+## ⚡ Input Metrics (Leading Indicators)
+
+Inputs are the 3-5 factors that most directly drive your North Star Metric. Teams should be able to influence these through their daily work.
+
+### Input #1
+
+|Element |Details |
+|--------------------------------|------------------------|
+|**Input Name** |[Action-oriented name] |
+|**Definition** |[How you measure it] |
+|**How It Influences North Star**|[Explain the connection]|
+|**Owning Team** |[Which team drives this]|
+|**Current Value** |[Baseline] |
+|**Target Value** |[90-day goal] |
+
+**Example:**
+
+- **Input Name:** New user activation rate
+- **Definition:** % of new signups who complete setup and run first analysis within 7 days
+- **How It Influences North Star:** Activated users are 3x more likely to become Weekly Learning Users within 30 days
+- **Owning Team:** Growth Product Team
+- **Current Value:** 42%
+- **Target Value:** 55%
+
+### Input #2
+
+|Element |Details |
+|--------------------------------|------------------------|
+|**Input Name** |[Action-oriented name] |
+|**Definition** |[How you measure it] |
+|**How It Influences North Star**|[Explain the connection]|
+|**Owning Team** |[Which team drives this]|
+|**Current Value** |[Baseline] |
+|**Target Value** |[90-day goal] |
+
+### Input #3
+
+|Element |Details |
+|--------------------------------|------------------------|
+|**Input Name** |[Action-oriented name] |
+|**Definition** |[How you measure it] |
+|**How It Influences North Star**|[Explain the connection]|
+|**Owning Team** |[Which team drives this]|
+|**Current Value** |[Baseline] |
+|**Target Value** |[90-day goal] |
+
+### Input #4 (Optional)
+
+|Element |Details |
+|--------------------------------|------------------------|
+|**Input Name** |[Action-oriented name] |
+|**Definition** |[How you measure it] |
+|**How It Influences North Star**|[Explain the connection]|
+|**Owning Team** |[Which team drives this]|
+|**Current Value** |[Baseline] |
+|**Target Value** |[90-day goal] |
+
+### Input #5 (Optional)
+
+|Element |Details |
+|--------------------------------|------------------------|
+|**Input Name** |[Action-oriented name] |
+|**Definition** |[How you measure it] |
+|**How It Influences North Star**|[Explain the connection]|
+|**Owning Team** |[Which team drives this]|
+|**Current Value** |[Baseline] |
+|**Target Value** |[90-day goal] |
+
+-----
+
+## 🎯 Work Connections
+
+Map your current initiatives and bets to the inputs they’re designed to move.
+
+### Active Initiatives
+
+|Initiative/Bet |Input(s) Impacted |Expected Impact |Success Criteria |Owner |
+|-----------------|--------------------|-----------------|---------------------------|-------------|
+|[Initiative name]|[Input #1, Input #3]|[+10% activation]|[50% → 55% activation rate]|[Team/Person]|
+| | | | | |
 | | | | | |
 
-## Review cadence
-- **Weekly (15–30 min):** inputs, trends, anomalies
-- **Monthly (60 min):** North Star + inputs, initiative results, tactics
-- **Quarterly:** is the North Star still valid? Are the inputs still the right levers?
-- **Annually:** does the North Star still match the strategy?
+**Example:**
 
-## The bet (for your own records)
-- **Input belief this rests on most:** [belief + evidence tier]
-- **Confidence the inputs move the North Star:** [%]
-- **Reopen trigger:** [observable signal, e.g. "inputs at target for 2 months, North Star flat"]
+|Initiative/Bet |Input(s) Impacted |Expected Impact |Success Criteria |Owner |
+|-----------------------------|-------------------------|---------------------------------------|-------------------------------------------------|-------------|
+|Redesigned onboarding flow |New user activation |+13% activation rate |Increase from 42% to 55% activation within 7 days|Growth Team |
+|Smart insight recommendations|Content discovery |+25% users finding personalized content|40% → 50% of weekly active users |Core Product |
+|Team collaboration features |Learning sharing behavior|+30% sharing rate |20% → 26% of analyses shared with 2+ people |Platform Team|
+
+-----
+
+## —— Metric Relationships
+
+**Visual Framework:**
+
+```
+North Star Metric: [Your NSM]
+-
+|
+================================================================================
+ —
+Input 1 Input 2 Input 3 Input 4
+ —
+├──
+ —
+Team A Team B Team C
+Work Work Work
 ```
 
-## Worked example
+**Describe your belief tree:**
 
-| Element | Details |
-|---|---|
-| **North Star** | Weekly Learning Users (WLU) |
-| **Definition** | Active users who shared a learning that at least two other people consumed in the last 7 days |
-| **Why** | Measures value exchange rather than passive usage, reflects the collaborative-learning strategy, and connects to retention and account expansion |
-| **Input** | New user activation rate: % of new signups who complete setup and run a first analysis within 7 days. 42% → 55%. Owner: Growth. Activated users are 3× more likely to become WLU within 30 days. |
+- We believe [Input 1] drives [North Star] because [reason]
+- We believe [Input 2] drives [North Star] because [reason]
+- We believe [Input 3] drives [North Star] because [reason]
 
-| Initiative | Input it moves | Expected impact | Success criteria | Owner |
-|---|---|---|---|---|
-| Redesigned onboarding | New user activation | +13 pts | 42% → 55% activated within 7 days | Growth |
-| Smart insight recommendations | Content discovery | +10 pts | 40% → 50% of WAU find personalized content | Core Product |
-| Team collaboration features | Sharing behaviour | +6 pts | 20% → 26% of analyses shared with 2+ people | Platform |
+-----
 
-## Writing it well
+## —— Review Cadence
 
-- **North Star names:** "Nights booked", "Messages sent per week", "Items received on time monthly". Not "Total registered users", "Page views", "API calls", "Features shipped".
-- **Inputs:** "New user activation rate in first 7 days", "Average insights shared per active user". Not "Engagement", "Stickiness", "Adoption", "Quality".
-- **Connections:** "Users who discover personalized content return 2.5× more often than those who don't". Not "Activation is important" or "Users like this".
+**Weekly** (15-30 min)
 
-## When to change the North Star
+- Input metric review
+- Identify trends and anomalies
+- Quick team updates
 
-**Change it when** the strategy has fundamentally shifted, you now serve a different segment, the metric no longer predicts business outcomes, or it's saturated and too easy to move.
+**Monthly** (60 min)
 
-**Don't change it when** it isn't moving fast enough (that's a learning signal), you're missing targets (fix execution, not the metric), leadership wants different numbers (that's a strategy disagreement, surface it as one), or a competitor uses something else.
+- North Star + Input deep dive
+- Initiative performance review
+- Adjust tactics if needed
 
-## Health check (quarterly)
+**Quarterly** (2-3 hours)
 
-Working: anyone can explain the North Star and their contribution; fewer prioritization fights; experiments target inputs; the North Star moves with qualitative customer feedback.
+- Framework validity check
+- Strategic recalibration
+- Input metric changes if needed
 
-Not working: only the product team mentions it; the metric is being gamed; features ship with no input connection; the North Star moves but business outcomes don't; inputs don't correlate with the North Star; nobody has reviewed it in 6+ months.
+**Annual**
+
+- North Star Metric evaluation
+- Major strategy pivots if needed
+
+-----
+
+## 🧭 How to Read This Framework
+
+### North Star Metric
+
+This single metric represents the value we deliver to customers. When it goes up, customers get more value, and our business grows sustainably.
+
+### Input Metrics
+
+These are the levers we can pull to move the North Star. Each input should be:
+
+- Directly influenced by team work
+- A leading indicator of the North Star
+- Measurable and trackable
+
+### Work Connections
+
+These are our current bets on how to move the inputs. Each initiative should clearly state which input it impacts and how we’ll measure success.
+
+-----
+
+## Quick Writing Tips
+
+### North Star Metric Names (Customer-value oriented)
+
+✅ **Good:**
+
+- “Weekly Learning Users” (Amplitude)
+- “Nights booked” (Airbnb)
+- “Messages sent per week” (Slack)
+- “Items received on time monthly” (Delivery service)
+
+❌ **Bad:**
+
+- “Total registered users”
+- “Page views”
+- “API calls”
+- “Features shipped”
+
+### Input Metrics (Action-oriented, measurable)
+
+✅ **Good:**
+
+- “New user activation rate in first 7 days”
+- “% of users discovering personalized recommendations”
+- “Average insights shared per active user”
+
+❌ **Bad:**
+
+- “Engagement”
+- “Stickiness”
+- “Adoption”
+- “Quality”
+
+### Connection Descriptions (Clear causation)
+
+✅ **Good:**
+
+- “Activated users are 3x more likely to become Weekly Learning Users within 30 days, based on cohort analysis”
+- “Users who discover personalized content return 2.5x more frequently than those who don’t”
+
+❌ **Bad:**
+
+- “Activation is important”
+- “This will help”
+- “Users like this”
+
+-----
+
+## Making It Stick: Integration Practices
+
+### Daily Practice
+
+- Reference North Star in standups
+- Celebrate input metric movement
+- Share customer stories that connect to the metrics
+
+### Planning Integration
+
+- Evaluate all initiatives against North Star impact
+- Force-rank backlog by expected input movement
+- Include metric impact in PRDs and specs
+
+### Review Rituals
+
+- Start meetings with metric check-ins
+- Create dashboards visible to all
+- Build metric movement into demo days
+
+### Learning Loops
+
+- Run experiments to test input→North Star beliefs
+- Document when metrics don’t behave as expected
+- Refine inputs based on learnings
+
+-----
+
+## When to Change Your North Star
+
+Consider changing your North Star Metric if:
+
+— Your product strategy has fundamentally shifted
+— You’ve pivoted to serve a different customer segment
+— The metric no longer predicts business outcomes
+— The market has changed dramatically
+— You’ve outgrown your current metric (too easy/saturated)
+
+**Don’t change your North Star if:**
+— The metric isn’t moving fast enough (this is a signal to learn)
+— You’re not hitting targets (fix execution, not the metric)
+— Leadership wants different numbers (address underlying strategy misalignment)
+— A competitor uses a different metric (your strategy should be unique)
+
+-----
+
+## Framework Health Check
+
+### Signs Your Framework Is Working
+
+- [ ] Everyone can explain the North Star and their contribution
+- [ ] Fewer arguments about prioritization
+- [ ] Teams make faster local decisions
+- [ ] Cross-functional collaboration improves naturally
+- [ ] Experiments focus on moving inputs
+- [ ] North Star movement tracks with qualitative customer feedback
+
+### Red Flags
+
+- [ ] Only product team references the North Star
+- [ ] Metrics are gamed or manipulated
+- [ ] Teams build features with no clear input connection
+- [ ] North Star moves but business outcomes don’t
+- [ ] Input metrics don’t correlate with North Star
+- [ ] Framework hasn't been reviewed in 6+ months
+
+-----
+
+## References
+
+- North Star Framework: `1-north-star-framework.md`
+- North Star README: `README.md`
+- Strategic Foundations: `../1-Strategic-Foundations/README.md`
+- OKR Framework: `../1-OKR/README.md`
+- Execution: `../../4-Execution/README.md` (Metrics Framework)

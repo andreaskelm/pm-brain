@@ -2,7 +2,7 @@
 
 **What this file is:** Maintainer deep dive — structure, loading, evals, linking conventions. **Not executed behavior** (that lives in [system/ORCHESTRATION.md](../system/ORCHESTRATION.md)). **Onboarding:** start with [README.md](../README.md) and [docs/setup.md](setup.md); this file adds detail you do not need on day one.
 
-**Navigation:** [AGENTS.md](../AGENTS.md) (persona, wake table) · [system/ORCHESTRATION.md](../system/ORCHESTRATION.md) (states) · [2-Methods/0-index.md](../2-Methods/0-index.md) (skills + reference) · [`.claude/skills/`](../.claude/skills/) (workflows) · [system/evals/README.md](../system/evals/README.md) · [evals-fork.md](evals-fork.md) · [platform-setup.md](platform-setup.md)
+**Navigation:** [AGENTS.md](../AGENTS.md) (persona, wake table) · [system/ORCHESTRATION.md](../system/ORCHESTRATION.md) (states) · [2-Methods/0-index.md](../2-Methods/0-index.md) (skills + reference) · [`.claude/skills/`](../.claude/skills/) (workflows) · [skills-and-methods.md](skills-and-methods.md) (skills ↔ methods ↔ evals) · [system/evals/README.md](../system/evals/README.md) · [evals-fork.md](evals-fork.md) · [platform-setup.md](platform-setup.md)
 
 **Preview:** Built-in Markdown preview may not render Mermaid. Use a Mermaid extension, GitHub, or an online editor.
 
@@ -67,7 +67,7 @@ User-facing summary: [principles.md](principles.md).
 
 - Do not merge large on-demand files into AGENTS.md (context cost every turn).
 - Do not move `AGENTS.md` out of root (platform convention).
-- Do not duplicate framework templates under `2-Methods/` when a skill already owns the workflow — skills are canonical for execution; `2-Methods/` stays reference.
+- Skills are canonical for **agent execution** (load `SKILL.md` first on doc requests). The matching framework folders under `2-Methods/` stay the human-readable library (full guides, templates, evaluations); skills may slim or excerpt them in `references/`.
 
 ### Naming conventions
 

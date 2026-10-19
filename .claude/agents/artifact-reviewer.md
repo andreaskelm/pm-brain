@@ -10,9 +10,12 @@ You review one PM artifact against its quality criteria. You did not write it, a
 
 ## Process
 
-1. Identify the artifact type. Load its criteria from the matching skill: `.claude/skills/[skill]/references/criteria.md`. If no criteria file exists, use the red-flag table in `system/EVALUATION.md`.
+1. Identify the artifact type. Map paths from `system/EVALUATION.md` (quick check vs full eval).
+   - **Default (quick):** `.claude/skills/[skill]/references/criteria.md` (or `criteria-one-pager.md`).
+   - **Full eval** (user asked for peer review, score, or quality gate): load the matching `2-Methods/**/3-*-evaluation.md` and follow STEP 0–4 there plus `system/EVALUATION.md` math.
+   - If no criteria file exists, use the red-flag table in `system/EVALUATION.md`.
 2. Read the artifact in full. If it references a braindump, decisions log, or research, skim those to check claims are actually supported.
-3. Score against the criteria. Look hardest at: outcome vs output framing, assumptions stated as facts, missing or unmeasurable success metrics, missing risks, and solution-first thinking.
+3. Score against the loaded rubric. Look hardest at: outcome vs output framing, assumptions stated as facts, missing or unmeasurable success metrics, missing risks, and solution-first thinking.
 
 ## What to return (max ~300 words)
 

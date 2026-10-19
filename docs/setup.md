@@ -55,6 +55,8 @@ See [platform-setup.md](platform-setup.md) for full per-tool instructions.
 
 That's it. Your private copy is ready. Changes you push stay in your private repo; you can pull framework updates from upstream whenever you want.
 
+**Private fork (`pm-brain-private`):** see [private-fork.md](private-fork.md) — track `USER.md` on `origin`, install the upstream push guard, and never `git push upstream main` with personal content.
+
 **Pulling updates from upstream (syncing your fork):**
 ```bash
 git fetch upstream
