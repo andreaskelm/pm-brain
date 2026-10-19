@@ -63,12 +63,16 @@ __pycache__/
 !1-Context/**/README.md
 
 # --- Personal configuration ---
-USER.md
+# USER.md is TRACKED on pm-brain-private (origin backup). Never push to upstream — see scripts/git-hooks/pre-push.
+# (Do not list USER.md here on this fork.)
 
 # --- Active work & research ---
+# New initiatives stay untracked until you `git add -f` them. Already-tracked folders (e.g. Produktland, job-search) stay in git until you `git rm --cached`.
 3-Work/*
 !3-Work/README.md
 !3-Work/1-Initiative-Codename/
+3-Work/2-Produktland/
+3-Work/3-job-search/
 4-Research/*
 !4-Research/README.md
 !4-Research/1-User-Interviews/README.md

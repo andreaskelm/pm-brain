@@ -1,76 +1,82 @@
-# Opportunity Assessment Template
+# Opportunity assessment template
 
-One per idea worth more than a sprint or two. Fill what you know, mark the rest `[unknown]` or `[GAP: …]`, and update it as evidence comes in. The kill criteria and the call are the parts people come back for.
+**In PM Brain:** use the canonical file (kept in sync with this copy):
 
-```markdown
-# [Working Title] — Opportunity Assessment
+`2-Methods/3-Discovery/4-Opportunity-Assessment/2-opportunity-assessment-template.md`
 
-**Owner:** [name]   **Date:** [date]   **Decide by:** [date]
-**Status:** Exploring | Testing | Go | No-go | Learn more
-**Idea came from:** [customer / data / exec / competitor / team]
+Copy to `3-Work/[initiative]/opportunity-assessment.md`.
 
-## Problem hypothesis
-[Who] struggles with [pain] when [situation], which costs them [time / money / risk].
-If we solve it, [outcome] changes from [baseline] to [target].
+---
 
-## Why now
-- [What changed: market, data, strategy, a customer, a constraint lifted]
+# [Initiative Working Title] — Opportunity Assessment
 
-## Who, how many, how painful
-| | Answer | Evidence tier (documented / verbal / hunch / industry) |
-|---|---|---|
-| **Who** (segment + situation, JTBD) | | |
-| **How many** (accounts / users / revenue exposed) | | |
-| **How painful** (today's workaround and what it costs) | | |
+> **How to use:** Copy this template to your initiative folder in `3-Work/[INIT-CODE]/opportunity-assessment.md` and fill it out. Update as you learn.
 
-**Stakeholders impacted:** [internal/external, and what success means for each]
+## Objective
 
-## Success metrics
-- **Leading:** [metric]: baseline [x] → target [y] by [date]
-- **Lagging:** [metric]: baseline [x] → target [y] by [date]
-- **Guardrail:** [what must not get worse: compliance, risk, experience]
+- What outcome are we trying to achieve and why now?
+- Business value hypothesis (e.g., revenue, risk reduction, cost, speed).
+- Time horizon and exit criteria (what "good" looks like).
 
-## What we know vs. what we're guessing
-- **Facts** (with source): [data, interviews, prior initiatives]
-- **Constraints:** [regulatory, technical, operational, capacity]
-- **Assumptions:**
-  | Assumption | Confidence (H/M/L) | Evidence tier | What would change our mind |
-  |---|---|---|---|
-  | | | | |
+## Target Customer
 
-## Four risks
-| Risk | Biggest open question | How we'll test it | Status |
-|---|---|---|---|
-| **Value** (will they choose it?) | | | |
-| **Usability** (can they use it?) | | | |
-| **Feasibility** (can we build it?) | | | |
-| **Viability** (does it work for the business, incl. legal/compliance?) | | | |
+- Primary customer/user segment and context (JTBD, key workflows).
+- Stakeholders impacted (internal/external) and success definition for each.
+- Where/how we'll reach them (channels, touchpoints).
 
-**Dependencies:** [teams, vendors, data sources, timelines]
+## Success Metrics
 
-## Riskiest assumption and cheapest test
-- **Riskiest assumption:** [the one that kills this if wrong]
-- **Test:** [method, participants, sample size, timeline]
-- **Owner:** [name]
+- **Leading indicators:**
+  - [Metric] — baseline: [x], target: [y] by [date]
+- **Lagging outcomes:**
+  - [Metric] — baseline: [x], target: [y] by [date]
+- **Guardrails** (e.g., compliance, risk appetite, experience thresholds).
 
-## Decision criteria (written before the evidence)
-- **Kill if:** [condition, with a number]
-- **Pivot if:** [condition]
-- **Commit if:** [condition, with a number]
+## What We Know
 
-## Solution ideas (keep high-level)
-- **Concept 1:** [one-liner], first slice: [scope]
-- **Concept 2:** [one-liner], alternative approach
-- **Out of scope for now:** [what we're protecting focus from]
+- Facts and evidence (link sources: data, interviews, prior initiatives).
+- Constraints (regulatory, technical, operational, capacity).
+- Assumptions with confidence level (e.g., High/Med/Low):
+  - [Assumption 1] — [High/Med/Low]
+  - [Assumption 2] — [High/Med/Low]
 
-## The call
-**Recommendation:** Go | No-go | Learn more
-**Why:** [two or three sentences]
-**Confidence:** [%]   **Reopen if:** [observable signal]
+## What We Should Research
 
-## Next steps
+- **Key questions/hypotheses to validate:**
+  - [Question 1]
+  - [Question 2]
+- **Methods** (interviews, data analysis, discovery experiments, prototypes).
+- **Participants, sample size, and timeline.**
+- **Decision criteria** (what would change our mind; kill/pivot/commit thresholds):
+  - **Kill if:** [condition]
+  - **Pivot if:** [condition]
+  - **Commit if:** [condition]
+
+## Solution Ideas
+
+- **Concept 1:** [one-liner] — first slice MVP scope.
+- **Concept 2:** [one-liner] — alternative approach.
+- **Out of scope** (for now) to protect focus.
+
+## Risks and Questions to Validate
+
+- **Desirability** (customer value, adoption risks).
+- **Viability** (commercial model, business impact, go-to-market).
+- **Feasibility/Tech** (integration, scalability, data availability).
+- **Usability** (flow, UX, accessibility).
+- **Compliance/Legal** (market rules, privacy, auditability).
+- **Dependencies** (teams, vendors, data sources, timelines).
+- **Unknowns/Red flags** and how we'll de-risk.
+
+## Next Steps
+
+- [Owner] → [action] by [date]
 - [Owner] → [action] by [date]
 
-## Links
-- Research: [link]   Data/dashboard: [link]   Decision log entry: [link]
-```
+## Links & Artifacts
+
+- Research notes: [link to `4-Research/…`]
+- Data/dashboard: [link]
+- Stakeholders & communication rhythm: [link or notes]
+- Decision log: [`decisions.md` entry]
+- Related frameworks: [links to discovery methods used]

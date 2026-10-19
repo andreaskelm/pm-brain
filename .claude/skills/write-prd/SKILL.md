@@ -7,6 +7,15 @@ description: Write, draft, tighten, or restructure a PRD, product spec, requirem
 
 A PRD bridges discovery and execution: it turns a validated opportunity into something a team can build, with success defined *before* the solution. The failure mode I see most often isn't a badly formatted PRD. It's a well-formatted one written for a problem nobody checked. So the thinking comes first, and the document is just where it lands.
 
+**Canonical library (this repo):**
+
+| Piece | Path |
+|--------|------|
+| Framework | `2-Methods/4-Execution/4-PRD/1-prd-framework.md` |
+| Standard template | `2-Methods/4-Execution/4-PRD/2-prd-template.md` (skill copy: [references/template.md](references/template.md)) |
+| JTBD template | `2-Methods/4-Execution/4-PRD/3-prd-jtbd-template.md` |
+| Full evaluation | `2-Methods/4-Execution/4-PRD/3-prd-evaluation.md` |
+
 ## Is a PRD even the right thing?
 
 **Write one when** the solution approach has some validation behind it, more than one function has to execute (design, eng, ops, marketing), it's more than ~2 weeks of engineering, and you can say what success looks like in numbers.
@@ -61,7 +70,7 @@ Missing metrics, vague requirements, no specific user, no baselines, solution-fi
 ## Step 5 — Before calling it done
 
 - **Gut check:** "Explain this PRD to a skeptical engineer in two minutes. What would they poke first?"
-- **Quick check** against the red/green flags. Offer the full scored evaluation only if they want it, or before a high-stakes review.
+- **Quick check** against [references/criteria.md](references/criteria.md). **Full eval:** `2-Methods/4-Execution/4-PRD/3-prd-evaluation.md` + `system/EVALUATION.md`.
 - **Independent review:** if the `artifact-reviewer` subagent is available, offer it, since fresh eyes catch what the author can't. Discuss its findings; don't just paste them.
 - **Log the bet:** if they stated (or can state) a confidence that this moves the metric, offer a row in `5-Growth/decisions.md` with a reopen trigger.
 

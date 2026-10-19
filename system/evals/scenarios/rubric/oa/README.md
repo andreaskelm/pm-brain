@@ -2,7 +2,7 @@
 
 Tests whether the canonical OA evaluation rubric correctly PASSes a good specimen and FAILs a bad one.
 
-**Rubric:** [.claude/skills/opportunity-assessment/references/criteria.md](../../../../../.claude/skills/opportunity-assessment/references/criteria.md)
+**Rubric (canonical):** [3-opportunity-assessment-evaluation.md](../../../../../2-Methods/3-Discovery/4-Opportunity-Assessment/3-opportunity-assessment-evaluation.md) — quick check excerpt: [.claude/skills/opportunity-assessment/references/criteria.md](../../../../../.claude/skills/opportunity-assessment/references/criteria.md)
 
 **Test specimens:** `fixtures/good.md`, `fixtures/bad.md` (synthetic — not real work)
 

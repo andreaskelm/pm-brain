@@ -1,10 +1,10 @@
 # 2-Methods
 
-**Reference library** — mental models, org-reality playbooks, and long-form guides. **Workflows (PRD, OKR, prioritize, discovery, …) live in Agent Skills:** [.claude/skills/](../.claude/skills/README.md) and the map in **[0-index.md](0-index.md)**.
+**Framework library** — full guides, templates, and evaluations organized by product flow, plus mental models and long-form reference. **Agent workflows** (step-by-step coaching for PRD, OKR, discovery, …) live in [.claude/skills/](../.claude/skills/README.md); see **[0-index.md](0-index.md)** for the skill ↔ folder map.
 
-**For agents:** On a doc or workflow request, load the matching **`.claude/skills/<name>/SKILL.md` first**. Use `2-Methods/` only when the skill points here for depth (or for foundations / Strategy Blocks–style reference). Do not browse template trees instead of a skill.
+**For agents:** On a doc or workflow request, load the matching **`.claude/skills/<name>/SKILL.md` first**, then use the linked `2-Methods/` folder for full templates and framework depth.
 
-**For humans:** Start in [system/coaching/README.md](../system/coaching/README.md) (braindump first). When thinking is solid enough, pick a skill from [0-index.md](0-index.md) — not a random framework folder.
+**For humans:** Start in [system/coaching/README.md](../system/coaching/README.md) (braindump first). Browse frameworks here directly, or use a skill from [0-index.md](0-index.md) when you want guided steps.
 
 **Foundations (product sense, bias, calibration, self-reflection):** [1-Foundations/0-index.md](1-Foundations/0-index.md).
 

@@ -3,7 +3,7 @@ type: rubric_regression
 description: |
   Rubric regression: grade PRD test specimens against canonical 3-prd-evaluation.md.
 
-rubric_path: .claude/skills/write-prd/references/criteria.md
+rubric_path: 2-Methods/4-Execution/4-PRD/3-prd-evaluation.md
 judge: judges/artifact_quality.md
 spec_owner: .claude/skills/write-prd/references/criteria.md
 

@@ -36,15 +36,19 @@ If they've braindumped in chat or an initiative folder, one confirming question 
 
 ## Step 2 — Route to the right reference
 
-| Situation | Reference |
-|-----------|-----------|
-| Plan or debrief interviews; biases; question types | [interviews](references/interviews.md) |
-| Snapshot → synthesis → opportunities; weekly cadence | [continuous-discovery](references/continuous-discovery.md) |
-| Job stories, forces, ODI outcomes, job files | [jtbd](references/jtbd.md) |
-| Double Diamond, OST, HMW, problem vs solution | [problem-solution](references/problem-solution.md) |
-| Hypotheses, RAT, experiments, thresholds | [validation](references/validation.md) |
-| Job-based segments + personas (execution) | [segmentation-personas](references/segmentation-personas.md) |
-| PMF survey, retention, scale vs iterate | [pmf](references/pmf.md) |
+**In PM Brain, load the canonical framework files** (skills `references/` are short summaries only):
+
+| Situation | Load from `2-Methods/3-Discovery/` |
+|-----------|--------------------------------------|
+| Plan or debrief interviews; biases; question types | `1-Research-Interviews/1-interview-guide.md` |
+| Snapshot → synthesis → opportunities; weekly cadence | `2-Continuous-Discovery-Habits/` (`1-create-interview-snapshot.md` … `4-generate-solutions.md`) |
+| Job stories, forces, outcomes | `3-Jobs-To-Be-Done/1-jtbd-framework.md` + `2-jtbd-template.md` |
+| Double Diamond, OST, problem vs solution | `6-Problem-Solution-Space/` (guides + templates) |
+| Hypotheses, experiments, idea validation | `5-Idea-Validation/1-idea-validation.md` |
+| Job-based segments + personas | `7-Segmentation/` + `../../4-Execution/5-Personas/` when drafting personas |
+| PMF survey, retention, scale vs iterate | `8-Product-Market-Fit/` |
+
+Portable / offline summary only: [references/](references/) in this skill folder.
 
 Default path for messy qualitative data: **interviews** → **continuous-discovery** → **problem-solution** (OST) → **validation** for the riskiest assumption.
 

@@ -19,20 +19,20 @@ Ask if unclear. In practice after a substantive session, run all three dimension
 | **Level 2 — Agent behavior** | Did the coach follow PM Brain? | User wants conversation review |
 | **Level 3 — Personal capture** | Decisions, assumptions, growth | End of any substantive session (always) |
 
-## Step 2 — Map artifact → criteria file
+## Step 2 — Map artifact → quick check vs full rubric
 
-Load the matching criteria. Prefer skill-local files when they exist; otherwise `2-Methods/` evaluation docs from `system/EVALUATION.md`.
+See **`system/EVALUATION.md`** for the master table. Default: skill `references/criteria.md` (or `criteria-one-pager.md`) for **quick check**. User asks for full eval, peer review, or quality gate → load the matching **`2-Methods/**/3-*-evaluation.md`** and follow its STEP 0–4 when present, plus shared math in `system/EVALUATION.md`.
 
-| Artifact | Criteria path |
-|----------|----------------|
-| PRD | `.claude/skills/write-prd/references/criteria.md` |
-| Opportunity assessment | `.claude/skills/opportunity-assessment/references/criteria.md` |
-| OKR | `.claude/skills/okr/references/criteria.md` |
-| Roadmap | `.claude/skills/roadmap/references/criteria.md` |
-| North Star | `.claude/skills/north-star/references/criteria.md` |
-| Strategy doc | `.claude/skills/strategy/references/criteria.md` |
-| Prioritization output | `.claude/skills/prioritize/references/criteria.md` |
-| One-pager | `.claude/skills/stakeholder-comms/references/criteria-one-pager.md` |
+| Artifact | Quick check | Full evaluation |
+|----------|-------------|-----------------|
+| Opportunity assessment | `.claude/skills/opportunity-assessment/references/criteria.md` | `2-Methods/3-Discovery/4-Opportunity-Assessment/3-opportunity-assessment-evaluation.md` |
+| PRD | `.claude/skills/write-prd/references/criteria.md` | `2-Methods/4-Execution/4-PRD/3-prd-evaluation.md` |
+| OKR | `.claude/skills/okr/references/criteria.md` | `2-Methods/2-Strategy/2-Strategic-Execution/1-OKR/3-okr-evaluation.md` |
+| Roadmap | `.claude/skills/roadmap/references/criteria.md` | `2-Methods/2-Strategy/2-Strategic-Execution/2-Roadmap/3-roadmap-evaluation.md` |
+| North Star | `.claude/skills/north-star/references/criteria.md` | `2-Methods/2-Strategy/2-Strategic-Execution/3-North-Star/3-north-star-evaluation.md` |
+| One-pager | `.claude/skills/stakeholder-comms/references/criteria-one-pager.md` | `2-Methods/5-Communication/3-One-Pagers/3-one-pager-evaluation.md` |
+| Strategy doc | `.claude/skills/strategy/references/criteria.md` | (flags only) |
+| Prioritization output | `.claude/skills/prioritize/references/criteria.md` | (flags only) |
 
 **No criteria file?** Use the red-flag table in `system/EVALUATION.md` plus gut check — don't invent a rubric on the fly.
 
@@ -54,11 +54,11 @@ Default offer — not full scoring unless they want it or stakes are high:
 
 ## Step 5 — Full evaluation (on request)
 
-Follow **`system/EVALUATION.md`** exactly:
+Load the artifact's **`2-Methods/**/3-*-evaluation.md`** when listed in Step 2. Follow **`system/EVALUATION.md`** for shared process:
 
-0. **Gut check first** — record their read before scoring.
+0. **Gut check first** — record their read before scoring (STEP 0 in the `3-*` file when present).
 1. **Flags** — count red/green; quality multiplier (red bands + green bonus cap).
-2. **Weighted dimensions** — score 1–10 per criteria file; raw × multiplier, cap 10.
+2. **Weighted dimensions** — score 1–10 per the **full** evaluation file; raw × multiplier, cap 10.
 3. **Antipatterns** — quote instances from the artifact.
 4. **Top 3 improvements** — before/after rewrites from real lines.
 5. **Output** — use the markdown format in `system/EVALUATION.md`.

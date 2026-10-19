@@ -1,0 +1,34 @@
+#!/bin/sh
+# Blocks pushes to upstream when they would include personal/private paths.
+# Install: git config core.hooksPath scripts/git-hooks
+
+remote="$1"
+url="$2"
+
+case "$remote" in
+  upstream|upstream/*) ;;
+  *) exit 0 ;;
+esac
+
+# Paths that must never go to public upstream
+deny_patterns='^USER\.md$|^TODO\.md$|^1-Context/|^3-Work/|^4-Research/|^5-Growth/decisions\.md|^5-Growth/weekly/'
+
+zero=$(git hash-object --stdin </dev/null | tr '[0-9a-f]' '0')
+while read local_ref local_sha remote_ref remote_sha; do
+  [ "$local_sha" = "$zero" ] && continue
+  if [ "$remote_sha" = "$zero" ]; then
+    range="$local_sha"
+  else
+    range="$remote_sha..$local_sha"
+  fi
+  bad=$(git diff --name-only "$range" 2>/dev/null | grep -E "$deny_patterns" || true)
+  if [ -n "$bad" ]; then
+    echo "pre-push: blocked push to upstream — personal/private paths in commits:"
+    echo "$bad" | sed 's/^/  /'
+    echo ""
+    echo "Push to origin instead, or use a branch from upstream/main (see docs/private-fork.md)."
+    exit 1
+  fi
+done
+
+exit 0

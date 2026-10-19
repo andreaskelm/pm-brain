@@ -2,7 +2,7 @@
 
 **Think first:** [system/coaching/README.md](../system/coaching/README.md). **Evaluate an artifact:** [system/EVALUATION.md](../system/EVALUATION.md) and the `evaluate-artifact` skill.
 
-Workflows live in **Agent Skills** (`.claude/skills/`). Skills own templates, steps, and quality criteria. What stays under `2-Methods/` is reference you read to think: mental models, org-reality playbooks, and long-form guides (e.g. full Strategy Blocks process).
+**Agent Skills** (`.claude/skills/`) own the step-by-step workflow when you ask an agent to help. **`2-Methods/`** keeps the full framework library — guides, templates, evaluations — plus mental models and long-form reference (e.g. Strategy Blocks). On doc requests: load the skill first; drill into `2-Methods/` when you need the complete framework or a human-readable template.
 
 ---
 
@@ -33,18 +33,20 @@ Install path for upstream: `npx skills add andreaskelm/pm-brain` (skills ship in
 
 ---
 
-## Reference only (read in 2-Methods)
+## Full framework library (browse by domain)
 
-| Topic | Where |
+| Domain | README |
 |--------|--------|
-| Mental models, bias, calibration, self-reflection | [1-Foundations/](1-Foundations/README.md) → [0-index](1-Foundations/0-index.md) |
-| Full org strategy process (8–12 weeks) | [Strategy Blocks full guide](2-Strategy/1-Strategic-Foundations/1-Strategy-Blocks/1-full-guide.md) |
-| Crisis communication | [5-Communication/4-Crisis-Management/](5-Communication/4-Crisis-Management/) |
-| Stakeholder management (narrative + scenarios) | [5-Communication/7-Stakeholder-Management/](5-Communication/7-Stakeholder-Management/) |
-| Stakeholder avatars (template) | [5-Communication/8-Stakeholder-Avatars/](5-Communication/8-Stakeholder-Avatars/) |
-| Daily / weekly rituals (human cadence) | [4-Execution/1-Daily-Execution-And-Rituals/](4-Execution/1-Daily-Execution-And-Rituals/) |
-| 10 Things workshop | [4-Execution/8-10-Things-Workshop/](4-Execution/8-10-Things-Workshop/) |
+| Topic → framework map | [1-frameworks-by-topic.md](1-frameworks-by-topic.md) |
+| How to think (mental models, bias) | [1-Foundations/](1-Foundations/README.md) → [0-index](1-Foundations/0-index.md) |
+| Strategy choices + execution | [2-Strategy/](2-Strategy/README.md) |
+| Discovery & research | [3-Discovery/](3-Discovery/README.md) |
+| PRDs, metrics, rituals | [4-Execution/](4-Execution/README.md) |
+| Stakeholder comms & docs | [5-Communication/](5-Communication/README.md) |
+| Repo / initiative templates | [0-Template-Structure/](0-Template-Structure/README.md) |
 | Writing a new PM Brain skill | [0-writing-a-skill.md](0-writing-a-skill.md) |
+
+**Also reference-only (no separate skill workflow):** [Strategy Blocks full guide](2-Strategy/1-Strategic-Foundations/1-Strategy-Blocks/1-full-guide.md), [Crisis Management](5-Communication/4-Crisis-Management/), [Stakeholder Management](5-Communication/7-Stakeholder-Management/), [10 Things workshop](4-Execution/8-10-Things-Workshop/).
 
 ---
 
@@ -54,15 +56,15 @@ Install path for upstream: `npx skills add andreaskelm/pm-brain` (skills ship in
 |--------|-----|
 | Bias | [1-Foundations/2-Bias/](1-Foundations/2-Bias/) |
 | Decision-making, pre-mortems, assumptions | [1-Foundations/1-Mental-Models/1-Decision-Making/](1-Foundations/1-Mental-Models/1-Decision-Making/) |
-| Discovery / research | `discovery-synthesis` skill |
-| Opportunity assessment | `opportunity-assessment` skill |
-| PRD / user stories | `write-prd` skill |
-| Prioritization / backlog | `prioritize` skill |
-| OKRs / roadmap / North Star | `okr`, `roadmap`, `north-star` skills |
-| Metrics / AARRR | `north-star` skill → `references/metrics.md` |
-| Strategy doc | `strategy` skill; org process → Strategy Blocks guide |
-| Stakeholder comms | `stakeholder-comms` skill |
-| Escalation / saying no | `stakeholder-comms` → `references/escalation-saying-no.md` |
+| Discovery / research | `discovery-synthesis` skill → [3-Discovery/](3-Discovery/README.md) |
+| Opportunity assessment | `opportunity-assessment` skill → [4-Opportunity-Assessment/](3-Discovery/4-Opportunity-Assessment/) |
+| PRD / user stories | `write-prd` skill → [4-PRD/](4-Execution/4-PRD/), [User Stories](4-Execution/2-User-Stories/) |
+| Prioritization / backlog | `prioritize` skill → [4-Prioritization/](2-Strategy/2-Strategic-Execution/4-Prioritization/), [Backlog](4-Execution/3-Backlog-Prioritization/) |
+| OKRs / roadmap / North Star | `okr`, `roadmap`, `north-star` skills → [2-Strategic-Execution/](2-Strategy/2-Strategic-Execution/README.md) |
+| Metrics / AARRR | `north-star` skill → [6-Metrics/](4-Execution/6-Metrics/), [AARRR](4-Execution/7-AARRR-Pirate-Metrics/) |
+| Strategy doc | `strategy` skill → [GSBS](2-Strategy/1-Strategic-Foundations/2-Good-Strategy-Bad-Strategy/), [Playing to Win](2-Strategy/1-Strategic-Foundations/3-Playing-To-Win/); org process → Strategy Blocks guide |
+| Stakeholder comms | `stakeholder-comms` skill → [One-pagers](5-Communication/3-One-Pagers/), [Agendas](5-Communication/2-Meeting-Agendas/), [Newsletter](5-Communication/1-Newsletter/) |
+| Escalation / saying no | `stakeholder-comms` skill → [5-Escalation/](5-Communication/5-Escalation/), [6-Saying-No/](5-Communication/6-Saying-No/) |
 | Product sense coaching | [system/coaching/](../system/coaching/README.md) |
 
 ---

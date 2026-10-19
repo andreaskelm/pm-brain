@@ -371,10 +371,28 @@
 
 ---
 
-## 17. The Bet (for your own records, not the stakeholder version)
+## 17. Product Sense Hooks (Strongly Recommended)
 
-- **What outcome are we betting on, and how confident am I?** [metric → target, %]
-- **What would make us change our mind 4–8 weeks after launch?** [reopen trigger]
-- **Most important assumption this PRD rests on:** [assumption + evidence tier: documented / verbal / hunch / industry]
+Before you treat this PRD as “done”, run a quick product-sense pass and, if it’s a meaningful initiative, capture it in your personal logs.
 
-If you keep a decisions log, this is the row.
+**Where to log:** the bet itself (expected outcome, confidence, reopen trigger) as a row in `5-Growth/decisions.md`. Research behind it stays in `4-Research/` or the initiative's `research/` folder.
+
+**Prompts to sanity-check this PRD:**
+- Who specifically is this for, and what job are they really hiring this for?
+- What are the second- and third-order effects if this works → If it fails?
+- What’s the most important assumption this PRD is betting on?
+- What qualitative and quantitative evidence are we actually using?
+- What would make us change our mind 4–8 weeks after launch?
+
+You don’t need pages of extra writing—one honest row in `5-Growth/decisions.md` is enough to keep your day-to-day execution anchored in product sense.
+
+-----
+
+## References
+
+- PRD Framework: `1-prd-framework.md`
+- PRD JTBD Template: `3-prd-jtbd-template.md`
+- PRD README: `README.md`
+- Strategy: `../../2-Strategy/README.md` (Strategic Foundations, OKR Framework)
+- Discovery: `../../3-Discovery/README.md` (Opportunity Assessment, Idea Validation, Jobs to Be Done)
+- Foundations: `../../1-Foundations/README.md` (Self-Reflection, Mental Models, Bias)

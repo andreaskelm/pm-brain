@@ -3,7 +3,7 @@ type: rubric_regression
 description: |
   Rubric regression: grade OKR test specimens against canonical 3-okr-evaluation.md.
 
-rubric_path: .claude/skills/okr/references/criteria.md
+rubric_path: 2-Methods/2-Strategy/2-Strategic-Execution/1-OKR/3-okr-evaluation.md
 judge: judges/artifact_quality.md
 spec_owner: .claude/skills/okr/references/criteria.md
 

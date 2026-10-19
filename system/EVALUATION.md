@@ -8,16 +8,18 @@ Agent behavior evals (is the *coach* behaving?) are a different thing: [evals/RE
 
 ## Criteria files
 
-| Artifact | Criteria |
-|---|---|
-| OKR | [.claude/skills/okr/references/criteria.md](../.claude/skills/okr/references/criteria.md) |
-| Roadmap | [.claude/skills/roadmap/references/criteria.md](../.claude/skills/roadmap/references/criteria.md) |
-| North Star | [.claude/skills/north-star/references/criteria.md](../.claude/skills/north-star/references/criteria.md) |
-| Opportunity Assessment | [.claude/skills/opportunity-assessment/references/criteria.md](../.claude/skills/opportunity-assessment/references/criteria.md) |
-| PRD | [.claude/skills/write-prd/references/criteria.md](../.claude/skills/write-prd/references/criteria.md) |
-| One-Pager | [.claude/skills/stakeholder-comms/references/criteria-one-pager.md](../.claude/skills/stakeholder-comms/references/criteria-one-pager.md) |
-| Strategy doc | [.claude/skills/strategy/references/criteria.md](../.claude/skills/strategy/references/criteria.md) (flags only) |
-| Prioritization record | [.claude/skills/prioritize/references/criteria.md](../.claude/skills/prioritize/references/criteria.md) (flags only) |
+**Quick check** (red/green while drafting or a fast pass) vs **full evaluation** (weighted score, antipatterns, rewrites). Process and math for full eval are in this file; artifact-specific **full** rubrics live in `2-Methods/**/3-*-evaluation.md`.
+
+| Artifact | Quick check | Full evaluation (`2-Methods/`) |
+|---|---|---|
+| Opportunity Assessment | [opportunity-assessment/.../criteria.md](../.claude/skills/opportunity-assessment/references/criteria.md) | [3-opportunity-assessment-evaluation.md](../2-Methods/3-Discovery/4-Opportunity-Assessment/3-opportunity-assessment-evaluation.md) |
+| PRD | [write-prd/.../criteria.md](../.claude/skills/write-prd/references/criteria.md) | [3-prd-evaluation.md](../2-Methods/4-Execution/4-PRD/3-prd-evaluation.md) |
+| OKR | [okr/.../criteria.md](../.claude/skills/okr/references/criteria.md) | [3-okr-evaluation.md](../2-Methods/2-Strategy/2-Strategic-Execution/1-OKR/3-okr-evaluation.md) |
+| Roadmap | [roadmap/.../criteria.md](../.claude/skills/roadmap/references/criteria.md) | [3-roadmap-evaluation.md](../2-Methods/2-Strategy/2-Strategic-Execution/2-Roadmap/3-roadmap-evaluation.md) |
+| North Star | [north-star/.../criteria.md](../.claude/skills/north-star/references/criteria.md) | [3-north-star-evaluation.md](../2-Methods/2-Strategy/2-Strategic-Execution/3-North-Star/3-north-star-evaluation.md) |
+| One-Pager | [criteria-one-pager.md](../.claude/skills/stakeholder-comms/references/criteria-one-pager.md) | [3-one-pager-evaluation.md](../2-Methods/5-Communication/3-One-Pagers/3-one-pager-evaluation.md) |
+| Strategy doc | [strategy/.../criteria.md](../.claude/skills/strategy/references/criteria.md) (flags only) | — |
+| Prioritization record | [prioritize/.../criteria.md](../.claude/skills/prioritize/references/criteria.md) (flags only) | — |
 
 No criteria file for the artifact? Use the red-flag table below plus the gut check — don't invent a scoring rubric on the fly.
 
@@ -40,9 +42,9 @@ Every so often: "What feels right? What feels off?" and "Explain this to a skept
 
 ## Before calling it done
 
-Offer a quick check: the red/green flags from the criteria file, top 3 issues, one strength. Run the full evaluation below only on request, for peer review, or before a high-stakes review.
+Offer a quick check: the red/green flags from the skill's quick-check `criteria.md` (or flags-only table above), top 3 issues, one strength. Run the **full** evaluation below only on request, for peer review, or before a high-stakes review — and load the matching `2-Methods/**/3-*-evaluation.md` when one exists (follow its STEP 0–4 if present).
 
-**Independent review:** for a fresh-eyes pass, delegate to the `artifact-reviewer` subagent (`.claude/agents/artifact-reviewer.md`, mid tier). It reads the artifact and the criteria file without the conversation's bias. Then discuss its findings with the user in the main thread — the reviewer reports, the user decides.
+**Independent review:** for a fresh-eyes pass, delegate to the `artifact-reviewer` subagent (`.claude/agents/artifact-reviewer.md`, mid tier). Default: quick check criteria; user asks for full eval → load the `3-*-evaluation.md` file. Then discuss findings in the main thread — the reviewer reports, the user decides.
 
 ---
 

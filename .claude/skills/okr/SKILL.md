@@ -7,6 +7,15 @@ description: Write, draft, review, or fix OKRs (objectives and key results) for 
 
 OKRs turn a strategy into a handful of outcomes the team commits to moving, and leave the *how* to the team. The failure I see most often is a task list with percentages on it: "Launch dashboard: 100%", every box green at quarter end, and nothing about the business changed. The second most common: OKRs written from scratch in planning week with no strategy behind them, so they just restate the roadmap someone already had. OKRs organize a strategy. They don't create one.
 
+**Canonical library (this repo):**
+
+| Piece | Path |
+|--------|------|
+| Framework | `2-Methods/2-Strategy/2-Strategic-Execution/1-OKR/1-okr-framework.md` |
+| Templates | `2-Methods/.../1-OKR/2-okr-template.md` (skill copy: [references/template.md](references/template.md)) |
+| Full evaluation | `2-Methods/.../1-OKR/3-okr-evaluation.md` |
+| Cadence detail | `references/cadence.md` (supplement; framework + template are canonical) |
+
 ## Are OKRs the right thing?
 
 **Use them when** there's a strategic priority to operationalize, more than one team or function has to pull in the same direction, the outcome can be measured (or you can start measuring it this cycle), and someone will actually look at them every week.
@@ -70,7 +79,7 @@ Project-named objectives, milestone KRs, no baselines or targets, no time bound,
 ## Step 6 — Before calling it done
 
 - **Gut check:** "Explain these to a skeptical exec in two minutes. What behavior will they drive, and what behavior might they drive *instead*?" Then: "What would make you say these are obviously wrong?"
-- **Quick check** against the red/green flags. Offer the full scored evaluation only if they want it, or before a high-stakes review.
+- **Quick check** against [references/criteria.md](references/criteria.md). **Full eval:** `2-Methods/2-Strategy/2-Strategic-Execution/1-OKR/3-okr-evaluation.md` + `system/EVALUATION.md`.
 - **Independent review:** if the `artifact-reviewer` subagent is available, offer it, since fresh eyes catch what the author can't. Discuss its findings; don't just paste them.
 - **Log the bet:** offer a row in `5-Growth/decisions.md`: how confident they are that hitting these KRs moves the strategy metric, plus a reopen trigger ("leading KR at confidence 0 for two weeks running", "baseline turns out 30% off").
 
