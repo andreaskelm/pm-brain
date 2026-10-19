@@ -14,16 +14,6 @@ This repo is a **private fork**: framework + skills stay mergeable with [upstrea
 | `5-Growth/decisions.md`, `5-Growth/weekly/*` | Yes | Never |
 | `TODO.md` | Local only (gitignored) | Never |
 
-## Install the upstream push guard (recommended)
-
-Blocks `git push upstream …` if the push would include personal paths.
-
-```bash
-git config core.hooksPath scripts/git-hooks
-```
-
-On Windows, use Git Bash or ensure `sh` is available (Git for Windows includes it).
-
 ## Push workflow
 
 **Daily work — private backup:**
@@ -42,11 +32,11 @@ git push upstream contrib/short-description
 gh pr create --repo andreaskelm/pm-brain ...
 ```
 
-If `pre-push` blocks you on `upstream`, you are trying to send personal paths — use a contribution branch built from `upstream/main`.
+Never run `git push upstream main` from a private fork — use a contribution branch built from `upstream/main` so personal paths never enter the push.
 
 ## `USER.md` on this fork
 
-`USER.md` is **tracked on `origin`** so your profile is not only on disk. It remains in the upstream push guard deny list.
+`USER.md` is **tracked on `origin`** so your profile is not only on disk. Do not include it in upstream contribution branches.
 
 ## Already tracked personal files
 
