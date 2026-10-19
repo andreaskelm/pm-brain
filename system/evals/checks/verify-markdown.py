@@ -49,17 +49,8 @@ def in_scope(rel: Path) -> bool:
     return rel.parts[0] in ACTIVE_PREFIXES
 
 
-def private_mode_enabled() -> bool:
-    gitignore = ROOT / ".gitignore"
-    if not gitignore.exists():
-        return False
-    return "PRIVATE MODE — enabled" in gitignore.read_text(encoding="utf-8")
-
-
-def optional_private_link_target(resolved: Path) -> bool:
-    """Gitignored personal/company paths may be absent in CI for private forks."""
-    if not private_mode_enabled():
-        return False
+def optional_personal_link_target(resolved: Path) -> bool:
+    """User-local paths may be absent in CI (public template) or when gitignored (private fork)."""
     try:
         rel = resolved.relative_to(ROOT).as_posix()
     except ValueError:
@@ -115,7 +106,7 @@ def check_links(path: Path, text: str, errors: list[str]) -> None:
         if not target or target.startswith("<"):
             continue
         resolved = (path.parent / target).resolve()
-        if not resolved.exists() and not optional_private_link_target(resolved):
+        if not resolved.exists() and not optional_personal_link_target(resolved):
             errors.append(f"{rel}: broken link -> {target}")
 
     for match in BACKTICK_PATH_RE.finditer(text):
@@ -123,7 +114,7 @@ def check_links(path: Path, text: str, errors: list[str]) -> None:
             continue
         target = match.group(1).strip()
         resolved = (path.parent / target).resolve()
-        if not resolved.exists() and not optional_private_link_target(resolved):
+        if not resolved.exists() and not optional_personal_link_target(resolved):
             errors.append(f"{rel}: broken backtick path -> {target}")
 
 
