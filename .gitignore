@@ -45,38 +45,36 @@ __pycache__/
 .idea/
 
 # ============================================
-# PRIVATE MODE — enabled (see docs/setup.md Step 3)
+# PRIVATE MODE — uncomment this block to enable
+# (or tell the agent "switch me to private mode")
+# See docs/setup.md Step 3 and docs/private-fork.md for forks.
 # ============================================
 
-# --- Personal practice content ---
-# (decisions.md ships as a template; once you add rows, it stays local)
-5-Growth/decisions.md
-5-Growth/weekly/*
-!5-Growth/weekly/README.md
-5-Growth/monthly-*.md
-5-Growth/self-assessment-*.md
-
-# --- Company-specific content ---
-1-Context/*.md
-!1-Context/README.md
-1-Context/**/*.md
-!1-Context/**/README.md
-
-# --- Personal configuration ---
-# USER.md is TRACKED on pm-brain-private (origin backup). Never push to upstream — see scripts/git-hooks/pre-push.
-# (Do not list USER.md here on this fork.)
-
-# --- Active work & research ---
-# New initiatives stay untracked until you `git add -f` them. Already-tracked folders (e.g. Produktland, job-search) stay in git until you `git rm --cached`.
-3-Work/*
-!3-Work/README.md
-!3-Work/1-Initiative-Codename/
-3-Work/2-Produktland/
-3-Work/3-job-search/
-4-Research/*
-!4-Research/README.md
-!4-Research/1-User-Interviews/README.md
-!4-Research/2-Qualitative-Research/
+# # --- Personal practice content ---
+# # (decisions.md ships as a template; once you add rows, it stays local)
+# 5-Growth/decisions.md
+# 5-Growth/weekly/*
+# !5-Growth/weekly/README.md
+# 5-Growth/monthly-*.md
+# 5-Growth/self-assessment-*.md
+#
+# # --- Company-specific content ---
+# 1-Context/*.md
+# !1-Context/README.md
+# 1-Context/**/*.md
+# !1-Context/**/README.md
+#
+# # --- Personal configuration ---
+# USER.md
+#
+# # --- Active work & research ---
+# 3-Work/*
+# !3-Work/README.md
+# !3-Work/1-Initiative-Codename/
+# 4-Research/*
+# !4-Research/README.md
+# !4-Research/1-User-Interviews/README.md
+# !4-Research/2-Qualitative-Research/
 
 # ============================================
 # TEAM MODE — uncomment this block to enable

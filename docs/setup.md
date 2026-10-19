@@ -102,7 +102,7 @@ PM Brain uses **numbered top-level folders (1–5)** so you always know *what ki
 | `system/` | Agent orchestration, coaching prompts, skills, evals |
 | `docs/` | Human docs (this guide, architecture, principles) |
 | `AGENTS.md` | Persona, voice, lenses, principles, wake table — bootstrap |
-| `USER.md` | Your profile (customize in Step 4) |
+| `USER.md` | Your profile (customize in Step 4); copy from [`USER.template.md`](../USER.template.md) if missing |
 | `.claude/skills/` | Workflow skills (PRD, OKR, prioritize, …) |
 | `.claude/agents/` | Optional subagents (scout, reviewer, stakeholder sim) |
 | `.cursor/hooks.json` | Cursor-only write validation hook |

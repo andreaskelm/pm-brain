@@ -11,6 +11,7 @@ case "$remote" in
 esac
 
 # Paths that must never go to public upstream
+# USER.template.md is OK on upstream; block filled USER.md (private profile) by path.
 deny_patterns='^USER\.md$|^TODO\.md$|^1-Context/|^3-Work/|^4-Research/|^5-Growth/decisions\.md|^5-Growth/weekly/'
 
 zero=$(git hash-object --stdin </dev/null | tr '[0-9a-f]' '0')
