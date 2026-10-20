@@ -8,16 +8,21 @@ Run as part of weekly-review (Friday close). Goal: catch memory rot — decision
 |--------|----------|
 | `5-Growth/decisions.md` | Rows past resolve-by; reopen triggers; forecasts without recent revisit |
 | `5-Growth/weekly/` (last note) | Live assumptions table — dates in "last challenged" |
+| `3-Work/signals/` | This week's day files — any bullet with no `landed:` |
+| `3-Work/hypotheses/` | `active` files with no evidence in 30+ days; decision triggers this week's bits may have met |
 | `3-Work/[initiative]/` | `decisions.md`, initiative bets vs this week's work |
 | `1-Context/` | Strategy or stakeholder shifts vs logged beliefs |
 | `4-Research/` or `3-Work/*/research/` | New evidence that contradicts a prior call |
 
-## Four flag types
+## Flag types
 
 1. **Fired reopen triggers** — "What would change my mind" from decisions.md or assumption rows; new signals this week that satisfy it.
 2. **Stale beliefs** — live assumption not challenged 3+ weeks; decision/forecast not revisited 6+ weeks.
 3. **Contradictions** — new entries or conversation cuts against a logged decision or forecast.
 4. **Weak evidence** — load-bearing claim still verbal/hunch/industry where documented was expected. Name tier when flagging; depth: `2-Methods/1-Foundations/1-Mental-Models/1-Decision-Making/7-evidence-strength.md`.
+5. **Open signals** — a filed bit with no `landed:`. That is a failed capture, not a task to schedule.
+6. **Quiet hypotheses** — status `active` and the newest evidence row is 30+ days old, or there is no evidence row.
+7. **Trigger maybe met** — a hypothesis decision trigger that this week's signals may satisfy. Offer a scored row in `5-Growth/decisions.md`. Do not write it.
 
 ## Output (3–5 bullets max)
 

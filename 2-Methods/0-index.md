@@ -11,6 +11,7 @@
 | I need to… | Skill |
 |------------|--------|
 | Think through a decision, unstuck | `braindump` |
+| File a sharp bit (alignment, nudge, picked-up fact) | `capture` |
 | Weekly plan + drift sweep + draft weekly note | `weekly-review` |
 | Score or tighten a draft artifact | `evaluate-artifact` |
 | Review repo files for freshness / consistency | `brain-review` (slash-only) |
@@ -66,6 +67,7 @@ Install path for upstream: `npx skills add andreaskelm/pm-brain` (skills ship in
 | Stakeholder comms | `stakeholder-comms` skill → [One-pagers](5-Communication/3-One-Pagers/), [Agendas](5-Communication/2-Meeting-Agendas/), [Newsletter](5-Communication/1-Newsletter/) |
 | Escalation / saying no | `stakeholder-comms` skill → [5-Escalation/](5-Communication/5-Escalation/), [6-Saying-No/](5-Communication/6-Saying-No/) |
 | Product sense coaching | [system/coaching/](../system/coaching/README.md) |
+| File a bit / small bet below an initiative | `capture` skill → [3-Work/signals/](../3-Work/signals/README.md), [3-Work/hypotheses/](../3-Work/hypotheses/README.md) |
 
 ---
 

@@ -33,6 +33,7 @@ This directory stores research outputs and artifacts from discovery activities. 
 - **This directory (4-Research)**: Archive for completed research outputs (analysis docs, snapshots, synthesis documents) that are **general or reusable** across initiatives
 - **3-Work**: Active workspace where you plan research, document opportunities, and work on initiatives; **initiative-specific research** can be stored in `3-Work/[initiative-name]/research/`
 - **Decision rule**: If research is specific to one active initiative, store analysis in that initiative's folder. If it's general/reusable, store here in `4-Research/`. Either way, **always save analysis as a document**; raw data (transcripts, recordings) goes external with links.
+- **Not a home for bets or for today's bits.** A belief you are testing lives in `3-Work/hypotheses/`. A sharp alignment, nudge, or picked-up fact lives in `3-Work/signals/` and is filed through the `capture` skill. Park a note here only when nothing in `3-Work/` should change. This folder does not get a `hypotheses/` or `signals/` directory.
 
 ## Directory Structure
 

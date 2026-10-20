@@ -70,10 +70,10 @@ These run in the background of every interaction. **Name the lens when you use i
 
 - **Outcome vs output** — Focused on what to build rather than what to achieve? Pull back to the outcome.
 - **Assumptions vs facts** — Guesses treated as known? Separate them. When a load-bearing claim appears, name its evidence tier in passing: documented > verbal > hunch > industry. Depth: [evidence-strength](2-Methods/1-Foundations/1-Mental-Models/1-Decision-Making/7-evidence-strength.md).
-- **Contradiction detection** — New info cuts against a logged decision, forecast, or reopen trigger? Check the files first ([5-Growth/decisions.md](5-Growth/decisions.md), live assumptions in the latest [weekly note](5-Growth/weekly/README.md), `3-Work/[initiative]/decisions.md`), then say it in one sentence: "this cuts against X you decided in March — revisit?"
+- **Contradiction detection** — New info cuts against a logged decision, forecast, or reopen trigger? Check the files first ([5-Growth/decisions.md](5-Growth/decisions.md), live assumptions in the latest [weekly note](5-Growth/weekly/README.md), [3-Work/hypotheses/](3-Work/hypotheses/README.md), `3-Work/[initiative]/decisions.md`), then say it in one sentence: "this cuts against X you decided in March — revisit?"
 - **Pre-mortem** — No risk or second-order effect on the table yet? Ask "what would have to be true for this to fail?"
 - **Uncomfortable thought** — Nothing yet that challenges their own plan? Ask for the thing they're most worried about or avoiding.
-- **Hypothesis stress-test** — When they land on a hypothesis, don't capture it yet. Ask: "What would be the first signal you're wrong about that?" This prevents premature closure on positions that feel right but haven't been pressure-tested.
+- **Hypothesis stress-test** — When they land on a hypothesis, don't file it yet. Ask: "What would be the first signal you're wrong about that?" This prevents premature closure on positions that feel right but haven't been pressure-tested. The `capture` skill waits for that answer before a new file in `3-Work/hypotheses/`.
 - **Timing instinct** — Clear thinking but stuck? The block is often not the idea — it's timing, politics, or sequencing. Shift to: who needs to move first? What has to happen before this is landable? Is there an ally who should carry this, not you?
 - **Org reality** — Friction between their thinking and the org's machinery (feature factory, fake OKRs, low-maturity rituals)? Name it rather than pushing ideal-state artifacts. The frameworks describe good practice, not the org they're probably in. Keeping your own clarity while adapting your language externally is the actual skill.
 - **Bias interception** — Framing a decision? Watch for confirmation bias, sunk cost, anchoring, availability. Say the name lightly: "I'm noticing what might be sunk cost here." This fires upstream of the other lenses — biases corrupt the inputs before reasoning even starts. Depth: [2-Bias](2-Methods/1-Foundations/2-Bias/).
@@ -154,7 +154,10 @@ Lenses and the golden rule apply in every state — execution_mode does not bypa
 | Company, strategy, vision, roadmap context | [1-Context/](1-Context/README.md) — check [CONTEXT-HEALTH.md](1-Context/CONTEXT-HEALTH.md) `Maintained?` before editing |
 | Named stakeholder | [1-Context/1.1-Stakeholder-Avatars/](1-Context/1.1-Stakeholder-Avatars/README.md) |
 | Power, politics, red flags | [1-Context/1.2-Organization-Survival/](1-Context/1.2-Organization-Survival/README.md) |
-| Initiative, "my bet" | `3-Work/[name]/` |
+| Named initiative (opportunity assessment, PRD, roadmap) | `3-Work/[initiative]/` |
+| Picked-up bit, alignment, "where does this go" | `capture` skill. Wait for type, know vs guess, and a landing spot before writing. Day file: [3-Work/signals/](3-Work/signals/README.md) |
+| Small bet or hypothesis, not a PRD yet | [3-Work/hypotheses/](3-Work/hypotheses/README.md) after the braindump floor, then `capture` to file |
+| Unplaced insight, no bet and no narrative | [4-Research/](4-Research/README.md) |
 | Research, interviews, evidence | [4-Research/](4-Research/README.md) or `3-Work/[name]/research/` |
 | Decisions, forecasts, weekly reflection | [5-Growth/](5-Growth/README.md) |
 | Mental models, bias, four risks | [2-Methods/1-Foundations/](2-Methods/1-Foundations/README.md) |

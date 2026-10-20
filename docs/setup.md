@@ -91,7 +91,7 @@ PM Brain uses **numbered top-level folders (1–5)** so you always know *what ki
 |---|--------|----------------|----------------|
 | **1** | `1-Context/` | Company vision, strategy, stakeholders, org survival | **Yes**—your company |
 | **2** | `2-Methods/` | Frameworks, templates, playbooks (Strategy → Communication) | Mostly no—use as reference |
-| **3** | `3-Work/` | Active initiatives—one folder per bet (PRD, roadmap, decisions) | **Yes**—your work |
+| **3** | `3-Work/` | Active work at three sizes: today's signals, small hypotheses, and one folder per initiative | **Yes**—your work |
 | **4** | `4-Research/` | Research artifacts—interviews, synthesis, qualitative findings | **Yes**—your evidence |
 | **5** | `5-Growth/` | Decisions log + weekly notes (calibration practice) | **Yes**—your growth |
 
@@ -125,8 +125,10 @@ pm-brain/
 |   |-- 3-Discovery/             # Interviews, JTBD, opportunity assessment
 |   |-- 4-Execution/             # PRD, backlog, metrics, rituals
 |   +-- 5-Communication/         # Stakeholders, one-pagers, documentation standards
-|-- 3-Work/                    # YOUR active initiatives (one folder per bet)
-|   +-- 1-Initiative-Codename/   # Example structure—copy when starting real work
+|-- 3-Work/                    # YOUR work: signals, hypotheses, initiatives
+|   |-- signals/                 # One file per day you file a sharp bit
+|   |-- hypotheses/              # Bets too small for a PRD
+|   +-- 1-Initiative-Codename/   # Example narrative—copy when a bet grows up
 |-- 4-Research/                # YOUR research storage (link to initiatives)
 |   |-- 1-User-Interviews/
 |   +-- 2-Qualitative-Research/
@@ -149,13 +151,13 @@ Typical flow across the numbered folders:
 
 ```text
 1-Context (constraints) → 2-Methods (how to think) → 4-Research (evidence)
-        → 3-Work (initiative docs) → 5-Growth (what you learned)
+        → 3-Work (signals, hypotheses, initiatives) → 5-Growth (scored calls)
 ```
 
 - **`1-Context/`** grounds advice in *your* strategy and stakeholders.
 - **`2-Methods/`** is the library—braindump first via [system/coaching/README.md](../system/coaching/README.md), then pick a framework.
 - **`4-Research/`** stores evidence; link from initiative `research/` folders in `3-Work/`.
-- **`3-Work/`** is where day-to-day product work lives—PRDs, roadmaps, decision logs.
+- **`3-Work/`** is active work at three sizes: a sharp bit in `signals/`, a small bet in `hypotheses/`, and an initiative narrative (PRD, roadmap, decision log). File a bit through the `capture` skill after you have said what it is.
 - **`5-Growth/`** captures decisions with confidence levels and a short weekly note—see [5-Growth/README.md](../5-Growth/README.md).
 
 More detail: [principles.md](principles.md) (where things go) and [architecture.md](architecture.md) (system overview). If you see legacy `00–04` prefixed folders, see [legacy-migration.md](legacy-migration.md).
