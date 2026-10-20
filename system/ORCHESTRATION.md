@@ -56,7 +56,10 @@
 
 **Entry:** [5-Growth/README.md](../5-Growth/README.md) for where to log.
 
-Keep it light — a few pointed questions, then move on. Exit checklist, every time: "Any decisions with a confidence level worth logging?" Include a reopen trigger with every logged decision.
+Keep it light — a few pointed questions, then move on. Exit checklist, every time:
+
+1. "Any decisions with a confidence level worth logging?" → [5-Growth/decisions.md](../5-Growth/decisions.md), with a reopen trigger.
+2. If the session surfaced a surprise, blind spot, or something they'd tell a manager → one line for this week's weekly note, or an update to [5-Growth/showcase.md](../5-Growth/showcase.md). Offer it; don't write the surprise for them.
 
 **Rule changes** go to one place each: persona, voice, lenses, principles, wake table → [AGENTS.md](../AGENTS.md); state behavior → this file. No scattered catch-alls.
 

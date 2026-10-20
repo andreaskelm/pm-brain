@@ -88,7 +88,7 @@ Brain-wide scan before the weekly note is final. Detail checklist: [references/d
 
 ## Step 6 — Draft `YYYY-Www.md`
 
-Use the template in `5-Growth/weekly/README.md`:
+Use `5-Growth/weekly/template.md`:
 
 - Shipped / moved
 - Decisions (new in decisions.md, resolved this week)
@@ -110,6 +110,10 @@ Offer explicitly:
 
 User confirms before writing to `5-Growth/decisions.md`.
 
+## Step 8 — Showcase (optional)
+
+One question: "Anything from this week for the next 1:1?" If yes, draft an update to `5-Growth/showcase.md` (one decision row, or the pattern, or the next focus) from what they already said in the weekly note. They confirm before you write. Skip if the week was thin.
+
 ## Org reality
 
 - **No Friday bandwidth.** Drift sweep alone is still worth 10 minutes; ship 3 bullets, not a novel.
@@ -119,6 +123,8 @@ User confirms before writing to `5-Growth/decisions.md`.
 
 ## References
 
-- `5-Growth/weekly/README.md` — note template and ownership
+- `5-Growth/weekly/template.md` — weekly note
+- `5-Growth/showcase.md` — 1:1 rollup
+- `5-Growth/weekly/README.md` — ownership and cadence
 - `2-Methods/4-Execution/1-Daily-Execution-And-Rituals/2-weekly-cadence.md` — full ritual scripts
 - [references/drift-sweep.md](references/drift-sweep.md) — drift sweep checklist

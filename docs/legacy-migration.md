@@ -1,6 +1,6 @@
 # Legacy Folder Migration
 
-> **Already migrated (2026-10 overhaul):** Agent wiring is **AGENTS.md–only** at bootstrap (no `system/MEMORY.md`, no `.cursor/rules/pm-brain.mdc`). Workflows live in **`.claude/skills/`** with subagents in **`.claude/agents/`**; framework navigation is **[2-Methods/0-index.md](../2-Methods/0-index.md)** (not `0-template-finder.md`). **`5-Growth/`** is lean — [decisions.md](../5-Growth/decisions.md) and [weekly/](../5-Growth/weekly/README.md) only. Legacy **`.cursor/commands/`** removed. Decision logging: [5-Growth/decisions.md](../5-Growth/decisions.md) (not PJT `forecast-log.md`). Evals: [system/evals/README.md](../system/evals/README.md).
+> **Already migrated (2026-10 overhaul):** Agent wiring is **AGENTS.md–only** at bootstrap (no `system/MEMORY.md`, no `.cursor/rules/pm-brain.mdc`). Workflows live in **`.claude/skills/`** with subagents in **`.claude/agents/`**; framework navigation is **[2-Methods/0-index.md](../2-Methods/0-index.md)** (not `0-template-finder.md`). **`5-Growth/`** is lean — [decisions.md](../5-Growth/decisions.md), [weekly/](../5-Growth/weekly/README.md), and [showcase.md](../5-Growth/showcase.md). Legacy **`.cursor/commands/`** removed. Decision logging: [5-Growth/decisions.md](../5-Growth/decisions.md) (not PJT `forecast-log.md`). Evals: [system/evals/README.md](../system/evals/README.md).
 
 PM Brain uses a **canonical 1–5 top-level model** plus root bootstrap files and a `system/` agent layer. Older repo versions used **`00–04` decimal-prefixed folders** and scattered meta/agent/thinking files.
 

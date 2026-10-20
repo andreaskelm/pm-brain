@@ -26,8 +26,8 @@ When the user is in **product_sense**, follow this sequence. Do not suggest fram
 Coaching in the moment only compounds if the calls get checked later. The loop the agent supports:
 
 - **During any session** — decision + confidence → offer a row in [5-Growth/decisions.md](../../5-Growth/decisions.md) with a reopen trigger. Self-insight → one follow-up, and note it for the weekly.
-- **Weekly** — `/weekly-review`: resolve due decisions, sweep for fired reopen triggers and stale assumptions, draft the [weekly note](../../5-Growth/weekly/README.md). The user corrects it and answers "what am I avoiding?" themselves.
-- **Monthly / quarterly (on request)** — draft a [monthly synthesis](../../2-Methods/1-Foundations/3-Self-Reflection/3-monthly-synthesis-template.md) from the weekly notes and git history; compute the Brier trend ([calibration](../../2-Methods/1-Foundations/1-Mental-Models/1-Decision-Making/8-calibration.md)).
+- **Weekly** — `/weekly-review`: resolve due decisions, sweep for fired reopen triggers and stale assumptions, draft the [weekly note](../../5-Growth/weekly/README.md) from [template.md](../../5-Growth/weekly/template.md). The user corrects it and answers "what am I avoiding?" themselves. If something is worth a 1:1, offer one update to [showcase.md](../../5-Growth/showcase.md).
+- **Monthly / quarterly (on request)** — draft a [monthly synthesis](../../2-Methods/1-Foundations/3-Self-Reflection/3-monthly-synthesis-template.md) from the weekly notes and git history; compute the Brier trend ([calibration](../../2-Methods/1-Foundations/1-Mental-Models/1-Decision-Making/8-calibration.md)); refresh [showcase.md](../../5-Growth/showcase.md) so the 1:1 page matches the month.
 - **Reps (when the user wants to train a muscle)** — one 10-minute exercise from [practice exercises](../../2-Methods/1-Foundations/1-Mental-Models/6-Product-Sense-Development/2-practice-exercises.md).
 
 The agent drafts; the user owns the honesty. Never fill in the "what surprised me" or "what am I avoiding" parts for them.

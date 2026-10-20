@@ -51,10 +51,12 @@ __pycache__/
 # ============================================
 
 # # --- Personal practice content ---
-# # (decisions.md ships as a template; once you add rows, it stays local)
-# 5-Growth/decisions.md
+# # decisions.md stays tracked (scaffold with an example row).
+# # Filled weekly notes and showcase stay local.
+# 5-Growth/showcase.md
 # 5-Growth/weekly/*
 # !5-Growth/weekly/README.md
+# !5-Growth/weekly/template.md
 # 5-Growth/monthly-*.md
 # 5-Growth/self-assessment-*.md
 #
@@ -84,9 +86,11 @@ __pycache__/
 # ============================================
 
 # # --- Personal practice content (each team member keeps theirs private) ---
-# 5-Growth/decisions.md
+# # decisions.md stays tracked (scaffold). showcase and weekly notes stay local.
+# 5-Growth/showcase.md
 # 5-Growth/weekly/*
 # !5-Growth/weekly/README.md
+# !5-Growth/weekly/template.md
 # 5-Growth/monthly-*.md
 # 5-Growth/self-assessment-*.md
 #
