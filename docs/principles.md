@@ -26,7 +26,7 @@ This repo is the **single source of truth** for product decisions, frameworks, a
 | Frameworks, templates, playbooks | `2-Methods/` |
 | Active bets, PRDs, roadmaps | `3-Work/` |
 | Research evidence | `4-Research/` |
-| Decisions log, weekly practice | `5-Growth/` |
+| Decisions log, weekly practice, 1:1 showcase | `5-Growth/` |
 | Agent infrastructure | `system/` |
 
 **Coaching process** → `system/coaching/` (how the agent runs braindump sessions)  

@@ -78,6 +78,7 @@ Condensed from evaluate command — one pass, don't force entries:
 
 - **Decisions** with stated confidence → `5-Growth/decisions.md` + reopen trigger?
 - **Thinking / bias / updated assumption** → this week's `5-Growth/weekly/YYYY-Www.md`?
+- **Pattern worth telling a manager** → `5-Growth/showcase.md` (one line, after they confirm — not a third log)?
 - **PM Brain friction** → system learnings in `3-Work/[initiative]/` or relevant initiative file?
 
 Most sessions produce nothing for most targets. The point is asking.

@@ -130,9 +130,10 @@ pm-brain/
 |-- 4-Research/                # YOUR research storage (link to initiatives)
 |   |-- 1-User-Interviews/
 |   +-- 2-Qualitative-Research/
-|-- 5-Growth/                  # YOUR decisions log + weekly notes
+|-- 5-Growth/                  # YOUR decisions log, weekly notes, 1:1 showcase
 |   |-- decisions.md
-|   +-- weekly/
+|   |-- showcase.md
+|   +-- weekly/                  # README + template.md stay tracked; YYYY-Www.md is personal
 |-- system/                    # Orchestration, coaching, evals
 |-- .claude/skills/            # Workflow skills (all platforms)
 |-- docs/                      # Human documentation
@@ -215,7 +216,7 @@ Or ask the agent: *"what tracked files might be sensitive in private mode?"*
 | Grounded strategic advice | `1-Context/` (vision, strategy, stakeholders) |
 | Freshness tracking for context docs | `1-Context/CONTEXT-HEALTH.md` |
 | Stakeholder simulation | `1-Context/1.1-Stakeholder-Avatars/` |
-| Decision calibration practice | `5-Growth/decisions.md` + weekly review skill |
+| Decision calibration and 1:1 prep | `5-Growth/decisions.md`, `5-Growth/weekly/`, `5-Growth/showcase.md` |
 | Evidence from discovery | `4-Research/` then link from `3-Work/[initiative]/research/` |
 
 **Not sure what context you have?** Start with your team. Fill in what you know, mark gaps with "TBD" or "unclear", and treat the files as working hypotheses—not finished documents. As you learn more, you update them.

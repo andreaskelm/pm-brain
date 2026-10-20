@@ -18,7 +18,7 @@ graph TB
             C["2-Methods — reference + mental models"]
             E["3-Work"]
             D["4-Research"]
-            A["5-Growth — decisions + weekly"]
+            A["5-Growth — decisions, weekly, showcase"]
         end
         subgraph ai["AI layer"]
             BOOT["Bootstrap: AGENTS.md (+ USER.md)"]
@@ -75,7 +75,7 @@ User-facing summary: [principles.md](principles.md).
 - **2-Methods:** `N-name-with-hyphens.md`; domain READMEs at each level.
 - **1-Context:** `CONTEXT-HEALTH.md`; content `N-company-*.md`; avatars under `1.1-Stakeholder-Avatars/`.
 - **3-Work:** lowercase initiative files (`prd.md`, `decisions.md`, …).
-- **5-Growth:** `decisions.md`, `weekly/` (lean practice loop).
+- **5-Growth:** `decisions.md`, `weekly/`, `showcase.md` (lean practice loop).
 
 ---
 
@@ -87,7 +87,7 @@ User-facing summary: [principles.md](principles.md).
 | **2** | **2-Methods** | Mental models, bias, long-form guides — **reference**; workflows → skills |
 | **3** | **3-Work** | One folder per initiative |
 | **4** | **4-Research** | Evidence; link from initiatives |
-| **5** | **5-Growth** | [decisions.md](../5-Growth/decisions.md) + [weekly/](../5-Growth/weekly/README.md) — calibration, not homework templates |
+| **5** | **5-Growth** | [decisions.md](../5-Growth/decisions.md) + [weekly/](../5-Growth/weekly/README.md) + [showcase.md](../5-Growth/showcase.md) — calibration and a 1:1 page, not homework templates |
 
 ```mermaid
 flowchart LR
@@ -109,7 +109,7 @@ Four modes: **product_sense**, **execution_mode**, **meta_reflection**, **conver
 
 - **product_sense:** [coaching/README](../system/coaching/README.md) until [braindump sufficiency](../system/coaching/braindump.md) (four criteria in AGENTS.md).
 - **execution_mode:** load skill from `.claude/skills/`; preflight on non-trivial docs; [EVALUATION.md](../system/EVALUATION.md) before calling an artifact done.
-- **meta_reflection:** offer logging in [5-Growth/](../5-Growth/README.md); decisions with confidence → [decisions.md](../5-Growth/decisions.md).
+- **meta_reflection:** offer logging in [5-Growth/](../5-Growth/README.md); decisions with confidence → [decisions.md](../5-Growth/decisions.md); a growth signal → [showcase.md](../5-Growth/showcase.md) or this week's weekly note.
 - **Eval harness** is not a conversation mode — see below.
 
 **Cross-cutting (any state):** forecast/decision logging offer, contradiction check against [decisions.md](../5-Growth/decisions.md) and initiative `decisions.md`, evidence-strength naming, CONTEXT-HEALTH guard — [ORCHESTRATION](../system/ORCHESTRATION.md).

@@ -7,11 +7,13 @@ This repo is a **private fork**: framework + skills stay mergeable with [upstrea
 | Content | `origin` (private) | `upstream` (public) |
 |---------|-------------------|---------------------|
 | `2-Methods/`, `.claude/skills/`, `system/`, `docs/` (shared) | Yes | Yes — via contribution branch/PR |
-| `USER.md` | **Yes** (tracked on this fork) | **Never** |
+| `USER.md` (your filled profile) | **Yes** (tracked on this fork) | **Never** |
+| `USER.template.md` (placeholders) | Yes | Yes — ships on public `pm-brain` |
 | `1-Context/` (company, avatars) | Yes | Never |
 | `3-Work/` (Produktland, job search, initiatives) | Yes | Never |
 | `4-Research/` artifacts | Yes | Never |
-| `5-Growth/decisions.md`, `5-Growth/weekly/*` | Yes | Never |
+| `5-Growth/` scaffolds (`decisions.md`, `showcase.md`, `weekly/template.md`, READMEs) | Yes | Yes |
+| Filled `5-Growth/decisions.md`, `showcase.md`, `weekly/YYYY-Www.md` | Yes | Never |
 | `TODO.md` | Local only (gitignored) | Never |
 
 ## Push workflow
