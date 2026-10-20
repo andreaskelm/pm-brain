@@ -85,7 +85,7 @@ User-facing summary: [principles.md](principles.md).
 |---|--------|---------|
 | **1** | **1-Context** | Company direction, stakeholders, org survival — customize |
 | **2** | **2-Methods** | Mental models, bias, long-form guides — **reference**; workflows → skills |
-| **3** | **3-Work** | One folder per initiative |
+| **3** | **3-Work** | Signals (today), hypotheses (small bets), one folder per initiative |
 | **4** | **4-Research** | Evidence; link from initiatives |
 | **5** | **5-Growth** | [decisions.md](../5-Growth/decisions.md) + [weekly/](../5-Growth/weekly/README.md) + [showcase.md](../5-Growth/showcase.md) — calibration and a 1:1 page, not homework templates |
 

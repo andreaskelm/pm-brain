@@ -216,6 +216,8 @@ Moving to tomorrow:
 
 **Best Time:** Last 20 minutes of work day
 
+**If a bit today changed an alignment, a belief, or a small call:** file it with the `capture` skill (`3-Work/signals/`). Tasks stay in the task tool. A paste is not a file until you have said what the bit is.
+
 **STEP 1: Close the Loop (10 min)**
 
 ```

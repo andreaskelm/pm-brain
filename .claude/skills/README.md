@@ -7,6 +7,7 @@ Native Agent Skills for Cursor, Claude Code, and VS Code. Each folder is one ski
 | Skill | Purpose |
 |--------|---------|
 | braindump | Product sense coaching before structure |
+| capture | File a sharp bit after the user has thought; day signals and small hypotheses |
 | weekly-review | Week plan + drift sweep + draft `5-Growth/weekly/` note |
 | evaluate-artifact | Score drafts via `system/EVALUATION.md` + criteria files |
 | brain-review | File/folder freshness and repo health (slash-only) |

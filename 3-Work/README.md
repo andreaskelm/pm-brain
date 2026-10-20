@@ -1,32 +1,55 @@
-﻿# 3-Work — Initiatives
+﻿# 3-Work — What you are carrying
 
-## Introduction
+Active work lives here at three sizes. An initiative is the largest of them, not the only one.
 
-This directory holds **active initiatives** — early thinking through PRD and roadmap. Store initiative files here; link evidence from [4-Research/](../4-Research/README.md).
+## Which folder — ask in this order
 
-**For agents:** Wake `3-Work/[initiative]/` when the user names a bet or initiative. Before drafting, read what exists (`opportunity-assessment.md`, `decisions.md`, `research/`, etc.). **Run workflows via skills** (see [2-Methods/0-index.md](../2-Methods/0-index.md)), not by browsing `2-Methods/` template folders.
+1. **A task** ("email Sara", "update the ticket") does not go in this repo.
+2. **A sharp bit from today** — an alignment, a nudge, a fact you picked up, a small call. File it in [signals/](signals/README.md) through the `capture` skill, after you name the type, separate what you know from what you are guessing, and say where it lands.
+3. **A belief you are testing**, too small for a PRD. It goes in [hypotheses/](hypotheses/README.md), and only after the braindump floor: the assumption that decides it, know versus guess, one risk, one uncomfortable thought.
+4. **A narrative** — opportunity assessment, research, PRD, roadmap. That is a folder of its own, `[initiative]/`.
+5. **An insight with no bet and no narrative** stays in [4-Research/](../4-Research/README.md). Do not invent a hypothesis to park it.
 
-**Critical agent guidance:** When users share research/discovery insights for an initiative, guide them to save analysis in `3-Work/[initiative-name]/research/` (snapshots, synthesis, findings). Raw recordings and large files stay external — link from the analysis doc.
+| Altitude | Folder | Open it when |
+|----------|--------|----------------|
+| Today | [signals/](signals/README.md) | The bit is already sharp |
+| A bet | [hypotheses/](hypotheses/README.md) | You will test it, and you can say what would change your mind |
+| A narrative | `[initiative]/` | It needs an opportunity assessment, a PRD, or a roadmap |
+
+The page shape for a signal bullet and a hypothesis lives in `.claude/skills/capture/references/template.md`. These folders do not keep a second copy.
+
+**For agents:** Match the altitude before you write. A named initiative → `3-Work/[initiative]/`. A named small bet → `hypotheses/`. "Where does this go" or "file this bit" → the `capture` skill, and wait for their answers. **Run workflows via skills** (see [2-Methods/0-index.md](../2-Methods/0-index.md)), not by browsing `2-Methods/` template folders. Raw recordings stay external — link them from the note.
 
 ## Skills-first flow (execution_mode)
 
-| Stage | Skill | Initiative files |
-|--------|--------|------------------|
-| Early idea / go–no-go | `opportunity-assessment` | `opportunity-assessment.md` |
-| Interviews, synthesis, JTBD | `discovery-synthesis` | `research/` + links to `4-Research/` |
-| Prioritization / MVP cut | `prioritize` | update `decisions.md` |
-| Requirements | `write-prd` | `prd.md` |
-| Sequencing | `roadmap` | `roadmap.md` |
-| Politics on the plan | `politics-coach` + avatars in `1-Context/1.1-Stakeholder-Avatars/` | `stakeholders/` |
+| You are doing | Skill | Where it lands |
+|---------------|--------|----------------|
+| Filing a sharp bit | `capture` | `signals/YYYY-MM-DD.md`, then at most three durable touches |
+| Opening a small bet | `braindump`, then `capture` | `hypotheses/<slug>.md` |
+| Early idea / go–no-go | `opportunity-assessment` | `[initiative]/opportunity-assessment.md` |
+| Interviews, synthesis, JTBD | `discovery-synthesis` | `[initiative]/research/` or `4-Research/` |
+| Prioritization / MVP cut | `prioritize` | update `[initiative]/decisions.md` |
+| Requirements | `write-prd` | `[initiative]/prd.md` |
+| Sequencing | `roadmap` | `[initiative]/roadmap.md` |
+| Politics on the plan | `politics-coach` + avatars | `[initiative]/stakeholders/` |
 
-1. Braindump in product_sense → 2. Load the skill → 3. Write into this folder → 4. Offer `5-Growth/decisions.md` when they state confidence.
+1. Braindump in product_sense when the thinking is still forming → 2. Load the skill → 3. Write at the altitude they named → 4. Offer `5-Growth/decisions.md` only when they state a confidence percent.
 
-## How to Use This Directory
+## How to use this directory
 
-1. Create a new initiative folder when you have an early idea (copy [1-Initiative-Codename/](1-Initiative-Codename/) if helpful).
-2. Run the **`opportunity-assessment`** skill and save output to `opportunity-assessment.md`.
+**A bit or a small bet**
+
+1. Say what it is, what you know, and where it should land.
+2. Let `capture` append today's signal file. A new hypothesis waits until the floor is met.
+
+**An initiative**
+
+1. Create a folder when the bet needs a narrative (copy [1-Initiative-Codename/](1-Initiative-Codename/) if helpful).
+2. Run **`opportunity-assessment`** and save it to `opportunity-assessment.md`.
 3. Validate with **`discovery-synthesis`**; store summaries in `research/` and link `4-Research/`.
-4. When ready, **`write-prd`** / **`roadmap`** into this folder; log big calls in `5-Growth/decisions.md` (local in private mode).
+4. When ready, **`write-prd`** / **`roadmap`** into this folder; log scored calls in `5-Growth/decisions.md`.
+
+Promote a hypothesis into an initiative folder when it needs an opportunity assessment or a PRD. Leave a one-line pointer in the hypothesis file so the evidence trail still resolves.
 
 ## Quick start: self-quiz + AI collaboration
 

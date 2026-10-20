@@ -10,6 +10,7 @@
 
 - **Product signals** (strategy, discovery, prioritization, roadmap, stakeholder, politics, "help me think through") **and no explicit doc request** → **product_sense**
 - **Explicit doc request** ("write a PRD", "create OKRs", "draft the roadmap") → **execution_mode** (preflight first; load matching skill)
+- **Sharp bit to file** ("file this bit", "where does this go", "log this alignment", "I just picked this up") → load the `capture` skill. Its gate runs before any write. A mushy bit, a new hypothesis, or a confidence percent stays in **product_sense** until the braindump floor is met, then return to `capture` to file. A paste is not permission to structure it.
 - **Substantial decision or artifact done, or a clear pause** → suggest **meta_reflection**
 - **End-of-week signal** ("wrap up", "Friday", "close the week") → suggest **weekly-review** skill + drift sweep ([2-weekly-cadence.md](../2-Methods/4-Execution/1-Daily-Execution-And-Rituals/2-weekly-cadence.md) STEP 1b) — unconditionally, don't wait to be asked
 - **Otherwise** → **conversation**
@@ -18,7 +19,7 @@
 
 **Company context guard:** before editing numbered docs in `1-Context/`, check `Maintained?` in [CONTEXT-HEALTH.md](../1-Context/CONTEXT-HEALTH.md). `Reference` or `External` → route the update to `3-Work/[initiative]/` or a stakeholder avatar instead. Avatars are always maintained.
 
-**Contradiction detection (decision-level):** When new info contradicts a logged decision, reopen trigger, or stated belief in repo files, surface it in one sentence ("this cuts against X you decided in March — revisit?"). Before asserting, check [5-Growth/decisions.md](../5-Growth/decisions.md), live assumptions in the latest [weekly note](../5-Growth/weekly/README.md), and relevant `3-Work/[initiative]/decisions.md`. Belief-level stays conversational (hypothesis stress-test lens) plus weekly live-assumptions.
+**Contradiction detection (decision-level):** When new info contradicts a logged decision, reopen trigger, or stated belief in repo files, surface it in one sentence ("this cuts against X you decided in March — revisit?"). Before asserting, check [5-Growth/decisions.md](../5-Growth/decisions.md), live assumptions in the latest [weekly note](../5-Growth/weekly/README.md), `3-Work/hypotheses/`, and relevant `3-Work/[initiative]/decisions.md`. Belief-level stays conversational (hypothesis stress-test lens) plus weekly live-assumptions. Do not file the contradiction as a hypothesis until they have met the braindump floor.
 
 **Evidence strength:** When a load-bearing claim appears, name its tier in passing (documented > verbal > hunch > industry). Vocabulary only — see [evidence-strength.md](../2-Methods/1-Foundations/1-Mental-Models/1-Decision-Making/7-evidence-strength.md).
 
@@ -73,7 +74,7 @@ Answer the question, point to docs. Repo hygiene → [docs/principles.md](../doc
 
 ## Context Health
 
-**Conversation rot:** at the product_sense → execution_mode transition, after ~25–30 heavy turns, or when quality drops — suggest a fresh conversation. Before switching, capture durable state in the relevant `3-Work/[initiative]/` artifact or `5-Growth/`, not a separate checkpoint folder.
+**Conversation rot:** at the product_sense → execution_mode transition, after ~25–30 heavy turns, or when quality drops — suggest a fresh conversation. Before switching, file durable state at the right altitude: a sharp bit in `3-Work/signals/`, a small bet in `3-Work/hypotheses/`, an initiative narrative in `3-Work/[initiative]/`, a scored call in `5-Growth/`. Not a separate checkpoint folder. The `capture` skill's gate still applies.
 
 **Content rot:** when company or initiative docs feed a roadmap, OKR, strategy, PRD, or politics flow, check [CONTEXT-HEALTH.md](../1-Context/CONTEXT-HEALTH.md). One optional freshness question if a doc is overdue.
 

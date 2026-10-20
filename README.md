@@ -18,7 +18,7 @@ The gap is familiar: you know the frameworks, but theory does not walk into the 
 
 Product work is messy. A lot of the time it is brain soup. Context is scattered across Notion, Linear, Slack, dashboards, and slides, while the part that decides outcomes (why you killed the other option, what you assumed, what would make you reopen the call) lives in your head until the next meeting wipes the buffer. Six weeks later nobody can reconstruct the decision because it was never explicit in one place.
 
-The markdown folders give that a home. Knowledge lives in `1-Context/`, `3-Work/`, and `4-Research/`. Bets and judgment live in `5-Growth/decisions.md` and the weekly drift notes. A coaching layer helps you apply product sense, second-order thinking, and risk identification when you are stuck, on the big strategy fork and on the small call that unblocks the day. **Latest commit = source of truth** for knowledge and decisions in this repo; git history shows how your thinking evolved.
+The markdown folders give that a home. Company context lives in `1-Context/`. Active work lives in `3-Work/` at three sizes: a sharp bit from today (`signals/`), a small bet you are testing (`hypotheses/`), and an initiative narrative. Insights that do not belong to a bet yet live in `4-Research/`. Scored calls and weekly drift live in `5-Growth/decisions.md` and the weekly notes. A coaching layer helps you apply product sense, second-order thinking, and risk identification when you are stuck, on the big strategy fork and on the small call that unblocks the day. Filing a bit waits until you have said what it is. **Latest commit = source of truth** for knowledge and decisions in this repo; git history shows how your thinking evolved.
 
 Jira, Confluence, and Figma stay where they are, and you link out to them. You still own the thinking and the decisions. The agent challenges, structures, and remembers with you.
 
@@ -84,7 +84,7 @@ State transitions and loading rules: [`system/ORCHESTRATION.md`](system/ORCHESTR
 
 ## Skills and subagents
 
-Skills (`.claude/skills/`) own workflows: PRD, OKR, roadmap, prioritize, opportunity assessment, politics-coach, weekly review, and more. [2-Methods/](2-Methods/README.md) is reference depth (mental models, guides); the coach routes to skills, not raw template files. Pick a workflow from [2-Methods/0-index.md](2-Methods/0-index.md), or invoke `/skill-name` where your platform supports it. To use them in another repo, see [Getting started](#getting-started).
+Skills (`.claude/skills/`) own workflows: capture (file a sharp bit), PRD, OKR, roadmap, prioritize, opportunity assessment, politics-coach, weekly review, and more. [2-Methods/](2-Methods/README.md) is reference depth (mental models, guides); the coach routes to skills, not raw template files. Pick a workflow from [2-Methods/0-index.md](2-Methods/0-index.md), or invoke `/skill-name` where your platform supports it. To use them in another repo, see [Getting started](#getting-started).
 
 Subagents (`.claude/agents/`) handle mechanical or independent work: `context-scout` (repo scan), `artifact-reviewer` (quality checks without grading your own draft), and `stakeholder-simulator` (avatar-based reactions). Coaching and judgment calls stay in the main thread. See [AGENTS.md](AGENTS.md) under Delegation.
 
@@ -101,7 +101,7 @@ pm-brain/
 |-- system/                    # Orchestration, coaching, evals
 |-- 1-Context/                 # Vision, strategy, stakeholders, org survival
 |-- 2-Methods/                 # Reference: mental models, guides (0-index → skills)
-|-- 3-Work/                    # Active initiatives
+|-- 3-Work/                    # Signals, small hypotheses, initiatives
 |-- 4-Research/                # Research artifacts
 |-- 5-Growth/                  # decisions.md + weekly/
 |-- docs/                      # Setup, principles, architecture (docs/README.md)

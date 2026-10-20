@@ -25,6 +25,7 @@ Read as needed:
 
 - `5-Growth/weekly/` — prior note(s), especially **live assumptions**
 - `5-Growth/decisions.md` — open rows, resolve-by dates, reopen triggers
+- This week's `3-Work/signals/` day files and `3-Work/hypotheses/` (staleness, decision triggers)
 - This week's threads and `3-Work/[initiative]/` (decisions, status)
 - `1-Context/` if strategy or stakeholder context may have shifted
 
@@ -74,6 +75,8 @@ Brain-wide scan before the weekly note is final. Detail checklist: [references/d
 
 - `5-Growth/decisions.md` — unresolved past resolve-by; reopen triggers that may have fired this week
 - Last weekly note — **live assumptions** table
+- This week's `3-Work/signals/` — bullets with no `landed:`
+- `3-Work/hypotheses/` — active files with no evidence in 30+ days; decision triggers this week's bits may have met
 - Relevant `3-Work/[initiative]/` decision files
 - `1-Context/` and new `4-Research/` or initiative research if beliefs or strategy shifted
 
@@ -83,8 +86,11 @@ Brain-wide scan before the weekly note is final. Detail checklist: [references/d
 2. **Stale beliefs** — live assumptions unchallenged 3+ weeks; forecasts/decisions not revisited 6+ weeks
 3. **Contradictions** — this week's signals vs prior logged decisions or forecasts
 4. **Weak evidence** — load-bearing claims on verbal/hunch/industry only where documented was expected
+5. **Open signals** — a bit filed this week with no `landed:` line
+6. **Quiet hypotheses** — `active` and no evidence row in 30+ days
+7. **Trigger maybe met** — this week's bits may satisfy a hypothesis decision trigger. Offer a `5-Growth/decisions.md` row. Do not write it.
 
-**Output:** what's solid, what needs revisiting, **one recommended action**. Route findings into the weekly note **Drift sweep** section.
+**Output:** what's solid, what needs revisiting, **one recommended action**. Still 3–5 bullets — pick the flags that matter. Route findings into the weekly note **Drift sweep** section. A met trigger is an offer, not a logged decision.
 
 ## Step 6 — Draft `YYYY-Www.md`
 

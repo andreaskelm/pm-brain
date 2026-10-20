@@ -73,6 +73,8 @@ __pycache__/
 # 3-Work/*
 # !3-Work/README.md
 # !3-Work/1-Initiative-Codename/
+# !3-Work/signals/
+# !3-Work/hypotheses/
 # 4-Research/*
 # !4-Research/README.md
 # !4-Research/1-User-Interviews/README.md
@@ -101,6 +103,8 @@ __pycache__/
 # # --- Active work & research ---
 # 3-Work/*
 # !3-Work/README.md
+# !3-Work/signals/
+# !3-Work/hypotheses/
 # 4-Research/*
 # !4-Research/README.md
 # # --- Personal configuration (each team member has their own) ---
