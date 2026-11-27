@@ -10,6 +10,7 @@
 
 - **Product signals** (strategy, discovery, prioritization, roadmap, stakeholder, politics, "help me think through") **and no explicit doc request** → **product_sense**
 - **Explicit doc request** ("write a PRD", "create OKRs", "draft the roadmap") → **execution_mode** (preflight first; load matching skill)
+- **Interview transcript pasted or filed** → load the `discovery-synthesis` skill. Braindump questions (the user's read of the call) come before any structure; then the canonical CDH snapshot file; quotes verified with `system/evals/checks/verify-quotes.py` before calling it done. Don't invent templates, ledgers, or registers. A paste is not permission to structure it.
 - **Sharp bit to file** ("file this bit", "where does this go", "log this alignment", "I just picked this up") → load the `capture` skill. Its gate runs before any write. A mushy bit, a new hypothesis, or a confidence percent stays in **product_sense** until the braindump floor is met, then return to `capture` to file. A paste is not permission to structure it.
 - **Substantial decision or artifact done, or a clear pause** → suggest **meta_reflection**
 - **End-of-week signal** ("wrap up", "Friday", "close the week") → suggest **weekly-review** skill + drift sweep ([2-weekly-cadence.md](../2-Methods/4-Execution/1-Daily-Execution-And-Rituals/2-weekly-cadence.md) STEP 1b) — unconditionally, don't wait to be asked

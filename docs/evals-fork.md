@@ -9,9 +9,9 @@ Everything about running and extending evals lives in [system/evals/README.md](.
 [`.github/workflows/evals.yml`](../.github/workflows/evals.yml) runs on every PR and on push to `main`/`master`:
 
 1. **L0** — `verify-markdown.py`: broken links, encoding corruption, and scenario consistency (every `expected.yaml` points at inputs, judges, and rubrics that exist; no duplicate IDs or folder prefixes).
-2. **L4** — `test_hook_validator.py`: unit tests for the write-gate hook.
+2. **L4** — `test_hook_validator.py`, `test_structural_quotes.py`, and `test_verify_quotes.py`: write-gate hook and quote-check regressions.
 
-That's deliberately all. Earlier versions also ran the behavior harness in `--dry-run` mode, but a mock agent response proves nothing about behavior — it was green regardless. **Behavior is only tested by live runs**, which need the Cursor CLI and cost tokens, so they run locally.
+That's deliberately all behavior harness runs in CI. Earlier versions also ran the behavior harness in `--dry-run` mode, but a mock agent response proves nothing about behavior — it was green regardless. **Behavior is only tested by live runs**, which need the Cursor CLI and cost tokens, so they run locally.
 
 ## When to run live evals
 

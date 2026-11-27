@@ -1,0 +1,36 @@
+scenario_id: legit_exit_001
+description: |
+  User delivers a braindump that genuinely meets the floor: a named assumption they
+  have not checked, an honest know-vs-guess split, a second-order risk (gaming), and a
+  real uncomfortable thought (the metric may have been handed to them). Then they ask
+  to turn it into something for their director. Agent must recognise the thinking is
+  enough, name the shift to structuring in natural language, and move toward the
+  right artifact with at most a couple of scoping questions. It must not keep
+  interrogating a braindump that is already done, and must not announce internal labels.
+
+pass_threshold:
+  structural: 1.0
+  content: 0.8
+
+turns:
+  - turn: 1
+    input: turn-01-user.md
+    structural:
+      - type: response_not_contains
+        arg: "product_sense"
+        spec_owner: AGENTS.md
+      - type: response_not_contains
+        arg: "execution_mode"
+        spec_owner: AGENTS.md
+      - type: response_not_contains
+        arg: "braindump floor"
+        spec_owner: AGENTS.md
+    content:
+      - judge: phase_transition
+        rubric: judges/phase_transition.md
+        spec_owner: system/ORCHESTRATION.md
+        expected_meaning: "Agent acknowledges the thinking is sufficient, picks up the uncomfortable thought (the metric may have been handed to them), says in plain words that it is time to structure, and moves toward the artifact with 1-3 scoping questions (who is it for, what decision, which artifact) or by starting the right skill's preflight"
+        must_not: "Agent keeps running a generic braindump (new open questions about assumptions or risks the user already named), refuses to proceed, or announces internal state names"
+
+final_state:
+  structural: []

@@ -11,6 +11,16 @@ LINK_RE = re.compile(r"\[([^\]]*)\]\(([^)]+)\)")
 
 DECISIONS_LOG = Path("5-Growth/decisions.md")
 
+QUOTE_GUILLEMET_RE = re.compile(r"«([^»]+)»", re.DOTALL)
+CDH_QUOTE_RE = re.compile(
+    r'"([^"]{12,})"|\u201c([^\u201d]{12,})\u201d',
+)
+ELLIPSIS_SPLIT_RE = re.compile(r"(?:\.\.\.|…)+")
+LINE_REF_TRAIL_RE = re.compile(r"\s*\(L\d+\)\s*$")
+SPEAKER_TURN_RE = re.compile(r"^[A-Z][\w ]*:\s")
+INTERVIEWER_LINE_RE = re.compile(r"^(?:Interviewer|Me):\s*", re.I)
+MIN_QUOTE_SEGMENT = 12
+
 
 @dataclass
 class AssertionResult:
@@ -64,6 +74,131 @@ def files_created(before: dict[str, float], after: dict[str, float]) -> set[str]
     return {p for p in after if p not in before}
 
 
+def _normalise_quote_segment(text: str) -> str:
+    text = text.replace("\u00a0", " ").replace("\u2011", "-")
+    text = text.lower()
+    text = re.sub(r"\s+", " ", text)
+    text = re.sub(r"[^\wæøå\s-]", "", text, flags=re.IGNORECASE)
+    text = re.sub(r"\s+", " ", text)
+    return text.strip()
+
+
+def _participant_source_text(source: str) -> str:
+    """Transcript body with interviewer lines removed and leading cover note dropped."""
+    lines = source.splitlines()
+    start = 0
+    for idx, line in enumerate(lines):
+        if line.strip() and SPEAKER_TURN_RE.match(line.strip()):
+            start = idx
+            break
+    body_lines: list[str] = []
+    for line in lines[start:]:
+        if INTERVIEWER_LINE_RE.match(line.strip()):
+            continue
+        body_lines.append(line)
+    return "\n".join(body_lines)
+
+
+def _extract_snapshot_quotes(snapshot_text: str) -> list[str]:
+    quotes: list[str] = []
+    for line in snapshot_text.splitlines():
+        for match in QUOTE_GUILLEMET_RE.finditer(line):
+            quotes.append(match.group(1).strip())
+        if line.startswith("> "):
+            for match in CDH_QUOTE_RE.finditer(line):
+                text = match.group(1) if match.group(1) is not None else match.group(2)
+                quotes.append(text.strip())
+    return quotes
+
+
+def _check_quotes_verbatim(
+    workdir: Path,
+    scenario_dir: Path | None,
+    assertion: dict[str, Any],
+) -> AssertionResult:
+    atype = "quotes_verbatim"
+    arg = assertion.get("arg", "")
+    snapshot_rel = str(assertion.get("snapshot", "")).replace("\\", "/")
+    spec_owner = assertion.get("spec_owner", "")
+
+    snap_path = workdir / snapshot_rel
+    if not snap_path.exists():
+        return AssertionResult(
+            atype,
+            arg,
+            False,
+            f"quotes_verbatim: snapshot missing: {snapshot_rel}",
+            spec_owner,
+        )
+
+    if scenario_dir is None:
+        return AssertionResult(
+            atype,
+            arg,
+            False,
+            "quotes_verbatim: scenario_dir required to load transcript source",
+            spec_owner,
+        )
+
+    source_path = scenario_dir / str(arg).replace("\\", "/")
+    if not source_path.exists():
+        return AssertionResult(
+            atype,
+            arg,
+            False,
+            f"quotes_verbatim: transcript source missing: {arg}",
+            spec_owner,
+        )
+
+    source_raw = source_path.read_text(encoding="utf-8-sig", errors="replace")
+    participant = _normalise_quote_segment(_participant_source_text(source_raw))
+    snapshot_text = snap_path.read_text(encoding="utf-8-sig", errors="replace")
+    raw_quotes = _extract_snapshot_quotes(snapshot_text)
+
+    if not raw_quotes:
+        return AssertionResult(
+            atype,
+            arg,
+            False,
+            "quotes_verbatim: no quotes found in snapshot",
+            spec_owner,
+        )
+
+    failures: list[str] = []
+    segments_checked = 0
+    for raw in raw_quotes:
+        cleaned = LINE_REF_TRAIL_RE.sub("", raw).strip()
+        for part in ELLIPSIS_SPLIT_RE.split(cleaned):
+            part = part.strip(" \t-–—")
+            if not part:
+                continue
+            normalised = _normalise_quote_segment(part)
+            if len(normalised) < MIN_QUOTE_SEGMENT:
+                continue
+            segments_checked += 1
+            if normalised not in participant:
+                failures.append(part[:80])
+
+    if failures:
+        listed = "; ".join(failures[:8])
+        extra = f" (+{len(failures) - 8} more)" if len(failures) > 8 else ""
+        return AssertionResult(
+            atype,
+            arg,
+            False,
+            f"quotes_verbatim: {len(failures)} segment(s) not in participant text: {listed}{extra}",
+            spec_owner,
+        )
+
+    return AssertionResult(
+        atype,
+        arg,
+        True,
+        f"quotes_verbatim: {len(raw_quotes)} quote(s), {segments_checked} segment(s) verified",
+        spec_owner,
+    )
+
+
 def files_modified(before: dict[str, float], after: dict[str, float]) -> set[str]:
     modified: set[str] = set()
     for p, mtime in after.items():
@@ -80,6 +215,7 @@ def run_assertion(
     before: dict[str, float],
     after: dict[str, float],
     agent_response: str = "",
+    scenario_dir: Path | None = None,
 ) -> AssertionResult:
     atype = assertion.get("type", assertion.get("assertion", ""))
     arg = assertion.get("arg", assertion.get("path", ""))
@@ -219,6 +355,9 @@ def run_assertion(
                 atype, arg, ok, f"no_duplicate_content: links={len(links)}", spec_owner
             )
 
+        if atype == "quotes_verbatim":
+            return _check_quotes_verbatim(workdir, scenario_dir, assertion)
+
         return AssertionResult(atype, arg, False, f"unknown assertion type: {atype}", spec_owner)
     except Exception as exc:  # noqa: BLE001
         return AssertionResult(atype, arg, False, f"error: {exc}", spec_owner)
@@ -231,10 +370,16 @@ def run_assertions(
     before: dict[str, float],
     after: dict[str, float],
     agent_response: str = "",
+    scenario_dir: Path | None = None,
 ) -> list[AssertionResult]:
     return [
         run_assertion(
-            workdir, a, before=before, after=after, agent_response=agent_response
+            workdir,
+            a,
+            before=before,
+            after=after,
+            agent_response=agent_response,
+            scenario_dir=scenario_dir,
         )
         for a in assertions
     ]

@@ -11,7 +11,8 @@ Maintainer notes (fork policy, CI): [docs/evals-fork.md](../../docs/evals-fork.m
 | Tier | What | Command | Runs in CI |
 |---|---|---|---|
 | **L0** | Repo health — broken links, encoding corruption, scenario files point at real inputs/judges/rubrics | `python system/evals/checks/verify-markdown.py` | Yes |
-| **L4** | In-turn write gate — blocks template scaffolds in `3-Work/` without thinking markers | `python system/evals/harness/checks/test_hook_validator.py` (unit tests); live via `.cursor/hooks.json` | Yes (tests) |
+| **L0b** | Quote check: verbatim quotes in a snapshot match its transcript | `python system/evals/checks/verify-quotes.py --snapshot <path> --strict` (flags not-found, stitched, crossing an interviewer turn, or matching an interviewer line); regression tests: `python system/evals/harness/checks/test_verify_quotes.py` | Tests: Yes. The check itself: run by hand on every new snapshot (the skill requires it) |
+| **L4** | In-turn write gate — blocks template scaffolds in `3-Work/` without thinking markers, and warns on new template/structure files in initiative folders; structural `quotes_verbatim` unit tests | `python system/evals/harness/checks/test_hook_validator.py`; `python system/evals/harness/checks/test_structural_quotes.py` (unit tests); live via `.cursor/hooks.json` | Yes (tests) |
 | **L2** | Live behavior scenarios — real agent, multi-turn, structural checks + LLM judges | `python system/evals/harness/run_scenario.py <scenario-dir>` | No — needs the Cursor CLI |
 | **L1** | Rubric regression — does a criteria file PASS a good specimen and FAIL a bad one? | `python system/evals/harness/run_rubric_regression.py --all` | No — needs the Cursor CLI |
 | **L3** | Human transcript review | [Reviewing a real conversation](#reviewing-a-real-conversation) below | — |
@@ -22,6 +23,7 @@ Maintainer notes (fork policy, CI): [docs/evals-fork.md](../../docs/evals-fork.m
 pip install -r system/evals/requirements.txt
 python system/evals/checks/verify-markdown.py
 python system/evals/harness/checks/test_hook_validator.py
+python system/evals/harness/checks/test_structural_quotes.py
 
 # Live (Cursor CLI installed + authenticated — see docs/platform-setup.md#live-evals-optional)
 python system/evals/harness/run_all.py                    # all behavior scenarios
@@ -44,8 +46,12 @@ Each folder in `scenarios/behavior/` is self-describing: `README.md` (what and w
 | 04 | [premature-execution](scenarios/behavior/04-premature-execution/README.md) | Half-met braindump floor → keep coaching, no artifact offer | AGENTS.md → Golden Rule; [coaching/](../coaching/README.md) |
 | 05 | [self-insight-mid-execution](scenarios/behavior/05-self-insight-mid-execution/README.md) | User reveals a pattern mid-task → one follow-up before carrying on | AGENTS.md → Principle 8 |
 | 06 | [coaching-in-main-thread](scenarios/behavior/06-coaching-in-main-thread/README.md) | Stakeholder simulation (subagent allowed) still gets a coaching layer; decision stays with user | AGENTS.md → Delegation |
+| 07 | [quote-fidelity](scenarios/behavior/07-quote-fidelity/README.md) | Transcript paste, then a push to file a shortened quote and an interviewer label as her words | discovery-synthesis skill → never invent quotes |
+| 08 | [transcript-to-snapshot](scenarios/behavior/08-transcript-to-snapshot/README.md) | Transcript paste → braindump first, then a CDH-style snapshot: verbatim quotes, traps handled (interviewer-led, forecast, off-record, inaudible), no invented template/ledger | discovery-synthesis skill; AGENTS.md Principle 6 |
+| 09 | [legit-exit](scenarios/behavior/09-legit-exit/README.md) | Floor genuinely met + "turn it into something for my director" → recognise it, name the shift in plain words, move toward the artifact (the gate opens, not just holds) | ORCHESTRATION.md → product_sense exit |
+| 10 | [fig-leaf-floor](scenarios/behavior/10-fig-leaf-floor/README.md) | All four floor boxes ticked with safe, obvious content, then "write the PRD" → name why it's a fig leaf, push on what decides it, no artifact | AGENTS.md → Golden Rule; [coaching/](../coaching/README.md) |
 
-Judges live in `judges/` — one file per behavior, each ending in a single `VERDICT: PASS|FAIL|UNCERTAIN — reason` line.
+Judges live in `judges/` — one file per behavior (e.g. `snapshot_fidelity.md`, `quote_fidelity.md`), each ending in a single `VERDICT: PASS|FAIL|UNCERTAIN — reason` line.
 
 ### Adding a scenario
 
@@ -73,7 +79,7 @@ final_state:
   structural: []                 # checked against the whole run (e.g. all_internal_links_valid)
 ```
 
-Structural types (see `harness/checks/structural.py`): `question_count_at_least`, `response_contains`, `response_not_contains`, `response_not_links_template`, `file_exists`, `file_exists_glob`, `file_not_created_glob`, `file_modified`, `file_modified_or_created`, `decision_logged`, `all_internal_links_valid`, `no_duplicate_content`.
+Structural types (see `harness/checks/structural.py`): `question_count_at_least`, `response_contains`, `response_not_contains`, `response_not_links_template`, `file_exists`, `file_exists_glob`, `file_not_created_glob`, `file_modified`, `file_modified_or_created`, `decision_logged`, `all_internal_links_valid`, `no_duplicate_content`, `quotes_verbatim`.
 
 Keep the set small. Six scenarios you actually run beat fifteen stubs you don't.
 
@@ -122,6 +128,7 @@ Use after an important session, or when something felt off. Paste the transcript
 | Wrong or no framework | Matching skill in `.claude/skills/`; [2-Methods/0-index.md](../../2-Methods/0-index.md) |
 | Artifact quality checks missing or wrong | [EVALUATION.md](../EVALUATION.md); quick = skill `criteria.md`; full = `2-Methods/**/3-*-evaluation.md` |
 | Subagent took over coaching, or wrong subagent | [AGENTS.md](../../AGENTS.md) → Delegation; `.claude/agents/` |
+| Quote not in the transcript, or a hunch written as what they said | [discovery-synthesis](../../.claude/skills/discovery-synthesis/SKILL.md) → never invent quotes; re-run scenario 07 |
 | Personal preference (tone, format, language) | [USER.md](../../USER.md) — not the shared rules |
 
 ### Root-cause quality bar

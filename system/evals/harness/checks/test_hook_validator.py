@@ -24,6 +24,24 @@ def invoke_hook(workdir: Path, file_path: Path) -> tuple[int, str]:
     return proc.returncode, proc.stderr
 
 
+def git_init(workdir: Path) -> None:
+    subprocess.run(
+        ["git", "init"],
+        cwd=workdir,
+        capture_output=True,
+        check=True,
+    )
+
+
+def git_track(workdir: Path, rel_path: str) -> None:
+    subprocess.run(
+        ["git", "add", rel_path],
+        cwd=workdir,
+        capture_output=True,
+        check=True,
+    )
+
+
 def test_blocks_template_scaffold_without_thinking() -> None:
     with tempfile.TemporaryDirectory() as tmp:
         workdir = Path(tmp)
@@ -73,12 +91,65 @@ def test_empty_stdin_exits_zero() -> None:
         assert proc.returncode == 0
 
 
+def test_warns_untracked_template_structure_in_initiative() -> None:
+    with tempfile.TemporaryDirectory() as tmp:
+        workdir = Path(tmp)
+        git_init(workdir)
+        artifact = workdir / "3-Work" / "test-init" / "_foo-template.md"
+        artifact.parent.mkdir(parents=True)
+        artifact.write_text("# Foo\n\nPlaceholder.\n", encoding="utf-8")
+        code, err = invoke_hook(workdir, artifact)
+        assert code == 0, f"expected WARN only (exit 0), got {code}: {err}"
+        assert "looks like a new template or structure" in err
+
+
+def test_silent_untracked_template_under_legacy() -> None:
+    with tempfile.TemporaryDirectory() as tmp:
+        workdir = Path(tmp)
+        git_init(workdir)
+        artifact = workdir / "3-Work" / "test-init" / "_legacy" / "_foo-template.md"
+        artifact.parent.mkdir(parents=True)
+        artifact.write_text("# Legacy template\n", encoding="utf-8")
+        code, err = invoke_hook(workdir, artifact)
+        assert code == 0, f"expected OK, got {code}: {err}"
+        assert "looks like a new template or structure" not in err
+
+
+def test_silent_ordinary_untracked_notes_in_initiative() -> None:
+    with tempfile.TemporaryDirectory() as tmp:
+        workdir = Path(tmp)
+        git_init(workdir)
+        artifact = workdir / "3-Work" / "test-init" / "notes.md"
+        artifact.parent.mkdir(parents=True)
+        artifact.write_text("# Notes\n\nJust thinking.\n", encoding="utf-8")
+        code, err = invoke_hook(workdir, artifact)
+        assert code == 0, f"expected OK, got {code}: {err}"
+        assert "looks like a new template or structure" not in err
+
+
+def test_silent_git_tracked_file_with_template_in_name() -> None:
+    with tempfile.TemporaryDirectory() as tmp:
+        workdir = Path(tmp)
+        git_init(workdir)
+        artifact = workdir / "3-Work" / "test-init" / "old-template.md"
+        artifact.parent.mkdir(parents=True)
+        artifact.write_text("# Canonical copy\n", encoding="utf-8")
+        git_track(workdir, "3-Work/test-init/old-template.md")
+        code, err = invoke_hook(workdir, artifact)
+        assert code == 0, f"expected OK, got {code}: {err}"
+        assert "looks like a new template or structure" not in err
+
+
 def main() -> int:
     tests = [
         test_blocks_template_scaffold_without_thinking,
         test_allows_artifact_with_thinking_markers,
         test_ignores_non_work_files,
         test_empty_stdin_exits_zero,
+        test_warns_untracked_template_structure_in_initiative,
+        test_silent_untracked_template_under_legacy,
+        test_silent_ordinary_untracked_notes_in_initiative,
+        test_silent_git_tracked_file_with_template_in_name,
     ]
     passed = 0
     for test in tests:
