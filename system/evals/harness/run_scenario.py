@@ -260,6 +260,7 @@ User message:
                 before=before,
                 after=after,
                 agent_response=agent_response,
+                scenario_dir=scenario_dir,
             )
             struct_payload = [
                 {
@@ -305,6 +306,7 @@ User message:
             before=initial_snapshot,
             after=snapshot_files(workdir),
             agent_response="",
+            scenario_dir=scenario_dir,
         )
         final_content: list[dict[str, Any]] = []
         if not skip_content:

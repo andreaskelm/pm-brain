@@ -32,6 +32,8 @@ Behavior files name **tiers**, never models. This table is the only place model 
 
 **Rule of thumb:** fast models tend to skip the braindump and flatten the voice. Run coaching on the top tier; push mechanical work down.
 
+**Transcript → snapshot is not mechanical.** Coding a messy transcript (speech-to-text damage, hedges, interviewer-led framing, off-record asides) is judgment work: mid tier at minimum, never fast. A fast-tier run on this job invented its own templates, ledgers and registers instead of using the canonical Continuous Discovery files. Quote verification (`system/evals/checks/verify-quotes.py`) is the mechanical part — that one is fine to script.
+
 **Subagent models.** The shared files in `.claude/agents/` use `model: inherit`, because model values don't translate across platforms (Claude aliases like `haiku` aren't Cursor model IDs). To pin a cheaper model:
 
 - **Claude Code:** set `model: haiku` (or `sonnet`) in the agent's frontmatter, or `CLAUDE_CODE_SUBAGENT_MODEL`.

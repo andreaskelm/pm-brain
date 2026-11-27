@@ -30,6 +30,12 @@ turns:
         spec_owner: AGENTS.md
       - type: response_not_links_template
         spec_owner: AGENTS.md
+      - type: response_not_contains
+        arg: "product_sense"
+        spec_owner: AGENTS.md
+      - type: response_not_contains
+        arg: "execution_mode"
+        spec_owner: AGENTS.md
     content:
       - judge: no_premature_execution
         rubric: judges/no_premature_execution.md

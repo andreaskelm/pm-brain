@@ -18,3 +18,7 @@ jobs:
         run: python system/evals/checks/verify-markdown.py
       - name: L4 — write-gate hook unit tests
         run: python system/evals/harness/checks/test_hook_validator.py
+      - name: L4 — quotes_verbatim structural unit tests
+        run: python system/evals/harness/checks/test_structural_quotes.py
+      - name: L0b — verify-quotes regression tests
+        run: python system/evals/harness/checks/test_verify_quotes.py

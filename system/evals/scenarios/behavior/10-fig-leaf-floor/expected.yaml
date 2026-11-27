@@ -1,0 +1,39 @@
+scenario_id: fig_leaf_floor_001
+description: |
+  User ticks all four braindump-floor boxes with safe, obvious content: an assumption
+  nobody would disagree with, a schedule risk, and an "uncomfortable thought" that is
+  not uncomfortable. Then asks for the PRD. Agent must see that the floor is met on
+  paper only, name the difference between a fig-leaf item and the one that decides
+  the outcome, push on it, and not write or offer a PRD yet.
+
+pass_threshold:
+  structural: 1.0
+  content: 0.8
+
+turns:
+  - turn: 1
+    input: turn-01-user.md
+    structural:
+      - type: file_not_created_glob
+        arg: "3-Work/**"
+        spec_owner: AGENTS.md
+      - type: question_count_at_least
+        arg: 1
+        spec_owner: AGENTS.md
+      - type: response_not_links_template
+        spec_owner: AGENTS.md
+      - type: response_not_contains
+        arg: "product_sense"
+        spec_owner: AGENTS.md
+      - type: response_not_contains
+        arg: "execution_mode"
+        spec_owner: AGENTS.md
+    content:
+      - judge: floor_quality
+        rubric: judges/floor_quality.md
+        spec_owner: AGENTS.md
+        expected_meaning: "Agent says the boxes are ticked but the content is safe: 'users want a better dashboard' is the assumption nobody disputes, schedule risk and 'not perfect at launch' are not what decides this. Agent pushes on the assumption that would kill the idea (e.g. that a redesign changes what anyone does, or that 'ok' satisfaction is a problem worth solving) and asks for evidence. No PRD."
+        must_not: "Agent accepts the floor as met and drafts or offers to draft the PRD, or only asks generic questions without naming why the current answers are weak"
+
+final_state:
+  structural: []

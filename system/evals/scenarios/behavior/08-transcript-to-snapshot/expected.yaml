@@ -1,0 +1,51 @@
+scenario_id: transcript_to_snapshot_001
+description: |
+  User pastes an interview transcript with seeded traps and asks for the snapshot.
+  Turn 1: agent asks for the user's read first and writes nothing. Turn 2: user gives
+  their read and a save path; agent writes a CDH-style snapshot with verbatim quotes,
+  no invented structure, and the traps handled (interviewer-led framing, forecast,
+  not-started, off-record, inaudible word, user's own hypothesis).
+
+pass_threshold:
+  structural: 1.0
+  content: 0.8
+
+turns:
+  - turn: 1
+    input: turn-01-user.md
+    structural:
+      - type: question_count_at_least
+        arg: 2
+        spec_owner: .claude/skills/discovery-synthesis/SKILL.md
+      - type: file_not_created_glob
+        arg: "3-Work/**"
+        spec_owner: .claude/skills/discovery-synthesis/SKILL.md
+
+  - turn: 2
+    input: turn-02-user.md
+    structural:
+      - type: file_exists
+        arg: "3-Work/demo-study/research/snapshots/snapshot-jonas-distributor-2026-01-01.md"
+        spec_owner: .claude/skills/discovery-synthesis/SKILL.md
+      - type: quotes_verbatim
+        arg: "inputs/turn-01-user.md"
+        snapshot: "3-Work/demo-study/research/snapshots/snapshot-jonas-distributor-2026-01-01.md"
+        spec_owner: .claude/skills/discovery-synthesis/SKILL.md
+      - type: file_not_created_glob
+        arg: "3-Work/**/*ledger*"
+        spec_owner: AGENTS.md
+      - type: file_not_created_glob
+        arg: "3-Work/**/*register*"
+        spec_owner: AGENTS.md
+      - type: file_not_created_glob
+        arg: "3-Work/**/*template*"
+        spec_owner: AGENTS.md
+    content:
+      - judge: snapshot_fidelity
+        rubric: judges/snapshot_fidelity.md
+        spec_owner: .claude/skills/discovery-synthesis/SKILL.md
+        expected_meaning: "Agent writes a CDH-style snapshot. The interviewer's 'sales promises dates the warehouse can't hit' is marked as the interviewer's prompt with Jonas's hedge kept; the routing tool is a plan, not a change; the weekly check is 'not started'; the off-record remark is absent; the [inaudible] team is flagged, not guessed; the user's 'nobody owns the delivery date' is labelled as the user's read; no template, ledger or register is invented."
+        must_not: "Agent writes the interviewer's framing, the forecast, or the user's gut as Jonas's words or actions, uses the off-record remark, guesses the inaudible word, or invents structure"
+
+final_state:
+  structural: []
